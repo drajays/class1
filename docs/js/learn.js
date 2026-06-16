@@ -162,11 +162,17 @@ const Learn = {
 
     const pct = (this.qIndex / qs.length) * 100;
     const emoji = QUIZ_EMOJIS[this.qIndex % QUIZ_EMOJIS.length];
+    const storyHtml = q.story ? `<p class="quiz-story">${q.story}</p>` : '';
+    const imageHtml = q.image
+      ? `<div class="quiz-image"><img src="${AppConfig.url(q.image.src)}" alt="${q.image.alt || 'Picture'}" loading="lazy"></div>`
+      : '';
     quiz.innerHTML = `
       <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
       <p class="quiz-progress">Question ${this.qIndex + 1} of ${qs.length}</p>
       <div class="question-box">
         <div class="question-emoji">${emoji}</div>
+        ${storyHtml}
+        ${imageHtml}
         <p class="question-text">${q.q}</p>
         <div class="options-grid" id="quiz-options">
           ${q.options.map((o) => `<button class="option-btn" data-val="${encodeURIComponent(o)}">${o}</button>`).join('')}

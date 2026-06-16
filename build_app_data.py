@@ -13,6 +13,7 @@ BASE = Path(__file__).resolve().parent
 ORG = BASE / "organized"
 DOCS = BASE / "docs"
 DATA = DOCS / "data"
+CURATED = DATA / "curated"
 ASSETS = DOCS / "assets" / "content"
 
 MAX_IMAGES_PER_CHAPTER = 6
@@ -192,6 +193,18 @@ def _generic_options(q: str) -> list[str]:
     return ["Yes", "No", "Maybe", "I will check"]
 
 
+def apply_curated(chapter: dict) -> dict:
+    """Replace chapter notes/questions when a curated JSON override exists."""
+    path = CURATED / f"{chapter['id']}.json"
+    if not path.exists():
+        return chapter
+    override = json.loads(path.read_text(encoding="utf-8"))
+    for key in ("title", "notes", "questions"):
+        if key in override:
+            chapter[key] = override[key]
+    return chapter
+
+
 def build_chapter(subject: str, folder: str, ch_path: Path) -> dict | None:
     md_path = ch_path / "content.md"
     if not md_path.exists():
@@ -210,13 +223,13 @@ def build_chapter(subject: str, folder: str, ch_path: Path) -> dict | None:
             "answer": "I read the notes!",
             "hint": "Read the notes first, then answer.",
         }]
-    return {
+    return apply_curated({
         "id": chapter_key,
         "folder": folder,
         "title": clean_title(folder),
         "notes": notes,
         "questions": questions,
-    }
+    })
 
 
 def main() -> None:

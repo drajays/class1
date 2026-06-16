@@ -121,117 +121,267 @@
     {
       "id": "maths_03_concept_introduction",
       "folder": "03_concept_introduction",
-      "title": "Concept Introduction",
+      "title": "Maths Concepts",
       "notes": [
         {
-          "type": "text",
-          "text": "Addition is one of the most basic arithmetic operations and is used to combine two or more digits/numbers together. Addends are the digits/numbers being added, and the result of the final answer we get after the process is called the sum. The symbol of addition is \"+\\\"."
+          "type": "heading",
+          "text": "➕ All About Adding & Subtracting ➖"
         },
         {
           "type": "text",
-          "text": "Addition Statement is a mathematical expression that demonstrates two or more digits/numbers added together and their sum."
+          "text": "Q: What is Addition? A: Addition is like a math magic trick where we put things together to get a bigger amount! If you have 2 apples 🍎🍎 and your friend gives you 3 more 🍎🍎🍎, you add them to get 5 apples in total! The numbers we put together are called addends, and the final answer is called the sum."
         },
         {
           "type": "text",
-          "text": "4+37 is an addition statement."
+          "text": "Q: What is an Addition Statement? A: It's a math sentence that tells the story of our adding magic. Example: 4 + 3 = 7. The ➕ symbol means add!"
         },
         {
           "type": "text",
-          "text": "Subtraction is an arithmetic operation and is used to remove or take away objects or numbers from a given collection of objects or from another number. The symbol of addition is \"-\"."
+          "text": "Q: What is Subtraction? A: Subtraction is when we take things away! If you have 4 cookies 🍪🍪🍪🍪 and you eat 1 cookie 🍪, you subtract it, and you have 3 cookies left! The big number we start with is the minuend, the number we take away is the subtrahend, and what is left over is the difference. The ➖ symbol means take away!"
         },
         {
           "type": "text",
-          "text": "The number being subtracted is the subtraend, while the number it is subtracted from is the minuend. The result is the difference."
+          "text": "Q: What is a Number Bond? A: Number bonds are two number best friends that hold hands to make a new number! 🤝 Example: For the number 5, the best friends could be 4 and 1 (4 + 1 = 5), or 2 and 3 (2 + 3 = 5)."
+        },
+        {
+          "type": "heading",
+          "text": "📖 Numbers & Stories 🔢"
         },
         {
           "type": "text",
-          "text": "Word/Story Problem serves as a narrative tool that presents a real-world situation requiring a mathematical solution."
+          "text": "Q: What is a Word Problem or Story Problem? A: It is a fun mini-story that has a secret math puzzle hidden inside for you to solve! It helps us use math in real life."
         },
         {
           "type": "text",
-          "text": "Times Table is a list of multiples of a number. Times table of any number can be obtained by adding the same number in every next step."
+          "text": "Q: What is a Times Table? A: A times table is a cool shortcut for counting! It is a list that shows what happens when we add the exact same number over and over again."
         },
         {
           "type": "text",
-          "text": "Cardinal numbers are numbers that are used for counting real objects or counting things. They are also known as \"counting numbers\" or \"cardinals.\""
+          "text": "Q: What is the difference between Cardinal and Ordinal numbers? A: Cardinal Numbers are for counting how many things we have (1, 2, 3 cars 🚗🚗🚗). Ordinal Numbers tell us who won the race or what position something is in! (1st place 🥇, 2nd place 🥈, 3rd place 🥉)."
+        },
+        {
+          "type": "heading",
+          "text": "📏 Measuring & Sorting 📊"
         },
         {
           "type": "text",
-          "text": "Ordinal numbers are numbers that are used to represent the rank or position of an object or a person. They are also referred to as positioning or ranking numbers."
+          "text": "Q: What is Measurement? A: It is how we find out how tall, heavy, or big something is! We can measure how long a pencil is ✏️, how heavy a watermelon is 🍉, or how hot the sun is ☀️."
         },
         {
           "type": "text",
-          "text": "Measurement: is the process of finding how much, how long, how heavy, or how big something is by comparing it with a standard unit. It helps us describe and compare objects using numbers. Measurement includes concepts such as length, weight, capacity, time, and temperature."
+          "text": "Q: What is Data Handling? A: It is like sorting your toy box! We collect information and organize it into neat tables or charts so we can easily read it and see exactly what we have."
         },
         {
           "type": "text",
-          "text": "Data Handling: is the process of collecting, organizing, and understanding information in charts or tables so we can read, compare, and use it easily."
+          "text": "Q: What is a Pattern? A: A pattern is a special rule where things repeat in the exact same order! Example: Apple, banana, apple, banana 🍎🍌🍎🍌."
+        },
+        {
+          "type": "heading",
+          "text": "🔺 Shapes All Around Us 🟩"
         },
         {
           "type": "text",
-          "text": "Pattern is a regular arrangement or sequence of repeating objects, lines, shapes, colours or numbers related to each other in a specific rule."
+          "text": "Q: What is a Shape? A: A shape is the outline or outer boundary of an object. It tells us what something looks like, no matter what color or size it is!"
         },
         {
           "type": "text",
-          "text": "Shape: describes the form or outline of an object. It shows the object's outer boundary such as its sides, corners, or curved edges. Shape tells us about how an object looks and it is different from its color, size, texture, or material."
+          "text": "Q: What is a Plane Shape? A: A plane shape is totally flat, like a drawing on a piece of paper. It has no thickness! Examples: A Triangle 🔺, a Square 🟩, a Rectangle 🟨, or a Circle 🔵."
         },
         {
           "type": "text",
-          "text": "Plane Shape: are two-dimensional shapes or flat shapes that can be drawn on paper. They have only length and width and have no thickness. Their edges can be straight or curved."
+          "text": "Q: What is a Solid Shape? A: A solid shape is puffy and takes up real space! You can hold it in your hands. Examples: A bouncy ball (Sphere ⚽), a toy block (Cube 🎲), or a delivery box (Cuboid 📦)."
+        },
+        {
+          "type": "heading",
+          "text": "⚖️ Comparing Numbers 🎢"
         },
         {
           "type": "text",
-          "text": "Examples: Triangle, Square, Rectangle, Circle."
+          "text": "Q: What is Comparison? A: It is looking at two numbers to see which is bigger, smaller, or if they are the exact same! We use hungry alligator mouths to show this: > (greater than) and < (less than). The alligator always opens its mouth to eat the bigger number! 🐊 We use = (equal to) if the numbers are exactly the same."
         },
         {
           "type": "text",
-          "text": "Solid Shape: are three-dimensional shapes. It has measurable length, breadth/width, and height. A solid figure takes up space and the volume."
-        },
-        {
-          "type": "text",
-          "text": "Examples: Cube, Cuboid, Sphere."
-        },
-        {
-          "type": "text",
-          "text": "Times Table is a list of multiples of a number. Times table of any number can be obtained by adding the same number in every next step."
-        },
-        {
-          "type": "text",
-          "text": "Comparison is a process or method to determine whether a number or quantity is smaller, greater, or equal to another number or quantity according to their values or amount."
-        },
-        {
-          "type": "text",
-          "text": "E.g. The symbols used for comparing numbers or quantities are “☐”, which means “greater than”; “☐”, which means “less than”; and “=”, which means “equal to”."
-        },
-        {
-          "type": "text",
-          "text": "Ascending Order the process of arranging the numbers in increasing order, i.e., from smallest value to largest value. The lowest value is written first and the highest value is written at the last."
-        },
-        {
-          "type": "text",
-          "text": "The word Ascending means “Going Up”"
-        },
-        {
-          "type": "text",
-          "text": "Descending Order the process of arranging the numbers in decreasing order, i.e., from largest value to smallest value. The highest value is written first and the lowest value is written at the last."
-        },
-        {
-          "type": "text",
-          "text": "The word Descending means “Going Down”"
+          "text": "Q: What do Ascending and Descending Order mean? A: Ascending Order means Going Up! 🧗‍♂️ You arrange numbers from the smallest to the biggest, like climbing up the stairs: 1, 2, 3, 4. Descending Order means Going Down! 🎢 You arrange numbers from the biggest to the smallest, like sliding down a slide: 4, 3, 2, 1."
         }
       ],
       "questions": [
         {
           "type": "mcq",
-          "q": "What did you learn in Concept Introduction?",
+          "story": "📖 Story Time! Sita and Rita are making yummy triangular sandwiches. Look at the picture — you can count them in two groups!",
+          "image": {
+            "src": "assets/content/maths_03_concept_introduction/sandwich_addition.jpg",
+            "alt": "Six triangular sandwiches arranged in two columns"
+          },
+          "q": "Sita made 3 sandwiches. Rita made 3 more sandwiches. When we put groups together, we ADD! How many sandwiches are there in all?",
           "options": [
-            "I read the notes!",
-            "I need to read again",
-            "I will ask a grown-up",
-            "Let me try more"
+            "6 sandwiches (3 + 3)",
+            "3 sandwiches only",
+            "9 sandwiches",
+            "0 sandwiches"
           ],
-          "answer": "I read the notes!",
-          "hint": "Read the notes first, then answer."
+          "answer": "6 sandwiches (3 + 3)",
+          "hint": "Addition is putting things together! 3 and 3 are the addends. 3 + 3 = 6, so 6 is the sum. This is a story problem — a mini-story with a math puzzle inside! 🍞"
+        },
+        {
+          "type": "mcq",
+          "story": "🤝 Number Bond Magic! Number bonds are two number best friends that hold hands to make a bigger number. The big circle is the whole, and the two small circles are the parts.",
+          "image": {
+            "src": "assets/content/maths_03_concept_introduction/number_bond_8.jpg",
+            "alt": "Number bond diagram with 8 in the big circle"
+          },
+          "q": "Look at the picture. The whole number in the big circle is 8. Which pair of best-friend numbers adds up to make 8?",
+          "options": [
+            "5 + 3",
+            "4 + 1",
+            "2 + 2",
+            "6 + 6"
+          ],
+          "answer": "5 + 3",
+          "hint": "Yes! 5 and 3 are number bonds for 8 because 5 + 3 = 8. You can also use 4 + 4, 6 + 2, or 7 + 1 — any two parts that make the whole! 🤝"
+        },
+        {
+          "type": "mcq",
+          "q": "What is addition?",
+          "options": [
+            "Putting things together to get a bigger amount",
+            "Taking things away",
+            "Counting backwards only",
+            "Drawing shapes"
+          ],
+          "answer": "Putting things together to get a bigger amount",
+          "hint": "Think about putting apples together!"
+        },
+        {
+          "type": "mcq",
+          "q": "In 2 + 3 = 5, what is the answer 5 called?",
+          "options": [
+            "The sum",
+            "The minuend",
+            "The subtrahend",
+            "The difference"
+          ],
+          "answer": "The sum",
+          "hint": "Addition gives us a sum!"
+        },
+        {
+          "type": "mcq",
+          "q": "What are the numbers we add together called?",
+          "options": [
+            "Addends",
+            "Minuends",
+            "Ordinals",
+            "Patterns"
+          ],
+          "answer": "Addends",
+          "hint": "They are the parts we put together."
+        },
+        {
+          "type": "mcq",
+          "q": "If you have 4 cookies and eat 1, what is left called?",
+          "options": [
+            "The difference",
+            "The sum",
+            "The addend",
+            "The pattern"
+          ],
+          "answer": "The difference",
+          "hint": "Subtraction leaves a difference!"
+        },
+        {
+          "type": "mcq",
+          "q": "Which pair is a number bond for 5?",
+          "options": [
+            "2 and 3",
+            "5 and 5",
+            "1 and 1",
+            "0 and 0"
+          ],
+          "answer": "2 and 3",
+          "hint": "Two best friends that make 5!"
+        },
+        {
+          "type": "mcq",
+          "q": "1st, 2nd, and 3rd place are examples of…",
+          "options": [
+            "Ordinal numbers",
+            "Cardinal numbers",
+            "Solid shapes",
+            "Times tables"
+          ],
+          "answer": "Ordinal numbers",
+          "hint": "They tell us position in a race!"
+        },
+        {
+          "type": "mcq",
+          "q": "Counting how many cars you have uses…",
+          "options": [
+            "Cardinal numbers",
+            "Ordinal numbers",
+            "Descending order",
+            "Plane shapes"
+          ],
+          "answer": "Cardinal numbers",
+          "hint": "How many? That's cardinal!"
+        },
+        {
+          "type": "mcq",
+          "q": "A triangle drawn on paper is a…",
+          "options": [
+            "Plane shape",
+            "Solid shape",
+            "Times table",
+            "Word problem"
+          ],
+          "answer": "Plane shape",
+          "hint": "Flat shapes have no thickness!"
+        },
+        {
+          "type": "mcq",
+          "q": "A bouncy ball is an example of a…",
+          "options": [
+            "Sphere (solid shape)",
+            "Circle (plane shape)",
+            "Pattern",
+            "Number bond"
+          ],
+          "answer": "Sphere (solid shape)",
+          "hint": "You can hold it in your hands!"
+        },
+        {
+          "type": "mcq",
+          "q": "The alligator mouth > always opens toward the…",
+          "options": [
+            "Bigger number",
+            "Smaller number",
+            "Same number only",
+            "Last number"
+          ],
+          "answer": "Bigger number",
+          "hint": "The alligator is hungry for the bigger number! 🐊"
+        },
+        {
+          "type": "mcq",
+          "q": "Arranging numbers 1, 2, 3, 4 from smallest to biggest is…",
+          "options": [
+            "Ascending order",
+            "Descending order",
+            "A number bond",
+            "Data handling"
+          ],
+          "answer": "Ascending order",
+          "hint": "Going up the stairs! 🧗‍♂️"
+        },
+        {
+          "type": "mcq",
+          "q": "Apple, banana, apple, banana repeating is an example of a…",
+          "options": [
+            "Pattern",
+            "Measurement",
+            "Subtrahend",
+            "Solid shape"
+          ],
+          "answer": "Pattern",
+          "hint": "Things repeat in the same order!"
         }
       ]
     },
