@@ -1,3 +1,13 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# PaddleOCR source exports (keep locally, not in git)
+*.pdf_by_PaddleOCR-VL-1.6.json
+*.pdf_by_PaddleOCR-VL-1.6.md
+
+# Generated content from organize_content.py
+organized/
+
+# Local tooling (optional — regenerate organized/ from OCR files)
+organize_content.py
