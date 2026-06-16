@@ -4,16 +4,22 @@ Gamified Class 1 learning app for GitHub Pages.
 
 **Live site:** https://drajays.github.io/class1/
 
+If you see this README instead of the app, use **https://drajays.github.io/class1/docs/** or fix Pages settings below.
+
+## GitHub Pages setup
+
+**Option A (recommended):** Settings → Pages → **Source: GitHub Actions**
+
+**Option B:** Settings → Pages → Branch `main` → Folder **`/docs`**
+
+**Option C:** Root deploy — `index.html` redirects to `/class1/docs/`
+
 ## What's in the app
 
 - **6 subjects** — Maths, English, EVS, Hindi, Sanskrit, Computer
 - **120 chapters** with notes + quiz questions
 - **4 child profiles**, coins, stars, badges
 - **Read-aloud** (browser TTS) on notes
-
-## GitHub Pages
-
-Settings → Pages → Branch `main` → Folder **`/docs`**
 
 ## Local content (not in git)
 

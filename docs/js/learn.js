@@ -10,7 +10,7 @@ const Learn = {
 
   async init() {
     try {
-      const res = await fetch('data/catalog.json');
+      const res = await fetch(AppConfig.url('data/catalog.json'));
       this.catalog = await res.json();
     } catch {
       this.catalog = { subjects: [] };
@@ -21,7 +21,7 @@ const Learn = {
     if (this.subjectCache[id]) return this.subjectCache[id];
     const sub = this.catalog.subjects.find((s) => s.id === id);
     if (!sub) return null;
-    const res = await fetch(sub.file);
+    const res = await fetch(AppConfig.url(sub.file));
     const data = await res.json();
     this.subjectCache[id] = data;
     return data;
@@ -104,7 +104,7 @@ const Learn = {
         return `<h3 class="note-heading">${n.text}</h3>`;
       }
       if (n.type === 'image') {
-        return `<div class="note-image"><img src="${n.src}" alt="${n.alt}" loading="lazy" onerror="this.parentElement.style.display='none'"></div>`;
+        return `<div class="note-image"><img src="${AppConfig.url(n.src)}" alt="${n.alt}" loading="lazy" onerror="this.parentElement.style.display='none'"></div>`;
       }
       return `
         <div class="note-para">
