@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#7ee8fa">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <title>Class 1 Adventure — Learn & Play!</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
@@ -10,64 +12,173 @@
   <script src="js/config.js"></script>
 </head>
 <body>
+  <svg class="cloud c1" viewBox="0 0 200 90" aria-hidden="true"><path fill="white" d="M58 73h92c26 0 44-15 44-36s-20-33-39-29C145-8 118-2 112 19 98 3 68 9 63 31 45 27 25 38 25 54s14 19 33 19z"/></svg>
+  <svg class="cloud c2" viewBox="0 0 200 90" aria-hidden="true"><path fill="white" d="M58 73h92c26 0 44-15 44-36s-20-33-39-29C145-8 118-2 112 19 98 3 68 9 63 31 45 27 25 38 25 54s14 19 33 19z"/></svg>
+  <svg class="cloud c3" viewBox="0 0 200 90" aria-hidden="true"><path fill="white" d="M58 73h92c26 0 44-15 44-36s-20-33-39-29C145-8 118-2 112 19 98 3 68 9 63 31 45 27 25 38 25 54s14 19 33 19z"/></svg>
+
   <div id="confetti-layer"></div>
   <div id="toast" class="toast hidden"></div>
 
+  <!-- Login -->
   <section id="screen-login" class="screen active">
     <div class="login-card">
-      <div class="mascot bounce">🦸</div>
-      <h1>Class 1 Adventure!</h1>
-      <p class="subtitle">Notes, pictures & quizzes for every subject</p>
+      <div class="brand-logo">🎒</div>
+      <h1 class="rainbow">Class 1 Adventure!</h1>
+      <p class="subtitle">Learn, play & care for your pet friend!</p>
+      <div class="tip-box">🌟 Big buttons · voice help · works offline!</div>
       <div class="hero-grid" id="hero-grid"></div>
-      <p class="hint">Progress saves on this device for each child</p>
+      <p class="hint">Pick your hero — tap a big picture!</p>
+      <div class="mascot-owl" aria-hidden="true">🦉</div>
     </div>
   </section>
 
+  <!-- Pet adoption -->
+  <section id="screen-pet-adopt" class="screen">
+    <div class="login-card adopt-card">
+      <h1 class="rainbow">Adopt Your Friend!</h1>
+      <p class="subtitle">Complete lessons to feed & dress your pet</p>
+      <div class="pet-adopt-grid" id="pet-adopt-grid"></div>
+    </div>
+  </section>
+
+  <!-- Home -->
   <section id="screen-home" class="screen">
     <header class="top-bar">
-      <div class="player-chip" id="player-chip"></div>
+      <div class="top-row">
+        <div class="player-chip" id="player-chip"></div>
+        <div class="top-actions">
+          <button class="icon-btn" id="btn-sound" title="Sound">🔊</button>
+          <button class="icon-btn parent-btn" id="btn-parent" title="Hold for Parent">👨‍👩‍👧</button>
+        </div>
+      </div>
       <div class="stats-row">
-        <span class="stat" id="stat-coins">🪙 0</span>
-        <span class="stat" id="stat-stars">⭐ 0</span>
-        <span class="stat" id="stat-streak">🔥 0</span>
-        <span class="stat level-badge" id="stat-level">Lv 1</span>
+        <span class="pill-stat" id="stat-coins">🪙 0</span>
+        <span class="pill-stat" id="stat-stars">⭐ 0</span>
+        <span class="pill-stat" id="stat-streak">🔥 0</span>
+        <span class="pill-stat level-badge" id="stat-level">Lv 1</span>
+        <span class="pill-stat" id="stat-xp">⚡ 0 XP</span>
       </div>
     </header>
 
-    <div class="home-body">
-      <div class="mascot-speech" id="mascot-speech">
-        <span class="mascot-small">🌟</span>
-        <p id="welcome-msg">Ready for adventure?</p>
-      </div>
+    <div id="pet-panel" class="pet-panel"></div>
 
-      <h2 class="section-label">📚 My Subjects</h2>
-      <div class="subject-grid" id="subject-grid"></div>
-
-      <h2 class="section-label">🎮 Quick Play</h2>
-      <div class="world-map world-map-compact">
-        <button class="world-btn math-world" data-go="math">
-          <span class="world-icon">🔢</span>
-          <span class="world-title">Math Arcade</span>
-          <span class="world-progress" id="math-progress"></span>
-        </button>
-        <button class="world-btn english-world" data-go="english">
-          <span class="world-icon">📖</span>
-          <span class="world-title">Reading Arcade</span>
-          <span class="world-progress" id="english-progress"></span>
-        </button>
-        <button class="world-btn trophy-world" data-go="trophy">
-          <span class="world-icon">🏆</span>
-          <span class="world-title">Trophy Room</span>
-        </button>
+    <div class="welcome-card">
+      <h2><span class="rainbow">Learning Island</span></h2>
+      <div class="welcome-big">Play · Learn · Win!</div>
+      <p class="progress-label">Your rainbow XP</p>
+      <div class="progress-wrap"><div class="progress-fill" id="xp-bar"></div></div>
+      <p class="hint" id="xp-need">100 XP to next level</p>
+      <div class="home-actions">
+        <button class="btn-fun green btn-big" id="btn-daily">🎁 Daily Gift</button>
+        <button class="btn-fun pink btn-big hidden" id="btn-streak-chest">📦 Streak Chest!</button>
+        <button class="btn-fun orange btn-big" id="btn-minigames">🎮 Mini Games</button>
+        <button class="btn-fun blue btn-big" id="btn-companion">🐾 Pet Lounge</button>
+        <button class="btn-fun pink btn-big" id="btn-shop">🛍️ Sticker Shop</button>
+        <button class="btn-fun ghost btn-big" id="btn-features">✨ 20 Features</button>
       </div>
+    </div>
+
+    <div class="mascot-speech">
+      <span class="mascot-small">🦉</span>
+      <p id="welcome-msg">Ready for adventure?</p>
+    </div>
+
+    <h2 class="section-label">🚀 Space Journey</h2>
+    <div class="glass-card journey-card">
+      <div id="journey-track"></div>
+    </div>
+
+    <h2 class="section-label">📚 Subject Quests</h2>
+    <div class="subject-grid" id="subject-grid"></div>
+
+    <h2 class="section-label">🎮 Quick Play</h2>
+    <div class="world-map world-map-compact">
+      <button class="world-btn math-world btn-big" data-go="math">
+        <span class="world-icon">🔢</span>
+        <span class="world-title">Math Arcade</span>
+        <span class="world-progress" id="math-progress"></span>
+      </button>
+      <button class="world-btn english-world btn-big" data-go="english">
+        <span class="world-icon">📖</span>
+        <span class="world-title">Reading Arcade</span>
+        <span class="world-progress" id="english-progress"></span>
+      </button>
+      <button class="world-btn trophy-world btn-big" data-go="trophy">
+        <span class="world-icon">🏆</span>
+        <span class="world-title">Trophy Room</span>
+      </button>
     </div>
 
     <button class="btn-ghost switch-hero" id="btn-switch-hero">Switch Hero</button>
   </section>
 
+  <!-- Mini Games -->
+  <section id="screen-minigames" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" data-back="home">← Home</button>
+      <h2>🎮 Mini Games</h2>
+    </header>
+    <p class="game-instruction">14 fun games — tap a big picture to play!</p>
+    <div class="minigame-hub" id="minigame-hub"></div>
+    <div id="minigame-play" class="game-area hidden">
+      <header class="minigame-header">
+        <button class="btn-back btn-big" id="minigame-back">← Back</button>
+        <h3 id="minigame-title">Game</h3>
+      </header>
+      <div id="minigame-body"></div>
+    </div>
+  </section>
+
+  <!-- Subject Hub -->
+  <section id="screen-subject-hub" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" id="hub-back">← Home</button>
+      <h2 id="hub-title">Subject Hub</h2>
+    </header>
+    <p id="hub-desc" class="game-instruction"></p>
+    <div class="hub-options" id="hub-options"></div>
+  </section>
+
+  <!-- Quick Quest -->
+  <section id="screen-quick-quest" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" id="quest-back">← Back</button>
+      <h2 id="quick-quest-title">Quick Quest</h2>
+    </header>
+    <div id="quick-quest-body" class="game-area"></div>
+  </section>
+
+  <!-- Companion Lounge -->
+  <section id="screen-companion" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" data-back="home">← Home</button>
+      <h2>🐾 Companion Lounge</h2>
+    </header>
+    <div id="companion-lounge"></div>
+  </section>
+
+  <!-- Sticker Shop -->
+  <section id="screen-shop" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" data-back="home">← Home</button>
+      <h2>🛍️ Sticker Shop</h2>
+    </header>
+    <p class="game-instruction">Spend coins on classroom stickers!</p>
+    <div class="shop-grid" id="shop-grid"></div>
+  </section>
+
+  <!-- Features -->
+  <section id="screen-features" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" data-back="home">← Home</button>
+      <h2>✨ 20+ Features</h2>
+    </header>
+    <div class="features-list" id="features-list"></div>
+  </section>
+
   <section id="screen-chapters" class="screen">
     <header class="game-header">
-      <button class="btn-back" data-back="home">← Home</button>
+      <button class="btn-back btn-big" data-back="home">← Home</button>
       <h2 id="chapters-title">Chapters</h2>
     </header>
     <div id="chapter-list" class="level-picker"></div>
@@ -75,12 +186,12 @@
 
   <section id="screen-chapter" class="screen">
     <header class="game-header">
-      <button class="btn-back" data-back="chapters">← Chapters</button>
+      <button class="btn-back btn-big" data-back="chapters">← Back</button>
       <h2 id="chapter-title">Chapter</h2>
     </header>
     <div class="tab-bar">
-      <button class="tab-btn active" data-tab="notes" id="tab-notes">📖 Notes</button>
-      <button class="tab-btn" data-tab="quiz" id="tab-quiz">🎯 Quiz</button>
+      <button class="tab-btn active btn-big" data-tab="notes" id="tab-notes">📖 Notes</button>
+      <button class="tab-btn btn-big" data-tab="quiz" id="tab-quiz">🎯 Quiz</button>
     </div>
     <div id="chapter-content" class="notes-panel"></div>
     <div id="chapter-quiz" class="game-area hidden"></div>
@@ -88,7 +199,7 @@
 
   <section id="screen-math" class="screen">
     <header class="game-header">
-      <button class="btn-back" data-back="home">← Home</button>
+      <button class="btn-back btn-big" data-back="home">← Home</button>
       <h2>🔢 Math Arcade</h2>
     </header>
     <div id="math-level-picker" class="level-picker"></div>
@@ -97,7 +208,7 @@
 
   <section id="screen-english" class="screen">
     <header class="game-header">
-      <button class="btn-back" data-back="home">← Home</button>
+      <button class="btn-back btn-big" data-back="home">← Home</button>
       <h2>📖 Reading Arcade</h2>
     </header>
     <div id="english-level-picker" class="level-picker"></div>
@@ -106,25 +217,49 @@
 
   <section id="screen-trophy" class="screen">
     <header class="game-header">
-      <button class="btn-back" data-back="home">← Home</button>
+      <button class="btn-back btn-big" data-back="home">← Home</button>
       <h2>🏆 Trophy Room</h2>
     </header>
     <div id="trophy-room" class="trophy-room"></div>
   </section>
+
+  <!-- Parent modal -->
+  <div id="parent-overlay" class="modal-overlay">
+    <div class="modal-box parent-modal">
+      <div id="parent-gate">
+        <h2>🔒 Parent Corner</h2>
+        <p>Solve this to enter:</p>
+        <div class="gate-box" id="gate-question">7 + 8 = ?</div>
+        <input type="number" id="gate-answer" class="gate-input" placeholder="Answer">
+        <button class="btn-primary btn-big" id="parent-gate-go">Enter 🔑</button>
+        <button class="btn-ghost-inline" id="parent-gate-cancel">Cancel</button>
+      </div>
+      <div id="parent-dashboard" class="hidden">
+        <div id="parent-content"></div>
+        <button class="btn-primary" id="parent-close">Close</button>
+      </div>
+    </div>
+  </div>
 
   <div id="reward-popup" class="reward-popup hidden">
     <div class="reward-card pop-in">
       <div class="reward-emoji" id="reward-emoji">🎉</div>
       <h3 id="reward-title">Amazing!</h3>
       <p id="reward-text">+10 coins!</p>
-      <button class="btn-primary" id="reward-ok">Yay!</button>
+      <button class="btn-primary btn-big" id="reward-ok">Yay!</button>
     </div>
   </div>
 
   <script src="js/data.js"></script>
   <script src="js/store.js"></script>
+  <script src="js/sounds.js"></script>
   <script src="js/speech.js"></script>
   <script src="js/rewards.js"></script>
+  <script src="js/pet.js"></script>
+  <script src="js/journey.js"></script>
+  <script src="js/minigames.js"></script>
+  <script src="js/extras.js"></script>
+  <script src="js/parent.js"></script>
   <script src="js/learn.js"></script>
   <script src="js/math.js"></script>
   <script src="js/english.js"></script>

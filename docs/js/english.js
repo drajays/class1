@@ -205,6 +205,7 @@ const EnglishGame = {
       this.streak++;
       const coins = 10 + (this.streak >= 3 ? 5 : 0);
       Store.addReward(this.playerId, { coins, stars: 1, xp: 15 });
+      Store.trackAnswer(this.playerId, 'english', true);
       Rewards.celebrateCorrect(this.streak);
       Rewards.showToast(`+${coins} coins! Great reading!`);
       setTimeout(() => {
@@ -216,6 +217,8 @@ const EnglishGame = {
     } else {
       this.wrong++;
       this.streak = 0;
+      Store.trackAnswer(this.playerId, 'english', false);
+      Sounds.wrong();
       const container = document.getElementById('eng-explain');
       const hint = q.hint || `The answer is "${q.blank || q.answer || q.word || q.emoji}". Tap 🔊 and try to remember!`;
       container.innerHTML = `
@@ -244,6 +247,8 @@ const EnglishGame = {
     const coins = stars * 15;
     Store.addReward(this.playerId, { coins, xp: 30 });
     Store.completeLevel(this.playerId, 'english', this.level.id, stars);
+    Store.logActivity(this.playerId, `Reading level ${this.level.title} — ${stars} stars`);
+    Pet.onLessonComplete(this.playerId);
     Store.checkBadges(this.playerId);
 
     const area = document.getElementById('english-game');

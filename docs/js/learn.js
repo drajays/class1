@@ -1,3 +1,17 @@
+const SUBJECT_CLS = {
+  maths: 'sub-math',
+  english_grammar: 'sub-eng',
+  evs: 'sub-evs',
+  hindi: 'sub-hindi',
+  sanskrit: 'sub-sanskrit',
+  computer: 'sub-comp',
+  gk: 'sub-gk',
+  art: 'sub-art',
+  values: 'sub-values',
+};
+
+const QUIZ_EMOJIS = ['🤔', '💡', '🎯', '✨', '🧩', '🌟', '📚', '🔍'];
+
 const Learn = {
   catalog: null,
   subjectCache: {},
@@ -29,21 +43,31 @@ const Learn = {
 
   showHome() {
     const grid = document.getElementById('subject-grid');
-    if (!this.catalog?.subjects?.length) {
+    const catalog = this.catalog?.subjects || [];
+    const extras = EXTRA_SUBJECTS.map((s) => ({
+      id: s.id, name: s.name, emoji: s.emoji, chapterCount: 0,
+    }));
+    const all = [...catalog, ...extras];
+    if (!all.length) {
       grid.innerHTML = '<p class="hint">Run build_app_data.py to load chapter notes.</p>';
       return;
     }
-    grid.innerHTML = this.catalog.subjects.map((s) => {
+    grid.innerHTML = all.map((s) => {
       const done = Store.countChapterStars(this.playerId, s.id);
+      const cls = SUBJECT_CLS[s.id] || 'sub-eng';
+      const meta = EXTRA_SUBJECTS.find((e) => e.id === s.id);
+      const metaLine = s.chapterCount
+        ? `${s.chapterCount} chapters · ${done} done`
+        : (meta?.modes?.join(' · ') || 'Quest & games');
       return `
-        <button class="subject-btn" data-id="${s.id}" style="--sub-color:${s.color}">
+        <button class="subject-btn ${cls}" data-id="${s.id}">
           <span class="subject-emoji">${s.emoji}</span>
           <span class="subject-name">${s.name}</span>
-          <span class="subject-meta">${s.chapterCount} chapters · ${done} done</span>
+          <span class="subject-meta">${metaLine}</span>
         </button>`;
     }).join('');
     grid.querySelectorAll('.subject-btn').forEach((btn) => {
-      btn.addEventListener('click', () => this.openSubject(btn.dataset.id));
+      btn.addEventListener('click', () => SubjectHub.open(btn.dataset.id));
     });
   },
 
@@ -137,10 +161,12 @@ const Learn = {
     if (!q) return this.finishQuiz();
 
     const pct = (this.qIndex / qs.length) * 100;
+    const emoji = QUIZ_EMOJIS[this.qIndex % QUIZ_EMOJIS.length];
     quiz.innerHTML = `
       <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
       <p class="quiz-progress">Question ${this.qIndex + 1} of ${qs.length}</p>
       <div class="question-box">
+        <div class="question-emoji">${emoji}</div>
         <p class="question-text">${q.q}</p>
         <div class="options-grid" id="quiz-options">
           ${q.options.map((o) => `<button class="option-btn" data-val="${encodeURIComponent(o)}">${o}</button>`).join('')}
@@ -161,10 +187,13 @@ const Learn = {
     if (ok) {
       btn.classList.add('correct');
       this.correct++;
+      Store.trackAnswer(this.playerId, this.subjectId || 'general', true);
       feedback.innerHTML = `<div class="explain-box success">${CHEERS[Math.floor(Math.random() * CHEERS.length)]}</div>`;
-      Rewards.confetti(12);
+      Rewards.celebrateCorrect(1);
     } else {
       btn.classList.add('wrong');
+      Store.trackAnswer(this.playerId, this.subjectId || 'general', false);
+      Sounds.wrong();
       buttons.forEach((b) => {
         if (decodeURIComponent(b.dataset.val) === q.answer) b.classList.add('correct');
       });
@@ -188,6 +217,8 @@ const Learn = {
     const coins = this.correct * 5 + stars * 10;
     Store.addReward(this.playerId, { coins, stars: stars > 1 ? 1 : 0, xp: this.correct * 8 });
     Store.bumpStreak(this.playerId, ratio >= 0.5);
+    Store.logActivity(this.playerId, `Finished chapter quiz — ${this.correct}/${total} correct`);
+    Pet.onLessonComplete(this.playerId);
     const newBadges = Store.checkBadges(this.playerId);
 
     Rewards.showPopup({

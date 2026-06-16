@@ -110,6 +110,7 @@ const MathGame = {
       const bonus = this.streak >= 3 ? 5 : 0;
       const coins = 10 + bonus;
       Store.addReward(this.playerId, { coins, stars: 1, xp: 15 });
+      Store.trackAnswer(this.playerId, 'math', true);
       const p = Store.getPlayer(this.playerId);
       p.streak = this.streak;
       p.bestStreak = Math.max(p.bestStreak || 0, this.streak);
@@ -130,6 +131,8 @@ const MathGame = {
       });
       this.wrong++;
       this.streak = 0;
+      Store.trackAnswer(this.playerId, 'math', false);
+      Sounds.wrong();
       const p = Store.getPlayer(this.playerId);
       p.streak = 0;
       Store.updatePlayer(this.playerId, p);
@@ -147,6 +150,8 @@ const MathGame = {
     const coins = stars * 15;
     Store.addReward(this.playerId, { coins, xp: 30 });
     Store.completeLevel(this.playerId, 'math', this.level.id, stars);
+    Store.logActivity(this.playerId, `Math level ${this.level.title} — ${stars} stars`);
+    Pet.onLessonComplete(this.playerId);
     const newBadges = Store.checkBadges(this.playerId);
 
     const area = document.getElementById('math-game');
