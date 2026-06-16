@@ -1,0 +1,1339 @@
+[
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "text",
+          "block_content": "2. Read, Say and Do",
+          "block_bbox": [
+            129,
+            42,
+            436,
+            95
+          ],
+          "block_id": 0,
+          "block_order": 1,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              129.0,
+              42.0
+            ],
+            [
+              436.0,
+              42.0
+            ],
+            [
+              436.0,
+              95.0
+            ],
+            [
+              129.0,
+              95.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Make new words with -ed, -ing endings.",
+          "block_bbox": [
+            123,
+            126,
+            676,
+            184
+          ],
+          "block_id": 1,
+          "block_order": 2,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              123.0,
+              126.0
+            ],
+            [
+              675.7100219726562,
+              134.01028442382812
+            ],
+            [
+              675.0,
+              183.0
+            ],
+            [
+              122.28997802734375,
+              174.98971557617188
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Add-ed and -ing to these words to make new words.\n\nExample: Wash /washed /washing",
+          "block_bbox": [
+            120,
+            202,
+            862,
+            260
+          ],
+          "block_id": 2,
+          "block_order": 3,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              120.26162719726562,
+              197.78736877441406
+            ],
+            [
+              861.762939453125,
+              212.47056579589844
+            ],
+            [
+              860.7095947265625,
+              265.66754150390625
+            ],
+            [
+              119.20822143554688,
+              250.9843292236328
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "",
+          "block_bbox": [
+            117,
+            282,
+            599,
+            342
+          ],
+          "block_id": 3,
+          "block_order": 4,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              117.0,
+              290.0
+            ],
+            [
+              117.0,
+              326.0
+            ],
+            [
+              450.0,
+              326.0
+            ],
+            [
+              451.0,
+              334.0
+            ],
+            [
+              558.0,
+              341.0
+            ],
+            [
+              593.0,
+              341.0
+            ],
+            [
+              598.0,
+              334.0
+            ],
+            [
+              598.0,
+              297.0
+            ],
+            [
+              296.0,
+              290.0
+            ],
+            [
+              295.0,
+              282.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Wash want wish talk pick",
+          "block_bbox": [
+            112,
+            364,
+            575,
+            421
+          ],
+          "block_id": 4,
+          "block_order": 5,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              112.08306884765625,
+              360.3551940917969
+            ],
+            [
+              575.118896484375,
+              370.9087219238281
+            ],
+            [
+              573.9423828125,
+              422.5286560058594
+            ],
+            [
+              110.90655517578125,
+              411.9751281738281
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Guided Writing using a Map.",
+          "block_bbox": [
+            106,
+            445,
+            537,
+            501
+          ],
+          "block_id": 5,
+          "block_order": 6,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              106.0,
+              445.0
+            ],
+            [
+              535.9999389648438,
+              445.0
+            ],
+            [
+              535.9999389648438,
+              492.0
+            ],
+            [
+              106.0,
+              492.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_697_261_1032_488.jpg\" alt=\"Image\" width=\"28%\" /></div>\n",
+          "block_bbox": [
+            697,
+            261,
+            1032,
+            488
+          ],
+          "block_id": 6,
+          "group_id": 6,
+          "block_polygon_points": [
+            [
+              697.0,
+              261.0
+            ],
+            [
+              1032.0,
+              261.0
+            ],
+            [
+              1032.0,
+              488.0
+            ],
+            [
+              697.0,
+              488.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Look at the map given on the next page.",
+          "block_bbox": [
+            103,
+            529,
+            672,
+            584
+          ],
+          "block_id": 7,
+          "block_order": 7,
+          "group_id": 7,
+          "block_polygon_points": [
+            [
+              103.0,
+              529.0
+            ],
+            [
+              672.0,
+              529.0
+            ],
+            [
+              672.0,
+              584.0
+            ],
+            [
+              103.0,
+              584.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Choose one word from the brackets and fill in the blanks.",
+          "block_bbox": [
+            101,
+            614,
+            935,
+            661
+          ],
+          "block_id": 8,
+          "block_order": 8,
+          "group_id": 8,
+          "block_polygon_points": [
+            [
+              101.0,
+              613.9999389648438
+            ],
+            [
+              933.9998779296875,
+              613.9999389648438
+            ],
+            [
+              933.9998779296875,
+              652.9999389648438
+            ],
+            [
+              101.0,
+              652.9999389648438
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Pirate Treasure",
+          "block_bbox": [
+            98,
+            692,
+            365,
+            741
+          ],
+          "block_id": 9,
+          "block_order": 9,
+          "group_id": 9,
+          "block_polygon_points": [
+            [
+              98.0,
+              692.0
+            ],
+            [
+              365.0,
+              692.0
+            ],
+            [
+              365.0,
+              741.0
+            ],
+            [
+              98.0,
+              741.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Blackeye, the ___(tailor/pirate) has",
+          "block_bbox": [
+            96,
+            776,
+            935,
+            827
+          ],
+          "block_id": 10,
+          "block_order": 10,
+          "group_id": 10,
+          "block_polygon_points": [
+            [
+              96.0,
+              776.0
+            ],
+            [
+              935.0,
+              776.0
+            ],
+            [
+              935.0,
+              827.0
+            ],
+            [
+              96.0,
+              827.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "hidden some ___ (wood/gold) on the Islands of Doom.",
+          "block_bbox": [
+            89,
+            856,
+            1017,
+            993
+          ],
+          "block_id": 11,
+          "block_order": 11,
+          "group_id": 11,
+          "block_polygon_points": [
+            [
+              89.0,
+              856.0
+            ],
+            [
+              1017.0,
+              856.0
+            ],
+            [
+              1017.0,
+              993.0
+            ],
+            [
+              89.0,
+              993.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "The Islands of Doom have _____ (seven/eight) coconut trees.",
+          "block_bbox": [
+            80,
+            1027,
+            969,
+            1170
+          ],
+          "block_id": 12,
+          "block_order": 12,
+          "group_id": 12,
+          "block_polygon_points": [
+            [
+              80.0,
+              1027.0
+            ],
+            [
+              969.0,
+              1027.0
+            ],
+            [
+              969.0,
+              1170.0
+            ],
+            [
+              80.0,
+              1170.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "There are many _____ (monkeys/ goats) living _____ (in/under) the trees.",
+          "block_bbox": [
+            75,
+            1197,
+            974,
+            1341
+          ],
+          "block_id": 13,
+          "block_order": 13,
+          "group_id": 13,
+          "block_polygon_points": [
+            [
+              75.0,
+              1197.0
+            ],
+            [
+              974.0,
+              1197.0
+            ],
+            [
+              974.0,
+              1341.0
+            ],
+            [
+              75.0,
+              1341.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Nearby there is a _____ (small/ large)",
+          "block_bbox": [
+            73,
+            1367,
+            971,
+            1423
+          ],
+          "block_id": 14,
+          "block_order": 14,
+          "group_id": 14,
+          "block_polygon_points": [
+            [
+              73.0,
+              1367.0
+            ],
+            [
+              971.0,
+              1367.0
+            ],
+            [
+              971.0,
+              1423.0
+            ],
+            [
+              73.0,
+              1423.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "mountain.",
+          "block_bbox": [
+            70,
+            1464,
+            234,
+            1507
+          ],
+          "block_id": 15,
+          "block_order": 15,
+          "group_id": 15,
+          "block_polygon_points": [
+            [
+              70.0,
+              1464.0
+            ],
+            [
+              234.0,
+              1464.0
+            ],
+            [
+              234.0,
+              1507.0
+            ],
+            [
+              70.0,
+              1507.0
+            ]
+          ]
+        },
+        {
+          "block_label": "number",
+          "block_content": "19",
+          "block_bbox": [
+            554,
+            1527,
+            603,
+            1562
+          ],
+          "block_id": 16,
+          "group_id": 16,
+          "block_polygon_points": [
+            [
+              554.0,
+              1527.0
+            ],
+            [
+              603.0,
+              1527.0
+            ],
+            [
+              603.0,
+              1562.0
+            ],
+            [
+              554.0,
+              1562.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "Scanned with OKEN Scanner",
+          "block_bbox": [
+            796,
+            1627,
+            1171,
+            1662
+          ],
+          "block_id": 17,
+          "group_id": 17,
+          "block_polygon_points": [
+            [
+              796.0,
+              1627.0
+            ],
+            [
+              1171.0,
+              1627.0
+            ],
+            [
+              1171.0,
+              1662.0
+            ],
+            [
+              796.0,
+              1662.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7198789715766907,
+            "coordinate": [
+              129,
+              42,
+              436,
+              95
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                129.0,
+                42.0
+              ],
+              [
+                436.0,
+                42.0
+              ],
+              [
+                436.0,
+                95.0
+              ],
+              [
+                129.0,
+                95.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.8429868221282959,
+            "coordinate": [
+              123,
+              126,
+              676,
+              184
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                123.0,
+                126.0
+              ],
+              [
+                675.7100219726562,
+                134.01028442382812
+              ],
+              [
+                675.0,
+                183.0
+              ],
+              [
+                122.28997802734375,
+                174.98971557617188
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.8557692766189575,
+            "coordinate": [
+              120,
+              202,
+              862,
+              260
+            ],
+            "order": 3,
+            "polygon_points": [
+              [
+                120.26162719726562,
+                197.78736877441406
+              ],
+              [
+                861.762939453125,
+                212.47056579589844
+              ],
+              [
+                860.7095947265625,
+                265.66754150390625
+              ],
+              [
+                119.20822143554688,
+                250.9843292236328
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.8240333199501038,
+            "coordinate": [
+              117,
+              282,
+              599,
+              342
+            ],
+            "order": 4,
+            "polygon_points": [
+              [
+                117.0,
+                290.0
+              ],
+              [
+                117.0,
+                326.0
+              ],
+              [
+                450.0,
+                326.0
+              ],
+              [
+                451.0,
+                334.0
+              ],
+              [
+                558.0,
+                341.0
+              ],
+              [
+                593.0,
+                341.0
+              ],
+              [
+                598.0,
+                334.0
+              ],
+              [
+                598.0,
+                297.0
+              ],
+              [
+                296.0,
+                290.0
+              ],
+              [
+                295.0,
+                282.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7764894366264343,
+            "coordinate": [
+              112,
+              364,
+              575,
+              421
+            ],
+            "order": 5,
+            "polygon_points": [
+              [
+                112.08306884765625,
+                360.3551940917969
+              ],
+              [
+                575.118896484375,
+                370.9087219238281
+              ],
+              [
+                573.9423828125,
+                422.5286560058594
+              ],
+              [
+                110.90655517578125,
+                411.9751281738281
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7812555432319641,
+            "coordinate": [
+              106,
+              445,
+              537,
+              501
+            ],
+            "order": 6,
+            "polygon_points": [
+              [
+                106.0,
+                445.0
+              ],
+              [
+                535.9999389648438,
+                445.0
+              ],
+              [
+                535.9999389648438,
+                492.0
+              ],
+              [
+                106.0,
+                492.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.9091553092002869,
+            "coordinate": [
+              697,
+              261,
+              1032,
+              488
+            ],
+            "polygon_points": [
+              [
+                697.0,
+                261.0
+              ],
+              [
+                1032.0,
+                261.0
+              ],
+              [
+                1032.0,
+                488.0
+              ],
+              [
+                697.0,
+                488.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.8329458236694336,
+            "coordinate": [
+              103,
+              529,
+              672,
+              584
+            ],
+            "order": 7,
+            "polygon_points": [
+              [
+                103.0,
+                529.0
+              ],
+              [
+                672.0,
+                529.0
+              ],
+              [
+                672.0,
+                584.0
+              ],
+              [
+                103.0,
+                584.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.8286205530166626,
+            "coordinate": [
+              101,
+              614,
+              935,
+              661
+            ],
+            "order": 8,
+            "polygon_points": [
+              [
+                101.0,
+                613.9999389648438
+              ],
+              [
+                933.9998779296875,
+                613.9999389648438
+              ],
+              [
+                933.9998779296875,
+                652.9999389648438
+              ],
+              [
+                101.0,
+                652.9999389648438
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7282752990722656,
+            "coordinate": [
+              98,
+              692,
+              365,
+              741
+            ],
+            "order": 9,
+            "polygon_points": [
+              [
+                98.0,
+                692.0
+              ],
+              [
+                365.0,
+                692.0
+              ],
+              [
+                365.0,
+                741.0
+              ],
+              [
+                98.0,
+                741.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.541311502456665,
+            "coordinate": [
+              96,
+              776,
+              935,
+              827
+            ],
+            "order": 10,
+            "polygon_points": [
+              [
+                96.0,
+                776.0
+              ],
+              [
+                935.0,
+                776.0
+              ],
+              [
+                935.0,
+                827.0
+              ],
+              [
+                96.0,
+                827.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.34289613366127014,
+            "coordinate": [
+              90,
+              858,
+              1018,
+              910
+            ],
+            "order": 11,
+            "polygon_points": [
+              [
+                90.0,
+                858.0
+              ],
+              [
+                1018.0,
+                858.0
+              ],
+              [
+                1018.0,
+                910.0
+              ],
+              [
+                90.0,
+                910.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3745053708553314,
+            "coordinate": [
+              89,
+              856,
+              1017,
+              993
+            ],
+            "order": 12,
+            "polygon_points": [
+              [
+                89.0,
+                856.0
+              ],
+              [
+                1017.0,
+                856.0
+              ],
+              [
+                1017.0,
+                993.0
+              ],
+              [
+                89.0,
+                993.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3680739104747772,
+            "coordinate": [
+              88,
+              946,
+              242,
+              993
+            ],
+            "order": 13,
+            "polygon_points": [
+              [
+                88.0,
+                946.0
+              ],
+              [
+                242.0,
+                946.0
+              ],
+              [
+                242.0,
+                993.0
+              ],
+              [
+                88.0,
+                993.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7560785412788391,
+            "coordinate": [
+              80,
+              1027,
+              969,
+              1170
+            ],
+            "order": 14,
+            "polygon_points": [
+              [
+                80.0,
+                1027.0
+              ],
+              [
+                969.0,
+                1027.0
+              ],
+              [
+                969.0,
+                1170.0
+              ],
+              [
+                80.0,
+                1170.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.5678229928016663,
+            "coordinate": [
+              80,
+              1196,
+              975,
+              1251
+            ],
+            "order": 15,
+            "polygon_points": [
+              [
+                80.0,
+                1196.0
+              ],
+              [
+                975.0,
+                1196.0
+              ],
+              [
+                975.0,
+                1251.0
+              ],
+              [
+                80.0,
+                1251.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.30373039841651917,
+            "coordinate": [
+              75,
+              1197,
+              974,
+              1341
+            ],
+            "order": 16,
+            "polygon_points": [
+              [
+                75.0,
+                1197.0
+              ],
+              [
+                974.0,
+                1197.0
+              ],
+              [
+                974.0,
+                1341.0
+              ],
+              [
+                75.0,
+                1341.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.5428712368011475,
+            "coordinate": [
+              76,
+              1282,
+              787,
+              1338
+            ],
+            "order": 17,
+            "polygon_points": [
+              [
+                76.0,
+                1290.0
+              ],
+              [
+                76.0,
+                1337.0
+              ],
+              [
+                595.0,
+                1337.0
+              ],
+              [
+                757.0,
+                1337.0
+              ],
+              [
+                786.0,
+                1329.0
+              ],
+              [
+                786.0,
+                1282.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.8056491017341614,
+            "coordinate": [
+              73,
+              1367,
+              971,
+              1423
+            ],
+            "order": 18,
+            "polygon_points": [
+              [
+                73.0,
+                1367.0
+              ],
+              [
+                971.0,
+                1367.0
+              ],
+              [
+                971.0,
+                1423.0
+              ],
+              [
+                73.0,
+                1423.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.6172173023223877,
+            "coordinate": [
+              70,
+              1464,
+              234,
+              1507
+            ],
+            "order": 19,
+            "polygon_points": [
+              [
+                70.0,
+                1464.0
+              ],
+              [
+                234.0,
+                1464.0
+              ],
+              [
+                234.0,
+                1507.0
+              ],
+              [
+                70.0,
+                1507.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 16,
+            "label": "number",
+            "score": 0.8110687732696533,
+            "coordinate": [
+              554,
+              1527,
+              603,
+              1562
+            ],
+            "order": 20,
+            "polygon_points": [
+              [
+                554.0,
+                1527.0
+              ],
+              [
+                603.0,
+                1527.0
+              ],
+              [
+                603.0,
+                1562.0
+              ],
+              [
+                554.0,
+                1562.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 9,
+            "label": "footer_image",
+            "score": 0.33217233419418335,
+            "coordinate": [
+              798,
+              1626,
+              842,
+              1663
+            ],
+            "polygon_points": [
+              [
+                798.0,
+                1626.0
+              ],
+              [
+                841.0,
+                1626.0
+              ],
+              [
+                841.0,
+                1655.0
+              ],
+              [
+                798.0,
+                1655.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.7903540134429932,
+            "coordinate": [
+              796,
+              1627,
+              1171,
+              1662
+            ],
+            "polygon_points": [
+              [
+                796.0,
+                1627.0
+              ],
+              [
+                1171.0,
+                1627.0
+              ],
+              [
+                1171.0,
+                1662.0
+              ],
+              [
+                796.0,
+                1662.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "2. Read, Say and Do\n\nMake new words with -ed, -ing endings.\n\nAdd-ed and -ing to these words to make new words.\n\nExample: Wash /washed /washing\n\n\n\nWash want wish talk pick\n\nGuided Writing using a Map.\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_697_261_1032_488.jpg\" alt=\"Image\" width=\"28%\" /></div>\n\n\nLook at the map given on the next page.\n\nChoose one word from the brackets and fill in the blanks.\n\nPirate Treasure\n\nBlackeye, the ___(tailor/pirate) has\n\nhidden some ___ (wood/gold) on the Islands of Doom.\n\nThe Islands of Doom have _____ (seven/eight) coconut trees.\n\nThere are many _____ (monkeys/ goats) living _____ (in/under) the trees.\n\nNearby there is a _____ (small/ large)\n\nmountain.",
+      "images": {
+        "imgs/img_in_image_box_697_261_1032_488.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e88d8a46-556f-4c0e-a49e-98a2cf1dd5f1/markdown_3/imgs/img_in_image_box_697_261_1032_488.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A43Z%2F-1%2F%2F172f9408a9ef5f41d9ab87efb74d28af761ca589a68e3e33061872c2796daefa"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e88d8a46-556f-4c0e-a49e-98a2cf1dd5f1/layout_det_res_3.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A43Z%2F-1%2F%2Ff0ca43023f213647360bb6ebbe494ab7e6245cd9f0e11a7dd5e03b2b4e014b3a"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e88d8a46-556f-4c0e-a49e-98a2cf1dd5f1/input_img_3.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A43Z%2F-1%2F%2F721a29f58b0cef6f5c2e551c8edb2332e038f165be931497899a4961d6dc06f0"
+  }
+]

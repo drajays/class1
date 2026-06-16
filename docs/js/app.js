@@ -1,0 +1,154 @@
+const App = {
+  playerId: null,
+
+  init() {
+    this.renderHeroes();
+    document.getElementById('btn-switch-hero').addEventListener('click', () => this.go('login'));
+    document.querySelectorAll('[data-back]').forEach((btn) => {
+      btn.addEventListener('click', () => this.go(btn.dataset.back));
+    });
+    document.querySelectorAll('.world-btn').forEach((btn) => {
+      btn.addEventListener('click', () => this.go(btn.dataset.go));
+    });
+
+    const saved = localStorage.getItem('class1_last_hero');
+    if (saved && HEROES.find((h) => h.id === saved)) {
+      this.selectHero(saved);
+    }
+  },
+
+  renderHeroes() {
+    const grid = document.getElementById('hero-grid');
+    grid.innerHTML = HEROES.map((h) => `
+      <button class="hero-btn" data-id="${h.id}">
+        <span class="avatar">${h.avatar}</span>
+        <span class="name">${h.name}</span>
+        <span class="tag">Tap to play!</span>
+      </button>
+    `).join('');
+    grid.querySelectorAll('.hero-btn').forEach((btn) => {
+      btn.addEventListener('click', () => this.selectHero(btn.dataset.id));
+    });
+  },
+
+  selectHero(id) {
+    this.playerId = id;
+    localStorage.setItem('class1_last_hero', id);
+    Store.getPlayer(id);
+    this.go('home');
+    this.refreshStats();
+    const hero = HEROES.find((h) => h.id === id);
+    const msgs = [
+      `Hi ${hero.name}! Ready for Math Mountain?`,
+      `Hey ${hero.name}! Let's practice reading today!`,
+      `${hero.name}, you can earn coins and stars!`,
+      `Go ${hero.name}! Pick a world to explore!`,
+    ];
+    document.getElementById('welcome-msg').textContent =
+      msgs[Math.floor(Math.random() * msgs.length)];
+  },
+
+  go(screen) {
+    document.querySelectorAll('.screen').forEach((s) => s.classList.remove('active'));
+    const map = {
+      login: 'screen-login',
+      home: 'screen-home',
+      math: 'screen-math',
+      english: 'screen-english',
+      trophy: 'screen-trophy',
+    };
+    document.getElementById(map[screen]).classList.add('active');
+
+    if (screen === 'math') this.showMathLevels();
+    if (screen === 'english') this.showEnglishLevels();
+    if (screen === 'trophy') this.showTrophyRoom();
+    if (screen === 'home') this.refreshStats();
+  },
+
+  refreshStats() {
+    if (!this.playerId) return;
+    const p = Store.getPlayer(this.playerId);
+    const hero = HEROES.find((h) => h.id === this.playerId);
+    document.getElementById('player-chip').textContent = `${hero.avatar} ${hero.name}`;
+    document.getElementById('stat-coins').textContent = `🪙 ${p.coins}`;
+    document.getElementById('stat-stars').textContent = `⭐ ${p.stars}`;
+    document.getElementById('stat-streak').textContent = `🔥 ${p.streak || 0}`;
+    document.getElementById('stat-level').textContent = `Lv ${p.level}`;
+    document.getElementById('math-progress').textContent =
+      'Progress: ' + Store.countCompletedLevels(this.playerId, 'math', MATH_LEVELS.length);
+    document.getElementById('english-progress').textContent =
+      'Progress: ' + Store.countCompletedLevels(this.playerId, 'english', ENGLISH_LEVELS.length);
+  },
+
+  showMathLevels() {
+    document.getElementById('math-game').classList.add('hidden');
+    document.getElementById('math-level-picker').classList.remove('hidden');
+    const picker = document.getElementById('math-level-picker');
+    picker.innerHTML = MATH_LEVELS.map((lvl, i) => {
+      const stars = Store.getLevelStars(this.playerId, 'math', lvl.id);
+      const locked = i > 0 && !Store.getLevelStars(this.playerId, 'math', MATH_LEVELS[i - 1].id);
+      return `
+        <button class="level-card ${locked ? 'locked' : ''} ${stars ? 'done' : ''}" data-id="${lvl.id}">
+          <span class="level-emoji">${lvl.emoji}</span>
+          <div class="level-info">
+            <h3>${lvl.title}</h3>
+            <p>${lvl.desc}</p>
+          </div>
+          <span class="level-stars">${stars ? '⭐'.repeat(stars) : locked ? '🔒' : '▶️'}</span>
+        </button>`;
+    }).join('');
+    picker.querySelectorAll('.level-card:not(.locked)').forEach((card) => {
+      card.addEventListener('click', () => MathGame.start(card.dataset.id, this.playerId));
+    });
+  },
+
+  showEnglishLevels() {
+    document.getElementById('english-game').classList.add('hidden');
+    document.getElementById('english-level-picker').classList.remove('hidden');
+    const picker = document.getElementById('english-level-picker');
+    picker.innerHTML = ENGLISH_LEVELS.map((lvl, i) => {
+      const stars = Store.getLevelStars(this.playerId, 'english', lvl.id);
+      const locked = i > 0 && !Store.getLevelStars(this.playerId, 'english', ENGLISH_LEVELS[i - 1].id);
+      return `
+        <button class="level-card ${locked ? 'locked' : ''} ${stars ? 'done' : ''}" data-id="${lvl.id}">
+          <span class="level-emoji">${lvl.emoji}</span>
+          <div class="level-info">
+            <h3>${lvl.title}</h3>
+            <p>${lvl.desc}</p>
+          </div>
+          <span class="level-stars">${stars ? '⭐'.repeat(stars) : locked ? '🔒' : '▶️'}</span>
+        </button>`;
+    }).join('');
+    picker.querySelectorAll('.level-card:not(.locked)').forEach((card) => {
+      card.addEventListener('click', () => EnglishGame.start(card.dataset.id, this.playerId));
+    });
+  },
+
+  showTrophyRoom() {
+    const p = Store.getPlayer(this.playerId);
+    const room = document.getElementById('trophy-room');
+    const badges = BADGES.map((b) => {
+      const has = (p.badges || []).includes(b.id);
+      return `
+        <div class="badge-card ${has ? '' : 'locked'}">
+          <div class="badge-emoji">${b.emoji}</div>
+          <div class="badge-name">${b.name}</div>
+        </div>`;
+    }).join('');
+    const stickers = '🌟🦁🦄🎈🏆🍎📚🔥💎🦋'.split('').map((s, i) => {
+      const unlocked = p.stars >= (i + 1) * 2;
+      return `
+        <div class="sticker-card" style="opacity:${unlocked ? 1 : 0.3}">
+          <div style="font-size:36px">${s}</div>
+        </div>`;
+    }).join('');
+    room.innerHTML = `
+      <h3 style="grid-column:1/-1;margin-bottom:8px">🏅 Badges</h3>${badges}
+      <h3 style="grid-column:1/-1;margin:16px 0 8px">✨ Stickers (unlock with stars)</h3>${stickers}
+      <div style="grid-column:1/-1;text-align:center;margin-top:16px;padding:16px;background:#fff;border-radius:20px">
+        <p style="font-size:1.2rem;font-weight:700">${HEROES.find((h) => h.id === this.playerId).avatar} Total: ${p.coins} coins · ${p.stars} stars · Level ${p.level}</p>
+      </div>`;
+  },
+};
+
+document.addEventListener('DOMContentLoaded', () => App.init());

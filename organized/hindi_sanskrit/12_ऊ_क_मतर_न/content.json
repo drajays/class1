@@ -1,0 +1,7025 @@
+[
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "paragraph_title",
+          "block_content": "## 4. मिलान करो-",
+          "block_bbox": [
+            101,
+            68,
+            372,
+            118
+          ],
+          "block_id": 0,
+          "block_order": 1,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              101.0,
+              68.0
+            ],
+            [
+              372.0,
+              68.0
+            ],
+            [
+              372.0,
+              118.0
+            ],
+            [
+              101.0,
+              118.0
+            ]
+          ]
+        },
+        {
+          "block_label": "table",
+          "block_content": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>तोता</td><td style='text-align: center; word-wrap: break-word;'>सुनहरा</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>हिरन</td><td style='text-align: center; word-wrap: break-word;'>हरा</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>बंदर</td><td style='text-align: center; word-wrap: break-word;'>सफेद</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>खरगोश</td><td style='text-align: center; word-wrap: break-word;'>भूरा</td></tr></table>",
+          "block_bbox": [
+            266,
+            135,
+            877,
+            432
+          ],
+          "block_id": 1,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              266.0,
+              135.0
+            ],
+            [
+              877.0,
+              135.0
+            ],
+            [
+              877.0,
+              432.0
+            ],
+            [
+              266.0,
+              432.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_27_467_254_692.jpg\" alt=\"Image\" width=\"19%\" /></div>\n",
+          "block_bbox": [
+            27,
+            467,
+            254,
+            692
+          ],
+          "block_id": 2,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              27.0,
+              467.0
+            ],
+            [
+              254.0,
+              467.0
+            ],
+            [
+              254.0,
+              692.0
+            ],
+            [
+              27.0,
+              692.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "सही चित्र पर 😊 का स्टीकर व गलत चिट्र पर\n\nका स्टीकर चिपकाओ—",
+          "block_bbox": [
+            281,
+            483,
+            1028,
+            604
+          ],
+          "block_id": 3,
+          "block_order": 2,
+          "group_id": 3,
+          "block_polygon_points": [
+            [
+              281.0,
+              483.0
+            ],
+            [
+              1028.0,
+              483.0
+            ],
+            [
+              1028.0,
+              604.0
+            ],
+            [
+              281.0,
+              604.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_70_682_557_974.jpg\" alt=\"Image\" width=\"40%\" /></div>\n",
+          "block_bbox": [
+            70,
+            682,
+            557,
+            974
+          ],
+          "block_id": 4,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              70.0,
+              682.0
+            ],
+            [
+              557.0,
+              682.0
+            ],
+            [
+              557.0,
+              974.0
+            ],
+            [
+              70.0,
+              974.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1000_560_1082_641.jpg\" alt=\"Image\" width=\"6%\" /></div>\n",
+          "block_bbox": [
+            1000,
+            560,
+            1082,
+            641
+          ],
+          "block_id": 5,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              1000.0,
+              560.0
+            ],
+            [
+              1082.0,
+              560.0
+            ],
+            [
+              1082.0,
+              641.0
+            ],
+            [
+              1000.0,
+              641.0
+            ]
+          ]
+        },
+        {
+          "block_label": "vision_footnote",
+          "block_content": "Let's Smile",
+          "block_bbox": [
+            1001,
+            647,
+            1074,
+            665
+          ],
+          "block_id": 6,
+          "group_id": 6,
+          "block_polygon_points": [
+            [
+              1001.0,
+              647.0
+            ],
+            [
+              1073.0,
+              647.0
+            ],
+            [
+              1073.0,
+              664.0
+            ],
+            [
+              1001.0,
+              664.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_599_652_1075_977.jpg\" alt=\"Image\" width=\"40%\" /></div>\n",
+          "block_bbox": [
+            599,
+            652,
+            1075,
+            977
+          ],
+          "block_id": 7,
+          "group_id": 7,
+          "block_polygon_points": [
+            [
+              599.0,
+              652.0
+            ],
+            [
+              1075.0,
+              652.0
+            ],
+            [
+              1075.0,
+              977.0
+            ],
+            [
+              599.0,
+              977.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_42_994_544_1350.jpg\" alt=\"Image\" width=\"42%\" /></div>\n",
+          "block_bbox": [
+            42,
+            994,
+            544,
+            1350
+          ],
+          "block_id": 8,
+          "group_id": 8,
+          "block_polygon_points": [
+            [
+              42.0,
+              994.0
+            ],
+            [
+              544.0,
+              994.0
+            ],
+            [
+              544.0,
+              1350.0
+            ],
+            [
+              42.0,
+              1350.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_570_987_1068_1348.jpg\" alt=\"Image\" width=\"41%\" /></div>\n",
+          "block_bbox": [
+            570,
+            987,
+            1068,
+            1348
+          ],
+          "block_id": 9,
+          "group_id": 9,
+          "block_polygon_points": [
+            [
+              570.0,
+              987.0
+            ],
+            [
+              1068.0,
+              987.0
+            ],
+            [
+              1068.0,
+              1348.0
+            ],
+            [
+              570.0,
+              1348.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "क्रियाकलाप— अध्यापक/अध्यापिका समय-समय पर छात्रों से विद्यालय के कर्मचारियों के विषय में बातचीत करें कि वे उनसे कैसा व्यवहार करते हैं।",
+          "block_bbox": [
+            29,
+            1376,
+            1083,
+            1459
+          ],
+          "block_id": 10,
+          "group_id": 10,
+          "block_polygon_points": [
+            [
+              29.0,
+              1376.0
+            ],
+            [
+              1083.0,
+              1376.0
+            ],
+            [
+              1083.0,
+              1459.0
+            ],
+            [
+              29.0,
+              1459.0
+            ]
+          ]
+        },
+        {
+          "block_label": "number",
+          "block_content": "103",
+          "block_bbox": [
+            1046,
+            1484,
+            1103,
+            1523
+          ],
+          "block_id": 11,
+          "group_id": 11,
+          "block_polygon_points": [
+            [
+              1046.0,
+              1484.0
+            ],
+            [
+              1103.0,
+              1484.0
+            ],
+            [
+              1103.0,
+              1523.0
+            ],
+            [
+              1046.0,
+              1523.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "Scanned with OKEN Scanner",
+          "block_bbox": [
+            797,
+            1627,
+            1172,
+            1662
+          ],
+          "block_id": 12,
+          "group_id": 12,
+          "block_polygon_points": [
+            [
+              797.0,
+              1627.0
+            ],
+            [
+              1172.0,
+              1627.0
+            ],
+            [
+              1172.0,
+              1662.0
+            ],
+            [
+              797.0,
+              1662.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 17,
+            "label": "paragraph_title",
+            "score": 0.6897691488265991,
+            "coordinate": [
+              101,
+              68,
+              372,
+              118
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                101.0,
+                68.0
+              ],
+              [
+                372.0,
+                68.0
+              ],
+              [
+                372.0,
+                118.0
+              ],
+              [
+                101.0,
+                118.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.34008339047431946,
+            "coordinate": [
+              298,
+              139,
+              375,
+              191
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                298.0,
+                139.0
+              ],
+              [
+                375.0,
+                139.0
+              ],
+              [
+                375.0,
+                191.0
+              ],
+              [
+                298.0,
+                191.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 21,
+            "label": "table",
+            "score": 0.3630096912384033,
+            "coordinate": [
+              266,
+              135,
+              877,
+              432
+            ],
+            "polygon_points": [
+              [
+                266.0,
+                135.0
+              ],
+              [
+                877.0,
+                135.0
+              ],
+              [
+                877.0,
+                432.0
+              ],
+              [
+                266.0,
+                432.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3623619079589844,
+            "coordinate": [
+              293,
+              217,
+              378,
+              267
+            ],
+            "order": 3,
+            "polygon_points": [
+              [
+                293.0,
+                217.0
+              ],
+              [
+                378.0,
+                217.0
+              ],
+              [
+                378.0,
+                267.0
+              ],
+              [
+                293.0,
+                267.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.35668450593948364,
+            "coordinate": [
+              752,
+              154,
+              856,
+              202
+            ],
+            "order": 4,
+            "polygon_points": [
+              [
+                752.0,
+                154.0
+              ],
+              [
+                856.0,
+                154.0
+              ],
+              [
+                856.0,
+                202.0
+              ],
+              [
+                752.0,
+                202.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3232417702674866,
+            "coordinate": [
+              289,
+              293,
+              367,
+              344
+            ],
+            "order": 5,
+            "polygon_points": [
+              [
+                289.0,
+                293.0
+              ],
+              [
+                367.0,
+                293.0
+              ],
+              [
+                367.0,
+                344.0
+              ],
+              [
+                289.0,
+                344.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3252049386501312,
+            "coordinate": [
+              750,
+              229,
+              813,
+              270
+            ],
+            "order": 6,
+            "polygon_points": [
+              [
+                750.0,
+                229.0
+              ],
+              [
+                813.0,
+                229.0
+              ],
+              [
+                813.0,
+                270.0
+              ],
+              [
+                750.0,
+                270.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.36009493470191956,
+            "coordinate": [
+              287,
+              372,
+              407,
+              425
+            ],
+            "order": 7,
+            "polygon_points": [
+              [
+                287.0,
+                372.0
+              ],
+              [
+                407.0,
+                372.0
+              ],
+              [
+                407.0,
+                425.0
+              ],
+              [
+                287.0,
+                425.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.32378438115119934,
+            "coordinate": [
+              749,
+              295,
+              842,
+              348
+            ],
+            "order": 8,
+            "polygon_points": [
+              [
+                749.0,
+                295.0
+              ],
+              [
+                842.0,
+                295.0
+              ],
+              [
+                842.0,
+                348.0
+              ],
+              [
+                749.0,
+                348.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.47565048933029175,
+            "coordinate": [
+              27,
+              467,
+              254,
+              692
+            ],
+            "polygon_points": [
+              [
+                27.0,
+                467.0
+              ],
+              [
+                254.0,
+                467.0
+              ],
+              [
+                254.0,
+                692.0
+              ],
+              [
+                27.0,
+                692.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.5219899415969849,
+            "coordinate": [
+              281,
+              483,
+              1028,
+              604
+            ],
+            "order": 9,
+            "polygon_points": [
+              [
+                281.0,
+                483.0
+              ],
+              [
+                1028.0,
+                483.0
+              ],
+              [
+                1028.0,
+                604.0
+              ],
+              [
+                281.0,
+                604.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.8973859548568726,
+            "coordinate": [
+              70,
+              682,
+              557,
+              974
+            ],
+            "polygon_points": [
+              [
+                70.0,
+                682.0
+              ],
+              [
+                557.0,
+                682.0
+              ],
+              [
+                557.0,
+                974.0
+              ],
+              [
+                70.0,
+                974.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.8418811559677124,
+            "coordinate": [
+              1000,
+              560,
+              1082,
+              641
+            ],
+            "polygon_points": [
+              [
+                1000.0,
+                560.0
+              ],
+              [
+                1082.0,
+                560.0
+              ],
+              [
+                1082.0,
+                641.0
+              ],
+              [
+                1000.0,
+                641.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 24,
+            "label": "vision_footnote",
+            "score": 0.7269867062568665,
+            "coordinate": [
+              1001,
+              647,
+              1074,
+              665
+            ],
+            "polygon_points": [
+              [
+                1001.0,
+                647.0
+              ],
+              [
+                1073.0,
+                647.0
+              ],
+              [
+                1073.0,
+                664.0
+              ],
+              [
+                1001.0,
+                664.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.8967947959899902,
+            "coordinate": [
+              599,
+              652,
+              1075,
+              977
+            ],
+            "polygon_points": [
+              [
+                599.0,
+                652.0
+              ],
+              [
+                1075.0,
+                652.0
+              ],
+              [
+                1075.0,
+                977.0
+              ],
+              [
+                599.0,
+                977.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.9239645004272461,
+            "coordinate": [
+              42,
+              994,
+              544,
+              1350
+            ],
+            "polygon_points": [
+              [
+                42.0,
+                994.0
+              ],
+              [
+                544.0,
+                994.0
+              ],
+              [
+                544.0,
+                1350.0
+              ],
+              [
+                42.0,
+                1350.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.9122522473335266,
+            "coordinate": [
+              570,
+              987,
+              1068,
+              1348
+            ],
+            "polygon_points": [
+              [
+                570.0,
+                987.0
+              ],
+              [
+                1068.0,
+                987.0
+              ],
+              [
+                1068.0,
+                1348.0
+              ],
+              [
+                570.0,
+                1348.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.5908058285713196,
+            "coordinate": [
+              29,
+              1376,
+              1083,
+              1459
+            ],
+            "polygon_points": [
+              [
+                29.0,
+                1376.0
+              ],
+              [
+                1083.0,
+                1376.0
+              ],
+              [
+                1083.0,
+                1459.0
+              ],
+              [
+                29.0,
+                1459.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 16,
+            "label": "number",
+            "score": 0.5861456990242004,
+            "coordinate": [
+              1046,
+              1484,
+              1103,
+              1523
+            ],
+            "order": 10,
+            "polygon_points": [
+              [
+                1046.0,
+                1484.0
+              ],
+              [
+                1103.0,
+                1484.0
+              ],
+              [
+                1103.0,
+                1523.0
+              ],
+              [
+                1046.0,
+                1523.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.846195638179779,
+            "coordinate": [
+              797,
+              1627,
+              1172,
+              1662
+            ],
+            "polygon_points": [
+              [
+                797.0,
+                1627.0
+              ],
+              [
+                1172.0,
+                1627.0
+              ],
+              [
+                1172.0,
+                1662.0
+              ],
+              [
+                797.0,
+                1662.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "## 4. मिलान करो-\n\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>तोता</td><td style='text-align: center; word-wrap: break-word;'>सुनहरा</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>हिरन</td><td style='text-align: center; word-wrap: break-word;'>हरा</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>बंदर</td><td style='text-align: center; word-wrap: break-word;'>सफेद</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>खरगोश</td><td style='text-align: center; word-wrap: break-word;'>भूरा</td></tr></table>\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_27_467_254_692.jpg\" alt=\"Image\" width=\"19%\" /></div>\n\n\nसही चित्र पर 😊 का स्टीकर व गलत चिट्र पर\n\nका स्टीकर चिपकाओ—\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_70_682_557_974.jpg\" alt=\"Image\" width=\"40%\" /></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1000_560_1082_641.jpg\" alt=\"Image\" width=\"6%\" /></div>\n\n\nLet's Smile\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_599_652_1075_977.jpg\" alt=\"Image\" width=\"40%\" /></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_42_994_544_1350.jpg\" alt=\"Image\" width=\"42%\" /></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_570_987_1068_1348.jpg\" alt=\"Image\" width=\"41%\" /></div>\n",
+      "images": {
+        "imgs/img_in_image_box_27_467_254_692.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/markdown_3/imgs/img_in_image_box_27_467_254_692.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A46Z%2F-1%2F%2F9b572c918c6e99632d8010a066d374e455dadffb3731e6f53443db0091a182af",
+        "imgs/img_in_image_box_70_682_557_974.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/markdown_3/imgs/img_in_image_box_70_682_557_974.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A46Z%2F-1%2F%2Fde0101dfef4b2218dff7343c0ba1f8360cd07062e0a7009126bddfefbb42d7f0",
+        "imgs/img_in_image_box_1000_560_1082_641.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/markdown_3/imgs/img_in_image_box_1000_560_1082_641.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A46Z%2F-1%2F%2Fe124a7b3e7e5a14ddfcb90eeacbaf4427ecfee36fb2ce6da935c1bb06286f024",
+        "imgs/img_in_image_box_599_652_1075_977.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/markdown_3/imgs/img_in_image_box_599_652_1075_977.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A46Z%2F-1%2F%2Fe3d11d6c9c143dc93595e18e79abfe1141969f332c1ce411d5d216e541e76ae1",
+        "imgs/img_in_image_box_42_994_544_1350.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/markdown_3/imgs/img_in_image_box_42_994_544_1350.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A46Z%2F-1%2F%2Fdd8096d7fb5933dc8eab4bcfa9fba44cfce5435f034ef3dcb349fadb29f5d41a",
+        "imgs/img_in_image_box_570_987_1068_1348.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/markdown_3/imgs/img_in_image_box_570_987_1068_1348.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A46Z%2F-1%2F%2Fe9ee99b14eb61d7b195ba4ae134af70e6ba405629e53f3b96260e6fbc4e04c10"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/layout_det_res_3.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A46Z%2F-1%2F%2Ffefb4295a0212eb41447968b93ae1009f275350e4e480ea8901079a4b12d4e2a"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/input_img_3.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A46Z%2F-1%2F%2Fa56e693d61cb43ebe629ef1b5760695e4ec1ccd4ddadbb3e6b6b628849458a14"
+  },
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "header_image",
+          "block_content": "<div style=\"text-align: center;\"></div>\n",
+          "block_bbox": [
+            1038,
+            54,
+            1112,
+            127
+          ],
+          "block_id": 0,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              1038.0,
+              54.0
+            ],
+            [
+              1112.0,
+              54.0
+            ],
+            [
+              1112.0,
+              127.0
+            ],
+            [
+              1038.0,
+              127.0
+            ]
+          ]
+        },
+        {
+          "block_label": "vision_footnote",
+          "block_content": "Let's excite",
+          "block_bbox": [
+            1042,
+            129,
+            1111,
+            147
+          ],
+          "block_id": 1,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              1042.0,
+              129.0
+            ],
+            [
+              1042.0,
+              146.0
+            ],
+            [
+              1110.0,
+              146.0
+            ],
+            [
+              1110.0,
+              138.0
+            ],
+            [
+              1071.0,
+              138.0
+            ],
+            [
+              1070.0,
+              137.0
+            ],
+            [
+              1070.0,
+              129.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "रंग-बिरंगे घ्यारे-घ्यारे,\n\nले लो ये रंगीन गुब्बारे।\n\nलाल, हरे और पीले ले लो,\n\nनीले और चमकीले ले लो।",
+          "block_bbox": [
+            139,
+            226,
+            543,
+            448
+          ],
+          "block_id": 2,
+          "block_order": 1,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              139.0,
+              226.0
+            ],
+            [
+              543.0,
+              226.0
+            ],
+            [
+              543.0,
+              448.0
+            ],
+            [
+              139.0,
+              448.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_0_75_1190_1572.jpg\" alt=\"Image\" width=\"100%\" /></div>\n",
+          "block_bbox": [
+            0,
+            75,
+            1190,
+            1572
+          ],
+          "block_id": 3,
+          "group_id": 3,
+          "block_polygon_points": [
+            [
+              0.0,
+              75.0
+            ],
+            [
+              1190.0,
+              75.0
+            ],
+            [
+              1190.0,
+              1572.0
+            ],
+            [
+              0.0,
+              1572.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "गोल-गोल है मोटे-मोटे,\n\nलंबे-लंबे, छोटे-छोटे।\n\nसुंदर-सस्ते गुब्बारे ले लो,\n\nइन्हें उछालो, इनसे खेलो।",
+          "block_bbox": [
+            232,
+            449,
+            611,
+            688
+          ],
+          "block_id": 4,
+          "block_order": 2,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              232.0,
+              449.0
+            ],
+            [
+              611.0,
+              449.0
+            ],
+            [
+              611.0,
+              688.0
+            ],
+            [
+              232.0,
+              688.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "अगर ध्यान से न पकड़ा तो,\n\nगुब्बारे फट जाएँगे।\n\nअगर पकड़ दिली होगी तो,\n\nगुब्बारे उड़ जाएंगे।",
+          "block_bbox": [
+            102,
+            704,
+            530,
+            953
+          ],
+          "block_id": 5,
+          "block_order": 3,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              102.0,
+              704.0
+            ],
+            [
+              530.0,
+              704.0
+            ],
+            [
+              530.0,
+              953.0
+            ],
+            [
+              102.0,
+              953.0
+            ]
+          ]
+        },
+        {
+          "block_label": "number",
+          "block_content": "104",
+          "block_bbox": [
+            58,
+            1437,
+            121,
+            1474
+          ],
+          "block_id": 6,
+          "group_id": 6,
+          "block_polygon_points": [
+            [
+              58.0,
+              1437.0
+            ],
+            [
+              121.0,
+              1437.0
+            ],
+            [
+              121.0,
+              1474.0
+            ],
+            [
+              58.0,
+              1474.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "O Scanned with OKEN Scanner",
+          "block_bbox": [
+            799,
+            1628,
+            1173,
+            1662
+          ],
+          "block_id": 7,
+          "group_id": 7,
+          "block_polygon_points": [
+            [
+              799.0,
+              1628.0
+            ],
+            [
+              1173.0,
+              1628.0
+            ],
+            [
+              1173.0,
+              1662.0
+            ],
+            [
+              799.0,
+              1662.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.7576754689216614,
+            "coordinate": [
+              174,
+              68,
+              344,
+              225
+            ],
+            "polygon_points": [
+              [
+                174.0,
+                68.0
+              ],
+              [
+                344.0,
+                68.0
+              ],
+              [
+                344.0,
+                225.0
+              ],
+              [
+                174.0,
+                225.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 13,
+            "label": "header_image",
+            "score": 0.7452775835990906,
+            "coordinate": [
+              1038,
+              54,
+              1112,
+              127
+            ],
+            "polygon_points": [
+              [
+                1038.0,
+                54.0
+              ],
+              [
+                1112.0,
+                54.0
+              ],
+              [
+                1112.0,
+                127.0
+              ],
+              [
+                1038.0,
+                127.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 24,
+            "label": "vision_footnote",
+            "score": 0.7465428113937378,
+            "coordinate": [
+              1042,
+              129,
+              1111,
+              147
+            ],
+            "polygon_points": [
+              [
+                1042.0,
+                129.0
+              ],
+              [
+                1042.0,
+                146.0
+              ],
+              [
+                1110.0,
+                146.0
+              ],
+              [
+                1110.0,
+                138.0
+              ],
+              [
+                1071.0,
+                138.0
+              ],
+              [
+                1070.0,
+                137.0
+              ],
+              [
+                1070.0,
+                129.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7396255135536194,
+            "coordinate": [
+              139,
+              226,
+              543,
+              448
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                139.0,
+                226.0
+              ],
+              [
+                543.0,
+                226.0
+              ],
+              [
+                543.0,
+                448.0
+              ],
+              [
+                139.0,
+                448.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.31337687373161316,
+            "coordinate": [
+              0,
+              75,
+              1190,
+              1572
+            ],
+            "polygon_points": [
+              [
+                0.0,
+                75.0
+              ],
+              [
+                1190.0,
+                75.0
+              ],
+              [
+                1190.0,
+                1572.0
+              ],
+              [
+                0.0,
+                1572.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.683138906955719,
+            "coordinate": [
+              232,
+              449,
+              611,
+              688
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                232.0,
+                449.0
+              ],
+              [
+                611.0,
+                449.0
+              ],
+              [
+                611.0,
+                688.0
+              ],
+              [
+                232.0,
+                688.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7312968969345093,
+            "coordinate": [
+              102,
+              704,
+              530,
+              953
+            ],
+            "order": 3,
+            "polygon_points": [
+              [
+                102.0,
+                704.0
+              ],
+              [
+                530.0,
+                704.0
+              ],
+              [
+                530.0,
+                953.0
+              ],
+              [
+                102.0,
+                953.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 16,
+            "label": "number",
+            "score": 0.5798013806343079,
+            "coordinate": [
+              58,
+              1437,
+              121,
+              1474
+            ],
+            "order": 4,
+            "polygon_points": [
+              [
+                58.0,
+                1437.0
+              ],
+              [
+                121.0,
+                1437.0
+              ],
+              [
+                121.0,
+                1474.0
+              ],
+              [
+                58.0,
+                1474.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 9,
+            "label": "footer_image",
+            "score": 0.6234817504882812,
+            "coordinate": [
+              797,
+              1626,
+              843,
+              1663
+            ],
+            "polygon_points": [
+              [
+                797.0,
+                1626.0
+              ],
+              [
+                843.0,
+                1626.0
+              ],
+              [
+                843.0,
+                1663.0
+              ],
+              [
+                797.0,
+                1663.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.6302846670150757,
+            "coordinate": [
+              799,
+              1628,
+              1173,
+              1662
+            ],
+            "polygon_points": [
+              [
+                799.0,
+                1628.0
+              ],
+              [
+                1173.0,
+                1628.0
+              ],
+              [
+                1173.0,
+                1662.0
+              ],
+              [
+                799.0,
+                1662.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "Let's excite\n\nरंग-बिरंगे घ्यारे-घ्यारे,\n\nले लो ये रंगीन गुब्बारे।\n\nलाल, हरे और पीले ले लो,\n\nनीले और चमकीले ले लो।\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_0_75_1190_1572.jpg\" alt=\"Image\" width=\"100%\" /></div>\n\n\nगोल-गोल है मोटे-मोटे,\n\nलंबे-लंबे, छोटे-छोटे।\n\nसुंदर-सस्ते गुब्बारे ले लो,\n\nइन्हें उछालो, इनसे खेलो।\n\nअगर ध्यान से न पकड़ा तो,\n\nगुब्बारे फट जाएँगे।\n\nअगर पकड़ दिली होगी तो,\n\nगुब्बारे उड़ जाएंगे।",
+      "images": {
+        "imgs/img_in_header_image_box_1038_54_1112_127.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/markdown_4/imgs/img_in_header_image_box_1038_54_1112_127.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A47Z%2F-1%2F%2Ff10e8ec3aac113dffbede7fe68cb31b68c9a71de13716bce9c89be6c2363d6dd",
+        "imgs/img_in_image_box_0_75_1190_1572.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/markdown_4/imgs/img_in_image_box_0_75_1190_1572.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A47Z%2F-1%2F%2F10868b5daa003b9d2b06883f0192ea44df585cc558c8bdbbd13c223130744d58",
+        "imgs/img_in_image_box_174_68_344_225.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/markdown_4/imgs/img_in_image_box_174_68_344_225.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A47Z%2F-1%2F%2Ff2c32094b9292847da261e99d1764d8b99ce955896360dcc56588a8c024575d4"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/layout_det_res_4.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A47Z%2F-1%2F%2F8f09ae533139b2f380d00d68f5d0483964b4cfb91918fe11c710934ed95c9b0c"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6f591e53-1005-4ccf-82bd-1b0eb1fb3b03/input_img_4.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A47Z%2F-1%2F%2Fcaf292cac1c4b05f1a59b5323c3edff83cd5363a0c13e175f72f388d975cbed4"
+  },
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "header_image",
+          "block_content": "<div style=\"text-align: center;\"></div>\n",
+          "block_bbox": [
+            66,
+            69,
+            142,
+            161
+          ],
+          "block_id": 0,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              66.0,
+              69.0
+            ],
+            [
+              142.0,
+              69.0
+            ],
+            [
+              142.0,
+              161.0
+            ],
+            [
+              66.0,
+              161.0
+            ]
+          ]
+        },
+        {
+          "block_label": "vision_footnote",
+          "block_content": "Let's watch",
+          "block_bbox": [
+            68,
+            152,
+            141,
+            183
+          ],
+          "block_id": 1,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              140.0,
+              152.0
+            ],
+            [
+              119.0,
+              152.0
+            ],
+            [
+              119.0,
+              159.0
+            ],
+            [
+              118.0,
+              160.0
+            ],
+            [
+              80.0,
+              160.0
+            ],
+            [
+              80.0,
+              167.0
+            ],
+            [
+              79.0,
+              168.0
+            ],
+            [
+              68.0,
+              168.0
+            ],
+            [
+              68.0,
+              182.0
+            ],
+            [
+              90.0,
+              182.0
+            ],
+            [
+              90.0,
+              176.0
+            ],
+            [
+              91.0,
+              175.0
+            ],
+            [
+              129.0,
+              175.0
+            ],
+            [
+              129.0,
+              168.0
+            ],
+            [
+              130.0,
+              167.0
+            ],
+            [
+              140.0,
+              167.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_213_13_388_164.jpg\" alt=\"Image\" width=\"14%\" /></div>\n",
+          "block_bbox": [
+            213,
+            13,
+            388,
+            164
+          ],
+          "block_id": 2,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              213.0,
+              13.0
+            ],
+            [
+              388.0,
+              13.0
+            ],
+            [
+              388.0,
+              164.0
+            ],
+            [
+              213.0,
+              164.0
+            ]
+          ]
+        },
+        {
+          "block_label": "paragraph_title",
+          "block_content": "#### आदत सुधर गई",
+          "block_bbox": [
+            400,
+            64,
+            791,
+            147
+          ],
+          "block_id": 3,
+          "block_order": 1,
+          "group_id": 3,
+          "block_polygon_points": [
+            [
+              400.0,
+              64.0
+            ],
+            [
+              791.0,
+              64.0
+            ],
+            [
+              791.0,
+              147.0
+            ],
+            [
+              400.0,
+              147.0
+            ]
+          ]
+        },
+        {
+          "block_label": "header_image",
+          "block_content": "<div style=\"text-align: center;\"></div>\n",
+          "block_bbox": [
+            877,
+            71,
+            960,
+            149
+          ],
+          "block_id": 4,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              877.0,
+              71.0
+            ],
+            [
+              960.0,
+              71.0
+            ],
+            [
+              960.0,
+              149.0
+            ],
+            [
+              877.0,
+              149.0
+            ]
+          ]
+        },
+        {
+          "block_label": "vision_footnote",
+          "block_content": "Let's Listen",
+          "block_bbox": [
+            881,
+            150,
+            963,
+            174
+          ],
+          "block_id": 5,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              881.0,
+              150.0
+            ],
+            [
+              962.0,
+              150.0
+            ],
+            [
+              962.0,
+              173.0
+            ],
+            [
+              881.0,
+              173.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "रहन एक शरारती लड़का था। वह कुलों को परेशान करता था। अपने मिट्रों से झगड़ा करता था। वह झूठ भी बोलता था।\n\nएक बार रोहन के दादा जी घर आए। उनके अ\n\nबहुत खुश हो गया। एक दिन एक लड़का\n\nरोहन की शिकायत करने उसके पापों के\n\nपास आया। रोहन ने उसे धकका दिया था।\n\nइसी तरह प्रतिदिन कोई न कोई रोहन की\n\nशिकायत करने घर आता था। यह देख\n\nदादा जी को एक उपाय सूसा।",
+          "block_bbox": [
+            13,
+            169,
+            1070,
+            306
+          ],
+          "block_id": 6,
+          "block_order": 2,
+          "group_id": 6,
+          "block_polygon_points": [
+            [
+              1069.0,
+              169.0
+            ],
+            [
+              933.0,
+              187.0
+            ],
+            [
+              162.0,
+              178.0
+            ],
+            [
+              19.0,
+              204.0
+            ],
+            [
+              13.0,
+              305.0
+            ],
+            [
+              204.0,
+              288.0
+            ],
+            [
+              909.0,
+              297.0
+            ],
+            [
+              1069.0,
+              271.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "",
+          "block_bbox": [
+            17,
+            308,
+            714,
+            739
+          ],
+          "block_id": 7,
+          "block_order": 3,
+          "group_id": 6,
+          "block_polygon_points": [
+            [
+              17.0,
+              308.0
+            ],
+            [
+              714.0,
+              308.0
+            ],
+            [
+              714.0,
+              739.0
+            ],
+            [
+              17.0,
+              739.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_626_283_1190_721.jpg\" alt=\"Image\" width=\"47%\" /></div>\n",
+          "block_bbox": [
+            626,
+            283,
+            1190,
+            721
+          ],
+          "block_id": 8,
+          "group_id": 8,
+          "block_polygon_points": [
+            [
+              626.0,
+              283.0
+            ],
+            [
+              1190.0,
+              283.0
+            ],
+            [
+              1190.0,
+              721.0
+            ],
+            [
+              626.0,
+              721.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "एक दिन दोपहर में दादा जी रोहन को बगीचे में ले गए। उन्होंने रोहन से एक छोटा पौधा उखाड़ने को कहा। रोहन ने पौधा आसानी से उखाड़ दिया। दादा जी ने उसे एक गमले में लगा दिया। अब उन्होंने रोहन से एक बड़ा पौधा उखाड़ने को कहा। रोहन ने पूरा जोर लगाया पर पौधा",
+          "block_bbox": [
+            23,
+            740,
+            1124,
+            976
+          ],
+          "block_id": 9,
+          "block_order": 4,
+          "group_id": 9,
+          "block_polygon_points": [
+            [
+              20.239521026611328,
+              757.1376342773438
+            ],
+            [
+              1119.3094482421875,
+              739.8853149414062
+            ],
+            [
+              1123.0001220703125,
+              975.0000610351562
+            ],
+            [
+              23.93017578125,
+              992.2523803710938
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_0_997_703_1492.jpg\" alt=\"Image\" width=\"59%\" /></div>\n",
+          "block_bbox": [
+            0,
+            997,
+            703,
+            1492
+          ],
+          "block_id": 10,
+          "group_id": 10,
+          "block_polygon_points": [
+            [
+              -1.0,
+              997.0
+            ],
+            [
+              703.0,
+              997.0
+            ],
+            [
+              703.0,
+              1492.0
+            ],
+            [
+              -1.0,
+              1492.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "नहीं उखड़ा।",
+          "block_bbox": [
+            611,
+            994,
+            805,
+            1044
+          ],
+          "block_id": 11,
+          "block_order": 5,
+          "group_id": 11,
+          "block_polygon_points": [
+            [
+              611.0,
+              994.0
+            ],
+            [
+              805.0,
+              994.0
+            ],
+            [
+              805.0,
+              1044.0
+            ],
+            [
+              611.0,
+              1044.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "రోན బోలా, “దాదా జి, ఠి\n\nుచ్ఛాఢనా ఠఢుత ముశ్కల\n\nఖి\" దాదా జి బోలె, \"బెడ,\n\nబిలకుల ఐసా ఖి ఘమిరి\n\nఆదత్తో కే సాధ ఖి ఖి ఖగర\n\nఘ ఖపి ఖి ఖి ఖద్లోని కో",
+          "block_bbox": [
+            666,
+            1057,
+            1160,
+            1441
+          ],
+          "block_id": 12,
+          "block_order": 6,
+          "group_id": 12,
+          "block_polygon_points": [
+            [
+              666.0,
+              1057.0
+            ],
+            [
+              1160.0,
+              1057.0
+            ],
+            [
+              1160.0,
+              1441.0
+            ],
+            [
+              666.0,
+              1441.0
+            ]
+          ]
+        },
+        {
+          "block_label": "number",
+          "block_content": "105",
+          "block_bbox": [
+            1106,
+            1487,
+            1173,
+            1532
+          ],
+          "block_id": 13,
+          "group_id": 13,
+          "block_polygon_points": [
+            [
+              1106.0,
+              1487.0
+            ],
+            [
+              1173.0,
+              1487.0
+            ],
+            [
+              1173.0,
+              1532.0
+            ],
+            [
+              1106.0,
+              1532.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "O Scanned with OKEN Scanner",
+          "block_bbox": [
+            795,
+            1627,
+            1173,
+            1662
+          ],
+          "block_id": 14,
+          "group_id": 14,
+          "block_polygon_points": [
+            [
+              795.0,
+              1627.0
+            ],
+            [
+              1173.0,
+              1627.0
+            ],
+            [
+              1173.0,
+              1662.0
+            ],
+            [
+              795.0,
+              1662.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 13,
+            "label": "header_image",
+            "score": 0.7748469710350037,
+            "coordinate": [
+              66,
+              69,
+              142,
+              161
+            ],
+            "polygon_points": [
+              [
+                66.0,
+                69.0
+              ],
+              [
+                142.0,
+                69.0
+              ],
+              [
+                142.0,
+                161.0
+              ],
+              [
+                66.0,
+                161.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 24,
+            "label": "vision_footnote",
+            "score": 0.6089571118354797,
+            "coordinate": [
+              68,
+              152,
+              141,
+              183
+            ],
+            "polygon_points": [
+              [
+                140.0,
+                152.0
+              ],
+              [
+                119.0,
+                152.0
+              ],
+              [
+                119.0,
+                159.0
+              ],
+              [
+                118.0,
+                160.0
+              ],
+              [
+                80.0,
+                160.0
+              ],
+              [
+                80.0,
+                167.0
+              ],
+              [
+                79.0,
+                168.0
+              ],
+              [
+                68.0,
+                168.0
+              ],
+              [
+                68.0,
+                182.0
+              ],
+              [
+                90.0,
+                182.0
+              ],
+              [
+                90.0,
+                176.0
+              ],
+              [
+                91.0,
+                175.0
+              ],
+              [
+                129.0,
+                175.0
+              ],
+              [
+                129.0,
+                168.0
+              ],
+              [
+                130.0,
+                167.0
+              ],
+              [
+                140.0,
+                167.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.4456802010536194,
+            "coordinate": [
+              213,
+              13,
+              388,
+              164
+            ],
+            "polygon_points": [
+              [
+                213.0,
+                13.0
+              ],
+              [
+                388.0,
+                13.0
+              ],
+              [
+                388.0,
+                164.0
+              ],
+              [
+                213.0,
+                164.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 17,
+            "label": "paragraph_title",
+            "score": 0.4500906765460968,
+            "coordinate": [
+              400,
+              64,
+              791,
+              147
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                400.0,
+                64.0
+              ],
+              [
+                791.0,
+                64.0
+              ],
+              [
+                791.0,
+                147.0
+              ],
+              [
+                400.0,
+                147.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 13,
+            "label": "header_image",
+            "score": 0.7984743714332581,
+            "coordinate": [
+              877,
+              71,
+              960,
+              149
+            ],
+            "polygon_points": [
+              [
+                877.0,
+                71.0
+              ],
+              [
+                960.0,
+                71.0
+              ],
+              [
+                960.0,
+                149.0
+              ],
+              [
+                877.0,
+                149.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 24,
+            "label": "vision_footnote",
+            "score": 0.7022548317909241,
+            "coordinate": [
+              881,
+              150,
+              963,
+              174
+            ],
+            "polygon_points": [
+              [
+                881.0,
+                150.0
+              ],
+              [
+                962.0,
+                150.0
+              ],
+              [
+                962.0,
+                173.0
+              ],
+              [
+                881.0,
+                173.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.8243855834007263,
+            "coordinate": [
+              13,
+              169,
+              1070,
+              306
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                1069.0,
+                169.0
+              ],
+              [
+                933.0,
+                187.0
+              ],
+              [
+                162.0,
+                178.0
+              ],
+              [
+                19.0,
+                204.0
+              ],
+              [
+                13.0,
+                305.0
+              ],
+              [
+                204.0,
+                288.0
+              ],
+              [
+                909.0,
+                297.0
+              ],
+              [
+                1069.0,
+                271.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.638152539730072,
+            "coordinate": [
+              17,
+              308,
+              714,
+              739
+            ],
+            "order": 3,
+            "polygon_points": [
+              [
+                17.0,
+                308.0
+              ],
+              [
+                714.0,
+                308.0
+              ],
+              [
+                714.0,
+                739.0
+              ],
+              [
+                17.0,
+                739.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.8531455397605896,
+            "coordinate": [
+              626,
+              283,
+              1190,
+              721
+            ],
+            "polygon_points": [
+              [
+                626.0,
+                283.0
+              ],
+              [
+                1190.0,
+                283.0
+              ],
+              [
+                1190.0,
+                721.0
+              ],
+              [
+                626.0,
+                721.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7794451117515564,
+            "coordinate": [
+              23,
+              740,
+              1124,
+              976
+            ],
+            "order": 4,
+            "polygon_points": [
+              [
+                20.239521026611328,
+                757.1376342773438
+              ],
+              [
+                1119.3094482421875,
+                739.8853149414062
+              ],
+              [
+                1123.0001220703125,
+                975.0000610351562
+              ],
+              [
+                23.93017578125,
+                992.2523803710938
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3887042701244354,
+            "coordinate": [
+              191,
+              926,
+              1124,
+              995
+            ],
+            "order": 5,
+            "polygon_points": [
+              [
+                191.0,
+                935.0
+              ],
+              [
+                191.0,
+                994.0
+              ],
+              [
+                523.0,
+                994.0
+              ],
+              [
+                1123.0,
+                969.0
+              ],
+              [
+                1123.0,
+                926.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.9488807916641235,
+            "coordinate": [
+              0,
+              997,
+              703,
+              1492
+            ],
+            "polygon_points": [
+              [
+                -1.0,
+                997.0
+              ],
+              [
+                703.0,
+                997.0
+              ],
+              [
+                703.0,
+                1492.0
+              ],
+              [
+                -1.0,
+                1492.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.44832178950309753,
+            "coordinate": [
+              611,
+              994,
+              805,
+              1044
+            ],
+            "order": 6,
+            "polygon_points": [
+              [
+                611.0,
+                994.0
+              ],
+              [
+                805.0,
+                994.0
+              ],
+              [
+                805.0,
+                1044.0
+              ],
+              [
+                611.0,
+                1044.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.9032449126243591,
+            "coordinate": [
+              666,
+              1057,
+              1160,
+              1441
+            ],
+            "order": 7,
+            "polygon_points": [
+              [
+                666.0,
+                1057.0
+              ],
+              [
+                1160.0,
+                1057.0
+              ],
+              [
+                1160.0,
+                1441.0
+              ],
+              [
+                666.0,
+                1441.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 16,
+            "label": "number",
+            "score": 0.6349828839302063,
+            "coordinate": [
+              1106,
+              1487,
+              1173,
+              1532
+            ],
+            "order": 8,
+            "polygon_points": [
+              [
+                1106.0,
+                1487.0
+              ],
+              [
+                1173.0,
+                1487.0
+              ],
+              [
+                1173.0,
+                1532.0
+              ],
+              [
+                1106.0,
+                1532.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.7959773540496826,
+            "coordinate": [
+              795,
+              1627,
+              1173,
+              1662
+            ],
+            "polygon_points": [
+              [
+                795.0,
+                1627.0
+              ],
+              [
+                1173.0,
+                1627.0
+              ],
+              [
+                1173.0,
+                1662.0
+              ],
+              [
+                795.0,
+                1662.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "Let's watch\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_213_13_388_164.jpg\" alt=\"Image\" width=\"14%\" /></div>\n\n\n#### आदत सुधर गई\n\nLet's Listen\n\nरहन एक शरारती लड़का था। वह कुलों को परेशान करता था। अपने मिट्रों से झगड़ा करता था। वह झूठ भी बोलता था।\n\nएक बार रोहन के दादा जी घर आए। उनके अ\n\nबहुत खुश हो गया। एक दिन एक लड़का\n\nरोहन की शिकायत करने उसके पापों के\n\nपास आया। रोहन ने उसे धकका दिया था।\n\nइसी तरह प्रतिदिन कोई न कोई रोहन की\n\nशिकायत करने घर आता था। यह देख\n\nदादा जी को एक उपाय सूसा।\n\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_626_283_1190_721.jpg\" alt=\"Image\" width=\"47%\" /></div>\n\n\nएक दिन दोपहर में दादा जी रोहन को बगीचे में ले गए। उन्होंने रोहन से एक छोटा पौधा उखाड़ने को कहा। रोहन ने पौधा आसानी से उखाड़ दिया। दादा जी ने उसे एक गमले में लगा दिया। अब उन्होंने रोहन से एक बड़ा पौधा उखाड़ने को कहा। रोहन ने पूरा जोर लगाया पर पौधा\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_0_997_703_1492.jpg\" alt=\"Image\" width=\"59%\" /></div>\n\n\nनहीं उखड़ा।\n\nరోན బోలా, “దాదా జి, ఠి\n\nుచ్ఛాఢనా ఠఢుత ముశ్కల\n\nఖి\" దాదా జి బోలె, \"బెడ,\n\nబిలకుల ఐసా ఖి ఘమిరి\n\nఆదత్తో కే సాధ ఖి ఖి ఖగర\n\nఘ ఖపి ఖి ఖి ఖద్లోని కో",
+      "images": {
+        "imgs/img_in_header_image_box_66_69_142_161.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_0/imgs/img_in_header_image_box_66_69_142_161.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A42Z%2F-1%2F%2F83e4d0891fd27e2a8fa77eb43bd1b820b981763c5c2cf6863cc954587355b41d",
+        "imgs/img_in_image_box_213_13_388_164.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_0/imgs/img_in_image_box_213_13_388_164.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A42Z%2F-1%2F%2Fb928388793d34555a5fed8cb639580737458cd35ffcff804c362a99b9b525f73",
+        "imgs/img_in_header_image_box_877_71_960_149.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_0/imgs/img_in_header_image_box_877_71_960_149.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A42Z%2F-1%2F%2F059d1e4e53e39246aac1401a15168a6340eac9981b00e2d29625d9365dd78753",
+        "imgs/img_in_image_box_626_283_1190_721.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_0/imgs/img_in_image_box_626_283_1190_721.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A42Z%2F-1%2F%2F70a26e158192c5bf39514d38a388d0c5b08b660917343281a7dd8ea4d9374605",
+        "imgs/img_in_image_box_0_997_703_1492.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_0/imgs/img_in_image_box_0_997_703_1492.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A43Z%2F-1%2F%2Fe43a505956391e564b199f5be2753865996b148a58c650d79725043b38e49d68"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A43Z%2F-1%2F%2Fcb208c2aaf59924e4269d70ddf2b43b42e48a9a7cdb7bfcd0046bff28ba733bd"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A43Z%2F-1%2F%2F5c074b97c79f0a964b0df31a08bc414bc84a5513022e7d533149e03fbb6fced8"
+  },
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "text",
+          "block_content": "शुक्र में ही सुधार लें तो ठीक है, नहीं तो बड़े होने पर इन्हें\n\nसुधारना कितन है।\"",
+          "block_bbox": [
+            90,
+            18,
+            937,
+            187
+          ],
+          "block_id": 0,
+          "block_order": 1,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              89.07585144042969,
+              67.4766616821289
+            ],
+            [
+              935.9999389648438,
+              18.0
+            ],
+            [
+              943.4754028320312,
+              145.96194458007812
+            ],
+            [
+              96.55133056640625,
+              195.4385986328125
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "रोहन दादाजी की बात ध्यान से सुन रहा था। वह बो\n\n“में आपकी बात समझ गया। अब मैं कभी कोई\n\nशरारत नहीं करेंगा।” दादाजी ने देखा कुछ ही\n\nदिनों में रोहन एक अच्छा बच्चा बन गया।",
+          "block_bbox": [
+            96,
+            163,
+            799,
+            426
+          ],
+          "block_id": 1,
+          "block_order": 2,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              798.0,
+              163.0
+            ],
+            [
+              674.0,
+              172.0
+            ],
+            [
+              673.0,
+              180.0
+            ],
+            [
+              394.0,
+              188.0
+            ],
+            [
+              393.0,
+              196.0
+            ],
+            [
+              96.0,
+              196.0
+            ],
+            [
+              96.0,
+              425.0
+            ],
+            [
+              709.0,
+              409.0
+            ],
+            [
+              745.0,
+              409.0
+            ],
+            [
+              763.0,
+              401.0
+            ],
+            [
+              798.0,
+              220.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_756_0_1165_415.jpg\" alt=\"Image\" width=\"34%\" /></div>\n",
+          "block_bbox": [
+            756,
+            0,
+            1165,
+            415
+          ],
+          "block_id": 2,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              756.0,
+              0.0
+            ],
+            [
+              1165.0,
+              0.0
+            ],
+            [
+              1165.0,
+              415.0
+            ],
+            [
+              756.0,
+              415.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_411_424_710_566.jpg\" alt=\"Image\" width=\"25%\" /></div>\n",
+          "block_bbox": [
+            411,
+            424,
+            710,
+            566
+          ],
+          "block_id": 3,
+          "group_id": 3,
+          "block_polygon_points": [
+            [
+              411.0,
+              433.0
+            ],
+            [
+              709.0,
+              433.0
+            ],
+            [
+              709.0,
+              565.0
+            ],
+            [
+              411.0,
+              565.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_706_442_862_562.jpg\" alt=\"Image\" width=\"13%\" /></div>\n",
+          "block_bbox": [
+            706,
+            442,
+            862,
+            562
+          ],
+          "block_id": 4,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              706.0,
+              442.0
+            ],
+            [
+              862.0,
+              442.0
+            ],
+            [
+              862.0,
+              562.0
+            ],
+            [
+              706.0,
+              562.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "1. किसने कहा? चित्र देखकर ✓ लगाओ—",
+          "block_bbox": [
+            124,
+            579,
+            815,
+            642
+          ],
+          "block_id": 5,
+          "block_order": 3,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              123.308837890625,
+              588.009033203125
+            ],
+            [
+              814.0,
+              579.0
+            ],
+            [
+              814.7833862304688,
+              639.059326171875
+            ],
+            [
+              124.09222412109375,
+              648.068359375
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "(क) बड़े होने पर इन्हें सुधारना कितन है।",
+          "block_bbox": [
+            184,
+            650,
+            846,
+            714
+          ],
+          "block_id": 6,
+          "block_order": 4,
+          "group_id": 6,
+          "block_polygon_points": [
+            [
+              183.26638793945312,
+              658.9879150390625
+            ],
+            [
+              845.0,
+              650.0
+            ],
+            [
+              845.76220703125,
+              706.116943359375
+            ],
+            [
+              184.028564453125,
+              715.1048583984375
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_327_714_567_903.jpg\" alt=\"Image\" width=\"20%\" /></div>\n",
+          "block_bbox": [
+            327,
+            714,
+            567,
+            903
+          ],
+          "block_id": 7,
+          "group_id": 7,
+          "block_polygon_points": [
+            [
+              327.0,
+              714.0
+            ],
+            [
+              567.0,
+              714.0
+            ],
+            [
+              567.0,
+              903.0
+            ],
+            [
+              327.0,
+              903.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_810_735_1014_912.jpg\" alt=\"Image\" width=\"17%\" /></div>\n",
+          "block_bbox": [
+            810,
+            735,
+            1014,
+            912
+          ],
+          "block_id": 8,
+          "group_id": 8,
+          "block_polygon_points": [
+            [
+              810.0,
+              735.0
+            ],
+            [
+              1014.0,
+              735.0
+            ],
+            [
+              1014.0,
+              912.0
+            ],
+            [
+              810.0,
+              912.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "(ख)  में आपकी बात समझ गया।",
+          "block_bbox": [
+            185,
+            915,
+            719,
+            974
+          ],
+          "block_id": 9,
+          "block_order": 5,
+          "group_id": 9,
+          "block_polygon_points": [
+            [
+              185.0,
+              915.0
+            ],
+            [
+              719.0,
+              915.0
+            ],
+            [
+              719.0,
+              974.0
+            ],
+            [
+              185.0,
+              974.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_332_974_573_1174.jpg\" alt=\"Image\" width=\"20%\" /></div>\n",
+          "block_bbox": [
+            332,
+            974,
+            573,
+            1174
+          ],
+          "block_id": 10,
+          "group_id": 10,
+          "block_polygon_points": [
+            [
+              332.0,
+              974.0
+            ],
+            [
+              573.0,
+              974.0
+            ],
+            [
+              573.0,
+              1174.0
+            ],
+            [
+              332.0,
+              1174.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_820_1009_1025_1191.jpg\" alt=\"Image\" width=\"17%\" /></div>\n",
+          "block_bbox": [
+            820,
+            1009,
+            1025,
+            1191
+          ],
+          "block_id": 11,
+          "group_id": 11,
+          "block_polygon_points": [
+            [
+              820.0,
+              1009.0
+            ],
+            [
+              1025.0,
+              1009.0
+            ],
+            [
+              1025.0,
+              1191.0
+            ],
+            [
+              820.0,
+              1191.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "2. एक शब्द के अनेक शब्द लिखो—",
+          "block_bbox": [
+            120,
+            1204,
+            730,
+            1275
+          ],
+          "block_id": 12,
+          "block_order": 6,
+          "group_id": 12,
+          "block_polygon_points": [
+            [
+              120.05816650390625,
+              1199.6531982421875
+            ],
+            [
+              724.8864135742188,
+              1207.7445068359375
+            ],
+            [
+              724.0000610351562,
+              1274.0001220703125
+            ],
+            [
+              119.17181396484375,
+              1265.9088134765625
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "लड़का - \"लड़के\"",
+          "block_bbox": [
+            170,
+            1286,
+            584,
+            1351
+          ],
+          "block_id": 13,
+          "block_order": 7,
+          "group_id": 13,
+          "block_polygon_points": [
+            [
+              170.0,
+              1286.0
+            ],
+            [
+              584.0,
+              1286.0
+            ],
+            [
+              584.0,
+              1351.0
+            ],
+            [
+              170.0,
+              1351.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "बेटा  - .....",
+          "block_bbox": [
+            172,
+            1357,
+            587,
+            1417
+          ],
+          "block_id": 14,
+          "block_order": 8,
+          "group_id": 14,
+          "block_polygon_points": [
+            [
+              172.0,
+              1357.0
+            ],
+            [
+              587.0,
+              1357.0
+            ],
+            [
+              587.0,
+              1417.0
+            ],
+            [
+              172.0,
+              1417.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1068_1172_1149_1264.jpg\" alt=\"Image\" width=\"6%\" /></div>\n",
+          "block_bbox": [
+            1068,
+            1172,
+            1149,
+            1264
+          ],
+          "block_id": 15,
+          "group_id": 15,
+          "block_polygon_points": [
+            [
+              1068.0,
+              1172.0
+            ],
+            [
+              1149.0,
+              1172.0
+            ],
+            [
+              1149.0,
+              1264.0
+            ],
+            [
+              1068.0,
+              1264.0
+            ]
+          ]
+        },
+        {
+          "block_label": "vision_footnote",
+          "block_content": "Let's Do 1",
+          "block_bbox": [
+            1076,
+            1269,
+            1144,
+            1290
+          ],
+          "block_id": 16,
+          "group_id": 16,
+          "block_polygon_points": [
+            [
+              1076.0,
+              1269.0
+            ],
+            [
+              1143.0,
+              1269.0
+            ],
+            [
+              1143.0,
+              1289.0
+            ],
+            [
+              1076.0,
+              1289.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "कुत्ता - .....",
+          "block_bbox": [
+            170,
+            1445,
+            585,
+            1502
+          ],
+          "block_id": 17,
+          "block_order": 9,
+          "group_id": 17,
+          "block_polygon_points": [
+            [
+              170.0,
+              1445.0
+            ],
+            [
+              585.0,
+              1445.0
+            ],
+            [
+              585.0,
+              1502.0
+            ],
+            [
+              170.0,
+              1502.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "गमला— .....",
+          "block_bbox": [
+            732,
+            1307,
+            1095,
+            1358
+          ],
+          "block_id": 18,
+          "block_order": 10,
+          "group_id": 18,
+          "block_polygon_points": [
+            [
+              732.0,
+              1307.0
+            ],
+            [
+              1095.0,
+              1307.0
+            ],
+            [
+              1095.0,
+              1358.0
+            ],
+            [
+              732.0,
+              1358.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_27_1447_148_1615.jpg\" alt=\"Image\" width=\"10%\" /></div>\n",
+          "block_bbox": [
+            27,
+            1447,
+            148,
+            1615
+          ],
+          "block_id": 19,
+          "group_id": 19,
+          "block_polygon_points": [
+            [
+              27.0,
+              1447.0
+            ],
+            [
+              148.0,
+              1447.0
+            ],
+            [
+              148.0,
+              1615.0
+            ],
+            [
+              27.0,
+              1615.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "पौधा - .....",
+          "block_bbox": [
+            733,
+            1376,
+            1095,
+            1441
+          ],
+          "block_id": 20,
+          "block_order": 11,
+          "group_id": 20,
+          "block_polygon_points": [
+            [
+              733.0,
+              1376.0
+            ],
+            [
+              1095.0,
+              1376.0
+            ],
+            [
+              1095.0,
+              1441.0
+            ],
+            [
+              733.0,
+              1441.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "बच्चा - .....",
+          "block_bbox": [
+            736,
+            1471,
+            1096,
+            1519
+          ],
+          "block_id": 21,
+          "block_order": 12,
+          "group_id": 21,
+          "block_polygon_points": [
+            [
+              736.0,
+              1471.0
+            ],
+            [
+              1096.0,
+              1471.0
+            ],
+            [
+              1096.0,
+              1519.0
+            ],
+            [
+              736.0,
+              1519.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "O Scanned with OKEN Scanner",
+          "block_bbox": [
+            794,
+            1626,
+            1172,
+            1663
+          ],
+          "block_id": 22,
+          "group_id": 22,
+          "block_polygon_points": [
+            [
+              794.0,
+              1626.0
+            ],
+            [
+              1172.0,
+              1626.0
+            ],
+            [
+              1172.0,
+              1663.0
+            ],
+            [
+              794.0,
+              1663.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7955653667449951,
+            "coordinate": [
+              90,
+              18,
+              937,
+              187
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                89.07585144042969,
+                67.4766616821289
+              ],
+              [
+                935.9999389648438,
+                18.0
+              ],
+              [
+                943.4754028320312,
+                145.96194458007812
+              ],
+              [
+                96.55133056640625,
+                195.4385986328125
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.6777864098548889,
+            "coordinate": [
+              96,
+              163,
+              799,
+              426
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                798.0,
+                163.0
+              ],
+              [
+                674.0,
+                172.0
+              ],
+              [
+                673.0,
+                180.0
+              ],
+              [
+                394.0,
+                188.0
+              ],
+              [
+                393.0,
+                196.0
+              ],
+              [
+                96.0,
+                196.0
+              ],
+              [
+                96.0,
+                425.0
+              ],
+              [
+                709.0,
+                409.0
+              ],
+              [
+                745.0,
+                409.0
+              ],
+              [
+                763.0,
+                401.0
+              ],
+              [
+                798.0,
+                220.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.7521718740463257,
+            "coordinate": [
+              756,
+              0,
+              1165,
+              415
+            ],
+            "polygon_points": [
+              [
+                756.0,
+                0.0
+              ],
+              [
+                1165.0,
+                0.0
+              ],
+              [
+                1165.0,
+                415.0
+              ],
+              [
+                756.0,
+                415.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.6112368106842041,
+            "coordinate": [
+              411,
+              424,
+              710,
+              566
+            ],
+            "polygon_points": [
+              [
+                411.0,
+                433.0
+              ],
+              [
+                709.0,
+                433.0
+              ],
+              [
+                709.0,
+                565.0
+              ],
+              [
+                411.0,
+                565.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.6929413676261902,
+            "coordinate": [
+              706,
+              442,
+              862,
+              562
+            ],
+            "polygon_points": [
+              [
+                706.0,
+                442.0
+              ],
+              [
+                862.0,
+                442.0
+              ],
+              [
+                862.0,
+                562.0
+              ],
+              [
+                706.0,
+                562.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.6125033497810364,
+            "coordinate": [
+              124,
+              579,
+              815,
+              642
+            ],
+            "order": 3,
+            "polygon_points": [
+              [
+                123.308837890625,
+                588.009033203125
+              ],
+              [
+                814.0,
+                579.0
+              ],
+              [
+                814.7833862304688,
+                639.059326171875
+              ],
+              [
+                124.09222412109375,
+                648.068359375
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.5827928781509399,
+            "coordinate": [
+              184,
+              650,
+              846,
+              714
+            ],
+            "order": 4,
+            "polygon_points": [
+              [
+                183.26638793945312,
+                658.9879150390625
+              ],
+              [
+                845.0,
+                650.0
+              ],
+              [
+                845.76220703125,
+                706.116943359375
+              ],
+              [
+                184.028564453125,
+                715.1048583984375
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.8503758311271667,
+            "coordinate": [
+              327,
+              714,
+              567,
+              903
+            ],
+            "polygon_points": [
+              [
+                327.0,
+                714.0
+              ],
+              [
+                567.0,
+                714.0
+              ],
+              [
+                567.0,
+                903.0
+              ],
+              [
+                327.0,
+                903.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.818344235420227,
+            "coordinate": [
+              810,
+              735,
+              1014,
+              912
+            ],
+            "polygon_points": [
+              [
+                810.0,
+                735.0
+              ],
+              [
+                1014.0,
+                735.0
+              ],
+              [
+                1014.0,
+                912.0
+              ],
+              [
+                810.0,
+                912.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.8020797371864319,
+            "coordinate": [
+              185,
+              915,
+              719,
+              974
+            ],
+            "order": 5,
+            "polygon_points": [
+              [
+                185.0,
+                915.0
+              ],
+              [
+                719.0,
+                915.0
+              ],
+              [
+                719.0,
+                974.0
+              ],
+              [
+                185.0,
+                974.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.8631995916366577,
+            "coordinate": [
+              332,
+              974,
+              573,
+              1174
+            ],
+            "polygon_points": [
+              [
+                332.0,
+                974.0
+              ],
+              [
+                573.0,
+                974.0
+              ],
+              [
+                573.0,
+                1174.0
+              ],
+              [
+                332.0,
+                1174.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.8460938930511475,
+            "coordinate": [
+              820,
+              1009,
+              1025,
+              1191
+            ],
+            "polygon_points": [
+              [
+                820.0,
+                1009.0
+              ],
+              [
+                1025.0,
+                1009.0
+              ],
+              [
+                1025.0,
+                1191.0
+              ],
+              [
+                820.0,
+                1191.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.415299654006958,
+            "coordinate": [
+              120,
+              1204,
+              730,
+              1275
+            ],
+            "order": 6,
+            "polygon_points": [
+              [
+                120.05816650390625,
+                1199.6531982421875
+              ],
+              [
+                724.8864135742188,
+                1207.7445068359375
+              ],
+              [
+                724.0000610351562,
+                1274.0001220703125
+              ],
+              [
+                119.17181396484375,
+                1265.9088134765625
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.5457958579063416,
+            "coordinate": [
+              170,
+              1286,
+              584,
+              1351
+            ],
+            "order": 7,
+            "polygon_points": [
+              [
+                170.0,
+                1286.0
+              ],
+              [
+                584.0,
+                1286.0
+              ],
+              [
+                584.0,
+                1351.0
+              ],
+              [
+                170.0,
+                1351.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.4915836751461029,
+            "coordinate": [
+              172,
+              1357,
+              587,
+              1417
+            ],
+            "order": 8,
+            "polygon_points": [
+              [
+                172.0,
+                1357.0
+              ],
+              [
+                587.0,
+                1357.0
+              ],
+              [
+                587.0,
+                1417.0
+              ],
+              [
+                172.0,
+                1417.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.8122707009315491,
+            "coordinate": [
+              1068,
+              1172,
+              1149,
+              1264
+            ],
+            "polygon_points": [
+              [
+                1068.0,
+                1172.0
+              ],
+              [
+                1149.0,
+                1172.0
+              ],
+              [
+                1149.0,
+                1264.0
+              ],
+              [
+                1068.0,
+                1264.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 24,
+            "label": "vision_footnote",
+            "score": 0.6799765229225159,
+            "coordinate": [
+              1076,
+              1269,
+              1144,
+              1290
+            ],
+            "polygon_points": [
+              [
+                1076.0,
+                1269.0
+              ],
+              [
+                1143.0,
+                1269.0
+              ],
+              [
+                1143.0,
+                1289.0
+              ],
+              [
+                1076.0,
+                1289.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.4085351824760437,
+            "coordinate": [
+              170,
+              1445,
+              585,
+              1502
+            ],
+            "order": 9,
+            "polygon_points": [
+              [
+                170.0,
+                1445.0
+              ],
+              [
+                585.0,
+                1445.0
+              ],
+              [
+                585.0,
+                1502.0
+              ],
+              [
+                170.0,
+                1502.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.6759833693504333,
+            "coordinate": [
+              732,
+              1307,
+              1095,
+              1358
+            ],
+            "order": 10,
+            "polygon_points": [
+              [
+                732.0,
+                1307.0
+              ],
+              [
+                1095.0,
+                1307.0
+              ],
+              [
+                1095.0,
+                1358.0
+              ],
+              [
+                732.0,
+                1358.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3389075994491577,
+            "coordinate": [
+              172,
+              1448,
+              267,
+              1500
+            ],
+            "order": 11,
+            "polygon_points": [
+              [
+                172.0,
+                1448.0
+              ],
+              [
+                267.0,
+                1448.0
+              ],
+              [
+                267.0,
+                1500.0
+              ],
+              [
+                172.0,
+                1500.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.808536946773529,
+            "coordinate": [
+              27,
+              1447,
+              148,
+              1615
+            ],
+            "polygon_points": [
+              [
+                27.0,
+                1447.0
+              ],
+              [
+                148.0,
+                1447.0
+              ],
+              [
+                148.0,
+                1615.0
+              ],
+              [
+                27.0,
+                1615.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.6417438983917236,
+            "coordinate": [
+              733,
+              1376,
+              1095,
+              1441
+            ],
+            "order": 12,
+            "polygon_points": [
+              [
+                733.0,
+                1376.0
+              ],
+              [
+                1095.0,
+                1376.0
+              ],
+              [
+                1095.0,
+                1441.0
+              ],
+              [
+                733.0,
+                1441.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.5532251596450806,
+            "coordinate": [
+              736,
+              1471,
+              1096,
+              1519
+            ],
+            "order": 13,
+            "polygon_points": [
+              [
+                736.0,
+                1471.0
+              ],
+              [
+                1096.0,
+                1471.0
+              ],
+              [
+                1096.0,
+                1519.0
+              ],
+              [
+                736.0,
+                1519.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 9,
+            "label": "footer_image",
+            "score": 0.3212326765060425,
+            "coordinate": [
+              796,
+              1626,
+              844,
+              1664
+            ],
+            "polygon_points": [
+              [
+                796.0,
+                1626.0
+              ],
+              [
+                844.0,
+                1626.0
+              ],
+              [
+                844.0,
+                1664.0
+              ],
+              [
+                796.0,
+                1664.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.7885934710502625,
+            "coordinate": [
+              794,
+              1626,
+              1172,
+              1663
+            ],
+            "polygon_points": [
+              [
+                794.0,
+                1626.0
+              ],
+              [
+                1172.0,
+                1626.0
+              ],
+              [
+                1172.0,
+                1663.0
+              ],
+              [
+                794.0,
+                1663.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "शुक्र में ही सुधार लें तो ठीक है, नहीं तो बड़े होने पर इन्हें\n\nसुधारना कितन है।\"\n\nरोहन दादाजी की बात ध्यान से सुन रहा था। वह बो\n\n“में आपकी बात समझ गया। अब मैं कभी कोई\n\nशरारत नहीं करेंगा।” दादाजी ने देखा कुछ ही\n\nदिनों में रोहन एक अच्छा बच्चा बन गया।\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_756_0_1165_415.jpg\" alt=\"Image\" width=\"34%\" /></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_411_424_710_566.jpg\" alt=\"Image\" width=\"25%\" /></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_706_442_862_562.jpg\" alt=\"Image\" width=\"13%\" /></div>\n\n\n1. किसने कहा? चित्र देखकर ✓ लगाओ—\n\n(क) बड़े होने पर इन्हें सुधारना कितन है।\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_327_714_567_903.jpg\" alt=\"Image\" width=\"20%\" /></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_810_735_1014_912.jpg\" alt=\"Image\" width=\"17%\" /></div>\n\n\n(ख)  में आपकी बात समझ गया।\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_332_974_573_1174.jpg\" alt=\"Image\" width=\"20%\" /></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_820_1009_1025_1191.jpg\" alt=\"Image\" width=\"17%\" /></div>\n\n\n2. एक शब्द के अनेक शब्द लिखो—\n\nलड़का - \"लड़के\"\n\nबेटा  - .....\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1068_1172_1149_1264.jpg\" alt=\"Image\" width=\"6%\" /></div>\n\n\nLet's Do 1\n\nकुत्ता - .....\n\nगमला— .....\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_27_1447_148_1615.jpg\" alt=\"Image\" width=\"10%\" /></div>\n\n\nपौधा - .....\n\nबच्चा - .....",
+      "images": {
+        "imgs/img_in_image_box_756_0_1165_415.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_1/imgs/img_in_image_box_756_0_1165_415.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A43Z%2F-1%2F%2F77f65231da303c274af8dc82929756017c699dcf961084357ebde527f53e9d21",
+        "imgs/img_in_image_box_411_424_710_566.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_1/imgs/img_in_image_box_411_424_710_566.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A43Z%2F-1%2F%2F7cfaba917404abdd841067a79d230c2fe1d9114beb9da2fd7ee0f85049797d3c",
+        "imgs/img_in_image_box_706_442_862_562.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_1/imgs/img_in_image_box_706_442_862_562.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A43Z%2F-1%2F%2Fc9f787259ccd498f700b00b48767d31729feef5b38652955b1571e5456022ff6",
+        "imgs/img_in_image_box_327_714_567_903.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_1/imgs/img_in_image_box_327_714_567_903.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A43Z%2F-1%2F%2F1bc3e1343e755193a3303eac2621c2568c2a42e06b78bc19f85f01f66a11f523",
+        "imgs/img_in_image_box_810_735_1014_912.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_1/imgs/img_in_image_box_810_735_1014_912.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A43Z%2F-1%2F%2Fe984d8825a46fecdf0734b03c4c74fc714f362eb9748d10e4e5836c66dd6ad3b",
+        "imgs/img_in_image_box_332_974_573_1174.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_1/imgs/img_in_image_box_332_974_573_1174.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A43Z%2F-1%2F%2F191a3c494b78a1f5a845d1e1654b8f72756233103d12c5acc4ed4d4d80e560e1",
+        "imgs/img_in_image_box_820_1009_1025_1191.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_1/imgs/img_in_image_box_820_1009_1025_1191.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A43Z%2F-1%2F%2Fb93f20b2f47ef7e67511639a24dc627dbbe9ee52d75ddd7aa1b8248ba5d42a10",
+        "imgs/img_in_image_box_1068_1172_1149_1264.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_1/imgs/img_in_image_box_1068_1172_1149_1264.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A43Z%2F-1%2F%2F67c183823ad022d10862b826cd9649e05040fbd01fadc97920a71795058e85e4",
+        "imgs/img_in_image_box_27_1447_148_1615.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_1/imgs/img_in_image_box_27_1447_148_1615.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A43Z%2F-1%2F%2F92e1a409e18df204b221ca817bbf8912e45b532c79c03c974e1c46f7ba17dc4d"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/layout_det_res_1.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A44Z%2F-1%2F%2Fd89ffc72cc5ac20f3922341cb186882bcff9b9c4d690c78ddadbe33bb8889e69"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/input_img_1.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A44Z%2F-1%2F%2F266919da64978cec99c7285e26d4d9d7339aab04390987a58b91b1be057eeae2"
+  },
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "text",
+          "block_content": "पहरी शब्द चुनकर खाली जगह भरो—",
+          "block_bbox": [
+            3,
+            33,
+            609,
+            130
+          ],
+          "block_id": 0,
+          "block_order": 1,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              3.0,
+              42.0
+            ],
+            [
+              3.0,
+              112.0
+            ],
+            [
+              38.0,
+              112.0
+            ],
+            [
+              128.0,
+              103.0
+            ],
+            [
+              249.0,
+              103.0
+            ],
+            [
+              375.0,
+              112.0
+            ],
+            [
+              441.0,
+              121.0
+            ],
+            [
+              501.0,
+              129.0
+            ],
+            [
+              608.0,
+              129.0
+            ],
+            [
+              608.0,
+              78.0
+            ],
+            [
+              542.0,
+              60.0
+            ],
+            [
+              488.0,
+              51.0
+            ],
+            [
+              428.0,
+              42.0
+            ],
+            [
+              338.0,
+              33.0
+            ],
+            [
+              57.0,
+              33.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "उपाय गमले शरारती पौधा",
+          "block_bbox": [
+            136,
+            121,
+            705,
+            228
+          ],
+          "block_id": 1,
+          "block_order": 2,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              136.0,
+              138.0
+            ],
+            [
+              136.0,
+              178.0
+            ],
+            [
+              142.0,
+              186.0
+            ],
+            [
+              166.0,
+              195.0
+            ],
+            [
+              195.0,
+              195.0
+            ],
+            [
+              292.0,
+              195.0
+            ],
+            [
+              448.0,
+              211.0
+            ],
+            [
+              502.0,
+              219.0
+            ],
+            [
+              704.0,
+              227.0
+            ],
+            [
+              699.0,
+              163.0
+            ],
+            [
+              603.0,
+              154.0
+            ],
+            [
+              585.0,
+              154.0
+            ],
+            [
+              519.0,
+              146.0
+            ],
+            [
+              459.0,
+              138.0
+            ],
+            [
+              363.0,
+              130.0
+            ],
+            [
+              291.0,
+              121.0
+            ],
+            [
+              274.0,
+              121.0
+            ],
+            [
+              142.0,
+              130.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_836_88_926_175.jpg\" alt=\"Image\" width=\"7%\" /></div>\n",
+          "block_bbox": [
+            836,
+            88,
+            926,
+            175
+          ],
+          "block_id": 2,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              836.0,
+              88.0
+            ],
+            [
+              926.0,
+              88.0
+            ],
+            [
+              926.0,
+              175.0
+            ],
+            [
+              836.0,
+              175.0
+            ]
+          ]
+        },
+        {
+          "block_label": "vision_footnote",
+          "block_content": "Let's Do 2",
+          "block_bbox": [
+            845,
+            177,
+            918,
+            196
+          ],
+          "block_id": 3,
+          "group_id": 3,
+          "block_polygon_points": [
+            [
+              845.0,
+              177.0
+            ],
+            [
+              917.0,
+              177.0
+            ],
+            [
+              917.0,
+              195.0
+            ],
+            [
+              845.0,
+              195.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_785_203_981_574.jpg\" alt=\"Image\" width=\"16%\" /></div>\n",
+          "block_bbox": [
+            785,
+            203,
+            981,
+            574
+          ],
+          "block_id": 4,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              782.3093872070312,
+              205.0706787109375
+            ],
+            [
+              968.9846801757812,
+              202.04351806640625
+            ],
+            [
+              975.0001831054688,
+              573.0000610351562
+            ],
+            [
+              788.3248901367188,
+              576.0272216796875
+            ]
+          ]
+        },
+        {
+          "block_label": "paragraph_title",
+          "block_content": "##### ग्रहणों के उत्तर लिखो-",
+          "block_bbox": [
+            5,
+            582,
+            396,
+            651
+          ],
+          "block_id": 5,
+          "block_order": 3,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              5.0,
+              582.0
+            ],
+            [
+              396.0,
+              582.0
+            ],
+            [
+              396.0,
+              651.0
+            ],
+            [
+              5.0,
+              651.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "(क) रोहन कैसा लड़का था?",
+          "block_bbox": [
+            6,
+            665,
+            502,
+            734
+          ],
+          "block_id": 6,
+          "block_order": 4,
+          "group_id": 6,
+          "block_polygon_points": [
+            [
+              6.0,
+              665.0
+            ],
+            [
+              502.0,
+              665.0
+            ],
+            [
+              502.0,
+              734.0
+            ],
+            [
+              6.0,
+              734.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_845_590_929_674.jpg\" alt=\"Image\" width=\"7%\" /></div>\n",
+          "block_bbox": [
+            845,
+            590,
+            929,
+            674
+          ],
+          "block_id": 7,
+          "group_id": 7,
+          "block_polygon_points": [
+            [
+              845.0,
+              590.0
+            ],
+            [
+              929.0,
+              590.0
+            ],
+            [
+              929.0,
+              674.0
+            ],
+            [
+              845.0,
+              674.0
+            ]
+          ]
+        },
+        {
+          "block_label": "vision_footnote",
+          "block_content": "Let's Smile",
+          "block_bbox": [
+            849,
+            677,
+            925,
+            698
+          ],
+          "block_id": 8,
+          "group_id": 8,
+          "block_polygon_points": [
+            [
+              924.0,
+              677.0
+            ],
+            [
+              900.0,
+              677.0
+            ],
+            [
+              900.0,
+              683.0
+            ],
+            [
+              899.0,
+              684.0
+            ],
+            [
+              849.0,
+              684.0
+            ],
+            [
+              849.0,
+              697.0
+            ],
+            [
+              924.0,
+              697.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "(ख) रोहन के घर कौन आया?\n\n.....",
+          "block_bbox": [
+            2,
+            823,
+            1006,
+            965
+          ],
+          "block_id": 9,
+          "block_order": 5,
+          "group_id": 9,
+          "block_polygon_points": [
+            [
+              2.0,
+              849.0
+            ],
+            [
+              8.0,
+              964.0
+            ],
+            [
+              1005.0,
+              931.0
+            ],
+            [
+              1000.0,
+              832.0
+            ],
+            [
+              8.0,
+              823.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "(ग) लड़का रोहन के पापों के पास क्यों आया?",
+          "block_bbox": [
+            6,
+            989,
+            1003,
+            1137
+          ],
+          "block_id": 10,
+          "block_order": 6,
+          "group_id": 10,
+          "block_polygon_points": [
+            [
+              6.0,
+              1006.0
+            ],
+            [
+              12.0,
+              1136.0
+            ],
+            [
+              1002.0,
+              1104.0
+            ],
+            [
+              997.0,
+              998.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "(घ) दादाजी रोहन को कहाँ ले गए?",
+          "block_bbox": [
+            11,
+            1156,
+            614,
+            1247
+          ],
+          "block_id": 11,
+          "block_order": 7,
+          "group_id": 11,
+          "block_polygon_points": [
+            [
+              7.443659782409668,
+              1186.2080078125
+            ],
+            [
+              612.1222534179688,
+              1150.241943359375
+            ],
+            [
+              616.4119262695312,
+              1222.3623046875
+            ],
+            [
+              11.73333740234375,
+              1258.328369140625
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "(ड) बड़े होने पर किन्ने सुधारना कितन होता है?",
+          "block_bbox": [
+            16,
+            1303,
+            796,
+            1418
+          ],
+          "block_id": 12,
+          "block_order": 8,
+          "group_id": 12,
+          "block_polygon_points": [
+            [
+              11.99549388885498,
+              1336.294189453125
+            ],
+            [
+              794.279541015625,
+              1297.478515625
+            ],
+            [
+              798.88330078125,
+              1390.261474609375
+            ],
+            [
+              16.5992431640625,
+              1429.0771484375
+            ]
+          ]
+        },
+        {
+          "block_label": "number",
+          "block_content": "107",
+          "block_bbox": [
+            960,
+            1489,
+            1023,
+            1535
+          ],
+          "block_id": 13,
+          "group_id": 13,
+          "block_polygon_points": [
+            [
+              960.0,
+              1489.0
+            ],
+            [
+              1023.0,
+              1489.0
+            ],
+            [
+              1023.0,
+              1535.0
+            ],
+            [
+              960.0,
+              1535.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "O Scanned with OKEN Scanner",
+          "block_bbox": [
+            796,
+            1626,
+            1173,
+            1663
+          ],
+          "block_id": 14,
+          "group_id": 14,
+          "block_polygon_points": [
+            [
+              796.0,
+              1626.0
+            ],
+            [
+              1173.0,
+              1626.0
+            ],
+            [
+              1173.0,
+              1663.0
+            ],
+            [
+              796.0,
+              1663.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.43179619312286377,
+            "coordinate": [
+              3,
+              33,
+              609,
+              130
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                3.0,
+                42.0
+              ],
+              [
+                3.0,
+                112.0
+              ],
+              [
+                38.0,
+                112.0
+              ],
+              [
+                128.0,
+                103.0
+              ],
+              [
+                249.0,
+                103.0
+              ],
+              [
+                375.0,
+                112.0
+              ],
+              [
+                441.0,
+                121.0
+              ],
+              [
+                501.0,
+                129.0
+              ],
+              [
+                608.0,
+                129.0
+              ],
+              [
+                608.0,
+                78.0
+              ],
+              [
+                542.0,
+                60.0
+              ],
+              [
+                488.0,
+                51.0
+              ],
+              [
+                428.0,
+                42.0
+              ],
+              [
+                338.0,
+                33.0
+              ],
+              [
+                57.0,
+                33.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.4006960988044739,
+            "coordinate": [
+              136,
+              121,
+              705,
+              228
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                136.0,
+                138.0
+              ],
+              [
+                136.0,
+                178.0
+              ],
+              [
+                142.0,
+                186.0
+              ],
+              [
+                166.0,
+                195.0
+              ],
+              [
+                195.0,
+                195.0
+              ],
+              [
+                292.0,
+                195.0
+              ],
+              [
+                448.0,
+                211.0
+              ],
+              [
+                502.0,
+                219.0
+              ],
+              [
+                704.0,
+                227.0
+              ],
+              [
+                699.0,
+                163.0
+              ],
+              [
+                603.0,
+                154.0
+              ],
+              [
+                585.0,
+                154.0
+              ],
+              [
+                519.0,
+                146.0
+              ],
+              [
+                459.0,
+                138.0
+              ],
+              [
+                363.0,
+                130.0
+              ],
+              [
+                291.0,
+                121.0
+              ],
+              [
+                274.0,
+                121.0
+              ],
+              [
+                142.0,
+                130.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.691550612449646,
+            "coordinate": [
+              836,
+              88,
+              926,
+              175
+            ],
+            "polygon_points": [
+              [
+                836.0,
+                88.0
+              ],
+              [
+                926.0,
+                88.0
+              ],
+              [
+                926.0,
+                175.0
+              ],
+              [
+                836.0,
+                175.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 24,
+            "label": "vision_footnote",
+            "score": 0.5942621231079102,
+            "coordinate": [
+              845,
+              177,
+              918,
+              196
+            ],
+            "polygon_points": [
+              [
+                845.0,
+                177.0
+              ],
+              [
+                917.0,
+                177.0
+              ],
+              [
+                917.0,
+                195.0
+              ],
+              [
+                845.0,
+                195.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.5570394992828369,
+            "coordinate": [
+              785,
+              203,
+              981,
+              574
+            ],
+            "polygon_points": [
+              [
+                782.3093872070312,
+                205.0706787109375
+              ],
+              [
+                968.9846801757812,
+                202.04351806640625
+              ],
+              [
+                975.0001831054688,
+                573.0000610351562
+              ],
+              [
+                788.3248901367188,
+                576.0272216796875
+              ]
+            ]
+          },
+          {
+            "cls_id": 17,
+            "label": "paragraph_title",
+            "score": 0.358822226524353,
+            "coordinate": [
+              5,
+              582,
+              396,
+              651
+            ],
+            "order": 3,
+            "polygon_points": [
+              [
+                5.0,
+                582.0
+              ],
+              [
+                396.0,
+                582.0
+              ],
+              [
+                396.0,
+                651.0
+              ],
+              [
+                5.0,
+                651.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3743293881416321,
+            "coordinate": [
+              6,
+              665,
+              502,
+              734
+            ],
+            "order": 4,
+            "polygon_points": [
+              [
+                6.0,
+                665.0
+              ],
+              [
+                502.0,
+                665.0
+              ],
+              [
+                502.0,
+                734.0
+              ],
+              [
+                6.0,
+                734.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.8327346444129944,
+            "coordinate": [
+              845,
+              590,
+              929,
+              674
+            ],
+            "polygon_points": [
+              [
+                845.0,
+                590.0
+              ],
+              [
+                929.0,
+                590.0
+              ],
+              [
+                929.0,
+                674.0
+              ],
+              [
+                845.0,
+                674.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 24,
+            "label": "vision_footnote",
+            "score": 0.6393011808395386,
+            "coordinate": [
+              849,
+              677,
+              925,
+              698
+            ],
+            "polygon_points": [
+              [
+                924.0,
+                677.0
+              ],
+              [
+                900.0,
+                677.0
+              ],
+              [
+                900.0,
+                683.0
+              ],
+              [
+                899.0,
+                684.0
+              ],
+              [
+                849.0,
+                684.0
+              ],
+              [
+                849.0,
+                697.0
+              ],
+              [
+                924.0,
+                697.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3344227075576782,
+            "coordinate": [
+              5,
+              833,
+              531,
+              903
+            ],
+            "order": 5,
+            "polygon_points": [
+              [
+                5.0,
+                833.0
+              ],
+              [
+                531.0,
+                833.0
+              ],
+              [
+                531.0,
+                903.0
+              ],
+              [
+                5.0,
+                903.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3207722008228302,
+            "coordinate": [
+              2,
+              823,
+              1006,
+              965
+            ],
+            "order": 6,
+            "polygon_points": [
+              [
+                2.0,
+                849.0
+              ],
+              [
+                8.0,
+                964.0
+              ],
+              [
+                1005.0,
+                931.0
+              ],
+              [
+                1000.0,
+                832.0
+              ],
+              [
+                8.0,
+                823.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.37024688720703125,
+            "coordinate": [
+              4,
+              992,
+              782,
+              1077
+            ],
+            "order": 7,
+            "polygon_points": [
+              [
+                3.6728382110595703,
+                1007.512939453125
+              ],
+              [
+                779.169677734375,
+                983.322998046875
+              ],
+              [
+                781.51318359375,
+                1058.45361328125
+              ],
+              [
+                6.016357421875,
+                1082.6435546875
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3130365014076233,
+            "coordinate": [
+              6,
+              989,
+              1003,
+              1137
+            ],
+            "order": 8,
+            "polygon_points": [
+              [
+                6.0,
+                1006.0
+              ],
+              [
+                12.0,
+                1136.0
+              ],
+              [
+                1002.0,
+                1104.0
+              ],
+              [
+                997.0,
+                998.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3989895284175873,
+            "coordinate": [
+              11,
+              1156,
+              614,
+              1247
+            ],
+            "order": 9,
+            "polygon_points": [
+              [
+                7.443659782409668,
+                1186.2080078125
+              ],
+              [
+                612.1222534179688,
+                1150.241943359375
+              ],
+              [
+                616.4119262695312,
+                1222.3623046875
+              ],
+              [
+                11.73333740234375,
+                1258.328369140625
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.4904024302959442,
+            "coordinate": [
+              16,
+              1303,
+              796,
+              1418
+            ],
+            "order": 10,
+            "polygon_points": [
+              [
+                11.99549388885498,
+                1336.294189453125
+              ],
+              [
+                794.279541015625,
+                1297.478515625
+              ],
+              [
+                798.88330078125,
+                1390.261474609375
+              ],
+              [
+                16.5992431640625,
+                1429.0771484375
+              ]
+            ]
+          },
+          {
+            "cls_id": 16,
+            "label": "number",
+            "score": 0.5569038391113281,
+            "coordinate": [
+              960,
+              1489,
+              1023,
+              1535
+            ],
+            "order": 11,
+            "polygon_points": [
+              [
+                960.0,
+                1489.0
+              ],
+              [
+                1023.0,
+                1489.0
+              ],
+              [
+                1023.0,
+                1535.0
+              ],
+              [
+                960.0,
+                1535.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 9,
+            "label": "footer_image",
+            "score": 0.39259445667266846,
+            "coordinate": [
+              798,
+              1626,
+              843,
+              1664
+            ],
+            "polygon_points": [
+              [
+                798.0,
+                1626.0
+              ],
+              [
+                843.0,
+                1626.0
+              ],
+              [
+                843.0,
+                1664.0
+              ],
+              [
+                798.0,
+                1664.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.7863839864730835,
+            "coordinate": [
+              796,
+              1626,
+              1173,
+              1663
+            ],
+            "polygon_points": [
+              [
+                796.0,
+                1626.0
+              ],
+              [
+                1173.0,
+                1626.0
+              ],
+              [
+                1173.0,
+                1663.0
+              ],
+              [
+                796.0,
+                1663.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "पहरी शब्द चुनकर खाली जगह भरो—\n\nउपाय गमले शरारती पौधा\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_836_88_926_175.jpg\" alt=\"Image\" width=\"7%\" /></div>\n\n\nLet's Do 2\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_785_203_981_574.jpg\" alt=\"Image\" width=\"16%\" /></div>\n\n\n##### ग्रहणों के उत्तर लिखो-\n\n(क) रोहन कैसा लड़का था?\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_845_590_929_674.jpg\" alt=\"Image\" width=\"7%\" /></div>\n\n\nLet's Smile\n\n(ख) रोहन के घर कौन आया?\n\n.....\n\n(ग) लड़का रोहन के पापों के पास क्यों आया?\n\n(घ) दादाजी रोहन को कहाँ ले गए?\n\n(ड) बड़े होने पर किन्ने सुधारना कितन होता है?",
+      "images": {
+        "imgs/img_in_image_box_836_88_926_175.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_2/imgs/img_in_image_box_836_88_926_175.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A44Z%2F-1%2F%2F2a38da2e78e5d57d57fbfcf29c3ef990e6f1b9dffb4bd2f9ec2c18b730313fab",
+        "imgs/img_in_image_box_785_203_981_574.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_2/imgs/img_in_image_box_785_203_981_574.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A44Z%2F-1%2F%2F45464f10185269ac26af7d44a257cf33b4e1542f5ed0fc89b5dbdc80075e1df9",
+        "imgs/img_in_image_box_845_590_929_674.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_2/imgs/img_in_image_box_845_590_929_674.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A44Z%2F-1%2F%2F5182be364fc58e05daf665e650f4d95f1f95e357002b06e2f5b3e36fd80fe20e"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/layout_det_res_2.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A44Z%2F-1%2F%2Fe725e68c9aec236f09bff07ba26f4c1a97e21c22356876fd554eb14d1e1a1f31"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/input_img_2.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A44Z%2F-1%2F%2F2560b9b709729cbede8d0e72aac667930311727a98d258a8b4aac6365a6ec690"
+  },
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "header_image",
+          "block_content": "<div style=\"text-align: center;\"></div>\n",
+          "block_bbox": [
+            91,
+            71,
+            263,
+            240
+          ],
+          "block_id": 0,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              91.0,
+              71.0
+            ],
+            [
+              263.0,
+              71.0
+            ],
+            [
+              263.0,
+              240.0
+            ],
+            [
+              91.0,
+              240.0
+            ]
+          ]
+        },
+        {
+          "block_label": "header_image",
+          "block_content": "<div style=\"text-align: center;\"></div>\n",
+          "block_bbox": [
+            277,
+            97,
+            355,
+            173
+          ],
+          "block_id": 1,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              277.0,
+              97.0
+            ],
+            [
+              355.0,
+              97.0
+            ],
+            [
+              355.0,
+              173.0
+            ],
+            [
+              277.0,
+              173.0
+            ]
+          ]
+        },
+        {
+          "block_label": "header",
+          "block_content": "Let's Excite",
+          "block_bbox": [
+            279,
+            176,
+            351,
+            194
+          ],
+          "block_id": 2,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              279.0,
+              176.0
+            ],
+            [
+              350.0,
+              176.0
+            ],
+            [
+              350.0,
+              193.0
+            ],
+            [
+              279.0,
+              193.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "सुंदर-सुंदर प्यारी तितली,\n\nफूलों पर मँडराती है।\n\nइस डाली से उस डाली तक,\n\nइटपट वह उड़ जाती है।",
+          "block_bbox": [
+            90,
+            268,
+            517,
+            502
+          ],
+          "block_id": 3,
+          "block_order": 1,
+          "group_id": 3,
+          "block_polygon_points": [
+            [
+              90.0,
+              268.0
+            ],
+            [
+              517.0,
+              268.0
+            ],
+            [
+              517.0,
+              502.0
+            ],
+            [
+              90.0,
+              502.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "रंग-बिरंगे पंख हैं इसके,\n\nबच्चों को ललचते हैं।\n\nलाल, गुलाबी, नीले, पीले,\n\nलगते बहुत सजीले हैं।",
+          "block_bbox": [
+            249,
+            529,
+            647,
+            780
+          ],
+          "block_id": 4,
+          "block_order": 2,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              249.0,
+              529.0
+            ],
+            [
+              647.0,
+              529.0
+            ],
+            [
+              647.0,
+              780.0
+            ],
+            [
+              249.0,
+              780.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "जब भी हम सारे बच्चे,\n\nइसे पकड़ने जाते हैं।\n\nइट से यह उड़ जाती है,\n\nहम इस पकड़ न पाते हैं।",
+          "block_bbox": [
+            68,
+            812,
+            454,
+            1069
+          ],
+          "block_id": 5,
+          "block_order": 3,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              68.0,
+              812.0
+            ],
+            [
+              454.0,
+              812.0
+            ],
+            [
+              454.0,
+              1069.0
+            ],
+            [
+              68.0,
+              1069.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "Scanned with OKEN Scanner",
+          "block_bbox": [
+            797,
+            1628,
+            1173,
+            1662
+          ],
+          "block_id": 6,
+          "group_id": 6,
+          "block_polygon_points": [
+            [
+              797.0,
+              1628.0
+            ],
+            [
+              1173.0,
+              1628.0
+            ],
+            [
+              1173.0,
+              1662.0
+            ],
+            [
+              797.0,
+              1662.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 12,
+            "label": "header",
+            "score": 0.31643542647361755,
+            "coordinate": [
+              92,
+              73,
+              261,
+              110
+            ],
+            "polygon_points": [
+              [
+                92.0,
+                73.0
+              ],
+              [
+                261.0,
+                73.0
+              ],
+              [
+                261.0,
+                110.0
+              ],
+              [
+                92.0,
+                110.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 13,
+            "label": "header_image",
+            "score": 0.547556459903717,
+            "coordinate": [
+              91,
+              71,
+              263,
+              240
+            ],
+            "polygon_points": [
+              [
+                91.0,
+                71.0
+              ],
+              [
+                263.0,
+                71.0
+              ],
+              [
+                263.0,
+                240.0
+              ],
+              [
+                91.0,
+                240.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 13,
+            "label": "header_image",
+            "score": 0.6978785395622253,
+            "coordinate": [
+              277,
+              97,
+              355,
+              173
+            ],
+            "polygon_points": [
+              [
+                277.0,
+                97.0
+              ],
+              [
+                355.0,
+                97.0
+              ],
+              [
+                355.0,
+                173.0
+              ],
+              [
+                277.0,
+                173.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 12,
+            "label": "header",
+            "score": 0.445056289434433,
+            "coordinate": [
+              279,
+              176,
+              351,
+              194
+            ],
+            "polygon_points": [
+              [
+                279.0,
+                176.0
+              ],
+              [
+                350.0,
+                176.0
+              ],
+              [
+                350.0,
+                193.0
+              ],
+              [
+                279.0,
+                193.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7963427305221558,
+            "coordinate": [
+              90,
+              268,
+              517,
+              502
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                90.0,
+                268.0
+              ],
+              [
+                517.0,
+                268.0
+              ],
+              [
+                517.0,
+                502.0
+              ],
+              [
+                90.0,
+                502.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7226728796958923,
+            "coordinate": [
+              249,
+              529,
+              647,
+              780
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                249.0,
+                529.0
+              ],
+              [
+                647.0,
+                529.0
+              ],
+              [
+                647.0,
+                780.0
+              ],
+              [
+                249.0,
+                780.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.8471357822418213,
+            "coordinate": [
+              68,
+              812,
+              454,
+              1069
+            ],
+            "order": 3,
+            "polygon_points": [
+              [
+                68.0,
+                812.0
+              ],
+              [
+                454.0,
+                812.0
+              ],
+              [
+                454.0,
+                1069.0
+              ],
+              [
+                68.0,
+                1069.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 9,
+            "label": "footer_image",
+            "score": 0.5322092771530151,
+            "coordinate": [
+              797,
+              1627,
+              843,
+              1663
+            ],
+            "polygon_points": [
+              [
+                797.0,
+                1627.0
+              ],
+              [
+                842.0,
+                1627.0
+              ],
+              [
+                842.0,
+                1655.0
+              ],
+              [
+                797.0,
+                1655.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.6833927631378174,
+            "coordinate": [
+              797,
+              1628,
+              1173,
+              1662
+            ],
+            "polygon_points": [
+              [
+                797.0,
+                1628.0
+              ],
+              [
+                1173.0,
+                1628.0
+              ],
+              [
+                1173.0,
+                1662.0
+              ],
+              [
+                797.0,
+                1662.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "सुंदर-सुंदर प्यारी तितली,\n\nफूलों पर मँडराती है।\n\nइस डाली से उस डाली तक,\n\nइटपट वह उड़ जाती है।\n\nरंग-बिरंगे पंख हैं इसके,\n\nबच्चों को ललचते हैं।\n\nलाल, गुलाबी, नीले, पीले,\n\nलगते बहुत सजीले हैं।\n\nजब भी हम सारे बच्चे,\n\nइसे पकड़ने जाते हैं।\n\nइट से यह उड़ जाती है,\n\nहम इस पकड़ न पाते हैं।",
+      "images": {
+        "imgs/img_in_header_image_box_91_71_263_240.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_3/imgs/img_in_header_image_box_91_71_263_240.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A45Z%2F-1%2F%2F9b49997dd0f6fbb2661737517a7a3f3464b84f761388ba58109b19d60fbcaedb",
+        "imgs/img_in_header_image_box_277_97_355_173.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_3/imgs/img_in_header_image_box_277_97_355_173.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A45Z%2F-1%2F%2F646dabf610d0d259179754c97c546d5b2c8596c086ac75ff4fe9aba2dd151dfd"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/layout_det_res_3.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A45Z%2F-1%2F%2Fa9bef2f2efa32135cbf0cd0f6763e5b4dc54ccb8ad7a6df681e9a29b4eb26647"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/input_img_3.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A45Z%2F-1%2F%2Fe88be911ba5d5a904469e36bb81e2bda813a3f5ef62f41ea5cd1bbf2e7b37afd"
+  },
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "doc_title",
+          "block_content": "# 23 चिडियाधर",
+          "block_bbox": [
+            272,
+            13,
+            713,
+            139
+          ],
+          "block_id": 0,
+          "block_order": 1,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              272.38006591796875,
+              5.066109657287598
+            ],
+            [
+              716.964599609375,
+              26.363571166992188
+            ],
+            [
+              711.5672607421875,
+              139.0331573486328
+            ],
+            [
+              266.98272705078125,
+              117.73570251464844
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_765_86_842_161.jpg\" alt=\"Image\" width=\"6%\" /></div>\n",
+          "block_bbox": [
+            765,
+            86,
+            842,
+            161
+          ],
+          "block_id": 1,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              765.0,
+              86.0
+            ],
+            [
+              842.0,
+              86.0
+            ],
+            [
+              842.0,
+              161.0
+            ],
+            [
+              765.0,
+              161.0
+            ]
+          ]
+        },
+        {
+          "block_label": "vision_footnote",
+          "block_content": "Let's Watch",
+          "block_bbox": [
+            769,
+            166,
+            840,
+            182
+          ],
+          "block_id": 2,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              769.0,
+              166.0
+            ],
+            [
+              839.0,
+              166.0
+            ],
+            [
+              839.0,
+              181.0
+            ],
+            [
+              769.0,
+              181.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_932_84_1012_161.jpg\" alt=\"Image\" width=\"6%\" /></div>\n",
+          "block_bbox": [
+            932,
+            84,
+            1012,
+            161
+          ],
+          "block_id": 3,
+          "group_id": 3,
+          "block_polygon_points": [
+            [
+              932.0,
+              84.0
+            ],
+            [
+              1012.0,
+              84.0
+            ],
+            [
+              1012.0,
+              161.0
+            ],
+            [
+              932.0,
+              161.0
+            ]
+          ]
+        },
+        {
+          "block_label": "vision_footnote",
+          "block_content": "Let's Listen",
+          "block_bbox": [
+            935,
+            167,
+            1011,
+            182
+          ],
+          "block_id": 4,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              935.0,
+              167.0
+            ],
+            [
+              1010.0,
+              167.0
+            ],
+            [
+              1010.0,
+              181.0
+            ],
+            [
+              935.0,
+              181.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "चलो चले हम सब चिड्याचर,\n\nममी और पापा के साथ।\n\nवहाँ मिलेंग काले भालू,\n\nकरते आपस में कुछ बात।\n\nहिरन भी होंगे, बंदर भी होंगे,\n\nहोंगे खरगोश और चीता।\n\nदरिया में होगा घिड्याल,\n\nशायद जल को पीता।\n\nहाँ मिलेंगी प्यारी चिडियाँ,\n\nते गीत सुनातीं।\n\nछली होंगी, बतखें होंगी।\n\nहरी पर इठलातीं।\n\nतोते, उल्लू, हंस और बगुले,\n\nवहाँ मिलेंगे सारे।\n\nवहाँ जिराफ और जेला होंगे,\n\nलगते मन को प्यारे।\n\nहाँ मिलेंगे शेर और हाथी,\n\nज-तेज चில்लाते।\n\nधिड्याचर के पशु-पक्षी,\n\nमेरे मन को भाते।",
+          "block_bbox": [
+            0,
+            162,
+            468,
+            1462
+          ],
+          "block_id": 5,
+          "block_order": 2,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              -2.0,
+              162.0
+            ],
+            [
+              468.0,
+              162.0
+            ],
+            [
+              468.0,
+              1462.0
+            ],
+            [
+              -2.0,
+              1462.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_454_154_1119_1431.jpg\" alt=\"Image\" width=\"55%\" /></div>\n",
+          "block_bbox": [
+            454,
+            154,
+            1119,
+            1431
+          ],
+          "block_id": 6,
+          "group_id": 6,
+          "block_polygon_points": [
+            [
+              454.0,
+              154.0
+            ],
+            [
+              1119.0,
+              154.0
+            ],
+            [
+              1119.0,
+              1431.0
+            ],
+            [
+              454.0,
+              1431.0
+            ]
+          ]
+        },
+        {
+          "block_label": "paragraph_title",
+          "block_content": "#### চিডিয়ার",
+          "block_bbox": [
+            653,
+            664,
+            949,
+            743
+          ],
+          "block_id": 7,
+          "block_order": 3,
+          "group_id": 7,
+          "block_polygon_points": [
+            [
+              653.0,
+              664.0
+            ],
+            [
+              949.0,
+              664.0
+            ],
+            [
+              949.0,
+              743.0
+            ],
+            [
+              653.0,
+              743.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "मेकत - अध्यापक/अध्यापिका द्वारा बच्चों से चिذियाघर के बारे में बात की जाए? उनसे प्रश्न भी पूछे जाए।",
+          "block_bbox": [
+            7,
+            1450,
+            948,
+            1512
+          ],
+          "block_id": 8,
+          "group_id": 8,
+          "block_polygon_points": [
+            [
+              947.0,
+              1450.0
+            ],
+            [
+              615.0,
+              1450.0
+            ],
+            [
+              316.0,
+              1474.0
+            ],
+            [
+              7.0,
+              1466.0
+            ],
+            [
+              7.0,
+              1504.0
+            ],
+            [
+              263.0,
+              1511.0
+            ],
+            [
+              478.0,
+              1488.0
+            ],
+            [
+              947.0,
+              1480.0
+            ]
+          ]
+        },
+        {
+          "block_label": "number",
+          "block_content": "109",
+          "block_bbox": [
+            1012,
+            1460,
+            1076,
+            1505
+          ],
+          "block_id": 9,
+          "group_id": 9,
+          "block_polygon_points": [
+            [
+              1012.0,
+              1460.0
+            ],
+            [
+              1076.0,
+              1460.0
+            ],
+            [
+              1076.0,
+              1505.0
+            ],
+            [
+              1012.0,
+              1505.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "Scanned with OKEN Scanner",
+          "block_bbox": [
+            796,
+            1627,
+            1172,
+            1661
+          ],
+          "block_id": 10,
+          "group_id": 10,
+          "block_polygon_points": [
+            [
+              796.0,
+              1627.0
+            ],
+            [
+              1172.0,
+              1627.0
+            ],
+            [
+              1172.0,
+              1661.0
+            ],
+            [
+              796.0,
+              1661.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 6,
+            "label": "doc_title",
+            "score": 0.42378881573677063,
+            "coordinate": [
+              272,
+              13,
+              713,
+              139
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                272.38006591796875,
+                5.066109657287598
+              ],
+              [
+                716.964599609375,
+                26.363571166992188
+              ],
+              [
+                711.5672607421875,
+                139.0331573486328
+              ],
+              [
+                266.98272705078125,
+                117.73570251464844
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.6152425408363342,
+            "coordinate": [
+              765,
+              86,
+              842,
+              161
+            ],
+            "polygon_points": [
+              [
+                765.0,
+                86.0
+              ],
+              [
+                842.0,
+                86.0
+              ],
+              [
+                842.0,
+                161.0
+              ],
+              [
+                765.0,
+                161.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 24,
+            "label": "vision_footnote",
+            "score": 0.6717050075531006,
+            "coordinate": [
+              769,
+              166,
+              840,
+              182
+            ],
+            "polygon_points": [
+              [
+                769.0,
+                166.0
+              ],
+              [
+                839.0,
+                166.0
+              ],
+              [
+                839.0,
+                181.0
+              ],
+              [
+                769.0,
+                181.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.7252853512763977,
+            "coordinate": [
+              932,
+              84,
+              1012,
+              161
+            ],
+            "polygon_points": [
+              [
+                932.0,
+                84.0
+              ],
+              [
+                1012.0,
+                84.0
+              ],
+              [
+                1012.0,
+                161.0
+              ],
+              [
+                932.0,
+                161.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 24,
+            "label": "vision_footnote",
+            "score": 0.6787300109863281,
+            "coordinate": [
+              935,
+              167,
+              1011,
+              182
+            ],
+            "polygon_points": [
+              [
+                935.0,
+                167.0
+              ],
+              [
+                1010.0,
+                167.0
+              ],
+              [
+                1010.0,
+                181.0
+              ],
+              [
+                935.0,
+                181.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.5669069886207581,
+            "coordinate": [
+              0,
+              152,
+              436,
+              406
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                -1.0,
+                152.0
+              ],
+              [
+                436.0,
+                152.0
+              ],
+              [
+                436.0,
+                406.0
+              ],
+              [
+                -1.0,
+                406.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.3913552165031433,
+            "coordinate": [
+              0,
+              162,
+              468,
+              1462
+            ],
+            "order": 3,
+            "polygon_points": [
+              [
+                -2.0,
+                162.0
+              ],
+              [
+                468.0,
+                162.0
+              ],
+              [
+                468.0,
+                1462.0
+              ],
+              [
+                -2.0,
+                1462.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.4426937699317932,
+            "coordinate": [
+              1,
+              418,
+              461,
+              665
+            ],
+            "order": 4,
+            "polygon_points": [
+              [
+                1.0,
+                418.0
+              ],
+              [
+                461.0,
+                418.0
+              ],
+              [
+                461.0,
+                665.0
+              ],
+              [
+                1.0,
+                665.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.4368301331996918,
+            "coordinate": [
+              0,
+              682,
+              442,
+              932
+            ],
+            "order": 5,
+            "polygon_points": [
+              [
+                0.0,
+                682.0
+              ],
+              [
+                442.0,
+                682.0
+              ],
+              [
+                442.0,
+                932.0
+              ],
+              [
+                0.0,
+                932.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.49609458446502686,
+            "coordinate": [
+              1,
+              948,
+              458,
+              1197
+            ],
+            "order": 6,
+            "polygon_points": [
+              [
+                1.0,
+                948.0
+              ],
+              [
+                458.0,
+                948.0
+              ],
+              [
+                458.0,
+                1197.0
+              ],
+              [
+                1.0,
+                1197.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.5190302133560181,
+            "coordinate": [
+              465,
+              157,
+              1096,
+              683
+            ],
+            "polygon_points": [
+              [
+                465.0,
+                157.0
+              ],
+              [
+                1096.0,
+                157.0
+              ],
+              [
+                1096.0,
+                683.0
+              ],
+              [
+                465.0,
+                683.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.4256384074687958,
+            "coordinate": [
+              0,
+              1214,
+              377,
+              1460
+            ],
+            "order": 7,
+            "polygon_points": [
+              [
+                -1.0,
+                1214.0
+              ],
+              [
+                377.0,
+                1214.0
+              ],
+              [
+                377.0,
+                1460.0
+              ],
+              [
+                -1.0,
+                1460.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.5970697402954102,
+            "coordinate": [
+              454,
+              154,
+              1119,
+              1431
+            ],
+            "polygon_points": [
+              [
+                454.0,
+                154.0
+              ],
+              [
+                1119.0,
+                154.0
+              ],
+              [
+                1119.0,
+                1431.0
+              ],
+              [
+                454.0,
+                1431.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 17,
+            "label": "paragraph_title",
+            "score": 0.4132612645626068,
+            "coordinate": [
+              653,
+              664,
+              949,
+              743
+            ],
+            "order": 8,
+            "polygon_points": [
+              [
+                653.0,
+                664.0
+              ],
+              [
+                949.0,
+                664.0
+              ],
+              [
+                949.0,
+                743.0
+              ],
+              [
+                653.0,
+                743.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.4364026188850403,
+            "coordinate": [
+              461,
+              700,
+              1118,
+              1420
+            ],
+            "polygon_points": [
+              [
+                461.0,
+                700.0
+              ],
+              [
+                1118.0,
+                700.0
+              ],
+              [
+                1118.0,
+                1420.0
+              ],
+              [
+                461.0,
+                1420.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.6670954823493958,
+            "coordinate": [
+              7,
+              1450,
+              948,
+              1512
+            ],
+            "polygon_points": [
+              [
+                947.0,
+                1450.0
+              ],
+              [
+                615.0,
+                1450.0
+              ],
+              [
+                316.0,
+                1474.0
+              ],
+              [
+                7.0,
+                1466.0
+              ],
+              [
+                7.0,
+                1504.0
+              ],
+              [
+                263.0,
+                1511.0
+              ],
+              [
+                478.0,
+                1488.0
+              ],
+              [
+                947.0,
+                1480.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 16,
+            "label": "number",
+            "score": 0.5566083788871765,
+            "coordinate": [
+              1012,
+              1460,
+              1076,
+              1505
+            ],
+            "order": 9,
+            "polygon_points": [
+              [
+                1012.0,
+                1460.0
+              ],
+              [
+                1076.0,
+                1460.0
+              ],
+              [
+                1076.0,
+                1505.0
+              ],
+              [
+                1012.0,
+                1505.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 9,
+            "label": "footer_image",
+            "score": 0.4270729124546051,
+            "coordinate": [
+              797,
+              1626,
+              843,
+              1662
+            ],
+            "polygon_points": [
+              [
+                797.0,
+                1626.0
+              ],
+              [
+                843.0,
+                1626.0
+              ],
+              [
+                843.0,
+                1662.0
+              ],
+              [
+                797.0,
+                1662.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.7213492393493652,
+            "coordinate": [
+              796,
+              1627,
+              1172,
+              1661
+            ],
+            "polygon_points": [
+              [
+                796.0,
+                1627.0
+              ],
+              [
+                1172.0,
+                1627.0
+              ],
+              [
+                1172.0,
+                1661.0
+              ],
+              [
+                796.0,
+                1661.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "# 23 चिडियाधर\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_765_86_842_161.jpg\" alt=\"Image\" width=\"6%\" /></div>\n\n\nLet's Watch\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_932_84_1012_161.jpg\" alt=\"Image\" width=\"6%\" /></div>\n\n\nLet's Listen\n\nचलो चले हम सब चिड्याचर,\n\nममी और पापा के साथ।\n\nवहाँ मिलेंग काले भालू,\n\nकरते आपस में कुछ बात।\n\nहिरन भी होंगे, बंदर भी होंगे,\n\nहोंगे खरगोश और चीता।\n\nदरिया में होगा घिड्याल,\n\nशायद जल को पीता।\n\nहाँ मिलेंगी प्यारी चिडियाँ,\n\nते गीत सुनातीं।\n\nछली होंगी, बतखें होंगी।\n\nहरी पर इठलातीं।\n\nतोते, उल्लू, हंस और बगुले,\n\nवहाँ मिलेंगे सारे।\n\nवहाँ जिराफ और जेला होंगे,\n\nलगते मन को प्यारे।\n\nहाँ मिलेंगे शेर और हाथी,\n\nज-तेज चில்लाते।\n\nधिड्याचर के पशु-पक्षी,\n\nमेरे मन को भाते।\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_454_154_1119_1431.jpg\" alt=\"Image\" width=\"55%\" /></div>\n\n\n#### চিডিয়ার",
+      "images": {
+        "imgs/img_in_image_box_765_86_842_161.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_4/imgs/img_in_image_box_765_86_842_161.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A45Z%2F-1%2F%2Fd15a9e25bea433cf0ab458664bc9e62f7dd69c8a97c4b78a23369b8b76331aa5",
+        "imgs/img_in_image_box_932_84_1012_161.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_4/imgs/img_in_image_box_932_84_1012_161.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A45Z%2F-1%2F%2F32329a1f4fb9dfda6da891308974f9a39ae11ff34482f3b7b532ff3f43b69237",
+        "imgs/img_in_image_box_454_154_1119_1431.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_4/imgs/img_in_image_box_454_154_1119_1431.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A45Z%2F-1%2F%2Fd9800f229ab30f0a80460fe30523321b514803364986b1d830d04c0e6c1f396d",
+        "imgs/img_in_image_box_465_157_1096_683.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_4/imgs/img_in_image_box_465_157_1096_683.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A45Z%2F-1%2F%2Fbdbdacb0b3d0e0e7d22a1e850ec0519bec91e182926dc9a80344755f12f5bbeb",
+        "imgs/img_in_image_box_461_700_1118_1420.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/markdown_4/imgs/img_in_image_box_461_700_1118_1420.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A45Z%2F-1%2F%2Fc919f9a32fd6b702bbb0701b3f70d74206100ecd96950044fef93ebbff3de154"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/layout_det_res_4.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A46Z%2F-1%2F%2F1f9101e66add940ff8fd974e0059f8ad456dc912056fdc66bae98fe7c5847b62"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8172e228-3e69-4217-966a-83bd939fa349/input_img_4.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A15%3A46Z%2F-1%2F%2F128ae54c3aedb3e8fc54db77f60b0b18a3494fad8a69bbb2be0b17f6f614996b"
+  }
+]

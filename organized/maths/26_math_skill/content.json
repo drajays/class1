@@ -1,0 +1,620 @@
+[
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "table",
+          "block_content": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Grade: 1</td><td style='text-align: center; word-wrap: break-word;'>Subject: Maths</td><td style='text-align: center; word-wrap: break-word;'>Topic: Addition</td></tr></table>",
+          "block_bbox": [
+            50,
+            78,
+            908,
+            169
+          ],
+          "block_id": 0,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              50.0,
+              78.0
+            ],
+            [
+              908.0,
+              78.0
+            ],
+            [
+              908.0,
+              169.0
+            ],
+            [
+              50.0,
+              169.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Practice Sheet : 28",
+          "block_bbox": [
+            50,
+            177,
+            276,
+            218
+          ],
+          "block_id": 1,
+          "block_order": 1,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              48.25934600830078,
+              182.18702697753906
+            ],
+            [
+              274.6932373046875,
+              170.86534118652344
+            ],
+            [
+              276.59600830078125,
+              208.9202117919922
+            ],
+            [
+              50.162109375,
+              220.2418975830078
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Date: ___",
+          "block_bbox": [
+            47,
+            213,
+            309,
+            248
+          ],
+          "block_id": 2,
+          "block_order": 2,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              47.0,
+              213.0
+            ],
+            [
+              309.0,
+              213.0
+            ],
+            [
+              309.0,
+              248.0
+            ],
+            [
+              47.0,
+              248.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Word Problem :",
+          "block_bbox": [
+            45,
+            277,
+            238,
+            318
+          ],
+          "block_id": 3,
+          "block_order": 3,
+          "group_id": 3,
+          "block_polygon_points": [
+            [
+              43.09838104248047,
+              279.9179992675781
+            ],
+            [
+              236.6406707763672,
+              269.9927673339844
+            ],
+            [
+              238.63671875,
+              308.9160461425781
+            ],
+            [
+              45.09443664550781,
+              318.8412780761719
+            ]
+          ]
+        },
+        {
+          "block_label": "table",
+          "block_content": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>T O</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>a) Jen has 3 white cats.</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>Max has 4 black cats.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>How many cats are there altogether?</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>b) Sam has 16 red pencils.</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>Tim has 2 blue pencils.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>How many pencils are there in all?</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>c) Jack has 9 green kites.</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>Jill has 8 yellow kites.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>How many kites are there altogether?</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>",
+          "block_bbox": [
+            33,
+            329,
+            1132,
+            1396
+          ],
+          "block_id": 4,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              33.0,
+              329.0
+            ],
+            [
+              1132.0,
+              329.0
+            ],
+            [
+              1132.0,
+              1396.0
+            ],
+            [
+              33.0,
+              1396.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_7_898_107_1008.jpg\" alt=\"Image\" width=\"8%\" /></div>\n",
+          "block_bbox": [
+            7,
+            898,
+            107,
+            1008
+          ],
+          "block_id": 5,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              7.0,
+              898.0
+            ],
+            [
+              107.0,
+              898.0
+            ],
+            [
+              107.0,
+              1008.0
+            ],
+            [
+              7.0,
+              1008.0
+            ]
+          ]
+        },
+        {
+          "block_label": "number",
+          "block_content": "69",
+          "block_bbox": [
+            567,
+            1524,
+            605,
+            1554
+          ],
+          "block_id": 6,
+          "group_id": 6,
+          "block_polygon_points": [
+            [
+              567.0,
+              1524.0
+            ],
+            [
+              604.0,
+              1524.0
+            ],
+            [
+              604.0,
+              1553.0
+            ],
+            [
+              567.0,
+              1553.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer_image",
+          "block_content": "<div style=\"text-align: center;\"></div>\n",
+          "block_bbox": [
+            798,
+            1627,
+            842,
+            1662
+          ],
+          "block_id": 7,
+          "group_id": 7,
+          "block_polygon_points": [
+            [
+              798.0,
+              1627.0
+            ],
+            [
+              841.0,
+              1627.0
+            ],
+            [
+              841.0,
+              1661.0
+            ],
+            [
+              798.0,
+              1661.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "Scanned with OKEN Scanner",
+          "block_bbox": [
+            799,
+            1629,
+            1173,
+            1661
+          ],
+          "block_id": 8,
+          "group_id": 8,
+          "block_polygon_points": [
+            [
+              853.0,
+              1629.0
+            ],
+            [
+              853.0,
+              1660.0
+            ],
+            [
+              1172.0,
+              1660.0
+            ],
+            [
+              1172.0,
+              1637.0
+            ],
+            [
+              1155.0,
+              1629.0
+            ],
+            [
+              1073.0,
+              1629.0
+            ],
+            [
+              1036.0,
+              1629.0
+            ],
+            [
+              1025.0,
+              1629.0
+            ],
+            [
+              1018.0,
+              1629.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 21,
+            "label": "table",
+            "score": 0.8943231701850891,
+            "coordinate": [
+              50,
+              78,
+              908,
+              169
+            ],
+            "polygon_points": [
+              [
+                50.0,
+                78.0
+              ],
+              [
+                908.0,
+                78.0
+              ],
+              [
+                908.0,
+                169.0
+              ],
+              [
+                50.0,
+                169.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.6414255499839783,
+            "coordinate": [
+              50,
+              177,
+              276,
+              218
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                48.25934600830078,
+                182.18702697753906
+              ],
+              [
+                274.6932373046875,
+                170.86534118652344
+              ],
+              [
+                276.59600830078125,
+                208.9202117919922
+              ],
+              [
+                50.162109375,
+                220.2418975830078
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.5709773898124695,
+            "coordinate": [
+              47,
+              213,
+              309,
+              248
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                47.0,
+                213.0
+              ],
+              [
+                309.0,
+                213.0
+              ],
+              [
+                309.0,
+                248.0
+              ],
+              [
+                47.0,
+                248.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.6238202452659607,
+            "coordinate": [
+              45,
+              277,
+              238,
+              318
+            ],
+            "order": 3,
+            "polygon_points": [
+              [
+                43.09838104248047,
+                279.9179992675781
+              ],
+              [
+                236.6406707763672,
+                269.9927673339844
+              ],
+              [
+                238.63671875,
+                308.9160461425781
+              ],
+              [
+                45.09443664550781,
+                318.8412780761719
+              ]
+            ]
+          },
+          {
+            "cls_id": 21,
+            "label": "table",
+            "score": 0.9622787237167358,
+            "coordinate": [
+              33,
+              329,
+              1132,
+              1396
+            ],
+            "polygon_points": [
+              [
+                33.0,
+                329.0
+              ],
+              [
+                1132.0,
+                329.0
+              ],
+              [
+                1132.0,
+                1396.0
+              ],
+              [
+                33.0,
+                1396.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.4068194031715393,
+            "coordinate": [
+              7,
+              898,
+              107,
+              1008
+            ],
+            "polygon_points": [
+              [
+                7.0,
+                898.0
+              ],
+              [
+                107.0,
+                898.0
+              ],
+              [
+                107.0,
+                1008.0
+              ],
+              [
+                7.0,
+                1008.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 16,
+            "label": "number",
+            "score": 0.7929404377937317,
+            "coordinate": [
+              567,
+              1524,
+              605,
+              1554
+            ],
+            "order": 4,
+            "polygon_points": [
+              [
+                567.0,
+                1524.0
+              ],
+              [
+                604.0,
+                1524.0
+              ],
+              [
+                604.0,
+                1553.0
+              ],
+              [
+                567.0,
+                1553.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 9,
+            "label": "footer_image",
+            "score": 0.6232584118843079,
+            "coordinate": [
+              798,
+              1627,
+              842,
+              1662
+            ],
+            "polygon_points": [
+              [
+                798.0,
+                1627.0
+              ],
+              [
+                841.0,
+                1627.0
+              ],
+              [
+                841.0,
+                1661.0
+              ],
+              [
+                798.0,
+                1661.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.6575844883918762,
+            "coordinate": [
+              799,
+              1629,
+              1173,
+              1661
+            ],
+            "polygon_points": [
+              [
+                853.0,
+                1629.0
+              ],
+              [
+                853.0,
+                1660.0
+              ],
+              [
+                1172.0,
+                1660.0
+              ],
+              [
+                1172.0,
+                1637.0
+              ],
+              [
+                1155.0,
+                1629.0
+              ],
+              [
+                1073.0,
+                1629.0
+              ],
+              [
+                1036.0,
+                1629.0
+              ],
+              [
+                1025.0,
+                1629.0
+              ],
+              [
+                1018.0,
+                1629.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Grade: 1</td><td style='text-align: center; word-wrap: break-word;'>Subject: Maths</td><td style='text-align: center; word-wrap: break-word;'>Topic: Addition</td></tr></table>\n\nPractice Sheet : 28\n\nDate: ___\n\nWord Problem :\n\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>T O</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>a) Jen has 3 white cats.</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>Max has 4 black cats.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>How many cats are there altogether?</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>b) Sam has 16 red pencils.</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>Tim has 2 blue pencils.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>How many pencils are there in all?</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>c) Jack has 9 green kites.</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>Jill has 8 yellow kites.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>How many kites are there altogether?</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_7_898_107_1008.jpg\" alt=\"Image\" width=\"8%\" /></div>\n",
+      "images": {
+        "imgs/img_in_image_box_7_898_107_1008.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//38f31ed7-fd09-41c3-9fb5-0b342e9925c5/markdown_0/imgs/img_in_image_box_7_898_107_1008.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A11%3A15Z%2F-1%2F%2Fa55f257625cc19a459730a62d49286bc2476a6ec9edd6f4136a13cbb3b4ef5e8",
+        "imgs/img_in_footer_image_box_798_1627_842_1662.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//38f31ed7-fd09-41c3-9fb5-0b342e9925c5/markdown_0/imgs/img_in_footer_image_box_798_1627_842_1662.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A11%3A15Z%2F-1%2F%2F740ab1e42e025b248757436f4db5546fed7625233ebac54616a39d83bbbe23fe"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//38f31ed7-fd09-41c3-9fb5-0b342e9925c5/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A11%3A15Z%2F-1%2F%2Fdde3e6d556535bcbc00bb6b4d1e9f21b00bb8c831ecab4070ea44bf9e2f0b6c9"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//38f31ed7-fd09-41c3-9fb5-0b342e9925c5/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A11%3A16Z%2F-1%2F%2Ff471852d559fd6a8bbac12cc0f1991ed54a56948df0058af7928c2bd70b702a7"
+  }
+]

@@ -1,0 +1,819 @@
+[
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "table",
+          "block_content": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Grade: 1</td><td style='text-align: center; word-wrap: break-word;'>Subject: Maths</td><td style='text-align: center; word-wrap: break-word;'>Topic: Number Sense-1</td></tr></table>",
+          "block_bbox": [
+            66,
+            53,
+            890,
+            160
+          ],
+          "block_id": 0,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              66.26608276367188,
+              49.27949905395508
+            ],
+            [
+              889.2330322265625,
+              59.8472900390625
+            ],
+            [
+              887.927001953125,
+              161.55442810058594
+            ],
+            [
+              64.96005249023438,
+              150.98663330078125
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Practice Sheet : 11",
+          "block_bbox": [
+            63,
+            163,
+            274,
+            208
+          ],
+          "block_id": 1,
+          "block_order": 1,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              60.44142150878906,
+              176.29656982421875
+            ],
+            [
+              272.6344909667969,
+              158.61376953125
+            ],
+            [
+              275.4827880859375,
+              192.7930908203125
+            ],
+            [
+              63.289703369140625,
+              210.47589111328125
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Date: ___",
+          "block_bbox": [
+            61,
+            231,
+            297,
+            273
+          ],
+          "block_id": 2,
+          "block_order": 2,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              61.0,
+              231.0
+            ],
+            [
+              297.0,
+              231.0
+            ],
+            [
+              297.0,
+              273.0
+            ],
+            [
+              61.0,
+              273.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "1.  $ \\underline{\\text{Write the numerals for}} $",
+          "block_bbox": [
+            55,
+            324,
+            377,
+            365
+          ],
+          "block_id": 3,
+          "block_order": 3,
+          "group_id": 3,
+          "block_polygon_points": [
+            [
+              55.0,
+              332.9999694824219
+            ],
+            [
+              375.99993896484375,
+              332.9999694824219
+            ],
+            [
+              375.99993896484375,
+              363.9999694824219
+            ],
+            [
+              55.0,
+              363.9999694824219
+            ]
+          ]
+        },
+        {
+          "block_label": "table",
+          "block_content": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>S.No</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>T</td><td style='text-align: center; word-wrap: break-word;'>O</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>a.</td><td style='text-align: center; word-wrap: break-word;'>eighty one</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>b.</td><td style='text-align: center; word-wrap: break-word;'>twenty four</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>c.</td><td style='text-align: center; word-wrap: break-word;'>ninety three</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>d.</td><td style='text-align: center; word-wrap: break-word;'>six</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>",
+          "block_bbox": [
+            85,
+            404,
+            925,
+            788
+          ],
+          "block_id": 4,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              85.0,
+              404.0
+            ],
+            [
+              925.0,
+              404.0
+            ],
+            [
+              925.0,
+              788.0
+            ],
+            [
+              85.0,
+              788.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "2.  $ \\underline{\\text{Match the number names to its numerals-}} $",
+          "block_bbox": [
+            42,
+            823,
+            596,
+            859
+          ],
+          "block_id": 5,
+          "block_order": 4,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              42.0,
+              823.0
+            ],
+            [
+              596.0,
+              823.0
+            ],
+            [
+              596.0,
+              859.0
+            ],
+            [
+              42.0,
+              859.0
+            ]
+          ]
+        },
+        {
+          "block_label": "table",
+          "block_content": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>a.</td><td style='text-align: center; word-wrap: break-word;'>nineteen</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>b.</td><td style='text-align: center; word-wrap: break-word;'>sixty seven</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>c.</td><td style='text-align: center; word-wrap: break-word;'>eleven</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>d.</td><td style='text-align: center; word-wrap: break-word;'>fifty five</td></tr></table>",
+          "block_bbox": [
+            75,
+            874,
+            296,
+            1260
+          ],
+          "block_id": 6,
+          "group_id": 6,
+          "block_polygon_points": [
+            [
+              75.0,
+              874.0
+            ],
+            [
+              296.0,
+              874.0
+            ],
+            [
+              296.0,
+              1260.0
+            ],
+            [
+              75.0,
+              1260.0
+            ]
+          ]
+        },
+        {
+          "block_label": "table",
+          "block_content": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>T</td><td style='text-align: center; word-wrap: break-word;'>O</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>6</td><td style='text-align: center; word-wrap: break-word;'>7</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>1</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>5</td><td style='text-align: center; word-wrap: break-word;'>5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>9</td></tr></table>",
+          "block_bbox": [
+            775,
+            881,
+            918,
+            1266
+          ],
+          "block_id": 7,
+          "group_id": 7,
+          "block_polygon_points": [
+            [
+              775.0,
+              881.0
+            ],
+            [
+              918.0,
+              881.0
+            ],
+            [
+              918.0,
+              1266.0
+            ],
+            [
+              775.0,
+              1266.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "3.  $ \\underline{\\text{Fill in the missing numbers-}} $",
+          "block_bbox": [
+            32,
+            1283,
+            400,
+            1330
+          ],
+          "block_id": 8,
+          "block_order": 5,
+          "group_id": 8,
+          "block_polygon_points": [
+            [
+              32.16450500488281,
+              1279.5860595703125
+            ],
+            [
+              400.52581787109375,
+              1297.3385009765625
+            ],
+            [
+              398.48095703125,
+              1339.7701416015625
+            ],
+            [
+              30.119613647460938,
+              1322.0177001953125
+            ]
+          ]
+        },
+        {
+          "block_label": "table",
+          "block_content": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>21</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>23</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>25</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>27</td></tr></table>",
+          "block_bbox": [
+            69,
+            1339,
+            1027,
+            1433
+          ],
+          "block_id": 9,
+          "group_id": 9,
+          "block_polygon_points": [
+            [
+              68.99996948242188,
+              1339.0001220703125
+            ],
+            [
+              1026.7105712890625,
+              1347.0059814453125
+            ],
+            [
+              1026.0001220703125,
+              1432.0001220703125
+            ],
+            [
+              68.28952026367188,
+              1423.9942626953125
+            ]
+          ]
+        },
+        {
+          "block_label": "number",
+          "block_content": "17",
+          "block_bbox": [
+            522,
+            1516,
+            557,
+            1545
+          ],
+          "block_id": 10,
+          "group_id": 10,
+          "block_polygon_points": [
+            [
+              522.0,
+              1516.0
+            ],
+            [
+              556.0,
+              1516.0
+            ],
+            [
+              556.0,
+              1544.0
+            ],
+            [
+              522.0,
+              1544.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer_image",
+          "block_content": "<div style=\"text-align: center;\"></div>\n",
+          "block_bbox": [
+            798,
+            1627,
+            842,
+            1662
+          ],
+          "block_id": 11,
+          "group_id": 11,
+          "block_polygon_points": [
+            [
+              798.0,
+              1627.0
+            ],
+            [
+              841.0,
+              1627.0
+            ],
+            [
+              841.0,
+              1661.0
+            ],
+            [
+              798.0,
+              1661.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "Scanned with OKEN Scanner",
+          "block_bbox": [
+            852,
+            1630,
+            1171,
+            1660
+          ],
+          "block_id": 12,
+          "group_id": 12,
+          "block_polygon_points": [
+            [
+              852.0,
+              1630.0
+            ],
+            [
+              1171.0,
+              1630.0
+            ],
+            [
+              1171.0,
+              1660.0
+            ],
+            [
+              852.0,
+              1660.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 21,
+            "label": "table",
+            "score": 0.8797937035560608,
+            "coordinate": [
+              66,
+              53,
+              890,
+              160
+            ],
+            "polygon_points": [
+              [
+                66.26608276367188,
+                49.27949905395508
+              ],
+              [
+                889.2330322265625,
+                59.8472900390625
+              ],
+              [
+                887.927001953125,
+                161.55442810058594
+              ],
+              [
+                64.96005249023438,
+                150.98663330078125
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7160972356796265,
+            "coordinate": [
+              63,
+              163,
+              274,
+              208
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                60.44142150878906,
+                176.29656982421875
+              ],
+              [
+                272.6344909667969,
+                158.61376953125
+              ],
+              [
+                275.4827880859375,
+                192.7930908203125
+              ],
+              [
+                63.289703369140625,
+                210.47589111328125
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7329477667808533,
+            "coordinate": [
+              61,
+              231,
+              297,
+              273
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                61.0,
+                231.0
+              ],
+              [
+                297.0,
+                231.0
+              ],
+              [
+                297.0,
+                273.0
+              ],
+              [
+                61.0,
+                273.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.6873366832733154,
+            "coordinate": [
+              55,
+              324,
+              377,
+              365
+            ],
+            "order": 3,
+            "polygon_points": [
+              [
+                55.0,
+                332.9999694824219
+              ],
+              [
+                375.99993896484375,
+                332.9999694824219
+              ],
+              [
+                375.99993896484375,
+                363.9999694824219
+              ],
+              [
+                55.0,
+                363.9999694824219
+              ]
+            ]
+          },
+          {
+            "cls_id": 21,
+            "label": "table",
+            "score": 0.9604557752609253,
+            "coordinate": [
+              85,
+              404,
+              925,
+              788
+            ],
+            "polygon_points": [
+              [
+                85.0,
+                404.0
+              ],
+              [
+                925.0,
+                404.0
+              ],
+              [
+                925.0,
+                788.0
+              ],
+              [
+                85.0,
+                788.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.45348140597343445,
+            "coordinate": [
+              42,
+              823,
+              596,
+              859
+            ],
+            "order": 4,
+            "polygon_points": [
+              [
+                42.0,
+                823.0
+              ],
+              [
+                596.0,
+                823.0
+              ],
+              [
+                596.0,
+                859.0
+              ],
+              [
+                42.0,
+                859.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 21,
+            "label": "table",
+            "score": 0.8992383480072021,
+            "coordinate": [
+              75,
+              874,
+              296,
+              1260
+            ],
+            "polygon_points": [
+              [
+                75.0,
+                874.0
+              ],
+              [
+                296.0,
+                874.0
+              ],
+              [
+                296.0,
+                1260.0
+              ],
+              [
+                75.0,
+                1260.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 21,
+            "label": "table",
+            "score": 0.9198741912841797,
+            "coordinate": [
+              775,
+              881,
+              918,
+              1266
+            ],
+            "polygon_points": [
+              [
+                775.0,
+                881.0
+              ],
+              [
+                918.0,
+                881.0
+              ],
+              [
+                918.0,
+                1266.0
+              ],
+              [
+                775.0,
+                1266.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7252966165542603,
+            "coordinate": [
+              32,
+              1283,
+              400,
+              1330
+            ],
+            "order": 5,
+            "polygon_points": [
+              [
+                32.16450500488281,
+                1279.5860595703125
+              ],
+              [
+                400.52581787109375,
+                1297.3385009765625
+              ],
+              [
+                398.48095703125,
+                1339.7701416015625
+              ],
+              [
+                30.119613647460938,
+                1322.0177001953125
+              ]
+            ]
+          },
+          {
+            "cls_id": 21,
+            "label": "table",
+            "score": 0.9202299118041992,
+            "coordinate": [
+              69,
+              1339,
+              1027,
+              1433
+            ],
+            "polygon_points": [
+              [
+                68.99996948242188,
+                1339.0001220703125
+              ],
+              [
+                1026.7105712890625,
+                1347.0059814453125
+              ],
+              [
+                1026.0001220703125,
+                1432.0001220703125
+              ],
+              [
+                68.28952026367188,
+                1423.9942626953125
+              ]
+            ]
+          },
+          {
+            "cls_id": 16,
+            "label": "number",
+            "score": 0.790605902671814,
+            "coordinate": [
+              522,
+              1516,
+              557,
+              1545
+            ],
+            "order": 6,
+            "polygon_points": [
+              [
+                522.0,
+                1516.0
+              ],
+              [
+                556.0,
+                1516.0
+              ],
+              [
+                556.0,
+                1544.0
+              ],
+              [
+                522.0,
+                1544.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 9,
+            "label": "footer_image",
+            "score": 0.6995663046836853,
+            "coordinate": [
+              798,
+              1627,
+              842,
+              1662
+            ],
+            "polygon_points": [
+              [
+                798.0,
+                1627.0
+              ],
+              [
+                841.0,
+                1627.0
+              ],
+              [
+                841.0,
+                1661.0
+              ],
+              [
+                798.0,
+                1661.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.7901504635810852,
+            "coordinate": [
+              852,
+              1630,
+              1171,
+              1660
+            ],
+            "polygon_points": [
+              [
+                852.0,
+                1630.0
+              ],
+              [
+                1171.0,
+                1630.0
+              ],
+              [
+                1171.0,
+                1660.0
+              ],
+              [
+                852.0,
+                1660.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Grade: 1</td><td style='text-align: center; word-wrap: break-word;'>Subject: Maths</td><td style='text-align: center; word-wrap: break-word;'>Topic: Number Sense-1</td></tr></table>\n\nPractice Sheet : 11\n\nDate: ___\n\n1.  $ \\underline{\\text{Write the numerals for}} $\n\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>S.No</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>T</td><td style='text-align: center; word-wrap: break-word;'>O</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>a.</td><td style='text-align: center; word-wrap: break-word;'>eighty one</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>b.</td><td style='text-align: center; word-wrap: break-word;'>twenty four</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>c.</td><td style='text-align: center; word-wrap: break-word;'>ninety three</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>d.</td><td style='text-align: center; word-wrap: break-word;'>six</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>\n\n2.  $ \\underline{\\text{Match the number names to its numerals-}} $\n\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>a.</td><td style='text-align: center; word-wrap: break-word;'>nineteen</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>b.</td><td style='text-align: center; word-wrap: break-word;'>sixty seven</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>c.</td><td style='text-align: center; word-wrap: break-word;'>eleven</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>d.</td><td style='text-align: center; word-wrap: break-word;'>fifty five</td></tr></table>\n\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>T</td><td style='text-align: center; word-wrap: break-word;'>O</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>6</td><td style='text-align: center; word-wrap: break-word;'>7</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>1</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>5</td><td style='text-align: center; word-wrap: break-word;'>5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>9</td></tr></table>\n\n3.  $ \\underline{\\text{Fill in the missing numbers-}} $\n\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>21</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>23</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>25</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>27</td></tr></table>",
+      "images": {
+        "imgs/img_in_footer_image_box_798_1627_842_1662.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b972596c-76ba-4a3e-bc16-7e247e6b13fe/markdown_3/imgs/img_in_footer_image_box_798_1627_842_1662.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A10%3A39Z%2F-1%2F%2Fb2b959ae25712f6bd27441eff6d67d37aa98af5e8502e238baa12ca444a68b9b"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b972596c-76ba-4a3e-bc16-7e247e6b13fe/layout_det_res_3.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A10%3A39Z%2F-1%2F%2Fa236706e6a4a6d4ba0bcba4e35d860ced847a0dc1581572ece37d704af544ced"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b972596c-76ba-4a3e-bc16-7e247e6b13fe/input_img_3.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A10%3A40Z%2F-1%2F%2F848c952f9b3d49c05aa00564cfdcf0e40615c3bc7303a98a10aea44af636feca"
+  }
+]

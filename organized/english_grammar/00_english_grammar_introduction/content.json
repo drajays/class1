@@ -1,0 +1,432 @@
+[
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "header_image",
+          "block_content": "<div style=\"text-align: center;\"></div>\n",
+          "block_bbox": [
+            417,
+            247,
+            914,
+            498
+          ],
+          "block_id": 0,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              417.0,
+              247.0
+            ],
+            [
+              914.0,
+              247.0
+            ],
+            [
+              914.0,
+              498.0
+            ],
+            [
+              417.0,
+              498.0
+            ]
+          ]
+        },
+        {
+          "block_label": "doc_title",
+          "block_content": "# School of Conscious Transformation",
+          "block_bbox": [
+            291,
+            519,
+            915,
+            566
+          ],
+          "block_id": 1,
+          "block_order": 1,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              291.0,
+              519.0
+            ],
+            [
+              915.0,
+              519.0
+            ],
+            [
+              915.0,
+              566.0
+            ],
+            [
+              291.0,
+              566.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Name: AEVAITA SHUKLA",
+          "block_bbox": [
+            319,
+            1045,
+            859,
+            1095
+          ],
+          "block_id": 2,
+          "block_order": 2,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              319.0,
+              1045.0
+            ],
+            [
+              859.0,
+              1045.0
+            ],
+            [
+              859.0,
+              1095.0
+            ],
+            [
+              319.0,
+              1095.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Class:  $ \\underline{1} $ Section:  $ \\underline{A} $ Roll No: ___",
+          "block_bbox": [
+            320,
+            1118,
+            881,
+            1175
+          ],
+          "block_id": 3,
+          "block_order": 3,
+          "group_id": 3,
+          "block_polygon_points": [
+            [
+              320.0,
+              1118.0
+            ],
+            [
+              881.0,
+              1118.0
+            ],
+            [
+              881.0,
+              1175.0
+            ],
+            [
+              320.0,
+              1175.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Subject: ENGLISH GRAMMER",
+          "block_bbox": [
+            320,
+            1204,
+            871,
+            1256
+          ],
+          "block_id": 4,
+          "block_order": 4,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              320.0,
+              1204.0
+            ],
+            [
+              871.0,
+              1204.0
+            ],
+            [
+              871.0,
+              1256.0
+            ],
+            [
+              320.0,
+              1256.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "Scanned with OKEN Scanner",
+          "block_bbox": [
+            797,
+            1628,
+            1172,
+            1662
+          ],
+          "block_id": 5,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              797.0,
+              1628.0
+            ],
+            [
+              1172.0,
+              1628.0
+            ],
+            [
+              1172.0,
+              1662.0
+            ],
+            [
+              797.0,
+              1662.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 13,
+            "label": "header_image",
+            "score": 0.7376234531402588,
+            "coordinate": [
+              417,
+              247,
+              914,
+              498
+            ],
+            "polygon_points": [
+              [
+                417.0,
+                247.0
+              ],
+              [
+                914.0,
+                247.0
+              ],
+              [
+                914.0,
+                498.0
+              ],
+              [
+                417.0,
+                498.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 6,
+            "label": "doc_title",
+            "score": 0.5017622709274292,
+            "coordinate": [
+              291,
+              519,
+              915,
+              566
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                291.0,
+                519.0
+              ],
+              [
+                915.0,
+                519.0
+              ],
+              [
+                915.0,
+                566.0
+              ],
+              [
+                291.0,
+                566.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.6591655611991882,
+            "coordinate": [
+              319,
+              1045,
+              859,
+              1095
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                319.0,
+                1045.0
+              ],
+              [
+                859.0,
+                1045.0
+              ],
+              [
+                859.0,
+                1095.0
+              ],
+              [
+                319.0,
+                1095.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7239189743995667,
+            "coordinate": [
+              320,
+              1118,
+              881,
+              1175
+            ],
+            "order": 3,
+            "polygon_points": [
+              [
+                320.0,
+                1118.0
+              ],
+              [
+                881.0,
+                1118.0
+              ],
+              [
+                881.0,
+                1175.0
+              ],
+              [
+                320.0,
+                1175.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7092893719673157,
+            "coordinate": [
+              320,
+              1204,
+              871,
+              1256
+            ],
+            "order": 4,
+            "polygon_points": [
+              [
+                320.0,
+                1204.0
+              ],
+              [
+                871.0,
+                1204.0
+              ],
+              [
+                871.0,
+                1256.0
+              ],
+              [
+                320.0,
+                1256.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 9,
+            "label": "footer_image",
+            "score": 0.4748552143573761,
+            "coordinate": [
+              799,
+              1626,
+              842,
+              1663
+            ],
+            "polygon_points": [
+              [
+                799.0,
+                1626.0
+              ],
+              [
+                842.0,
+                1626.0
+              ],
+              [
+                842.0,
+                1663.0
+              ],
+              [
+                799.0,
+                1663.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.7869696021080017,
+            "coordinate": [
+              797,
+              1628,
+              1172,
+              1662
+            ],
+            "polygon_points": [
+              [
+                797.0,
+                1628.0
+              ],
+              [
+                1172.0,
+                1628.0
+              ],
+              [
+                1172.0,
+                1662.0
+              ],
+              [
+                797.0,
+                1662.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "# School of Conscious Transformation\n\nName: AEVAITA SHUKLA\n\nClass:  $ \\underline{1} $ Section:  $ \\underline{A} $ Roll No: ___\n\nSubject: ENGLISH GRAMMER",
+      "images": {
+        "imgs/img_in_header_image_box_417_247_914_498.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//0255e8cc-ca8f-48f9-8a61-46a30d59c187/markdown_0/imgs/img_in_header_image_box_417_247_914_498.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A36Z%2F-1%2F%2F3d05ab0ace451406e4773938dbcce50cd02f2240d16c26efd39bc6efb94e4d8c"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//0255e8cc-ca8f-48f9-8a61-46a30d59c187/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A37Z%2F-1%2F%2F94cbbe6753733cda9d2db565425f0c94a8e7a93c8f4b133be32b1922fdc35db5"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//0255e8cc-ca8f-48f9-8a61-46a30d59c187/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A37Z%2F-1%2F%2F4111e2814d4b36fa2eaa4d65d47d78353985506f1461069a6bdffab411ec69c4"
+  }
+]

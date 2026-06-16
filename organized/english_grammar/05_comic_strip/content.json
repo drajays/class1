@@ -1,0 +1,559 @@
+[
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "table",
+          "block_content": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Grade: 1</td><td style='text-align: center; word-wrap: break-word;'>Subject: English Grammar</td><td style='text-align: center; word-wrap: break-word;'>Topic: List of Antonyms</td></tr></table>",
+          "block_bbox": [
+            49,
+            82,
+            888,
+            210
+          ],
+          "block_id": 0,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              49.0,
+              209.0
+            ],
+            [
+              102.0,
+              209.0
+            ],
+            [
+              281.0,
+              167.0
+            ],
+            [
+              282.0,
+              158.0
+            ],
+            [
+              887.0,
+              158.0
+            ],
+            [
+              887.0,
+              82.0
+            ],
+            [
+              234.0,
+              82.0
+            ],
+            [
+              192.0,
+              91.0
+            ],
+            [
+              157.0,
+              100.0
+            ],
+            [
+              55.0,
+              134.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "List of Antonyms\n\nDate: ___",
+          "block_bbox": [
+            46,
+            207,
+            224,
+            289
+          ],
+          "block_id": 1,
+          "block_order": 1,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              33.91613006591797,
+              252.82266235351562
+            ],
+            [
+              212.64999389648438,
+              191.42555236816406
+            ],
+            [
+              227.16134643554688,
+              233.66976928710938
+            ],
+            [
+              48.427490234375,
+              295.06689453125
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "",
+          "block_bbox": [
+            42,
+            250,
+            296,
+            343
+          ],
+          "block_id": 2,
+          "block_order": 2,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              290.0,
+              250.0
+            ],
+            [
+              226.0,
+              250.0
+            ],
+            [
+              190.0,
+              259.0
+            ],
+            [
+              161.0,
+              267.0
+            ],
+            [
+              131.0,
+              276.0
+            ],
+            [
+              102.0,
+              284.0
+            ],
+            [
+              78.0,
+              293.0
+            ],
+            [
+              60.0,
+              301.0
+            ],
+            [
+              42.0,
+              310.0
+            ],
+            [
+              42.0,
+              342.0
+            ],
+            [
+              53.0,
+              342.0
+            ],
+            [
+              77.0,
+              334.0
+            ],
+            [
+              101.0,
+              326.0
+            ],
+            [
+              124.0,
+              317.0
+            ],
+            [
+              154.0,
+              309.0
+            ],
+            [
+              189.0,
+              300.0
+            ],
+            [
+              242.0,
+              292.0
+            ],
+            [
+              295.0,
+              283.0
+            ]
+          ]
+        },
+        {
+          "block_label": "table",
+          "block_content": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td colspan=\"3\">Date:</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>forward</td><td style='text-align: center; word-wrap: break-word;'>backward</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>2</td><td style='text-align: center; word-wrap: break-word;'>beautiful</td><td style='text-align: center; word-wrap: break-word;'>ugly</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>3</td><td style='text-align: center; word-wrap: break-word;'>rough</td><td style='text-align: center; word-wrap: break-word;'>smooth</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>4</td><td style='text-align: center; word-wrap: break-word;'>noisy</td><td style='text-align: center; word-wrap: break-word;'>quiet</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>5</td><td style='text-align: center; word-wrap: break-word;'>give</td><td style='text-align: center; word-wrap: break-word;'>take</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>6</td><td style='text-align: center; word-wrap: break-word;'>empty</td><td style='text-align: center; word-wrap: break-word;'>full</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>7</td><td style='text-align: center; word-wrap: break-word;'>early</td><td style='text-align: center; word-wrap: break-word;'>late</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>8</td><td style='text-align: center; word-wrap: break-word;'>find</td><td style='text-align: center; word-wrap: break-word;'>lose</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>9</td><td style='text-align: center; word-wrap: break-word;'>under</td><td style='text-align: center; word-wrap: break-word;'>over</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>10</td><td style='text-align: center; word-wrap: break-word;'>here</td><td style='text-align: center; word-wrap: break-word;'>there</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>11</td><td style='text-align: center; word-wrap: break-word;'>narrow</td><td style='text-align: center; word-wrap: break-word;'>wide</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>12</td><td style='text-align: center; word-wrap: break-word;'>high</td><td style='text-align: center; word-wrap: break-word;'>low</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>13</td><td style='text-align: center; word-wrap: break-word;'>love</td><td style='text-align: center; word-wrap: break-word;'>hate</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>14</td><td style='text-align: center; word-wrap: break-word;'>shout</td><td style='text-align: center; word-wrap: break-word;'>whisper</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>15</td><td style='text-align: center; word-wrap: break-word;'>buy</td><td style='text-align: center; word-wrap: break-word;'>sell</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>16</td><td style='text-align: center; word-wrap: break-word;'>back</td><td style='text-align: center; word-wrap: break-word;'>front</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>17</td><td style='text-align: center; word-wrap: break-word;'>young, new</td><td style='text-align: center; word-wrap: break-word;'>old</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>18</td><td style='text-align: center; word-wrap: break-word;'>clean</td><td style='text-align: center; word-wrap: break-word;'>dirty</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>19</td><td style='text-align: center; word-wrap: break-word;'>wet</td><td style='text-align: center; word-wrap: break-word;'>dry</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>20</td><td style='text-align: center; word-wrap: break-word;'>slow</td><td style='text-align: center; word-wrap: break-word;'>fast</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>21</td><td style='text-align: center; word-wrap: break-word;'>long</td><td style='text-align: center; word-wrap: break-word;'>short</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>22</td><td style='text-align: center; word-wrap: break-word;'>sit</td><td style='text-align: center; word-wrap: break-word;'>stand</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>23</td><td style='text-align: center; word-wrap: break-word;'>sour</td><td style='text-align: center; word-wrap: break-word;'>sweet</td></tr></table>",
+          "block_bbox": [
+            32,
+            303,
+            1004,
+            1551
+          ],
+          "block_id": 3,
+          "group_id": 3,
+          "block_polygon_points": [
+            [
+              32.0,
+              303.0
+            ],
+            [
+              1004.0,
+              303.0
+            ],
+            [
+              1004.0,
+              1551.0
+            ],
+            [
+              32.0,
+              1551.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer_image",
+          "block_content": "<div style=\"text-align: center;\"></div>\n",
+          "block_bbox": [
+            798,
+            1627,
+            842,
+            1662
+          ],
+          "block_id": 4,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              798.0,
+              1627.0
+            ],
+            [
+              841.0,
+              1627.0
+            ],
+            [
+              841.0,
+              1661.0
+            ],
+            [
+              798.0,
+              1661.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "Scanned with OKEN Scanner",
+          "block_bbox": [
+            852,
+            1630,
+            1170,
+            1661
+          ],
+          "block_id": 5,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              852.0,
+              1630.0
+            ],
+            [
+              1170.0,
+              1630.0
+            ],
+            [
+              1170.0,
+              1661.0
+            ],
+            [
+              852.0,
+              1661.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 21,
+            "label": "table",
+            "score": 0.7540410757064819,
+            "coordinate": [
+              49,
+              82,
+              888,
+              210
+            ],
+            "polygon_points": [
+              [
+                49.0,
+                209.0
+              ],
+              [
+                102.0,
+                209.0
+              ],
+              [
+                281.0,
+                167.0
+              ],
+              [
+                282.0,
+                158.0
+              ],
+              [
+                887.0,
+                158.0
+              ],
+              [
+                887.0,
+                82.0
+              ],
+              [
+                234.0,
+                82.0
+              ],
+              [
+                192.0,
+                91.0
+              ],
+              [
+                157.0,
+                100.0
+              ],
+              [
+                55.0,
+                134.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.4805230498313904,
+            "coordinate": [
+              46,
+              207,
+              224,
+              289
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                33.91613006591797,
+                252.82266235351562
+              ],
+              [
+                212.64999389648438,
+                191.42555236816406
+              ],
+              [
+                227.16134643554688,
+                233.66976928710938
+              ],
+              [
+                48.427490234375,
+                295.06689453125
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7513889074325562,
+            "coordinate": [
+              42,
+              250,
+              296,
+              343
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                290.0,
+                250.0
+              ],
+              [
+                226.0,
+                250.0
+              ],
+              [
+                190.0,
+                259.0
+              ],
+              [
+                161.0,
+                267.0
+              ],
+              [
+                131.0,
+                276.0
+              ],
+              [
+                102.0,
+                284.0
+              ],
+              [
+                78.0,
+                293.0
+              ],
+              [
+                60.0,
+                301.0
+              ],
+              [
+                42.0,
+                310.0
+              ],
+              [
+                42.0,
+                342.0
+              ],
+              [
+                53.0,
+                342.0
+              ],
+              [
+                77.0,
+                334.0
+              ],
+              [
+                101.0,
+                326.0
+              ],
+              [
+                124.0,
+                317.0
+              ],
+              [
+                154.0,
+                309.0
+              ],
+              [
+                189.0,
+                300.0
+              ],
+              [
+                242.0,
+                292.0
+              ],
+              [
+                295.0,
+                283.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 21,
+            "label": "table",
+            "score": 0.9689316153526306,
+            "coordinate": [
+              32,
+              303,
+              1004,
+              1551
+            ],
+            "polygon_points": [
+              [
+                32.0,
+                303.0
+              ],
+              [
+                1004.0,
+                303.0
+              ],
+              [
+                1004.0,
+                1551.0
+              ],
+              [
+                32.0,
+                1551.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 9,
+            "label": "footer_image",
+            "score": 0.5677834153175354,
+            "coordinate": [
+              798,
+              1627,
+              842,
+              1662
+            ],
+            "polygon_points": [
+              [
+                798.0,
+                1627.0
+              ],
+              [
+                841.0,
+                1627.0
+              ],
+              [
+                841.0,
+                1661.0
+              ],
+              [
+                798.0,
+                1661.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.6287670731544495,
+            "coordinate": [
+              852,
+              1630,
+              1170,
+              1661
+            ],
+            "polygon_points": [
+              [
+                852.0,
+                1630.0
+              ],
+              [
+                1170.0,
+                1630.0
+              ],
+              [
+                1170.0,
+                1661.0
+              ],
+              [
+                852.0,
+                1661.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Grade: 1</td><td style='text-align: center; word-wrap: break-word;'>Subject: English Grammar</td><td style='text-align: center; word-wrap: break-word;'>Topic: List of Antonyms</td></tr></table>\n\nList of Antonyms\n\nDate: ___\n\n\n\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td colspan=\"3\">Date:</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>forward</td><td style='text-align: center; word-wrap: break-word;'>backward</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>2</td><td style='text-align: center; word-wrap: break-word;'>beautiful</td><td style='text-align: center; word-wrap: break-word;'>ugly</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>3</td><td style='text-align: center; word-wrap: break-word;'>rough</td><td style='text-align: center; word-wrap: break-word;'>smooth</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>4</td><td style='text-align: center; word-wrap: break-word;'>noisy</td><td style='text-align: center; word-wrap: break-word;'>quiet</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>5</td><td style='text-align: center; word-wrap: break-word;'>give</td><td style='text-align: center; word-wrap: break-word;'>take</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>6</td><td style='text-align: center; word-wrap: break-word;'>empty</td><td style='text-align: center; word-wrap: break-word;'>full</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>7</td><td style='text-align: center; word-wrap: break-word;'>early</td><td style='text-align: center; word-wrap: break-word;'>late</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>8</td><td style='text-align: center; word-wrap: break-word;'>find</td><td style='text-align: center; word-wrap: break-word;'>lose</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>9</td><td style='text-align: center; word-wrap: break-word;'>under</td><td style='text-align: center; word-wrap: break-word;'>over</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>10</td><td style='text-align: center; word-wrap: break-word;'>here</td><td style='text-align: center; word-wrap: break-word;'>there</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>11</td><td style='text-align: center; word-wrap: break-word;'>narrow</td><td style='text-align: center; word-wrap: break-word;'>wide</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>12</td><td style='text-align: center; word-wrap: break-word;'>high</td><td style='text-align: center; word-wrap: break-word;'>low</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>13</td><td style='text-align: center; word-wrap: break-word;'>love</td><td style='text-align: center; word-wrap: break-word;'>hate</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>14</td><td style='text-align: center; word-wrap: break-word;'>shout</td><td style='text-align: center; word-wrap: break-word;'>whisper</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>15</td><td style='text-align: center; word-wrap: break-word;'>buy</td><td style='text-align: center; word-wrap: break-word;'>sell</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>16</td><td style='text-align: center; word-wrap: break-word;'>back</td><td style='text-align: center; word-wrap: break-word;'>front</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>17</td><td style='text-align: center; word-wrap: break-word;'>young, new</td><td style='text-align: center; word-wrap: break-word;'>old</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>18</td><td style='text-align: center; word-wrap: break-word;'>clean</td><td style='text-align: center; word-wrap: break-word;'>dirty</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>19</td><td style='text-align: center; word-wrap: break-word;'>wet</td><td style='text-align: center; word-wrap: break-word;'>dry</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>20</td><td style='text-align: center; word-wrap: break-word;'>slow</td><td style='text-align: center; word-wrap: break-word;'>fast</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>21</td><td style='text-align: center; word-wrap: break-word;'>long</td><td style='text-align: center; word-wrap: break-word;'>short</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>22</td><td style='text-align: center; word-wrap: break-word;'>sit</td><td style='text-align: center; word-wrap: break-word;'>stand</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>23</td><td style='text-align: center; word-wrap: break-word;'>sour</td><td style='text-align: center; word-wrap: break-word;'>sweet</td></tr></table>",
+      "images": {
+        "imgs/img_in_footer_image_box_798_1627_842_1662.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//37b5375a-7852-484b-845a-3f21a757c0cf/markdown_3/imgs/img_in_footer_image_box_798_1627_842_1662.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A39Z%2F-1%2F%2F0fffe2ab0a0f0a676f790cf67498fea4d8ca98a84493afdd5ed776aee4897c59"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//37b5375a-7852-484b-845a-3f21a757c0cf/layout_det_res_3.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A40Z%2F-1%2F%2Fbdf7afd790a28eefffb0424544e71794171957bea3097db293e32ba2a9bef53f"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//37b5375a-7852-484b-845a-3f21a757c0cf/input_img_3.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A40Z%2F-1%2F%2F6f9b8e34956068bcaf8da31c10854942f8a527cf732b40a9628cc1ce24889fcd"
+  }
+]

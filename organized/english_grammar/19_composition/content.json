@@ -1,0 +1,582 @@
+[
+  {
+    "prunedResult": {
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": true,
+        "use_ocr_for_image_block": false,
+        "format_block_content": true,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+          "number",
+          "footnote",
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "aside_text"
+        ],
+        "return_layout_polygon_points": true
+      },
+      "parsing_res_list": [
+        {
+          "block_label": "paragraph_title",
+          "block_content": "##### Language",
+          "block_bbox": [
+            131,
+            81,
+            269,
+            128
+          ],
+          "block_id": 0,
+          "block_order": 1,
+          "group_id": 0,
+          "block_polygon_points": [
+            [
+              131.0,
+              81.0
+            ],
+            [
+              269.0,
+              81.0
+            ],
+            [
+              269.0,
+              128.0
+            ],
+            [
+              131.0,
+              128.0
+            ]
+          ]
+        },
+        {
+          "block_label": "paragraph_title",
+          "block_content": "## 1.  $ \\underline{\\text{Read,think and do}} $",
+          "block_bbox": [
+            126,
+            157,
+            458,
+            206
+          ],
+          "block_id": 1,
+          "block_order": 2,
+          "group_id": 1,
+          "block_polygon_points": [
+            [
+              126.0,
+              157.0
+            ],
+            [
+              458.0,
+              157.0
+            ],
+            [
+              458.0,
+              206.0
+            ],
+            [
+              126.0,
+              206.0
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "Word building",
+          "block_bbox": [
+            119,
+            236,
+            329,
+            287
+          ],
+          "block_id": 2,
+          "block_order": 3,
+          "group_id": 2,
+          "block_polygon_points": [
+            [
+              116.61578369140625,
+              239.50689697265625
+            ],
+            [
+              327.6249694824219,
+              228.68592834472656
+            ],
+            [
+              330.1482238769531,
+              277.88983154296875
+            ],
+            [
+              119.1390380859375,
+              288.7108154296875
+            ]
+          ]
+        },
+        {
+          "block_label": "text",
+          "block_content": "How many sensible words can you make?",
+          "block_bbox": [
+            116,
+            321,
+            689,
+            371
+          ],
+          "block_id": 3,
+          "block_order": 4,
+          "group_id": 3,
+          "block_polygon_points": [
+            [
+              116.0,
+              321.0
+            ],
+            [
+              689.0,
+              321.0
+            ],
+            [
+              689.0,
+              371.0
+            ],
+            [
+              116.0,
+              371.0
+            ]
+          ]
+        },
+        {
+          "block_label": "table",
+          "block_content": "\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>at</td><td style='text-align: center; word-wrap: break-word;'>ag</td><td style='text-align: center; word-wrap: break-word;'>eg</td><td style='text-align: center; word-wrap: break-word;'>en</td><td style='text-align: center; word-wrap: break-word;'>im</td><td style='text-align: center; word-wrap: break-word;'>in</td><td style='text-align: center; word-wrap: break-word;'>og</td><td style='text-align: center; word-wrap: break-word;'>op</td><td style='text-align: center; word-wrap: break-word;'>un</td><td style='text-align: center; word-wrap: break-word;'>ug</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>b</td><td style='text-align: center; word-wrap: break-word;'>bat</td><td style='text-align: center; word-wrap: break-word;'>bag</td><td style='text-align: center; word-wrap: break-word;'>beg</td><td style='text-align: center; word-wrap: break-word;'>ben</td><td style='text-align: center; word-wrap: break-word;'>-</td><td style='text-align: center; word-wrap: break-word;'>bin</td><td style='text-align: center; word-wrap: break-word;'>bog</td><td style='text-align: center; word-wrap: break-word;'>-</td><td style='text-align: center; word-wrap: break-word;'>bun</td><td style='text-align: center; word-wrap: break-word;'>bug</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>d</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>f</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>h</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>m</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>p</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>r</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>s</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>t</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>",
+          "block_bbox": [
+            91,
+            407,
+            1032,
+            1268
+          ],
+          "block_id": 4,
+          "group_id": 4,
+          "block_polygon_points": [
+            [
+              91.0,
+              407.0
+            ],
+            [
+              1032.0,
+              407.0
+            ],
+            [
+              1032.0,
+              1268.0
+            ],
+            [
+              91.0,
+              1268.0
+            ]
+          ]
+        },
+        {
+          "block_label": "image",
+          "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_318_1303_851_1551.jpg\" alt=\"Image\" width=\"44%\" /></div>\n",
+          "block_bbox": [
+            318,
+            1303,
+            851,
+            1551
+          ],
+          "block_id": 5,
+          "group_id": 5,
+          "block_polygon_points": [
+            [
+              312.6923828125,
+              1315.7156982421875
+            ],
+            [
+              844.662841796875,
+              1294.5311279296875
+            ],
+            [
+              854.0799560546875,
+              1531.0057373046875
+            ],
+            [
+              322.1094970703125,
+              1552.1903076171875
+            ]
+          ]
+        },
+        {
+          "block_label": "number",
+          "block_content": "17",
+          "block_bbox": [
+            557,
+            1550,
+            604,
+            1585
+          ],
+          "block_id": 6,
+          "group_id": 6,
+          "block_polygon_points": [
+            [
+              557.0,
+              1550.0
+            ],
+            [
+              604.0,
+              1550.0
+            ],
+            [
+              604.0,
+              1585.0
+            ],
+            [
+              557.0,
+              1585.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer_image",
+          "block_content": "<div style=\"text-align: center;\"></div>\n",
+          "block_bbox": [
+            798,
+            1626,
+            842,
+            1663
+          ],
+          "block_id": 7,
+          "group_id": 7,
+          "block_polygon_points": [
+            [
+              798.0,
+              1626.0
+            ],
+            [
+              842.0,
+              1626.0
+            ],
+            [
+              842.0,
+              1663.0
+            ],
+            [
+              798.0,
+              1663.0
+            ]
+          ]
+        },
+        {
+          "block_label": "footer",
+          "block_content": "Scanned with OKEN Scanner",
+          "block_bbox": [
+            846,
+            1630,
+            1170,
+            1661
+          ],
+          "block_id": 8,
+          "group_id": 8,
+          "block_polygon_points": [
+            [
+              852.0,
+              1630.0
+            ],
+            [
+              1169.0,
+              1630.0
+            ],
+            [
+              1169.0,
+              1660.0
+            ],
+            [
+              852.0,
+              1660.0
+            ]
+          ]
+        }
+      ],
+      "layout_det_res": {
+        "boxes": [
+          {
+            "cls_id": 17,
+            "label": "paragraph_title",
+            "score": 0.8435367941856384,
+            "coordinate": [
+              131,
+              81,
+              269,
+              128
+            ],
+            "order": 1,
+            "polygon_points": [
+              [
+                131.0,
+                81.0
+              ],
+              [
+                269.0,
+                81.0
+              ],
+              [
+                269.0,
+                128.0
+              ],
+              [
+                131.0,
+                128.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 17,
+            "label": "paragraph_title",
+            "score": 0.7809620499610901,
+            "coordinate": [
+              126,
+              157,
+              458,
+              206
+            ],
+            "order": 2,
+            "polygon_points": [
+              [
+                126.0,
+                157.0
+              ],
+              [
+                458.0,
+                157.0
+              ],
+              [
+                458.0,
+                206.0
+              ],
+              [
+                126.0,
+                206.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.7180633544921875,
+            "coordinate": [
+              119,
+              236,
+              329,
+              287
+            ],
+            "order": 3,
+            "polygon_points": [
+              [
+                116.61578369140625,
+                239.50689697265625
+              ],
+              [
+                327.6249694824219,
+                228.68592834472656
+              ],
+              [
+                330.1482238769531,
+                277.88983154296875
+              ],
+              [
+                119.1390380859375,
+                288.7108154296875
+              ]
+            ]
+          },
+          {
+            "cls_id": 22,
+            "label": "text",
+            "score": 0.5212104320526123,
+            "coordinate": [
+              116,
+              321,
+              689,
+              371
+            ],
+            "order": 4,
+            "polygon_points": [
+              [
+                116.0,
+                321.0
+              ],
+              [
+                689.0,
+                321.0
+              ],
+              [
+                689.0,
+                371.0
+              ],
+              [
+                116.0,
+                371.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 21,
+            "label": "table",
+            "score": 0.9685944318771362,
+            "coordinate": [
+              91,
+              407,
+              1032,
+              1268
+            ],
+            "polygon_points": [
+              [
+                91.0,
+                407.0
+              ],
+              [
+                1032.0,
+                407.0
+              ],
+              [
+                1032.0,
+                1268.0
+              ],
+              [
+                91.0,
+                1268.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 14,
+            "label": "image",
+            "score": 0.8985811471939087,
+            "coordinate": [
+              318,
+              1303,
+              851,
+              1551
+            ],
+            "polygon_points": [
+              [
+                312.6923828125,
+                1315.7156982421875
+              ],
+              [
+                844.662841796875,
+                1294.5311279296875
+              ],
+              [
+                854.0799560546875,
+                1531.0057373046875
+              ],
+              [
+                322.1094970703125,
+                1552.1903076171875
+              ]
+            ]
+          },
+          {
+            "cls_id": 16,
+            "label": "number",
+            "score": 0.7906566262245178,
+            "coordinate": [
+              557,
+              1550,
+              604,
+              1585
+            ],
+            "order": 5,
+            "polygon_points": [
+              [
+                557.0,
+                1550.0
+              ],
+              [
+                604.0,
+                1550.0
+              ],
+              [
+                604.0,
+                1585.0
+              ],
+              [
+                557.0,
+                1585.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 9,
+            "label": "footer_image",
+            "score": 0.7198711037635803,
+            "coordinate": [
+              798,
+              1626,
+              842,
+              1663
+            ],
+            "polygon_points": [
+              [
+                798.0,
+                1626.0
+              ],
+              [
+                842.0,
+                1626.0
+              ],
+              [
+                842.0,
+                1663.0
+              ],
+              [
+                798.0,
+                1663.0
+              ]
+            ]
+          },
+          {
+            "cls_id": 8,
+            "label": "footer",
+            "score": 0.7616815567016602,
+            "coordinate": [
+              846,
+              1630,
+              1170,
+              1661
+            ],
+            "polygon_points": [
+              [
+                852.0,
+                1630.0
+              ],
+              [
+                1169.0,
+                1630.0
+              ],
+              [
+                1169.0,
+                1660.0
+              ],
+              [
+                852.0,
+                1660.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "markdown": {
+      "text": "##### Language\n\n## 1.  $ \\underline{\\text{Read,think and do}} $\n\nWord building\n\nHow many sensible words can you make?\n\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>at</td><td style='text-align: center; word-wrap: break-word;'>ag</td><td style='text-align: center; word-wrap: break-word;'>eg</td><td style='text-align: center; word-wrap: break-word;'>en</td><td style='text-align: center; word-wrap: break-word;'>im</td><td style='text-align: center; word-wrap: break-word;'>in</td><td style='text-align: center; word-wrap: break-word;'>og</td><td style='text-align: center; word-wrap: break-word;'>op</td><td style='text-align: center; word-wrap: break-word;'>un</td><td style='text-align: center; word-wrap: break-word;'>ug</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>b</td><td style='text-align: center; word-wrap: break-word;'>bat</td><td style='text-align: center; word-wrap: break-word;'>bag</td><td style='text-align: center; word-wrap: break-word;'>beg</td><td style='text-align: center; word-wrap: break-word;'>ben</td><td style='text-align: center; word-wrap: break-word;'>-</td><td style='text-align: center; word-wrap: break-word;'>bin</td><td style='text-align: center; word-wrap: break-word;'>bog</td><td style='text-align: center; word-wrap: break-word;'>-</td><td style='text-align: center; word-wrap: break-word;'>bun</td><td style='text-align: center; word-wrap: break-word;'>bug</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>d</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>f</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>h</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>m</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>p</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>r</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>s</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>t</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_318_1303_851_1551.jpg\" alt=\"Image\" width=\"44%\" /></div>\n",
+      "images": {
+        "imgs/img_in_image_box_318_1303_851_1551.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e88d8a46-556f-4c0e-a49e-98a2cf1dd5f1/markdown_1/imgs/img_in_image_box_318_1303_851_1551.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A41Z%2F-1%2F%2Fed333e98c051053e64500169bd40cc0b83cdefb1293bbc923a74ba1a75a5df2f",
+        "imgs/img_in_footer_image_box_798_1626_842_1663.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e88d8a46-556f-4c0e-a49e-98a2cf1dd5f1/markdown_1/imgs/img_in_footer_image_box_798_1626_842_1663.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A41Z%2F-1%2F%2Fffd1e26ba89a4e52773b01a1b944ff05d8bcc317342f98a39007d49ff27ed0a6"
+      }
+    },
+    "outputImages": {
+      "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e88d8a46-556f-4c0e-a49e-98a2cf1dd5f1/layout_det_res_1.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A42Z%2F-1%2F%2F0846cbee52aa959d7ae4696822966fc9c5010160ca0a363c2c743dfc1bf98cf1"
+    },
+    "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e88d8a46-556f-4c0e-a49e-98a2cf1dd5f1/input_img_1.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-16T02%3A13%3A42Z%2F-1%2F%2Fb4861a686454a5e985cf8ac37d0539f5296af9344ec8a411512e4262f62baaee"
+  }
+]
