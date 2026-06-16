@@ -11,3 +11,6 @@ organized/
 
 # Local tooling (optional — regenerate organized/ from OCR files)
 organize_content.py
+
+# App data is generated into docs/ — run build_app_data.py after organizing
+# (docs/data and docs/assets/content ARE committed for GitHub Pages)

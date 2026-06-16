@@ -1,15 +1,22 @@
 const App = {
   playerId: null,
 
-  init() {
+  async init() {
+    await Learn.init();
     this.renderHeroes();
     document.getElementById('btn-switch-hero').addEventListener('click', () => this.go('login'));
     document.querySelectorAll('[data-back]').forEach((btn) => {
-      btn.addEventListener('click', () => this.go(btn.dataset.back));
+      btn.addEventListener('click', () => {
+        const dest = btn.dataset.back;
+        if (dest === 'chapters') Learn.openSubject(Learn.subjectId);
+        else this.go(dest);
+      });
     });
     document.querySelectorAll('.world-btn').forEach((btn) => {
       btn.addEventListener('click', () => this.go(btn.dataset.go));
     });
+    document.getElementById('tab-notes').addEventListener('click', () => Learn.setMode('notes'));
+    document.getElementById('tab-quiz').addEventListener('click', () => Learn.setMode('quiz'));
 
     const saved = localStorage.getItem('class1_last_hero');
     if (saved && HEROES.find((h) => h.id === saved)) {
@@ -33,16 +40,17 @@ const App = {
 
   selectHero(id) {
     this.playerId = id;
+    Learn.playerId = id;
     localStorage.setItem('class1_last_hero', id);
     Store.getPlayer(id);
     this.go('home');
     this.refreshStats();
     const hero = HEROES.find((h) => h.id === id);
     const msgs = [
-      `Hi ${hero.name}! Ready for Math Mountain?`,
-      `Hey ${hero.name}! Let's practice reading today!`,
-      `${hero.name}, you can earn coins and stars!`,
-      `Go ${hero.name}! Pick a world to explore!`,
+      `Hi ${hero.name}! Pick a subject to read notes!`,
+      `Hey ${hero.name}! Try a chapter quiz!`,
+      `${hero.name}, earn coins and stars in every subject!`,
+      `Go ${hero.name}! 120 chapters waiting for you!`,
     ];
     document.getElementById('welcome-msg').textContent =
       msgs[Math.floor(Math.random() * msgs.length)];
@@ -53,16 +61,22 @@ const App = {
     const map = {
       login: 'screen-login',
       home: 'screen-home',
+      chapters: 'screen-chapters',
+      chapter: 'screen-chapter',
       math: 'screen-math',
       english: 'screen-english',
       trophy: 'screen-trophy',
     };
     document.getElementById(map[screen]).classList.add('active');
 
+    if (screen === 'home') {
+      Learn.playerId = this.playerId;
+      Learn.showHome();
+      this.refreshStats();
+    }
     if (screen === 'math') this.showMathLevels();
     if (screen === 'english') this.showEnglishLevels();
     if (screen === 'trophy') this.showTrophyRoom();
-    if (screen === 'home') this.refreshStats();
   },
 
   refreshStats() {
@@ -75,9 +89,9 @@ const App = {
     document.getElementById('stat-streak').textContent = `🔥 ${p.streak || 0}`;
     document.getElementById('stat-level').textContent = `Lv ${p.level}`;
     document.getElementById('math-progress').textContent =
-      'Progress: ' + Store.countCompletedLevels(this.playerId, 'math', MATH_LEVELS.length);
+      'Arcade: ' + Store.countCompletedLevels(this.playerId, 'math', MATH_LEVELS.length);
     document.getElementById('english-progress').textContent =
-      'Progress: ' + Store.countCompletedLevels(this.playerId, 'english', ENGLISH_LEVELS.length);
+      'Arcade: ' + Store.countCompletedLevels(this.playerId, 'english', ENGLISH_LEVELS.length);
   },
 
   showMathLevels() {
@@ -127,6 +141,7 @@ const App = {
   showTrophyRoom() {
     const p = Store.getPlayer(this.playerId);
     const room = document.getElementById('trophy-room');
+    const chDone = Object.keys(p.chapters || {}).filter((k) => p.chapters[k] > 0).length;
     const badges = BADGES.map((b) => {
       const has = (p.badges || []).includes(b.id);
       return `
@@ -144,9 +159,10 @@ const App = {
     }).join('');
     room.innerHTML = `
       <h3 style="grid-column:1/-1;margin-bottom:8px">🏅 Badges</h3>${badges}
-      <h3 style="grid-column:1/-1;margin:16px 0 8px">✨ Stickers (unlock with stars)</h3>${stickers}
+      <h3 style="grid-column:1/-1;margin:16px 0 8px">✨ Stickers</h3>${stickers}
       <div style="grid-column:1/-1;text-align:center;margin-top:16px;padding:16px;background:#fff;border-radius:20px">
-        <p style="font-size:1.2rem;font-weight:700">${HEROES.find((h) => h.id === this.playerId).avatar} Total: ${p.coins} coins · ${p.stars} stars · Level ${p.level}</p>
+        <p style="font-size:1.1rem;font-weight:700">${HEROES.find((h) => h.id === this.playerId).avatar}
+        ${p.coins} coins · ${p.stars} stars · ${chDone} chapters · Lv ${p.level}</p>
       </div>`;
   },
 };

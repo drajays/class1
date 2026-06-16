@@ -10,6 +10,7 @@ const BADGES = [
   { id: 'coin_collector', name: 'Coin Collector', emoji: '🪙', need: 50 },
   { id: 'math_hero', name: 'Math Hero', emoji: '🔢', need: 5, type: 'math_levels' },
   { id: 'reader', name: 'Super Reader', emoji: '📖', need: 5, type: 'english_levels' },
+  { id: 'explorer', name: 'Book Explorer', emoji: '📚', need: 10, type: 'chapter_levels' },
   { id: 'streak_5', name: 'On Fire!', emoji: '🔥', need: 5, type: 'streak' },
   { id: 'perfect', name: 'Perfect Level', emoji: '💎', need: 1, type: 'perfect' },
 ];

@@ -1,0 +1,3360 @@
+{
+  "chapters": [
+    {
+      "id": "evs_00_evs_introduction",
+      "folder": "00_evs_introduction",
+      "title": "Evs Introduction",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "Environmental Studies"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_00_evs_introduction/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_00_evs_introduction/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "Grade 1, Course Book 1"
+        },
+        {
+          "type": "heading",
+          "text": "Contents"
+        },
+        {
+          "type": "text",
+          "text": "1. All About Me 1-10"
+        },
+        {
+          "type": "text",
+          "text": "2. My Amazing Body 11-20"
+        },
+        {
+          "type": "text",
+          "text": "3. I Love My Family 21-28"
+        },
+        {
+          "type": "text",
+          "text": "4. Home Sweet Home 29-38"
+        },
+        {
+          "type": "text",
+          "text": "5. My School"
+        },
+        {
+          "type": "text",
+          "text": "6. Plants Around Us"
+        },
+        {
+          "type": "text",
+          "text": "7. Animals Around Us 59-66"
+        },
+        {
+          "type": "text",
+          "text": "8. The Food We Eat 67-74"
+        },
+        {
+          "type": "text",
+          "text": "##### In this book"
+        },
+        {
+          "type": "text",
+          "text": "##### Look out for these..."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_00_evs_introduction/img_003.jpg",
+          "alt": "Image 3"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Evs Introduction?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "evs_01_all_about_me",
+      "folder": "01_all_about_me",
+      "title": "All About Me",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "ALL ABOUT ME"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_01_all_about_me/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Hello friends! You all know about me. Who are you? Tell me something about yourself."
+        },
+        {
+          "type": "text",
+          "text": "Introducing myself"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_01_all_about_me/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_01_all_about_me/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_01_all_about_me/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "My different moods"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_01_all_about_me/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "What I like/What I don't like?"
+        },
+        {
+          "type": "text",
+          "text": "How am I unique?"
+        },
+        {
+          "type": "text",
+          "text": "INTRODUCING MYSELF"
+        },
+        {
+          "type": "text",
+          "text": "Adulto Smukla"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_01_all_about_me/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "My birthday is on"
+        },
+        {
+          "type": "text",
+          "text": "I am in class"
+        },
+        {
+          "type": "text",
+          "text": "My father's name is"
+        },
+        {
+          "type": "text",
+          "text": "My mother's name is"
+        },
+        {
+          "type": "text",
+          "text": "I live in _____(city/town)."
+        },
+        {
+          "type": "text",
+          "text": "My blood group is"
+        },
+        {
+          "type": "text",
+          "text": "Phone number of my parent /guardian is ___"
+        },
+        {
+          "type": "text",
+          "text": "What are the different names that people call you by?"
+        },
+        {
+          "type": "text",
+          "text": "What is the meaning of your name?"
+        },
+        {
+          "type": "text",
+          "text": "##### WISDOM BOX"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What I like/What I don't like?",
+          "options": [
+            "INTRODUCING MYSELF",
+            "Paste your"
+          ],
+          "answer": "INTRODUCING MYSELF",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "What are the different names that people call you by?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "What is the meaning of your name?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "WHAT I LIKE/WHAT I DON'T LIKE?",
+          "options": [
+            "I like to play football and read books."
+          ],
+          "answer": "I like to play football and read books.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Do you, also ever feel the same way like I do?",
+          "options": [
+            "Let us meet Tina and Meena and find out how they are different from each othe"
+          ],
+          "answer": "Let us meet Tina and Meena and find out how they are different from each othe",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "# HOW AM I UNIQUE?",
+          "options": [
+            "Let us meet Tina and Meena and find out how they are different from each othe"
+          ],
+          "answer": "Let us meet Tina and Meena and find out how they are different from each othe",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "1. An ___ card has important information about us.",
+          "options": [
+            "2. Our likes and dislikes are not the ___",
+            "3.All of us do not ___ the same.",
+            "4. We all are ___ and unique."
+          ],
+          "answer": "2. Our likes and dislikes are not the ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. Our likes and dislikes are not the ___",
+          "options": [
+            "3.All of us do not ___ the same.",
+            "4. We all are ___ and unique.",
+            "Draw or paste pictures of your favourite things that are given below."
+          ],
+          "answer": "3.All of us do not ___ the same.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3.All of us do not ___ the same.",
+          "options": [
+            "4. We all are ___ and unique.",
+            "Draw or paste pictures of your favourite things that are given below.",
+            "Food"
+          ],
+          "answer": "4. We all are ___ and unique.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "4. We all are ___ and unique.",
+          "options": [
+            "Draw or paste pictures of your favourite things that are given below.",
+            "Food",
+            "Animal"
+          ],
+          "answer": "Draw or paste pictures of your favourite things that are given below.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "1. I laugh when ___",
+          "options": [
+            "2. I stamp my feet when ___",
+            "3. I take a deep breath when ___",
+            "### D. Draw anything which you like and is"
+          ],
+          "answer": "2. I stamp my feet when ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. I stamp my feet when ___",
+          "options": [
+            "3. I take a deep breath when ___",
+            "### D. Draw anything which you like and is"
+          ],
+          "answer": "3. I take a deep breath when ___",
+          "hint": "Read the notes above carefully!"
+        }
+      ]
+    },
+    {
+      "id": "evs_02_my_amazing_body",
+      "folder": "02_my_amazing_body",
+      "title": "My Amazing Body",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "MY AMAZING BODY"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_02_my_amazing_body/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "I have always wondered about my body parts. Why do we need different body parts?"
+        },
+        {
+          "type": "text",
+          "text": "Parts of our body"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_02_my_amazing_body/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_02_my_amazing_body/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_02_my_amazing_body/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "Functions of body parts"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_02_my_amazing_body/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "The story of our five senses"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_02_my_amazing_body/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Taking care of our body parts"
+        },
+        {
+          "type": "text",
+          "text": "People with special needs"
+        },
+        {
+          "type": "text",
+          "text": "##### PARTS OF OUR BODY"
+        },
+        {
+          "type": "text",
+          "text": "##### Our body has many parts."
+        },
+        {
+          "type": "text",
+          "text": "##### LET'S HAVE FUN"
+        },
+        {
+          "type": "text",
+          "text": "##### Match the body parts with correct names."
+        },
+        {
+          "type": "text",
+          "text": "Each part of our body does different work. We do many things with our hands."
+        },
+        {
+          "type": "text",
+          "text": "We can pick things up."
+        },
+        {
+          "type": "text",
+          "text": "We can hold."
+        },
+        {
+          "type": "text",
+          "text": "We can write."
+        },
+        {
+          "type": "text",
+          "text": "We can hold."
+        },
+        {
+          "type": "text",
+          "text": "We can point with fingers."
+        },
+        {
+          "type": "text",
+          "text": "Wow, this is great!"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "I have always wondered about my body parts. Why do we need different body parts?",
+          "options": [
+            "Parts of our body"
+          ],
+          "answer": "Parts of our body",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "What is the taste of the food items shown below?",
+          "options": [
+            "Help Box",
+            "sweet",
+            "sour"
+          ],
+          "answer": "Help Box",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Do you know that we can read by the sense of touch?",
+          "options": [
+            "A R r"
+          ],
+          "answer": "A R r",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "### A. Choose the correct option.",
+          "options": [
+            "1. Our ears help us to _____.",
+            "see ○ hear ○ talk",
+            "2.We smell food with our_____",
+            "☐ hands ☐ nose ☐ ears"
+          ],
+          "answer": "1. Our ears help us to _____.",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "1. Our ears help us to ___.",
+          "options": [
+            "see ○ hear ○ talk",
+            "2.We smell food with our_____",
+            "☐ hands ☐ nose ☐ ears"
+          ],
+          "answer": "see ○ hear ○ talk",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2.We smell food with our___",
+          "options": [
+            "☐ hands ☐ nose ☐ ears",
+            "3. While taking a bath, we should use ___.",
+            "soap and water ○ a tooth brush ○ a handkerchief"
+          ],
+          "answer": "☐ hands ☐ nose ☐ ears",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. While taking a bath, we should use ___.",
+          "options": [
+            "soap and water ○ a tooth brush ○ a handkerchief",
+            "☐ holding a ball ☐ running ☐ chewing our food"
+          ],
+          "answer": "soap and water ○ a tooth brush ○ a handkerchief",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Which one of the following activity is done using hands?",
+          "options": [
+            "☐ holding a ball ☐ running ☐ chewing our food",
+            "### B. Write true or false.",
+            "1. Breathing exercises keep us healthy."
+          ],
+          "answer": "☐ holding a ball ☐ running ☐ chewing our food",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How does our tongue help us?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Ryan went to sleep straight after his dinner. Which activity did he miss?",
+          "options": [
+            "F. Complete the following crossword with the names of body parts."
+          ],
+          "answer": "F. Complete the following crossword with the names of body parts.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "What should we do, when we get tired?",
+          "options": [
+            "F. Complete the following crossword with the names of body parts."
+          ],
+          "answer": "F. Complete the following crossword with the names of body parts.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Aryan is listening to music at a high volume. Which of these will he not be able to sense?",
+          "options": [
+            "Puddles on the road in ○ Whether the tea is hot or front of him. cold.",
+            "His friend calling out his ○ A bug sitting on his hand. name."
+          ],
+          "answer": "Puddles on the road in ○ Whether the tea is hot or front of him. cold.",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "evs_03_i_love_my_family",
+      "folder": "03_i_love_my_family",
+      "title": "I Love My Family",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "I LOVE MY FAMILY"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_03_i_love_my_family/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "I feel very happy and safe to be with my family. Why is family important to us?"
+        },
+        {
+          "type": "text",
+          "text": "Types of families"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_03_i_love_my_family/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_03_i_love_my_family/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_03_i_love_my_family/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_03_i_love_my_family/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "Celebrations in a family"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_03_i_love_my_family/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Me as a helping hand in my family"
+        },
+        {
+          "type": "heading",
+          "text": "LET'S HAVE FUN"
+        },
+        {
+          "type": "text",
+          "text": "1. He is my rangd athfer"
+        },
+        {
+          "type": "text",
+          "text": "##### Unscramble the given words and match them with the pictures given below."
+        },
+        {
+          "type": "text",
+          "text": "3. She is my"
+        },
+        {
+          "type": "text",
+          "text": "5. She is my sitser"
+        },
+        {
+          "type": "text",
+          "text": "4. She is my garnd mtoehr"
+        },
+        {
+          "type": "heading",
+          "text": "TYPES OF FAMILIES"
+        },
+        {
+          "type": "text",
+          "text": "We live together in a family. We love and help each other in a family. All families are not the same. Some families are small, while some are big. Let us different types of families."
+        },
+        {
+          "type": "text",
+          "text": "I am Zoya. This is my family. My father, mother, brother and I live together. We are a small family."
+        },
+        {
+          "type": "text",
+          "text": "My friend Rishi lives with his mother only. They are a single-parent family. His family is also a small family."
+        },
+        {
+          "type": "text",
+          "text": "My uncle, aunt and cousins live with my grandparents. They are a big family."
+        },
+        {
+          "type": "text",
+          "text": "BIG OR SMALL, EACH FAMILY IS SPECIAL."
+        },
+        {
+          "type": "text",
+          "text": "##### WISDOM BOX"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "I feel very happy and safe to be with my family. Why is family important to us?",
+          "options": [
+            "Types of families"
+          ],
+          "answer": "Types of families",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How many letters are there in your surname?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Circle the boxes showing activities that you and your family do together.",
+          "options": [
+            "Play games",
+            "Meet relatives",
+            "Watch TV",
+            "Celebrate birthday"
+          ],
+          "answer": "Play games",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "Who does the following work in your house?",
+          "options": [
+            "My _____ cooks food.",
+            "My _____ shops for groceries.",
+            "My ___ cleans the house."
+          ],
+          "answer": "My _____ cooks food.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "My ___ cooks food.",
+          "options": [
+            "My _____ shops for groceries.",
+            "My ___ cleans the house.",
+            "My ___ helps me with my homework."
+          ],
+          "answer": "My _____ shops for groceries.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "My ___ shops for groceries.",
+          "options": [
+            "My ___ cleans the house.",
+            "My ___ helps me with my homework."
+          ],
+          "answer": "My ___ cleans the house.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "### A. Choose the correct option.",
+          "options": [
+            "1. We live at home with our _____.",
+            "friends ○ family ○ neighbours",
+            "2. A family with only the mother and a child is a _____.",
+            "big family ○ small family ○ single-parent family"
+          ],
+          "answer": "1. We live at home with our _____.",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "1. We live at home with our ___.",
+          "options": [
+            "friends ○ family ○ neighbours",
+            "2. A family with only the mother and a child is a _____.",
+            "big family ○ small family ○ single-parent family"
+          ],
+          "answer": "friends ○ family ○ neighbours",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. A family with only the mother and a child is a ___.",
+          "options": [
+            "big family ○ small family ○ single-parent family",
+            "3. Members of a family ___.",
+            "☐ cook together ☐ share work ☐ cook together and share"
+          ],
+          "answer": "big family ○ small family ○ single-parent family",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. Members of a family ___.",
+          "options": [
+            "☐ cook together ☐ share work ☐ cook together and share",
+            "4. ___ is a place for worship.",
+            "Mosque ○ Onam ○ Holi"
+          ],
+          "answer": "☐ cook together ☐ share work ☐ cook together and share",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "4. ___ is a place for worship.",
+          "options": [
+            "Mosque ○ Onam ○ Holi",
+            "Tick the correct words in the given sentences.",
+            "1. We live with our family/friends."
+          ],
+          "answer": "Mosque ○ Onam ○ Holi",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "B. Tick the correct words in the given sentences.",
+          "options": [
+            "1. We live with our family/friends.",
+            "2. Members of a family share/do not share their happiness together.",
+            "3. Gurudwara is a festival/place for worship.",
+            "4. All families are same/different."
+          ],
+          "answer": "1. We live with our family/friends.",
+          "hint": "Pick the best answer!"
+        }
+      ]
+    },
+    {
+      "id": "evs_04_home_sweet_home",
+      "folder": "04_home_sweet_home",
+      "title": "Home Sweet Home",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "HOME SWEET HOME"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_04_home_sweet_home/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_04_home_sweet_home/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "A house becomes a home with a family living together. What makes your home a happy place to live? Importance of a house"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_04_home_sweet_home/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_04_home_sweet_home/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "Types of houses"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_04_home_sweet_home/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_04_home_sweet_home/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "A healthy house"
+        },
+        {
+          "type": "text",
+          "text": "Safety in your house"
+        },
+        {
+          "type": "text",
+          "text": "##### LET'S HAVE FUN"
+        },
+        {
+          "type": "text",
+          "text": "Cross the things which are wrongly placed in the living room."
+        },
+        {
+          "type": "text",
+          "text": "Dad, why are you making a kennel?"
+        },
+        {
+          "type": "text",
+          "text": "So, that stray dogs can live in it and protect themselves from bad weather. Like us, animals also need a house to live in."
+        },
+        {
+          "type": "text",
+          "text": "A house is a place where a family lives together."
+        },
+        {
+          "type": "text",
+          "text": "A house has many rooms like- bedroom, living room, kitchen and washroom."
+        },
+        {
+          "type": "text",
+          "text": "IMPORTANCE OF A HOUSE"
+        },
+        {
+          "type": "text",
+          "text": "A house keeps us"
+        },
+        {
+          "type": "text",
+          "text": "safe from heat and"
+        },
+        {
+          "type": "text",
+          "text": "safe from rain and storm."
+        },
+        {
+          "type": "text",
+          "text": "safe from thieves."
+        },
+        {
+          "type": "text",
+          "text": "safe from wild animals."
+        },
+        {
+          "type": "text",
+          "text": "safe from germs and some diseases."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Dad, why are you making a kennel?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "What are you doing at my home?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "1. The two types of houses are ___ and pucca house.",
+          "options": [
+            "2. We enter our house through the main ___.",
+            "3. Hot places have houses with ___ roofs.",
+            "4. A ___ house help us in living a disease free life."
+          ],
+          "answer": "2. We enter our house through the main ___.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. We enter our house through the main ___.",
+          "options": [
+            "3. Hot places have houses with ___ roofs.",
+            "4. A ___ house help us in living a disease free life.",
+            "Choose the correct option."
+          ],
+          "answer": "3. Hot places have houses with ___ roofs.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. Hot places have houses with ___ roofs.",
+          "options": [
+            "4. A ___ house help us in living a disease free life.",
+            "Choose the correct option.",
+            "1. A house protects us from ___."
+          ],
+          "answer": "4. A ___ house help us in living a disease free life.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "4. A ___ house help us in living a disease free life.",
+          "options": [
+            "Choose the correct option.",
+            "1. A house protects us from ___.",
+            "rain and heat ○ cold and wild animals ○ all of these"
+          ],
+          "answer": "Choose the correct option.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "B. Choose the correct option.",
+          "options": [
+            "1. A house protects us from ___.",
+            "rain and heat ○ cold and wild animals ○ all of these"
+          ],
+          "answer": "1. A house protects us from ___.",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "Which of the following things is not used for making a kutchia house?",
+          "options": [
+            "mud ○ steel ○ straw",
+            "wall ○ market ○ floor"
+          ],
+          "answer": "mud ○ steel ○ straw",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Which one of these is not there in a house?",
+          "options": [
+            "wall ○ market ○ floor",
+            "A good house must have ___",
+            "☐ dustbin ☐ covered drains ☐ both of these"
+          ],
+          "answer": "wall ○ market ○ floor",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Why do some houses have sloping roofs?",
+          "options": [
+            "3. Give any two features of a healthy house.",
+            "4. Write any one difference between a kutchia house and a pucca house."
+          ],
+          "answer": "3. Give any two features of a healthy house.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Imagine, you have no water and electricity in your house for a day. What difficulties will you face?",
+          "options": [
+            "Aditi is inside her"
+          ],
+          "answer": "Aditi is inside her",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Why is a house made of mud and leaves, not strong enough?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "evs_05_my_school",
+      "folder": "05_my_school",
+      "title": "My School",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "MY SCHOOL"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_05_my_school/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "I go to school daily. I enjoy meeting my friends there. I learn new things everyday. Tell me, what do you like the most about your school?"
+        },
+        {
+          "type": "text",
+          "text": "Places in my school"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_05_my_school/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_05_my_school/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_05_my_school/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "People who help us at school"
+        },
+        {
+          "type": "text",
+          "text": "Good choices at school"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_05_my_school/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "Rules to be followed at school"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_05_my_school/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "heading",
+          "text": "LET'S HAVE FUN"
+        },
+        {
+          "type": "heading",
+          "text": "Tick the things that you carry to your school."
+        },
+        {
+          "type": "text",
+          "text": "##### et us recite this poem."
+        },
+        {
+          "type": "text",
+          "text": "School is a place to learn. Be good to all and have lots of fun. My teachers are good, My friends are fine, And, I go to school, Always on time."
+        },
+        {
+          "type": "text",
+          "text": "School is a place where we study. We learn different skills, subjects and values learn to make good choices at school. We wear special clothes to our school call uniform."
+        },
+        {
+          "type": "heading",
+          "text": "PLACES IN MY SCHOOL"
+        },
+        {
+          "type": "text",
+          "text": "s school bag is missing."
+        },
+        {
+          "type": "text",
+          "text": "Oh! I don't know where my bag is?"
+        },
+        {
+          "type": "text",
+          "text": "Let us see which all places Joya goes looking for her bag."
+        },
+        {
+          "type": "text",
+          "text": "Assembly Hall- Students gather here to sing the morning prayer and start the day."
+        },
+        {
+          "type": "text",
+          "text": "Principal's Room- The School Principal sits in the room."
+        },
+        {
+          "type": "text",
+          "text": "Library- Students read different books in the library. The librarians look after the library. They help students to select the books."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "I go to school daily. I enjoy meeting my friends there. I learn new things everyday. Tell me, what do you like the most about your school?",
+          "options": [
+            "Places in my school"
+          ],
+          "answer": "Places in my school",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Oh! I don't know where my bag is?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Have you seen my school bag?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Can you name the objects circled in the picture above? Can you find Joya's school bag in the classroom?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "1.I help keep your classroom clean. I am a ___",
+          "options": [
+            "2. Itake care of your school garden. I am a ___",
+            "3.1 teach you different subjects. I am a ___",
+            "# GOOD CHOICES AT SCHOOL"
+          ],
+          "answer": "2. Itake care of your school garden. I am a ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. Itake care of your school garden. I am a ___",
+          "options": [
+            "3.1 teach you different subjects. I am a ___",
+            "# GOOD CHOICES AT SCHOOL"
+          ],
+          "answer": "3.1 teach you different subjects. I am a ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Hey, Danger! What are you doing in my school?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "1.We should keep our school ___",
+          "options": [
+            "2.We learn music in the_____ room.",
+            "3. We wear ___ to our school everyday.",
+            "4. We visit the ___ room, in case we feel unwell at school."
+          ],
+          "answer": "2.We learn music in the_____ room.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2.We learn music in the___ room.",
+          "options": [
+            "3. We wear ___ to our school everyday.",
+            "4. We visit the ___ room, in case we feel unwell at school.",
+            "Look at the pictures of school places and find their names in the word grid."
+          ],
+          "answer": "3. We wear ___ to our school everyday.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. We wear ___ to our school everyday.",
+          "options": [
+            "4. We visit the ___ room, in case we feel unwell at school.",
+            "Look at the pictures of school places and find their names in the word grid."
+          ],
+          "answer": "4. We visit the ___ room, in case we feel unwell at school.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "### C. Choose the correct option.",
+          "options": [
+            "1. The helper, generally not seen in school is ___.",
+            "police ○ guard ○ librarian",
+            "2. We learn ___ in our school.",
+            "skills and values ○ art and craft ○ all of these"
+          ],
+          "answer": "1. The helper, generally not seen in school is ___.",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "1. The helper, generally not seen in school is ___.",
+          "options": [
+            "police ○ guard ○ librarian",
+            "2. We learn ___ in our school.",
+            "skills and values ○ art and craft ○ all of these"
+          ],
+          "answer": "police ○ guard ○ librarian",
+          "hint": "Read the notes above carefully!"
+        }
+      ]
+    },
+    {
+      "id": "evs_06_plants_around_us",
+      "folder": "06_plants_around_us",
+      "title": "Plants Around Us",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "PLANTS AROUND US"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_06_plants_around_us/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_06_plants_around_us/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_06_plants_around_us/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "Parts of a plant"
+        },
+        {
+          "type": "text",
+          "text": "Wherever I go, I find different types of plants. I often think, if they get tired standing in the sun."
+        },
+        {
+          "type": "text",
+          "text": "Types of plants"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_06_plants_around_us/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_06_plants_around_us/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "How do plants grow"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_06_plants_around_us/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Plants- Our green friends"
+        },
+        {
+          "type": "text",
+          "text": "Taking care of plants"
+        },
+        {
+          "type": "heading",
+          "text": "LET'S HAVE FUN"
+        },
+        {
+          "type": "text",
+          "text": "Observe the picture carefully and write down any four things, that need air and water to live."
+        },
+        {
+          "type": "text",
+          "text": "Plants are living things that need air, water and sunlight to live. All plants grow."
+        },
+        {
+          "type": "text",
+          "text": "Plants cannot move from one place to another. Plants like sunflower turn themselves to face the Sun."
+        },
+        {
+          "type": "heading",
+          "text": "WISDOM BOX"
+        },
+        {
+          "type": "text",
+          "text": "Mimosa plant is also known as the shy plant. It moves its leaves, whenever it is touched by a person, an animal or by wind."
+        },
+        {
+          "type": "heading",
+          "text": "PARTS OF A PLANT"
+        },
+        {
+          "type": "text",
+          "text": "Plants have different parts."
+        },
+        {
+          "type": "text",
+          "text": "TYPES OF PLANTS"
+        },
+        {
+          "type": "text",
+          "text": "There are different kinds of plants around us. Some plants are big while some are small."
+        },
+        {
+          "type": "text",
+          "text": "Big plants- Trees are big and strong plants. They have thick and woody stems called trunks. Banyan tree, mango tree and coconut tree are some examples."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Can you name two plants that cannot grow straight on their own?",
+          "options": [
+            "1. ___",
+            "2."
+          ],
+          "answer": "1. ___",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "1. A ___ grows in the deserts.",
+          "options": [
+            "2.Mint has a _____ stem.",
+            "3. A money plant is a____.",
+            "4. Plants give us ___ which is used to make our clothes."
+          ],
+          "answer": "2.Mint has a _____ stem.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2.Mint has a ___ stem.",
+          "options": [
+            "3. A money plant is a____.",
+            "4. Plants give us ___ which is used to make our clothes."
+          ],
+          "answer": "3. A money plant is a____.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "### choose the correct option.",
+          "options": [
+            "1. The plant shown in the figure is a tree because it has",
+            "thick and woody stem.",
+            "thin and hard stem.",
+            "soft and weak stem."
+          ],
+          "answer": "1. The plant shown in the figure is a tree because it has",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "What happens when a seed in the soil gets air, water and sunlight?",
+          "options": [
+            "4. List two ways by which you can take care of a plant."
+          ],
+          "answer": "4. List two ways by which you can take care of a plant.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Why are plants called living things?",
+          "options": [
+            "4. List two ways by which you can take care of a plant."
+          ],
+          "answer": "4. List two ways by which you can take care of a plant.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Do plants breathe in air, like us?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "evs_07_animals_around_us",
+      "folder": "07_animals_around_us",
+      "title": "Animals Around Us",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "ANIMALS AROUND US"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_07_animals_around_us/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "We see so many animals around us. Like us, they also need food and water to live. I wonder, do they eat the same food that we eat? Animals and their living place Animals- our friends"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_07_animals_around_us/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "What do animals eat"
+        },
+        {
+          "type": "text",
+          "text": "Types of animals"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_07_animals_around_us/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "heading",
+          "text": "LET'S HAVE FUN"
+        },
+        {
+          "type": "heading",
+          "text": "Write the names of the animals and match them with their sounds."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_07_animals_around_us/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_07_animals_around_us/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_07_animals_around_us/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Let us hang this bird feeder. Birds must be hungry and thirsty."
+        },
+        {
+          "type": "text",
+          "text": "Animals are living things, found everywhere on earth. There are different types of animals such as insects, birds and reptiles. They need air, food, water and shelter to live."
+        },
+        {
+          "type": "text",
+          "text": "Different animals, live in different places."
+        },
+        {
+          "type": "text",
+          "text": "Some animals like dogs, deer and camels live on land."
+        },
+        {
+          "type": "text",
+          "text": "Crocodiles, turtles and frogs can live both on land and in water."
+        },
+        {
+          "type": "text",
+          "text": "Animals like fishes and octopuses live in water."
+        },
+        {
+          "type": "text",
+          "text": "Animals like monkeys and birds live on trees."
+        },
+        {
+          "type": "text",
+          "text": "##### WISDOM BOX"
+        },
+        {
+          "type": "text",
+          "text": "Polar bears live in very cold places covered with snow and ice. They swim in ice cold water and hunt fish to eat."
+        },
+        {
+          "type": "text",
+          "text": "Animals are our true friends. They help us in many ways. Animals that stay in our house are called pet animals. Cows and dogs are the most common pet animals."
+        },
+        {
+          "type": "heading",
+          "text": "We should take care of our pets by-"
+        },
+        {
+          "type": "text",
+          "text": "· giving them fresh food and clean water."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "# WHAT DO ANIMALS EAT?",
+          "options": [
+            "Animals such as cows, sheep, goats, horses and deer eat grass and leaves."
+          ],
+          "answer": "Animals such as cows, sheep, goats, horses and deer eat grass and leaves.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "There are some birds which cannot fly. Can you name three such birds?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "### C. Choose the correct answer.",
+          "options": [
+            "1. Identify the animals that eat only leaves and grass.",
+            "Deer and cow ○ Crow and bear ○ Lion and cheetah",
+            "2. A _____ is not an insect.",
+            "mosquito ○ housefly ○ sparrow"
+          ],
+          "answer": "1. Identify the animals that eat only leaves and grass.",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. A ___ is not an insect.",
+          "options": [
+            "mosquito ○ housefly ○ sparrow",
+            "They are animals. ○ They live on trees. ○ Both of these."
+          ],
+          "answer": "mosquito ○ housefly ○ sparrow",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "What is common among a woodpecker, an owl and a monkey?",
+          "options": [
+            "They are animals. ○ They live on trees. ○ Both of these.",
+            "4. Snakes, crocodiles, alligators and lizards are ___.",
+            "birds ☐ insects ☐ reptiles"
+          ],
+          "answer": "They are animals. ○ They live on trees. ○ Both of these.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "4. Snakes, crocodiles, alligators and lizards are ___.",
+          "options": [
+            "birds ☐ insects ☐ reptiles",
+            "Answer the following questions.",
+            "1. Name three animals that live both on land and in water."
+          ],
+          "answer": "birds ☐ insects ☐ reptiles",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Why can't you keep a whale as a pet?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Do animals live with their families, like us?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "I would like to keep a ___ (cow, dog or cat) as my pet. I will take care of my pet by (tick all the things you will do)",
+          "options": [
+            "keeping it happy/sad.",
+            "giving it fresh/stale food.",
+            "giving it clean/dirty water."
+          ],
+          "answer": "keeping it happy/sad.",
+          "hint": "Read the notes above carefully!"
+        }
+      ]
+    },
+    {
+      "id": "evs_08_the_food_we_eat",
+      "folder": "08_the_food_we_eat",
+      "title": "The Food We Eat",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "THE FOOD WE EAT"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_08_the_food_we_eat/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "I like eating a variety of food. I wonder, from where does the food we eat, come from?"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_08_the_food_we_eat/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "Need to eat food"
+        },
+        {
+          "type": "text",
+          "text": "Sources of food"
+        },
+        {
+          "type": "text",
+          "text": "What do we drink?"
+        },
+        {
+          "type": "text",
+          "text": "Healthy food habits"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_08_the_food_we_eat/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "##### LET'S HAVE FUN"
+        },
+        {
+          "type": "text",
+          "text": "Look at the picture. Circle the food items that you like to eat. Also write their names in the given blanks."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_08_the_food_we_eat/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "##### WHY DO WE NEED TO EAT FOOD?"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_08_the_food_we_eat/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "heading",
+          "text": "2 years"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_08_the_food_we_eat/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Aarav loves drinking milk. Aarav loves to eat porridge."
+        },
+        {
+          "type": "text",
+          "text": "Aarav enjoys eating a variety of foods."
+        },
+        {
+          "type": "text",
+          "text": "All of us need food. It helps us to live and grow. It also gives us energy to work and play."
+        },
+        {
+          "type": "text",
+          "text": "We eat different food items to remain healthy and strong."
+        },
+        {
+          "type": "text",
+          "text": "Generally, we eat three meals in a day."
+        },
+        {
+          "type": "text",
+          "text": "We have our breakfast in the morning, lunch in the afternoon and dinner at night. We also have snacks in between our meals. We should have healthy food items as snacks."
+        },
+        {
+          "type": "text",
+          "text": "Name two things you eat for"
+        },
+        {
+          "type": "text",
+          "text": "FUN WITH FRIENDS"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "I like eating a variety of food. I wonder, from where does the food we eat, come from?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "# WHY DO WE NEED TO EAT FOOD?",
+          "options": [
+            "Baby"
+          ],
+          "answer": "Baby",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "# WHAT DO WE DRINK?",
+          "options": [
+            "We drink water to live."
+          ],
+          "answer": "We drink water to live.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "1. Food gives us energy to work and ___",
+          "options": [
+            "2. We also eat ___ in between our meals.",
+            "3. We get vegetables from ___.",
+            "4. Drinking water should be stored in ___ vessels."
+          ],
+          "answer": "2. We also eat ___ in between our meals.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. We also eat ___ in between our meals.",
+          "options": [
+            "3. We get vegetables from ___.",
+            "4. Drinking water should be stored in ___ vessels.",
+            "### B Match the food items to their correct source."
+          ],
+          "answer": "3. We get vegetables from ___.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. We get vegetables from ___.",
+          "options": [
+            "4. Drinking water should be stored in ___ vessels.",
+            "### B Match the food items to their correct source."
+          ],
+          "answer": "4. Drinking water should be stored in ___ vessels.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. Aman is eating rice, dal and paneer. He is having ___ food.",
+          "options": [
+            "vegetarian ○ non-vegetarian ○ vegan",
+            "Soup ○ Salad ○ Milk"
+          ],
+          "answer": "vegetarian ○ non-vegetarian ○ vegan",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Which of these is not a drink?",
+          "options": [
+            "Soup ○ Salad ○ Milk"
+          ],
+          "answer": "Soup ○ Salad ○ Milk",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Why do we need food?",
+          "options": [
+            "3. Write any three healthy eating habits."
+          ],
+          "answer": "3. Write any three healthy eating habits.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Why do we need to drink water?",
+          "options": [
+            "3. Write any three healthy eating habits."
+          ],
+          "answer": "3. Write any three healthy eating habits.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Why should we rinse our mouth after every meal?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Why should we chew with our mouth closed?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "evs_09_the_clothes_we_wear",
+      "folder": "09_the_clothes_we_wear",
+      "title": "The Clothes We Wear",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "THE CLOTHES WE WEAR"
+        },
+        {
+          "type": "text",
+          "text": "Rearrange the given letters to name these clothes."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_09_the_clothes_we_wear/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_09_the_clothes_we_wear/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_09_the_clothes_we_wear/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_09_the_clothes_we_wear/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "We wear clothes to cover and protect our body from heat, cold, wind, rain, sun, dirt, dust and insect bites."
+        },
+        {
+          "type": "text",
+          "text": "Cloth is also used to make things like bags, bedsheets, curtains, sofa covers and carpets."
+        },
+        {
+          "type": "text",
+          "text": "##### CLOTHES FOR DIFFERENT SEASONS"
+        },
+        {
+          "type": "text",
+          "text": "In summer, when it is very hot, we must wear cotton clothes to keep ourselves cool and dry. We get cotton from the cotton plant"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_09_the_clothes_we_wear/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_09_the_clothes_we_wear/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "In winter, when it is very cold, we must wear woollen clothes. These clothes protect us from the cold weather and keep us warm. We get wool from sheep, goat and yak."
+        },
+        {
+          "type": "text",
+          "text": "In rainy or monsoon season when it rains, we must wear raincoats and waterproof footwear to keep ourselves dry. We must also use umbrellas so that we do not get wet in the rain."
+        },
+        {
+          "type": "text",
+          "text": "Take a piece of cotton cloth, a woollen cloth and a piece of plastic. One by one, place each one of them on your hand and place water drop over it. What did you observe? Which of them did not wet your hand? In the same way, in rainy season, cloth made of plastic protects us from rain."
+        },
+        {
+          "type": "text",
+          "text": "Make a 〇 for the correct sentences and a ▲ for the wrong sentences."
+        },
+        {
+          "type": "text",
+          "text": "Kimono is worn in Japan."
+        },
+        {
+          "type": "text",
+          "text": "Saree is mainly worn in Bharat, Sri Lanka, Pakistan, Bangladesh and Nepal."
+        },
+        {
+          "type": "text",
+          "text": "People in different parts of the world wear different types of clothes. A particular type of dress is called a costume. Let us see costumes from some places around the world. Generally these costumes are worn for important occasions."
+        },
+        {
+          "type": "text",
+          "text": "I love wearing a variety of clothes."
+        },
+        {
+          "type": "text",
+          "text": "I wear special clothes on special occasions like- festivals, weddings and birthday parties. Such clothes are also called party wear clothes."
+        },
+        {
+          "type": "text",
+          "text": "At home, I prefer to wear clothes like-T-shirts, shorts, kurtas or pyjamas."
+        },
+        {
+          "type": "text",
+          "text": "We should wear clean and well ironed clothes. Dirty clothes can make us sick. We should take care of our clothes."
+        },
+        {
+          "type": "text",
+          "text": "waterproof-that keeps water out"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Why do we wear clothes?",
+          "options": [
+            "2. Why do we wear woollen clothes in winter season? Give two reasons"
+          ],
+          "answer": "2. Why do we wear woollen clothes in winter season? Give two reasons",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "evs_10_air_and_water",
+      "folder": "10_air_and_water",
+      "title": "Air And Water",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "AIR AND WATER"
+        },
+        {
+          "type": "text",
+          "text": "Do the following things to feel the presence of air."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_10_air_and_water/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_10_air_and_water/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "Wave a scarf."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_10_air_and_water/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_10_air_and_water/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "Turn on the fan."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_10_air_and_water/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_10_air_and_water/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "A tree in a storm"
+        },
+        {
+          "type": "text",
+          "text": "Moving air is called wind."
+        },
+        {
+          "type": "text",
+          "text": "A very soft wind is called a breeze."
+        },
+        {
+          "type": "text",
+          "text": "A very strong wind is called a storm."
+        },
+        {
+          "type": "text",
+          "text": "Sometimes when you cycle or run fast, your hair sway all around you. This happens because your body moves through the air."
+        },
+        {
+          "type": "text",
+          "text": "Air is used by plants to make their food."
+        },
+        {
+          "type": "text",
+          "text": "• Air is filled into footballs, balloons, swimming tubes and culetures"
+        },
+        {
+          "type": "text",
+          "text": "and cycle tyres."
+        },
+        {
+          "type": "text",
+          "text": "Air helps to dry clothes."
+        },
+        {
+          "type": "text",
+          "text": "Air helps things to burn. It helps in cooking our food."
+        },
+        {
+          "type": "text",
+          "text": "• Wind makes kites and parachutes fly."
+        },
+        {
+          "type": "text",
+          "text": "• Wind allows boats to sail."
+        },
+        {
+          "type": "text",
+          "text": "• A flute and a trumpet make musical sounds when air is blown into them"
+        },
+        {
+          "type": "text",
+          "text": "Observe when your teacher light a candle and then when it is covered it with a glass. What happened to the burning candle? Why did the candle stop burning?"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Observe when your teacher light a candle and then when it is covered it with a glass. What happened to the burning candle? Why did the candle stop burning?",
+          "options": [
+            "Name three vehicles that fly in air.",
+            "7. ___",
+            "1. ___"
+          ],
+          "answer": "Name three vehicles that fly in air.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Take a potted plant. Put it under the Sun for a few days. Do not water it for some days (make sure it is not the rainy season). Observe the plant carefully. What happens to the plant?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "1. Very soft wind is called a ___. (breeze/storm)",
+          "options": [
+            "2. Air is used by plants to make their ___. (food/house)",
+            "3.Dust, smoke and germs make the air ___ (dirty/clean)",
+            "4. Water is home to animals like ___. (cow/fish)"
+          ],
+          "answer": "2. Air is used by plants to make their ___. (food/house)",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. Air is used by plants to make their ___. (food/house)",
+          "options": [
+            "3.Dust, smoke and germs make the air ___ (dirty/clean)",
+            "4. Water is home to animals like ___. (cow/fish)",
+            "Choose the correct option."
+          ],
+          "answer": "3.Dust, smoke and germs make the air ___ (dirty/clean)",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3.Dust, smoke and germs make the air ___ (dirty/clean)",
+          "options": [
+            "4. Water is home to animals like ___. (cow/fish)",
+            "Choose the correct option.",
+            "☐ plants"
+          ],
+          "answer": "4. Water is home to animals like ___. (cow/fish)",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "4. Water is home to animals like ___. (cow/fish)",
+          "options": [
+            "Choose the correct option.",
+            "☐ plants",
+            "animals"
+          ],
+          "answer": "Choose the correct option.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "B. Choose the correct option.",
+          "options": [
+            "☐ plants",
+            "animals",
+            "2. Wind helps ___ to fly.",
+            "both of these"
+          ],
+          "answer": "☐ plants",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. Wind helps ___ to fly.",
+          "options": [
+            "both of these",
+            "drink and bathe ○ cook and wash clothes ○ wash utensils",
+            "##### LET'S LEARN"
+          ],
+          "answer": "both of these",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Why do animals need water?",
+          "options": [
+            "##### LET'S MASTER"
+          ],
+          "answer": "##### LET'S MASTER",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How can we get underground water?",
+          "options": [
+            "##### LET'S MASTER"
+          ],
+          "answer": "##### LET'S MASTER",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How does using a handkerchief while sneezing or coughing prevent the air from getting polluted?",
+          "options": [
+            "Rain ___",
+            "VALUE FOR ME- BEING RESPONSIBLE"
+          ],
+          "answer": "Rain ___",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "evs_11_places_in_my_neighbourhood",
+      "folder": "11_places_in_my_neighbourhood",
+      "title": "Places In My Neighbourhood",
+      "notes": [
+        {
+          "type": "text",
+          "text": "There are so many places in a neighbourhood. What all places make your neighbourhood the best place to live in?Neighbours and neighbourhood Services in the neighbourhood Our duties towards our neighbourhood"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_11_places_in_my_neighbourhood/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "heading",
+          "text": "LET'S HAVE FUN"
+        },
+        {
+          "type": "text",
+          "text": "Circle the word that matches the picture."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_11_places_in_my_neighbourhood/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "Police station"
+        },
+        {
+          "type": "text",
+          "text": "Fuel station"
+        },
+        {
+          "type": "heading",
+          "text": "ロール"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_11_places_in_my_neighbourhood/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "Police station"
+        },
+        {
+          "type": "text",
+          "text": "Railway station"
+        },
+        {
+          "type": "text",
+          "text": "##### NEIGHBOURS AND NEIGHBOURHOOD"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_11_places_in_my_neighbourhood/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_11_places_in_my_neighbourhood/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "Hello, I am Tina. Roma, Aarav and Paul are my friends. Our houses are close to one another. We are neighbours. We like to play games together. Our neighbours and places around our house together form the neighbourhood. Let us read this story about my neighbourhood."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_11_places_in_my_neighbourhood/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Sam uncle did not like talking much with others in our neighbourhood. He always scolded us for making noise while playing. All children used to dislike him."
+        },
+        {
+          "type": "text",
+          "text": "One fine evening, a child fell while playing. Sam uncle helped him by giving him first aid. From that day, we all realised that he is a good person. He is now a good friend of ours."
+        },
+        {
+          "type": "text",
+          "text": "We should respect all kind of people."
+        },
+        {
+          "type": "text",
+          "text": "be respectful to our neighbours."
+        },
+        {
+          "type": "text",
+          "text": "It is important to be a good neighbour. To be a good nei"
+        },
+        {
+          "type": "text",
+          "text": "help each other when needed."
+        },
+        {
+          "type": "text",
+          "text": "• share each other's joys and problems."
+        },
+        {
+          "type": "text",
+          "text": "celebrate festivals and special occasions together."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "I can see beautiful nature around. Is there a park in my neighbourhood?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "3 Firefighters work at a ___.",
+          "options": [
+            "4 AnATM helps us to take out our ___",
+            "1. We go to a hospital to buy vegetables.",
+            "2. Sick people go to a police station."
+          ],
+          "answer": "4 AnATM helps us to take out our ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "4 AnATM helps us to take out our ___",
+          "options": [
+            "1. We go to a hospital to buy vegetables.",
+            "2. Sick people go to a police station.",
+            "3. All neighbourhoods have shops, hills and ponds."
+          ],
+          "answer": "1. We go to a hospital to buy vegetables.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "C. Choose the correct option.",
+          "options": [
+            "ep ___ in a bank.",
+            "our valuable things",
+            "2. People who live near our house are called our _.",
+            "neighbourhood ○ neighbours"
+          ],
+          "answer": "ep ___ in a bank.",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "ep ___ in a bank.",
+          "options": [
+            "our valuable things",
+            "2. People who live near our house are called our _.",
+            "neighbourhood ○ neighbours"
+          ],
+          "answer": "our valuable things",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Who are neighbours?",
+          "options": [
+            "2. What should you do to be a good neighbour? Write at least two points."
+          ],
+          "answer": "2. What should you do to be a good neighbour? Write at least two points.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Yousaw a leaking tap in your neighbourhood. What will you do?",
+          "options": [
+            "CONNECTING CORDS"
+          ],
+          "answer": "CONNECTING CORDS",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "### Jack and Radha are neighbours. Jack often misses his school bus. Radha never miss her school bus. (tick the correct answer)",
+          "options": [
+            "Jack is often",
+            "on time"
+          ],
+          "answer": "Jack is often",
+          "hint": "Pick the best answer!"
+        }
+      ]
+    },
+    {
+      "id": "evs_12_people_who_help_us",
+      "folder": "12_people_who_help_us",
+      "title": "People Who Help Us",
+      "notes": [
+        {
+          "type": "text",
+          "text": "A house help helps us in household chores like- cleaning and cooking at our house."
+        },
+        {
+          "type": "text",
+          "text": "A milk person delivers milk and a newspaper person delivers newspapers at"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_12_people_who_help_us/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_12_people_who_help_us/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_12_people_who_help_us/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "An electrician fixes electrical issues."
+        },
+        {
+          "type": "text",
+          "text": "A plumber fixes leaking taps and water pipes."
+        },
+        {
+          "type": "text",
+          "text": "A courier person deliv our parcels."
+        },
+        {
+          "type": "text",
+          "text": "We can also send our parcels through a post office. Postal workers work for a post office."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_12_people_who_help_us/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "heading",
+          "text": "LET'S HAVE FUN"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_12_people_who_help_us/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_12_people_who_help_us/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "The police helps to keep the city safe. They try to stop people from doing wrong activities. They catch thieves and robbers. They work at a police station."
+        },
+        {
+          "type": "text",
+          "text": "A doctor treats people who are sick or hurt. A nurse takes care of patients and helps the doctors. They work at a hospital or a clinic."
+        },
+        {
+          "type": "text",
+          "text": "A traffic police controls the traffic on road."
+        },
+        {
+          "type": "text",
+          "text": "A hair dresser cuts and styles our hair. They work at a salon."
+        },
+        {
+          "type": "text",
+          "text": "A greengrocer sells vegetables and fruits."
+        },
+        {
+          "type": "text",
+          "text": "A chemist sells medicines."
+        },
+        {
+          "type": "text",
+          "text": "A carpenter builds and repairs things made from wood."
+        },
+        {
+          "type": "text",
+          "text": "A cobbler polishes and mends shoes."
+        },
+        {
+          "type": "text",
+          "text": "##### SOME MORE HELPERS"
+        },
+        {
+          "type": "text",
+          "text": "A firefighter saves people from fire. They sit at a fire station."
+        },
+        {
+          "type": "text",
+          "text": "A farmer grows food for us. Some farmers also take care of farm animals. They work in the fields."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "B. Choose the correct option.",
+          "options": [
+            "I teach students.",
+            "fix leaking taps.",
+            "injured people",
+            "I treat people who are sick."
+          ],
+          "answer": "I teach students.",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "Whom will you go to get a hair cut?",
+          "options": [
+            "house help"
+          ],
+          "answer": "house help",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "When do we go to a doctor?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How does a firefighter help us?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How does a milk person help us?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "What does a farmer do?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "evs_13_my_country_bharat",
+      "folder": "13_my_country_bharat",
+      "title": "My Country Bharat",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "MY COUNTRY BHARAT"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_13_my_country_bharat/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_13_my_country_bharat/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "I will tell you about my country Bharat."
+        },
+        {
+          "type": "text",
+          "text": "Bharat is one of the most beautiful countries in the world. It is also known by names 'Hindustan' and 'India'. It is the seventh largest country in the world. It many states."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_13_my_country_bharat/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "##### LET'S HAVE FUN"
+        },
+        {
+          "type": "text",
+          "text": "Name the state in which you live ___ Circle your state in the above map of Bharat."
+        },
+        {
+          "type": "heading",
+          "text": "CELEBRATE DIVERSITY"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_13_my_country_bharat/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "Bharat is known across the world for its rich culture and traditions. Let me tell you, how it is different from other countries."
+        },
+        {
+          "type": "text",
+          "text": "People all over the country"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_13_my_country_bharat/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_13_my_country_bharat/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "look different"
+        },
+        {
+          "type": "text",
+          "text": "speak different languages"
+        },
+        {
+          "type": "text",
+          "text": "wear different clothes"
+        },
+        {
+          "type": "text",
+          "text": "eat different food"
+        },
+        {
+          "type": "text",
+          "text": "go to different places of worship"
+        },
+        {
+          "type": "text",
+          "text": "...but they are all Indians. There is 'Unity in Diversity'."
+        },
+        {
+          "type": "text",
+          "text": "##### OUR NATIONAL SYMBOLS"
+        },
+        {
+          "type": "text",
+          "text": "Our national symbols are symbols of our freedom and unity. Our National Flag is the symbol of pride and patriotism."
+        },
+        {
+          "type": "text",
+          "text": "Deep saffron- power and bravery of our country"
+        },
+        {
+          "type": "text",
+          "text": "White- truth, purity and peace"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "celebrate Teachers' Day on ___.",
+          "options": [
+            "celebrate Children's Day on _____",
+            "#### CHANGING FACE OF BIRTH"
+          ],
+          "answer": "celebrate Children's Day on _____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "1. ___ has many states.",
+          "options": [
+            "2. ___ is our national flower.",
+            "3. Qutub Minar is located in ___",
+            "4. Ournational animal, ___ is the symbol of strength."
+          ],
+          "answer": "2. ___ is our national flower.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. ___ is our national flower.",
+          "options": [
+            "3. Qutub Minar is located in ___",
+            "4. Ournational animal, ___ is the symbol of strength.",
+            "Write true or false."
+          ],
+          "answer": "3. Qutub Minar is located in ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. Qutub Minar is located in ___",
+          "options": [
+            "4. Ournational animal, ___ is the symbol of strength.",
+            "Write true or false.",
+            "1. Peacock is the symbol of peace and grace."
+          ],
+          "answer": "4. Ournational animal, ___ is the symbol of strength.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "4. Ournational animal, ___ is the symbol of strength.",
+          "options": [
+            "Write true or false.",
+            "1. Peacock is the symbol of peace and grace.",
+            "2. Our National Flag has two colours."
+          ],
+          "answer": "Write true or false.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "C. Choose the correct option.",
+          "options": [
+            "1. ___ is also known as Hindustan and India.",
+            "Bharat Bhutan Delhi",
+            "2. White colour in our flag is the symbol of ___.",
+            "truth ○ growth ○ both of these"
+          ],
+          "answer": "1. ___ is also known as Hindustan and India.",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "1. ___ is also known as Hindustan and India.",
+          "options": [
+            "Bharat Bhutan Delhi",
+            "2. White colour in our flag is the symbol of ___.",
+            "truth ○ growth ○ both of these"
+          ],
+          "answer": "Bharat Bhutan Delhi",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. White colour in our flag is the symbol of ___.",
+          "options": [
+            "truth ○ growth ○ both of these",
+            "3. Long ago people used to connect ___",
+            "☐ using mobiles ☐ by writing letters ☐ using video calling"
+          ],
+          "answer": "truth ○ growth ○ both of these",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. Long ago people used to connect ___",
+          "options": [
+            "☐ using mobiles ☐ by writing letters ☐ using video calling",
+            "4. Bara Imambara is located in _____",
+            "Delhi Mumbai Lucknow"
+          ],
+          "answer": "☐ using mobiles ☐ by writing letters ☐ using video calling",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "4. Bara Imambara is located in ___",
+          "options": [
+            "Delhi Mumbai Lucknow",
+            "1. Name any four states of Bharat.",
+            "2. List two things on which we can see our National Emblem."
+          ],
+          "answer": "Delhi Mumbai Lucknow",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "How did people travel in the past?",
+          "options": [
+            "#### LET'S MASTER"
+          ],
+          "answer": "#### LET'S MASTER",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "You are at your friend's house. There, you are served food on a banana leaf. You are surprised as you always eat in a plate. What will you do?",
+          "options": [
+            "(fi'l in the blanks)"
+          ],
+          "answer": "(fi'l in the blanks)",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "evs_14_world_around_us",
+      "folder": "14_world_around_us",
+      "title": "World Around Us",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "WORLD AROUND US"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_14_world_around_us/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "I have learnt so much about Bharat. Now, I want to learn about other countries of the world. What are the common things between those countries and Bharat?"
+        },
+        {
+          "type": "text",
+          "text": "Around the world"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_14_world_around_us/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_14_world_around_us/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_14_world_around_us/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "Animals around the world"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_14_world_around_us/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "Children around the world"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_14_world_around_us/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Celebrations"
+        },
+        {
+          "type": "heading",
+          "text": "LET'S HAVE FUN"
+        },
+        {
+          "type": "text",
+          "text": "Rearrange the capital letters to fill in the blanks."
+        },
+        {
+          "type": "heading",
+          "text": "AROUND THE WORLD"
+        },
+        {
+          "type": "text",
+          "text": "Our world is a beautiful place in the universe. It has seven continents."
+        },
+        {
+          "type": "text",
+          "text": "It has many countries. Some are big and some are small. Russia is the largest country."
+        },
+        {
+          "type": "text",
+          "text": "We can visit countries around the world in an aeroplane or in a cruise ship."
+        },
+        {
+          "type": "text",
+          "text": "We can connect to people living in other countries through"
+        },
+        {
+          "type": "text",
+          "text": "Laptops/ Mobile phones/ Tablets"
+        },
+        {
+          "type": "text",
+          "text": "like Bharat, different countries have their own flags. Let us look at the flags of some countries."
+        },
+        {
+          "type": "text",
+          "text": "different countries have different currencies."
+        },
+        {
+          "type": "text",
+          "text": "Rupee, Bharat"
+        },
+        {
+          "type": "text",
+          "text": "Naira, Nigeria"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "I have learnt so much about Bharat. Now, I want to learn about other countries of the world. What are the common things between those countries and Bharat?",
+          "options": [
+            "Around the world"
+          ],
+          "answer": "Around the world",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How do you greet someone?",
+          "options": [
+            "Seafood",
+            "##### CELEBRATIONS AROUND THE WORLD"
+          ],
+          "answer": "Seafood",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Why are celebrations so important to us?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "1. ___ is the largest country.",
+          "options": [
+            "2. Carnival is celebrated in ___",
+            "3. ___ are found in Australia.",
+            "4.Polarbearsliveinthe___region."
+          ],
+          "answer": "2. Carnival is celebrated in ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. Carnival is celebrated in ___",
+          "options": [
+            "3. ___ are found in Australia.",
+            "4.Polarbearsliveinthe___region.",
+            ". Write true or false."
+          ],
+          "answer": "3. ___ are found in Australia.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. ___ are found in Australia.",
+          "options": [
+            "4.Polarbearsliveinthe___region.",
+            ". Write true or false.",
+            "1. Taj Mahal is in Brazil."
+          ],
+          "answer": "4.Polarbearsliveinthe___region.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "4.Polarbearsliveinthe___region.",
+          "options": [
+            ". Write true or false.",
+            "1. Taj Mahal is in Brazil.",
+            "2. Opera House is in Australia."
+          ],
+          "answer": ". Write true or false.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. The flag shown here is of ___.",
+          "options": [
+            "Russia Australia",
+            "A cruise ship An aeroplane Both of these"
+          ],
+          "answer": "Russia Australia",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Which transport can you use to go to another country?",
+          "options": [
+            "A cruise ship An aeroplane Both of these"
+          ],
+          "answer": "A cruise ship An aeroplane Both of these",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "You learnt about monuments in our world. Which two monuments would you like to visit?",
+          "options": [
+            "3. Name the food items eaten by people of Canada and Brazil.",
+            "4. Name the currency used in",
+            "Russia-"
+          ],
+          "answer": "3. Name the food items eaten by people of Canada and Brazil.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "3. I live in South America. I am also known as a good guard animal. I am a ___.",
+          "options": [
+            "4. I live in Australia. I have large feet. I can jump very high.",
+            "am a ___.",
+            "5.I live in Australia.I live on eucalyptus trees and love eating its leaves."
+          ],
+          "answer": "4. I live in Australia. I have large feet. I can jump very high.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Why are monuments important?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "evs_15_our_universe",
+      "folder": "15_our_universe",
+      "title": "Our Universe",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "OUR UNIVERSE"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_15_our_universe/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "I love watching the Sun, the Moon, stars and clouds in the sky."
+        },
+        {
+          "type": "text",
+          "text": "How are they important to us?"
+        },
+        {
+          "type": "text",
+          "text": "Things in the sky"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_15_our_universe/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_15_our_universe/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_15_our_universe/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_15_our_universe/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "Land pollution"
+        },
+        {
+          "type": "text",
+          "text": "THINGS IN THE SKY"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/evs_15_our_universe/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "heading",
+          "text": "LET'S HAVE FUN"
+        },
+        {
+          "type": "text",
+          "text": "Circle the things that you see in the sky."
+        },
+        {
+          "type": "text",
+          "text": "The sky looks different during the day and at night."
+        },
+        {
+          "type": "text",
+          "text": "We see many things in the sky like the Moon, clouds, stars and the Sun."
+        },
+        {
+          "type": "text",
+          "text": "##### The Moon"
+        },
+        {
+          "type": "text",
+          "text": "We see the Moon at night. The shape of the Moon keeps changing. When the shape of the Moon is like a ball, we call it a full moon. At times, we cannot see the Moon at all. We call it a new moon."
+        },
+        {
+          "type": "heading",
+          "text": "WISDOM BOX"
+        },
+        {
+          "type": "text",
+          "text": "Astronauts go to the Moon in a spaceship. A rocket can take the spaceship to the Moon."
+        },
+        {
+          "type": "text",
+          "text": "##### Clouds"
+        },
+        {
+          "type": "text",
+          "text": "Clouds look like balls of cotton. They float in the sky. Clouds change their colours. Sometimes they are blue, while sometimes they are grey."
+        },
+        {
+          "type": "text",
+          "text": "It usually rains when there are dark clouds in the sky."
+        },
+        {
+          "type": "text",
+          "text": "Dark clouds and Rain"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "How are they important to us?",
+          "options": [
+            "Things in the sky"
+          ],
+          "answer": "Things in the sky",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "the nearest planet to the Sun, is ___.",
+          "options": [
+            "the farthest planet from the Sun, is _____.",
+            "the planet with a ring around it, is _____.",
+            "##### OUR EARTH"
+          ],
+          "answer": "the farthest planet from the Sun, is _____.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "the farthest planet from the Sun, is ___.",
+          "options": [
+            "the planet with a ring around it, is _____.",
+            "##### OUR EARTH"
+          ],
+          "answer": "the planet with a ring around it, is _____.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "1. The Sun gives us ___ and light.",
+          "options": [
+            "2.The shape of the_____ keeps changing.",
+            "3. A_____ can take a spaceship to the Moon.",
+            "4. It usually rains if there are dark ___ in the sky."
+          ],
+          "answer": "2.The shape of the_____ keeps changing.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2.The shape of the___ keeps changing.",
+          "options": [
+            "3. A_____ can take a spaceship to the Moon.",
+            "4. It usually rains if there are dark ___ in the sky.",
+            "Unscramble the letters to name the planets of the Solar System."
+          ],
+          "answer": "3. A_____ can take a spaceship to the Moon.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. A___ can take a spaceship to the Moon.",
+          "options": [
+            "4. It usually rains if there are dark ___ in the sky.",
+            "Unscramble the letters to name the planets of the Solar System.",
+            "1. MREYCUR-"
+          ],
+          "answer": "4. It usually rains if there are dark ___ in the sky.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "4. It usually rains if there are dark ___ in the sky.",
+          "options": [
+            "Unscramble the letters to name the planets of the Solar System.",
+            "1. MREYCUR-",
+            "2. E N U V S-"
+          ],
+          "answer": "Unscramble the letters to name the planets of the Solar System.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. A band of seven colours across the sky is called ___.",
+          "options": [
+            "a cloud ○ the rain ○ a rainbow",
+            "3. The Earth has _____.",
+            "plains ○ mountains ○ both of these"
+          ],
+          "answer": "a cloud ○ the rain ○ a rainbow",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. The Earth has ___.",
+          "options": [
+            "plains ○ mountains ○ both of these",
+            "4. Plants grow very close to one another in _____.",
+            "plains ○ valleys ○ forests"
+          ],
+          "answer": "plains ○ mountains ○ both of these",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "4. Plants grow very close to one another in ___.",
+          "options": [
+            "plains ○ valleys ○ forests",
+            "1. Name any two planets of our Solar System which are far away from the Sun."
+          ],
+          "answer": "plains ○ valleys ○ forests",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Why do stars look so small to us?",
+          "options": [
+            "##### LET'S MASTER"
+          ],
+          "answer": "##### LET'S MASTER",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "What is a new moon?",
+          "options": [
+            "##### LET'S MASTER"
+          ],
+          "answer": "##### LET'S MASTER",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    }
+  ]
+}

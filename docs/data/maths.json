@@ -1,0 +1,3847 @@
+{
+  "chapters": [
+    {
+      "id": "maths_00_maths_introduction",
+      "folder": "00_maths_introduction",
+      "title": "Maths Introduction",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "MATHS"
+        },
+        {
+          "type": "heading",
+          "text": "GRADE 1"
+        },
+        {
+          "type": "text",
+          "text": "TERM 3 and 4"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Maths Introduction?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "maths_01_academic_vocabulary_and_concept",
+      "folder": "01_academic_vocabulary_and_concept",
+      "title": "Academic Vocabulary And Concept",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Introduction"
+        },
+        {
+          "type": "text",
+          "text": "Addition/Subtraction"
+        },
+        {
+          "type": "text",
+          "text": "Ordinal Numbers"
+        },
+        {
+          "type": "text",
+          "text": "Times Tables"
+        },
+        {
+          "type": "text",
+          "text": "Sub Topics for Subtraction"
+        },
+        {
+          "type": "text",
+          "text": "Properties of Subtraction"
+        },
+        {
+          "type": "text",
+          "text": "Subtraction across Zeroes"
+        },
+        {
+          "type": "text",
+          "text": "Word Problem"
+        },
+        {
+          "type": "text",
+          "text": "Sub Topics for Addition/Subtraction"
+        },
+        {
+          "type": "text",
+          "text": "Analyze and apply appropriate number operations"
+        },
+        {
+          "type": "text",
+          "text": "Word Problem"
+        },
+        {
+          "type": "text",
+          "text": "Sub Topics for Ordinal Numbers"
+        },
+        {
+          "type": "text",
+          "text": "Difference between cardinal and ordinal numbers"
+        },
+        {
+          "type": "text",
+          "text": "Learn and write ordinal numbers 1 to 10"
+        },
+        {
+          "type": "text",
+          "text": "Sub Topics for Times Tables"
+        },
+        {
+          "type": "text",
+          "text": "Times tables of 6 and 7"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Academic Vocabulary And Concept?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "maths_03_concept_introduction",
+      "folder": "03_concept_introduction",
+      "title": "Concept Introduction",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Addition is one of the most basic arithmetic operations and is used to combine two or more digits/numbers together. Addends are the digits/numbers being added, and the result of the final answer we get after the process is called the sum. The symbol of addition is \"+\\\"."
+        },
+        {
+          "type": "text",
+          "text": "Addition Statement is a mathematical expression that demonstrates two or more digits/numbers added together and their sum."
+        },
+        {
+          "type": "text",
+          "text": "4+37 is an addition statement."
+        },
+        {
+          "type": "text",
+          "text": "Subtraction is an arithmetic operation and is used to remove or take away objects or numbers from a given collection of objects or from another number. The symbol of addition is \"-\"."
+        },
+        {
+          "type": "text",
+          "text": "The number being subtracted is the subtraend, while the number it is subtracted from is the minuend. The result is the difference."
+        },
+        {
+          "type": "text",
+          "text": "Word/Story Problem serves as a narrative tool that presents a real-world situation requiring a mathematical solution."
+        },
+        {
+          "type": "text",
+          "text": "Times Table is a list of multiples of a number. Times table of any number can be obtained by adding the same number in every next step."
+        },
+        {
+          "type": "text",
+          "text": "Cardinal numbers are numbers that are used for counting real objects or counting things. They are also known as \"counting numbers\" or \"cardinals.\""
+        },
+        {
+          "type": "text",
+          "text": "Ordinal numbers are numbers that are used to represent the rank or position of an object or a person. They are also referred to as positioning or ranking numbers."
+        },
+        {
+          "type": "text",
+          "text": "Measurement: is the process of finding how much, how long, how heavy, or how big something is by comparing it with a standard unit. It helps us describe and compare objects using numbers. Measurement includes concepts such as length, weight, capacity, time, and temperature."
+        },
+        {
+          "type": "text",
+          "text": "Data Handling: is the process of collecting, organizing, and understanding information in charts or tables so we can read, compare, and use it easily."
+        },
+        {
+          "type": "text",
+          "text": "Pattern is a regular arrangement or sequence of repeating objects, lines, shapes, colours or numbers related to each other in a specific rule."
+        },
+        {
+          "type": "text",
+          "text": "Shape: describes the form or outline of an object. It shows the object's outer boundary such as its sides, corners, or curved edges. Shape tells us about how an object looks and it is different from its color, size, texture, or material."
+        },
+        {
+          "type": "text",
+          "text": "Plane Shape: are two-dimensional shapes or flat shapes that can be drawn on paper. They have only length and width and have no thickness. Their edges can be straight or curved."
+        },
+        {
+          "type": "text",
+          "text": "Examples: Triangle, Square, Rectangle, Circle."
+        },
+        {
+          "type": "text",
+          "text": "Solid Shape: are three-dimensional shapes. It has measurable length, breadth/width, and height. A solid figure takes up space and the volume."
+        },
+        {
+          "type": "text",
+          "text": "Examples: Cube, Cuboid, Sphere."
+        },
+        {
+          "type": "text",
+          "text": "Times Table is a list of multiples of a number. Times table of any number can be obtained by adding the same number in every next step."
+        },
+        {
+          "type": "text",
+          "text": "Comparison is a process or method to determine whether a number or quantity is smaller, greater, or equal to another number or quantity according to their values or amount."
+        },
+        {
+          "type": "text",
+          "text": "E.g. The symbols used for comparing numbers or quantities are “☐”, which means “greater than”; “☐”, which means “less than”; and “=”, which means “equal to”."
+        },
+        {
+          "type": "text",
+          "text": "Ascending Order the process of arranging the numbers in increasing order, i.e., from smallest value to largest value. The lowest value is written first and the highest value is written at the last."
+        },
+        {
+          "type": "text",
+          "text": "The word Ascending means “Going Up”"
+        },
+        {
+          "type": "text",
+          "text": "Descending Order the process of arranging the numbers in decreasing order, i.e., from largest value to smallest value. The highest value is written first and the lowest value is written at the last."
+        },
+        {
+          "type": "text",
+          "text": "The word Descending means “Going Down”"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Concept Introduction?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "maths_04_ordinal_numbers",
+      "folder": "04_ordinal_numbers",
+      "title": "Ordinal Numbers",
+      "notes": [
+        {
+          "type": "text",
+          "text": "1. Follow the directions below and colour the circle band."
+        },
+        {
+          "type": "text",
+          "text": "• Colour the second circle RED."
+        },
+        {
+          "type": "text",
+          "text": "• Colour the third circle BLUE."
+        },
+        {
+          "type": "text",
+          "text": "• Colour the first circle ORANGE."
+        },
+        {
+          "type": "text",
+          "text": "• Colour the fifth circle GREEN."
+        },
+        {
+          "type": "text",
+          "text": "• Colour the eight circle PURPLE."
+        },
+        {
+          "type": "text",
+          "text": "Don't colour the tenth circle."
+        },
+        {
+          "type": "text",
+          "text": "• Colour the ninth circle BROWN."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_04_ordinal_numbers/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "2. Read the problem. Place the ordinal number under each of the animal's name to show the place they came in."
+        },
+        {
+          "type": "text",
+          "text": "The local animals had a race."
+        },
+        {
+          "type": "text",
+          "text": "Ben Bear came first. Ernie Elephant came second. Charlie Chick came third. Abe Ape came fourth."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_04_ordinal_numbers/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "Charlie Chick"
+        },
+        {
+          "type": "text",
+          "text": "Ernie Elephant"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_04_ordinal_numbers/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "Q1. Direction: Fill in the blanks with the given day of the week. Start with Monday as the day of the week and complete the statements."
+        },
+        {
+          "type": "text",
+          "text": "A. _____ is the first (1 ) day of the week."
+        },
+        {
+          "type": "text",
+          "text": "B. _____ is the second (2 ) day of the week."
+        },
+        {
+          "type": "text",
+          "text": "C. _____ is the third (3 ) day of the week."
+        },
+        {
+          "type": "text",
+          "text": "D. _____ is the fourth (4th) day of the week."
+        },
+        {
+          "type": "text",
+          "text": "E. _____ is the fifth (5th) day of the week."
+        },
+        {
+          "type": "text",
+          "text": "F. _____ is the sixth (6th) day of the week."
+        },
+        {
+          "type": "text",
+          "text": "G. _____ is the seventh (7th) day of the week."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "A. ___ is the first (1 ) day of the week.",
+          "options": [
+            "_____ is the second (2 ) day of the week.",
+            "_____ is the third (3 ) day of the week.",
+            "_____ is the fourth (4th) day of the week."
+          ],
+          "answer": "_____ is the second (2 ) day of the week.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "B. ___ is the second (2 ) day of the week.",
+          "options": [
+            "_____ is the third (3 ) day of the week.",
+            "_____ is the fourth (4th) day of the week.",
+            "E. _____ is the fifth (5th) day of the week."
+          ],
+          "answer": "_____ is the third (3 ) day of the week.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "C. ___ is the third (3 ) day of the week.",
+          "options": [
+            "_____ is the fourth (4th) day of the week.",
+            "E. _____ is the fifth (5th) day of the week.",
+            "F. _____ is the sixth (6th) day of the week."
+          ],
+          "answer": "_____ is the fourth (4th) day of the week.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "D. ___ is the fourth (4th) day of the week.",
+          "options": [
+            "E. _____ is the fifth (5th) day of the week.",
+            "F. _____ is the sixth (6th) day of the week.",
+            "G. _____ is the seventh (7th) day of the week."
+          ],
+          "answer": "E. _____ is the fifth (5th) day of the week.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "E. ___ is the fifth (5th) day of the week.",
+          "options": [
+            "F. _____ is the sixth (6th) day of the week.",
+            "G. _____ is the seventh (7th) day of the week."
+          ],
+          "answer": "F. _____ is the sixth (6th) day of the week.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "a) Who is in the tenth place?___",
+          "options": [
+            "Which place is Mindy in?_____",
+            "If Tony and Tom leave the line, what place would Mindy be in? _____",
+            "If Lou moves ahead in front Suzy what place is she now? _____"
+          ],
+          "answer": "Which place is Mindy in?_____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b) Which place is Mindy in?___",
+          "options": [
+            "If Tony and Tom leave the line, what place would Mindy be in? _____",
+            "If Lou moves ahead in front Suzy what place is she now? _____"
+          ],
+          "answer": "If Tony and Tom leave the line, what place would Mindy be in? _____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "is in the ___ place.",
+          "options": [
+            "2. Circle the image of the object which tells the given position of the object",
+            "1."
+          ],
+          "answer": "2. Circle the image of the object which tells the given position of the object",
+          "hint": "Read the notes above carefully!"
+        }
+      ]
+    },
+    {
+      "id": "maths_05_subtraction",
+      "folder": "05_subtraction",
+      "title": "Subtraction",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Direction: Cross out to subtract and find the answer."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_05_subtraction/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_05_subtraction/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_05_subtraction/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_05_subtraction/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_05_subtraction/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_05_subtraction/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "##### Solve:"
+        },
+        {
+          "type": "text",
+          "text": "no pencils taken out"
+        },
+        {
+          "type": "text",
+          "text": "no bottles taken out"
+        },
+        {
+          "type": "text",
+          "text": "no oranges taken out-"
+        },
+        {
+          "type": "text",
+          "text": "no stars taken out"
+        },
+        {
+          "type": "text",
+          "text": "Subtract the number in the middle wheel from the number in the innermost wheel and write the answer in the outermost wheel."
+        },
+        {
+          "type": "text",
+          "text": "Tick the statements that are correct. Write the correct answers for ones that are incorrect."
+        },
+        {
+          "type": "text",
+          "text": "Direction: Cross out the bangles wanted by these kids and write the answer."
+        },
+        {
+          "type": "text",
+          "text": "Directions: Highlight a group of ten. Find the answer using the crossout method."
+        },
+        {
+          "type": "text",
+          "text": "2. Find the answer by drawing sticks and crossing them out."
+        },
+        {
+          "type": "text",
+          "text": "Solve the following:"
+        },
+        {
+          "type": "text",
+          "text": "Solve the following :"
+        },
+        {
+          "type": "text",
+          "text": "Observe picture A and picture B and fill in the table below and subtract. First one has been done for you."
+        },
+        {
+          "type": "text",
+          "text": "Solve the following :"
+        },
+        {
+          "type": "text",
+          "text": "Find the difference. Use the key below to colour in each space to dress up the turtle."
+        },
+        {
+          "type": "heading",
+          "text": "Q2. Real Life Application"
+        },
+        {
+          "type": "text",
+          "text": "Mother gave me 50 rupees. I bought food for my dog worth 40 rupees. How much money am I left with?"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Mother gave me 50 rupees. I bought food for my dog worth 40 rupees. How much money am I left with?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_06_additionsubtraction",
+      "folder": "06_additionsubtraction",
+      "title": "Additionsubtraction",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Solve the following:"
+        },
+        {
+          "type": "text",
+          "text": "Solve the following :"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_06_additionsubtraction/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Solve the following:"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_06_additionsubtraction/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "Solve the following:"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Additionsubtraction?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "maths_07_mental_maths",
+      "folder": "07_mental_maths",
+      "title": "Mental Maths",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Worksheet: 8"
+        },
+        {
+          "type": "text",
+          "text": "Use addition or subtraction to complete each number bond-"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_07_mental_maths/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_07_mental_maths/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_07_mental_maths/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_07_mental_maths/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "Worksheet : 9"
+        },
+        {
+          "type": "text",
+          "text": "Solve the following:"
+        },
+        {
+          "type": "text",
+          "text": "Worksheet :11"
+        },
+        {
+          "type": "text",
+          "text": "Solve the following:"
+        },
+        {
+          "type": "text",
+          "text": "Practice sheet 1"
+        },
+        {
+          "type": "text",
+          "text": "Q1. If you start counting from 5, how many numbers would come before s_____"
+        },
+        {
+          "type": "text",
+          "text": "Q2. After counting till 3, Sarah found 4 more shiny marbles. How many marbles did she find in all? _____"
+        },
+        {
+          "type": "text",
+          "text": "Q3. Jony had 5 candies before sharing with his friends. After sharing, he had 2 left. How many candies had he given to his friends? _____"
+        },
+        {
+          "type": "text",
+          "text": "Q4. Amy had an empty box. He plucked 6 apples from the apple tree and put them in the box. How many apples are there in the box? _____."
+        },
+        {
+          "type": "text",
+          "text": "Q5. There are 7 tens on my right hand and 2 ones on my left hand. Which number do I have with me? _____"
+        },
+        {
+          "type": "heading",
+          "text": "Practice sheet 2"
+        },
+        {
+          "type": "text",
+          "text": "Q1. Lily has 6 cookies and Mia has 10 cookies. Mia has more cookies than Lily."
+        },
+        {
+          "type": "text",
+          "text": "Q2. I have 80 rose buds. I can make _____ group of tens."
+        },
+        {
+          "type": "text",
+          "text": "Q3. The place value of 9 in number 19 is _____."
+        },
+        {
+          "type": "text",
+          "text": "Q4. There are 3 animals hiding in the dark room. They have _____ pair of eyes."
+        },
+        {
+          "type": "text",
+          "text": "Q5. In the Math class, Maya won 10 stickers and Binny won 4 stickers. Who won more number of stickers? _____"
+        },
+        {
+          "type": "text",
+          "text": "Practice sheet 3"
+        },
+        {
+          "type": "text",
+          "text": "Q2. The number has 2 in tens place and the number in ones place is 4 more than 4. The number is _____"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Q2. I have 80 rose buds. I can make ___ group of tens.",
+          "options": [
+            "Q3. The place value of 9 in number 19 is _____.",
+            "Q4. There are 3 animals hiding in the dark room. They have _____ pair of eyes."
+          ],
+          "answer": "Q3. The place value of 9 in number 19 is _____.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Q2. The number has 2 in tens place and the number in ones place is 4 more than 4. The number is ___",
+          "options": [
+            "Q3. Write the biggest and the smallest two digit number.",
+            "Biggest Number _____",
+            "Smallest Number _____"
+          ],
+          "answer": "Q3. Write the biggest and the smallest two digit number.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Biggest Number ___",
+          "options": [
+            "Smallest Number _____",
+            "Q4. Find the missing number-",
+            "80=80+___"
+          ],
+          "answer": "Smallest Number _____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Smallest Number ___",
+          "options": [
+            "Q4. Find the missing number-",
+            "80=80+___",
+            "54=___+4"
+          ],
+          "answer": "Q4. Find the missing number-",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "a) 5,10,___,___,___",
+          "options": [
+            "30,40,____,____,____",
+            "AB CD EF ___ ___ ___",
+            "Q2- Complete the pattern-"
+          ],
+          "answer": "30,40,____,____,____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b) 30,40,___,___,___",
+          "options": [
+            "AB CD EF ___ ___ ___",
+            "Q2- Complete the pattern-",
+            "♢□O"
+          ],
+          "answer": "AB CD EF ___ ___ ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "c) AB CD EF ___ ___ ___",
+          "options": [
+            "Q2- Complete the pattern-",
+            "♢□O"
+          ],
+          "answer": "Q2- Complete the pattern-",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Q2-___ is greater than 45 but smaller than 73.",
+          "options": [
+            "88 b) 40 c) 25 d) 62",
+            "Q3- Find out a meaningful word by unscrambling the letters.",
+            "S U R I C C"
+          ],
+          "answer": "88 b) 40 c) 25 d) 62",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "a) ___ tens + ___ ones.",
+          "options": [
+            "Put the correct sign ()",
+            "_____75",
+            "___"
+          ],
+          "answer": "Put the correct sign ()",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "c) 1 more than the smallest 2 digit number-___",
+          "options": [
+            "4 tens + 5 ones - 3 tens + 5 ones = ___",
+            "e) 20=___X 10"
+          ],
+          "answer": "4 tens + 5 ones - 3 tens + 5 ones = ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "d) 4 tens + 5 ones - 3 tens + 5 ones = ___",
+          "options": [
+            "e) 20=___X 10",
+            "g) In the word APPLE:"
+          ],
+          "answer": "e) 20=___X 10",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "f) There are 9 plates on a table. 3 plates fell down and broke. How many plates are there?",
+          "options": [
+            "g) In the word APPLE:",
+            "i. The third letter is____.",
+            "ii. E is the ___ letter."
+          ],
+          "answer": "g) In the word APPLE:",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_08_addition_subtraction",
+      "folder": "08_addition_subtraction",
+      "title": "Addition Subtraction",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "Solve each problem"
+        },
+        {
+          "type": "text",
+          "text": "Look at the number triangle given below. Write as many addition and subtraction sentences as possible using the three numbers."
+        },
+        {
+          "type": "text",
+          "text": "Remember, you must combine two numbers using addition or subtraction and get the third number as the result!"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_08_addition_subtraction/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Addition statements"
+        },
+        {
+          "type": "text",
+          "text": "a. ___ + ___ = ___"
+        },
+        {
+          "type": "text",
+          "text": "b. ___ + ___ = ___"
+        },
+        {
+          "type": "text",
+          "text": "Subtraction statements"
+        },
+        {
+          "type": "text",
+          "text": "a. ___ - ___ = ___"
+        },
+        {
+          "type": "text",
+          "text": "b. ___ - ___ = ___"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_08_addition_subtraction/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "Some numbers are given below."
+        },
+        {
+          "type": "text",
+          "text": "Circle the pair of numbers that result in the given sum and difference using same colour as the sum and difference."
+        },
+        {
+          "type": "text",
+          "text": "a. Sum 30 and difference 10 ___"
+        },
+        {
+          "type": "text",
+          "text": "b. Sum 70 and difference 10 ___"
+        },
+        {
+          "type": "text",
+          "text": "c. Sum 50 and difference 10 ___"
+        },
+        {
+          "type": "text",
+          "text": "d. Sum 90 and difference 10 ___"
+        },
+        {
+          "type": "text",
+          "text": "1. Direction: Solve the following:"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_08_addition_subtraction/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "Sita made 3 sandwiches."
+        },
+        {
+          "type": "text",
+          "text": "Rita made 3 more."
+        },
+        {
+          "type": "text",
+          "text": "How many sandwiches in all?"
+        },
+        {
+          "type": "text",
+          "text": "Priya brought 8 paper cups."
+        },
+        {
+          "type": "text",
+          "text": "She lost 2 paper cups."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "a. ___ + ___ = ___",
+          "options": [
+            "___ + ___ = ___",
+            "Subtraction statements",
+            "___ - ___ = ___"
+          ],
+          "answer": "___ + ___ = ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b. ___ + ___ = ___",
+          "options": [
+            "Subtraction statements",
+            "___ - ___ = ___"
+          ],
+          "answer": "Subtraction statements",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Circle the pair of numbers that result in the given sum and difference using same colour as the sum and difference.",
+          "options": [
+            "Sum 30 and difference 10 ___",
+            "Sum 70 and difference 10 ___",
+            "Sum 50 and difference 10 ___",
+            "Sum 90 and difference 10 ___"
+          ],
+          "answer": "Sum 30 and difference 10 ___",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "a. Sum 30 and difference 10 ___",
+          "options": [
+            "Sum 70 and difference 10 ___",
+            "Sum 50 and difference 10 ___",
+            "Sum 90 and difference 10 ___"
+          ],
+          "answer": "Sum 70 and difference 10 ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b. Sum 70 and difference 10 ___",
+          "options": [
+            "Sum 50 and difference 10 ___",
+            "Sum 90 and difference 10 ___"
+          ],
+          "answer": "Sum 50 and difference 10 ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "How many sandwiches in all?",
+          "options": [
+            "b.",
+            "Priya brought 8 paper cups.",
+            "She lost 2 paper cups."
+          ],
+          "answer": "b.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How many paper cups are left?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How many rings do I have now?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How many do I have now?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_09_word_problems",
+      "folder": "09_word_problems",
+      "title": "Word Problems",
+      "notes": [
+        {
+          "type": "image",
+          "src": "assets/content/maths_09_word_problems/img_001.jpg",
+          "alt": "Image 1"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Word Problems?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "maths_10_math_pre_skill",
+      "folder": "10_math_pre_skill",
+      "title": "Math Pre Skill",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Q.1. Complete the given pattern-"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_10_math_pre_skill/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Q.2. Put a tick (✓) if the containers in the given pictures are full of water then which container will hold less water."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_10_math_pre_skill/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_10_math_pre_skill/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_10_math_pre_skill/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_10_math_pre_skill/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "Q.3. Put a tick (✓) on the thicker and (×) on the thinner book."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_10_math_pre_skill/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Q.4. Look at the given data and answer the following questions."
+        },
+        {
+          "type": "text",
+          "text": "How many cars were sold on Thursday?"
+        },
+        {
+          "type": "text",
+          "text": "Maximum number of cars were sold on"
+        },
+        {
+          "type": "text",
+          "text": "Minimum number of cars were sold on"
+        },
+        {
+          "type": "text",
+          "text": ") Total number of cars sold on Tuesday and Saturday _____"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "How many cars were sold on Thursday?",
+          "options": [
+            "Maximum number of cars were sold on",
+            "Minimum number of cars were sold on",
+            ") Total number of cars sold on Tuesday and Saturday _____"
+          ],
+          "answer": "Maximum number of cars were sold on",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_11_timed_test",
+      "folder": "11_timed_test",
+      "title": "Timed Test",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Q1- Observe the picture and answer the following-"
+        },
+        {
+          "type": "text",
+          "text": "a) Which animal is on fifth position? _____"
+        },
+        {
+          "type": "text",
+          "text": "b) Which animal is on third position? ___"
+        },
+        {
+          "type": "text",
+          "text": "c) Lion is on _____ position."
+        },
+        {
+          "type": "text",
+          "text": "d) Which animal is on first position? _____"
+        },
+        {
+          "type": "text",
+          "text": "Q2-Write the numbers and complete the subtraction number bonds:"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_11_timed_test/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_11_timed_test/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "7+2=___ is same as 2+___ = 9"
+        },
+        {
+          "type": "text",
+          "text": "Q1-Fill in the blanks"
+        },
+        {
+          "type": "text",
+          "text": "a) _____ is the fifth month of the year."
+        },
+        {
+          "type": "text",
+          "text": "b) February is the _____ month of the year."
+        },
+        {
+          "type": "text",
+          "text": "Q2- Draw the circles as per the given statement and solve it through cross out method"
+        },
+        {
+          "type": "text",
+          "text": "a) 7 - 3=___"
+        },
+        {
+          "type": "text",
+          "text": "c) 10 - 8=___"
+        },
+        {
+          "type": "text",
+          "text": "b) 14 - 6=___"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_11_timed_test/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "a) 4X8 = ___"
+        },
+        {
+          "type": "text",
+          "text": "Q2- How many tens and ones are there in-"
+        },
+        {
+          "type": "text",
+          "text": "3+4=___ is same as ___ + 3=7"
+        },
+        {
+          "type": "text",
+          "text": "Q2-Dodging: -"
+        },
+        {
+          "type": "text",
+          "text": "a) ___ b) ___"
+        },
+        {
+          "type": "text",
+          "text": "c) \\(2 \\times 8 = \\_\\_\\_\\_\\_\\_) d) \\(10 \\times 7 = \\_\\_\\_\\_\\_\\_)"
+        },
+        {
+          "type": "text",
+          "text": "Q3-Write the expanded form of the given numbers-"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "a) Which animal is on fifth position? ___",
+          "options": [
+            "Which animal is on third position? ___",
+            "Lion is on _____ position.",
+            "Which animal is on first position? _____"
+          ],
+          "answer": "Which animal is on third position? ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b) Which animal is on third position? ___",
+          "options": [
+            "Lion is on _____ position.",
+            "Which animal is on first position? _____",
+            "Q2-Write the numbers and complete the subtraction number bonds:"
+          ],
+          "answer": "Lion is on _____ position.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "c) Lion is on ___ position.",
+          "options": [
+            "Which animal is on first position? _____",
+            "Q2-Write the numbers and complete the subtraction number bonds:"
+          ],
+          "answer": "Which animal is on first position? _____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "a) ___ is the fifth month of the year.",
+          "options": [
+            "February is the _____ month of the year.",
+            "9 - 5 = ___"
+          ],
+          "answer": "February is the _____ month of the year.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b) February is the ___ month of the year.",
+          "options": [
+            "9 - 5 = ___",
+            "Q3- Solve-"
+          ],
+          "answer": "9 - 5 = ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "(3)4 tens + 6 ones = ___ b) 1 ten + 3 ones = ___",
+          "options": [
+            "7 tens + 7 ones = ___",
+            "Q4. The blackboard in the classroom has _____ corners."
+          ],
+          "answer": "7 tens + 7 ones = ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "a) I have 3 sides and 3___. I am triangle.",
+          "options": [
+            "I have 0 sides and 0 corners. I am _____",
+            "I have all 4 sides equal. I am _____",
+            "Q3-If you write number names from 1 to 10, which letter appears the most? ___"
+          ],
+          "answer": "I have 0 sides and 0 corners. I am _____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b) I have 0 sides and 0 corners. I am ___",
+          "options": [
+            "I have all 4 sides equal. I am _____",
+            "Q3-If you write number names from 1 to 10, which letter appears the most? ___"
+          ],
+          "answer": "I have all 4 sides equal. I am _____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "a) ___ is just after 46. b) ___ is the fifth day of the week.",
+          "options": [
+            "One less than 20 _____",
+            "10 more than 67 is _____"
+          ],
+          "answer": "One less than 20 _____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Q3-If you reverse the digits in the number 59, what number do you get?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "If today is last day of the week, what was day before yesterday? ___",
+          "options": [
+            "39 b) 41 c) 42 d) 43",
+            "Solve-"
+          ],
+          "answer": "39 b) 41 c) 42 d) 43",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Which number comes before 42 and after 40?",
+          "options": [
+            "39 b) 41 c) 42 d) 43",
+            "Solve-",
+            "____ b) ____ c) ____"
+          ],
+          "answer": "39 b) 41 c) 42 d) 43",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_12_mental_maths-timed_test",
+      "folder": "12_mental_maths-timed_test",
+      "title": "Mental Maths Timed Test",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Q1- Write the numeral for the given expanded form -"
+        },
+        {
+          "type": "text",
+          "text": "Q2- Draw circles based on the given numbers. Colour the first group of ten with orange. Colour the second group of ten with blue. Write the ones in the next column."
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet : 2"
+        },
+        {
+          "type": "text",
+          "text": "Q2-Complete the following-"
+        },
+        {
+          "type": "text",
+          "text": "a) 12, 14, ___, ___"
+        },
+        {
+          "type": "text",
+          "text": "c) 11, 12, 13, ___, ___"
+        },
+        {
+          "type": "text",
+          "text": "b) 15,____,25_____30"
+        },
+        {
+          "type": "text",
+          "text": "d) 2,4,6,8, ___, ___"
+        },
+        {
+          "type": "text",
+          "text": "Q3-Write the number names for the given numerals-"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_12_mental_maths-timed_test/img_001.jpg",
+          "alt": "Image 1"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "a) 12, 14, ___, ___",
+          "options": [
+            "11, 12, 13, ___, ___",
+            "15,____,25_____30",
+            "2,4,6,8, ___, ___"
+          ],
+          "answer": "11, 12, 13, ___, ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "c) 11, 12, 13, ___, ___",
+          "options": [
+            "15,____,25_____30",
+            "2,4,6,8, ___, ___",
+            "Q3-Write the number names for the given numerals-"
+          ],
+          "answer": "15,____,25_____30",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b) 15,___,25___30",
+          "options": [
+            "2,4,6,8, ___, ___",
+            "Q3-Write the number names for the given numerals-",
+            "15-___"
+          ],
+          "answer": "2,4,6,8, ___, ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "d) 2,4,6,8, ___, ___",
+          "options": [
+            "Q3-Write the number names for the given numerals-",
+            "15-___",
+            "23-___"
+          ],
+          "answer": "Q3-Write the number names for the given numerals-",
+          "hint": "Read the notes above carefully!"
+        }
+      ]
+    },
+    {
+      "id": "maths_13_logical_reasoning",
+      "folder": "13_logical_reasoning",
+      "title": "Logical Reasoning",
+      "notes": [
+        {
+          "type": "text",
+          "text": "When a number is put into a machine, a different number comes out. If 9 goes in, 4 comes out. If 11 goes in, 6 comes out. If 12 goes in 7 comes out. If 14 goes in, what number should come out?"
+        },
+        {
+          "type": "text",
+          "text": "There are equal number of books in each carton, if there are 5 books in 1 carton, 5 books in the carton, 5 books in the carton, how many books will be there in the carton?"
+        },
+        {
+          "type": "text",
+          "text": "3. Sia's aunt lived in an apartment with 5 floors. She could climb till the 2 floor and got tired, how many floors more does she need to climb?"
+        },
+        {
+          "type": "text",
+          "text": "4. In a book page 1 is blank, page 2 is printed, page 3 is blank, page 4 is printed and this continues till the end of the book. Then the next two printed pages will be _____ and _____"
+        },
+        {
+          "type": "text",
+          "text": "5. Mayur read 32 pages of a book but he still has 7 more pages to read. Find the total number of pages in the book."
+        },
+        {
+          "type": "heading",
+          "text": "Worksheet 5"
+        },
+        {
+          "type": "text",
+          "text": "Cross (x) out the object which does not fit into the pattern :"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_13_logical_reasoning/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_13_logical_reasoning/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_13_logical_reasoning/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_13_logical_reasoning/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_13_logical_reasoning/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_13_logical_reasoning/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "1. What is the sum of first 5 counting numbers?"
+        },
+        {
+          "type": "text",
+          "text": "a) 15 b) 16 c) 5 d) 14"
+        },
+        {
+          "type": "text",
+          "text": "2. Find the next figure in the figure pattern given below"
+        },
+        {
+          "type": "text",
+          "text": "3. 6th ice-cream is before ice-cream____."
+        },
+        {
+          "type": "text",
+          "text": "a) E b) D c) G d) B"
+        },
+        {
+          "type": "text",
+          "text": "4. Which figure will complete the given figure?"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "When a number is put into a machine, a different number comes out. If 9 goes in, 4 comes out. If 11 goes in, 6 comes out. If 12 goes in 7 comes out. If 14 goes in, what number should come out?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "There are equal number of books in each carton, if there are 5 books in 1 carton, 5 books in the carton, 5 books in the carton, how many books will be there in the carton?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Sia's aunt lived in an apartment with 5 floors. She could climb till the 2 floor and got tired, how many floors more does she need to climb?",
+          "options": [
+            "_____"
+          ],
+          "answer": "_____",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "What is the sum of first 5 counting numbers?",
+          "options": [
+            "15 b) 16 c) 5 d) 14"
+          ],
+          "answer": "15 b) 16 c) 5 d) 14",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Which figure will complete the given figure?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_14_shapes_and_spaces",
+      "folder": "14_shapes_and_spaces",
+      "title": "Shapes And Spaces",
+      "notes": [
+        {
+          "type": "text",
+          "text": "1. Colour the triangles red, circle pink, squares green, rectangles blue and oval yellow"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_14_shapes_and_spaces/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_14_shapes_and_spaces/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "Count the number of shapes and write their names. Colour all the shapes."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_14_shapes_and_spaces/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "Name of the shape"
+        },
+        {
+          "type": "text",
+          "text": "How did you feel after doing this exercise?"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_14_shapes_and_spaces/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_14_shapes_and_spaces/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_14_shapes_and_spaces/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Name the shape:"
+        },
+        {
+          "type": "text",
+          "text": "1) Colour the cubes pink, cylinders blue, cones orange, cuboids green and spheres yellow."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "How did you feel after doing this exercise?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_15_measurements",
+      "folder": "15_measurements",
+      "title": "Measurements",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Find an object in your house that looks like each of the following shapes."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_15_measurements/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Look at the example & tick (√) the object that is the longest/ shortest"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_15_measurements/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_15_measurements/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "Tick (✓) the Longest"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_15_measurements/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_15_measurements/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_15_measurements/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Tick (✓) the Shortest"
+        },
+        {
+          "type": "text",
+          "text": "directions: Look at the example & tick (✓) the object that is the thickest/ thinnest."
+        },
+        {
+          "type": "text",
+          "text": "Tick (√) the Thickest"
+        },
+        {
+          "type": "text",
+          "text": "Directions: Fill in the observations in the given table"
+        },
+        {
+          "type": "text",
+          "text": "Direction: Fill in the observations in the given table"
+        },
+        {
+          "type": "text",
+          "text": "Direction: Draw and colour the objects starting from the biggest to the smallest"
+        },
+        {
+          "type": "text",
+          "text": "Direction: Draw and colour the objects starting from the shortest to the longest."
+        },
+        {
+          "type": "text",
+          "text": "direction: Use pan balance & circle the objects that are heavier."
+        },
+        {
+          "type": "text",
+          "text": "Direction: Show by drawing objects that -"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Measurements?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "maths_16_patterns",
+      "folder": "16_patterns",
+      "title": "Patterns",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Observe and complete the pattern by colouring."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_16_patterns/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_16_patterns/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_16_patterns/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_16_patterns/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_16_patterns/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_16_patterns/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Let's practice with some number patterns."
+        },
+        {
+          "type": "text",
+          "text": "Draw the next three to complete each pattern."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Patterns?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "maths_17_data_handling",
+      "folder": "17_data_handling",
+      "title": "Data Handling",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Direction: Using the table given below, draw the objects on the picture graph."
+        },
+        {
+          "type": "heading",
+          "text": "Robbie Rabbit's Garden Graph"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_17_data_handling/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Help Mr. Rabbit count his vegetables by creating a bar graph. Colour in the correct number of boxes for each vegetable. The first vegetable has been done for you."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_17_data_handling/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_17_data_handling/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_17_data_handling/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_17_data_handling/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_17_data_handling/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "3 Cauliflowers"
+        },
+        {
+          "type": "text",
+          "text": "collect the following data:"
+        },
+        {
+          "type": "heading",
+          "text": "ICE CREAM FOR SALE!"
+        },
+        {
+          "type": "heading",
+          "text": "SAM, KATE AND BECKY ARE SELLING ICE CREAM CONES."
+        },
+        {
+          "type": "heading",
+          "text": "1. Use the chart below to fill in the blanks"
+        },
+        {
+          "type": "text",
+          "text": "a. Who sold the most ice-cream cones? _____"
+        },
+        {
+          "type": "text",
+          "text": "b. Who sold the least ice-cream cones? _____"
+        },
+        {
+          "type": "text",
+          "text": "c. How many more ice-cream cones did Becky sell than Sam?"
+        },
+        {
+          "type": "text",
+          "text": "d. How many ice-cream cones were sold in all? _____"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "a. Who sold the most ice-cream cones? ___",
+          "options": [
+            "Who sold the least ice-cream cones? _____",
+            "How many ice-cream cones were sold in all? _____"
+          ],
+          "answer": "Who sold the least ice-cream cones? _____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "c. How many more ice-cream cones did Becky sell than Sam?",
+          "options": [
+            "How many ice-cream cones were sold in all? _____"
+          ],
+          "answer": "How many ice-cream cones were sold in all? _____",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_18_pre-skill",
+      "folder": "18_pre-skill",
+      "title": "Pre Skill",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Q5.I planted 5 saplings on Monday. 3 saplings on Tuesday and 3 saplings on Wednesday."
+        },
+        {
+          "type": "text",
+          "text": "How many saplings did I plant altogether?"
+        },
+        {
+          "type": "text",
+          "text": "Select the correct option, according to each question."
+        },
+        {
+          "type": "text",
+          "text": "Q1. What is the missing number in the given pattern?"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_18_pre-skill/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_18_pre-skill/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_18_pre-skill/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "Q2. The shape missing in the given figure is ___."
+        },
+        {
+          "type": "text",
+          "text": "Q3. Which number comes in the given pattern?"
+        },
+        {
+          "type": "text",
+          "text": "5,10,15,20,25,30,35,40, ___?"
+        },
+        {
+          "type": "text",
+          "text": "Q4. 50 cups on my head 1 fell down how many left?"
+        },
+        {
+          "type": "text",
+          "text": "A. 50 B. 49 C. 51"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "How many saplings did I plant altogether?",
+          "options": [
+            "15",
+            "11",
+            "13"
+          ],
+          "answer": "15",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Q1. What is the missing number in the given pattern?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Q2. The shape missing in the given figure is ___.",
+          "options": [
+            "square",
+            "circle"
+          ],
+          "answer": "square",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Q3. Which number comes in the given pattern?",
+          "options": [
+            "50",
+            "45"
+          ],
+          "answer": "50",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "5,10,15,20,25,30,35,40, ___?",
+          "options": [
+            "50",
+            "45"
+          ],
+          "answer": "50",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Q4. 50 cups on my head 1 fell down how many left?",
+          "options": [
+            "50 B. 49 C. 51",
+            "Grade: 1"
+          ],
+          "answer": "50 B. 49 C. 51",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_19_revision",
+      "folder": "19_revision",
+      "title": "Revision",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "Worksheet 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_19_revision/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "practice Worksheet 1"
+        },
+        {
+          "type": "heading",
+          "text": "Q.1"
+        },
+        {
+          "type": "text",
+          "text": "a. 7 caps - 2 caps = _____ caps."
+        },
+        {
+          "type": "text",
+          "text": "b. 10 pencils - 7 pencils = ___ pencils."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_19_revision/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "a. Sam has 8 boxes."
+        },
+        {
+          "type": "text",
+          "text": "He gives 5 boxes to his sister."
+        },
+        {
+          "type": "text",
+          "text": "How many boxes are left with him?"
+        },
+        {
+          "type": "text",
+          "text": "b. There are 9 birds sitting on the tree."
+        },
+        {
+          "type": "text",
+          "text": "5 birds flew away."
+        },
+        {
+          "type": "text",
+          "text": "How many birds are left?"
+        },
+        {
+          "type": "text",
+          "text": "a. 46-36=___"
+        },
+        {
+          "type": "text",
+          "text": "c. 22-18=___"
+        },
+        {
+          "type": "text",
+          "text": "b. 55-48=___"
+        },
+        {
+          "type": "text",
+          "text": "d. 89-88=___"
+        },
+        {
+          "type": "text",
+          "text": "e. 77-70=___"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_19_revision/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "f. 69-59=___"
+        },
+        {
+          "type": "text",
+          "text": "g. 11- 9= ___"
+        },
+        {
+          "type": "text",
+          "text": "Practice Worksheet 2"
+        },
+        {
+          "type": "heading",
+          "text": "Q.1 Subtract the following using the ball:"
+        },
+        {
+          "type": "text",
+          "text": "Q.2 Dodging:"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "How many boxes are left with him?",
+          "options": [
+            "___",
+            "There are 9 birds sitting on the tree.",
+            "5 birds flew away."
+          ],
+          "answer": "___",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How many birds are left?",
+          "options": [
+            "___",
+            "Q.4",
+            "46-36=___"
+          ],
+          "answer": "___",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "### Q.2 Circle the number that is:",
+          "options": [
+            "A: Greater than: -",
+            "(a) 28",
+            "16 92 63",
+            "B: Smaller than: -"
+          ],
+          "answer": "A: Greater than: -",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "a) 43 comes after ___.",
+          "options": [
+            "13 comes before_____.",
+            "_____ comes between 57 and 59.",
+            "_____ comes after 3."
+          ],
+          "answer": "13 comes before_____.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b) 13 comes before___.",
+          "options": [
+            "_____ comes between 57 and 59.",
+            "_____ comes after 3.",
+            "e) 2 less than 88 is _____."
+          ],
+          "answer": "_____ comes between 57 and 59.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "c) ___ comes between 57 and 59.",
+          "options": [
+            "_____ comes after 3.",
+            "e) 2 less than 88 is _____."
+          ],
+          "answer": "_____ comes after 3.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "a. 10, 20, 30, ___, ___, 60.",
+          "options": [
+            "5,10, __, __, __, __, __, 30.",
+            "2, ___ , ___ , 8, ___ , ___ .",
+            "40, ___, ___, 70, ___, ___."
+          ],
+          "answer": "5,10, __, __, __, __, __, 30.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b. 5,10, ___, ___, ___, ___, ___, 30.",
+          "options": [
+            "2, ___ , ___ , 8, ___ , ___ .",
+            "40, ___, ___, 70, ___, ___.",
+            "Q.5. Solve"
+          ],
+          "answer": "2, ___ , ___ , 8, ___ , ___ .",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "c. 2, ___ , ___ , 8, ___ , ___ .",
+          "options": [
+            "40, ___, ___, 70, ___, ___.",
+            "Q.5. Solve"
+          ],
+          "answer": "40, ___, ___, 70, ___, ___.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "a. Circle the shape that is after the square.",
+          "options": [
+            "Circle the shape that is before triangle.",
+            "Circle the shape that is in between triangle and diamond.",
+            "Q.8 Make bigger and smaller numbers from the given digits-"
+          ],
+          "answer": "Circle the shape that is before triangle.",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "b. Circle the shape that is before triangle.",
+          "options": [
+            "Circle the shape that is in between triangle and diamond.",
+            "Q.8 Make bigger and smaller numbers from the given digits-"
+          ],
+          "answer": "Circle the shape that is in between triangle and diamond.",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "tens digit is 6 and ones digit is 4. Which number am I? ___",
+          "options": [
+            "My ones digit is 9 and tens digit is 1. Guess the number? _____",
+            "### Q.15 Do as directed-",
+            "Colour the first, fourth and tenth ball."
+          ],
+          "answer": "My ones digit is 9 and tens digit is 1. Guess the number? _____",
+          "hint": "Read the notes above carefully!"
+        }
+      ]
+    },
+    {
+      "id": "maths_21_tables",
+      "folder": "21_tables",
+      "title": "Tables",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "MATHS"
+        },
+        {
+          "type": "text",
+          "text": "TERM 1 and 2"
+        },
+        {
+          "type": "text",
+          "text": "6. Answer the following:"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Tables?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "maths_22_numbers",
+      "folder": "22_numbers",
+      "title": "Numbers",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Number Sense - I"
+        },
+        {
+          "type": "text",
+          "text": "Introduction to Digit, Numbers and Numerals"
+        },
+        {
+          "type": "text",
+          "text": "Counting Numbers (Till 100)"
+        },
+        {
+          "type": "text",
+          "text": "Missing Numbers"
+        },
+        {
+          "type": "text",
+          "text": "Skip counting (2, 5, 10s)"
+        },
+        {
+          "type": "text",
+          "text": "Times Table (2, 5, 10)"
+        },
+        {
+          "type": "text",
+          "text": "Before, Between, and After"
+        },
+        {
+          "type": "text",
+          "text": "Comparison (More than/Less than, Bigger and Smaller)"
+        },
+        {
+          "type": "text",
+          "text": "Even and Odd Numbers"
+        },
+        {
+          "type": "text",
+          "text": "Number Names (Till 99)"
+        },
+        {
+          "type": "text",
+          "text": "Place Values (Tens and Ones)"
+        },
+        {
+          "type": "text",
+          "text": "- High Order Cognitive Abilities (Critical Thinking, Problem Solving, Decision Making, Creativity, Empathy, Respect, Collaboration, etc.)"
+        },
+        {
+          "type": "text",
+          "text": "Academic Vocab"
+        },
+        {
+          "type": "heading",
+          "text": "Real life application / Tell me Why?"
+        },
+        {
+          "type": "text",
+          "text": "Imagine a World without Numbers!"
+        },
+        {
+          "type": "text",
+          "text": "A clock without Numerals: How would you know if it's your school time or lunch time or bed time?"
+        },
+        {
+          "type": "text",
+          "text": "A calendar without Numbers: Birthday? Independence Day? Republic Day? Everyday becomes, Some-day, day!"
+        },
+        {
+          "type": "text",
+          "text": "A Snake and Ladder board without numbers: how will you know whether you climbed, slipped, won, or lost?"
+        },
+        {
+          "type": "text",
+          "text": "While helping someone find your home, we often say, “Mine is the house before that shop,” or “Just skip two houses and you'll reach!”"
+        },
+        {
+          "type": "text",
+          "text": "No digits on the dial-pad! How will you dial your friend?"
+        },
+        {
+          "type": "text",
+          "text": "Writing the amount on the bank cheque in words would become impossible without knowing place values. Isn't it?"
+        },
+        {
+          "type": "text",
+          "text": "##### Tip for Parent:"
+        },
+        {
+          "type": "text",
+          "text": "Do you know when we say 2 one-za two, it actually means 2 ones are Two (1+1=2), and 2 two-za four means 2 twos are Four (2+2=4). While your child recites tables, listen carefully and guide them to understand the meaning behind the words."
+        },
+        {
+          "type": "text",
+          "text": "The concept of comparison (More than/Less than) can be taught to the children with the help of fruits/vegetables available in the vegetable basket."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Real life application / Tell me Why?",
+          "options": [
+            "Imagine a World without Numbers!"
+          ],
+          "answer": "Imagine a World without Numbers!",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "A clock without Numerals: How would you know if it's your school time or lunch time or bed time?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "A Snake and Ladder board without numbers: how will you know whether you climbed, slipped, won, or lost?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "No digits on the dial-pad! How will you dial your friend?",
+          "options": [
+            "##### Tip for Parent:"
+          ],
+          "answer": "##### Tip for Parent:",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Writing the amount on the bank cheque in words would become impossible without knowing place values. Isn't it?",
+          "options": [
+            "##### Tip for Parent:"
+          ],
+          "answer": "##### Tip for Parent:",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_23_number_sense-1",
+      "folder": "23_number_sense-1",
+      "title": "Number Sense 1",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Practice Sheet: 1"
+        },
+        {
+          "type": "text",
+          "text": "Introduction to Digit, Numbers, & Numerals"
+        },
+        {
+          "type": "text",
+          "text": "Instructions:"
+        },
+        {
+          "type": "text",
+          "text": "Observe Column 1"
+        },
+        {
+          "type": "text",
+          "text": "Identify which are Digits, Numbers, and Numeral."
+        },
+        {
+          "type": "text",
+          "text": "Tick the boxes for each accordingly."
+        },
+        {
+          "type": "text",
+          "text": "One is done for you!"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_23_number_sense-1/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet : 2"
+        },
+        {
+          "type": "heading",
+          "text": "Practice Sheet : 3"
+        },
+        {
+          "type": "text",
+          "text": "Date:20.3.26"
+        },
+        {
+          "type": "text",
+          "text": "##### Q1. Fill in blanks in the missing numbers."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_23_number_sense-1/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "2. Fill in the missing number"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_23_number_sense-1/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "##### Q3. What comes before/after and in between :"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_23_number_sense-1/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_23_number_sense-1/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet: 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_23_number_sense-1/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet : 5"
+        },
+        {
+          "type": "text",
+          "text": "SKIP COUNTING BY 5"
+        },
+        {
+          "type": "text",
+          "text": "The busy bee buzzes on the line. Help her fly by skip counting in 5s"
+        },
+        {
+          "type": "text",
+          "text": "Skip Count by 5's and colour every FIFTH number YELLOW. One example has been done for you."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "8) There are ___ eggs in a dozen.",
+          "options": [
+            "9) A normal adult person has ..... teeth.",
+            "10) makes a half-century"
+          ],
+          "answer": "9) A normal adult person has ..... teeth.",
+          "hint": "Read the notes above carefully!"
+        }
+      ]
+    },
+    {
+      "id": "maths_24_time_test",
+      "folder": "24_time_test",
+      "title": "Time Test",
+      "notes": [
+        {
+          "type": "image",
+          "src": "assets/content/maths_24_time_test/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Practice sheet: 1"
+        },
+        {
+          "type": "text",
+          "text": "Fill in the missing numbers: -"
+        },
+        {
+          "type": "text",
+          "text": "B. Unscramble letters to form number names"
+        },
+        {
+          "type": "text",
+          "text": "A. Read the number name and circle the correct number:"
+        },
+        {
+          "type": "text",
+          "text": "##### Practice sheet: 2"
+        },
+        {
+          "type": "text",
+          "text": "1. Fill in the blanks."
+        },
+        {
+          "type": "text",
+          "text": "a) There are _____ teeth in my mouth."
+        },
+        {
+          "type": "text",
+          "text": "b) 10 comes just before ___."
+        },
+        {
+          "type": "text",
+          "text": "c) _____ lies in between Tuesday and Thursday."
+        },
+        {
+          "type": "text",
+          "text": "2. Complete the sequence-"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "A. Read the number name and circle the correct number:",
+          "options": [
+            "Thirty",
+            "Fifteen",
+            "50 15 55",
+            "##### Practice sheet: 2"
+          ],
+          "answer": "Thirty",
+          "hint": "Pick the best answer!"
+        },
+        {
+          "type": "mcq",
+          "q": "a) There are ___ teeth in my mouth.",
+          "options": [
+            "10 comes just before ___.",
+            "_____ lies in between Tuesday and Thursday.",
+            "2. Complete the sequence-"
+          ],
+          "answer": "10 comes just before ___.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b) 10 comes just before ___.",
+          "options": [
+            "_____ lies in between Tuesday and Thursday.",
+            "2. Complete the sequence-"
+          ],
+          "answer": "_____ lies in between Tuesday and Thursday.",
+          "hint": "Read the notes above carefully!"
+        }
+      ]
+    },
+    {
+      "id": "maths_25_place_value",
+      "folder": "25_place_value",
+      "title": "Place Value",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Practice Sheet : 1"
+        },
+        {
+          "type": "text",
+          "text": "Date:22.4.26"
+        },
+        {
+          "type": "text",
+          "text": "##### Count by tens and ones and write the two digit number"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_25_place_value/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet: 2"
+        },
+        {
+          "type": "text",
+          "text": "Date:2704.26"
+        },
+        {
+          "type": "text",
+          "text": "##### Direction:"
+        },
+        {
+          "type": "text",
+          "text": "• Draw as many squares as the number given."
+        },
+        {
+          "type": "text",
+          "text": "• Make groups of ten."
+        },
+        {
+          "type": "text",
+          "text": "Fill in the blanks."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_25_place_value/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_25_place_value/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "16 has ____ group of ten and ____ leftover ones."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_25_place_value/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_25_place_value/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "12 has ____ group of ten and ___ leftover ones."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_25_place_value/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "18 has _____ group of ten and ___ leftover ones."
+        },
+        {
+          "type": "text",
+          "text": "15 has _____ group of ten and ___ leftover ones."
+        },
+        {
+          "type": "text",
+          "text": "20 has _____ groups of ten and ___ leftover ones."
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet : 3"
+        },
+        {
+          "type": "text",
+          "text": "Direction: Circle the groups of ten and write the number of tens and ones."
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet : 4"
+        },
+        {
+          "type": "heading",
+          "text": "Directions:"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "a. 6 tens and 7 ones-- ___",
+          "options": [
+            "1 ten and 7 ones-- ___",
+            "9 tens and 9 ones-- ___",
+            "8 tens-- ___"
+          ],
+          "answer": "1 ten and 7 ones-- ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b. 1 ten and 7 ones-- ___",
+          "options": [
+            "9 tens and 9 ones-- ___",
+            "8 tens-- ___",
+            "e.1 one-- ___"
+          ],
+          "answer": "9 tens and 9 ones-- ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "c. 9 tens and 9 ones-- ___",
+          "options": [
+            "8 tens-- ___",
+            "e.1 one-- ___",
+            "f. 3 tens and 6 ones-- ___"
+          ],
+          "answer": "8 tens-- ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Q5. Circle the numbers which have 5 at the ones place:",
+          "options": [
+            "51, 15, 54, 25, 58, 65",
+            "Q6. Fill in the blanks:-",
+            "The place value of 5 in 35 is .....",
+            "The place value of 3 in 35 is ....."
+          ],
+          "answer": "51, 15, 54, 25, 58, 65",
+          "hint": "Pick the best answer!"
+        }
+      ]
+    },
+    {
+      "id": "maths_26_math_skill",
+      "folder": "26_math_skill",
+      "title": "Math Skill",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Q1 Circle the number which is greater."
+        },
+        {
+          "type": "text",
+          "text": "Q2 Count and write the number of dots in the box. Circle the box that has less number of dots."
+        },
+        {
+          "type": "text",
+          "text": "Cycle then has less"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_26_math_skill/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_26_math_skill/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_26_math_skill/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "Q3 Circle the smallest number and underline the greatest number in each row:"
+        },
+        {
+          "type": "text",
+          "text": "Q4 Number the objects from the smallest to biggest. Put 1 below the smallest, 2 below the next smaller number and 3 below the greatest number."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_26_math_skill/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_26_math_skill/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_26_math_skill/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Q5 Put a tick on the taller one."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Math Skill?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "maths_27_high_order_cognitive_abilities",
+      "folder": "27_high_order_cognitive_abilities",
+      "title": "High Order Cognitive Abilities",
+      "notes": [
+        {
+          "type": "text",
+          "text": "##### High Order Cognitive Abilities"
+        },
+        {
+          "type": "text",
+          "text": "##### Abilities"
+        },
+        {
+          "type": "text",
+          "text": "Problem Solving"
+        },
+        {
+          "type": "text",
+          "text": "Decision Making"
+        },
+        {
+          "type": "text",
+          "text": "You are planning a surprise birthday party for the child of your househelp, and you have to design everything from the very beginning."
+        },
+        {
+          "type": "text",
+          "text": "You start by writing down how many friends you want to invite. Each time the number grows big, you bundle ten friends into one special \"team\" and see how many full teams and how many single friends you have left. Then, you give each friend a fun number name."
+        },
+        {
+          "type": "text",
+          "text": "Then you plan how to decorate the room by choosing your own balloon pattern—maybe grouping them in 2s, 5s, or 10s—You can draw it in your notebook too."
+        },
+        {
+          "type": "text",
+          "text": "You also choose how big the birthday cake should be and think about whether the number of slices will be enough for all the friends you invited."
+        },
+        {
+          "type": "text",
+          "text": "Next, you pack the return gifts. You arrange the gifts in straight rows of ten and see if any gifts are left over at the end."
+        },
+        {
+          "type": "text",
+          "text": "Finally, you organise the cups, plates, and chocolates. Instead of counting them one by one, you stack them in tens and then place the extra ones beside them, just like a part supply shopkeeper."
+        },
+        {
+          "type": "text",
+          "text": "Are you ready to plan a wonderful surprise party for your friend?"
+        },
+        {
+          "type": "text",
+          "text": "Share with us how you felt organising a party for your househelp child."
+        },
+        {
+          "type": "text",
+          "text": "On a Sunday morning, you saw your mother organise your cupboard. What is the first thing you should do? You should help your mother organise your cupboard. Right?"
+        },
+        {
+          "type": "text",
+          "text": "Next, you decide where each group should go. You keep big and heavy items on the lower shelves and light and small items on the upper shelves. You arrange your school books in ascending order and your clothes in the descending order of size from the biggest to the smallest. Try noticing the place value of the number of books too."
+        },
+        {
+          "type": "text",
+          "text": "Now it is time to fix your socks. You pair them in groups of two and find out if the total number of socks is even or odd. If one sock is left without a pair, you know the number is odd. If all socks are paired, the number is even."
+        },
+        {
+          "type": "text",
+          "text": "Then you move to your toys. You arrange them on the shelf and make number bonds of 10. For example, if you keep 6 toys in one box, how many more are needed to make 10? You add some more toys and see: , , . You are using addition without even realising it!"
+        },
+        {
+          "type": "text",
+          "text": "Finally, you make up a small story about how you spent Sunday morning arranging your cupboard with the help of your mother!"
+        },
+        {
+          "type": "text",
+          "text": "Do you feel proud of yourself as you used sorting, comparing, counting, addition, number bonds, place value and ordering to make your cupboard beautiful."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_27_high_order_cognitive_abilities/img_001.jpg",
+          "alt": "Image 1"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Are you ready to plan a wonderful surprise party for your friend?",
+          "options": [
+            "Share with us how you felt organising a party for your househelp child."
+          ],
+          "answer": "Share with us how you felt organising a party for your househelp child.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "On a Sunday morning, you saw your mother organise your cupboard. What is the first thing you should do? You should help your mother organise your cupboard. Right?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_28_number_sense-2",
+      "folder": "28_number_sense-2",
+      "title": "Number Sense 2",
+      "notes": [
+        {
+          "type": "image",
+          "src": "assets/content/maths_28_number_sense-2/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Number Sense - II"
+        },
+        {
+          "type": "text",
+          "text": "Addition of single and double digit numbers without carry over"
+        },
+        {
+          "type": "text",
+          "text": "##### Sub Topics"
+        },
+        {
+          "type": "text",
+          "text": "Ascending and Descending order"
+        },
+        {
+          "type": "text",
+          "text": "Number Bonds"
+        },
+        {
+          "type": "text",
+          "text": "● Addition (Single to single, single to double, double to double)"
+        },
+        {
+          "type": "text",
+          "text": "Story problems on Addition"
+        },
+        {
+          "type": "text",
+          "text": "- High Order Cognitive Abilities (Critical Thinking, Problem Solving, Decision Making, Creativity, Empathy, Respect, Collaboration, etc.)"
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet : 1"
+        },
+        {
+          "type": "text",
+          "text": "Circle the bigger number:"
+        },
+        {
+          "type": "text",
+          "text": "Circle the smaller number:"
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet: 2"
+        },
+        {
+          "type": "text",
+          "text": "Make bigger and smaller numbers from the given digits:"
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet : 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_28_number_sense-2/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "From the pair of numbers, circle the bigger number with green ant the smaller number with red colour in the number chart."
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet: 4"
+        },
+        {
+          "type": "text",
+          "text": "Directions: Use the symbol (> or <) correctly to help Charlie to eat berries that are more in number."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_28_number_sense-2/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet : 5"
+        },
+        {
+          "type": "text",
+          "text": "Q1. Observe and draw the same image or cross the extra image to make both the sides equal. Also put the symbol. ="
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_28_number_sense-2/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_28_number_sense-2/img_005.jpg",
+          "alt": "Image 5"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "1. When the numbers are arranged from the ___ to the ___ they are in their ascending order. (smallest, greatest)",
+          "options": [
+            "2. In the ascending order the_____number comes first. (smallest, greatest)",
+            "3. In the ascending order the_____number comes last. (smallest, greatest)",
+            "4. In the ascending order of 34, 70, 90, ___ will come first. (70, 90,"
+          ],
+          "answer": "2. In the ascending order the_____number comes first. (smallest, greatest)",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. In the ascending order the___number comes first. (smallest, greatest)",
+          "options": [
+            "3. In the ascending order the_____number comes last. (smallest, greatest)",
+            "4. In the ascending order of 34, 70, 90, ___ will come first. (70, 90,",
+            "5. In the descending order ___ number comes first. (great smallest)"
+          ],
+          "answer": "3. In the ascending order the_____number comes last. (smallest, greatest)",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. In the ascending order the___number comes last. (smallest, greatest)",
+          "options": [
+            "4. In the ascending order of 34, 70, 90, ___ will come first. (70, 90,",
+            "5. In the descending order ___ number comes first. (great smallest)",
+            "6. In the descending order of 36, 83, 22_____ will come first. (83, 22,"
+          ],
+          "answer": "4. In the ascending order of 34, 70, 90, ___ will come first. (70, 90,",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "4. In the ascending order of 34, 70, 90, ___ will come first. (70, 90,",
+          "options": [
+            "5. In the descending order ___ number comes first. (great smallest)",
+            "6. In the descending order of 36, 83, 22_____ will come first. (83, 22,",
+            "7. In ascending order_____comes after 25. (30, 26, 24, 52)"
+          ],
+          "answer": "5. In the descending order ___ number comes first. (great smallest)",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "5. In the descending order ___ number comes first. (great smallest)",
+          "options": [
+            "6. In the descending order of 36, 83, 22_____ will come first. (83, 22,",
+            "7. In ascending order_____comes after 25. (30, 26, 24, 52)",
+            "8. The second smallest two-digit number in descending order is ___ (10, 11, 19)"
+          ],
+          "answer": "6. In the descending order of 36, 83, 22_____ will come first. (83, 22,",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "6. In the descending order of 36, 83, 22___ will come first. (83, 22,",
+          "options": [
+            "7. In ascending order_____comes after 25. (30, 26, 24, 52)",
+            "8. The second smallest two-digit number in descending order is ___ (10, 11, 19)"
+          ],
+          "answer": "7. In ascending order_____comes after 25. (30, 26, 24, 52)",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Ascending order(AO)-___",
+          "options": [
+            "planted maximum number of seeds.",
+            "Descending order(DO)-___",
+            "planted least number of seeds."
+          ],
+          "answer": "planted maximum number of seeds.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Descending order(DO)-___",
+          "options": [
+            "planted least number of seeds.",
+            "Ascending order(AO)-___"
+          ],
+          "answer": "planted least number of seeds.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "___ picked up maximum number of litter bags.",
+          "options": [
+            "Descending order(DO)-___ picked up least number of litter bags.",
+            "Grade: 1"
+          ],
+          "answer": "Descending order(DO)-___ picked up least number of litter bags.",
+          "hint": "Read the notes above carefully!"
+        }
+      ]
+    },
+    {
+      "id": "maths_30_real_life_application_tell_me_why",
+      "folder": "30_real_life_application_tell_me_why",
+      "title": "Real Life Application Tell Me Why",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Imagine a World without Numbers!"
+        },
+        {
+          "type": "text",
+          "text": "In a lift, if floor numbers are not in order, how will you know whether the lift is going up or down?"
+        },
+        {
+          "type": "text",
+          "text": "Imagine a chocolate broken into pieces and sharing it with your friends. You may give away a few pieces to your friend, but you know... It was one whole chocolate."
+        },
+        {
+          "type": "text",
+          "text": "When you add chairs for guests, sweets for friends, candles on a cake - silently at the back of your mind you are doing addition."
+        },
+        {
+          "type": "text",
+          "text": "Without comparison, will it be possible for you to know that the World's talles statue of Lord Ram was unveiled at Gokarn Partagali Math in the year 2025? Would you be able to know who is the fastest runner, the smallest animal?"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_30_real_life_application_tell_me_why/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "From helping your mother in the kitchen to sharing snacks with your friends, life full of stories. And these stories turn into memories that stay with you for lifetime."
+        },
+        {
+          "type": "text",
+          "text": "Ask your child to count chairs, plates or sweets when guests come so they see how addition happens in real life."
+        },
+        {
+          "type": "text",
+          "text": "When you read news or watch TV together point cut dates, ages, distances are score's so your child notices numbers every where."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Subject: MathsTopic: Real life application / Tell me Why?",
+          "options": [
+            "Date ___"
+          ],
+          "answer": "Date ___",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "In a lift, if floor numbers are not in order, how will you know whether the lift is going up or down?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Without comparison, will it be possible for you to know that the World's talles statue of Lord Ram was unveiled at Gokarn Partagali Math in the year 2025? Would you be able to know who is the fastest runner, the smallest animal?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_31_addition",
+      "folder": "31_addition",
+      "title": "Addition",
+      "notes": [
+        {
+          "type": "image",
+          "src": "assets/content/maths_31_addition/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet : 13"
+        },
+        {
+          "type": "text",
+          "text": "##### Draw more to make 10. Write the missing numbers."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_31_addition/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "practice Sheet: 14"
+        },
+        {
+          "type": "text",
+          "text": "Number bonds"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_31_addition/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_31_addition/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_31_addition/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_31_addition/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "practice Sheet : 16"
+        },
+        {
+          "type": "text",
+          "text": "Directions: Draw the circles inside the box to make the addition statements true."
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet : 17"
+        },
+        {
+          "type": "text",
+          "text": "Write the addition sentences to show that by changing the position of the same digits answer remains same."
+        },
+        {
+          "type": "text",
+          "text": "1. ___5___ + ___3___ = ___ is same as ___3___ + ___= ___"
+        },
+        {
+          "type": "text",
+          "text": "2. ___ + ___ = ___ is same as ___ + ___ = ___"
+        },
+        {
+          "type": "text",
+          "text": "+ ___ = ___ is same as ___ + ___ = ___"
+        },
+        {
+          "type": "text",
+          "text": "4. ___ + ___ = ___ is same as ___ + ___ = ___"
+        },
+        {
+          "type": "text",
+          "text": "5. ∇ ___ + ___ = ___ is same as ___ + ___ = ___"
+        },
+        {
+          "type": "text",
+          "text": "6. ___ + ___ = ___ is same as ___ + ___ = ___"
+        },
+        {
+          "type": "text",
+          "text": "practice Sheet : 18"
+        },
+        {
+          "type": "text",
+          "text": "solve the following:"
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet : 19"
+        },
+        {
+          "type": "text",
+          "text": "Solve the following:"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "1. ___5___ + ___3___ = ___ is same as ___3___ + ___= ___",
+          "options": [
+            "2. ___ + ___ = ___ is same as ___ + ___ = ___",
+            "+ ___ = ___ is same as ___ + ___ = ___"
+          ],
+          "answer": "2. ___ + ___ = ___ is same as ___ + ___ = ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "4. ___ + ___ = ___ is same as ___ + ___ = ___",
+          "options": [
+            "5. ∇ ___ + ___ = ___ is same as ___ + ___ = ___",
+            "6. ___ + ___ = ___ is same as ___ + ___ = ___"
+          ],
+          "answer": "5. ∇ ___ + ___ = ___ is same as ___ + ___ = ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "How many carrots are there in all?",
+          "options": [
+            "___+___=___",
+            "2. Andhrew planted 12 pumpkins."
+          ],
+          "answer": "___+___=___",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How many pumpkins are there in all?",
+          "options": [
+            "3. Sara planted 10 potatoes.",
+            "Anna gave her 7 more potatoes."
+          ],
+          "answer": "3. Sara planted 10 potatoes.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How many potatoes are there in all?",
+          "options": [
+            "4. Eva planted 8 onions.",
+            "Then he planted 7 more onions."
+          ],
+          "answer": "4. Eva planted 8 onions.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How many onions are there in all?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How many groups of 10 are there? ___",
+          "options": [
+            "How many ones are there? _____",
+            "You get _____ as an addition sentence.",
+            "How many circles are there in all? _____"
+          ],
+          "answer": "How many ones are there? _____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "How many ones are there? ___",
+          "options": [
+            "You get _____ as an addition sentence.",
+            "How many circles are there in all? _____",
+            "B."
+          ],
+          "answer": "You get _____ as an addition sentence.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "You get ___ as an addition sentence.",
+          "options": [
+            "How many circles are there in all? _____",
+            "B."
+          ],
+          "answer": "How many circles are there in all? _____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b. How many tens are there ?___",
+          "options": [
+            "How many ones are there? _____",
+            "Write the addition statement for it _____"
+          ],
+          "answer": "How many ones are there? _____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "b. How many tens are there? ___",
+          "options": [
+            "How many ones are there? _____",
+            "Write the addition statement for it _____"
+          ],
+          "answer": "How many ones are there? _____",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Q1. It was a bright sunny day when the 3 friends Ria, Sia and Tia went for a morning walk. Ria planned to give hand made masks to every one so that everybody is safe from germs. Sia helped her in making 9 masks and Tia helped her in making 7 masks. Ria thanked everyone for being helpful and working as a team. How many masks did they make altogether?",
+          "options": [
+            "##### Value- Save the environment",
+            "##### Value-Empathy"
+          ],
+          "answer": "##### Value- Save the environment",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "maths_32_figure_me_out",
+      "folder": "32_figure_me_out",
+      "title": "Figure Me Out",
+      "notes": [
+        {
+          "type": "image",
+          "src": "assets/content/maths_32_figure_me_out/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Practice Sheet : 15"
+        },
+        {
+          "type": "text",
+          "text": ": Form number bonds with the help of addition statements."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_32_figure_me_out/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_32_figure_me_out/img_003.jpg",
+          "alt": "Image 3"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Figure Me Out?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "maths_33_pre-math_skill",
+      "folder": "33_pre-math_skill",
+      "title": "Pre Math Skill",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Observe the given table and answer the following questions."
+        },
+        {
+          "type": "text",
+          "text": "Q1. The teacher asks Ron to find out the favourite snack of his friends. Ron collects the data and records it in the table shown below. Observe the given data and answer the questions:"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_33_pre-math_skill/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "A. How many friends like ice-cream?"
+        },
+        {
+          "type": "text",
+          "text": "B. How many friends like burger?"
+        },
+        {
+          "type": "text",
+          "text": "c. How many friends like pizza?"
+        },
+        {
+          "type": "text",
+          "text": "D. Which snack is liked by 5 of his friends?"
+        },
+        {
+          "type": "text",
+          "text": "E. Which two snacks add up to 7?"
+        },
+        {
+          "type": "text",
+          "text": "F. How many friends like brownie and burger?"
+        },
+        {
+          "type": "text",
+          "text": "Q2. Sam sells many items in his shop. The table below shows the number of items sold different days of the week. Observe the given data and answer the questions."
+        },
+        {
+          "type": "text",
+          "text": "Monday 🔔🔔🔔🔔🔔🔔🔔"
+        },
+        {
+          "type": "text",
+          "text": "Tuesday 🔔🔔🔔🔔🔔🔔"
+        },
+        {
+          "type": "text",
+          "text": "Wednesday 🏠🏠🏠"
+        },
+        {
+          "type": "text",
+          "text": "Thursday 🔔🔔🔔🔔🔔"
+        },
+        {
+          "type": "text",
+          "text": "Friday 🔔🔔🔔🔔🔔"
+        },
+        {
+          "type": "text",
+          "text": "Saturday 🏠🏠🏠🏠"
+        },
+        {
+          "type": "text",
+          "text": "A. How many clocks were sold on Friday?"
+        },
+        {
+          "type": "text",
+          "text": "B. Which item was sold on Saturday?"
+        },
+        {
+          "type": "text",
+          "text": "C. On which day maximum number of items were sold?"
+        },
+        {
+          "type": "text",
+          "text": "D. On which day the least number of items were sold?"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_33_pre-math_skill/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/maths_33_pre-math_skill/img_003.jpg",
+          "alt": "Image 3"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "A. How many friends like ice-cream?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "B. How many friends like burger?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "c. How many friends like pizza?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "D. Which snack is liked by 5 of his friends?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "E. Which two snacks add up to 7?",
+          "options": [
+            "Monday 🔔🔔🔔🔔🔔🔔🔔"
+          ],
+          "answer": "Monday 🔔🔔🔔🔔🔔🔔🔔",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "F. How many friends like brownie and burger?",
+          "options": [
+            "Monday 🔔🔔🔔🔔🔔🔔🔔",
+            "Tuesday 🔔🔔🔔🔔🔔🔔"
+          ],
+          "answer": "Monday 🔔🔔🔔🔔🔔🔔🔔",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "A. How many clocks were sold on Friday?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "B. Which item was sold on Saturday?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "C. On which day maximum number of items were sold?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "D. On which day the least number of items were sold?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    }
+  ]
+}

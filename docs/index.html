@@ -5,25 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>Class 1 Adventure — Learn & Play!</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div id="confetti-layer"></div>
   <div id="toast" class="toast hidden"></div>
 
-  <!-- SCREEN: Pick Hero -->
   <section id="screen-login" class="screen active">
     <div class="login-card">
       <div class="mascot bounce">🦸</div>
       <h1>Class 1 Adventure!</h1>
-      <p class="subtitle">Pick your hero to start the quest</p>
+      <p class="subtitle">Notes, pictures & quizzes for every subject</p>
       <div class="hero-grid" id="hero-grid"></div>
       <p class="hint">Progress saves on this device for each child</p>
     </div>
   </section>
 
-  <!-- SCREEN: Home Hub -->
   <section id="screen-home" class="screen">
     <header class="top-bar">
       <div class="player-chip" id="player-chip"></div>
@@ -41,23 +39,24 @@
         <p id="welcome-msg">Ready for adventure?</p>
       </div>
 
-      <div class="world-map">
+      <h2 class="section-label">📚 My Subjects</h2>
+      <div class="subject-grid" id="subject-grid"></div>
+
+      <h2 class="section-label">🎮 Quick Play</h2>
+      <div class="world-map world-map-compact">
         <button class="world-btn math-world" data-go="math">
           <span class="world-icon">🔢</span>
-          <span class="world-title">Math Mountain</span>
-          <span class="world-sub">Pictures help you solve!</span>
+          <span class="world-title">Math Arcade</span>
           <span class="world-progress" id="math-progress"></span>
         </button>
         <button class="world-btn english-world" data-go="english">
           <span class="world-icon">📖</span>
-          <span class="world-title">Reading Forest</span>
-          <span class="world-sub">Tap to hear words!</span>
+          <span class="world-title">Reading Arcade</span>
           <span class="world-progress" id="english-progress"></span>
         </button>
         <button class="world-btn trophy-world" data-go="trophy">
           <span class="world-icon">🏆</span>
           <span class="world-title">Trophy Room</span>
-          <span class="world-sub">Your stickers & badges</span>
         </button>
       </div>
     </div>
@@ -65,29 +64,45 @@
     <button class="btn-ghost switch-hero" id="btn-switch-hero">Switch Hero</button>
   </section>
 
-  <!-- SCREEN: Math -->
+  <section id="screen-chapters" class="screen">
+    <header class="game-header">
+      <button class="btn-back" data-back="home">← Home</button>
+      <h2 id="chapters-title">Chapters</h2>
+    </header>
+    <div id="chapter-list" class="level-picker"></div>
+  </section>
+
+  <section id="screen-chapter" class="screen">
+    <header class="game-header">
+      <button class="btn-back" data-back="chapters">← Chapters</button>
+      <h2 id="chapter-title">Chapter</h2>
+    </header>
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="notes" id="tab-notes">📖 Notes</button>
+      <button class="tab-btn" data-tab="quiz" id="tab-quiz">🎯 Quiz</button>
+    </div>
+    <div id="chapter-content" class="notes-panel"></div>
+    <div id="chapter-quiz" class="game-area hidden"></div>
+  </section>
+
   <section id="screen-math" class="screen">
     <header class="game-header">
       <button class="btn-back" data-back="home">← Home</button>
-      <h2>🔢 Math Mountain</h2>
-      <div class="mini-stats" id="math-mini-stats"></div>
+      <h2>🔢 Math Arcade</h2>
     </header>
     <div id="math-level-picker" class="level-picker"></div>
     <div id="math-game" class="game-area hidden"></div>
   </section>
 
-  <!-- SCREEN: English -->
   <section id="screen-english" class="screen">
     <header class="game-header">
       <button class="btn-back" data-back="home">← Home</button>
-      <h2>📖 Reading Forest</h2>
-      <div class="mini-stats" id="english-mini-stats"></div>
+      <h2>📖 Reading Arcade</h2>
     </header>
     <div id="english-level-picker" class="level-picker"></div>
     <div id="english-game" class="game-area hidden"></div>
   </section>
 
-  <!-- SCREEN: Trophy -->
   <section id="screen-trophy" class="screen">
     <header class="game-header">
       <button class="btn-back" data-back="home">← Home</button>
@@ -96,7 +111,6 @@
     <div id="trophy-room" class="trophy-room"></div>
   </section>
 
-  <!-- Reward popup -->
   <div id="reward-popup" class="reward-popup hidden">
     <div class="reward-card pop-in">
       <div class="reward-emoji" id="reward-emoji">🎉</div>
@@ -110,6 +124,7 @@
   <script src="js/store.js"></script>
   <script src="js/speech.js"></script>
   <script src="js/rewards.js"></script>
+  <script src="js/learn.js"></script>
   <script src="js/math.js"></script>
   <script src="js/english.js"></script>
   <script src="js/app.js"></script>

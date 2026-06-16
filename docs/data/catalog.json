@@ -1,0 +1,52 @@
+{
+  "subjects": [
+    {
+      "id": "maths",
+      "name": "Maths",
+      "emoji": "🔢",
+      "color": "#ff6b6b",
+      "chapterCount": 31,
+      "file": "data/maths.json"
+    },
+    {
+      "id": "english_grammar",
+      "name": "English",
+      "emoji": "📖",
+      "color": "#4ecdc4",
+      "chapterCount": 25,
+      "file": "data/english_grammar.json"
+    },
+    {
+      "id": "evs",
+      "name": "EVS",
+      "emoji": "🌿",
+      "color": "#6bcb77",
+      "chapterCount": 16,
+      "file": "data/evs.json"
+    },
+    {
+      "id": "hindi",
+      "name": "Hindi",
+      "emoji": "🇮🇳",
+      "color": "#fd79a8",
+      "chapterCount": 27,
+      "file": "data/hindi.json"
+    },
+    {
+      "id": "sanskrit",
+      "name": "Sanskrit",
+      "emoji": "🕉️",
+      "color": "#e17055",
+      "chapterCount": 14,
+      "file": "data/sanskrit.json"
+    },
+    {
+      "id": "computer",
+      "name": "Computer",
+      "emoji": "💻",
+      "color": "#74b9ff",
+      "chapterCount": 7,
+      "file": "data/computer.json"
+    }
+  ]
+}

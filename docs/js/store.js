@@ -25,6 +25,7 @@ const Store = {
         bestStreak: 0,
         math: {},
         english: {},
+        chapters: {},
         badges: [],
         perfectLevels: 0,
       };
@@ -72,6 +73,40 @@ const Store = {
     return `${done}/${total}`;
   },
 
+  completeChapter(id, chapterId, starCount) {
+    const p = this.getPlayer(id);
+    if (!p.chapters) p.chapters = {};
+    const prev = p.chapters[chapterId] || 0;
+    p.chapters[chapterId] = Math.max(prev, starCount);
+    this.updatePlayer(id, p);
+    return p;
+  },
+
+  getChapterStars(id, chapterId) {
+    const p = this.getPlayer(id);
+    return (p.chapters && p.chapters[chapterId]) || 0;
+  },
+
+  countChapterStars(id, subjectId) {
+    const p = this.getPlayer(id);
+    const prefix = subjectId + '_';
+    return Object.entries(p.chapters || {}).filter(
+      ([k, v]) => k.startsWith(prefix) && v > 0
+    ).length;
+  },
+
+  bumpStreak(id, success) {
+    const p = this.getPlayer(id);
+    if (success) {
+      p.streak = (p.streak || 0) + 1;
+      p.bestStreak = Math.max(p.bestStreak || 0, p.streak);
+    } else {
+      p.streak = 0;
+    }
+    this.updatePlayer(id, p);
+    return p;
+  },
+
   checkBadges(id) {
     const p = this.getPlayer(id);
     const earned = new Set(p.badges || []);
@@ -83,6 +118,7 @@ const Store = {
       let ok = false;
       if (b.type === 'math_levels') ok = mathDone >= b.need;
       else if (b.type === 'english_levels') ok = engDone >= b.need;
+      else if (b.type === 'chapter_levels') ok = Object.keys(p.chapters || {}).length >= b.need;
       else if (b.type === 'streak') ok = p.bestStreak >= b.need;
       else if (b.type === 'perfect') ok = p.perfectLevels >= b.need;
       else if (b.id === 'first_star') ok = p.stars >= 1;

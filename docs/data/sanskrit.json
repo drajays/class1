@@ -1,0 +1,1354 @@
+{
+  "chapters": [
+    {
+      "id": "sanskrit_00_sanskrit_introduction",
+      "folder": "00_sanskrit_introduction",
+      "title": "Sanskrit Introduction",
+      "notes": [
+        {
+          "type": "text",
+          "text": "##### विषयानुक्रमणिकா"
+        },
+        {
+          "type": "text",
+          "text": "द्वितीय: पाठ:"
+        },
+        {
+          "type": "text",
+          "text": "चतुर्थ: पाठ:"
+        },
+        {
+          "type": "text",
+          "text": "पश्चिम: पाठ:"
+        },
+        {
+          "type": "text",
+          "text": "द्वादश: पाठ:"
+        },
+        {
+          "type": "text",
+          "text": "ज्योदश: पाठ:"
+        },
+        {
+          "type": "text",
+          "text": "चतुর্दशा: पाठ:"
+        },
+        {
+          "type": "text",
+          "text": "पश्चदशा: पाठ:"
+        },
+        {
+          "type": "text",
+          "text": "सप्तदशा: पाठ:"
+        },
+        {
+          "type": "text",
+          "text": "मात्रापरिचय:"
+        },
+        {
+          "type": "text",
+          "text": "एहि एहि वीर रे"
+        },
+        {
+          "type": "text",
+          "text": "दण्डलोगि अक्षरम्"
+        },
+        {
+          "type": "text",
+          "text": "मातृभूमे नमः"
+        },
+        {
+          "type": "text",
+          "text": "पिपासितः काकः"
+        },
+        {
+          "type": "text",
+          "text": "शूगाल: द्राक्षाफलं च"
+        },
+        {
+          "type": "text",
+          "text": "स्वतंत्रा: पाठ:"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_00_sanskrit_introduction/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_00_sanskrit_introduction/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_00_sanskrit_introduction/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_00_sanskrit_introduction/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_00_sanskrit_introduction/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "अनल: - आग, आननम् - चेहरा, इन: - सूरज, ईश: - ईश्वर"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_00_sanskrit_introduction/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "heading",
+          "text": "अभ्यास:"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Sanskrit Introduction?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_01_varnamala",
+      "folder": "01_varnamala",
+      "title": "Varnamala",
+      "notes": [
+        {
+          "type": "text",
+          "text": "##### वर्णमाला"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_01_varnamala/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_01_varnamala/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_01_varnamala/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_01_varnamala/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_01_varnamala/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_01_varnamala/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "##### वर्णमाला"
+        },
+        {
+          "type": "text",
+          "text": "तट: - नदी का किनारा, थ: - पर्वत, दशान: - दाँत, धवल: - सफेद, नयनम् - आँख"
+        },
+        {
+          "type": "text",
+          "text": "##### वर्णमाला"
+        },
+        {
+          "type": "text",
+          "text": "##### अभ्यास:-१"
+        },
+        {
+          "type": "text",
+          "text": "चित्र दृष्टा पदानि लिखत।"
+        },
+        {
+          "type": "heading",
+          "text": "二"
+        },
+        {
+          "type": "text",
+          "text": "##### अभ्यास:-२"
+        },
+        {
+          "type": "text",
+          "text": "अक्षरािण क्रमोण सज्जीकृत्य पदनिर्माणं कुरुत ।"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Varnamala?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_02_balgeetani",
+      "folder": "02_balgeetani",
+      "title": "Balgeetani",
+      "notes": [
+        {
+          "type": "text",
+          "text": "##### बालगीतানি"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_02_balgeetani/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "##### सूयं: गोलः"
+        },
+        {
+          "type": "text",
+          "text": "सुर्य: गोल: चन्द्र: गोल:"
+        },
+        {
+          "type": "text",
+          "text": "गोल: मम वागोल:।"
+        },
+        {
+          "type": "text",
+          "text": "पृथ्वी गोला चक्रं गोलं"
+        },
+        {
+          "type": "text",
+          "text": "गोल: मम रसगोल:॥"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_02_balgeetani/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "##### एफ: हस्त:"
+        },
+        {
+          "type": "text",
+          "text": "एष: हस्ता: दिक्षणहस्ता:"
+        },
+        {
+          "type": "text",
+          "text": "एष: वाम: हस्ता:।"
+        },
+        {
+          "type": "text",
+          "text": "एष: पाद: दिक्षणपाद:"
+        },
+        {
+          "type": "text",
+          "text": "एष: वाम: पाद:॥"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_02_balgeetani/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "का सा बाल? काखनमाला!"
+        },
+        {
+          "type": "text",
+          "text": "गच्छित कुत्र ? पितुं मित्र।"
+        },
+        {
+          "type": "text",
+          "text": "मधुरा बाला । भद्रसुशील।।"
+        },
+        {
+          "type": "text",
+          "text": "एवम् ? आम्, आम्।।"
+        },
+        {
+          "type": "text",
+          "text": "चलामि मार्ग जले तरामि"
+        },
+        {
+          "type": "text",
+          "text": "कूर्दे भूमौ सदा हसामि ।"
+        },
+        {
+          "type": "text",
+          "text": "पठामि गेहे कथां शृणोमि"
+        },
+        {
+          "type": "text",
+          "text": "भ्रामि नधास्तिरे ।"
+        },
+        {
+          "type": "text",
+          "text": "शीतलवायुर्वहित सुमन्दम्"
+        },
+        {
+          "type": "text",
+          "text": "आरोहित नौकां नरवृन्द ।"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Balgeetani?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_03_matra_parichay",
+      "folder": "03_matra_parichay",
+      "title": "Matra Parichay",
+      "notes": [
+        {
+          "type": "text",
+          "text": "##### मात्रापरिचय:"
+        },
+        {
+          "type": "text",
+          "text": "काकः - कौवा, क्रिरणः - क्रिरण, कीटः - कीड़ा, कुमारः - बालक"
+        },
+        {
+          "type": "text",
+          "text": "कूपः - कुआँ, कृपणः - कंजूस, केसरः - केसर, कैलासः - कैलास"
+        },
+        {
+          "type": "text",
+          "text": "कोमलम् - कोमल, कौमुदी - चन्दमा की क्रिरण, कंसम् - कॉस, कः - कौन"
+        },
+        {
+          "type": "text",
+          "text": "##### अभ्यास:-१"
+        },
+        {
+          "type": "heading",
+          "text": "अभ्यास:-२"
+        },
+        {
+          "type": "text",
+          "text": "रिक्तस्थानपूरणं कुकृतं ।"
+        },
+        {
+          "type": "text",
+          "text": "ग् + आ + य + अ + क् + अ:"
+        },
+        {
+          "type": "text",
+          "text": "ब् + आ + ***** + अ + क् + अ:"
+        },
+        {
+          "type": "text",
+          "text": "गिरी: - ग् + ई + र्+ *****"
+        },
+        {
+          "type": "text",
+          "text": "सिललम् - स् + अ + ……+ इ + ल् + ……"
+        },
+        {
+          "type": "text",
+          "text": "मौन: - म् + *+ *+ *+ + अ:"
+        },
+        {
+          "type": "text",
+          "text": "नगरी - न् + अ + *****+ अ + *****+ ई"
+        },
+        {
+          "type": "text",
+          "text": "कुमुद: - क् + …… + म् + …… + द्+ अ:"
+        },
+        {
+          "type": "text",
+          "text": "सुखम् - स् + ***** + ख् + अम्"
+        },
+        {
+          "type": "text",
+          "text": "गुफ: - ग् + 3+ …… + ……"
+        },
+        {
+          "type": "text",
+          "text": "वर्णनिं पृथककृत्य लिखित।"
+        },
+        {
+          "type": "text",
+          "text": "##### अभ्यास:-३"
+        },
+        {
+          "type": "heading",
+          "text": "अक्षरािण योजितता पदनिर्माण कुरुत।"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Matra Parichay?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_04_ehi_ehi_veer_re",
+      "folder": "04_ehi_ehi_veer_re",
+      "title": "Ehi Ehi Veer Re",
+      "notes": [
+        {
+          "type": "text",
+          "text": "##### एहि एहि वीर रे,"
+        },
+        {
+          "type": "text",
+          "text": "##### जीवन प्रदर्शित रहे थे"
+        },
+        {
+          "type": "text",
+          "text": "वंह हि मार्गदर्शक:"
+        },
+        {
+          "type": "text",
+          "text": "वंह हि देशरक्षक:"
+        },
+        {
+          "type": "text",
+          "text": "वंह हि शतुनाशक:"
+        },
+        {
+          "type": "text",
+          "text": "कालनागतक्षक: ||"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_04_ehi_ehi_veer_re/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "##### साहसी सदा भवे:"
+        },
+        {
+          "type": "text",
+          "text": "भारतीयसंस्कृत्ति"
+        },
+        {
+          "type": "text",
+          "text": "मानसे सदा धेरेः ।।"
+        },
+        {
+          "type": "text",
+          "text": "भारतस्य गोरवाय"
+        },
+        {
+          "type": "text",
+          "text": "सर्वादौ जयो भवेत् ।।"
+        },
+        {
+          "type": "text",
+          "text": "(सं) लक्ष्मीकान्त जाम्बोरकर"
+        },
+        {
+          "type": "text",
+          "text": "##### अभ्यास:"
+        },
+        {
+          "type": "text",
+          "text": "य: यस्य दण्डलोपी तं समानरर्जेण रुज्यत।"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_04_ehi_ehi_veer_re/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_04_ehi_ehi_veer_re/img_003.jpg",
+          "alt": "Image 3"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Ehi Ehi Veer Re?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_05_matribhumi_namah",
+      "folder": "05_matribhumi_namah",
+      "title": "Matribhumi Namah",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "मातृभूमि नाम:"
+        },
+        {
+          "type": "text",
+          "text": "मातृभूमे नमः मातृभूमे नमः।"
+        },
+        {
+          "type": "text",
+          "text": "मातृभूमे नमः मातृभूमे नमः।।"
+        },
+        {
+          "type": "text",
+          "text": "अग्रतस्ते नमः पृष्ठतस्ते नमः।"
+        },
+        {
+          "type": "text",
+          "text": "वामतस्ते नम: दक्षिणे ते नम:।। मातृभूमे नम:।।"
+        },
+        {
+          "type": "text",
+          "text": "ते गिरिभ्यो नमः ते नदीभ्यो नमः।"
+        },
+        {
+          "type": "text",
+          "text": "ते वनेभ्यो नमः जनपदेभ्यो नमः॥ मातृभूमे नमः॥"
+        },
+        {
+          "type": "text",
+          "text": "प्राप्त होने के बाद देने वैशिक है।"
+        },
+        {
+          "type": "text",
+          "text": "ऋதिंदर सिंहदरे भुक्तिमुक्तिप्रदे।"
+        },
+        {
+          "type": "text",
+          "text": "सर्वेद सर्वदा देिव तुभ्यं नमः॥ मातृभूमे नमः॥"
+        },
+        {
+          "type": "text",
+          "text": "पं. वासुदेव द्वेवेदी शास्त्री"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_05_matribhumi_namah/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "Scanned with OKEN Scanner"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Matribhumi Namah?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_06_kriya_bodh",
+      "folder": "06_kriya_bodh",
+      "title": "Kriya Bodh",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "क्रियाबोध:"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_06_kriya_bodh/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_06_kriya_bodh/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_06_kriya_bodh/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_06_kriya_bodh/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_06_kriya_bodh/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_06_kriya_bodh/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "छात्र: आगच्छित।"
+        },
+        {
+          "type": "text",
+          "text": "घोटक: धावित।"
+        },
+        {
+          "type": "text",
+          "text": "गायक: गायति ।"
+        },
+        {
+          "type": "text",
+          "text": "बालिका कन्दित ।"
+        },
+        {
+          "type": "text",
+          "text": "नर्तरी नृत्यित ।"
+        },
+        {
+          "type": "text",
+          "text": "यानम् - वाहन, घोटक: - घोड़ा"
+        },
+        {
+          "type": "text",
+          "text": "##### क्रियाबोध:"
+        },
+        {
+          "type": "text",
+          "text": "बालक: शृणोति ।"
+        },
+        {
+          "type": "text",
+          "text": "खग: पश्चात्।"
+        },
+        {
+          "type": "text",
+          "text": "छात्र: उतिष्ठति ।"
+        },
+        {
+          "type": "text",
+          "text": "बाला उपविशति।"
+        },
+        {
+          "type": "text",
+          "text": "साधु: वदित ।"
+        },
+        {
+          "type": "heading",
+          "text": "अभ्यास:"
+        },
+        {
+          "type": "text",
+          "text": "किसरोति इति लिखित।"
+        },
+        {
+          "type": "text",
+          "text": "(लिखित, खादित, पठित)"
+        },
+        {
+          "type": "text",
+          "text": ".(खादित, पिबित, गच्छित)"
+        },
+        {
+          "type": "text",
+          "text": "(वदिति, हसिति, नमिति)"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Kriya Bodh?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_07_asiit_nasiti",
+      "folder": "07_asiit_nasiti",
+      "title": "Asiit Nasiti",
+      "notes": [
+        {
+          "type": "text",
+          "text": "##### अर्सित-नास्ति"
+        },
+        {
+          "type": "heading",
+          "text": "वृश: अस्ते। फिल्म अस्ते।"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_07_asiit_nasiti/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "heading",
+          "text": "वृक्ष: अस्पताल। फलों निष्सित।"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_07_asiit_nasiti/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "heading",
+          "text": "पुस्तक्म अस्तेडन्स। लेखनी अस्तेजदः"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_07_asiit_nasiti/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "heading",
+          "text": "पुस्तकम् अस्पताल लेखनी नागिल ।"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_07_asiit_nasiti/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "वृत्तमध्ये किं किम् अस्तित पश्यत।"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_07_asiit_nasiti/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "उपरिस्थवृते यद्यद् अस्ित तेषु अस्मिन् बृते किक किक नास्ित लिखत।"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_07_asiit_nasiti/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "पिपासितः काकः"
+        },
+        {
+          "type": "text",
+          "text": "एक: काक: अस्त। स: पिपासित: अस्त। स: जल पातुम् इच्छित। स: सर्वेर भ्रमित किन्तु जलं न पश्यित। स: एक्म उदानं गच्छित। तत्र एक: घट: अस्त। काक: घटं पश्यित । घटे अल्पं जलम् अस्त। काक: जलं पतुं चेष्टा करोति, कित्त तस्य मुखं जलं न स्पृशित। काक: अत्र तत्र पश्यित, तस्य बुड्ः न स्फुरित । स: शिलाखण्डसमूहं पश्यित । तत: शिलाखण्डम् आनयित। एकम् एकं शिलाखण्डं घटे पातयित। तत: जलम् उपिरे आगच्छित। काक: जलं पिबित सानन्दं गच्छित च।"
+        },
+        {
+          "type": "text",
+          "text": "##### अभ्यास:"
+        },
+        {
+          "type": "text",
+          "text": "१. संस्कृतभाषया उत्तर लिखित।"
+        },
+        {
+          "type": "text",
+          "text": "क. क: पिपासित: अस्ति ? (काक:, शुक:, बक:)"
+        },
+        {
+          "type": "text",
+          "text": "ख. काकः किम् इच्छित? (फलम्, जलम्, धनम्)"
+        },
+        {
+          "type": "text",
+          "text": "ग. सः कुत्र गच्छित? (नदीम्, नगरम्, उधानम्)"
+        },
+        {
+          "type": "text",
+          "text": "च. कियत् जल्म् अस्ति ? (अल्पम्, पूर्णम्, बहु)"
+        },
+        {
+          "type": "text",
+          "text": "ड. काक: किम् आनयित? (शिलाखण्डम्, जल्म्, पात्रम्)"
+        },
+        {
+          "type": "text",
+          "text": "च. अन्ये काक: किं करोति ? (गच्छित, पश्यित, आगच्छित)"
+        },
+        {
+          "type": "text",
+          "text": "सदा करोति विधाधी सहन सुखदुःखयो:।"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Asiit Nasiti?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_08_mam_shariram",
+      "folder": "08_mam_shariram",
+      "title": "Mam Shariram",
+      "notes": [
+        {
+          "type": "text",
+          "text": "##### मम शरीरम्"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_08_mam_shariram/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "मदियं शरीरं स्वस्थं सुरूपं रोगविरहितं हढं च नम्यम् ।"
+        },
+        {
+          "type": "text",
+          "text": "कार्ये सुदक्षं रचिरं सुरम्यं भगवत्कार्यं कर्तु निष्ठम् ।"
+        },
+        {
+          "type": "text",
+          "text": "सम्दानन्द मिश्र"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Mam Shariram?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_09_shrugal_drakshaphalam",
+      "folder": "09_shrugal_drakshaphalam",
+      "title": "Shrugal Drakshaphalam",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "शूगाल: द्राक्षाफलें च"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_09_shrugal_drakshaphalam/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "एक: शृगाल: असित। स: वने अत्र तत्र भ्रमित। एकदा स: वृक्षे द्राक्षाफलं पश्यित । स: तत् खादितुम् इच्छित । फलम् उपरि असित । स: तत् प्राप्तुं कूर्दित। एकवारं कूर्दित कিন्तु फलं न स्मृशित। पुनः एकवारं कूर्दित किन्तु फलं न स्मृशित। पुनं: पुनः कूर्दित तथापि फलं न प्राप्ति। अन्ते कलान्त: भवित कथयित च - ‘अहो द्राक्षाफलं तु अम्लं भवित। क: अम्लफलं खादित ? अहं वृथा श्रमं करोमि ।' तत् कथयित अन्यत्र गच्छितं च ।"
+        },
+        {
+          "type": "text",
+          "text": "##### अभ्यास:"
+        },
+        {
+          "type": "text",
+          "text": "१. संस्कृतभाषया उत्तर लिखत।"
+        },
+        {
+          "type": "text",
+          "text": "(क) वने कः भ्रमित ? (शुकः, शृगालः, सिंहः)"
+        },
+        {
+          "type": "text",
+          "text": "(ख) शृगालः कि पशयित ? (जलम्, द्राक्षाफलम्, पुषम्)"
+        },
+        {
+          "type": "text",
+          "text": "(ग) फलं कुत अस्ति ? (आकाशो , उपरि , तले )"
+        },
+        {
+          "type": "text",
+          "text": "(घ) द्राक्षाफलं कथं स्वदते ? (मधुरम् , तिकतम् , अम्लम्)"
+        },
+        {
+          "type": "text",
+          "text": "(ड) अन्ते शृगालः कि करोति ? (खादित , पश्यित , गच्छित)"
+        },
+        {
+          "type": "text",
+          "text": "२. समुचितपदन रिकतस्थानं पूरयत ।"
+        },
+        {
+          "type": "text",
+          "text": "(क) शृगालः वने …… (भ्रमित, पश्यित, प्राप्ोति)"
+        },
+        {
+          "type": "text",
+          "text": "(ख) शृगाल: द्राक्षाफल …… (खादित, पश्यित, प्राप्ोति)"
+        },
+        {
+          "type": "text",
+          "text": "(ग) शृगाल: द्राक्षाफलें खादितुम् … (स्पृशित, कथ्यति, इच्छित)"
+        },
+        {
+          "type": "text",
+          "text": "(घ) शृगाल: फलें प्राप्तु …… (स्पृशित, कूर्दित, पशयित)"
+        },
+        {
+          "type": "text",
+          "text": "(ड) अन्ते शृगालः …… (कलान्: भवति, अम्लफलं खादित,"
+        },
+        {
+          "type": "text",
+          "text": "पुनः पुनः कूर्दित)"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Shrugal Drakshaphalam?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_10_devataon_ke_anek_nam",
+      "folder": "10_devataon_ke_anek_nam",
+      "title": "Devataon Ke Anek Nam",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "देवताओं के अनेक नाम"
+        },
+        {
+          "type": "text",
+          "text": "१. सुरः - प्रकाश से देदीण्यमान ।"
+        },
+        {
+          "type": "text",
+          "text": "२. अमर: - मृत्यु से रहित ।"
+        },
+        {
+          "type": "text",
+          "text": "3. देव: - सदा देदीण्यमान ।"
+        },
+        {
+          "type": "text",
+          "text": "8. अदितिनन्दन: - अदिति यानि अखण्ड चेतना की संतान ।"
+        },
+        {
+          "type": "text",
+          "text": "4. दानवारिः - राक्षसों का विनाश करने वाला ।"
+        },
+        {
+          "type": "text",
+          "text": "अमरा निजरा देवास्वरदशा विबुधा: सुरा: ।"
+        },
+        {
+          "type": "text",
+          "text": "सुपविण: सुमनसिस्त्रिदवेशा दिवोंकस: ।।"
+        },
+        {
+          "type": "text",
+          "text": "आदितेया दिवषदो लेखा अदितेनन्दना: ।"
+        },
+        {
+          "type": "text",
+          "text": "आदित्या ऋभवो5सव्रा अमत्या अमृतान्धस: ।।"
+        },
+        {
+          "type": "text",
+          "text": "बहिमुख्या: कृतभुजो गौविणा दानवारय: ।"
+        },
+        {
+          "type": "text",
+          "text": "वृन्दारका देवतानि पुसि वा देवता: सिख्याम् ।।"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Devataon Ke Anek Nam?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_11_divyavani",
+      "folder": "11_divyavani",
+      "title": "Divyavani",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "दिल्యवाणी"
+        },
+        {
+          "type": "text",
+          "text": "देवभाषा पुरस्तक के प्रत्येक भाग में दिल्यवाणी नामक विशेष पाठ रखा गया है। इस पाठ में वेद, उपनिषद और श्रीमद्भगवद्गीता के चयनित मंत्री व श्लोकों का संकलन किया गया है। नि:सन्देह ये प्रथम दृष्टि में छाओं के लिए कितन प्रतित होंगे। हम सब का उद्देश्य यह है कि बाल्यावस्था में इनके उच्चारण एवं स्मरण से छाओं में जो नीचे पड़ जायेगी उससे उनका भावी जीवन संस्कारवान् बनेगा।"
+        },
+        {
+          "type": "text",
+          "text": "इन मंत्रों के अर्थ कितन प्रतित होंगे पर हम सबने यह प्रयास किया है कि शिक्षाकों के समझने व्यवहार के सत्र तक इनका अर्थ लिखा जाएं। आगे यह शिक्षाकों पर निर्भर करता है कि वे छात्रों तक इन मंत्रों का सार कैसे प्रस्तुत करें।"
+        },
+        {
+          "type": "text",
+          "text": "##### वेस्टमिंस्टर पैलेस"
+        },
+        {
+          "type": "heading",
+          "text": "१- अग्रिमीले पुरोहितं यशस्य देवम् ऋत्वजम् ।"
+        },
+        {
+          "type": "heading",
+          "text": "होतारं रलधातमम् ॥ ऋग्वेद:, १.१.१"
+        },
+        {
+          "type": "text",
+          "text": "अग्रिम्- संঙ্कूल्य या अभीक्षा स्पेरी जो अग्नि/आत्मा देव हमारे सबके हदय में उपस्थित हैं, इंके - मैं उपासना करता हूँ, पुरोहितम् यशस्य - जो हमारे यज्ञ स्वरूप जीवन में अग्रिणी होकर हमारे संঙ্कूल्य या अभीक्षा को आगे बढ़ाते हैं, देवम्- जो हमारे सारे कर्मों का देव है, ऋत्विजम्- सत्य के संवोतम जाता, होतारम्- देवों का आवाहन करने वाले, रलधातम्म्- आनन्द के संवोतम धारण और वितरण करने वाले।"
+        },
+        {
+          "type": "text",
+          "text": "अर्थ - उपयुक्त मंत्र ऋगवेद के प्रथम (१) मण्डल के प्रथम (१) सूक का पहला (१) मंत्र है। इस"
+        },
+        {
+          "type": "text",
+          "text": "मंत्र के दृष्टा ऋषि मधुच्छन्दा वैश्वामित्र है। देवता अग्नि हैं और छन्द गायत्री है।"
+        },
+        {
+          "type": "text",
+          "text": "वेदों में जहाँ-जहाँ अग्नि की स्तुति की गयी है, वहाँ-वहाँ अग्नि को दो रूपों में देखा गया है-वाह और आर्तिक । कुछ लोग वाह्य अग्नि को आहूति देते समय वैदिक मंत्रों का प्रयोग करते हैं। कुछ लोग आत्मा रूपी अग्नि को आहूति देते हैं।"
+        },
+        {
+          "type": "text",
+          "text": "आत्मारूपी ईश्वर से संबंध स्थापित कर, उन्हें अपना मार्ग प्रदर्शक/ पुरोहित बना सकता है।"
+        },
+        {
+          "type": "heading",
+          "text": "२ - अग्रे तंत्र सु जाग्रही वयं सुमनिद्धीमहि । रक्षा गो अप्रयुच्छन् प्रबुधे नः पुनस्कृधि ।। यजुवेंद, ४.१४"
+        },
+        {
+          "type": "text",
+          "text": "सुजागृहि - सम्यक् रूप से जागो, सुमन्दषीमिह - हम पूर्ण रूप से आनन्दत होंव, रक्षाणो - हम सब की रक्षा करो, अप्रयुच्छन् - सतत जागरूक होते हुए, प्रबुधे - हमारे प्रबोधन के लिए अर्थात् हमं अज्ञानरूपी निद्रा से मुक्त करने के लिए, पुनस्कृधि - बार-बार प्रेरित करें ।"
+        },
+        {
+          "type": "text",
+          "text": "अर्थ - यह मंत्र यजुर्वेद के चौथे (४) अध्याय का चौदहवाँ (१४) मंत्र है। इस मंत्र के दर्शा खींप्रजापति है तथा देवता अग्नि हैं।"
+        },
+        {
+          "type": "text",
+          "text": "हे अग्नि ! आप सम्यक्स्फप से हमारे भीतर प्रज्वलित हों जिससे कि हम सजग रहं और हमें बार-बार आपसे प्रेरणा मिले। आप हमें दुष्कर्म करने से रोकें एवं हमारी रक्षा करें। हमें हमेशा जागफुक रखने के लिए और हमें अज्ञानता से मुक्त करने के लिए आप हमें बार-बार प्रेरित करें। आपके अनुभव में ही हमारा परम आनन्द है।"
+        },
+        {
+          "type": "text",
+          "text": "##### उपनिषद्वचनम्"
+        },
+        {
+          "type": "text",
+          "text": "३ - सत्यं वद। धर्मं चर। स्वाध्यायान् मा प्रमद: ।"
+        },
+        {
+          "type": "text",
+          "text": "मातृदेवो भव। पितृदेवो भव। आचार्यदेवो भव।"
+        },
+        {
+          "type": "text",
+          "text": "श्रह्या देयम्। अश्रह्या अदेयम्। श्रिया देयम्। हिया देयम्।"
+        },
+        {
+          "type": "text",
+          "text": "भिया देयम्। संविदा देयम्।। तैतिरीय-उपनिषद्"
+        },
+        {
+          "type": "text",
+          "text": "मा प्रमदः - विमुख मत हो, श्रिया - समस्त प्रकार के विकारों से रहित प्रसवता के साथ, हिंया - विनप्रता के साथ, श्रिया - निःसड्जोच या समर्पित होकर, संविदा - शान के साथ या सचेतन होकर।"
+        },
+        {
+          "type": "text",
+          "text": "अर्थ - यह मंत्र तैतरीय उपनिषद् के प्रथम (१) वर्लूरी का ग्यारहवाँ (११) अनुवाक है, जिसमें समदर्शी गुरु अपने शिष्य को वेद का भली-भाँति अध्ययन करवा करके समावर्तन संस्कार के"
+        },
+        {
+          "type": "text",
+          "text": "समय ग्रहस्थ धर्म का पालन करने की शिक्षा देते हैं।"
+        },
+        {
+          "type": "text",
+          "text": "सत्य वद.....आचारियेदवो भव।"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "आसीत्-अतीव सुन्दर पुच्छम्, विशालं पुच्छम्। जानासि, कथं तस्य पुच्छं गतम्?",
+          "options": [
+            "कथयामि, शृणु।",
+            "पूर्वम्, बहुवर्ष्यः पूर्व भल्यक:, कुकुर:, शृगाल: मित्रिंग आसन्। एकदा बहुशीत",
+            "भवित।"
+          ],
+          "answer": "कथयामि, शृणु।",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "शृगाल: अतिच्तुर:। स: भलुकस्य पाश्वं गच्छित, सुन्दरभावेन वदित, “भ्रात: भलुक! त्वं मतस्यान् इच्छिस ? बहून् मतस्यान् दास्यामि। आगच्छ मया सह। लोभी भलुक: शृगालेन सह गच्छित। शृगाल: तं बहुदूरं नयित। परं हिमे एकं गतं खनित। “भात: ! अत्र नीचे: बहव: मतस्या: सिनत। त्वं गतं पुच्छं पूर्य । शान्तभावेन उपविश। किंच्वतकालात् परं मतस्या: आगमिषचित्त, पुच्छं धिरधिन्त। एकं: मतस्या: दौए मतस्या, ज्य: मतस्या:, परं बहव: मतस्या: आगमिषचित्त। श्व: प्रभाते, यदा पुच्छं भारी भवित, तदा एकम्, दे, ग्रीण गणयित्वा पुच्छं बलेन कर्ष। सर्वं मतस्या: गतित् बहिर् आगमिषचित्त। करिष्यिंसि ?",
+          "options": [
+            "##### पரிशिस्తानि"
+          ],
+          "answer": "##### पரிशिस्తानि",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "कानपुर की विजयतत? मम पुच्छों कुछ? कुछ मतस्या: ? भलुकस्य पुच्छे खुटात् । स: स्वपुच्छे हिमे पश्यति। भलुक: पुन: पुन: पुच्छम् अन्वेषयति। गतं पुच्छे हृदा स: कथयति, \"अरे मम पुच्छे खुटात्। तदा दूरात् शृगाल: हसन् कथयति, \"अरे भलुकक्षात:! मतस्या: धृता: ? कित मतस्या: प्राप्त: ? भलुक: क्रोधेन गजित्त। स: शृगालं मारियतुम् धावति। शृगाल: पलायते। तस्मात् दिनात् भलुकस्य पुच्छे नास्ते। केवलम् एकं लघुखण्डं तिष्ठति। तदेव तस्य पुच्छम्। अधुना जानासि, भलुकस्य पुच्छे किमथ् नास्ते?",
+          "options": [
+            "##### पரிशिस्తानि"
+          ],
+          "answer": "##### पரிशिस्తानि",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_12_parishishtani",
+      "folder": "12_parishishtani",
+      "title": "Parishishtani",
+      "notes": [
+        {
+          "type": "text",
+          "text": "##### कः कि करोति ?"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_12_parishishtani/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_12_parishishtani/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_12_parishishtani/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_12_parishishtani/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_12_parishishtani/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/sanskrit_12_parishishtani/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "##### पரிशिस्लानि"
+        },
+        {
+          "type": "text",
+          "text": "##### ्यावहारिक: शब्दकोश:"
+        },
+        {
+          "type": "text",
+          "text": "भह्य-लेह्य-पेय-चोष्यवगिण"
+        },
+        {
+          "type": "text",
+          "text": "दाल (कच्ची)- हिन्दलम्"
+        },
+        {
+          "type": "text",
+          "text": "दाल (रंक्षी) - दालि:"
+        },
+        {
+          "type": "text",
+          "text": "मिश्र - सितोपला"
+        },
+        {
+          "type": "text",
+          "text": "मिठाई - मिखान्म्"
+        },
+        {
+          "type": "text",
+          "text": "लड्डू - लड्डुक:"
+        },
+        {
+          "type": "text",
+          "text": "जलेबी - कुण्डिलिनी"
+        },
+        {
+          "type": "text",
+          "text": "वस्ताणि शायोपरकराणि च"
+        },
+        {
+          "type": "text",
+          "text": "धोती - धौतवसम्"
+        },
+        {
+          "type": "text",
+          "text": "साड़ी - शाटी"
+        },
+        {
+          "type": "text",
+          "text": "लंगोटा - कौपीनम्"
+        },
+        {
+          "type": "text",
+          "text": "कमीज - कखुकम्"
+        },
+        {
+          "type": "text",
+          "text": "हाफ कमीज - अर्धकखुकम्"
+        },
+        {
+          "type": "text",
+          "text": "अंगरखा - अझरक्षकम्"
+        },
+        {
+          "type": "text",
+          "text": "चادر - उतरियम्"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Parishishtani?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "sanskrit_13_avarta_sanskritam",
+      "folder": "13_avarta_sanskritam",
+      "title": "Avarta Sanskritam",
+      "notes": [
+        {
+          "type": "text",
+          "text": "##### अद्वारतं संस्कृतम्"
+        },
+        {
+          "type": "text",
+          "text": "इन महाकावियों ने अपनी लेखनी द्वारा प्रखर विद्वाता का परिचय देते हुए সংस्कृत जगत को एक न्यास्प दिया है। धन्य है ऐसे यशस्वी कवि और उनका काल्यकौशल । नमन योग्य है वह সংस्कृत भाषा जो असंभवको संभव करने में समर्थशालिनी है । वन्दनीय है वह সংस्कृत जिसने इस देवभाषा को न केवल जन्म दिया वर्नपाल पोषकर इतने सालों से जीवित रखा है । आगे भी ये देवभाषा सदियों तक चिरायु रहते हुए अपनी विद्वाता से विश्व की उद्यत का मार्ग प्रशस्त करे, ऐसी कामना हम करते है ।"
+        },
+        {
+          "type": "text",
+          "text": "३२ अक्षरों का यह अविशेषसनीय श्लोक है । जिसमे एक ही स्वर और एक ही व्यक्त का प्रयोग मिलता है । पूरे पय में ‘य’ और एक स्वर ‘आ’ का प्रयोग किया गया है ।"
+        },
+        {
+          "type": "text",
+          "text": "यायायायायायायायायायायायायाया। यायायायायायायायायायायाया।"
+        },
+        {
+          "type": "text",
+          "text": "अर्थ - भगवान को शोभित करने वाली पादुकार्ण । जो सभी प्रकार के मंगल और शुभ की प्रास में सहायक है । जो"
+        },
+        {
+          "type": "text",
+          "text": "हान देती है । जो भगवान को अपना बना लेने की इच्छा को जगाती है । जो सारे श्रुततापूर्ण भाव को हटती है ।"
+        },
+        {
+          "type": "text",
+          "text": "जिन्होंने प्रशु को प्रातिकिया है । जिनका एक स्थान से दूसरे स्थान तक आने-जाने में उपयोग होता है । जिनके"
+        },
+        {
+          "type": "text",
+          "text": "द्वारा संसार के सभी स्थानों तक पहुँचा जा सकता है । ये पादुकार्ण भगवान विषणु के लिए हैं ।"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Avarta Sanskritam?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    }
+  ]
+}

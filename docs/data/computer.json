@@ -1,0 +1,805 @@
+{
+  "chapters": [
+    {
+      "id": "computer_00_computer_introduction",
+      "folder": "00_computer_introduction",
+      "title": "Computer Introduction",
+      "notes": [
+        {
+          "type": "heading",
+          "text": "Explore Possibilities With Computers"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_00_computer_introduction/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "heading",
+          "text": "Contents"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Computer Introduction?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "computer_01_computer_my_friend",
+      "folder": "01_computer_my_friend",
+      "title": "Computer My Friend",
+      "notes": [
+        {
+          "type": "text",
+          "text": "COMPUTER - MY FRIEND"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_01_computer_my_friend/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "I have a lot of fun with my friends like Penny, Jodu, Sharpy and many others. How can a computer be our friend?"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_01_computer_my_friend/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "Places where computers can be seen"
+        },
+        {
+          "type": "text",
+          "text": "Types of computer"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_01_computer_my_friend/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "##### LET'S HAVE FUN"
+        },
+        {
+          "type": "text",
+          "text": "##### Sing along-"
+        },
+        {
+          "type": "text",
+          "text": "Computer! Computer! Be my friend,"
+        },
+        {
+          "type": "text",
+          "text": "Computer! Computer! Our friendship will have no end,"
+        },
+        {
+          "type": "text",
+          "text": "Computer! Computer! Let me write my name,"
+        },
+        {
+          "type": "text",
+          "text": "Computer! Computer! Let me play a game,"
+        },
+        {
+          "type": "text",
+          "text": "Computer! Computer! Let me draw the Sun,"
+        },
+        {
+          "type": "text",
+          "text": "Computer! Computer! Let me have some fun."
+        },
+        {
+          "type": "text",
+          "text": "We all have friends. We like to play with them. Let us meet a new friend ....."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_01_computer_my_friend/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "This is a computer! We can play with it like we play with our other friends."
+        },
+        {
+          "type": "text",
+          "text": "##### MY COMPUTER"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_01_computer_my_friend/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "##### LET'S HAVE FUN"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_01_computer_my_friend/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "Fill your new friend Computer with colours of your choice."
+        },
+        {
+          "type": "text",
+          "text": "PLACES WHERE COMPUTERS CAN BE SEEN"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "I have a lot of fun with my friends like Penny, Jodu, Sharpy and many others. How can a computer be our friend?",
+          "options": [
+            "Computer"
+          ],
+          "answer": "Computer",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Yes, this is a computer! Which all places do we see computers in use?",
+          "options": [
+            "At the school",
+            "In shops"
+          ],
+          "answer": "At the school",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "1. We can see desktops in use in/at ___ and in office.",
+          "options": [
+            "2. We can see tablets in use in/at ___",
+            "3. We can see laptops in use in/at - Aamk8",
+            "4. We can see ___ in use at shops and malls."
+          ],
+          "answer": "2. We can see tablets in use in/at ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. We can see tablets in use in/at ___",
+          "options": [
+            "3. We can see laptops in use in/at - Aamk8",
+            "4. We can see ___ in use at shops and malls."
+          ],
+          "answer": "3. We can see laptops in use in/at - Aamk8",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Look around with your friends for pictures of computers. Paste or draw the picture of your new friend - Computer on a chart paper. Also, name which type of computer is it. Is it a desktop? Is it a laptop? Is it a tablet? Is it a smartphone?",
+          "options": [
+            "# MORE ABOUT COMPUTERS...",
+            "#### COMPUTERS THEN"
+          ],
+          "answer": "# MORE ABOUT COMPUTERS...",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Do you know, my friend Kainchi is also a machine. It helps us to cut and make new things. How is my friend-computer, a smart machine?",
+          "options": [
+            "Machine"
+          ],
+          "answer": "Machine",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "computer_02_computer_a_smart_machine",
+      "folder": "02_computer_a_smart_machine",
+      "title": "Computer A Smart Machine",
+      "notes": [
+        {
+          "type": "text",
+          "text": "COMPUTER - A SMART MACHINE"
+        },
+        {
+          "type": "text",
+          "text": "I never get tired."
+        },
+        {
+          "type": "text",
+          "text": "I never make mistakes."
+        },
+        {
+          "type": "text",
+          "text": "I can do a lot of work like paint, write and play music."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_02_computer_a_smart_machine/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "I can store a lot of things, like pictures, books, songs and movies."
+        },
+        {
+          "type": "text",
+          "text": "I work very fast."
+        },
+        {
+          "type": "text",
+          "text": "I do what you ask me to do."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_02_computer_a_smart_machine/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_02_computer_a_smart_machine/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "##### WORD MASTER"
+        },
+        {
+          "type": "text",
+          "text": "machine- a man-made thing that helps us do our work easily fuel- things like petrol, wood that give power to machines to work"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_02_computer_a_smart_machine/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "##### LET'S TRY"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_02_computer_a_smart_machine/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "A. Tick the machines."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_02_computer_a_smart_machine/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "B. Write whether true or false."
+        },
+        {
+          "type": "text",
+          "text": "1. A washing machine runs on fuel."
+        },
+        {
+          "type": "text",
+          "text": "2. Smartphone is a machine as it makes our work easy."
+        },
+        {
+          "type": "text",
+          "text": "3. Sun is not a machine as it is not made by people."
+        },
+        {
+          "type": "text",
+          "text": "4. A computer gets tired easily."
+        },
+        {
+          "type": "text",
+          "text": "##### LET'S LEARN"
+        },
+        {
+          "type": "text",
+          "text": "C. Match the following."
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Computer A Smart Machine?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "computer_03_computer_a_handy_machine",
+      "folder": "03_computer_a_handy_machine",
+      "title": "Computer A Handy Machine",
+      "notes": [
+        {
+          "type": "text",
+          "text": "COMPUTER - A HANDY MACHINE"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_03_computer_a_handy_machine/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "My friend Gadbad is very helpful. If I make any mistake it erases that. How useful and helpful is a computer? Why do we use a computer?"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_03_computer_a_handy_machine/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "text",
+          "text": "Uses for my family"
+        },
+        {
+          "type": "text",
+          "text": "Uses for people around me"
+        },
+        {
+          "type": "text",
+          "text": "Benefits of a computer"
+        },
+        {
+          "type": "heading",
+          "text": "Computer is a very useful machine. It helps us to do a lot of things."
+        },
+        {
+          "type": "text",
+          "text": "##### USES FOR ME"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_03_computer_a_handy_machine/img_003.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "type": "text",
+          "text": "To play games"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_03_computer_a_handy_machine/img_004.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "type": "text",
+          "text": "To attend online classes"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_03_computer_a_handy_machine/img_005.jpg",
+          "alt": "Image 5"
+        },
+        {
+          "type": "text",
+          "text": "To listen to music"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_03_computer_a_handy_machine/img_006.jpg",
+          "alt": "Image 6"
+        },
+        {
+          "type": "text",
+          "text": "To know about different things"
+        },
+        {
+          "type": "text",
+          "text": "To type letters"
+        },
+        {
+          "type": "text",
+          "text": "To draw and paint"
+        },
+        {
+          "type": "text",
+          "text": "For my sister"
+        },
+        {
+          "type": "heading",
+          "text": "USES FOR MY FAMILY"
+        },
+        {
+          "type": "text",
+          "text": "She reads books on it."
+        },
+        {
+          "type": "text",
+          "text": "She solves sums faster on it."
+        },
+        {
+          "type": "text",
+          "text": "For my parents"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "My friend Gadbad is very helpful. If I make any mistake it erases that. How useful and helpful is a computer? Why do we use a computer?",
+          "options": [
+            "Uses for me"
+          ],
+          "answer": "Uses for me",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "1. My sister can solve the sums ___ on a computer.",
+          "options": [
+            "2. We can _____ tickets on a computer.",
+            "3. Computer is used for making ___."
+          ],
+          "answer": "2. We can _____ tickets on a computer.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "1. CMIUS M___ ___ ___",
+          "options": [
+            "2. YAHND H___ ___ ___",
+            "3. PEODSTI D___ ___ ___ ___",
+            "4. NOLEIN O______"
+          ],
+          "answer": "2. YAHND H___ ___ ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. YAHND H___ ___ ___",
+          "options": [
+            "3. PEODSTI D___ ___ ___ ___",
+            "4. NOLEIN O______"
+          ],
+          "answer": "3. PEODSTI D___ ___ ___ ___",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "In a ___ (library/bank), a computer is used to keep the details of ___ (bills/money) withdrawn and deposited. Computer at ___ (shop/home/hospital) is used to keep the details of ___ (money/patients/books).",
+          "options": [
+            "F. Answer the following.",
+            "1. Write any two uses of a computer at home.",
+            "2. Write two benefits of a computer."
+          ],
+          "answer": "F. Answer the following.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Do you know about my friend Jaime? He has many body parts like legs, tail and ears. What are the different parts of a computer?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "B L ___ K B O ___ D",
+          "options": [
+            "Now, identify this machine.",
+            "Hint: The name of this machine rhymes with the word COMPUTER."
+          ],
+          "answer": "Now, identify this machine.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Computer! How can I write my name on your monitor?",
+          "options": [
+            "• There are different types of keys on the keyboard.",
+            "• We can type on the computer by pressing the keys."
+          ],
+          "answer": "• There are different types of keys on the keyboard.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "# What is a cursor?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "What is data, memory and storage?",
+          "options": [
+            "Complete the following.",
+            "• My name is ___",
+            "• I study in ___"
+          ],
+          "answer": "Complete the following.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Which button will you press for dragging and dropping an item?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "Which button will you press for a double-click?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "I will check"
+          ],
+          "answer": "Yes",
+          "hint": "Think about what you learned in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "computer_04_know_my_friend",
+      "folder": "04_know_my_friend",
+      "title": "Know My Friend",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Know My Friend 23-36"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Know My Friend?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "computer_05_connect_with_computer",
+      "folder": "05_connect_with_computer",
+      "title": "Connect With Computer",
+      "notes": [
+        {
+          "type": "text",
+          "text": "Connect with Computer-1 37-50"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What did you learn in Connect With Computer?",
+          "options": [
+            "I read the notes!",
+            "I need to read again",
+            "I will ask a grown-up",
+            "Let me try more"
+          ],
+          "answer": "I read the notes!",
+          "hint": "Read the notes first, then answer."
+        }
+      ]
+    },
+    {
+      "id": "computer_06_dos_and_donts_of_computer",
+      "folder": "06_dos_and_donts_of_computer",
+      "title": "Dos And Donts Of Computer",
+      "notes": [
+        {
+          "type": "text",
+          "text": "do's of a computer"
+        },
+        {
+          "type": "text",
+          "text": "C. Match the following."
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_06_dos_and_donts_of_computer/img_001.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "type": "text",
+          "text": "4. In school, we should take _____ to use the computer."
+        },
+        {
+          "type": "text",
+          "text": "3. We should not play ___ music."
+        },
+        {
+          "type": "text",
+          "text": "2. The keys of the keyboard should be pressed ---"
+        },
+        {
+          "type": "text",
+          "text": "1. Computer must be kept clean and ___"
+        },
+        {
+          "type": "text",
+          "text": "B. Fill in the blanks using words from the Help-Box."
+        },
+        {
+          "type": "text",
+          "text": "Discuss with your friends and plan rules for using your computer. The rules should have both do's and don'ts."
+        },
+        {
+          "type": "text",
+          "text": "FUN WITH FRIENDS"
+        },
+        {
+          "type": "text",
+          "text": "4. Whom should we ask for help while using the computer?"
+        },
+        {
+          "type": "text",
+          "text": "3. How should we sit in front of a computer?"
+        },
+        {
+          "type": "text",
+          "text": "2. Write any one thing that we should not do while using the computer."
+        },
+        {
+          "type": "text",
+          "text": "F. Answer the following."
+        },
+        {
+          "type": "text",
+          "text": "1. Write any one thing that we should do while using the computer."
+        },
+        {
+          "type": "text",
+          "text": "4. Sharing is a ___ (good/bad) habit."
+        },
+        {
+          "type": "text",
+          "text": "3. Neha wants to clean her computer. She should use a _"
+        },
+        {
+          "type": "text",
+          "text": "(hard/gently)."
+        },
+        {
+          "type": "text",
+          "text": "2. Akansha is typing on the keyboard. She should press the keys ___"
+        },
+        {
+          "type": "text",
+          "text": "1. Rishi is playing games on the computer. He should keep the sound."
+        },
+        {
+          "type": "text",
+          "text": "E. Select the correct options from the choices given."
+        },
+        {
+          "type": "text",
+          "text": "LET'S MASTER"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_06_dos_and_donts_of_computer/img_002.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/content/computer_06_dos_and_donts_of_computer/img_003.jpg",
+          "alt": "Image 3"
+        }
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "4. In school, we should take ___ to use the computer.",
+          "options": [
+            "3. We should not play ___ music.",
+            "2. The keys of the keyboard should be pressed ---",
+            "1. Computer must be kept clean and ___"
+          ],
+          "answer": "3. We should not play ___ music.",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "3. We should not play ___ music.",
+          "options": [
+            "2. The keys of the keyboard should be pressed ---",
+            "1. Computer must be kept clean and ___",
+            "gently"
+          ],
+          "answer": "2. The keys of the keyboard should be pressed ---",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "1. Computer must be kept clean and ___",
+          "options": [
+            "gently",
+            "Fill in the blanks using words from the Help-Box."
+          ],
+          "answer": "gently",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "Whom should we ask for help while using the computer?",
+          "options": [
+            "2. Write any one thing that we should not do while using the computer.",
+            "F. Answer the following."
+          ],
+          "answer": "2. Write any one thing that we should not do while using the computer.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "How should we sit in front of a computer?",
+          "options": [
+            "2. Write any one thing that we should not do while using the computer.",
+            "F. Answer the following.",
+            "1. Write any one thing that we should do while using the computer."
+          ],
+          "answer": "2. Write any one thing that we should not do while using the computer.",
+          "hint": "Think about what you learned in this chapter."
+        },
+        {
+          "type": "mcq",
+          "q": "4. Sharing is a ___ (good/bad) habit.",
+          "options": [
+            "(dry/wet)",
+            "cloth.",
+            "3. Neha wants to clean her computer. She should use a _"
+          ],
+          "answer": "(dry/wet)",
+          "hint": "Read the notes above carefully!"
+        },
+        {
+          "type": "mcq",
+          "q": "2. Akansha is typing on the keyboard. She should press the keys ___",
+          "options": [
+            "(loud/low).",
+            "1. Rishi is playing games on the computer. He should keep the sound.",
+            "E. Select the correct options from the choices given."
+          ],
+          "answer": "(loud/low).",
+          "hint": "Read the notes above carefully!"
+        }
+      ]
+    }
+  ]
+}
