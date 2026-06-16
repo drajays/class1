@@ -67,6 +67,7 @@ body {
 .login-card .mascot-owl {
   position: absolute; right: 12px; bottom: 8px; font-size: 72px;
   animation: wiggle 2.3s ease-in-out infinite; transform-origin: bottom center;
+  pointer-events: none;
 }
 @keyframes wiggle { 0%,100%{transform:rotate(-4deg)} 50%{transform:rotate(5deg)} }
 .brand-logo {

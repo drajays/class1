@@ -9,8 +9,8 @@ const App = {
     }
     this.renderHeroes();
     Parent.init();
-    document.getElementById('btn-switch-hero').addEventListener('click', () => this.go('login'));
-    document.getElementById('btn-daily').addEventListener('click', () => this.claimDaily());
+    document.getElementById('btn-switch-hero')?.addEventListener('click', () => this.go('login'));
+    document.getElementById('btn-daily')?.addEventListener('click', () => this.claimDaily());
     document.getElementById('btn-minigames')?.addEventListener('click', () => this.go('minigames'));
     document.getElementById('btn-shop')?.addEventListener('click', () => this.go('shop'));
     document.getElementById('btn-features')?.addEventListener('click', () => this.go('features'));
@@ -40,8 +40,8 @@ const App = {
         this.go(btn.dataset.go);
       });
     });
-    document.getElementById('tab-notes').addEventListener('click', () => Learn.setMode('notes'));
-    document.getElementById('tab-quiz').addEventListener('click', () => Learn.setMode('quiz'));
+    document.getElementById('tab-notes')?.addEventListener('click', () => Learn.setMode('notes'));
+    document.getElementById('tab-quiz')?.addEventListener('click', () => Learn.setMode('quiz'));
 
     const saved = localStorage.getItem('class1_last_hero');
     if (saved && HEROES.find((h) => h.id === saved)) {
@@ -259,7 +259,7 @@ const App = {
           <div class="badge-name">${b.name}</div>
         </div>`;
     }).join('');
-    const stickers = '🌟🦁🦄🎈🏆🍎📚🔥💎🦋'.split('').map((s, i) => {
+    const stickerEmojis = '🌟🦁🦄🎈🏆🍎📚🔥💎🦋'.split('').map((s, i) => {
       const unlocked = p.stars >= (i + 1) * 2;
       return `
         <div class="sticker-card" style="opacity:${unlocked ? 1 : 0.3}">
@@ -267,15 +267,15 @@ const App = {
         </div>`;
     }).join('');
     const hero = HEROES.find((h) => h.id === this.playerId);
-    const stickers = (p.stickers || []).map((id) => {
+    const shopStickers = (p.stickers || []).map((id) => {
       const item = SHOP_ITEMS.find((i) => i.id === id);
       return item ? `<span class="badge-pill on">${item.emoji} ${item.name}</span>` : '';
     }).join('');
     room.innerHTML = `
-      ${stickers ? `<div class="badge-rack">${stickers}</div>` : ''}
+      ${shopStickers ? `<div class="badge-rack">${shopStickers}</div>` : ''}
       <div class="badge-rack">${badgeRack}</div>
       <h3 style="grid-column:1/-1;margin-bottom:8px;font-weight:800">🏅 All Badges</h3>${badges}
-      <h3 style="grid-column:1/-1;margin:16px 0 8px;font-weight:800">✨ Sticker Collection</h3>${stickers}
+      <h3 style="grid-column:1/-1;margin:16px 0 8px;font-weight:800">✨ Sticker Collection</h3>${stickerEmojis}
       <div class="trophy-summary">
         ${hero.avatar} ${hero.name}<br>
         ${p.coins} coins · ${p.stars} stars · ${chDone} chapters · Lv ${p.level}
@@ -283,4 +283,10 @@ const App = {
   },
 };
 
-document.addEventListener('DOMContentLoaded', () => App.init());
+document.addEventListener('DOMContentLoaded', () => {
+  App.init().catch((err) => {
+    console.error('App init failed:', err);
+    const grid = document.getElementById('hero-grid');
+    if (grid && !grid.innerHTML) App.renderHeroes();
+  });
+});
