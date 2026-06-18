@@ -518,6 +518,66 @@
         { "skill": "pick", "q": "What do you say to pass by someone politely?", "options": ["Excuse me", "Thank you", "Sorry"], "a": "Excuse me", "why": "We say excuse me to pass politely." },
         { "skill": "pick", "q": "Magic words make people feel ___.", "options": ["happy", "sad", "angry"], "a": "happy", "why": "Polite words make everyone happy." }
       ]
+    },
+    {
+      "id": "eng_months",
+      "title": "Months of the Year",
+      "icon": "📆",
+      "concept": "A year has twelve months! It starts with January and ends with December. Your birthday comes in one special month!",
+      "examples": "Jan · Feb · Mar … Dec",
+      "problems": [
+        { "skill": "pick", "q": "How many months are there in a year?", "emoji": "📆", "options": ["twelve", "seven", "ten"], "a": "twelve", "why": "A year has twelve months." },
+        { "skill": "pick", "q": "Which is the first month of the year?", "options": ["January", "December", "June"], "a": "January", "why": "The year starts with January." },
+        { "skill": "pick", "q": "Which is the last month of the year?", "options": ["December", "January", "May"], "a": "December", "why": "The year ends with December." },
+        { "skill": "pick", "q": "Which month comes after January?", "options": ["February", "March", "April"], "a": "February", "why": "After January comes February." },
+        { "skill": "pick", "q": "Which one is a month?", "options": ["August", "Monday", "Apple"], "a": "August", "why": "August is a month of the year." },
+        { "skill": "pick", "q": "Which month comes before December?", "options": ["November", "October", "January"], "a": "November", "why": "Before December comes November." }
+      ]
+    },
+    {
+      "id": "eng_number_words",
+      "title": "Number Words",
+      "icon": "🔢",
+      "concept": "We can write numbers in words too! 1 is one, 2 is two and 3 is three. Let's read our number words!",
+      "examples": "1 one · 2 two · 3 three",
+      "problems": [
+        { "skill": "pick", "q": "How do we write 1 in words?", "emoji": "1️⃣", "options": ["one", "won", "on"], "a": "one", "why": "The number 1 is written as one." },
+        { "skill": "pick", "q": "How do we write 2 in words?", "emoji": "2️⃣", "options": ["two", "to", "too"], "a": "two", "why": "The number 2 is written as two." },
+        { "skill": "pick", "q": "How do we write 3 in words?", "emoji": "3️⃣", "options": ["three", "tree", "free"], "a": "three", "why": "The number 3 is written as three." },
+        { "skill": "pick", "q": "How do we write 5 in words?", "emoji": "5️⃣", "options": ["five", "fave", "fife"], "a": "five", "why": "The number 5 is written as five." },
+        { "skill": "pick", "q": "How many is four?", "options": ["4", "2", "8"], "a": "4", "why": "The word four means 4." },
+        { "skill": "pick", "q": "How do we write 10 in words?", "emoji": "🔟", "options": ["ten", "tan", "tin"], "a": "ten", "why": "The number 10 is written as ten." }
+      ]
+    },
+    {
+      "id": "eng_synonyms",
+      "title": "Same Meaning Words",
+      "icon": "🟰",
+      "concept": "Synonyms are words that mean the same thing! Big and large mean the same. Happy and glad mean the same. Let's match them!",
+      "examples": "big = large · happy = glad",
+      "problems": [
+        { "skill": "pick", "q": "Which word means the same as big?", "options": ["large", "small", "tiny"], "a": "large", "why": "Big and large mean the same thing." },
+        { "skill": "pick", "q": "Which word means the same as happy?", "emoji": "😀", "options": ["glad", "sad", "angry"], "a": "glad", "why": "Happy and glad mean the same thing." },
+        { "skill": "pick", "q": "Which word means the same as fast?", "options": ["quick", "slow", "late"], "a": "quick", "why": "Fast and quick mean the same thing." },
+        { "skill": "pick", "q": "Which word means the same as small?", "options": ["little", "huge", "big"], "a": "little", "why": "Small and little mean the same thing." },
+        { "skill": "pick", "q": "Which word means the same as pretty?", "emoji": "🌸", "options": ["beautiful", "ugly", "dirty"], "a": "beautiful", "why": "Pretty and beautiful mean the same thing." },
+        { "skill": "pick", "q": "Which word means the same as scared?", "options": ["afraid", "brave", "calm"], "a": "afraid", "why": "Scared and afraid mean the same thing." }
+      ]
+    },
+    {
+      "id": "eng_weather",
+      "title": "Weather Words",
+      "icon": "🌦️",
+      "concept": "The weather changes every day! Some days are sunny, some are rainy and some are windy. Let's talk about the weather!",
+      "examples": "☀️ sunny · 🌧️ rainy · 💨 windy",
+      "problems": [
+        { "skill": "pick", "q": "When the sun shines, the day is ___.", "emoji": "☀️", "options": ["sunny", "rainy", "snowy"], "a": "sunny", "why": "When the sun shines it is a sunny day." },
+        { "skill": "pick", "q": "When it rains, the day is ___.", "emoji": "🌧️", "options": ["rainy", "sunny", "windy"], "a": "rainy", "why": "When it rains it is a rainy day." },
+        { "skill": "pick", "q": "When the wind blows hard, it is ___.", "emoji": "💨", "options": ["windy", "sunny", "rainy"], "a": "windy", "why": "When the wind blows it is windy." },
+        { "skill": "pick", "q": "On a rainy day we use an ___.", "emoji": "☂️", "options": ["umbrella", "ice cream", "fan"], "a": "umbrella", "why": "We use an umbrella to stay dry in the rain." },
+        { "skill": "pick", "q": "When snow falls, it is a ___ day.", "emoji": "❄️", "options": ["snowy", "sunny", "hot"], "a": "snowy", "why": "When snow falls it is a snowy day." },
+        { "skill": "pick", "q": "We see clouds in the ___.", "emoji": "☁️", "options": ["sky", "sea", "ground"], "a": "sky", "why": "Clouds float in the sky." }
+      ]
     }
   ]
 }

@@ -101,6 +101,10 @@ These are touched by both. Make **small, localized** edits and log them below.
 - ✅ Added 4 chapters → now **34 chapters / 213 problems**: He She It They (personal
   pronouns), Am Is Are, Has and Have (book), Magic Manners. `english_book.json` only.
 
+### English session — 2026-06-18 (UPDATE 8: vocab batch 5)
+- ✅ Added 4 chapters → now **38 chapters / 237 problems**: Months of the Year,
+  Number Words (1-10 in words), Same Meaning Words (synonyms), Weather Words.
+
 ### Math session — 2026-06-18
 - ✅ Built `docs/js/mathbook.js` — `MathBook` guided-solver engine: gated chapter
   picker, concept intro, 5 interactive widgets (count, crossout, add, numberline,
