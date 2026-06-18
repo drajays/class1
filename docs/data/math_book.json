@@ -1,0 +1,78 @@
+{
+  "chapters": [
+    {
+      "id": "mb_counting",
+      "title": "Counting & Number Sense",
+      "icon": "🔢",
+      "concept": "We count things one by one. The last number we say tells us how many there are!",
+      "problems": [
+        { "skill": "count", "q": "How many stars?", "emoji": "⭐", "n": 4, "a": 4 },
+        { "skill": "count", "q": "How many apples?", "emoji": "🍎", "n": 6, "a": 6 },
+        { "skill": "count", "q": "How many balloons?", "emoji": "🎈", "n": 8, "a": 8 },
+        { "skill": "pick", "q": "What comes AFTER 6?", "a": 7, "options": [5, 7, 8, 6], "why": "Count up from 6: the next number is 7." },
+        { "skill": "pick", "q": "What comes BEFORE 9?", "a": 8, "options": [8, 10, 7, 9], "why": "Count back from 9: the number before is 8." },
+        { "skill": "pick", "q": "What comes BETWEEN 4 and 6?", "a": 5, "options": [5, 7, 3, 6], "why": "4 … then 5 … then 6. The middle one is 5." },
+        { "skill": "pick", "q": "Missing number: 1, 2, _, 4, 5", "a": 3, "options": [3, 6, 2, 9], "why": "Count in order: 1, 2, 3, 4, 5. The missing one is 3." },
+        { "skill": "pick", "q": "Skip count by 2: 2, 4, 6, _", "a": 8, "options": [7, 8, 10, 9], "why": "Add 2 each time: 6 + 2 = 8." },
+        { "skill": "pick", "q": "Skip count by 5: 5, 10, _", "a": 15, "options": [12, 15, 20, 11], "why": "Add 5 each time: 10 + 5 = 15." },
+        { "skill": "pick", "q": "Skip count by 10: 10, 20, _", "a": 30, "options": [25, 30, 40, 21], "why": "Add 10 each time: 20 + 10 = 30." }
+      ]
+    },
+    {
+      "id": "mb_bonds",
+      "title": "Number Bonds & Make 10",
+      "icon": "🤝",
+      "concept": "Number bonds are two number friends that join to make a number. The friends of 10 make a full ten!",
+      "problems": [
+        { "skill": "pick", "q": "7 + ? = 10", "a": 3, "options": [2, 3, 4, 5], "why": "7 needs 3 more to reach 10. 7 + 3 = 10." },
+        { "skill": "pick", "q": "6 + ? = 10", "a": 4, "options": [3, 4, 5, 6], "why": "6 and 4 are friends of 10. 6 + 4 = 10." },
+        { "skill": "pick", "q": "8 + ? = 10", "a": 2, "options": [1, 2, 3, 4], "why": "8 and 2 make 10. 8 + 2 = 10." },
+        { "skill": "pick", "q": "Number bond of 5: 4 + ? = 5", "a": 1, "options": [1, 2, 3, 0], "why": "4 and 1 make 5. 4 + 1 = 5." },
+        { "skill": "pick", "q": "Number bond of 5: 2 + ? = 5", "a": 3, "options": [2, 3, 4, 1], "why": "2 and 3 make 5. 2 + 3 = 5." },
+        { "skill": "pick", "q": "Number bond of 8: 5 + ? = 8", "a": 3, "options": [2, 3, 4, 5], "why": "5 and 3 make 8. 5 + 3 = 8." }
+      ]
+    },
+    {
+      "id": "mb_addition",
+      "title": "Addition",
+      "icon": "➕",
+      "concept": "Addition means putting groups together to find the total. The answer is called the sum!",
+      "problems": [
+        { "skill": "add", "q": "3 + 2 = ?", "x": 3, "y": 2, "emoji": "🍎", "a": 5 },
+        { "skill": "add", "q": "4 + 4 = ?", "x": 4, "y": 4, "emoji": "🐶", "a": 8 },
+        { "skill": "add", "q": "5 + 3 = ?", "x": 5, "y": 3, "emoji": "⭐", "a": 8 },
+        { "skill": "add", "q": "6 + 2 = ?", "x": 6, "y": 2, "emoji": "🎈", "a": 8 },
+        { "skill": "add", "q": "2 + 7 = ?", "x": 2, "y": 7, "emoji": "🍪", "a": 9 },
+        { "skill": "add", "q": "5 + 5 = ?", "x": 5, "y": 5, "emoji": "🌟", "a": 10 }
+      ]
+    },
+    {
+      "id": "mb_subtraction",
+      "title": "Subtraction",
+      "icon": "➖",
+      "concept": "Subtraction means taking away. Cross out the objects you take away, then count what is left — that is the difference!",
+      "problems": [
+        { "skill": "crossout", "q": "Cross out to subtract: 7 − 3 = ?", "n": 7, "take": 3, "emoji": "⭐", "a": 4 },
+        { "skill": "crossout", "q": "Cross out to subtract: 8 − 4 = ?", "n": 8, "take": 4, "emoji": "🍎", "a": 4 },
+        { "skill": "crossout", "q": "Cross out to subtract: 6 − 2 = ?", "n": 6, "take": 2, "emoji": "🎈", "a": 4 },
+        { "skill": "crossout", "q": "Cross out to subtract: 9 − 4 = ?", "n": 9, "take": 4, "emoji": "🍪", "a": 5 },
+        { "skill": "crossout", "q": "Cross out to subtract: 10 − 3 = ?", "n": 10, "take": 3, "emoji": "🐟", "a": 7 },
+        { "skill": "crossout", "q": "Cross out to subtract: 10 − 8 = ?", "n": 10, "take": 8, "emoji": "🌟", "a": 2 }
+      ]
+    },
+    {
+      "id": "mb_addsub",
+      "title": "Add & Subtract Together",
+      "icon": "🧮",
+      "concept": "Use what you know! Hop forward on the number line to add, and hop back to subtract.",
+      "problems": [
+        { "skill": "numberline", "q": "12 + 3 = ?", "start": 12, "op": "+", "step": 3, "a": 15 },
+        { "skill": "numberline", "q": "15 − 5 = ?", "start": 15, "op": "-", "step": 5, "a": 10 },
+        { "skill": "numberline", "q": "16 − 6 = ?", "start": 16, "op": "-", "step": 6, "a": 10 },
+        { "skill": "numberline", "q": "10 + 7 = ?", "start": 10, "op": "+", "step": 7, "a": 17 },
+        { "skill": "numberline", "q": "18 − 8 = ?", "start": 18, "op": "-", "step": 8, "a": 10 },
+        { "skill": "numberline", "q": "13 + 5 = ?", "start": 13, "op": "+", "step": 5, "a": 18 }
+      ]
+    }
+  ]
+}

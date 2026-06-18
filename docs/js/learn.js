@@ -43,7 +43,8 @@ const Learn = {
 
   showHome() {
     const grid = document.getElementById('subject-grid');
-    const catalog = this.catalog?.subjects || [];
+    // Maths has its own learning-first "Math Book" path, so keep it out of this grid.
+    const catalog = (this.catalog?.subjects || []).filter((s) => s.id !== 'maths');
     const extras = EXTRA_SUBJECTS.map((s) => ({
       id: s.id, name: s.name, emoji: s.emoji, chapterCount: 0,
     }));

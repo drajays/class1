@@ -898,3 +898,115 @@ h1 { font-size: clamp(1.5rem, 4vw, 2rem); color: var(--primary); font-weight: 80
 .ward-item small { font-size: .62rem; font-weight: 800; color: var(--muted); }
 .ward-item.on { outline: 4px solid var(--green); background: #effff6; }
 .detail-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* ============================================================
+   📘 MATH BOOK — guided solver
+   ============================================================ */
+.mb-concept {
+  background: linear-gradient(135deg, #fff, #eafff5); border: 3px solid #b9f3da;
+  border-radius: 22px; padding: 24px 18px; text-align: center; box-shadow: var(--shadow);
+}
+.mb-concept-icon { font-size: 60px; }
+.mb-concept h2 { color: var(--ink); margin: 6px 0 10px; }
+.mb-concept p { color: var(--muted); font-weight: 700; font-size: 1rem; margin-bottom: 18px; }
+.mb-concept .btn-fun { width: 100%; }
+
+.mb-count { text-align: center; font-weight: 800; color: var(--muted); margin: 4px 0 10px; }
+.mb-problem {
+  background: var(--card); border: 3px solid #fff; border-radius: 22px; padding: 18px 14px;
+  box-shadow: var(--shadow);
+}
+.mb-q { font-size: 1.35rem; font-weight: 800; color: var(--ink); text-align: center; margin-bottom: 14px; }
+.mb-read { border: none; background: #eef; border-radius: 10px; font-size: 1rem; padding: 4px 8px; cursor: pointer; }
+
+.mb-visual { min-height: 70px; display: grid; place-items: center; margin-bottom: 16px; }
+.mb-objects { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; max-width: 360px; }
+.mb-obj { font-size: 38px; line-height: 1; position: relative; transition: transform .15s; }
+.mb-obj.crossed { opacity: .55; }
+.mb-obj.crossed::after {
+  content: "✖"; position: absolute; inset: 0; display: grid; place-items: center;
+  color: #ff3b6b; font-size: 34px; font-weight: 900;
+}
+.mb-add { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.mb-plus { font-size: 26px; }
+
+.mb-numline { display: flex; gap: 0; justify-content: center; flex-wrap: wrap; max-width: 100%; }
+.mb-tick {
+  min-width: 34px; height: 44px; display: grid; place-items: center; font-weight: 800;
+  border-top: 4px solid #cdd; color: var(--muted); font-size: .95rem; position: relative;
+}
+.mb-tick.here { color: #fff; }
+.mb-tick.here::before {
+  content: "🐶"; position: absolute; top: -26px; font-size: 22px;
+}
+.mb-tick.here { background: linear-gradient(135deg, #ff5ea8, #ff8a00); border-radius: 10px; }
+
+.mb-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 6px; }
+.mb-opt {
+  background: #fff; border: 3px solid #e8e6ff; border-radius: 16px; padding: 18px;
+  font-size: 1.6rem; font-weight: 800; color: var(--ink); cursor: pointer; font-family: inherit;
+  transition: transform .12s;
+}
+.mb-opt:active { transform: scale(.96); }
+.mb-opt.correct { background: linear-gradient(135deg, #15c39a, #8ee000); color: #063c30; border-color: transparent; }
+.mb-opt.wrong { background: #ffe0e6; border-color: #ff9bb3; color: #a4145f; }
+.mb-opt.disabled-opt { opacity: .55; }
+.mb-opt.hint-glow { animation: glow 1s ease-in-out infinite; border-color: var(--yellow); }
+@keyframes glow { 0%,100% { box-shadow: 0 0 0 0 rgba(255,209,102,.7); } 50% { box-shadow: 0 0 0 8px rgba(255,209,102,0); } }
+
+.mb-help {
+  display: block; margin: 14px auto 0; background: #fff7d6; border: 2px solid var(--yellow);
+  border-radius: 14px; padding: 10px 18px; font-weight: 800; color: #795000; cursor: pointer; font-family: inherit;
+}
+.mb-steps { margin-top: 14px; }
+.mb-step {
+  display: flex; align-items: center; gap: 10px; background: #f3f7ff; border-radius: 14px;
+  padding: 10px 12px; margin-top: 8px; font-weight: 700; color: var(--ink); text-align: left;
+}
+.mb-step-num {
+  flex: 0 0 28px; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--primary); color: #fff; font-weight: 800;
+}
+.mb-retry-tip { text-align: center; font-weight: 800; color: var(--primary); margin-top: 12px; }
+
+/* ============================================================
+   📱💻 RESPONSIVE — phone → iPad → MacBook (Edge)
+   ============================================================ */
+/* Prevent grid blow-out / right-edge clipping on all card grids */
+.mb-options, .puppy-yard, .play-grid, .big-home-actions, .subject-grid,
+.shop-pup-row, .detail-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.play-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.shop-pup-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+/* Keep reading/answer areas comfortable and centered */
+.mb-concept, .mb-problem { max-width: 640px; margin-left: auto; margin-right: auto; }
+.mb-options { max-width: 520px; margin-left: auto; margin-right: auto; }
+.welcome-pups { max-width: 520px; margin-left: auto; margin-right: auto; }
+
+/* Tablet / iPad and up */
+@media (min-width: 720px) {
+  .screen { padding: 22px 28px; }
+  .puppy-yard { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .big-home-actions { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .big-home-actions .btn-fun:first-child { grid-column: auto; }
+  .play-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .play-card.feature { grid-column: auto; }
+  .subject-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .level-picker { max-width: 760px; margin-left: auto; margin-right: auto; }
+  .park-banner { font-size: 1rem; }
+  .pup-photo-wrap { width: 150px; }
+}
+
+/* MacBook / large iPad landscape */
+@media (min-width: 1080px) {
+  .subject-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .mall-grid { grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); }
+  .puppy-yard { gap: 18px; }
+  .pup-photo-wrap { width: 160px; }
+  /* two-up layout for the park: puppies left, actions right */
+  .big-home-actions { max-width: 720px; margin-left: auto; margin-right: auto; }
+}
+
+/* Tall-finger safety: never let a single object row overflow */
+.mb-objects { max-width: 100%; }
+.mb-numline { max-width: 100%; overflow-x: auto; }

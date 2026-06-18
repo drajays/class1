@@ -5,6 +5,7 @@ const App = {
     Sounds.init();
     Mall.build();
     await Learn.init();
+    await MathBook.load();
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register(AppConfig.url('sw.js')).catch(() => {});
     }
@@ -94,7 +95,7 @@ const App = {
     if (screen === 'mall') { Mall.render(); this.refreshStats(); Speech.navSay('Welcome to the Puppy Mall! Pick a puppy and buy treats!'); }
     if (screen === 'puppy') Puppies.renderDetail();
     if (screen === 'minigames') MiniGames.showHub();
-    if (screen === 'math') { this.showMathLevels(); Speech.navSay(NAV_PROMPTS.math); }
+    if (screen === 'math') { MathBook.open(); }
     if (screen === 'english') { this.showEnglishLevels(); Speech.navSay(NAV_PROMPTS.english); }
   },
 
@@ -126,27 +127,8 @@ const App = {
     setText('stat-coins', `🪙 ${p.coins}`);
     setText('stat-bones', `🦴 ${p.bones || 0}`);
     setText('mall-coins', `🪙 ${p.coins}`);
-    setText('math-progress', 'Levels: ' + Store.countCompletedLevels(this.playerId, 'math', MATH_LEVELS.length));
+    setText('math-progress', 'Lessons: ' + MathBook.progressText());
     setText('english-progress', 'Levels: ' + Store.countCompletedLevels(this.playerId, 'english', ENGLISH_LEVELS.length));
-  },
-
-  showMathLevels() {
-    document.getElementById('math-game').classList.add('hidden');
-    document.getElementById('math-level-picker').classList.remove('hidden');
-    const picker = document.getElementById('math-level-picker');
-    picker.innerHTML = MATH_LEVELS.map((lvl, i) => {
-      const stars = Store.getLevelStars(this.playerId, 'math', lvl.id);
-      const locked = i > 0 && !Store.getLevelStars(this.playerId, 'math', MATH_LEVELS[i - 1].id);
-      return `
-        <button class="level-card ${locked ? 'locked' : ''} ${stars ? 'done' : ''}" data-id="${lvl.id}">
-          <span class="level-emoji">${lvl.emoji}</span>
-          <div class="level-info"><h3>${lvl.title}</h3><p>${lvl.desc}</p></div>
-          <span class="level-stars">${stars ? '⭐'.repeat(stars) : locked ? '🔒' : '▶️'}</span>
-        </button>`;
-    }).join('');
-    picker.querySelectorAll('.level-card:not(.locked)').forEach((card) => {
-      card.addEventListener('click', () => { Sounds.tap(); MathGame.start(card.dataset.id, this.playerId); });
-    });
   },
 
   showEnglishLevels() {
