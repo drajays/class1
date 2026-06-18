@@ -398,6 +398,66 @@
         { "skill": "pick", "q": "What sound does a sheep make?", "emoji": "🐑", "options": ["baa", "meow", "moo"], "a": "baa", "why": "A sheep says baa." },
         { "skill": "pick", "q": "What sound does a lion make?", "emoji": "🦁", "options": ["roar", "woof", "quack"], "a": "roar", "why": "A lion roars." }
       ]
+    },
+    {
+      "id": "eng_fruits_veg",
+      "title": "Fruits and Vegetables",
+      "icon": "🍎",
+      "concept": "We eat yummy fruits and vegetables to stay strong! An apple and a banana are fruits. A carrot and a potato are vegetables. Let's sort them!",
+      "examples": "🍎🍌 fruits · 🥕🥔 vegetables",
+      "problems": [
+        { "skill": "pick", "q": "Is an apple a fruit or a vegetable?", "emoji": "🍎", "options": ["fruit", "vegetable"], "a": "fruit", "why": "An apple grows on a tree and is a fruit." },
+        { "skill": "pick", "q": "Is a carrot a fruit or a vegetable?", "emoji": "🥕", "options": ["vegetable", "fruit"], "a": "vegetable", "why": "A carrot grows under the ground and is a vegetable." },
+        { "skill": "pick", "q": "Which one is a fruit?", "options": ["banana", "potato", "onion"], "a": "banana", "why": "A banana is a fruit." },
+        { "skill": "pick", "q": "Which one is a vegetable?", "options": ["tomato", "mango", "grape"], "a": "tomato", "why": "A tomato is a vegetable." },
+        { "skill": "pick", "q": "Which fruit is yellow and long?", "emoji": "🍌", "options": ["banana", "apple", "grape"], "a": "banana", "why": "A banana is yellow and long." },
+        { "skill": "pick", "q": "We eat fruits and vegetables to stay ___.", "options": ["healthy", "sleepy", "sad"], "a": "healthy", "why": "Fruits and vegetables keep us healthy and strong." }
+      ]
+    },
+    {
+      "id": "eng_body",
+      "title": "My Body",
+      "icon": "🧍",
+      "concept": "Our body has many parts! We see with our eyes, hear with our ears and smell with our nose. Let's name the parts!",
+      "examples": "👁️ eyes · 👂 ears · 👃 nose",
+      "problems": [
+        { "skill": "pick", "q": "We see with our ___?", "emoji": "👁️", "options": ["eyes", "ears", "feet"], "a": "eyes", "why": "We see with our eyes." },
+        { "skill": "pick", "q": "We hear with our ___?", "emoji": "👂", "options": ["ears", "nose", "hands"], "a": "ears", "why": "We hear with our ears." },
+        { "skill": "pick", "q": "We smell with our ___?", "emoji": "👃", "options": ["nose", "eyes", "feet"], "a": "nose", "why": "We smell with our nose." },
+        { "skill": "pick", "q": "We walk with our ___?", "emoji": "🦶", "options": ["feet", "ears", "eyes"], "a": "feet", "why": "We walk with our feet." },
+        { "skill": "pick", "q": "We taste with our ___?", "emoji": "👅", "options": ["tongue", "ears", "nose"], "a": "tongue", "why": "We taste with our tongue." },
+        { "skill": "pick", "q": "We clap with our ___?", "emoji": "👏", "options": ["hands", "feet", "nose"], "a": "hands", "why": "We clap with our hands." }
+      ]
+    },
+    {
+      "id": "eng_animal_homes",
+      "title": "Animal Homes",
+      "icon": "🏠",
+      "concept": "Every animal has a home! A bird lives in a nest, a bee lives in a hive and a lion lives in a den. Let's find their homes!",
+      "examples": "🐦 nest · 🐝 hive · 🦁 den",
+      "problems": [
+        { "skill": "pick", "q": "Where does a bird live?", "emoji": "🐦", "options": ["nest", "kennel", "web"], "a": "nest", "why": "A bird lives in a nest." },
+        { "skill": "pick", "q": "Where does a bee live?", "emoji": "🐝", "options": ["hive", "nest", "den"], "a": "hive", "why": "A bee lives in a hive." },
+        { "skill": "pick", "q": "Where does a spider live?", "emoji": "🕷️", "options": ["web", "nest", "hive"], "a": "web", "why": "A spider lives in a web." },
+        { "skill": "pick", "q": "Where does a lion live?", "emoji": "🦁", "options": ["den", "nest", "hive"], "a": "den", "why": "A lion lives in a den." },
+        { "skill": "pick", "q": "Where does a horse live?", "emoji": "🐴", "options": ["stable", "nest", "web"], "a": "stable", "why": "A horse lives in a stable." },
+        { "skill": "pick", "q": "Where does a dog live?", "emoji": "🐶", "options": ["kennel", "nest", "hive"], "a": "kennel", "why": "A dog lives in a kennel." }
+      ]
+    },
+    {
+      "id": "eng_facts_opinions",
+      "title": "Facts and Opinions",
+      "icon": "💭",
+      "concept": "A fact is something that is always true and can be checked. An opinion is what someone feels or likes. Let's tell them apart!",
+      "examples": "Fact: The sun is hot. · Opinion: Ice cream is the best!",
+      "problems": [
+        { "skill": "pick", "q": "Which one is a fact?", "options": ["The sun is hot.", "Ice cream is yummy."], "a": "The sun is hot.", "why": "The sun being hot is always true, so it is a fact." },
+        { "skill": "pick", "q": "Which one is an opinion?", "options": ["I think dogs are the best!", "A dog has four legs."], "a": "I think dogs are the best!", "why": "It is what someone feels, so it is an opinion." },
+        { "skill": "pick", "q": "Water is wet. Is this a fact or an opinion?", "emoji": "💧", "options": ["fact", "opinion"], "a": "fact", "why": "Water is always wet, so it is a fact." },
+        { "skill": "pick", "q": "Pizza is the tastiest food. Is this a fact or an opinion?", "emoji": "🍕", "options": ["opinion", "fact"], "a": "opinion", "why": "Tastiest is what someone likes, so it is an opinion." },
+        { "skill": "pick", "q": "A week has seven days. Is this a fact or an opinion?", "emoji": "📅", "options": ["fact", "opinion"], "a": "fact", "why": "A week always has seven days, so it is a fact." },
+        { "skill": "pick", "q": "Blue is the prettiest colour. Is this a fact or an opinion?", "emoji": "🔵", "options": ["opinion", "fact"], "a": "opinion", "why": "Prettiest is a feeling, so it is an opinion." }
+      ]
     }
   ]
 }
