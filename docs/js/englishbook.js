@@ -82,22 +82,22 @@ const EnglishBook = {
     picker.classList.remove('hidden');
     const chs = this.data.chapters;
     let lastUnit = null;
+    // All lessons are always open — pick any one, in any order.
     picker.innerHTML = chs.map((c, i) => {
       const stars = Store.getLevelStars(this.playerId, 'english', c.id);
-      const locked = i > 0 && !Store.getLevelStars(this.playerId, 'english', chs[i - 1].id);
       let header = '';
       if (c.unit && c.unit !== lastUnit) {
         lastUnit = c.unit;
         header = `<h2 class="eb-unit">${c.unit}</h2>`;
       }
       return `${header}
-        <button class="level-card ${locked ? 'locked' : ''} ${stars ? 'done' : ''}" data-id="${c.id}">
+        <button class="level-card ${stars ? 'done' : ''}" data-id="${c.id}">
           <span class="level-emoji">${c.icon}</span>
           <div class="level-info"><h3>${i + 1}. ${c.title}</h3><p>${c.problems.length} activities</p></div>
-          <span class="level-stars">${stars ? '⭐'.repeat(stars) : locked ? '🔒' : '▶️'}</span>
+          <span class="level-stars">${stars ? '⭐'.repeat(stars) : '▶️'}</span>
         </button>`;
     }).join('');
-    picker.querySelectorAll('.level-card:not(.locked)').forEach((card) => {
+    picker.querySelectorAll('.level-card').forEach((card) => {
       card.addEventListener('click', () => { Sounds.tap(); this.startChapter(card.dataset.id); });
     });
     Speech.navSay('Pick an English lesson! Tap any word to hear it. We learn step by step.');

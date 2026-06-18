@@ -79,20 +79,20 @@ const Learn = {
     document.getElementById('chapters-title').textContent = `${sub.emoji} ${sub.name}`;
     const data = await this.loadSubject(id);
     const list = document.getElementById('chapter-list');
-    list.innerHTML = data.chapters.map((ch, i) => {
+    // All chapters always open — pick any one, in any order.
+    list.innerHTML = data.chapters.map((ch) => {
       const stars = Store.getChapterStars(this.playerId, ch.id);
-      const locked = i > 0 && !Store.getChapterStars(this.playerId, data.chapters[i - 1].id);
       return `
-        <button class="level-card ${locked ? 'locked' : ''} ${stars ? 'done' : ''}" data-id="${ch.id}">
+        <button class="level-card ${stars ? 'done' : ''}" data-id="${ch.id}">
           <span class="level-emoji">📄</span>
           <div class="level-info">
             <h3>${ch.title}</h3>
             <p>${ch.notes.length} notes · ${ch.questions.length} questions</p>
           </div>
-          <span class="level-stars">${stars ? '⭐'.repeat(stars) : locked ? '🔒' : '▶️'}</span>
+          <span class="level-stars">${stars ? '⭐'.repeat(stars) : '▶️'}</span>
         </button>`;
     }).join('');
-    list.querySelectorAll('.level-card:not(.locked)').forEach((card) => {
+    list.querySelectorAll('.level-card').forEach((card) => {
       card.addEventListener('click', () => this.openChapter(card.dataset.id));
     });
     App.go('chapters');

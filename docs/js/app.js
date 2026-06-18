@@ -135,17 +135,16 @@ const App = {
     document.getElementById('english-game').classList.add('hidden');
     document.getElementById('english-level-picker').classList.remove('hidden');
     const picker = document.getElementById('english-level-picker');
-    picker.innerHTML = ENGLISH_LEVELS.map((lvl, i) => {
+    picker.innerHTML = ENGLISH_LEVELS.map((lvl) => {
       const stars = Store.getLevelStars(this.playerId, 'english', lvl.id);
-      const locked = i > 0 && !Store.getLevelStars(this.playerId, 'english', ENGLISH_LEVELS[i - 1].id);
       return `
-        <button class="level-card ${locked ? 'locked' : ''} ${stars ? 'done' : ''}" data-id="${lvl.id}">
+        <button class="level-card ${stars ? 'done' : ''}" data-id="${lvl.id}">
           <span class="level-emoji">${lvl.emoji}</span>
           <div class="level-info"><h3>${lvl.title}</h3><p>${lvl.desc}</p></div>
-          <span class="level-stars">${stars ? '⭐'.repeat(stars) : locked ? '🔒' : '▶️'}</span>
+          <span class="level-stars">${stars ? '⭐'.repeat(stars) : '▶️'}</span>
         </button>`;
     }).join('');
-    picker.querySelectorAll('.level-card:not(.locked)').forEach((card) => {
+    picker.querySelectorAll('.level-card').forEach((card) => {
       card.addEventListener('click', () => { Sounds.tap(); EnglishGame.start(card.dataset.id, this.playerId); });
     });
   },
