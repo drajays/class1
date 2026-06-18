@@ -3,29 +3,29 @@ const App = {
 
   async init() {
     Sounds.init();
+    Mall.build();
     await Learn.init();
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register(AppConfig.url('sw.js')).catch(() => {});
     }
-    this.renderHeroes();
+    this.renderWelcomePups();
     Parent.init();
-    document.getElementById('btn-switch-hero')?.addEventListener('click', () => this.go('login'));
+
+    document.getElementById('btn-start')?.addEventListener('click', () => { Sounds.tap(); this.selectPlayer('advaita'); });
+    document.getElementById('btn-play')?.addEventListener('click', () => { Sounds.tap(); this.go('play'); });
+    document.getElementById('btn-mall')?.addEventListener('click', () => { Sounds.tap(); this.go('mall'); });
     document.getElementById('btn-daily')?.addEventListener('click', () => this.claimDaily());
-    document.getElementById('btn-minigames')?.addEventListener('click', () => this.go('minigames'));
-    document.getElementById('btn-shop')?.addEventListener('click', () => this.go('shop'));
-    document.getElementById('btn-features')?.addEventListener('click', () => this.go('features'));
-    document.getElementById('btn-companion')?.addEventListener('click', () => this.go('companion'));
-    document.getElementById('btn-streak-chest')?.addEventListener('click', () => this.showStreakChest());
-    document.getElementById('hub-back')?.addEventListener('click', () => this.go('home'));
-    document.getElementById('quest-back')?.addEventListener('click', () => {
-      if (QuickQuest.subjectId) SubjectHub.open(QuickQuest.subjectId);
-      else App.go('home');
-    });
     document.getElementById('btn-sound')?.addEventListener('click', () => {
       const on = Sounds.toggle();
       Rewards.showToast(on ? '🔊 Sounds on!' : '🔇 Sounds off');
     });
     document.getElementById('minigame-back')?.addEventListener('click', () => MiniGames.back());
+    document.getElementById('hub-back')?.addEventListener('click', () => this.go('play'));
+    document.getElementById('quest-back')?.addEventListener('click', () => {
+      if (QuickQuest.subjectId) SubjectHub.open(QuickQuest.subjectId);
+      else this.go('play');
+    });
+
     document.querySelectorAll('[data-back]').forEach((btn) => {
       btn.addEventListener('click', () => {
         Sounds.tap();
@@ -34,81 +34,32 @@ const App = {
         else this.go(dest);
       });
     });
-    document.querySelectorAll('.world-btn, .btn-fun[data-go]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        Sounds.tap();
-        this.go(btn.dataset.go);
-      });
+    document.querySelectorAll('[data-go]').forEach((btn) => {
+      btn.addEventListener('click', () => { Sounds.tap(); this.go(btn.dataset.go); });
     });
     document.getElementById('tab-notes')?.addEventListener('click', () => Learn.setMode('notes'));
     document.getElementById('tab-quiz')?.addEventListener('click', () => Learn.setMode('quiz'));
 
-    const saved = localStorage.getItem('class1_last_hero');
-    if (saved && HEROES.find((h) => h.id === saved)) {
-      this.selectHero(saved, true);
-    }
+    // Auto-resume Advaita (single player)
+    this.selectPlayer('advaita', true);
   },
 
-  renderHeroes() {
-    const grid = document.getElementById('hero-grid');
-    grid.innerHTML = HEROES.map((h) => `
-      <button class="hero-btn" data-id="${h.id}">
-        <span class="avatar">${h.avatar}</span>
-        <span class="name">${h.name}</span>
-        <span class="tag">Tap to play!</span>
-      </button>
-    `).join('');
-    grid.querySelectorAll('.hero-btn').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        Sounds.tap();
-        this.selectHero(btn.dataset.id);
-      });
-    });
-    Speech.navSay('Pick your hero! Tap a big picture to start!');
+  renderWelcomePups() {
+    const el = document.getElementById('welcome-pups');
+    if (!el) return;
+    el.innerHTML = PUPPIES.map((d) =>
+      `<div class="welcome-pup"><img src="${AppConfig.url(d.photo)}" alt="${d.name}"><span>${d.name}</span></div>`
+    ).join('');
   },
 
-  selectHero(id, silent) {
+  selectPlayer(id, silent) {
     this.playerId = id;
     Learn.playerId = id;
-    localStorage.setItem('class1_last_hero', id);
     Store.getPlayer(id);
-    const login = Store.recordLogin(id);
-    const p = Store.getPlayer(id);
-
-    if (!p.pet?.type) {
-      this.go('pet-adopt');
-      return;
-    }
-
+    Store.ensurePuppies(id);
+    Store.recordLogin(id);
     this.go('home');
-    this.refreshStats();
-
-    if (!silent) {
-      if (login.chest) this.showStreakChest();
-      const hero = HEROES.find((h) => h.id === id);
-      const msgs = [
-        `Hi ${hero.name}! Tap a subject or mini games!`,
-        `Hey ${hero.name}! Feed your pet after learning!`,
-        `${hero.name}, your rocket is waiting on the journey map!`,
-        `Go ${hero.name}! 8 fun mini games ready for you!`,
-      ];
-      document.getElementById('welcome-msg').textContent = msgs[Math.floor(Math.random() * msgs.length)];
-      Speech.navSay(NAV_PROMPTS.home);
-    }
-  },
-
-  showStreakChest() {
-    const result = Store.claimStreakChest(this.playerId);
-    if (result.ok) {
-      Sounds.chest();
-      Rewards.confetti(50);
-      Rewards.showPopup({
-        emoji: '📦',
-        title: 'Streak Chest!',
-        text: result.msg,
-        onOk: () => this.refreshStats(),
-      });
-    }
+    if (!silent) Speech.navSay('Welcome to Puppy Park! Your puppies missed you!');
   },
 
   go(screen) {
@@ -116,36 +67,35 @@ const App = {
     const map = {
       login: 'screen-login',
       home: 'screen-home',
-      'pet-adopt': 'screen-pet-adopt',
-      companion: 'screen-companion',
+      play: 'screen-play',
+      mall: 'screen-mall',
+      puppy: 'screen-puppy',
       minigames: 'screen-minigames',
       'subject-hub': 'screen-subject-hub',
       'quick-quest': 'screen-quick-quest',
-      shop: 'screen-shop',
-      features: 'screen-features',
       chapters: 'screen-chapters',
       chapter: 'screen-chapter',
       math: 'screen-math',
       english: 'screen-english',
-      trophy: 'screen-trophy',
     };
     document.getElementById(map[screen]).classList.add('active');
+    window.scrollTo(0, 0);
 
     if (screen === 'home') {
-      Learn.playerId = this.playerId;
-      Learn.showHome();
-      Pet.renderHome();
+      const fresh = Puppies.tick();
+      Puppies.renderPark();
       this.refreshStats();
-      Journey.render();
+      if (fresh.length) {
+        const names = fresh.map((fid) => PUPPIES.find((d) => d.id === fid)?.name).join(' & ');
+        setTimeout(() => Rewards.showToast(`🐶 ${names} ${fresh.length === 1 ? 'has' : 'have'} a new wish!`), 600);
+      }
     }
-    if (screen === 'pet-adopt') Pet.renderAdopt();
-    if (screen === 'companion') { Pet.renderLounge(); Speech.navSay(NAV_PROMPTS.pet); }
+    if (screen === 'play') { Learn.playerId = this.playerId; Learn.showHome(); this.refreshStats(); Speech.navSay('Pick something to play and earn coins!'); }
+    if (screen === 'mall') { Mall.render(); this.refreshStats(); Speech.navSay('Welcome to the Puppy Mall! Pick a puppy and buy treats!'); }
+    if (screen === 'puppy') Puppies.renderDetail();
     if (screen === 'minigames') MiniGames.showHub();
-    if (screen === 'shop') Shop.render();
-    if (screen === 'features') Features.render();
     if (screen === 'math') { this.showMathLevels(); Speech.navSay(NAV_PROMPTS.math); }
     if (screen === 'english') { this.showEnglishLevels(); Speech.navSay(NAV_PROMPTS.english); }
-    if (screen === 'trophy') this.showTrophyRoom();
   },
 
   claimDaily() {
@@ -155,12 +105,11 @@ const App = {
     if (result.ok) {
       Sounds.chest();
       Rewards.confetti(35);
-      Pet.onLessonComplete(this.playerId);
       Rewards.showPopup({
         emoji: '🎁',
-        title: 'Daily Challenge!',
+        title: 'Daily Gift!',
         text: result.msg,
-        onOk: () => { this.refreshStats(); Pet.renderHome(); },
+        onOk: () => { this.refreshStats(); Puppies.renderPark(); },
       });
     } else {
       Rewards.showToast(result.msg);
@@ -171,26 +120,14 @@ const App = {
     if (!this.playerId) return;
     const p = Store.getPlayer(this.playerId);
     const hero = HEROES.find((h) => h.id === this.playerId);
-    document.getElementById('player-chip').textContent = `${hero.avatar} ${hero.name}`;
-    document.getElementById('stat-coins').textContent = `🪙 ${p.coins}`;
-    document.getElementById('stat-stars').textContent = `⭐ ${p.stars}`;
-    document.getElementById('stat-streak').textContent = `🔥 ${p.loginStreak || p.streak || 0}`;
-    document.getElementById('stat-level').textContent = `Lv ${p.level}`;
-    document.getElementById('stat-xp').textContent = `⚡ ${p.xp || 0} XP`;
-    const xp = Store.xpProgress(p);
-    const bar = document.getElementById('xp-bar');
-    if (bar) bar.style.width = `${xp.pct}%`;
-    const needEl = document.getElementById('xp-need');
-    if (needEl) needEl.textContent = `${xp.need - xp.current} XP to next level`;
-    document.getElementById('math-progress').textContent =
-      'Arcade: ' + Store.countCompletedLevels(this.playerId, 'math', MATH_LEVELS.length);
-    document.getElementById('english-progress').textContent =
-      'Arcade: ' + Store.countCompletedLevels(this.playerId, 'english', ENGLISH_LEVELS.length);
-    const chestBtn = document.getElementById('btn-streak-chest');
-    if (chestBtn) {
-      const canChest = (p.loginStreak || 0) >= 3 && p.loginStreak > (p.streakChestAt || 0);
-      chestBtn.classList.toggle('hidden', !canChest);
-    }
+    const chip = document.getElementById('player-chip');
+    if (chip) chip.textContent = `${hero.avatar} ${hero.name}`;
+    const setText = (idEl, txt) => { const e = document.getElementById(idEl); if (e) e.textContent = txt; };
+    setText('stat-coins', `🪙 ${p.coins}`);
+    setText('stat-bones', `🦴 ${p.bones || 0}`);
+    setText('mall-coins', `🪙 ${p.coins}`);
+    setText('math-progress', 'Levels: ' + Store.countCompletedLevels(this.playerId, 'math', MATH_LEVELS.length));
+    setText('english-progress', 'Levels: ' + Store.countCompletedLevels(this.playerId, 'english', ENGLISH_LEVELS.length));
   },
 
   showMathLevels() {
@@ -203,18 +140,12 @@ const App = {
       return `
         <button class="level-card ${locked ? 'locked' : ''} ${stars ? 'done' : ''}" data-id="${lvl.id}">
           <span class="level-emoji">${lvl.emoji}</span>
-          <div class="level-info">
-            <h3>${lvl.title}</h3>
-            <p>${lvl.desc}</p>
-          </div>
+          <div class="level-info"><h3>${lvl.title}</h3><p>${lvl.desc}</p></div>
           <span class="level-stars">${stars ? '⭐'.repeat(stars) : locked ? '🔒' : '▶️'}</span>
         </button>`;
     }).join('');
     picker.querySelectorAll('.level-card:not(.locked)').forEach((card) => {
-      card.addEventListener('click', () => {
-        Sounds.tap();
-        MathGame.start(card.dataset.id, this.playerId);
-      });
+      card.addEventListener('click', () => { Sounds.tap(); MathGame.start(card.dataset.id, this.playerId); });
     });
   },
 
@@ -228,65 +159,16 @@ const App = {
       return `
         <button class="level-card ${locked ? 'locked' : ''} ${stars ? 'done' : ''}" data-id="${lvl.id}">
           <span class="level-emoji">${lvl.emoji}</span>
-          <div class="level-info">
-            <h3>${lvl.title}</h3>
-            <p>${lvl.desc}</p>
-          </div>
+          <div class="level-info"><h3>${lvl.title}</h3><p>${lvl.desc}</p></div>
           <span class="level-stars">${stars ? '⭐'.repeat(stars) : locked ? '🔒' : '▶️'}</span>
         </button>`;
     }).join('');
     picker.querySelectorAll('.level-card:not(.locked)').forEach((card) => {
-      card.addEventListener('click', () => {
-        Sounds.tap();
-        EnglishGame.start(card.dataset.id, this.playerId);
-      });
+      card.addEventListener('click', () => { Sounds.tap(); EnglishGame.start(card.dataset.id, this.playerId); });
     });
-  },
-
-  showTrophyRoom() {
-    const p = Store.getPlayer(this.playerId);
-    const room = document.getElementById('trophy-room');
-    const chDone = Object.keys(p.chapters || {}).filter((k) => p.chapters[k] > 0).length;
-    const badgeRack = BADGES.map((b) => {
-      const has = (p.badges || []).includes(b.id);
-      return `<span class="badge-pill ${has ? 'on' : ''}">${b.emoji} ${b.name}</span>`;
-    }).join('');
-    const badges = BADGES.map((b) => {
-      const has = (p.badges || []).includes(b.id);
-      return `
-        <div class="badge-card ${has ? '' : 'locked'}">
-          <div class="badge-emoji">${b.emoji}</div>
-          <div class="badge-name">${b.name}</div>
-        </div>`;
-    }).join('');
-    const stickerEmojis = '🌟🦁🦄🎈🏆🍎📚🔥💎🦋'.split('').map((s, i) => {
-      const unlocked = p.stars >= (i + 1) * 2;
-      return `
-        <div class="sticker-card" style="opacity:${unlocked ? 1 : 0.3}">
-          <div style="font-size:36px">${s}</div>
-        </div>`;
-    }).join('');
-    const hero = HEROES.find((h) => h.id === this.playerId);
-    const shopStickers = (p.stickers || []).map((id) => {
-      const item = SHOP_ITEMS.find((i) => i.id === id);
-      return item ? `<span class="badge-pill on">${item.emoji} ${item.name}</span>` : '';
-    }).join('');
-    room.innerHTML = `
-      ${shopStickers ? `<div class="badge-rack">${shopStickers}</div>` : ''}
-      <div class="badge-rack">${badgeRack}</div>
-      <h3 style="grid-column:1/-1;margin-bottom:8px;font-weight:800">🏅 All Badges</h3>${badges}
-      <h3 style="grid-column:1/-1;margin:16px 0 8px;font-weight:800">✨ Sticker Collection</h3>${stickerEmojis}
-      <div class="trophy-summary">
-        ${hero.avatar} ${hero.name}<br>
-        ${p.coins} coins · ${p.stars} stars · ${chDone} chapters · Lv ${p.level}
-      </div>`;
   },
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  App.init().catch((err) => {
-    console.error('App init failed:', err);
-    const grid = document.getElementById('hero-grid');
-    if (grid && !grid.innerHTML) App.renderHeroes();
-  });
+  App.init().catch((err) => console.error('App init failed:', err));
 });

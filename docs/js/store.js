@@ -18,6 +18,9 @@ const Store = {
     if (!data.players[id]) {
       data.players[id] = {
         coins: 0,
+        bones: 0,
+        lifetimeCoins: 0,
+        puppies: {},
         stars: 0,
         xp: 0,
         level: 1,
@@ -69,8 +72,111 @@ const Store = {
     p.stars += stars;
     p.xp += xp;
     p.level = Math.floor(p.xp / 100) + 1;
+    // Earning coins makes every puppy a little happier + earns rare bones.
+    if (coins > 0) {
+      const before = p.lifetimeCoins || 0;
+      p.lifetimeCoins = before + coins;
+      const newBones = Math.floor(p.lifetimeCoins / 40) - Math.floor(before / 40);
+      if (newBones > 0) p.bones = (p.bones || 0) + newBones;
+      this.ensurePuppies(id, p);
+      Object.values(p.puppies).forEach((pup) => {
+        pup.happy = Math.min(100, (pup.happy ?? 70) + 2);
+      });
+    }
     this.updatePlayer(id, p);
     return p;
+  },
+
+  // ---- Puppy world ----
+  ensurePuppies(id, pref) {
+    const p = pref || this.getPlayer(id);
+    if (!p.puppies) p.puppies = {};
+    let changed = false;
+    (typeof PUPPIES !== 'undefined' ? PUPPIES : []).forEach((def) => {
+      if (!p.puppies[def.id]) {
+        p.puppies[def.id] = { happy: 80, owned: [], equipped: {}, wish: null, wishAt: 0, lastSeen: Date.now() };
+        changed = true;
+      }
+    });
+    if (changed && !pref) this.updatePlayer(id, p);
+    return p;
+  },
+
+  // Gentle happiness decay over real time so puppies "miss" the player.
+  decayHappiness(id) {
+    const p = this.ensurePuppies(id);
+    const now = Date.now();
+    Object.values(p.puppies).forEach((pup) => {
+      const hrs = (now - (pup.lastSeen || now)) / 3600000;
+      if (hrs >= 1) {
+        pup.happy = Math.max(30, Math.round((pup.happy ?? 80) - hrs * 3));
+        pup.lastSeen = now;
+      }
+    });
+    this.updatePlayer(id, p);
+    return p;
+  },
+
+  // Roll a fresh wish for any puppy whose wish is old/empty. Returns puppies that got a NEW wish.
+  refreshWishes(id, intervalMs) {
+    const p = this.ensurePuppies(id);
+    const now = Date.now();
+    const fresh = [];
+    (PUPPIES || []).forEach((def) => {
+      const pup = p.puppies[def.id];
+      if (!pup.wish || (now - (pup.wishAt || 0)) >= intervalMs) {
+        pup.wish = Mall.rollWish(def);
+        pup.wishAt = now;
+        fresh.push(def.id);
+      }
+    });
+    if (fresh.length) this.updatePlayer(id, p);
+    return fresh;
+  },
+
+  // Buy a mall item for a puppy. Grants wish bonus if it matches the puppy's wish.
+  buyMallItem(id, puppyId, itemId) {
+    const p = this.ensurePuppies(id);
+    const item = Mall.byId(itemId);
+    const pup = p.puppies[puppyId];
+    if (!item || !pup) return { ok: false, msg: 'Oops, try again!' };
+    if (p.coins < item.price) return { ok: false, msg: `Need ${item.price} 🪙 — play to earn more!` };
+    p.coins -= item.price;
+    if (!pup.owned.includes(itemId)) pup.owned.push(itemId);
+    // wearable categories get auto-equipped
+    if (item.cat === 'clothes' || item.cat === 'other') pup.equipped[item.cat] = itemId;
+    let happy = 12;
+    let bones = 0;
+    const grantedWish = pup.wish && pup.wish.id === itemId;
+    if (grantedWish) {
+      happy = 30;
+      bones = 2;
+      pup.wish = null;
+      pup.wishAt = Date.now();
+    }
+    pup.happy = Math.min(100, (pup.happy ?? 70) + happy);
+    pup.lastSeen = Date.now();
+    if (bones) p.bones = (p.bones || 0) + bones;
+    this.logActivity(id, `${grantedWish ? 'Granted wish' : 'Bought'} ${item.emoji} ${item.name} for ${puppyId}`);
+    this.updatePlayer(id, p);
+    const def = (PUPPIES || []).find((d) => d.id === puppyId);
+    return {
+      ok: true, grantedWish, bones, item,
+      msg: grantedWish
+        ? `${def?.name || 'Puppy'} got the wish! +2 🦴 bones!`
+        : `${def?.name || 'Puppy'} loves the ${item.name}!`,
+    };
+  },
+
+  equipItem(id, puppyId, itemId) {
+    const p = this.ensurePuppies(id);
+    const pup = p.puppies[puppyId];
+    const item = Mall.byId(itemId);
+    if (!pup || !item) return;
+    const slot = item.cat;
+    if (pup.equipped[slot] === itemId) delete pup.equipped[slot];
+    else pup.equipped[slot] = itemId;
+    this.updatePlayer(id, p);
   },
 
   dailyChallenge(id) {
@@ -307,19 +413,6 @@ const Store = {
     p.stats.speedTotalMs += ms;
     p.stats.answerCount++;
     this.updatePlayer(id, p);
-  },
-
-  buySticker(id, itemId) {
-    const item = SHOP_ITEMS.find((i) => i.id === itemId);
-    if (!item) return { ok: false, msg: 'Item not found' };
-    const p = this.getPlayer(id);
-    if ((p.stickers || []).includes(itemId)) return { ok: false, msg: 'You already own this sticker!' };
-    if (p.coins < item.cost) return { ok: false, msg: `Need ${item.cost} coins! Keep learning!` };
-    p.coins -= item.cost;
-    p.stickers = [...(p.stickers || []), itemId];
-    this.logActivity(id, `Bought sticker ${item.name} ${item.emoji}`);
-    this.updatePlayer(id, p);
-    return { ok: true, msg: `You got ${item.emoji} ${item.name}!` };
   },
 
   avgResponseSec(id) {

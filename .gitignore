@@ -2,6 +2,9 @@ __pycache__/
 *.pyc
 .DS_Store
 
+# Local-only heavy / private source material (never upload)
+noupload/
+
 # PaddleOCR source exports (keep locally, not in git)
 *.pdf_by_PaddleOCR-VL-1.6.json
 *.pdf_by_PaddleOCR-VL-1.6.md

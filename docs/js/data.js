@@ -1,8 +1,5 @@
 const HEROES = [
-  { id: 'aarav', name: 'Aarav', avatar: '🦁', color: '#ff6b6b' },
-  { id: 'mia', name: 'Mia', avatar: '🦄', color: '#a29bfe' },
-  { id: 'rohan', name: 'Rohan', avatar: '🐯', color: '#fdcb6e' },
-  { id: 'zara', name: 'Zara', avatar: '🦋', color: '#55efc4' },
+  { id: 'advaita', name: 'Advaita', avatar: '🌸', color: '#ff6fa5' },
 ];
 
 const BADGES = [
@@ -627,40 +624,6 @@ const QUEST_BANK = {
     { e: '👂', q: 'When teacher explains, we should ___.', o: ['listen', 'shout', 'sleep', 'push'], a: 0, ex: 'Listening helps us learn.' },
   ]),
 };
-
-const SHOP_ITEMS = [
-  { id: 'crown', emoji: '👑', name: 'Royal Crown', cost: 20 },
-  { id: 'rocket', emoji: '🚀', name: 'Cosmic Rocket', cost: 25 },
-  { id: 'unicorn', emoji: '🦄', name: 'Unicorn', cost: 30 },
-  { id: 'medal', emoji: '🏅', name: 'Gold Medal', cost: 15 },
-  { id: 'rainbow', emoji: '🌈', name: 'Rainbow', cost: 18 },
-  { id: 'dino', emoji: '🦖', name: 'Dino', cost: 22 },
-  { id: 'tophat', emoji: '🎩', name: 'Top Hat', cost: 20 },
-  { id: 'shades', emoji: '🕶️', name: 'Cool Shades', cost: 20 },
-];
-
-const FEATURES_LIST = [
-  { title: 'Virtual Pet', text: 'Adopt a dragon, robot, or puppy. Feed, play, and dress them with lesson coins!' },
-  { title: 'Space Journey Map', text: 'Rocket travels across subject planets as chapters are completed.' },
-  { title: '3-Day Streak Chest', text: 'Login 3 days in a row for bonus coins, stars, and XP.' },
-  { title: 'Sounds & Haptics', text: 'Cheerful chimes, gentle wrong sounds, and phone vibration.' },
-  { title: 'Apple Basket Math', text: 'Drag virtual apples to learn addition hands-on.' },
-  { title: 'Math Turbo Race', text: 'Answer fast to beat the rival car to the finish!' },
-  { title: 'Voice AI Studio', text: 'Speak words in English, Hindi, and Sanskrit.' },
-  { title: 'Magic Tracing', text: 'Rainbow sparkler trails while tracing letters.' },
-  { title: 'Story & Fable Quests', text: 'Panchatantra tales with tap-to-continue vocabulary.' },
-  { title: 'EVS Eco Sorter', text: 'Timed living vs non-living sorting game.' },
-  { title: 'Biome Builder', text: 'Place animals in forest, desert, or ocean.' },
-  { title: 'AR Plant Magic', text: 'Grow a seed through water and sunlight steps.' },
-  { title: '120 Chapter Notes', text: 'Real Class 1 notes with pictures from your books.' },
-  { title: 'Voice Navigation', text: 'Speaker buttons read instructions aloud.' },
-  { title: 'Big Touch Buttons', text: 'Chunky buttons for small fingers.' },
-  { title: 'Offline Mode', text: 'Works without internet after first load.' },
-  { title: 'Parent Dashboard', text: 'Hold parent button — math gate keeps kids out.' },
-  { title: 'Home Nudges', text: 'Tips to practice at dinner and bedtime.' },
-  { title: 'Sticker Shop', text: 'Spend coins on classroom stickers.' },
-  { title: 'Certificate', text: 'Printable diploma in parent dashboard.' },
-];
 
 const FABLE_CHOICE = [
   {

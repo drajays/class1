@@ -6,7 +6,7 @@ const AppConfig = {
       return path.slice(0, path.indexOf('/docs') + 5);
     }
     const parts = path.split('/').filter(Boolean);
-    if (parts.length > 1 && parts[parts.length - 1].includes('.')) {
+    if (parts.length >= 1 && parts[parts.length - 1].includes('.')) {
       parts.pop();
     }
     return parts.length ? '/' + parts.join('/') : '';

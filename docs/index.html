@@ -3,122 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#7ee8fa">
+  <meta name="theme-color" content="#ffb3d1">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>Class 1 Adventure — Learn & Play!</title>
+  <title>Advaita's Puppy Park 🐶</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/config.js"></script>
 </head>
 <body>
-  <svg class="cloud c1" viewBox="0 0 200 90" aria-hidden="true"><path fill="white" d="M58 73h92c26 0 44-15 44-36s-20-33-39-29C145-8 118-2 112 19 98 3 68 9 63 31 45 27 25 38 25 54s14 19 33 19z"/></svg>
-  <svg class="cloud c2" viewBox="0 0 200 90" aria-hidden="true"><path fill="white" d="M58 73h92c26 0 44-15 44-36s-20-33-39-29C145-8 118-2 112 19 98 3 68 9 63 31 45 27 25 38 25 54s14 19 33 19z"/></svg>
-  <svg class="cloud c3" viewBox="0 0 200 90" aria-hidden="true"><path fill="white" d="M58 73h92c26 0 44-15 44-36s-20-33-39-29C145-8 118-2 112 19 98 3 68 9 63 31 45 27 25 38 25 54s14 19 33 19z"/></svg>
-
   <div id="confetti-layer"></div>
   <div id="toast" class="toast hidden"></div>
 
-  <!-- Login -->
+  <!-- Welcome -->
   <section id="screen-login" class="screen active">
     <div class="login-card">
-      <div class="brand-logo">🎒</div>
-      <h1 class="rainbow">Class 1 Adventure!</h1>
-      <p class="subtitle">Learn, play & care for your pet friend!</p>
-      <div class="tip-box">🌟 Big buttons · voice help · works offline!</div>
-      <div class="hero-grid" id="hero-grid"></div>
-      <p class="hint">Pick your hero — tap a big picture!</p>
-      <div class="mascot-owl" aria-hidden="true">🦉</div>
+      <h1 class="rainbow">Advaita's Puppy Park</h1>
+      <p class="subtitle">Learn, earn coins & care for Simba, Mufasa, Golu & Whity! 🐶</p>
+      <div class="welcome-pups" id="welcome-pups"></div>
+      <button class="btn-fun pink btn-big start-btn" id="btn-start">▶️ Let's Play!</button>
     </div>
   </section>
 
-  <!-- Pet adoption -->
-  <section id="screen-pet-adopt" class="screen">
-    <div class="login-card adopt-card">
-      <h1 class="rainbow">Adopt Your Friend!</h1>
-      <p class="subtitle">Complete lessons to feed & dress your pet</p>
-      <div class="pet-adopt-grid" id="pet-adopt-grid"></div>
-    </div>
-  </section>
-
-  <!-- Home -->
+  <!-- Home = Puppy Park -->
   <section id="screen-home" class="screen">
     <header class="top-bar">
       <div class="top-row">
         <div class="player-chip" id="player-chip"></div>
         <div class="top-actions">
+          <span class="pill-stat" id="stat-coins">🪙 0</span>
+          <span class="pill-stat" id="stat-bones">🦴 0</span>
           <button class="icon-btn" id="btn-sound" title="Sound">🔊</button>
-          <button class="icon-btn parent-btn" id="btn-parent" title="Hold for Parent">👨‍👩‍👧</button>
+          <button class="icon-btn parent-btn" id="btn-parent" title="Parent">👨‍👩‍👧</button>
         </div>
-      </div>
-      <div class="stats-row">
-        <span class="pill-stat" id="stat-coins">🪙 0</span>
-        <span class="pill-stat" id="stat-stars">⭐ 0</span>
-        <span class="pill-stat" id="stat-streak">🔥 0</span>
-        <span class="pill-stat level-badge" id="stat-level">Lv 1</span>
-        <span class="pill-stat" id="stat-xp">⚡ 0 XP</span>
       </div>
     </header>
 
-    <div id="pet-panel" class="pet-panel"></div>
+    <p class="park-banner" id="park-banner"></p>
+    <div class="puppy-yard" id="puppy-yard"></div>
 
-    <div class="welcome-card">
-      <h2><span class="rainbow">Learning Island</span></h2>
-      <div class="welcome-big">Play · Learn · Win!</div>
-      <p class="progress-label">Your rainbow XP</p>
-      <div class="progress-wrap"><div class="progress-fill" id="xp-bar"></div></div>
-      <p class="hint" id="xp-need">100 XP to next level</p>
-      <div class="home-actions">
-        <button class="btn-fun green btn-big" id="btn-daily">🎁 Daily Gift</button>
-        <button class="btn-fun pink btn-big hidden" id="btn-streak-chest">📦 Streak Chest!</button>
-        <button class="btn-fun orange btn-big" id="btn-minigames">🎮 Mini Games</button>
-        <button class="btn-fun blue btn-big" id="btn-companion">🐾 Pet Lounge</button>
-        <button class="btn-fun pink btn-big" id="btn-shop">🛍️ Sticker Shop</button>
-        <button class="btn-fun ghost btn-big" id="btn-features">✨ 20 Features</button>
-      </div>
+    <div class="home-actions big-home-actions">
+      <button class="btn-fun orange btn-big" id="btn-play">▶️ Play &amp; Earn</button>
+      <button class="btn-fun pink btn-big" id="btn-mall">🛍️ Puppy Mall</button>
+      <button class="btn-fun green btn-big" id="btn-daily">🎁 Daily Gift</button>
     </div>
+  </section>
 
-    <div class="mascot-speech">
-      <span class="mascot-small">🦉</span>
-      <p id="welcome-msg">Ready for adventure?</p>
-    </div>
-
-    <h2 class="section-label">🚀 Space Journey</h2>
-    <div class="glass-card journey-card">
-      <div id="journey-track"></div>
-    </div>
-
-    <h2 class="section-label">📚 Subject Quests</h2>
-    <div class="subject-grid" id="subject-grid"></div>
-
+  <!-- Play (subjects) -->
+  <section id="screen-play" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" data-back="home">← Park</button>
+      <h2>▶️ Play &amp; Earn 🪙</h2>
+    </header>
     <h2 class="section-label">🎮 Quick Play</h2>
-    <div class="world-map world-map-compact">
-      <button class="world-btn math-world btn-big" data-go="math">
-        <span class="world-icon">🔢</span>
-        <span class="world-title">Math Arcade</span>
-        <span class="world-progress" id="math-progress"></span>
+    <div class="play-grid">
+      <button class="play-card feature math-world" data-go="math">
+        <span class="play-icon">🔢</span><span class="play-title">Math Arcade</span>
+        <span class="play-sub" id="math-progress"></span>
       </button>
-      <button class="world-btn english-world btn-big" data-go="english">
-        <span class="world-icon">📖</span>
-        <span class="world-title">Reading Arcade</span>
-        <span class="world-progress" id="english-progress"></span>
+      <button class="play-card english-world" data-go="english">
+        <span class="play-icon">📖</span><span class="play-title">Reading Arcade</span>
+        <span class="play-sub" id="english-progress"></span>
       </button>
-      <button class="world-btn trophy-world btn-big" data-go="trophy">
-        <span class="world-icon">🏆</span>
-        <span class="world-title">Trophy Room</span>
+      <button class="play-card" data-go="minigames">
+        <span class="play-icon">🎮</span><span class="play-title">Fun Games</span>
+        <span class="play-sub">Lots of mini games!</span>
       </button>
     </div>
+    <h2 class="section-label">📚 School Subjects</h2>
+    <div class="subject-grid" id="subject-grid"></div>
+  </section>
 
-    <button class="btn-ghost switch-hero" id="btn-switch-hero">Switch Hero</button>
+  <!-- Puppy Mall -->
+  <section id="screen-mall" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" data-back="home">← Park</button>
+      <h2>🛍️ Puppy Mall</h2>
+      <span class="pill-stat header-coins" id="mall-coins">🪙 0</span>
+    </header>
+    <div id="mall-shopper"></div>
+    <div class="mall-tabs" id="mall-tabs"></div>
+    <div class="mall-grid" id="mall-grid"></div>
+  </section>
+
+  <!-- Puppy detail -->
+  <section id="screen-puppy" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" data-back="home">← Park</button>
+      <h2>🐶 My Puppy</h2>
+    </header>
+    <div id="puppy-detail"></div>
   </section>
 
   <!-- Mini Games -->
   <section id="screen-minigames" class="screen">
     <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Home</button>
+      <button class="btn-back btn-big" data-back="play">← Back</button>
       <h2>🎮 Mini Games</h2>
     </header>
-    <p class="game-instruction">14 fun games — tap a big picture to play!</p>
+    <p class="game-instruction">Tap a big picture to play!</p>
     <div class="minigame-hub" id="minigame-hub"></div>
     <div id="minigame-play" class="game-area hidden">
       <header class="minigame-header">
@@ -132,7 +115,7 @@
   <!-- Subject Hub -->
   <section id="screen-subject-hub" class="screen">
     <header class="game-header">
-      <button class="btn-back btn-big" id="hub-back">← Home</button>
+      <button class="btn-back btn-big" id="hub-back">← Back</button>
       <h2 id="hub-title">Subject Hub</h2>
     </header>
     <p id="hub-desc" class="game-instruction"></p>
@@ -148,42 +131,16 @@
     <div id="quick-quest-body" class="game-area"></div>
   </section>
 
-  <!-- Companion Lounge -->
-  <section id="screen-companion" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Home</button>
-      <h2>🐾 Companion Lounge</h2>
-    </header>
-    <div id="companion-lounge"></div>
-  </section>
-
-  <!-- Sticker Shop -->
-  <section id="screen-shop" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Home</button>
-      <h2>🛍️ Sticker Shop</h2>
-    </header>
-    <p class="game-instruction">Spend coins on classroom stickers!</p>
-    <div class="shop-grid" id="shop-grid"></div>
-  </section>
-
-  <!-- Features -->
-  <section id="screen-features" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Home</button>
-      <h2>✨ 20+ Features</h2>
-    </header>
-    <div class="features-list" id="features-list"></div>
-  </section>
-
+  <!-- Chapters -->
   <section id="screen-chapters" class="screen">
     <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Home</button>
+      <button class="btn-back btn-big" data-back="play">← Back</button>
       <h2 id="chapters-title">Chapters</h2>
     </header>
     <div id="chapter-list" class="level-picker"></div>
   </section>
 
+  <!-- Chapter -->
   <section id="screen-chapter" class="screen">
     <header class="game-header">
       <button class="btn-back btn-big" data-back="chapters">← Back</button>
@@ -197,30 +154,24 @@
     <div id="chapter-quiz" class="game-area hidden"></div>
   </section>
 
+  <!-- Math -->
   <section id="screen-math" class="screen">
     <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Home</button>
+      <button class="btn-back btn-big" data-back="play">← Back</button>
       <h2>🔢 Math Arcade</h2>
     </header>
     <div id="math-level-picker" class="level-picker"></div>
     <div id="math-game" class="game-area hidden"></div>
   </section>
 
+  <!-- Reading -->
   <section id="screen-english" class="screen">
     <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Home</button>
+      <button class="btn-back btn-big" data-back="play">← Back</button>
       <h2>📖 Reading Arcade</h2>
     </header>
     <div id="english-level-picker" class="level-picker"></div>
     <div id="english-game" class="game-area hidden"></div>
-  </section>
-
-  <section id="screen-trophy" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Home</button>
-      <h2>🏆 Trophy Room</h2>
-    </header>
-    <div id="trophy-room" class="trophy-room"></div>
   </section>
 
   <!-- Parent modal -->
@@ -241,6 +192,7 @@
     </div>
   </div>
 
+  <!-- Reward popup -->
   <div id="reward-popup" class="reward-popup hidden">
     <div class="reward-card pop-in">
       <div class="reward-emoji" id="reward-emoji">🎉</div>
@@ -251,12 +203,12 @@
   </div>
 
   <script src="js/data.js"></script>
+  <script src="js/puppies.js"></script>
+  <script src="js/mall.js"></script>
   <script src="js/store.js"></script>
   <script src="js/sounds.js"></script>
   <script src="js/speech.js"></script>
   <script src="js/rewards.js"></script>
-  <script src="js/pet.js"></script>
-  <script src="js/journey.js"></script>
   <script src="js/minigames.js"></script>
   <script src="js/extras.js"></script>
   <script src="js/parent.js"></script>

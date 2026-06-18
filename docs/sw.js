@@ -1,16 +1,16 @@
-const CACHE = 'class1-v2';
+const CACHE = 'puppypark-v1';
 const ASSETS = [
   './',
   './index.html',
   './css/style.css',
   './js/config.js',
   './js/data.js',
+  './js/puppies.js',
+  './js/mall.js',
   './js/store.js',
   './js/sounds.js',
   './js/speech.js',
   './js/rewards.js',
-  './js/pet.js',
-  './js/journey.js',
   './js/minigames.js',
   './js/extras.js',
   './js/parent.js',
@@ -18,6 +18,10 @@ const ASSETS = [
   './js/math.js',
   './js/english.js',
   './js/app.js',
+  './assets/puppies/simba.jpg',
+  './assets/puppies/mufasa.jpg',
+  './assets/puppies/golu.jpg',
+  './assets/puppies/whity.jpg',
 ];
 
 self.addEventListener('install', (e) => {
