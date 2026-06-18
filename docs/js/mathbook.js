@@ -66,15 +66,25 @@ const MathBook = {
 
   renderConcept() {
     const area = document.getElementById('math-game');
+    const ci = this.data.chapters.indexOf(this.chapter);
+    const coach = (typeof PUPPIES !== 'undefined' && PUPPIES.length)
+      ? PUPPIES[(ci < 0 ? 0 : ci) % PUPPIES.length] : null;
+    const mascot = coach
+      ? `<img class="mb-mascot" src="${AppConfig.url(coach.photo)}" alt="${coach.name}" style="width:96px;height:96px;border-radius:50%;border:4px solid #fff;box-shadow:0 8px 18px rgba(0,0,0,.18);object-fit:cover">`
+      : `<div class="mb-concept-icon">${this.chapter.icon}</div>`;
+    const tip = this.chapter.tip
+      ? `<div class="mb-tip" style="background:#fff7d6;border:2px dashed #ffcf3f;border-radius:16px;padding:12px 14px;margin:4px 0 16px;font-weight:700;color:#7a5a00;text-align:left">🦴 <b>${coach ? this.esc(coach.name) + "'s" : 'Puppy'} Tip:</b> ${this.esc(this.chapter.tip)}</div>`
+      : '';
     area.innerHTML = `
       <div class="mb-concept">
-        <div class="mb-concept-icon">${this.chapter.icon}</div>
-        <h2>${this.chapter.title}</h2>
-        <p>${this.chapter.concept}</p>
-        <button class="btn-fun green btn-big" id="mb-start">Let's Start! ▶️</button>
+        ${mascot}
+        <h2>${this.chapter.icon} ${this.esc(this.chapter.title)}</h2>
+        <p>${this.esc(this.chapter.concept)}</p>
+        ${tip}
+        <button class="btn-fun green btn-big" id="mb-start">Let's Go, Champion! ▶️</button>
       </div>`;
     document.getElementById('mb-start').addEventListener('click', () => { Sounds.tap(); this.renderProblem(); });
-    Speech.speak(this.chapter.concept);
+    Speech.speak(this.chapter.concept + (this.chapter.tip ? `. ${coach ? coach.name + "'s" : ''} tip: ${this.chapter.tip}` : ''));
   },
 
   renderProblem() {
@@ -91,10 +101,10 @@ const MathBook = {
       <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
       <p class="mb-count">Problem ${this.idx + 1} of ${total}</p>
       <div class="mb-problem">
-        <p class="mb-q">${p.q} <button class="mb-read" id="mb-read" title="Read aloud">🔊</button></p>
+        <p class="mb-q">${this.esc(p.q)} <button class="mb-read" id="mb-read" title="Read aloud">🔊</button></p>
         <div class="mb-visual" id="mb-visual">${this.visual(p)}</div>
         <div class="mb-options" id="mb-options">
-          ${opts.map((o) => `<button class="mb-opt" data-v="${o}">${o}</button>`).join('')}
+          ${opts.map((o) => `<button class="mb-opt" data-v="${this.esc(o)}">${this.esc(o)}</button>`).join('')}
         </div>
         <button class="mb-help" id="mb-help">🤔 Show me how</button>
         <div class="mb-steps" id="mb-steps"></div>
@@ -103,13 +113,13 @@ const MathBook = {
     document.getElementById('mb-read').addEventListener('click', () => Speech.speak(this.say(p)));
     document.getElementById('mb-help').addEventListener('click', () => { this.usedHelp = true; this.showSolution(p); });
     area.querySelectorAll('.mb-opt').forEach((b) =>
-      b.addEventListener('click', () => this.answer(Number(b.dataset.v), p, b)));
+      b.addEventListener('click', () => this.answer(b.dataset.v, p, b)));
     Speech.navSay(this.say(p));
   },
 
   answer(val, p, btn) {
     if (btn.classList.contains('disabled-opt')) return;
-    if (val === p.a) {
+    if (String(val) === String(p.a)) {
       btn.classList.add('correct');
       document.querySelectorAll('.mb-opt').forEach((b) => (b.style.pointerEvents = 'none'));
       Sounds.correct();
@@ -119,7 +129,9 @@ const MathBook = {
       Store.addReward(this.playerId, { coins, stars: first ? 1 : 0, xp: 10 });
       Store.bumpStreak(this.playerId, true);
       this.correctCount += first ? 1 : 0;
-      Rewards.showToast(first ? `Great! +${coins} 🪙` : `You got it! +${coins} 🪙`);
+      const cheers = ['Pawsome! 🐾', "You're a math champion! 🏆", 'Brilliant! ⭐', 'Woohoo! 🎉', 'Top of the class! 🌟', 'The puppies are cheering! 🐶'];
+      const cheer = first ? cheers[Math.floor(Math.random() * cheers.length)] : 'You fixed it! 💪';
+      Rewards.showToast(`${cheer} +${coins} 🪙`);
       App.refreshStats();
       setTimeout(() => { this.idx++; this.renderProblem(); }, 1100);
     } else {
@@ -148,7 +160,7 @@ const MathBook = {
         document.querySelectorAll('.mb-opt').forEach((b) => {
           b.classList.remove('disabled-opt');
           b.style.pointerEvents = '';
-          if (Number(b.dataset.v) === p.a) b.classList.add('hint-glow');
+          if (String(b.dataset.v) === String(p.a)) b.classList.add('hint-glow');
         });
         const tip = document.createElement('p');
         tip.className = 'mb-retry-tip';
@@ -160,7 +172,7 @@ const MathBook = {
       if (s.visual !== undefined && visual) visual.innerHTML = s.visual;
       const row = document.createElement('div');
       row.className = 'mb-step pop-in';
-      row.innerHTML = `<span class="mb-step-num">${i + 1}</span><span>${s.text}</span>`;
+      row.innerHTML = `<span class="mb-step-num">${i + 1}</span><span>${this.esc(s.text)}</span>`;
       box.appendChild(row);
       Speech.speak(s.text);
       i++;
@@ -203,6 +215,10 @@ const MathBook = {
     return [...set].sort(() => Math.random() - 0.5);
   },
 
+  esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  },
+
   // ---------- narration ----------
   say(p) {
     return p.q.replace('?', '').replace('_', 'what').replace('−', 'minus').replace('+', 'plus');
@@ -228,14 +244,18 @@ const MathBook = {
     return `<div class="mb-numline">${ticks}</div>`;
   },
 
+  imageHtml(p) {
+    return p.image ? `<div class="mb-image"><img src="${AppConfig.url(p.image)}" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></div>` : '';
+  },
+
   visual(p) {
-    if (p.skill === 'count') return this.row(p.emoji, p.n);
-    if (p.skill === 'crossout') return this.row(p.emoji, p.n, 0);
+    if (p.skill === 'count') return this.imageHtml(p) + this.row(p.emoji, p.n);
+    if (p.skill === 'crossout') return this.imageHtml(p) + this.row(p.emoji, p.n, 0);
     if (p.skill === 'add') {
-      return `<div class="mb-add">${this.row(p.emoji, p.x)}<span class="mb-plus">➕</span>${this.row(p.emoji, p.y)}</div>`;
+      return this.imageHtml(p) + `<div class="mb-add">${this.row(p.emoji, p.x)}<span class="mb-plus">➕</span>${this.row(p.emoji, p.y)}</div>`;
     }
     if (p.skill === 'numberline') return this.numlineHtml(p);
-    return ''; // pick: question text is enough
+    return this.imageHtml(p); // pick: optional book image + question text
   },
 
   // ---------- worked solution steps per skill ----------

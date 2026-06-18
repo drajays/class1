@@ -1,0 +1,283 @@
+{
+  "chapters": [
+    {
+      "id": "eng_letter_sounds",
+      "title": "Letter Sounds",
+      "icon": "🔡",
+      "concept": "Every letter has its very own sound! Cat begins with the sound of c. Dog begins with the sound of d. Say the sound, then find the letter. You can do it, superstar!",
+      "examples": "🐱 c · 🐶 d · 🍎 a · ☀️ s",
+      "problems": [
+        { "skill": "pick", "q": "What sound does sun begin with?", "emoji": "☀️", "options": ["s", "m", "t"], "a": "s", "why": "Sun begins with the s sound, the letter s." },
+        { "skill": "pick", "q": "What sound does bat begin with?", "emoji": "🦇", "options": ["b", "d", "p"], "a": "b", "why": "Bat begins with the b sound, the letter b." },
+        { "skill": "pick", "q": "What sound does dog begin with?", "emoji": "🐶", "options": ["d", "b", "g"], "a": "d", "why": "Dog begins with the d sound, the letter d." },
+        { "skill": "pick", "q": "What sound does fish begin with?", "emoji": "🐟", "options": ["f", "s", "h"], "a": "f", "why": "Fish begins with the f sound, the letter f." },
+        { "skill": "pick", "q": "What sound does moon begin with?", "emoji": "🌙", "options": ["m", "n", "w"], "a": "m", "why": "Moon begins with the m sound, the letter m." },
+        { "skill": "pick", "q": "What sound does apple begin with?", "emoji": "🍎", "options": ["a", "e", "o"], "a": "a", "why": "Apple begins with the a sound, the letter a." },
+        { "skill": "pick", "q": "What sound does cake begin with?", "emoji": "🎂", "options": ["c", "k", "t"], "a": "c", "why": "Cake begins with the c sound, the letter c." }
+      ]
+    },
+    {
+      "id": "eng_vowels",
+      "title": "Magic Vowels",
+      "icon": "🔠",
+      "concept": "Five letters are super special: a, e, i, o, u. They are the vowels! Every word needs a vowel. Let's find them, magic reader!",
+      "examples": "a 🍎 · e 🥚 · i 🦔 · o 🍊 · u ☂️",
+      "problems": [
+        { "skill": "pick", "q": "Which one is a vowel?", "options": ["a", "b", "c"], "a": "a", "why": "a is one of the five vowels: a, e, i, o, u." },
+        { "skill": "pick", "q": "Which one is a vowel?", "options": ["e", "t", "r"], "a": "e", "why": "e is a vowel. The vowels are a, e, i, o, u." },
+        { "skill": "pick", "q": "Which one is a vowel?", "options": ["o", "m", "s"], "a": "o", "why": "o is a vowel. The vowels are a, e, i, o, u." },
+        { "skill": "pick", "q": "The vowels are a, e, i, o and ___?", "options": ["u", "y", "w"], "a": "u", "why": "The five vowels are a, e, i, o, u." },
+        { "skill": "pick", "q": "Which vowel is in the middle of pig?", "emoji": "🐷", "options": ["i", "a", "o"], "a": "i", "why": "p-i-g: the vowel in the middle is i." },
+        { "skill": "pick", "q": "Which vowel is in the middle of dog?", "emoji": "🐶", "options": ["o", "e", "u"], "a": "o", "why": "d-o-g: the vowel in the middle is o." }
+      ]
+    },
+    {
+      "id": "eng_word_families",
+      "title": "Word Families",
+      "icon": "🧩",
+      "concept": "When we blend sounds, we can read words! c - a - t says cat. Words that end the same are a word family, like cat, hat and bat. Let's blend and read!",
+      "examples": "cat 🐱 · hat 🎩 · bat 🦇",
+      "problems": [
+        { "skill": "blend", "q": "Blend the sounds and read the word.", "blend": "c - a - t", "emoji": "🐱", "options": ["cat", "cot", "cup"], "a": "cat", "why": "c-a-t blends together to make cat." },
+        { "skill": "blend", "q": "Blend the sounds and read the word.", "blend": "h - a - t", "emoji": "🎩", "options": ["hat", "hit", "hot"], "a": "hat", "why": "h-a-t blends together to make hat." },
+        { "skill": "blend", "q": "Blend the sounds and read the word.", "blend": "d - o - g", "emoji": "🐶", "options": ["dog", "dig", "dug"], "a": "dog", "why": "d-o-g blends together to make dog." },
+        { "skill": "blend", "q": "Blend the sounds and read the word.", "blend": "p - i - g", "emoji": "🐷", "options": ["pig", "peg", "pug"], "a": "pig", "why": "p-i-g blends together to make pig." },
+        { "skill": "blend", "q": "Blend the sounds and read the word.", "blend": "s - u - n", "emoji": "☀️", "options": ["sun", "sit", "sand"], "a": "sun", "why": "s-u-n blends together to make sun." },
+        { "skill": "blend", "q": "Blend the sounds and read the word.", "blend": "b - e - d", "emoji": "🛏️", "options": ["bed", "bad", "bud"], "a": "bed", "why": "b-e-d blends together to make bed." },
+        { "skill": "pick", "q": "Add b to the -at family. What word do you get?", "emoji": "🦇", "options": ["bat", "bag", "bad"], "a": "bat", "why": "b + at makes bat. It is in the -at family with cat and hat." }
+      ]
+    },
+    {
+      "id": "eng_build_word",
+      "title": "Build the Word",
+      "icon": "🔤",
+      "concept": "Listen to the word, then tap the letters in the right order to build it! Tap each letter to hear its sound. Ready, spelling star?",
+      "examples": "🐱 c-a-t · 🐶 d-o-g",
+      "problems": [
+        { "skill": "spell", "q": "Build the word", "emoji": "🐱", "word": "cat" },
+        { "skill": "spell", "q": "Build the word", "emoji": "🐶", "word": "dog" },
+        { "skill": "spell", "q": "Build the word", "emoji": "☀️", "word": "sun" },
+        { "skill": "spell", "q": "Build the word", "emoji": "🎩", "word": "hat" },
+        { "skill": "spell", "q": "Build the word", "emoji": "🐷", "word": "pig" },
+        { "skill": "spell", "q": "Build the word", "emoji": "🚌", "word": "bus" }
+      ]
+    },
+    {
+      "id": "eng_rhyming",
+      "title": "Rhyme Time",
+      "icon": "🎵",
+      "concept": "Rhyming words sound the same at the end! Cat and hat rhyme. Sun and bun rhyme too. Let's find the words that rhyme!",
+      "examples": "cat–hat · sun–bun · star–car",
+      "problems": [
+        { "skill": "pick", "q": "Which word rhymes with cat?", "emoji": "🐱", "options": ["hat", "dog", "sun"], "a": "hat", "why": "cat and hat sound the same at the end: -at." },
+        { "skill": "pick", "q": "Which word rhymes with dog?", "emoji": "🐶", "options": ["log", "cat", "pen"], "a": "log", "why": "dog and log sound the same at the end: -og." },
+        { "skill": "pick", "q": "Which word rhymes with sun?", "emoji": "☀️", "options": ["bun", "car", "top"], "a": "bun", "why": "sun and bun sound the same at the end: -un." },
+        { "skill": "pick", "q": "Which word rhymes with bee?", "emoji": "🐝", "options": ["tree", "book", "cat"], "a": "tree", "why": "bee and tree sound the same at the end: -ee." },
+        { "skill": "pick", "q": "Which word rhymes with star?", "emoji": "⭐", "options": ["car", "sun", "pen"], "a": "car", "why": "star and car sound the same at the end: -ar." },
+        { "skill": "pick", "q": "Which word rhymes with frog?", "emoji": "🐸", "options": ["dog", "fish", "bird"], "a": "dog", "why": "frog and dog sound the same at the end: -og." }
+      ]
+    },
+    {
+      "id": "eng_sight_words",
+      "title": "Magic Sight Words",
+      "icon": "👀",
+      "concept": "Some little words pop up everywhere when we read, like the, and, is, you and see. We learn them by heart so reading is super fast!",
+      "examples": "the · and · is · you · see",
+      "problems": [
+        { "skill": "pick", "q": "Read it: I ___ a cat.", "emoji": "🐱", "options": ["see", "car", "run"], "a": "see", "why": "I see a cat. The word see is a sight word." },
+        { "skill": "pick", "q": "Read it: ___ dog is big.", "emoji": "🐶", "options": ["The", "Cat", "Run"], "a": "The", "why": "The dog is big. The word the is a sight word." },
+        { "skill": "pick", "q": "Read it: I ___ happy.", "emoji": "😀", "options": ["am", "cat", "dog"], "a": "am", "why": "I am happy. The word am is a sight word." },
+        { "skill": "pick", "q": "Read it: It ___ a ball.", "emoji": "⚽", "options": ["is", "run", "the"], "a": "is", "why": "It is a ball. The word is is a sight word." },
+        { "skill": "pick", "q": "Read it: You ___ I play.", "options": ["and", "cat", "is"], "a": "and", "why": "You and I play. The word and joins us together." },
+        { "skill": "pick", "q": "Read it: We ___ friends.", "options": ["are", "cat", "run"], "a": "are", "why": "We are friends. The word are is a sight word." }
+      ]
+    },
+    {
+      "id": "eng_reading",
+      "title": "Reading Fun",
+      "icon": "📖",
+      "concept": "Let's read little stories and find the answers hidden inside! Tap any word you do not know to hear it. Read like a champion!",
+      "examples": "🐱 📖 ⭐",
+      "problems": [
+        { "skill": "pick", "q": "Read: The cat sat on a mat. The cat is happy. Where did the cat sit?", "emoji": "🐱", "options": ["on a mat", "on a dog", "in a car"], "a": "on a mat", "why": "The story says: The cat sat on a mat." },
+        { "skill": "pick", "q": "Read: Sam has a red ball. He likes to play. What colour is the ball?", "emoji": "⚽", "options": ["red", "blue", "green"], "a": "red", "why": "The story says the ball is red." },
+        { "skill": "pick", "q": "Read: The sun is hot. We play in the park. Where do we play?", "emoji": "☀️", "options": ["in the park", "at home", "at school"], "a": "in the park", "why": "The story says: We play in the park." },
+        { "skill": "pick", "q": "Read: A frog can jump. A fish can swim. What can the frog do?", "emoji": "🐸", "options": ["jump", "swim", "fly"], "a": "jump", "why": "The story says: A frog can jump." },
+        { "skill": "pick", "q": "Read: Mom made a cake. It is sweet. How does the cake taste?", "emoji": "🎂", "options": ["sweet", "sour", "spicy"], "a": "sweet", "why": "The story says the cake is sweet." },
+        { "skill": "pick", "q": "Read: Tom has two dogs. They run fast. How many dogs does Tom have?", "emoji": "🐶", "options": ["two", "one", "three"], "a": "two", "why": "The story says Tom has two dogs." }
+      ]
+    },
+    {
+      "id": "eng_articles",
+      "title": "A and An",
+      "icon": "📝",
+      "concept": "Tiny words with a big job! Use a before most words, like a gift. Use an before words that start with a vowel sound (a, e, i, o, u), like an apple. Easy peasy!",
+      "examples": "a 🎁 · an 🍎 · an 🥚",
+      "problems": [
+        { "skill": "pick", "q": "___ apple", "emoji": "🍎", "options": ["a", "an"], "a": "an", "why": "Apple starts with the vowel a, so we say an apple." },
+        { "skill": "pick", "q": "___ egg", "emoji": "🥚", "options": ["a", "an"], "a": "an", "why": "Egg starts with the vowel e, so we say an egg." },
+        { "skill": "pick", "q": "___ arrow", "emoji": "🏹", "options": ["a", "an"], "a": "an", "why": "Arrow starts with the vowel a, so we say an arrow." },
+        { "skill": "pick", "q": "___ gift", "emoji": "🎁", "options": ["a", "an"], "a": "a", "why": "Gift starts with g, not a vowel sound, so we say a gift." },
+        { "skill": "pick", "q": "___ ball", "emoji": "⚽", "options": ["a", "an"], "a": "a", "why": "Ball starts with b, not a vowel sound, so we say a ball." },
+        { "skill": "pick", "q": "___ umbrella", "emoji": "☂️", "options": ["a", "an"], "a": "an", "why": "Umbrella starts with the vowel u, so we say an umbrella." },
+        { "skill": "pick", "q": "___ orange", "emoji": "🍊", "options": ["a", "an"], "a": "an", "why": "Orange starts with the vowel o, so we say an orange." },
+        { "skill": "pick", "q": "___ dog", "emoji": "🐶", "options": ["a", "an"], "a": "a", "why": "Dog starts with d, not a vowel sound, so we say a dog." }
+      ]
+    },
+    {
+      "id": "eng_nouns",
+      "title": "Naming Words",
+      "icon": "🏷️",
+      "concept": "A noun is a naming word. It names a person, a place, an animal or a thing! Special names like Riya or Delhi always start with a capital letter.",
+      "examples": "👧 girl · 🏫 school · 🐶 dog",
+      "problems": [
+        { "skill": "pick", "q": "Which one is a naming word?", "options": ["run", "dog", "fast"], "a": "dog", "why": "A noun names a person, place, animal or thing. dog is an animal, so it is a naming word." },
+        { "skill": "pick", "q": "Which one is a naming word?", "options": ["happy", "jump", "school"], "a": "school", "why": "school is a place, so it is a naming word." },
+        { "skill": "pick", "q": "Find the naming word: The cat sleeps.", "emoji": "🐱", "options": ["The", "cat", "sleeps"], "a": "cat", "why": "cat is the name of an animal, so it is the naming word." },
+        { "skill": "pick", "q": "Which one is a special name (proper noun)?", "options": ["girl", "Riya", "child"], "a": "Riya", "why": "Riya is a person's special name, so it is a proper noun. It starts with a capital letter." },
+        { "skill": "pick", "q": "Which one is a proper noun?", "options": ["food", "Maggi", "thing"], "a": "Maggi", "why": "Maggi is a special name of a thing, so it is a proper noun." },
+        { "skill": "pick", "q": "Proper nouns like Riya and Delhi start with a ___ letter.", "options": ["capital", "small"], "a": "capital", "why": "Proper nouns always start with a capital letter." }
+      ]
+    },
+    {
+      "id": "eng_plural",
+      "title": "One and Many",
+      "icon": "🔢",
+      "concept": "One puppy, or many puppies! We usually add s to mean more than one, like dog to dogs. But some words are tricky, like child to children!",
+      "examples": "1 🐶 dog · 3 🐶🐶🐶 dogs",
+      "problems": [
+        { "skill": "pick", "q": "More than one dog is ___?", "emoji": "🐶", "options": ["dogs", "doges", "dog"], "a": "dogs", "why": "We add s to make it plural: dog becomes dogs." },
+        { "skill": "pick", "q": "More than one egg is ___?", "emoji": "🥚", "options": ["eggs", "egges"], "a": "eggs", "why": "We add s: egg becomes eggs." },
+        { "skill": "pick", "q": "One pencil, many ___?", "emoji": "✏️", "options": ["pencils", "pencil"], "a": "pencils", "why": "We add s: pencil becomes pencils." },
+        { "skill": "pick", "q": "More than one child is ___?", "emoji": "🧒", "options": ["childs", "children"], "a": "children", "why": "Some words change completely: child becomes children." },
+        { "skill": "pick", "q": "More than one man is ___?", "emoji": "👨", "options": ["mans", "men"], "a": "men", "why": "Some words change completely: man becomes men." },
+        { "skill": "pick", "q": "More than one tooth is ___?", "emoji": "🦷", "options": ["tooths", "teeth"], "a": "teeth", "why": "Some words change completely: tooth becomes teeth." },
+        { "skill": "pick", "q": "More than one sheep is ___?", "emoji": "🐑", "options": ["sheeps", "sheep"], "a": "sheep", "why": "A few words stay the same: one sheep, many sheep." }
+      ]
+    },
+    {
+      "id": "eng_gender",
+      "title": "Boy or Girl Words",
+      "icon": "👦",
+      "concept": "Some naming words are for boys (masculine) and some are for girls (feminine). A king is a boy and a queen is a girl. Let's match them!",
+      "examples": "👑 king · 👸 queen",
+      "problems": [
+        { "skill": "pick", "q": "The ___ is a very tall man.", "options": ["king", "queen"], "a": "king", "why": "A man is male, so we use the boy word king." },
+        { "skill": "pick", "q": "The red ___ is sitting on her eggs.", "emoji": "🐔", "options": ["cock", "hen"], "a": "hen", "why": "The word her tells us it is female, so we use hen." },
+        { "skill": "pick", "q": "The ___ is a very beautiful girl.", "options": ["prince", "princess"], "a": "princess", "why": "A girl is female, so we use the girl word princess." },
+        { "skill": "pick", "q": "The ___ loves her cubs.", "emoji": "🐯", "options": ["tiger", "tigress"], "a": "tigress", "why": "The word her tells us it is female, so we use tigress." },
+        { "skill": "pick", "q": "Veena is Mr. Goel's ___.", "options": ["son", "daughter"], "a": "daughter", "why": "Veena is a girl, so she is the daughter." },
+        { "skill": "pick", "q": "A ___ is the king of the jungle.", "emoji": "🦁", "options": ["lion", "lioness"], "a": "lion", "why": "King is male, so we use the boy word lion." }
+      ]
+    },
+    {
+      "id": "eng_pronouns",
+      "title": "This, That, These, Those",
+      "icon": "👉",
+      "concept": "These pointing words are like magic fingers! This is one thing near you. That is one thing far away. These is many near you. Those is many far away.",
+      "examples": "👉 this / these (near) · 👈 that / those (far)",
+      "problems": [
+        { "skill": "pick", "q": "A book near you: ___ is a book.", "emoji": "📕", "options": ["This", "These"], "a": "This", "why": "It is one book and it is near, so we use This." },
+        { "skill": "pick", "q": "A book far away: ___ is a book.", "emoji": "📕", "options": ["That", "This"], "a": "That", "why": "It is one book and it is far, so we use That." },
+        { "skill": "pick", "q": "Many books near you: ___ are books.", "emoji": "📚", "options": ["These", "Those"], "a": "These", "why": "There are many books and they are near, so we use These." },
+        { "skill": "pick", "q": "Many books far away: ___ are books.", "emoji": "📚", "options": ["Those", "That"], "a": "Those", "why": "There are many books and they are far, so we use Those." },
+        { "skill": "pick", "q": "___ flowers near me are so colourful.", "emoji": "🌸", "options": ["These", "This"], "a": "These", "why": "Many flowers, and near, so we use These." },
+        { "skill": "pick", "q": "___ mountains far away are enormous.", "emoji": "⛰️", "options": ["Those", "These"], "a": "Those", "why": "Many mountains, and far away, so we use Those." }
+      ]
+    },
+    {
+      "id": "eng_antonyms",
+      "title": "Opposites",
+      "icon": "↔️",
+      "concept": "Opposites are words that mean the very different thing! Big is the opposite of small. Hot is the opposite of cold. Let's flip them!",
+      "examples": "big ↔️ small · day ☀️ ↔️ night 🌙",
+      "problems": [
+        { "skill": "pick", "q": "The opposite of big is ___?", "options": ["small", "huge", "tall"], "a": "small", "why": "Big and small are opposites." },
+        { "skill": "pick", "q": "The opposite of happy is ___?", "emoji": "😀", "options": ["sad", "glad"], "a": "sad", "why": "Happy and sad are opposites." },
+        { "skill": "pick", "q": "The opposite of day is ___?", "emoji": "☀️", "options": ["night", "morning"], "a": "night", "why": "Day and night are opposites." },
+        { "skill": "pick", "q": "The opposite of wet is ___?", "options": ["dry", "damp"], "a": "dry", "why": "Wet and dry are opposites." },
+        { "skill": "pick", "q": "The opposite of fast is ___?", "options": ["slow", "quick"], "a": "slow", "why": "Fast and slow are opposites." },
+        { "skill": "pick", "q": "The opposite of near is ___?", "options": ["far", "close"], "a": "far", "why": "Near and far are opposites." },
+        { "skill": "pick", "q": "The stone is heavy but the feather is ___.", "emoji": "🪶", "options": ["light", "big"], "a": "light", "why": "Heavy and light are opposites." },
+        { "skill": "pick", "q": "My table is smooth but the sandpaper is ___.", "options": ["rough", "soft"], "a": "rough", "why": "Smooth and rough are opposites." }
+      ]
+    },
+    {
+      "id": "eng_prepositions",
+      "title": "Where Is It?",
+      "icon": "📍",
+      "concept": "Position words tell us where something is! A cat can be on the box, in the box, under it, or behind it. Let's find the spot!",
+      "examples": "on 📦 · in 📦 · under 📦",
+      "problems": [
+        { "skill": "pick", "q": "The cat is ___ the box.", "emoji": "🐱📦", "options": ["behind", "on", "in"], "a": "behind", "why": "The cat is hiding at the back of the box, so it is behind the box." },
+        { "skill": "pick", "q": "The girl is ___ the table.", "emoji": "🙇‍♀️", "options": ["under", "on", "behind"], "a": "under", "why": "The girl is below the table, so she is under the table." },
+        { "skill": "pick", "q": "The apple is ___ the box.", "emoji": "🍎📦", "options": ["on", "in", "under"], "a": "on", "why": "The apple is on top of the box, so it is on the box." },
+        { "skill": "pick", "q": "The dog is ___ the box.", "emoji": "🐶📦", "options": ["in", "on", "behind"], "a": "in", "why": "The dog is inside the box, so it is in the box." },
+        { "skill": "pick", "q": "The boy is ___ the two dogs.", "emoji": "🐶🧒🐶", "options": ["between", "under", "on"], "a": "between", "why": "The boy is in the middle of the two dogs, so he is between them." },
+        { "skill": "pick", "q": "The ball is ___ the box.", "emoji": "⚽📦", "options": ["in front of", "behind", "in"], "a": "in front of", "why": "The ball is before the box, so it is in front of the box." }
+      ]
+    },
+    {
+      "id": "eng_adjectives",
+      "title": "Describing Words",
+      "icon": "🎨",
+      "concept": "Describing words make things colourful! A funny clown, a big elephant, sweet honey. Adjectives tell us how things look, feel, taste and sound!",
+      "examples": "big 🐘 · soft 🐱 · sweet 🍯",
+      "problems": [
+        { "skill": "pick", "q": "Rolo is a funny clown. Which word describes Rolo?", "emoji": "🤡", "options": ["funny", "clown", "is"], "a": "funny", "why": "funny describes the clown, so it is the describing word." },
+        { "skill": "pick", "q": "The black dog jumped. Which word is the describing word?", "emoji": "🐕", "options": ["black", "dog", "jumped"], "a": "black", "why": "black tells us about the dog, so it is the adjective." },
+        { "skill": "pick", "q": "A kitten feels ___ (how it feels).", "emoji": "🐱", "options": ["soft", "run", "jump"], "a": "soft", "why": "soft describes how the kitten feels, so it is a describing word." },
+        { "skill": "pick", "q": "A lemon tastes ___?", "emoji": "🍋", "options": ["sour", "soft", "loud"], "a": "sour", "why": "sour describes the taste of a lemon." },
+        { "skill": "pick", "q": "An elephant is very ___ (its size).", "emoji": "🐘", "options": ["big", "sweet", "quiet"], "a": "big", "why": "big describes the size of the elephant." },
+        { "skill": "pick", "q": "Honey tastes ___?", "emoji": "🍯", "options": ["sweet", "sour", "bitter"], "a": "sweet", "why": "sweet describes the taste of honey." }
+      ]
+    },
+    {
+      "id": "eng_verbs",
+      "title": "Action Words",
+      "icon": "🏃",
+      "concept": "Action words are doing words! Run, jump, swim, eat. They tell us what someone is doing. Words for yesterday are in the past tense. Let's get moving!",
+      "examples": "run 🏃 · jump · swim 🏊",
+      "problems": [
+        { "skill": "pick", "q": "Find the action word: The boy runs.", "options": ["The", "boy", "runs"], "a": "runs", "why": "runs tells what the boy is doing, so it is the action word." },
+        { "skill": "pick", "q": "Rahul is ___ (an action).", "emoji": "🏃", "options": ["playing", "happy", "tall"], "a": "playing", "why": "playing is a doing word, so it is the verb." },
+        { "skill": "pick", "q": "A verb is also called a ___ word.", "options": ["doing", "naming"], "a": "doing", "why": "A verb is a doing word or action word." },
+        { "skill": "pick", "q": "Today I play. Yesterday I ___.", "options": ["played", "play"], "a": "played", "why": "For yesterday we use the past tense: play becomes played." },
+        { "skill": "pick", "q": "Today I run. Yesterday I ___.", "options": ["ran", "runned"], "a": "ran", "why": "Some verbs change in the past: run becomes ran." },
+        { "skill": "pick", "q": "Which one is an action word?", "options": ["jump", "table", "red"], "a": "jump", "why": "jump is a doing word, so it is the verb." }
+      ]
+    },
+    {
+      "id": "eng_conjunctions",
+      "title": "Joining Words",
+      "icon": "🔗",
+      "concept": "Joining words link words and sentences together! Use and to join, like bread and butter. Use but to show a difference, and because to give a reason!",
+      "examples": "and 🔗 · but · because",
+      "problems": [
+        { "skill": "pick", "q": "lock ___ key", "emoji": "🔒🔑", "options": ["and", "but", "because"], "a": "and", "why": "We use and to join two words: lock and key." },
+        { "skill": "pick", "q": "I have a pear ___ an orange.", "emoji": "🍐🍊", "options": ["and", "because"], "a": "and", "why": "We use and to join the two things together." },
+        { "skill": "pick", "q": "I am carrying an umbrella ___ it is raining.", "emoji": "☂️", "options": ["because", "and"], "a": "because", "why": "because shows the reason why she is carrying an umbrella." },
+        { "skill": "pick", "q": "I like tea ___ I do not like coffee.", "emoji": "🍵", "options": ["but", "and"], "a": "but", "why": "but shows a difference between the two parts." },
+        { "skill": "pick", "q": "We use ___ to join two words.", "options": ["and", "because"], "a": "and", "why": "and is the joining word." },
+        { "skill": "pick", "q": "We use ___ to show a reason.", "options": ["because", "but"], "a": "because", "why": "because tells us the reason for something." }
+      ]
+    },
+    {
+      "id": "eng_similes",
+      "title": "Fun Similes",
+      "icon": "🐝",
+      "concept": "A simile compares two things using the word as or like. We say as busy as a bee, or as sweet as honey. Similes make our words fun and colourful!",
+      "examples": "🐝 busy as a bee · 🍯 sweet as honey · 🐢 slow as a tortoise",
+      "problems": [
+        { "skill": "pick", "q": "As busy as a ___?", "emoji": "🐝", "options": ["bee", "dog", "cat"], "a": "bee", "why": "Bees are always working, so we say as busy as a bee." },
+        { "skill": "pick", "q": "As sweet as ___?", "emoji": "🍯", "options": ["honey", "salt", "lemon"], "a": "honey", "why": "Honey is very sweet, so we say as sweet as honey." },
+        { "skill": "pick", "q": "As slow as a ___?", "emoji": "🐢", "options": ["tortoise", "rabbit", "horse"], "a": "tortoise", "why": "A tortoise moves very slowly, so we say as slow as a tortoise." },
+        { "skill": "pick", "q": "As white as ___?", "emoji": "❄️", "options": ["snow", "coal", "grass"], "a": "snow", "why": "Snow is very white, so we say as white as snow." },
+        { "skill": "pick", "q": "As cold as ___?", "emoji": "🧊", "options": ["ice", "fire", "soup"], "a": "ice", "why": "Ice is very cold, so we say as cold as ice." },
+        { "skill": "pick", "q": "As clever as a ___?", "emoji": "🦊", "options": ["fox", "cow", "duck"], "a": "fox", "why": "A fox is very clever, so we say as clever as a fox." },
+        { "skill": "pick", "q": "As light as a ___?", "emoji": "🪶", "options": ["feather", "stone", "brick"], "a": "feather", "why": "A feather is very light, so we say as light as a feather." },
+        { "skill": "pick", "q": "As soft as a ___?", "emoji": "🐱", "options": ["kitten", "rock", "nail"], "a": "kitten", "why": "A kitten is very soft, so we say as soft as a kitten." }
+      ]
+    }
+  ]
+}

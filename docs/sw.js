@@ -1,4 +1,4 @@
-const CACHE = 'puppypark-v2';
+const CACHE = 'puppypark-v3';
 const ASSETS = [
   './',
   './index.html',
@@ -17,8 +17,10 @@ const ASSETS = [
   './js/learn.js',
   './js/mathbook.js',
   './js/english.js',
+  './js/englishbook.js',
   './js/app.js',
   './data/math_book.json',
+  './data/english_book.json',
   './assets/puppies/simba.jpg',
   './assets/puppies/mufasa.jpg',
   './assets/puppies/golu.jpg',

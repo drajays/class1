@@ -4,74 +4,1732 @@
       "id": "mb_counting",
       "title": "Counting & Number Sense",
       "icon": "🔢",
-      "concept": "We count things one by one. The last number we say tells us how many there are!",
+      "concept": "Counting is like calling your puppies one by one! 🐶 Point and say 1, 2, 3… The LAST number you say tells how many there are.",
+      "tip": "Touch each thing once as you count — no skipping, no counting twice!",
       "problems": [
-        { "skill": "count", "q": "How many stars?", "emoji": "⭐", "n": 4, "a": 4 },
-        { "skill": "count", "q": "How many apples?", "emoji": "🍎", "n": 6, "a": 6 },
-        { "skill": "count", "q": "How many balloons?", "emoji": "🎈", "n": 8, "a": 8 },
-        { "skill": "pick", "q": "What comes AFTER 6?", "a": 7, "options": [5, 7, 8, 6], "why": "Count up from 6: the next number is 7." },
-        { "skill": "pick", "q": "What comes BEFORE 9?", "a": 8, "options": [8, 10, 7, 9], "why": "Count back from 9: the number before is 8." },
-        { "skill": "pick", "q": "What comes BETWEEN 4 and 6?", "a": 5, "options": [5, 7, 3, 6], "why": "4 … then 5 … then 6. The middle one is 5." },
-        { "skill": "pick", "q": "Missing number: 1, 2, _, 4, 5", "a": 3, "options": [3, 6, 2, 9], "why": "Count in order: 1, 2, 3, 4, 5. The missing one is 3." },
-        { "skill": "pick", "q": "Skip count by 2: 2, 4, 6, _", "a": 8, "options": [7, 8, 10, 9], "why": "Add 2 each time: 6 + 2 = 8." },
-        { "skill": "pick", "q": "Skip count by 5: 5, 10, _", "a": 15, "options": [12, 15, 20, 11], "why": "Add 5 each time: 10 + 5 = 15." },
-        { "skill": "pick", "q": "Skip count by 10: 10, 20, _", "a": 30, "options": [25, 30, 40, 21], "why": "Add 10 each time: 20 + 10 = 30." }
+        {
+          "skill": "count",
+          "q": "How many stars?",
+          "emoji": "⭐",
+          "n": 4,
+          "a": 4
+        },
+        {
+          "skill": "count",
+          "q": "How many apples?",
+          "emoji": "🍎",
+          "n": 6,
+          "a": 6
+        },
+        {
+          "skill": "count",
+          "q": "How many balloons?",
+          "emoji": "🎈",
+          "n": 8,
+          "a": 8
+        },
+        {
+          "skill": "pick",
+          "q": "What comes AFTER 6?",
+          "a": 7,
+          "options": [
+            5,
+            7,
+            8,
+            6
+          ],
+          "why": "Count up from 6: the next number is 7."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes BEFORE 9?",
+          "a": 8,
+          "options": [
+            8,
+            10,
+            7,
+            9
+          ],
+          "why": "Count back from 9: the number before is 8."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes BETWEEN 4 and 6?",
+          "a": 5,
+          "options": [
+            5,
+            7,
+            3,
+            6
+          ],
+          "why": "4 … then 5 … then 6. The middle one is 5."
+        },
+        {
+          "skill": "pick",
+          "q": "Missing number: 1, 2, _, 4, 5",
+          "a": 3,
+          "options": [
+            3,
+            6,
+            2,
+            9
+          ],
+          "why": "Count in order: 1, 2, 3, 4, 5. The missing one is 3."
+        },
+        {
+          "skill": "pick",
+          "q": "Skip count by 2: 2, 4, 6, _",
+          "a": 8,
+          "options": [
+            7,
+            8,
+            10,
+            9
+          ],
+          "why": "Add 2 each time: 6 + 2 = 8."
+        },
+        {
+          "skill": "pick",
+          "q": "Skip count by 5: 5, 10, _",
+          "a": 15,
+          "options": [
+            12,
+            15,
+            20,
+            11
+          ],
+          "why": "Add 5 each time: 10 + 5 = 15."
+        },
+        {
+          "skill": "pick",
+          "q": "Skip count by 10: 10, 20, _",
+          "a": 30,
+          "options": [
+            25,
+            30,
+            40,
+            21
+          ],
+          "why": "Add 10 each time: 20 + 10 = 30."
+        },
+        {
+          "skill": "count",
+          "q": "How many fish?",
+          "emoji": "🐟",
+          "n": 7,
+          "a": 7
+        },
+        {
+          "skill": "pick",
+          "q": "Missing number: 7, 8, _, 10",
+          "a": 9,
+          "options": [
+            9,
+            6,
+            11,
+            8
+          ],
+          "why": "Count in order: 7, 8, 9, 10. The missing one is 9."
+        },
+        {
+          "skill": "pick",
+          "q": "Count BACKWARD: 5, 4, 3, _",
+          "a": 2,
+          "options": [
+            2,
+            6,
+            1,
+            3
+          ],
+          "why": "Going down one each time: 5, 4, 3, 2."
+        },
+        {
+          "skill": "pick",
+          "q": "Skip count by 2: 10, 12, 14, _",
+          "a": 16,
+          "options": [
+            16,
+            15,
+            18,
+            13
+          ],
+          "why": "Add 2 each time: 14 + 2 = 16."
+        }
+      ]
+    },
+    {
+      "id": "mb_compare",
+      "title": "Compare & Order",
+      "icon": "⚖️",
+      "concept": "Which pile of treats is bigger? The sign > is a hungry mouth that always bites the BIGGER number! < means less than, and = means both are exactly the same.",
+      "tip": "The > mouth always opens toward the bigger number — it wants the most treats! 🐊",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Which is GREATER: 7 or 4?",
+          "a": 7,
+          "options": [
+            7,
+            4
+          ],
+          "why": "7 comes after 4 when counting, so 7 is greater."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is SMALLER: 3 or 8?",
+          "a": 3,
+          "options": [
+            3,
+            8
+          ],
+          "why": "3 comes before 8 when counting, so 3 is smaller."
+        },
+        {
+          "skill": "pick",
+          "q": "Which sign is correct?  6 ⬜ 9",
+          "a": "<",
+          "options": [
+            "<",
+            ">",
+            "=",
+            "+"
+          ],
+          "why": "6 is less than 9, so we use the < sign: 6 < 9."
+        },
+        {
+          "skill": "pick",
+          "q": "Which sign is correct?  10 ⬜ 5",
+          "a": ">",
+          "options": [
+            ">",
+            "<",
+            "=",
+            "-"
+          ],
+          "why": "10 is greater than 5, so we use the > sign: 10 > 5."
+        },
+        {
+          "skill": "pick",
+          "q": "Which sign is correct?  4 ⬜ 4",
+          "a": "=",
+          "options": [
+            "=",
+            ">",
+            "<",
+            "+"
+          ],
+          "why": "Both numbers are 4, so they are equal: 4 = 4."
+        },
+        {
+          "skill": "pick",
+          "q": "Ascending order (going up): which number comes FIRST? 5, 2, 8",
+          "a": 2,
+          "options": [
+            2,
+            5,
+            8
+          ],
+          "why": "Ascending starts with the smallest number. 2 is the smallest."
+        },
+        {
+          "skill": "pick",
+          "q": "Descending order (going down): which number comes FIRST? 3, 9, 6",
+          "a": 9,
+          "options": [
+            9,
+            6,
+            3
+          ],
+          "why": "Descending starts with the largest number. 9 is the largest."
+        },
+        {
+          "skill": "pick",
+          "q": "🍎🍎🍎🍎 and 🍎🍎 — which group has MORE?",
+          "a": "First group",
+          "options": [
+            "First group",
+            "Second group",
+            "Same",
+            "None"
+          ],
+          "why": "4 apples is more than 2 apples, so the first group has more."
+        }
+      ]
+    },
+    {
+      "id": "mb_ordinal",
+      "title": "Ordinal Numbers",
+      "icon": "🥇",
+      "concept": "When the puppies race 🏁, who came 1st, 2nd, 3rd? Ordinal numbers tell the POSITION. Counting tells how many; ordinals tell which place!",
+      "tip": "1st = gold 🥇, 2nd = silver 🥈, 3rd = bronze 🥉!",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "🏁 In a race they finished: 🐶 🐱 🐰. Who is FIRST (1st)?",
+          "a": "Dog 🐶",
+          "options": [
+            "Dog 🐶",
+            "Cat 🐱",
+            "Rabbit 🐰",
+            "Nobody"
+          ],
+          "why": "The one in front is in 1st place — the dog."
+        },
+        {
+          "skill": "pick",
+          "q": "🏁 Order: 🐶 🐱 🐰. Who is SECOND (2nd)?",
+          "a": "Cat 🐱",
+          "options": [
+            "Cat 🐱",
+            "Dog 🐶",
+            "Rabbit 🐰",
+            "Nobody"
+          ],
+          "why": "2nd means second in line — the cat."
+        },
+        {
+          "skill": "pick",
+          "q": "🏁 Order: 🐶 🐱 🐰. Who is THIRD (3rd)?",
+          "a": "Rabbit 🐰",
+          "options": [
+            "Rabbit 🐰",
+            "Cat 🐱",
+            "Dog 🐶",
+            "Nobody"
+          ],
+          "why": "3rd means third in line — the rabbit."
+        },
+        {
+          "skill": "pick",
+          "q": "Which one is an ORDINAL (position) number?",
+          "a": "3rd",
+          "options": [
+            "3rd",
+            "3",
+            "three",
+            "+3"
+          ],
+          "why": "3rd shows position. Plain 3 just counts how many."
+        },
+        {
+          "skill": "pick",
+          "q": "The winner who came 1st gets which medal? 🥇🥈🥉",
+          "a": "Gold 🥇",
+          "options": [
+            "Gold 🥇",
+            "Silver 🥈",
+            "Bronze 🥉",
+            "None"
+          ],
+          "why": "1st place always gets the gold medal."
+        },
+        {
+          "skill": "pick",
+          "q": "Count the band: ⚪⚪⚪⚪⚪. Which position is the FIFTH (5th) circle?",
+          "a": "The last one",
+          "options": [
+            "The last one",
+            "The first one",
+            "The middle one",
+            "None"
+          ],
+          "why": "There are 5 circles, so the 5th is the last one."
+        }
+      ]
+    },
+    {
+      "id": "mb_evenodd",
+      "title": "Even & Odd Numbers",
+      "icon": "👫",
+      "concept": "Can every puppy find a partner? 🐶🐶 EVEN numbers pair up with none left alone. ODD numbers always leave one puppy with no partner!",
+      "tip": "Even numbers end in 0, 2, 4, 6, 8. Odd numbers end in 1, 3, 5, 7, 9!",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Is 4 even or odd?",
+          "a": "Even",
+          "options": [
+            "Even",
+            "Odd"
+          ],
+          "why": "4 = 2 + 2, it shares equally with none left. So 4 is even."
+        },
+        {
+          "skill": "pick",
+          "q": "Is 5 even or odd?",
+          "a": "Odd",
+          "options": [
+            "Even",
+            "Odd"
+          ],
+          "why": "5 makes 2 pairs with one left over. So 5 is odd."
+        },
+        {
+          "skill": "pick",
+          "q": "Is 8 even or odd?",
+          "a": "Even",
+          "options": [
+            "Even",
+            "Odd"
+          ],
+          "why": "8 makes 4 pairs with none left over. So 8 is even."
+        },
+        {
+          "skill": "pick",
+          "q": "Is 7 even or odd?",
+          "a": "Odd",
+          "options": [
+            "Even",
+            "Odd"
+          ],
+          "why": "7 leaves one out after pairing. So 7 is odd."
+        },
+        {
+          "skill": "pick",
+          "q": "Which one is an EVEN number?",
+          "a": 6,
+          "options": [
+            6,
+            3,
+            9,
+            7
+          ],
+          "why": "6 shares into two equal 3s with none left. 6 is even."
+        },
+        {
+          "skill": "pick",
+          "q": "Which one is an ODD number?",
+          "a": 9,
+          "options": [
+            9,
+            4,
+            2,
+            10
+          ],
+          "why": "9 has one left over after pairing. 9 is odd."
+        }
       ]
     },
     {
       "id": "mb_bonds",
       "title": "Number Bonds & Make 10",
       "icon": "🤝",
-      "concept": "Number bonds are two number friends that join to make a number. The friends of 10 make a full ten!",
+      "concept": "Number bonds are best-friend numbers that hold paws to make a number! 🤝 The friends of 10 are super special — together they make a full ten.",
+      "tip": "Friends of 10: 1&9, 2&8, 3&7, 4&6, 5&5. Know these and adding gets EASY!",
       "problems": [
-        { "skill": "pick", "q": "7 + ? = 10", "a": 3, "options": [2, 3, 4, 5], "why": "7 needs 3 more to reach 10. 7 + 3 = 10." },
-        { "skill": "pick", "q": "6 + ? = 10", "a": 4, "options": [3, 4, 5, 6], "why": "6 and 4 are friends of 10. 6 + 4 = 10." },
-        { "skill": "pick", "q": "8 + ? = 10", "a": 2, "options": [1, 2, 3, 4], "why": "8 and 2 make 10. 8 + 2 = 10." },
-        { "skill": "pick", "q": "Number bond of 5: 4 + ? = 5", "a": 1, "options": [1, 2, 3, 0], "why": "4 and 1 make 5. 4 + 1 = 5." },
-        { "skill": "pick", "q": "Number bond of 5: 2 + ? = 5", "a": 3, "options": [2, 3, 4, 1], "why": "2 and 3 make 5. 2 + 3 = 5." },
-        { "skill": "pick", "q": "Number bond of 8: 5 + ? = 8", "a": 3, "options": [2, 3, 4, 5], "why": "5 and 3 make 8. 5 + 3 = 8." }
+        {
+          "skill": "pick",
+          "q": "7 + ? = 10",
+          "a": 3,
+          "options": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "why": "7 needs 3 more to reach 10. 7 + 3 = 10."
+        },
+        {
+          "skill": "pick",
+          "q": "6 + ? = 10",
+          "a": 4,
+          "options": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "why": "6 and 4 are friends of 10. 6 + 4 = 10."
+        },
+        {
+          "skill": "pick",
+          "q": "8 + ? = 10",
+          "a": 2,
+          "options": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "why": "8 and 2 make 10. 8 + 2 = 10."
+        },
+        {
+          "skill": "pick",
+          "q": "Number bond of 5:  4 + ? = 5",
+          "a": 1,
+          "options": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "why": "4 and 1 make 5. 4 + 1 = 5."
+        },
+        {
+          "skill": "pick",
+          "q": "Number bond of 5:  2 + ? = 5",
+          "a": 3,
+          "options": [
+            2,
+            3,
+            4,
+            1
+          ],
+          "why": "2 and 3 make 5. 2 + 3 = 5."
+        },
+        {
+          "skill": "pick",
+          "q": "Number bond of 8:  5 + ? = 8",
+          "a": 3,
+          "options": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "why": "5 and 3 make 8. 5 + 3 = 8."
+        }
       ]
     },
     {
       "id": "mb_addition",
       "title": "Addition",
       "icon": "➕",
-      "concept": "Addition means putting groups together to find the total. The answer is called the sum!",
+      "concept": "Addition is putting groups together — like gathering all the puppies into one big happy pile! ➕ The total is called the SUM.",
+      "tip": "Start with the BIGGER number and count on — it's much faster!",
       "problems": [
-        { "skill": "add", "q": "3 + 2 = ?", "x": 3, "y": 2, "emoji": "🍎", "a": 5 },
-        { "skill": "add", "q": "4 + 4 = ?", "x": 4, "y": 4, "emoji": "🐶", "a": 8 },
-        { "skill": "add", "q": "5 + 3 = ?", "x": 5, "y": 3, "emoji": "⭐", "a": 8 },
-        { "skill": "add", "q": "6 + 2 = ?", "x": 6, "y": 2, "emoji": "🎈", "a": 8 },
-        { "skill": "add", "q": "2 + 7 = ?", "x": 2, "y": 7, "emoji": "🍪", "a": 9 },
-        { "skill": "add", "q": "5 + 5 = ?", "x": 5, "y": 5, "emoji": "🌟", "a": 10 }
+        {
+          "skill": "add",
+          "q": "3 + 2 = ?",
+          "x": 3,
+          "y": 2,
+          "emoji": "🍎",
+          "a": 5
+        },
+        {
+          "skill": "add",
+          "q": "4 + 4 = ?",
+          "x": 4,
+          "y": 4,
+          "emoji": "🐶",
+          "a": 8
+        },
+        {
+          "skill": "add",
+          "q": "5 + 3 = ?",
+          "x": 5,
+          "y": 3,
+          "emoji": "⭐",
+          "a": 8
+        },
+        {
+          "skill": "add",
+          "q": "6 + 2 = ?",
+          "x": 6,
+          "y": 2,
+          "emoji": "🎈",
+          "a": 8
+        },
+        {
+          "skill": "add",
+          "q": "2 + 7 = ?",
+          "x": 2,
+          "y": 7,
+          "emoji": "🍪",
+          "a": 9
+        },
+        {
+          "skill": "add",
+          "q": "5 + 5 = ?",
+          "x": 5,
+          "y": 5,
+          "emoji": "🌟",
+          "a": 10
+        },
+        {
+          "skill": "add",
+          "q": "7 + 3 = ?  (make 10)",
+          "x": 7,
+          "y": 3,
+          "emoji": "🍪",
+          "a": 10
+        },
+        {
+          "skill": "add",
+          "q": "8 + 2 = ?  (make 10)",
+          "x": 8,
+          "y": 2,
+          "emoji": "🦴",
+          "a": 10
+        },
+        {
+          "skill": "add",
+          "q": "6 + 3 = ?",
+          "x": 6,
+          "y": 3,
+          "emoji": "🐶",
+          "a": 9
+        },
+        {
+          "skill": "add",
+          "q": "4 + 5 = ?",
+          "x": 4,
+          "y": 5,
+          "emoji": "🎈",
+          "a": 9
+        }
       ]
     },
     {
       "id": "mb_subtraction",
       "title": "Subtraction",
       "icon": "➖",
-      "concept": "Subtraction means taking away. Cross out the objects you take away, then count what is left — that is the difference!",
+      "concept": "Subtraction is taking away — like puppies gobbling treats! 🦴 Cross out what's gone, then count what's left. That leftover is the DIFFERENCE.",
+      "tip": "When you subtract, the number gets SMALLER (unless you take away 0)!",
       "problems": [
-        { "skill": "crossout", "q": "Cross out to subtract: 7 − 3 = ?", "n": 7, "take": 3, "emoji": "⭐", "a": 4 },
-        { "skill": "crossout", "q": "Cross out to subtract: 8 − 4 = ?", "n": 8, "take": 4, "emoji": "🍎", "a": 4 },
-        { "skill": "crossout", "q": "Cross out to subtract: 6 − 2 = ?", "n": 6, "take": 2, "emoji": "🎈", "a": 4 },
-        { "skill": "crossout", "q": "Cross out to subtract: 9 − 4 = ?", "n": 9, "take": 4, "emoji": "🍪", "a": 5 },
-        { "skill": "crossout", "q": "Cross out to subtract: 10 − 3 = ?", "n": 10, "take": 3, "emoji": "🐟", "a": 7 },
-        { "skill": "crossout", "q": "Cross out to subtract: 10 − 8 = ?", "n": 10, "take": 8, "emoji": "🌟", "a": 2 }
+        {
+          "skill": "crossout",
+          "q": "Cross out to subtract: 7 − 3 = ?",
+          "n": 7,
+          "take": 3,
+          "emoji": "⭐",
+          "a": 4
+        },
+        {
+          "skill": "crossout",
+          "q": "Cross out to subtract: 8 − 4 = ?",
+          "n": 8,
+          "take": 4,
+          "emoji": "🍎",
+          "a": 4
+        },
+        {
+          "skill": "crossout",
+          "q": "Cross out to subtract: 6 − 2 = ?",
+          "n": 6,
+          "take": 2,
+          "emoji": "🎈",
+          "a": 4
+        },
+        {
+          "skill": "crossout",
+          "q": "Cross out to subtract: 9 − 4 = ?",
+          "n": 9,
+          "take": 4,
+          "emoji": "🍪",
+          "a": 5
+        },
+        {
+          "skill": "crossout",
+          "q": "Cross out to subtract: 10 − 3 = ?",
+          "n": 10,
+          "take": 3,
+          "emoji": "🐟",
+          "a": 7
+        },
+        {
+          "skill": "crossout",
+          "q": "Cross out to subtract: 10 − 8 = ?",
+          "n": 10,
+          "take": 8,
+          "emoji": "🌟",
+          "a": 2
+        },
+        {
+          "skill": "crossout",
+          "q": "7 fish, 4 swim away: 7 − 4 = ?",
+          "n": 7,
+          "take": 4,
+          "emoji": "🐟",
+          "a": 3
+        },
+        {
+          "skill": "crossout",
+          "q": "Cross out to subtract: 9 − 5 = ?",
+          "n": 9,
+          "take": 5,
+          "emoji": "🍎",
+          "a": 4
+        },
+        {
+          "skill": "crossout",
+          "q": "Cross out to subtract: 5 − 2 = ?",
+          "n": 5,
+          "take": 2,
+          "emoji": "⭐",
+          "a": 3
+        }
       ]
     },
     {
       "id": "mb_addsub",
       "title": "Add & Subtract Together",
       "icon": "🧮",
-      "concept": "Use what you know! Hop forward on the number line to add, and hop back to subtract.",
+      "concept": "You're a number-line hopper! 🐶 Hop FORWARD to add and hop BACK to subtract, then land right on the answer. These are problems from your book!",
+      "tip": "Adding 10? Just bump the tens digit up by 1: 84 + 10 = 94!",
       "problems": [
-        { "skill": "numberline", "q": "12 + 3 = ?", "start": 12, "op": "+", "step": 3, "a": 15 },
-        { "skill": "numberline", "q": "15 − 5 = ?", "start": 15, "op": "-", "step": 5, "a": 10 },
-        { "skill": "numberline", "q": "16 − 6 = ?", "start": 16, "op": "-", "step": 6, "a": 10 },
-        { "skill": "numberline", "q": "10 + 7 = ?", "start": 10, "op": "+", "step": 7, "a": 17 },
-        { "skill": "numberline", "q": "18 − 8 = ?", "start": 18, "op": "-", "step": 8, "a": 10 },
-        { "skill": "numberline", "q": "13 + 5 = ?", "start": 13, "op": "+", "step": 5, "a": 18 }
+        {
+          "skill": "numberline",
+          "q": "16 − 6 = ?",
+          "start": 16,
+          "op": "-",
+          "step": 6,
+          "a": 10
+        },
+        {
+          "skill": "numberline",
+          "q": "91 + 4 = ?",
+          "start": 91,
+          "op": "+",
+          "step": 4,
+          "a": 95
+        },
+        {
+          "skill": "numberline",
+          "q": "92 + 2 = ?",
+          "start": 92,
+          "op": "+",
+          "step": 2,
+          "a": 94
+        },
+        {
+          "skill": "numberline",
+          "q": "75 − 5 = ?",
+          "start": 75,
+          "op": "-",
+          "step": 5,
+          "a": 70
+        },
+        {
+          "skill": "numberline",
+          "q": "84 + 10 = ?",
+          "start": 84,
+          "op": "+",
+          "step": 10,
+          "a": 94
+        },
+        {
+          "skill": "numberline",
+          "q": "70 − 10 = ?",
+          "start": 70,
+          "op": "-",
+          "step": 10,
+          "a": 60
+        }
+      ]
+    },
+    {
+      "id": "mb_numbernames",
+      "title": "Number Names",
+      "icon": "🔤",
+      "concept": "Numbers have names, just like puppies! 🔤 14 is 'fourteen' and 65 is 'sixty-five'. Say the tens first, then the ones.",
+      "tip": "Careful: fifTEEN is 15, but fifTY is 50! 'TEEN' means around ten.",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What is the number name for 14?",
+          "a": "fourteen",
+          "options": [
+            "fourteen",
+            "forty",
+            "four",
+            "forty-one"
+          ],
+          "why": "14 is ten and four written together: fourteen (10 + 4)."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the number name for 12?",
+          "a": "twelve",
+          "options": [
+            "twelve",
+            "twenty",
+            "two",
+            "twenty-one"
+          ],
+          "why": "12 is written as twelve."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the number name for 65?",
+          "a": "sixty-five",
+          "options": [
+            "sixty-five",
+            "fifty-six",
+            "six-five",
+            "sixteen"
+          ],
+          "why": "6 tens make sixty and 5 ones make five: sixty-five."
+        },
+        {
+          "skill": "pick",
+          "q": "Which number is 'seven'?",
+          "a": 7,
+          "options": [
+            7,
+            9,
+            4,
+            17
+          ],
+          "why": "The word seven means the number 7."
+        },
+        {
+          "skill": "pick",
+          "q": "Which number is 'twenty'?",
+          "a": 20,
+          "options": [
+            20,
+            12,
+            2,
+            30
+          ],
+          "why": "Twenty means 2 tens, which is 20."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the number name for 30?",
+          "a": "thirty",
+          "options": [
+            "thirty",
+            "thirteen",
+            "three",
+            "forty"
+          ],
+          "why": "30 is 3 tens, written as thirty."
+        },
+        {
+          "skill": "pick",
+          "q": "Careful! Which number is 'fifteen'?",
+          "a": 15,
+          "options": [
+            15,
+            50,
+            5,
+            55
+          ],
+          "why": "Fifteen is 15 (ten and five). Fifty is 50 — don't mix them up!"
+        },
+        {
+          "skill": "pick",
+          "q": "What is the number name for 9?",
+          "a": "nine",
+          "options": [
+            "nine",
+            "ninety",
+            "nineteen",
+            "ninth"
+          ],
+          "why": "9 is written as nine. (Ninety is 90 and ninth means position.)"
+        }
+      ]
+    },
+    {
+      "id": "mb_placevalue",
+      "title": "Place Value: Tens & Ones",
+      "icon": "🏠",
+      "concept": "Every digit has its own home! 🏠 In 25, the 2 lives in the TENS house (worth 20) and the 5 lives in the ONES house. 20 + 5 = 25.",
+      "tip": "The left digit is always TENS, the right digit is always ONES!",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "In the number 25, how many TENS are there?",
+          "a": 2,
+          "options": [
+            2,
+            5,
+            7,
+            0
+          ],
+          "why": "The first digit shows the tens. 25 has 2 tens."
+        },
+        {
+          "skill": "pick",
+          "q": "In the number 25, how many ONES are there?",
+          "a": 5,
+          "options": [
+            5,
+            2,
+            7,
+            0
+          ],
+          "why": "The last digit shows the ones. 25 has 5 ones."
+        },
+        {
+          "skill": "pick",
+          "q": "Write 25 in expanded form.",
+          "a": "20 + 5",
+          "options": [
+            "20 + 5",
+            "2 + 5",
+            "25 + 0",
+            "20 + 50"
+          ],
+          "why": "2 tens make 20 and 5 ones make 5, so 25 = 20 + 5."
+        },
+        {
+          "skill": "pick",
+          "q": "In the number 16, how many ONES are there?",
+          "a": 6,
+          "options": [
+            6,
+            1,
+            7,
+            10
+          ],
+          "why": "16 has 1 ten and 6 ones."
+        },
+        {
+          "skill": "pick",
+          "q": "I have 7 tens and 2 ones. Which number do I have?",
+          "a": 72,
+          "options": [
+            72,
+            27,
+            9,
+            720
+          ],
+          "why": "7 tens make 70, plus 2 ones makes 72."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the BIGGEST two-digit number?",
+          "a": 99,
+          "options": [
+            99,
+            10,
+            100,
+            90
+          ],
+          "why": "The biggest two-digit number is 99 (9 tens and 9 ones)."
+        },
+        {
+          "skill": "pick",
+          "q": "In the number 39, how many TENS are there?",
+          "a": 3,
+          "options": [
+            3,
+            9,
+            12,
+            0
+          ],
+          "why": "39 has 3 tens and 9 ones."
+        },
+        {
+          "skill": "pick",
+          "q": "Write 39 in expanded form.",
+          "a": "30 + 9",
+          "options": [
+            "30 + 9",
+            "3 + 9",
+            "39 + 0",
+            "30 + 90"
+          ],
+          "why": "3 tens make 30 and 9 ones make 9, so 39 = 30 + 9."
+        },
+        {
+          "skill": "pick",
+          "q": "4 tens and 5 ones make which number?",
+          "a": 45,
+          "options": [
+            45,
+            54,
+            9,
+            40
+          ],
+          "why": "4 tens = 40, plus 5 ones = 45."
+        }
+      ]
+    },
+    {
+      "id": "mb_tables",
+      "title": "Times Tables (2, 5, 10)",
+      "icon": "✖️",
+      "concept": "A times table is just skip-counting jumps! 🦘 Table of 2: 2,4,6,8… Table of 5: 5,10,15… Table of 10: 10,20,30…",
+      "tip": "The table of 10 is the easiest — just add a 0! 4 tens = 40!",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Table of 2:  2, 4, 6, 8, _",
+          "a": 10,
+          "options": [
+            10,
+            9,
+            12,
+            7
+          ],
+          "why": "Add 2 each time: 8 + 2 = 10."
+        },
+        {
+          "skill": "pick",
+          "q": "Table of 5:  5, 10, 15, _",
+          "a": 20,
+          "options": [
+            20,
+            16,
+            25,
+            18
+          ],
+          "why": "Add 5 each time: 15 + 5 = 20."
+        },
+        {
+          "skill": "pick",
+          "q": "Table of 10:  10, 20, 30, _",
+          "a": 40,
+          "options": [
+            40,
+            31,
+            50,
+            35
+          ],
+          "why": "Add 10 each time: 30 + 10 = 40."
+        },
+        {
+          "skill": "pick",
+          "q": "2 × 3 means three 2s: 2 + 2 + 2 = ?",
+          "a": 6,
+          "options": [
+            6,
+            5,
+            8,
+            4
+          ],
+          "why": "Three 2s added: 2 + 2 + 2 = 6."
+        },
+        {
+          "skill": "pick",
+          "q": "5 × 2 means two 5s: 5 + 5 = ?",
+          "a": 10,
+          "options": [
+            10,
+            7,
+            15,
+            12
+          ],
+          "why": "Two 5s added: 5 + 5 = 10."
+        },
+        {
+          "skill": "pick",
+          "q": "How many fingers on 2 hands? (count by 5)",
+          "a": 10,
+          "options": [
+            10,
+            5,
+            15,
+            7
+          ],
+          "why": "Each hand has 5 fingers: 5 + 5 = 10."
+        }
+      ]
+    },
+    {
+      "id": "mb_shapes",
+      "title": "Shapes",
+      "icon": "🔺",
+      "concept": "Shapes are everywhere! 🔺 A triangle has 3 sides, a square has 4 equal sides, a rectangle has 4 sides (2 long, 2 short), and a circle is round with no corners.",
+      "tip": "Count the corners to name a flat shape: triangle = 3, square = 4!",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "How many sides does a TRIANGLE have? 🔺",
+          "a": 3,
+          "options": [
+            3,
+            4,
+            1,
+            5
+          ],
+          "why": "A triangle has 3 straight sides and 3 corners."
+        },
+        {
+          "skill": "pick",
+          "q": "How many sides does a SQUARE have? ⬜",
+          "a": 4,
+          "options": [
+            4,
+            3,
+            5,
+            2
+          ],
+          "why": "A square has 4 equal sides."
+        },
+        {
+          "skill": "pick",
+          "q": "Which shape is perfectly ROUND with no corners?",
+          "a": "Circle ⭕",
+          "options": [
+            "Circle ⭕",
+            "Square ⬜",
+            "Triangle 🔺",
+            "Rectangle ▭"
+          ],
+          "why": "A circle is round all the way with no corners."
+        },
+        {
+          "skill": "pick",
+          "q": "Which shape has 4 sides but is long, not square? ▭",
+          "a": "Rectangle ▭",
+          "options": [
+            "Rectangle ▭",
+            "Square ⬜",
+            "Circle ⭕",
+            "Triangle 🔺"
+          ],
+          "why": "A rectangle has 2 long sides and 2 short sides."
+        },
+        {
+          "skill": "pick",
+          "q": "A ball ⚽ is shaped like a…",
+          "a": "Sphere",
+          "options": [
+            "Sphere",
+            "Cube",
+            "Square",
+            "Circle"
+          ],
+          "why": "A ball is a solid round shape called a sphere."
+        },
+        {
+          "skill": "pick",
+          "q": "A dice 🎲 is shaped like a…",
+          "a": "Cube",
+          "options": [
+            "Cube",
+            "Sphere",
+            "Cone",
+            "Circle"
+          ],
+          "why": "A dice has 6 flat square faces — that is a cube."
+        }
+      ]
+    },
+    {
+      "id": "mb_patterns",
+      "title": "Patterns",
+      "icon": "🔁",
+      "concept": "Patterns repeat like a puppy's favourite song! 🎵 Spot the part that repeats and you'll always know what comes next.",
+      "tip": "Say the pattern out loud — your ears will hear the repeat!",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "🔴 🔵 🔴 🔵 🔴 _  What comes next?",
+          "a": "🔵",
+          "options": [
+            "🔵",
+            "🔴",
+            "🟢",
+            "🟡"
+          ],
+          "why": "The rule is red, blue, repeating. After red comes blue."
+        },
+        {
+          "skill": "pick",
+          "q": "🍎 🍎 🍌 🍎 🍎 🍌 _  What comes next?",
+          "a": "🍎",
+          "options": [
+            "🍎",
+            "🍌",
+            "🍇",
+            "🍊"
+          ],
+          "why": "The rule is apple, apple, banana. The next group starts with apple."
+        },
+        {
+          "skill": "pick",
+          "q": "⬆️ ➡️ ⬆️ ➡️ _  What comes next?",
+          "a": "⬆️",
+          "options": [
+            "⬆️",
+            "➡️",
+            "⬇️",
+            "⬅️"
+          ],
+          "why": "The rule is up, right, repeating. After right comes up."
+        },
+        {
+          "skill": "pick",
+          "q": "1, 2, 1, 2, 1, _  What comes next?",
+          "a": 2,
+          "options": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "why": "The pattern repeats 1, 2. After 1 comes 2."
+        },
+        {
+          "skill": "pick",
+          "q": "🐶 🐱 🐱 🐶 🐱 🐱 _  What comes next?",
+          "a": "🐶",
+          "options": [
+            "🐶",
+            "🐱",
+            "🐭",
+            "🐰"
+          ],
+          "why": "The rule is dog, cat, cat. The next group starts with dog."
+        },
+        {
+          "skill": "pick",
+          "q": "Big, small, big, small, _  What comes next?",
+          "a": "Big",
+          "options": [
+            "Big",
+            "Small",
+            "Medium",
+            "None"
+          ],
+          "why": "It keeps changing big, small. After small comes big."
+        }
+      ]
+    },
+    {
+      "id": "mb_measure",
+      "title": "Measurement",
+      "icon": "📏",
+      "concept": "Measuring lets us compare! 📏 Longer or shorter, heavier or lighter, holds more or less. A big elephant 🐘 next to a tiny ant 🐜!",
+      "tip": "No ruler needed — just look and ask: which one is clearly bigger?",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Which is LONGER: a pencil ✏️ or a bus 🚌?",
+          "a": "Bus 🚌",
+          "options": [
+            "Bus 🚌",
+            "Pencil ✏️",
+            "Same",
+            "None"
+          ],
+          "why": "A bus is much longer than a pencil."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is SHORTER: an ant 🐜 or a giraffe 🦒?",
+          "a": "Ant 🐜",
+          "options": [
+            "Ant 🐜",
+            "Giraffe 🦒",
+            "Same",
+            "None"
+          ],
+          "why": "An ant is tiny, so it is much shorter."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is HEAVIER: an elephant 🐘 or a feather 🪶?",
+          "a": "Elephant 🐘",
+          "options": [
+            "Elephant 🐘",
+            "Feather 🪶",
+            "Same",
+            "None"
+          ],
+          "why": "An elephant is very heavy; a feather is very light."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is LIGHTER: a balloon 🎈 or a rock 🪨?",
+          "a": "Balloon 🎈",
+          "options": [
+            "Balloon 🎈",
+            "Rock 🪨",
+            "Same",
+            "None"
+          ],
+          "why": "A balloon is so light it can float."
+        },
+        {
+          "skill": "pick",
+          "q": "Which holds MORE water: a cup ☕ or a bucket 🪣?",
+          "a": "Bucket 🪣",
+          "options": [
+            "Bucket 🪣",
+            "Cup ☕",
+            "Same",
+            "None"
+          ],
+          "why": "A bucket holds much more water than a cup."
+        },
+        {
+          "skill": "pick",
+          "q": "Which tool do we use to measure TIME?",
+          "a": "Clock 🕐",
+          "options": [
+            "Clock 🕐",
+            "Ruler 📏",
+            "Cup ☕",
+            "Scale ⚖️"
+          ],
+          "why": "A clock measures time; a ruler measures length."
+        }
+      ]
+    },
+    {
+      "id": "mb_data",
+      "title": "Data Handling",
+      "icon": "📊",
+      "concept": "Data handling means sorting information into neat groups so we can count and compare — like sorting puppy toys into baskets! 📊",
+      "tip": "A taller bar or a bigger group always means MORE. Just count to compare!",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "🍎🍎🍎 apples and 🍌🍌 bananas. How many apples are there?",
+          "a": 3,
+          "options": [
+            3,
+            2,
+            5,
+            4
+          ],
+          "why": "Count the apples one by one: there are 3."
+        },
+        {
+          "skill": "pick",
+          "q": "🍎🍎🍎 apples and 🍌🍌 bananas. Which fruit has MORE?",
+          "a": "Apples",
+          "options": [
+            "Apples",
+            "Bananas",
+            "Same",
+            "None"
+          ],
+          "why": "3 apples is more than 2 bananas."
+        },
+        {
+          "skill": "pick",
+          "q": "⭐⭐⭐⭐ stars and 🌙🌙 moons. How many shapes in TOTAL?",
+          "a": 6,
+          "options": [
+            6,
+            4,
+            2,
+            5
+          ],
+          "why": "4 stars + 2 moons = 6 shapes altogether."
+        },
+        {
+          "skill": "pick",
+          "q": "🐶🐶 dogs and 🐱🐱🐱🐱 cats. Which group has FEWER?",
+          "a": "Dogs",
+          "options": [
+            "Dogs",
+            "Cats",
+            "Same",
+            "None"
+          ],
+          "why": "2 dogs is fewer than 4 cats."
+        },
+        {
+          "skill": "pick",
+          "q": "On a bar graph, a TALLER bar means…",
+          "a": "More",
+          "options": [
+            "More",
+            "Less",
+            "Equal",
+            "Nothing"
+          ],
+          "why": "A taller bar stands for a bigger number — more."
+        },
+        {
+          "skill": "pick",
+          "q": "🎈🎈🎈 red and 🎈 blue. How many MORE red balloons than blue?",
+          "a": 2,
+          "options": [
+            2,
+            3,
+            1,
+            4
+          ],
+          "why": "3 red − 1 blue = 2 more red balloons."
+        }
+      ]
+    },
+    {
+      "id": "mb_time",
+      "title": "Time",
+      "icon": "🕐",
+      "concept": "Time tells us WHEN things happen! 🕐 A clock shows the hour, 7 days make a week, and morning → afternoon → night come in order every day.",
+      "tip": "7 days in a week — count on your fingers: Sun, Mon, Tue, Wed, Thu, Fri, Sat!",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "How many days are there in a week?",
+          "a": 7,
+          "options": [
+            7,
+            5,
+            10,
+            30
+          ],
+          "why": "A week has 7 days: Sunday to Saturday."
+        },
+        {
+          "skill": "pick",
+          "q": "Which day comes right AFTER Monday?",
+          "a": "Tuesday",
+          "options": [
+            "Tuesday",
+            "Sunday",
+            "Friday",
+            "Monday"
+          ],
+          "why": "The order is Monday, then Tuesday."
+        },
+        {
+          "skill": "pick",
+          "q": "When do we usually sleep?",
+          "a": "Night 🌙",
+          "options": [
+            "Night 🌙",
+            "Morning ☀️",
+            "Noon ☀️",
+            "Anytime"
+          ],
+          "why": "We usually sleep at night when it is dark."
+        },
+        {
+          "skill": "pick",
+          "q": "When does the sun rise?",
+          "a": "Morning ☀️",
+          "options": [
+            "Morning ☀️",
+            "Night 🌙",
+            "Midnight",
+            "Never"
+          ],
+          "why": "The sun rises in the morning to start the day."
+        },
+        {
+          "skill": "pick",
+          "q": "A clock shows 3 o'clock 🕒. Which number is the short hour hand on?",
+          "a": 3,
+          "options": [
+            3,
+            12,
+            6,
+            9
+          ],
+          "why": "At 3 o'clock the short hour hand points to the 3."
+        },
+        {
+          "skill": "pick",
+          "q": "What do we use to tell the time?",
+          "a": "Clock 🕐",
+          "options": [
+            "Clock 🕐",
+            "Ruler 📏",
+            "Cup ☕",
+            "Box 📦"
+          ],
+          "why": "A clock or a watch tells us the time."
+        }
+      ]
+    },
+    {
+      "id": "mb_word",
+      "title": "Word Problems",
+      "icon": "📖",
+      "concept": "A word problem is a tiny story with a hidden math puzzle! 📖 Read it, find the numbers, decide ADD or TAKE AWAY, then solve.",
+      "tip": "'Left', 'ate', 'gave away' → SUBTRACT.  'Altogether', 'in all', 'more' → ADD!",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Simba 🐶 had 5 bones and ate 2. How many bones are LEFT?",
+          "a": 3,
+          "options": [
+            3,
+            7,
+            2,
+            5
+          ],
+          "why": "He ate some, so we take away: 5 − 2 = 3 bones left."
+        },
+        {
+          "skill": "pick",
+          "q": "Golu 🐶 has 4 toys. Advaita gives 3 more. How many toys NOW?",
+          "a": 7,
+          "options": [
+            7,
+            1,
+            6,
+            5
+          ],
+          "why": "She gets more, so we add: 4 + 3 = 7 toys."
+        },
+        {
+          "skill": "pick",
+          "q": "There are 6 puppies. 2 run away. How many STAY?",
+          "a": 4,
+          "options": [
+            4,
+            8,
+            3,
+            2
+          ],
+          "why": "Some leave, so we take away: 6 − 2 = 4 puppies stay."
+        },
+        {
+          "skill": "pick",
+          "q": "Mother gave 50 rupees. Dog food cost 40 rupees. How much money is LEFT?",
+          "a": 10,
+          "options": [
+            10,
+            90,
+            20,
+            40
+          ],
+          "why": "We spent some, so we take away: ₹50 − ₹40 = ₹10 left."
+        },
+        {
+          "skill": "pick",
+          "q": "Whity 🐶 ate 3 biscuits in the morning and 4 at night. How many in ALL?",
+          "a": 7,
+          "options": [
+            7,
+            1,
+            12,
+            6
+          ],
+          "why": "We put them together: 3 + 4 = 7 biscuits."
+        },
+        {
+          "skill": "pick",
+          "q": "There are 8 balloons. 5 pop. How many balloons are LEFT?",
+          "a": 3,
+          "options": [
+            3,
+            13,
+            4,
+            2
+          ],
+          "why": "Some pop, so we take away: 8 − 5 = 3 balloons."
+        },
+        {
+          "skill": "pick",
+          "q": "Shiba coloured 30 flowers red and 12 yellow. How many flowers ALTOGETHER?",
+          "a": 42,
+          "options": [
+            42,
+            18,
+            32,
+            40
+          ],
+          "why": "'Altogether' means add: 30 + 12 = 42."
+        },
+        {
+          "skill": "pick",
+          "q": "Sam bought 35 stickers and gave 5 to Rohit. How many does Sam have NOW?",
+          "a": 30,
+          "options": [
+            30,
+            40,
+            25,
+            5
+          ],
+          "why": "'Gave' means take away: 35 − 5 = 30 stickers."
+        },
+        {
+          "skill": "pick",
+          "q": "Ria sold 20 hotdogs and 11 burgers. What is the TOTAL sold?",
+          "a": 31,
+          "options": [
+            31,
+            9,
+            21,
+            30
+          ],
+          "why": "'Total' means add: 20 + 11 = 31."
+        },
+        {
+          "skill": "pick",
+          "q": "Siya had 10 cupcakes and shared 4 with Tina. How many are LEFT with Siya?",
+          "a": 6,
+          "options": [
+            6,
+            14,
+            4,
+            5
+          ],
+          "why": "'Shared/gave' means take away: 10 − 4 = 6 left."
+        },
+        {
+          "skill": "pick",
+          "q": "Sara has 32 apples and buys 15 more. How many apples NOW?",
+          "a": 47,
+          "options": [
+            47,
+            17,
+            42,
+            52
+          ],
+          "why": "'Buys more' means add: 32 + 15 = 47."
+        }
+      ]
+    },
+    {
+      "id": "mb_money",
+      "title": "Money & Coins",
+      "icon": "🪙",
+      "concept": "Money buys things! In India we use rupees (₹). We ADD when we get or earn money, and SUBTRACT when we spend it — just like Advaita earns 🪙 coins to spend in the Puppy Mall!",
+      "tip": "Getting or earning money → ADD. Spending or paying → SUBTRACT. The ₹ sign means rupees!",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Mother gave ₹50. Dog food cost ₹40. How much money is LEFT?",
+          "a": 10,
+          "options": [
+            10,
+            90,
+            20,
+            40
+          ],
+          "why": "Spending takes away: 50 − 40 = ₹10 left."
+        },
+        {
+          "skill": "pick",
+          "q": "You have 17 coins. Your brother takes 14 coins. How many coins are LEFT?",
+          "a": 3,
+          "options": [
+            3,
+            31,
+            4,
+            7
+          ],
+          "why": "He takes some away: 17 − 14 = 3 coins left."
+        },
+        {
+          "skill": "pick",
+          "q": "A toffee costs ₹2 and a biscuit costs ₹5. Which costs MORE?",
+          "a": "Biscuit (₹5)",
+          "options": [
+            "Biscuit (₹5)",
+            "Toffee (₹2)",
+            "Same",
+            "None"
+          ],
+          "why": "₹5 is more than ₹2, so the biscuit costs more."
+        },
+        {
+          "skill": "pick",
+          "q": "You earn ₹10, then earn ₹5 more. How much money ALTOGETHER?",
+          "a": 15,
+          "options": [
+            15,
+            5,
+            50,
+            10
+          ],
+          "why": "Earning adds up: 10 + 5 = ₹15."
+        },
+        {
+          "skill": "pick",
+          "q": "A pencil costs ₹6. You pay with ₹10. How much change do you get BACK?",
+          "a": 4,
+          "options": [
+            4,
+            16,
+            6,
+            3
+          ],
+          "why": "Change = what you pay minus the cost: 10 − 6 = ₹4 back."
+        },
+        {
+          "skill": "pick",
+          "q": "Advaita earned 8 🪙 coins, then 2 more for the puppies. How many coins now?",
+          "a": 10,
+          "options": [
+            10,
+            6,
+            12,
+            8
+          ],
+          "why": "Add them up: 8 + 2 = 10 coins for the Puppy Mall!"
+        }
+      ]
+    },
+    {
+      "id": "mb_revision",
+      "title": "Revision — Show What You Know!",
+      "icon": "🏆",
+      "concept": "Champion time! 🏆 A mix of everything you've learned — counting, adding, taking away, shapes and more. Show how clever you are!",
+      "tip": "Read carefully and tap 'Show me how' if you're stuck. Champions never give up!",
+      "problems": [
+        {
+          "skill": "count",
+          "q": "How many puppies?",
+          "emoji": "🐶",
+          "n": 5,
+          "a": 5
+        },
+        {
+          "skill": "add",
+          "q": "4 + 3 = ?",
+          "x": 4,
+          "y": 3,
+          "emoji": "⭐",
+          "a": 7
+        },
+        {
+          "skill": "crossout",
+          "q": "9 − 5 = ?",
+          "n": 9,
+          "take": 5,
+          "emoji": "🍎",
+          "a": 4
+        },
+        {
+          "skill": "pick",
+          "q": "Which is GREATER: 8 or 6?",
+          "a": 8,
+          "options": [
+            8,
+            6
+          ],
+          "why": "8 comes after 6, so 8 is greater."
+        },
+        {
+          "skill": "numberline",
+          "q": "14 + 4 = ?",
+          "start": 14,
+          "op": "+",
+          "step": 4,
+          "a": 18
+        },
+        {
+          "skill": "pick",
+          "q": "How many sides does a square have? ⬜",
+          "a": 4,
+          "options": [
+            4,
+            3,
+            5,
+            2
+          ],
+          "why": "A square has 4 equal sides."
+        },
+        {
+          "skill": "pick",
+          "q": "Is 10 even or odd?",
+          "a": "Even",
+          "options": [
+            "Even",
+            "Odd"
+          ],
+          "why": "10 makes 5 pairs with none left over. It is even."
+        },
+        {
+          "skill": "pick",
+          "q": "In the number 24, how many TENS?",
+          "a": 2,
+          "options": [
+            2,
+            4,
+            6,
+            0
+          ],
+          "why": "24 has 2 tens and 4 ones."
+        }
       ]
     }
   ]

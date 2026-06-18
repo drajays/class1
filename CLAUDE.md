@@ -72,12 +72,21 @@ incl. the full math book), original full-res `dogs.jpg`. Also gitignored: `organ
 - Commit messages end with: `Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>`.
 - Commit/push only when the user asks.
 
+## Multi-session note
+Sometimes a second Claude session works this repo in parallel (e.g. English).
+**Read & update `COORDINATION.md` before editing shared files** (`index.html`,
+`app.js`, `style.css`, `sw.js`). Math owns `mathbook.js`/`math_book.json`; English owns
+`englishbook.js`/`english_book.json`. English reuses `mb-*` CSS classes.
+
 ## Status / roadmap
-- ✅ Puppy Park + Mall + economy + wish loop shipped.
-- 🚧 Math Book guided-solver engine (mathbook.js) + foundational block (counting,
-  number bonds/make-10, addition, subtraction, add&subtract) — replacing Math Arcade.
-- ⏭️ Continue curating remaining math chapters in sequence (place value, shapes,
-  patterns, measurement, data handling, time, word problems, revision) from the book.
-- ⏭️ Later: puppy sound effects, more puppy life, then other subjects.
+- ✅ Puppy Park + Mall + economy + wish loop shipped (commit 2ba29b0).
+- ✅ Math Book COMPLETE — `mathbook.js` engine + `math_book.json` with **17
+  book-faithful chapters / 110 problems** in sequence, concept-first, guided
+  step-by-step self-correcting solutions, responsive (phone/iPad/MacBook in Edge).
+  Replaced the old Math Arcade (math.js + MATH_LEVELS removed). NOT yet committed.
+- 🚧 English Book — built in parallel by the English session (englishbook.js +
+  english_book.json, 10 grammar chapters).
+- ⏭️ Later: more puppy life / sounds; other subjects (EVS, Hindi, Sanskrit, Computer)
+  still use the legacy notes+quiz path.
 
 See also memory: `~/.claude/projects/-Users-dr-ajayshukla-class1/memory/puppy-park-rebuild.md`.
