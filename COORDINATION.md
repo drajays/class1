@@ -82,6 +82,13 @@ These are touched by both. Make **small, localized** edits and log them below.
   ice 🧊, as clever as a fox 🦊, as light as a feather 🪶, as soft as a kitten 🐱).
   `english_book.json` only — no shared-file changes. Verified rendering in Edge.
 
+### English session — 2026-06-18 (UPDATE 4: sentence & vocab batch 1)
+- ✅ Added 4 chapters → now **22 chapters / 141 problems**: Capital Letters & Full
+  Stops (punctuation), Asking Words (who/what/where/when), How Much How Many
+  (quantifiers — book ch.24), Order Words (sequencing — book ch.24 first/next/then/
+  finally). `english_book.json` only. Autonomous build session ("build till limit,
+  commit+push each batch").
+
 ### Math session — 2026-06-18
 - ✅ Built `docs/js/mathbook.js` — `MathBook` guided-solver engine: gated chapter
   picker, concept intro, 5 interactive widgets (count, crossout, add, numberline,

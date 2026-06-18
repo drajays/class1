@@ -278,6 +278,66 @@
         { "skill": "pick", "q": "As light as a ___?", "emoji": "🪶", "options": ["feather", "stone", "brick"], "a": "feather", "why": "A feather is very light, so we say as light as a feather." },
         { "skill": "pick", "q": "As soft as a ___?", "emoji": "🐱", "options": ["kitten", "rock", "nail"], "a": "kitten", "why": "A kitten is very soft, so we say as soft as a kitten." }
       ]
+    },
+    {
+      "id": "eng_capitals",
+      "title": "Capital Letters and Full Stops",
+      "icon": "✏️",
+      "concept": "Every sentence starts with a CAPITAL letter and ends with a full stop. Names of people and places start with a capital letter too. Let's write it right!",
+      "examples": "Riya is happy. · I have a dog.",
+      "problems": [
+        { "skill": "pick", "q": "Which sentence is correct?", "emoji": "🐱", "options": ["The cat is big.", "the cat is big"], "a": "The cat is big.", "why": "It starts with a capital T and ends with a full stop." },
+        { "skill": "pick", "q": "A sentence always ends with a ___.", "options": ["full stop", "comma", "nothing"], "a": "full stop", "why": "We put a full stop at the end of every sentence." },
+        { "skill": "pick", "q": "A sentence always begins with a ___ letter.", "options": ["capital", "small"], "a": "capital", "why": "The first letter of a sentence is always a capital letter." },
+        { "skill": "pick", "q": "Which name is written correctly?", "options": ["riya", "Riya"], "a": "Riya", "why": "Names of people start with a capital letter." },
+        { "skill": "pick", "q": "Which is correct?", "options": ["i am six.", "I am six."], "a": "I am six.", "why": "The word I is always written as a capital letter." },
+        { "skill": "pick", "q": "Pick the correct sentence.", "emoji": "🏞️", "options": ["We play in the park.", "we play in the park"], "a": "We play in the park.", "why": "Capital letter at the start, full stop at the end." }
+      ]
+    },
+    {
+      "id": "eng_question_words",
+      "title": "Asking Words",
+      "icon": "❓",
+      "concept": "Question words help us ask things! Who asks about a person, what asks about a thing, where asks about a place, and when asks about time.",
+      "examples": "Who? 👤 · What? 🎁 · Where? 📍 · When? ⏰",
+      "problems": [
+        { "skill": "pick", "q": "___ is your name?", "options": ["What", "Where", "When"], "a": "What", "why": "We ask What is your name to know the name." },
+        { "skill": "pick", "q": "___ is at the door?", "emoji": "🚪", "options": ["Who", "What", "Where"], "a": "Who", "why": "Who asks about a person." },
+        { "skill": "pick", "q": "___ do you live?", "emoji": "🏠", "options": ["Where", "What", "When"], "a": "Where", "why": "Where asks about a place." },
+        { "skill": "pick", "q": "___ is your birthday?", "emoji": "🎂", "options": ["When", "Where", "Who"], "a": "When", "why": "When asks about time." },
+        { "skill": "pick", "q": "___ colour do you like?", "emoji": "🎨", "options": ["What", "Who", "When"], "a": "What", "why": "What asks about a thing." },
+        { "skill": "pick", "q": "___ is your teacher?", "emoji": "👩‍🏫", "options": ["Who", "Where", "When"], "a": "Who", "why": "Who asks about a person." }
+      ]
+    },
+    {
+      "id": "eng_quantifiers",
+      "title": "How Much, How Many",
+      "icon": "⚖️",
+      "concept": "Some words tell us how much or how many. We use many for things we can count, like apples. We use much for things we cannot count, like water.",
+      "examples": "many 🍎🍎🍎 · a little 💧",
+      "problems": [
+        { "skill": "pick", "q": "Jack has ___ friends.", "options": ["many", "much"], "a": "many", "why": "Friends can be counted, so we use many." },
+        { "skill": "pick", "q": "There is ___ water in the glass.", "emoji": "🥛", "options": ["little", "many"], "a": "little", "why": "Water cannot be counted, so we use little, not many." },
+        { "skill": "pick", "q": "I have ___ books.", "emoji": "📚", "options": ["many", "much"], "a": "many", "why": "Books can be counted, so we use many." },
+        { "skill": "pick", "q": "There is not ___ rice in the bowl.", "emoji": "🍚", "options": ["much", "many"], "a": "much", "why": "Rice cannot be counted one by one, so we use much." },
+        { "skill": "pick", "q": "___ children went for a picnic.", "options": ["Some", "Much"], "a": "Some", "why": "Some tells us an amount of things we can count." },
+        { "skill": "pick", "q": "I have ___ toys!", "emoji": "🧸", "options": ["a lot of", "a little"], "a": "a lot of", "why": "a lot of means a big number of things." }
+      ]
+    },
+    {
+      "id": "eng_sequencing",
+      "title": "Order Words",
+      "icon": "🔢",
+      "concept": "Order words tell us what happens first and what comes next! We say First, Next, Then and Finally to put things in the right order.",
+      "examples": "First → Next → Then → Finally",
+      "problems": [
+        { "skill": "pick", "q": "Which word means it happens at the very start?", "options": ["First", "Finally", "Then"], "a": "First", "why": "First tells us what happens at the very beginning." },
+        { "skill": "pick", "q": "Which word means it happens at the very end?", "options": ["Finally", "First", "Next"], "a": "Finally", "why": "Finally tells us what happens at the very end." },
+        { "skill": "pick", "q": "First, squeeze the lemon. ___, add sugar.", "emoji": "🍋", "options": ["Next", "Finally"], "a": "Next", "why": "Next tells us what comes after the first step." },
+        { "skill": "pick", "q": "First I wake up. ___ I brush my teeth.", "emoji": "🪥", "options": ["Then", "First"], "a": "Then", "why": "Then tells us the next step." },
+        { "skill": "pick", "q": "First I put on socks. ___ I put on shoes.", "emoji": "🧦", "options": ["Then", "First"], "a": "Then", "why": "Then tells us what comes next." },
+        { "skill": "pick", "q": "The order words are First, Next, Then and ___.", "options": ["Finally", "Maybe"], "a": "Finally", "why": "The four order words are First, Next, Then, Finally." }
+      ]
     }
   ]
 }
