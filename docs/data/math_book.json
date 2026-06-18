@@ -253,6 +253,54 @@
             "None"
           ],
           "why": "4 apples is more than 2 apples, so the first group has more."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is the LARGEST? 12, 9, 15",
+          "a": 15,
+          "options": [
+            15,
+            12,
+            9,
+            21
+          ],
+          "why": "15 is the biggest of 12, 9 and 15."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is the SMALLEST? 8, 2, 6",
+          "a": 2,
+          "options": [
+            2,
+            6,
+            8,
+            1
+          ],
+          "why": "2 is the smallest of 8, 2 and 6."
+        },
+        {
+          "skill": "pick",
+          "q": "Which sign is correct?  3 ⬜ 7",
+          "a": "<",
+          "options": [
+            "<",
+            ">",
+            "=",
+            "+"
+          ],
+          "why": "3 is less than 7, so 3 < 7."
+        },
+        {
+          "skill": "pick",
+          "q": "Arrange going UP (smallest first): 5, 1, 3. Which comes FIRST?",
+          "a": 1,
+          "options": [
+            1,
+            3,
+            5,
+            2
+          ],
+          "why": "Ascending means smallest first, so 1 comes first."
         }
       ]
     },
@@ -334,6 +382,42 @@
             "None"
           ],
           "why": "There are 5 circles, so the 5th is the last one."
+        },
+        {
+          "skill": "pick",
+          "q": "🐶🐱🐰🐦 In this line, who is 4th (fourth)?",
+          "a": "Bird 🐦",
+          "options": [
+            "Bird 🐦",
+            "Dog 🐶",
+            "Cat 🐱",
+            "Rabbit 🐰"
+          ],
+          "why": "1st dog, 2nd cat, 3rd rabbit, 4th bird."
+        },
+        {
+          "skill": "pick",
+          "q": "Which position comes BETWEEN 2nd and 4th?",
+          "a": "3rd",
+          "options": [
+            "3rd",
+            "1st",
+            "5th",
+            "2nd"
+          ],
+          "why": "After 2nd comes 3rd, then 4th. So 3rd is between."
+        },
+        {
+          "skill": "pick",
+          "q": "In a line of 5 puppies, the LAST one is in which position?",
+          "a": "5th",
+          "options": [
+            "5th",
+            "1st",
+            "4th",
+            "2nd"
+          ],
+          "why": "5 puppies, so the last one is the 5th."
         }
       ]
     },
@@ -407,6 +491,38 @@
             10
           ],
           "why": "9 has one left over after pairing. 9 is odd."
+        },
+        {
+          "skill": "pick",
+          "q": "Is 10 even or odd?",
+          "a": "Even",
+          "options": [
+            "Even",
+            "Odd"
+          ],
+          "why": "10 makes 5 pairs with none left over. Even!"
+        },
+        {
+          "skill": "pick",
+          "q": "Is 3 even or odd?",
+          "a": "Odd",
+          "options": [
+            "Even",
+            "Odd"
+          ],
+          "why": "3 leaves one out after pairing. Odd!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which one is an EVEN number?",
+          "a": 2,
+          "options": [
+            2,
+            5,
+            7,
+            9
+          ],
+          "why": "2 splits into 1 and 1 with none left. Even!"
         }
       ]
     },
@@ -488,6 +604,42 @@
             5
           ],
           "why": "5 and 3 make 8. 5 + 3 = 8."
+        },
+        {
+          "skill": "pick",
+          "q": "3 + ? = 10",
+          "a": 7,
+          "options": [
+            7,
+            6,
+            8,
+            5
+          ],
+          "why": "3 and 7 are friends of 10."
+        },
+        {
+          "skill": "pick",
+          "q": "9 + ? = 10",
+          "a": 1,
+          "options": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "why": "9 needs just 1 more to make 10."
+        },
+        {
+          "skill": "pick",
+          "q": "Number bond of 7:  6 + ? = 7",
+          "a": 1,
+          "options": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "why": "6 and 1 make 7."
         }
       ]
     },
@@ -1018,6 +1170,42 @@
             7
           ],
           "why": "Each hand has 5 fingers: 5 + 5 = 10."
+        },
+        {
+          "skill": "pick",
+          "q": "2 × 5 means five 2s: 2+2+2+2+2 = ?",
+          "a": 10,
+          "options": [
+            10,
+            8,
+            12,
+            7
+          ],
+          "why": "Five 2s: 2, 4, 6, 8, 10."
+        },
+        {
+          "skill": "pick",
+          "q": "Table of 10:  10 × 2 = ?",
+          "a": 20,
+          "options": [
+            20,
+            12,
+            30,
+            102
+          ],
+          "why": "Two 10s: 10 + 10 = 20."
+        },
+        {
+          "skill": "pick",
+          "q": "Table of 5:  5, 10, 15, 20, _",
+          "a": 25,
+          "options": [
+            25,
+            21,
+            30,
+            24
+          ],
+          "why": "Add 5: 20 + 5 = 25."
         }
       ]
     },
@@ -1099,6 +1287,42 @@
             "Circle"
           ],
           "why": "A dice has 6 flat square faces — that is a cube."
+        },
+        {
+          "skill": "pick",
+          "q": "How many CORNERS does a triangle have? 🔺",
+          "a": 3,
+          "options": [
+            3,
+            4,
+            0,
+            1
+          ],
+          "why": "A triangle has 3 corners and 3 sides."
+        },
+        {
+          "skill": "pick",
+          "q": "Which shape has NO corners?",
+          "a": "Circle ⭕",
+          "options": [
+            "Circle ⭕",
+            "Square ⬜",
+            "Triangle 🔺",
+            "Rectangle ▭"
+          ],
+          "why": "A circle is round with no corners."
+        },
+        {
+          "skill": "pick",
+          "q": "An egg 🥚 is shaped most like an…",
+          "a": "Oval",
+          "options": [
+            "Oval",
+            "Square",
+            "Triangle",
+            "Cube"
+          ],
+          "why": "An egg is a stretched round shape — an oval."
         }
       ]
     },
@@ -1180,6 +1404,42 @@
             "None"
           ],
           "why": "It keeps changing big, small. After small comes big."
+        },
+        {
+          "skill": "pick",
+          "q": "🟥 🟦 🟨 🟥 🟦 🟨 _  What comes next?",
+          "a": "🟥",
+          "options": [
+            "🟥",
+            "🟦",
+            "🟨",
+            "🟩"
+          ],
+          "why": "Rule: red, blue, yellow, repeating. Next is red."
+        },
+        {
+          "skill": "pick",
+          "q": "2, 4, 2, 4, 2, _  What comes next?",
+          "a": 4,
+          "options": [
+            4,
+            2,
+            6,
+            8
+          ],
+          "why": "It repeats 2, 4. After 2 comes 4."
+        },
+        {
+          "skill": "pick",
+          "q": "⬛ ⬜ ⬛ ⬜ ⬛ _  What comes next?",
+          "a": "⬜",
+          "options": [
+            "⬜",
+            "⬛",
+            "🟥",
+            "🟦"
+          ],
+          "why": "Black, white, repeating. After black comes white."
         }
       ]
     },
@@ -1261,6 +1521,42 @@
             "Scale ⚖️"
           ],
           "why": "A clock measures time; a ruler measures length."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is TALLER: a tree 🌳 or a flower 🌼?",
+          "a": "Tree 🌳",
+          "options": [
+            "Tree 🌳",
+            "Flower 🌼",
+            "Same",
+            "None"
+          ],
+          "why": "A tree is much taller than a flower."
+        },
+        {
+          "skill": "pick",
+          "q": "Which holds LESS water: a spoon 🥄 or a jug 🫙?",
+          "a": "Spoon 🥄",
+          "options": [
+            "Spoon 🥄",
+            "Jug 🫙",
+            "Same",
+            "None"
+          ],
+          "why": "A spoon holds much less water than a jug."
+        },
+        {
+          "skill": "pick",
+          "q": "We measure a desk by laying crayons end to end. This tells its…",
+          "a": "Length",
+          "options": [
+            "Length",
+            "Weight",
+            "Time",
+            "Colour"
+          ],
+          "why": "Crayons laid end to end measure how long it is — its length."
         }
       ]
     },
@@ -1342,6 +1638,42 @@
             4
           ],
           "why": "3 red − 1 blue = 2 more red balloons."
+        },
+        {
+          "skill": "pick",
+          "q": "⚽⚽⚽⚽⚽ balls and 🏀🏀 hoops. How many balls?",
+          "a": 5,
+          "options": [
+            5,
+            2,
+            7,
+            4
+          ],
+          "why": "Count the balls one by one: 5."
+        },
+        {
+          "skill": "pick",
+          "q": "🍎🍎 apples, 🍌🍌🍌🍌 bananas, 🍇 grapes. Which fruit is the MOST?",
+          "a": "Bananas",
+          "options": [
+            "Bananas",
+            "Apples",
+            "Grapes",
+            "Same"
+          ],
+          "why": "4 bananas is the biggest group — the most."
+        },
+        {
+          "skill": "pick",
+          "q": "🐶🐶🐶 dogs and 🐱 cat. How many MORE dogs than cats?",
+          "a": 2,
+          "options": [
+            2,
+            3,
+            1,
+            4
+          ],
+          "why": "3 dogs − 1 cat = 2 more dogs."
         }
       ]
     },
@@ -1423,6 +1755,42 @@
             "Box 📦"
           ],
           "why": "A clock or a watch tells us the time."
+        },
+        {
+          "skill": "pick",
+          "q": "How many MONTHS are there in a year?",
+          "a": 12,
+          "options": [
+            12,
+            7,
+            10,
+            30
+          ],
+          "why": "A year has 12 months, January to December."
+        },
+        {
+          "skill": "pick",
+          "q": "Which comes FIRST in the day?",
+          "a": "Morning ☀️",
+          "options": [
+            "Morning ☀️",
+            "Night 🌙",
+            "Evening",
+            "Afternoon"
+          ],
+          "why": "The day begins in the morning."
+        },
+        {
+          "skill": "pick",
+          "q": "Which day comes right AFTER Friday?",
+          "a": "Saturday",
+          "options": [
+            "Saturday",
+            "Thursday",
+            "Sunday",
+            "Monday"
+          ],
+          "why": "The order is Friday, then Saturday."
         }
       ]
     },
@@ -1729,6 +2097,26 @@
             0
           ],
           "why": "24 has 2 tens and 4 ones."
+        },
+        {
+          "skill": "pick",
+          "q": "7 + ? = 10",
+          "a": 3,
+          "options": [
+            3,
+            2,
+            4,
+            5
+          ],
+          "why": "7 and 3 make 10."
+        },
+        {
+          "skill": "numberline",
+          "q": "16 + 3 = ?",
+          "start": 16,
+          "op": "+",
+          "step": 3,
+          "a": 19
         }
       ]
     }
