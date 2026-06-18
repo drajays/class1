@@ -105,6 +105,10 @@ These are touched by both. Make **small, localized** edits and log them below.
 - ✅ Added 4 chapters → now **38 chapters / 237 problems**: Months of the Year,
   Number Words (1-10 in words), Same Meaning Words (synonyms), Weather Words.
 
+### English session — 2026-06-18 (UPDATE 9: feelings, phonics-2 batch 6)
+- ✅ Added 4 chapters → now **42 chapters / 261 problems**: My Feelings, Can and
+  Cannot, Two-Letter Sounds (sh/ch/th digraphs), Spell Bigger Words (4-letter spell).
+
 ### Math session — 2026-06-18
 - ✅ Built `docs/js/mathbook.js` — `MathBook` guided-solver engine: gated chapter
   picker, concept intro, 5 interactive widgets (count, crossout, add, numberline,

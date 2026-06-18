@@ -578,6 +578,66 @@
         { "skill": "pick", "q": "When snow falls, it is a ___ day.", "emoji": "❄️", "options": ["snowy", "sunny", "hot"], "a": "snowy", "why": "When snow falls it is a snowy day." },
         { "skill": "pick", "q": "We see clouds in the ___.", "emoji": "☁️", "options": ["sky", "sea", "ground"], "a": "sky", "why": "Clouds float in the sky." }
       ]
+    },
+    {
+      "id": "eng_feelings",
+      "title": "My Feelings",
+      "icon": "😀",
+      "concept": "We all have feelings! We feel happy when we play, sad when we are hurt and excited on our birthday. Let's name our feelings!",
+      "examples": "😀 happy · 😢 sad · 😡 angry · 😨 scared",
+      "problems": [
+        { "skill": "pick", "q": "How do you feel on your birthday?", "emoji": "🎂", "options": ["happy", "sad", "angry"], "a": "happy", "why": "A birthday is fun, so we feel happy." },
+        { "skill": "pick", "q": "How do you feel when you lose your toy?", "emoji": "🧸", "options": ["sad", "happy", "excited"], "a": "sad", "why": "Losing something makes us feel sad." },
+        { "skill": "pick", "q": "How might you feel in the dark?", "emoji": "🌑", "options": ["scared", "happy", "sleepy"], "a": "scared", "why": "The dark can make us feel scared." },
+        { "skill": "pick", "q": "The face 😀 shows someone is ___.", "options": ["happy", "sad", "angry"], "a": "happy", "why": "A smiling face shows happiness." },
+        { "skill": "pick", "q": "The face 😢 shows someone is ___.", "options": ["sad", "happy", "excited"], "a": "sad", "why": "A crying face shows sadness." },
+        { "skill": "pick", "q": "How do you feel when you get a gift?", "emoji": "🎁", "options": ["excited", "bored", "sleepy"], "a": "excited", "why": "A gift makes us feel excited." }
+      ]
+    },
+    {
+      "id": "eng_can",
+      "title": "Can and Cannot",
+      "icon": "💪",
+      "concept": "Can means you are able to do something. Cannot means you are not able to. A bird can fly, but a fish cannot fly. Let's see who can do what!",
+      "examples": "🐦 can fly · 🐟 can swim",
+      "problems": [
+        { "skill": "pick", "q": "A fish ___ swim.", "emoji": "🐟", "options": ["can", "cannot"], "a": "can", "why": "Fish are great at swimming, so a fish can swim." },
+        { "skill": "pick", "q": "A fish ___ fly.", "emoji": "🐟", "options": ["cannot", "can"], "a": "cannot", "why": "Fish have no wings, so a fish cannot fly." },
+        { "skill": "pick", "q": "A bird ___ fly.", "emoji": "🐦", "options": ["can", "cannot"], "a": "can", "why": "Birds have wings, so a bird can fly." },
+        { "skill": "pick", "q": "A monkey ___ climb trees.", "emoji": "🐒", "options": ["can", "cannot"], "a": "can", "why": "Monkeys are great climbers, so a monkey can climb." },
+        { "skill": "pick", "q": "A car ___ talk.", "emoji": "🚗", "options": ["cannot", "can"], "a": "cannot", "why": "A car is a thing, so it cannot talk." },
+        { "skill": "pick", "q": "A baby ___ run very fast.", "emoji": "👶", "options": ["cannot", "can"], "a": "cannot", "why": "A small baby is too little to run fast." }
+      ]
+    },
+    {
+      "id": "eng_digraphs",
+      "title": "Two-Letter Sounds",
+      "icon": "🔡",
+      "concept": "Sometimes two letters make one sound! sh says shhh, ch says ch and th says th. Listen for them at the start of words!",
+      "examples": "sh 🚢 ship · ch 🪑 chair · th 👍 thumb",
+      "problems": [
+        { "skill": "pick", "q": "Which two letters start the word ship?", "emoji": "🚢", "options": ["sh", "ch", "th"], "a": "sh", "why": "Ship starts with the sh sound." },
+        { "skill": "pick", "q": "Which two letters start the word chair?", "emoji": "🪑", "options": ["ch", "sh", "th"], "a": "ch", "why": "Chair starts with the ch sound." },
+        { "skill": "pick", "q": "Which two letters start the word thumb?", "emoji": "👍", "options": ["th", "sh", "ch"], "a": "th", "why": "Thumb starts with the th sound." },
+        { "skill": "pick", "q": "Which two letters start the word shoe?", "emoji": "👟", "options": ["sh", "ch", "th"], "a": "sh", "why": "Shoe starts with the sh sound." },
+        { "skill": "pick", "q": "Which two letters start the word cheese?", "emoji": "🧀", "options": ["ch", "sh", "th"], "a": "ch", "why": "Cheese starts with the ch sound." },
+        { "skill": "pick", "q": "Which two letters make the sound at the end of fish?", "emoji": "🐟", "options": ["sh", "ch", "th"], "a": "sh", "why": "Fish ends with the sh sound." }
+      ]
+    },
+    {
+      "id": "eng_spell2",
+      "title": "Spell Bigger Words",
+      "icon": "🌟",
+      "concept": "You are a spelling star! Now let's build bigger words. Listen, then tap the letters in order. Tap a letter to hear its sound!",
+      "examples": "🐟 f-i-s-h · 🚢 s-h-i-p",
+      "problems": [
+        { "skill": "spell", "q": "Build the word", "emoji": "🐟", "word": "fish" },
+        { "skill": "spell", "q": "Build the word", "emoji": "🚢", "word": "ship" },
+        { "skill": "spell", "q": "Build the word", "emoji": "🐸", "word": "frog" },
+        { "skill": "spell", "q": "Build the word", "emoji": "✋", "word": "hand" },
+        { "skill": "spell", "q": "Build the word", "emoji": "🥛", "word": "milk" },
+        { "skill": "spell", "q": "Build the word", "emoji": "⭐", "word": "star" }
+      ]
     }
   ]
 }
