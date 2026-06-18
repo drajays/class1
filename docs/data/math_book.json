@@ -534,6 +534,30 @@
       "tip": "Friends of 10: 1&9, 2&8, 3&7, 4&6, 5&5. Know these and adding gets EASY!",
       "problems": [
         {
+          "skill": "tenframe",
+          "q": "The ten-frame shows 7. How many MORE dots to make 10?",
+          "filled": 7,
+          "a": 3
+        },
+        {
+          "skill": "tenframe",
+          "q": "The ten-frame shows 6. How many MORE dots to make 10?",
+          "filled": 6,
+          "a": 4
+        },
+        {
+          "skill": "tenframe",
+          "q": "The ten-frame shows 8. How many MORE dots to make 10?",
+          "filled": 8,
+          "a": 2
+        },
+        {
+          "skill": "tenframe",
+          "q": "The ten-frame shows 4. How many MORE dots to make 10?",
+          "filled": 4,
+          "a": 6
+        },
+        {
           "skill": "pick",
           "q": "7 + ? = 10",
           "a": 3,

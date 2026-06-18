@@ -270,6 +270,14 @@ const MathBook = {
     </svg>`;
   },
 
+  // Ten-frame: 10 boxes (2 rows of 5); `filled` show a dot. Concrete "make 10" tool.
+  tenframeHtml(filled) {
+    const cell = (on) => `<span style="width:30px;height:30px;border:2px solid #b9b6e8;border-radius:6px;display:grid;place-items:center;background:${on ? '#fff' : '#f2f1fb'}">${on ? '<span style="width:16px;height:16px;border-radius:50%;background:#ff5ea8;display:block"></span>' : ''}</span>`;
+    let c = '';
+    for (let i = 0; i < 10; i++) c += cell(i < filled);
+    return `<div style="display:grid;grid-template-columns:repeat(5,30px);gap:5px;justify-content:center">${c}</div>`;
+  },
+
   visual(p) {
     if (p.skill === 'count') return this.imageHtml(p) + this.row(p.emoji, p.n);
     if (p.skill === 'crossout') return this.imageHtml(p) + this.row(p.emoji, p.n, 0);
@@ -278,6 +286,7 @@ const MathBook = {
     }
     if (p.skill === 'numberline') return this.numlineHtml(p);
     if (p.skill === 'clock') return this.imageHtml(p) + this.clockSvg(p.hour);
+    if (p.skill === 'tenframe') return this.tenframeHtml(p.filled);
     return this.imageHtml(p); // pick: optional book image + question text
   },
 
@@ -317,6 +326,13 @@ const MathBook = {
         { text: `Look at the SHORT hand — it points to the ${p.hour}.`, visual: this.clockSvg(p.hour) },
         { text: `The LONG hand points straight up to 12, so it is exactly o'clock.`, visual: this.clockSvg(p.hour) },
         { text: `So the time is ${p.hour} o'clock!`, visual: this.clockSvg(p.hour) },
+      ];
+    }
+    if (p.skill === 'tenframe') {
+      return [
+        { text: `The ten-frame has 10 boxes. ${p.filled} are filled with dots.`, visual: this.tenframeHtml(p.filled) },
+        { text: `Count the EMPTY boxes: ${p.a}.`, visual: this.tenframeHtml(p.filled) },
+        { text: `So ${p.filled} and ${p.a} make 10!`, visual: this.tenframeHtml(p.filled) },
       ];
     }
     // pick
