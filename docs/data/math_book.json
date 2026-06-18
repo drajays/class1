@@ -1327,6 +1327,99 @@
       ]
     },
     {
+      "id": "mb_position",
+      "title": "Where Is It? (Position)",
+      "icon": "🧭",
+      "concept": "Position words tell us WHERE something is: top/bottom, above/below, inside/outside, left/right, near/far, front/behind. They help us describe and find things!",
+      "tip": "Picture it in your head first: is it higher or lower? In or out? In front or behind?",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "🐦 is up high, 🐟 is down low. Which one is ABOVE?",
+          "a": "Bird 🐦",
+          "options": [
+            "Bird 🐦",
+            "Fish 🐟",
+            "Same",
+            "Neither"
+          ],
+          "why": "The bird is higher up, so the bird is above the fish."
+        },
+        {
+          "skill": "pick",
+          "q": "🐶 is INSIDE the box 📦 and 🐱 is OUTSIDE. Who is INSIDE?",
+          "a": "Dog 🐶",
+          "options": [
+            "Dog 🐶",
+            "Cat 🐱",
+            "Both",
+            "Neither"
+          ],
+          "why": "The dog is in the box, so the dog is inside."
+        },
+        {
+          "skill": "pick",
+          "q": "In the row 🐶 🐱, the dog is on the LEFT and the cat on the RIGHT. Who is on the RIGHT?",
+          "a": "Cat 🐱",
+          "options": [
+            "Cat 🐱",
+            "Dog 🐶",
+            "Both",
+            "Neither"
+          ],
+          "why": "The cat is on the right side of the row."
+        },
+        {
+          "skill": "pick",
+          "q": "A house 🏠 is close by and a mountain ⛰️ is far away. Which is FAR?",
+          "a": "Mountain ⛰️",
+          "options": [
+            "Mountain ⛰️",
+            "House 🏠",
+            "Same",
+            "Neither"
+          ],
+          "why": "The mountain is far away; the house is near."
+        },
+        {
+          "skill": "pick",
+          "q": "🚌 is in FRONT and 🚗 is BEHIND. Which one is BEHIND?",
+          "a": "Car 🚗",
+          "options": [
+            "Car 🚗",
+            "Bus 🚌",
+            "Same",
+            "Neither"
+          ],
+          "why": "The car is behind the bus."
+        },
+        {
+          "skill": "pick",
+          "q": "🍎 🍌 🍇 — what is in the MIDDLE (between the apple and the grapes)?",
+          "a": "Banana 🍌",
+          "options": [
+            "Banana 🍌",
+            "Apple 🍎",
+            "Grapes 🍇",
+            "Nothing"
+          ],
+          "why": "The banana sits between the apple and the grapes — in the middle."
+        },
+        {
+          "skill": "pick",
+          "q": "The cat is UNDER the table 🪑. Is the cat ABOVE or BELOW the table?",
+          "a": "Below",
+          "options": [
+            "Below",
+            "Above",
+            "Inside",
+            "Beside"
+          ],
+          "why": "Under means below — the cat is below the table."
+        }
+      ]
+    },
+    {
       "id": "mb_patterns",
       "title": "Patterns",
       "icon": "🔁",
