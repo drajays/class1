@@ -203,7 +203,7 @@ const MathBook = {
 
   // ---------- answer options ----------
   options(p) {
-    if (p.options) return p.options.slice();
+    if (p.options) return p.options.slice().sort(() => Math.random() - 0.5);
     const set = new Set([p.a]);
     let spread = 1;
     while (set.size < 4) {
