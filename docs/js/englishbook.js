@@ -60,6 +60,9 @@ const EnglishBook = {
       .eb-saybtn.read{background:linear-gradient(135deg,#7c5cff,#b98bff);color:#fff}
       .eb-saybtn.say{background:linear-gradient(135deg,#ff8a3d,#ffc24d);color:#5a2d00}
       .eb-saybtn:active{transform:scale(.95)}
+      .eb-unit{font-size:1.15rem;font-weight:900;color:#5a4fd0;margin:18px 6px 8px;padding:8px 14px;
+        background:linear-gradient(135deg,#ede9ff,#fbe9ff);border-radius:16px;text-align:center}
+      .eb-unit:first-child{margin-top:4px}
     `;
     document.head.appendChild(s);
   },
@@ -78,10 +81,16 @@ const EnglishBook = {
     const picker = document.getElementById('english-level-picker');
     picker.classList.remove('hidden');
     const chs = this.data.chapters;
+    let lastUnit = null;
     picker.innerHTML = chs.map((c, i) => {
       const stars = Store.getLevelStars(this.playerId, 'english', c.id);
       const locked = i > 0 && !Store.getLevelStars(this.playerId, 'english', chs[i - 1].id);
-      return `
+      let header = '';
+      if (c.unit && c.unit !== lastUnit) {
+        lastUnit = c.unit;
+        header = `<h2 class="eb-unit">${c.unit}</h2>`;
+      }
+      return `${header}
         <button class="level-card ${locked ? 'locked' : ''} ${stars ? 'done' : ''}" data-id="${c.id}">
           <span class="level-emoji">${c.icon}</span>
           <div class="level-info"><h3>${i + 1}. ${c.title}</h3><p>${c.problems.length} activities</p></div>

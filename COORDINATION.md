@@ -130,6 +130,15 @@ These are touched by both. Make **small, localized** edits and log them below.
 - ✅ Added 4 chapters → now **62 chapters / 381 problems**: ABC Order, Yesterday Words
   (-ed past tense), More Sight Words, Rhyme Time 2.
 
+### English session — 2026-06-18 (UPDATE 15: curriculum units)
+- ✅ Reordered all 62 chapters into a structured **10-unit curriculum** and added
+  unit headers in the picker (Phonics & Sounds → Spelling & Reading → Sentences &
+  Punctuation → Naming Words → Words in Action → Describing & Joining → Word Power:
+  My World / All Around Me / Me & My Life → Thinking Skills). `englishbook.js`
+  (showChapters renders `c.unit` headers + new `eb-unit` injected style) and
+  `english_book.json` (added `unit` field, reordered). Both files I own — no shared
+  changes. QA script: 62 ch / 381 q, every answer in options, no dup ids. Verified in Edge.
+
 ### Math session — 2026-06-18
 - ✅ Built `docs/js/mathbook.js` — `MathBook` guided-solver engine: gated chapter
   picker, concept intro, 5 interactive widgets (count, crossout, add, numberline,
