@@ -758,6 +758,66 @@
         { "skill": "pick", "q": "Is an elephant a wild animal or a farm animal?", "emoji": "🐘", "options": ["wild", "farm"], "a": "wild", "why": "An elephant lives in the wild." },
         { "skill": "pick", "q": "Is a hen a wild animal or a farm animal?", "emoji": "🐔", "options": ["farm", "wild"], "a": "farm", "why": "A hen lives on a farm." }
       ]
+    },
+    {
+      "id": "eng_ing",
+      "title": "Doing It Now",
+      "icon": "🏃",
+      "concept": "When something is happening right now, the action word ends in -ing! She is running. He is eating. The dog is barking. Let's add -ing!",
+      "examples": "run → running 🏃 · eat → eating 🍽️",
+      "problems": [
+        { "skill": "pick", "q": "She is ___ a song now.", "emoji": "🎤", "options": ["singing", "sing", "sang"], "a": "singing", "why": "It is happening now, so we use singing with -ing." },
+        { "skill": "pick", "q": "The dog is ___.", "emoji": "🐶", "options": ["barking", "bark", "barked"], "a": "barking", "why": "Happening now, so we use barking." },
+        { "skill": "pick", "q": "I am ___ my food.", "emoji": "🍽️", "options": ["eating", "eat", "ate"], "a": "eating", "why": "Happening now, so we use eating." },
+        { "skill": "pick", "q": "Add -ing to the word jump.", "options": ["jumping", "jumped", "jumps"], "a": "jumping", "why": "jump + ing = jumping." },
+        { "skill": "pick", "q": "The baby is ___.", "emoji": "😴", "options": ["sleeping", "sleep", "slept"], "a": "sleeping", "why": "Happening now, so we use sleeping." },
+        { "skill": "pick", "q": "We are ___ in the park.", "emoji": "🏞️", "options": ["playing", "play", "played"], "a": "playing", "why": "Happening now, so we use playing." }
+      ]
+    },
+    {
+      "id": "eng_places",
+      "title": "Places We Go",
+      "icon": "🏞️",
+      "concept": "We go to many places! We buy food at the market, borrow books from the library and see animals at the zoo. Let's visit!",
+      "examples": "🛒 market · 📚 library · 🦁 zoo",
+      "problems": [
+        { "skill": "pick", "q": "Where do we see lions and monkeys?", "emoji": "🦁", "options": ["zoo", "market", "hospital"], "a": "zoo", "why": "We see animals at the zoo." },
+        { "skill": "pick", "q": "Where do we buy vegetables and fruit?", "emoji": "🛒", "options": ["market", "library", "park"], "a": "market", "why": "We buy food at the market." },
+        { "skill": "pick", "q": "Where do we borrow books?", "emoji": "📚", "options": ["library", "zoo", "market"], "a": "library", "why": "We borrow books from the library." },
+        { "skill": "pick", "q": "Where do we go when we are sick?", "emoji": "🏥", "options": ["hospital", "zoo", "park"], "a": "hospital", "why": "We go to the hospital when we are sick." },
+        { "skill": "pick", "q": "Where do we play on swings and slides?", "emoji": "🛝", "options": ["park", "library", "hospital"], "a": "park", "why": "We play on swings at the park." },
+        { "skill": "pick", "q": "Where do we go to learn and study?", "emoji": "🏫", "options": ["school", "zoo", "market"], "a": "school", "why": "We learn at school." }
+      ]
+    },
+    {
+      "id": "eng_clothes",
+      "title": "Clothes We Wear",
+      "icon": "👕",
+      "concept": "We wear clothes to look nice and stay warm! We wear a shirt, shoes on our feet and a cap on our head. Let's get dressed!",
+      "examples": "👕 shirt · 👟 shoes · 🧢 cap",
+      "problems": [
+        { "skill": "pick", "q": "What do we wear on our feet?", "emoji": "🦶", "options": ["shoes", "cap", "gloves"], "a": "shoes", "why": "We wear shoes on our feet." },
+        { "skill": "pick", "q": "What do we wear on our head?", "emoji": "🧢", "options": ["cap", "socks", "shoes"], "a": "cap", "why": "We wear a cap on our head." },
+        { "skill": "pick", "q": "What do we wear on our hands when it is cold?", "emoji": "🧤", "options": ["gloves", "shoes", "cap"], "a": "gloves", "why": "We wear gloves on our hands." },
+        { "skill": "pick", "q": "We wear a ___ on the top of our body.", "emoji": "👕", "options": ["shirt", "shoe", "sock"], "a": "shirt", "why": "We wear a shirt on our upper body." },
+        { "skill": "pick", "q": "On a rainy day we wear a ___.", "emoji": "🧥", "options": ["raincoat", "cap", "sock"], "a": "raincoat", "why": "A raincoat keeps us dry in the rain." },
+        { "skill": "pick", "q": "We wear ___ on our feet inside our shoes.", "emoji": "🧦", "options": ["socks", "gloves", "caps"], "a": "socks", "why": "We wear socks under our shoes." }
+      ]
+    },
+    {
+      "id": "eng_garden",
+      "title": "In the Garden",
+      "icon": "🌱",
+      "concept": "A plant has many parts! It has roots under the ground, a stem, green leaves and pretty flowers. Let's grow a plant!",
+      "examples": "🌸 flower · 🍃 leaf · 🌱 stem",
+      "problems": [
+        { "skill": "pick", "q": "Which part of a plant holds it in the ground?", "emoji": "🌱", "options": ["roots", "flower", "leaf"], "a": "roots", "why": "Roots are under the ground and hold the plant." },
+        { "skill": "pick", "q": "Which part of a plant is green and flat?", "emoji": "🍃", "options": ["leaf", "root", "seed"], "a": "leaf", "why": "Leaves are green and flat." },
+        { "skill": "pick", "q": "Which colourful part smells nice?", "emoji": "🌸", "options": ["flower", "root", "stem"], "a": "flower", "why": "Flowers are colourful and smell nice." },
+        { "skill": "pick", "q": "A plant grows from a tiny ___.", "emoji": "🌰", "options": ["seed", "shoe", "cup"], "a": "seed", "why": "A plant grows from a seed." },
+        { "skill": "pick", "q": "Plants need water and ___ to grow.", "emoji": "☀️", "options": ["sunlight", "candy", "toys"], "a": "sunlight", "why": "Plants need sunlight and water to grow." },
+        { "skill": "pick", "q": "The long part that holds up the flower is the ___.", "options": ["stem", "root", "seed"], "a": "stem", "why": "The stem holds up the plant." }
+      ]
     }
   ]
 }

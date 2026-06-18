@@ -117,6 +117,10 @@ These are touched by both. Make **small, localized** edits and log them below.
 - ✅ Added 4 chapters → now **50 chapters / 309 problems**: Times of Day, Joining Two
   Words (compound words), More Than One with es (-es plurals), Wild and Farm Animals.
 
+### English session — 2026-06-18 (UPDATE 12: batch 9)
+- ✅ Added 4 chapters → now **54 chapters / 333 problems**: Doing It Now (-ing /
+  present continuous), Places We Go, Clothes We Wear, In the Garden (plant parts).
+
 ### Math session — 2026-06-18
 - ✅ Built `docs/js/mathbook.js` — `MathBook` guided-solver engine: gated chapter
   picker, concept intro, 5 interactive widgets (count, crossout, add, numberline,
