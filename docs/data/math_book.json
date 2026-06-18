@@ -2383,6 +2383,72 @@
           "op": "+",
           "step": 3,
           "a": 19
+        },
+        {
+          "skill": "clock",
+          "q": "What time is it?",
+          "hour": 6,
+          "a": "6 o'clock",
+          "options": [
+            "6 o'clock",
+            "3 o'clock",
+            "12 o'clock",
+            "9 o'clock"
+          ]
+        },
+        {
+          "skill": "tenframe",
+          "q": "How many MORE dots to make 10?",
+          "filled": 6,
+          "a": 4
+        },
+        {
+          "skill": "pick",
+          "q": "Look at the chart. Which group has MORE?",
+          "chart": [
+            {
+              "label": "Stars",
+              "emoji": "⭐",
+              "n": 3
+            },
+            {
+              "label": "Hearts",
+              "emoji": "❤️",
+              "n": 5
+            }
+          ],
+          "a": "Hearts",
+          "options": [
+            "Hearts",
+            "Stars",
+            "Same",
+            "None"
+          ],
+          "why": "5 hearts is more than 3 stars."
+        },
+        {
+          "skill": "pick",
+          "q": "In the number 47, how many TENS?",
+          "a": 4,
+          "options": [
+            4,
+            7,
+            11,
+            0
+          ],
+          "why": "47 has 4 tens and 7 ones."
+        },
+        {
+          "skill": "pick",
+          "q": "A toffee costs ₹2 and a cake costs ₹9. Which costs MORE?",
+          "a": "Cake (₹9)",
+          "options": [
+            "Cake (₹9)",
+            "Toffee (₹2)",
+            "Same",
+            "None"
+          ],
+          "why": "₹9 is more than ₹2, so the cake costs more."
         }
       ]
     }
