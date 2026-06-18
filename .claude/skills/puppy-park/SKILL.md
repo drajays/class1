@@ -27,6 +27,13 @@ Problem `skill` picks the interactive widget; the engine auto-generates the work
 - `pick` — `{skill:"pick", q, options:[...], a, why}` visual MCQ; `why` is the explanation.
 
 Keep numbers from the real book. Gating uses `Store.completeLevel('math', chapterId, stars)`.
+Extra widgets: `clock` (`{skill:"clock", q, hour, a:"3 o'clock", options}`), `tenframe`
+(`{skill:"tenframe", q, filled, a}` — a is empties to make 10), and any `pick` can add a
+`chart:[{label,emoji,n}]` pictograph.
+
+**After ANY math content edit, run `python3 validate_math_book.py`** (repo root) — it
+checks structure, that each answer is in its options, and that all arithmetic is correct.
+A wrong answer key would mislead the child, so this must pass (exit 0) before commit.
 
 ## Run & verify
 - Serve: `cd docs && python3 -m http.server 8080` → http://localhost:8080/
