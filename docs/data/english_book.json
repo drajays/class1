@@ -638,6 +638,66 @@
         { "skill": "spell", "q": "Build the word", "emoji": "🥛", "word": "milk" },
         { "skill": "spell", "q": "Build the word", "emoji": "⭐", "word": "star" }
       ]
+    },
+    {
+      "id": "eng_transport",
+      "title": "Ways to Travel",
+      "icon": "🚗",
+      "concept": "We travel in many ways! A car and a bus go on the road, a boat goes on water and a plane flies in the sky. Let's go for a ride!",
+      "examples": "🚗 car · 🚌 bus · ✈️ plane · 🚢 boat",
+      "problems": [
+        { "skill": "pick", "q": "Which one flies in the sky?", "emoji": "✈️", "options": ["plane", "car", "boat"], "a": "plane", "why": "A plane flies in the sky." },
+        { "skill": "pick", "q": "Which one goes on water?", "emoji": "🚢", "options": ["boat", "bus", "bike"], "a": "boat", "why": "A boat goes on the water." },
+        { "skill": "pick", "q": "Which one runs on a track?", "emoji": "🚂", "options": ["train", "car", "plane"], "a": "train", "why": "A train runs on a railway track." },
+        { "skill": "pick", "q": "Which one has two wheels and pedals?", "emoji": "🚲", "options": ["bicycle", "bus", "boat"], "a": "bicycle", "why": "A bicycle has two wheels and pedals." },
+        { "skill": "pick", "q": "Many children go to school in a ___.", "emoji": "🚌", "options": ["bus", "boat", "plane"], "a": "bus", "why": "A school bus carries many children." },
+        { "skill": "pick", "q": "A car moves on the ___.", "emoji": "🚗", "options": ["road", "sky", "sea"], "a": "road", "why": "Cars move on the road." }
+      ]
+    },
+    {
+      "id": "eng_family",
+      "title": "My Family",
+      "icon": "👪",
+      "concept": "A family is full of love! Your mother and father are your parents. Your sister and brother are part of your family too. Let's meet the family!",
+      "examples": "👩 mother · 👨 father · 👧 sister · 👦 brother",
+      "problems": [
+        { "skill": "pick", "q": "Your mother and father are your ___.", "options": ["parents", "friends", "teachers"], "a": "parents", "why": "Your mother and father are your parents." },
+        { "skill": "pick", "q": "Your father's mother is your ___.", "emoji": "👵", "options": ["grandmother", "sister", "aunt"], "a": "grandmother", "why": "Your father's or mother's mother is your grandmother." },
+        { "skill": "pick", "q": "A girl child in the family is a ___.", "emoji": "👧", "options": ["sister", "brother", "uncle"], "a": "sister", "why": "A girl child is a sister." },
+        { "skill": "pick", "q": "A boy child in the family is a ___.", "emoji": "👦", "options": ["brother", "sister", "aunt"], "a": "brother", "why": "A boy child is a brother." },
+        { "skill": "pick", "q": "Your mother's brother is your ___.", "options": ["uncle", "aunt", "cousin"], "a": "uncle", "why": "Your mother's or father's brother is your uncle." },
+        { "skill": "pick", "q": "A family is full of ___.", "emoji": "❤️", "options": ["love", "cars", "books"], "a": "love", "why": "A family loves and cares for each other." }
+      ]
+    },
+    {
+      "id": "eng_school",
+      "title": "At School",
+      "icon": "🏫",
+      "concept": "We learn many things at school! We write with a pencil, read a book and our teacher helps us. Let's look around the classroom!",
+      "examples": "✏️ pencil · 📖 book · 🎒 bag",
+      "problems": [
+        { "skill": "pick", "q": "We write with a ___.", "emoji": "✏️", "options": ["pencil", "spoon", "cup"], "a": "pencil", "why": "We write with a pencil." },
+        { "skill": "pick", "q": "We read a ___.", "emoji": "📖", "options": ["book", "ball", "shoe"], "a": "book", "why": "We read a book." },
+        { "skill": "pick", "q": "We carry our things in a ___.", "emoji": "🎒", "options": ["bag", "plate", "bottle"], "a": "bag", "why": "We carry books in a school bag." },
+        { "skill": "pick", "q": "The person who teaches us is the ___.", "emoji": "👩‍🏫", "options": ["teacher", "driver", "doctor"], "a": "teacher", "why": "A teacher teaches us at school." },
+        { "skill": "pick", "q": "We rub out a pencil mistake with an ___.", "emoji": "🧽", "options": ["eraser", "apple", "umbrella"], "a": "eraser", "why": "An eraser rubs out pencil marks." },
+        { "skill": "pick", "q": "We draw and colour with ___.", "emoji": "🖍️", "options": ["crayons", "forks", "keys"], "a": "crayons", "why": "We colour with crayons." }
+      ]
+    },
+    {
+      "id": "eng_reading2",
+      "title": "Reading Stars",
+      "icon": "📚",
+      "concept": "More story reading! Read each little story and find the answer. Tap any word to hear it. You are a reading star!",
+      "examples": "📚 ⭐ 🌈",
+      "problems": [
+        { "skill": "pick", "q": "Read: Anu has a pet cat named Mimi. Mimi is white and loves milk. What is the cat's name?", "emoji": "🐱", "options": ["Mimi", "Anu", "Milk"], "a": "Mimi", "why": "The story says the cat is named Mimi." },
+        { "skill": "pick", "q": "Read: It is raining. Ravi takes his blue umbrella to school. What colour is the umbrella?", "emoji": "☂️", "options": ["blue", "red", "green"], "a": "blue", "why": "The story says the umbrella is blue." },
+        { "skill": "pick", "q": "Read: The bus is yellow. It takes children to school. What colour is the bus?", "emoji": "🚌", "options": ["yellow", "black", "pink"], "a": "yellow", "why": "The story says the bus is yellow." },
+        { "skill": "pick", "q": "Read: Sita planted a mango tree. After many days it gave sweet mangoes. What did the tree give?", "emoji": "🥭", "options": ["mangoes", "apples", "flowers"], "a": "mangoes", "why": "The story says the tree gave mangoes." },
+        { "skill": "pick", "q": "Read: Tom woke up late. He ran fast to catch the bus. Why did Tom run?", "emoji": "🏃", "options": ["to catch the bus", "to play", "to eat"], "a": "to catch the bus", "why": "He ran fast to catch the bus." },
+        { "skill": "pick", "q": "Read: The little duck could not find its mother. It felt sad. How did the duck feel?", "emoji": "🦆", "options": ["sad", "happy", "angry"], "a": "sad", "why": "The story says the duck felt sad." }
+      ]
     }
   ]
 }

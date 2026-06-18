@@ -109,6 +109,10 @@ These are touched by both. Make **small, localized** edits and log them below.
 - ✅ Added 4 chapters → now **42 chapters / 261 problems**: My Feelings, Can and
   Cannot, Two-Letter Sounds (sh/ch/th digraphs), Spell Bigger Words (4-letter spell).
 
+### English session — 2026-06-18 (UPDATE 10: vocab+reading batch 7)
+- ✅ Added 4 chapters → now **46 chapters / 285 problems**: Ways to Travel (transport),
+  My Family, At School, Reading Stars (comprehension level 2).
+
 ### Math session — 2026-06-18
 - ✅ Built `docs/js/mathbook.js` — `MathBook` guided-solver engine: gated chapter
   picker, concept intro, 5 interactive widgets (count, crossout, add, numberline,
