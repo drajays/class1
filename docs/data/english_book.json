@@ -458,6 +458,66 @@
         { "skill": "pick", "q": "A week has seven days. Is this a fact or an opinion?", "emoji": "📅", "options": ["fact", "opinion"], "a": "fact", "why": "A week always has seven days, so it is a fact." },
         { "skill": "pick", "q": "Blue is the prettiest colour. Is this a fact or an opinion?", "emoji": "🔵", "options": ["opinion", "fact"], "a": "opinion", "why": "Prettiest is a feeling, so it is an opinion." }
       ]
+    },
+    {
+      "id": "eng_he_she_it",
+      "title": "He, She, It, They",
+      "icon": "👤",
+      "concept": "We use he for a boy, she for a girl, it for a thing or animal, and they for many. These words save us from saying the name again!",
+      "examples": "👦 he · 👧 she · 🪁 it · 👨‍👩‍👧 they",
+      "problems": [
+        { "skill": "pick", "q": "Riya is my friend. ___ is kind.", "options": ["She", "He", "It"], "a": "She", "why": "Riya is a girl, so we use She." },
+        { "skill": "pick", "q": "Rahul is tall. ___ plays football.", "options": ["He", "She", "It"], "a": "He", "why": "Rahul is a boy, so we use He." },
+        { "skill": "pick", "q": "The ball is red. ___ is round.", "emoji": "⚽", "options": ["It", "She", "He"], "a": "It", "why": "A ball is a thing, so we use It." },
+        { "skill": "pick", "q": "My friends are here. ___ are happy.", "options": ["They", "He", "She"], "a": "They", "why": "For many people we use They." },
+        { "skill": "pick", "q": "Mom is cooking. ___ is in the kitchen.", "options": ["She", "He", "It"], "a": "She", "why": "Mom is female, so we use She." },
+        { "skill": "pick", "q": "The dog is cute. ___ wags its tail.", "emoji": "🐶", "options": ["It", "She", "He"], "a": "It", "why": "For an animal we use It." }
+      ]
+    },
+    {
+      "id": "eng_am_is_are",
+      "title": "Am, Is, Are",
+      "icon": "✅",
+      "concept": "Use am with I, is with one person or thing, and are with many. I am, he is, they are. Let's pick the right word!",
+      "examples": "I am · he is · they are",
+      "problems": [
+        { "skill": "pick", "q": "I ___ a girl.", "options": ["am", "is", "are"], "a": "am", "why": "We always use am with I." },
+        { "skill": "pick", "q": "She ___ happy.", "options": ["is", "am", "are"], "a": "is", "why": "We use is with one person: she is." },
+        { "skill": "pick", "q": "They ___ my friends.", "options": ["are", "is", "am"], "a": "are", "why": "We use are for many: they are." },
+        { "skill": "pick", "q": "The cat ___ sleeping.", "emoji": "🐱", "options": ["is", "are", "am"], "a": "is", "why": "One cat, so we use is." },
+        { "skill": "pick", "q": "We ___ playing.", "options": ["are", "is", "am"], "a": "are", "why": "We use are with we." },
+        { "skill": "pick", "q": "You ___ my best friend.", "options": ["are", "am", "is"], "a": "are", "why": "We use are with you." }
+      ]
+    },
+    {
+      "id": "eng_has_have",
+      "title": "Has and Have",
+      "icon": "🎒",
+      "concept": "Use has with one person, and have with many or with I and you. She has a pen. I have a bag. Let's choose!",
+      "examples": "she has · I have · they have",
+      "problems": [
+        { "skill": "pick", "q": "I ___ a red bag.", "emoji": "🎒", "options": ["have", "has"], "a": "have", "why": "We use have with I." },
+        { "skill": "pick", "q": "She ___ a pencil.", "emoji": "✏️", "options": ["has", "have"], "a": "has", "why": "We use has with one person: she has." },
+        { "skill": "pick", "q": "They ___ many toys.", "emoji": "🧸", "options": ["have", "has"], "a": "have", "why": "We use have with many: they have." },
+        { "skill": "pick", "q": "He ___ a dog.", "emoji": "🐶", "options": ["has", "have"], "a": "has", "why": "We use has with he." },
+        { "skill": "pick", "q": "We ___ a new car.", "emoji": "🚗", "options": ["have", "has"], "a": "have", "why": "We use have with we." },
+        { "skill": "pick", "q": "You ___ a nice smile.", "emoji": "😊", "options": ["have", "has"], "a": "have", "why": "We use have with you." }
+      ]
+    },
+    {
+      "id": "eng_manners",
+      "title": "Magic Manners",
+      "icon": "🙏",
+      "concept": "Magic words make everyone smile! We say please when we ask, thank you when we get something, and sorry when we make a mistake.",
+      "examples": "🙏 please · 😊 thank you · 🤗 sorry",
+      "problems": [
+        { "skill": "pick", "q": "What do you say when you want something?", "options": ["Please", "Sorry", "Bye"], "a": "Please", "why": "We say please when we ask for something." },
+        { "skill": "pick", "q": "What do you say when someone gives you a gift?", "emoji": "🎁", "options": ["Thank you", "Sorry", "No"], "a": "Thank you", "why": "We say thank you when we get something." },
+        { "skill": "pick", "q": "What do you say when you make a mistake?", "options": ["Sorry", "Hello", "Yes"], "a": "Sorry", "why": "We say sorry when we are wrong or hurt someone." },
+        { "skill": "pick", "q": "What do you say to your teacher in the morning?", "emoji": "🌅", "options": ["Good morning", "Good night", "Bye"], "a": "Good morning", "why": "In the morning we say good morning." },
+        { "skill": "pick", "q": "What do you say to pass by someone politely?", "options": ["Excuse me", "Thank you", "Sorry"], "a": "Excuse me", "why": "We say excuse me to pass politely." },
+        { "skill": "pick", "q": "Magic words make people feel ___.", "options": ["happy", "sad", "angry"], "a": "happy", "why": "Polite words make everyone happy." }
+      ]
     }
   ]
 }

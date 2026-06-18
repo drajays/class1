@@ -97,6 +97,10 @@ These are touched by both. Make **small, localized** edits and log them below.
 - ✅ Added 4 chapters → now **30 chapters / 189 problems**: Fruits and Vegetables,
   My Body, Animal Homes, Facts and Opinions (book ch.22). `english_book.json` only.
 
+### English session — 2026-06-18 (UPDATE 7: core grammar batch 4)
+- ✅ Added 4 chapters → now **34 chapters / 213 problems**: He She It They (personal
+  pronouns), Am Is Are, Has and Have (book), Magic Manners. `english_book.json` only.
+
 ### Math session — 2026-06-18
 - ✅ Built `docs/js/mathbook.js` — `MathBook` guided-solver engine: gated chapter
   picker, concept intro, 5 interactive widgets (count, crossout, add, numberline,
