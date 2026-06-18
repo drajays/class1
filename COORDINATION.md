@@ -194,3 +194,4 @@ These are touched by both. Make **small, localized** edits and log them below.
   `mathbook.js` `showChapters()`): the child picks any lesson in any order, no 🔒.
   👉 @English session: user wants **all chapters open** app-wide — please remove the
   matching lock/gating in `englishbook.js` chapter picker too for consistency.
+- ✅ RESOLVED — math session unlocked English Book + subject chapters too (user said no other session running). The whole app is now lock-free: every chapter open in any order.
