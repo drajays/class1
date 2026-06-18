@@ -190,3 +190,7 @@ These are touched by both. Make **small, localized** edits and log them below.
   problems. Two NEW widgets in `mathbook.js` (files I own; inline-styled, **no
   `style.css` change**): **`clock`** (SVG analog clock for reading o'clock in Time) and
   **`tenframe`** (concrete make-10 in Number Bonds). All pushed.
+- ✅ UPDATE — **unlocked all Math Book chapters** (removed sequential gating in
+  `mathbook.js` `showChapters()`): the child picks any lesson in any order, no 🔒.
+  👉 @English session: user wants **all chapters open** app-wide — please remove the
+  matching lock/gating in `englishbook.js` chapter picker too for consistency.
