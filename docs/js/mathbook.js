@@ -278,6 +278,16 @@ const MathBook = {
     return `<div style="display:grid;grid-template-columns:repeat(5,30px);gap:5px;justify-content:center">${c}</div>`;
   },
 
+  // Pictograph: each row is a label + emoji repeated n times.
+  chartHtml(chart) {
+    const rows = chart.map((r) =>
+      `<div style="display:flex;align-items:center;gap:8px;margin:4px 0">
+        <b style="min-width:74px;text-align:right;font-size:.85rem;color:#27304f">${this.esc(r.label)}</b>
+        <span style="font-size:24px;letter-spacing:2px">${r.emoji.repeat(r.n)}</span>
+      </div>`).join('');
+    return `<div style="display:inline-block;background:#f7f7ff;border:2px solid #e8e6ff;border-radius:14px;padding:10px 14px">${rows}</div>`;
+  },
+
   visual(p) {
     if (p.skill === 'count') return this.imageHtml(p) + this.row(p.emoji, p.n);
     if (p.skill === 'crossout') return this.imageHtml(p) + this.row(p.emoji, p.n, 0);
@@ -287,7 +297,8 @@ const MathBook = {
     if (p.skill === 'numberline') return this.numlineHtml(p);
     if (p.skill === 'clock') return this.imageHtml(p) + this.clockSvg(p.hour);
     if (p.skill === 'tenframe') return this.tenframeHtml(p.filled);
-    return this.imageHtml(p); // pick: optional book image + question text
+    // pick: optional book image, optional pictograph, + question text
+    return this.imageHtml(p) + (p.chart ? this.chartHtml(p.chart) : '');
   },
 
   // ---------- worked solution steps per skill ----------

@@ -1686,6 +1686,107 @@
       "problems": [
         {
           "skill": "pick",
+          "q": "Look at the chart. How many apples are there?",
+          "chart": [
+            {
+              "label": "Apples",
+              "emoji": "🍎",
+              "n": 4
+            },
+            {
+              "label": "Bananas",
+              "emoji": "🍌",
+              "n": 2
+            }
+          ],
+          "a": 4,
+          "options": [
+            4,
+            2,
+            6,
+            3
+          ],
+          "why": "Count the apple pictures in the row: 4."
+        },
+        {
+          "skill": "pick",
+          "q": "Which fruit has the MOST?",
+          "chart": [
+            {
+              "label": "Apples",
+              "emoji": "🍎",
+              "n": 4
+            },
+            {
+              "label": "Bananas",
+              "emoji": "🍌",
+              "n": 2
+            },
+            {
+              "label": "Grapes",
+              "emoji": "🍇",
+              "n": 5
+            }
+          ],
+          "a": "Grapes",
+          "options": [
+            "Grapes",
+            "Apples",
+            "Bananas",
+            "Same"
+          ],
+          "why": "Grapes has 5 — the longest row, so it has the most."
+        },
+        {
+          "skill": "pick",
+          "q": "How many MORE cats than dogs?",
+          "chart": [
+            {
+              "label": "Dogs",
+              "emoji": "🐶",
+              "n": 2
+            },
+            {
+              "label": "Cats",
+              "emoji": "🐱",
+              "n": 5
+            }
+          ],
+          "a": 3,
+          "options": [
+            3,
+            7,
+            2,
+            5
+          ],
+          "why": "5 cats − 2 dogs = 3 more cats."
+        },
+        {
+          "skill": "pick",
+          "q": "How many pets are there ALTOGETHER?",
+          "chart": [
+            {
+              "label": "Dogs",
+              "emoji": "🐶",
+              "n": 3
+            },
+            {
+              "label": "Cats",
+              "emoji": "🐱",
+              "n": 2
+            }
+          ],
+          "a": 5,
+          "options": [
+            5,
+            1,
+            6,
+            4
+          ],
+          "why": "3 dogs + 2 cats = 5 pets in all."
+        },
+        {
+          "skill": "pick",
           "q": "🍎🍎🍎 apples and 🍌🍌 bananas. How many apples are there?",
           "a": 3,
           "options": [
