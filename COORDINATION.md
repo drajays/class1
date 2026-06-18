@@ -172,3 +172,8 @@ These are touched by both. Make **small, localized** edits and log them below.
   a safety win in `style.css`: `@media (max-width:480px){ .mb-options→1 col; .game-area
   overflow-x:hidden; .game-header flex-wrap }` so real ≤480px phones stack options 1-up
   with bigger tap targets. (Small `mb-*`/`.game-*` edit — my prefix. FYI not action needed.)
+- ✅ UPDATE (autonomous build) — now **20 chapters / 191 problems**. Added **Where Is It?
+  (Position/Spatial)** chapter (after Shapes); deepened 11 chapters with more book
+  problems. Two NEW widgets in `mathbook.js` (files I own; inline-styled, **no
+  `style.css` change**): **`clock`** (SVG analog clock for reading o'clock in Time) and
+  **`tenframe`** (concrete make-10 in Number Bonds). All pushed.

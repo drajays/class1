@@ -80,10 +80,14 @@ Sometimes a second Claude session works this repo in parallel (e.g. English).
 
 ## Status / roadmap
 - ✅ Puppy Park + Mall + economy + wish loop shipped (commit 2ba29b0).
-- ✅ Math Book COMPLETE — `mathbook.js` engine + `math_book.json` with **17
-  book-faithful chapters / 110 problems** in sequence, concept-first, guided
-  step-by-step self-correcting solutions, responsive (phone/iPad/MacBook in Edge).
-  Replaced the old Math Arcade (math.js + MATH_LEVELS removed). NOT yet committed.
+- ✅ Math Book — `mathbook.js` engine + `math_book.json`, now **20 book-faithful
+  chapters / 191 problems** in sequence, concept-first (fun puppy-coach intro + memory
+  tip per chapter), guided step-by-step self-correcting solutions, responsive
+  (phone/iPad/MacBook in Edge). Widgets: count, crossout, add, numberline, pick, **clock**
+  (SVG analog clock), **tenframe** (make-10). Order: Counting → Compare → Ordinal →
+  Even/Odd → Number Bonds → Addition → Subtraction → Add&Subtract → Number Names →
+  Place Value → Tables → Shapes → Position → Patterns → Measurement → Data → Time →
+  Word Problems → Money → Revision. Replaced old Math Arcade. Committed & pushed.
 - 🚧 English Book — built in parallel by the English session (englishbook.js +
   english_book.json, 10 grammar chapters).
 - ⏭️ Later: more puppy life / sounds; other subjects (EVS, Hindi, Sanskrit, Computer)
