@@ -16,6 +16,7 @@ REQ = {
     "numberline": ["start", "op", "step", "a"],
     "clock": ["hour", "a", "options"],
     "tenframe": ["filled", "a"],
+    "column": ["top", "op", "bot", "a"],
     "pick": ["a", "options"],
 }
 
@@ -55,6 +56,10 @@ def main() -> int:
                     errs.append(f"{loc}: {p['start']}{p['op']}{p['step']} != {p['a']}")
             if sk == "tenframe" and 10 - p["filled"] != p["a"]:
                 errs.append(f"{loc}: 10-{p['filled']} != {p['a']}")
+            if sk == "column":
+                exp = p["top"] + p["bot"] if p["op"] == "+" else p["top"] - p["bot"]
+                if exp != p["a"]:
+                    errs.append(f"{loc}: {p['top']}{p['op']}{p['bot']} != {p['a']}")
     total = sum(len(c["problems"]) for c in d["chapters"])
     print(f"Chapters: {len(d['chapters'])}  Problems: {total}  Errors: {len(errs)}")
     for e in errs:

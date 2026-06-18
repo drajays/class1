@@ -158,6 +158,255 @@
       ]
     },
     {
+      "id": "mb_order100",
+      "title": "Numbers to 100",
+      "icon": "💯",
+      "concept": "Now we play with BIGGER numbers, all the way to 100! Every number has one BEFORE it and one AFTER it. We can also jump by 2s, 5s and 10s.",
+      "tip": "For the number AFTER, count one more. For BEFORE, count one back!",
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What comes AFTER 45?",
+          "a": 46,
+          "options": [
+            46,
+            45,
+            47,
+            44
+          ],
+          "why": "Count one more: 45 then 46."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes BEFORE 67?",
+          "a": 66,
+          "options": [
+            66,
+            65,
+            67,
+            64
+          ],
+          "why": "Count one back: 67 then 66."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes BETWEEN 34 and 36?",
+          "a": 35,
+          "options": [
+            35,
+            34,
+            36,
+            33
+          ],
+          "why": "34 … 35 … 36. The middle is 35."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes AFTER 89?",
+          "a": 90,
+          "options": [
+            90,
+            89,
+            91,
+            88
+          ],
+          "why": "One more than 89 is 90."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes BEFORE 50?",
+          "a": 49,
+          "options": [
+            49,
+            48,
+            50,
+            47
+          ],
+          "why": "One back from 50 is 49."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes BETWEEN 78 and 80?",
+          "a": 79,
+          "options": [
+            79,
+            78,
+            80,
+            77
+          ],
+          "why": "78 … 79 … 80. The middle is 79."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes AFTER 99?",
+          "a": 100,
+          "options": [
+            100,
+            99,
+            101,
+            98
+          ],
+          "why": "One more than 99 is 100."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes BEFORE 25?",
+          "a": 24,
+          "options": [
+            24,
+            23,
+            25,
+            22
+          ],
+          "why": "One back from 25 is 24."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes BETWEEN 55 and 57?",
+          "a": 56,
+          "options": [
+            56,
+            55,
+            57,
+            54
+          ],
+          "why": "55 … 56 … 57. The middle is 56."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes AFTER 71?",
+          "a": 72,
+          "options": [
+            72,
+            71,
+            73,
+            70
+          ],
+          "why": "One more than 71 is 72."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes BEFORE 40?",
+          "a": 39,
+          "options": [
+            39,
+            38,
+            40,
+            37
+          ],
+          "why": "One back from 40 is 39."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes BETWEEN 91 and 93?",
+          "a": 92,
+          "options": [
+            92,
+            91,
+            93,
+            90
+          ],
+          "why": "91 … 92 … 93. The middle is 92."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes AFTER 12?",
+          "a": 13,
+          "options": [
+            13,
+            12,
+            14,
+            11
+          ],
+          "why": "One more than 12 is 13."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes BEFORE 88?",
+          "a": 87,
+          "options": [
+            87,
+            86,
+            88,
+            85
+          ],
+          "why": "One back from 88 is 87."
+        },
+        {
+          "skill": "pick",
+          "q": "What comes BETWEEN 63 and 65?",
+          "a": 64,
+          "options": [
+            64,
+            63,
+            65,
+            62
+          ],
+          "why": "63 … 64 … 65. The middle is 64."
+        },
+        {
+          "skill": "pick",
+          "q": "Skip count by 5: 5, 10, 15, _",
+          "a": 20,
+          "options": [
+            20,
+            19,
+            21,
+            18
+          ],
+          "why": "Add 5: 15 + 5 = 20."
+        },
+        {
+          "skill": "pick",
+          "q": "Skip count by 2: 2, 4, 6, _",
+          "a": 8,
+          "options": [
+            8,
+            7,
+            9,
+            6
+          ],
+          "why": "Add 2: 6 + 2 = 8."
+        },
+        {
+          "skill": "pick",
+          "q": "Skip count by 10: 10, 20, 30, _",
+          "a": 40,
+          "options": [
+            40,
+            39,
+            41,
+            38
+          ],
+          "why": "Add 10: 30 + 10 = 40."
+        },
+        {
+          "skill": "pick",
+          "q": "Skip count by 3: 3, 6, 9, _",
+          "a": 12,
+          "options": [
+            12,
+            11,
+            13,
+            10
+          ],
+          "why": "Add 3: 9 + 3 = 12."
+        },
+        {
+          "skill": "pick",
+          "q": "Skip count by 4: 4, 8, 12, _",
+          "a": 16,
+          "options": [
+            16,
+            15,
+            17,
+            14
+          ],
+          "why": "Add 4: 12 + 4 = 16."
+        }
+      ]
+    },
+    {
       "id": "mb_compare",
       "title": "Compare & Order",
       "icon": "⚖️",
@@ -301,6 +550,108 @@
             2
           ],
           "why": "Ascending means smallest first, so 1 comes first."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is GREATER: 56 or 48?",
+          "a": 56,
+          "options": [
+            56,
+            48
+          ],
+          "why": "56 > 48, so 56 is greater."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is SMALLER: 23 or 31?",
+          "a": 23,
+          "options": [
+            23,
+            31
+          ],
+          "why": "23 < 31, so 23 is smaller."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is GREATER: 74 or 69?",
+          "a": 74,
+          "options": [
+            74,
+            69
+          ],
+          "why": "74 > 69, so 74 is greater."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is SMALLER: 82 or 78?",
+          "a": 78,
+          "options": [
+            78,
+            82
+          ],
+          "why": "78 < 82, so 78 is smaller."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is GREATER: 45 or 45?",
+          "a": "Equal",
+          "options": [
+            "Equal",
+            "First one",
+            "Second one",
+            "Cannot tell"
+          ],
+          "why": "Both are 45, so they are equal — neither is greater."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is SMALLER: 19 or 27?",
+          "a": 19,
+          "options": [
+            19,
+            27
+          ],
+          "why": "19 < 27, so 19 is smaller."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is GREATER: 65 or 59?",
+          "a": 65,
+          "options": [
+            65,
+            59
+          ],
+          "why": "65 > 59, so 65 is greater."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is SMALLER: 38 or 42?",
+          "a": 38,
+          "options": [
+            38,
+            42
+          ],
+          "why": "38 < 42, so 38 is smaller."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is GREATER: 91 or 87?",
+          "a": 91,
+          "options": [
+            91,
+            87
+          ],
+          "why": "91 > 87, so 91 is greater."
+        },
+        {
+          "skill": "pick",
+          "q": "Which is SMALLER: 50 or 55?",
+          "a": 50,
+          "options": [
+            50,
+            55
+          ],
+          "why": "50 < 55, so 50 is smaller."
         }
       ]
     },
@@ -1113,6 +1464,464 @@
             40
           ],
           "why": "4 tens = 40, plus 5 ones = 45."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the digit in the TENS place of 47?",
+          "a": 4,
+          "options": [
+            4,
+            7,
+            11,
+            0
+          ],
+          "why": "47 = 4 tens and 7 ones, so the tens digit is 4."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the digit in the ONES place of 83?",
+          "a": 3,
+          "options": [
+            3,
+            8,
+            11,
+            0
+          ],
+          "why": "83 = 8 tens and 3 ones, so the ones digit is 3."
+        },
+        {
+          "skill": "pick",
+          "q": "In 67, what does the digit 6 represent?",
+          "a": 60,
+          "options": [
+            60,
+            6,
+            70,
+            16
+          ],
+          "why": "The 6 is in the tens place, so it means 6 tens = 60."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the digit in the TENS place of 29?",
+          "a": 2,
+          "options": [
+            2,
+            9,
+            11,
+            0
+          ],
+          "why": "29 = 2 tens and 9 ones, so the tens digit is 2."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the digit in the ONES place of 54?",
+          "a": 4,
+          "options": [
+            4,
+            5,
+            9,
+            0
+          ],
+          "why": "54 = 5 tens and 4 ones, so the ones digit is 4."
+        },
+        {
+          "skill": "pick",
+          "q": "In 81, what does the digit 8 represent?",
+          "a": 80,
+          "options": [
+            80,
+            8,
+            18,
+            90
+          ],
+          "why": "The 8 is in the tens place, so it means 8 tens = 80."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the digit in the TENS place of 36?",
+          "a": 3,
+          "options": [
+            3,
+            6,
+            9,
+            0
+          ],
+          "why": "36 = 3 tens and 6 ones, so the tens digit is 3."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the digit in the ONES place of 92?",
+          "a": 2,
+          "options": [
+            2,
+            9,
+            11,
+            0
+          ],
+          "why": "92 = 9 tens and 2 ones, so the ones digit is 2."
+        },
+        {
+          "skill": "pick",
+          "q": "In 75, what does the digit 7 represent?",
+          "a": 70,
+          "options": [
+            70,
+            7,
+            17,
+            80
+          ],
+          "why": "The 7 is in the tens place, so it means 7 tens = 70."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the digit in the TENS place of 10?",
+          "a": 1,
+          "options": [
+            1,
+            0,
+            10,
+            2
+          ],
+          "why": "10 = 1 ten and 0 ones, so the tens digit is 1."
+        }
+      ]
+    },
+    {
+      "id": "mb_bigadd",
+      "title": "Two-Digit Addition",
+      "icon": "➕",
+      "concept": "Now we add BIGGER numbers! Stack them in columns — ones under ones, tens under tens. Add the ONES first, then the TENS. If the ones make 10 or more, carry 1 ten next door!",
+      "tip": "Always start with the ONES column. If it reaches 10, carry 1 ten over to the tens!",
+      "problems": [
+        {
+          "skill": "column",
+          "q": "23 + 14 = ?",
+          "op": "+",
+          "top": 23,
+          "bot": 14,
+          "a": 37
+        },
+        {
+          "skill": "column",
+          "q": "15 + 32 = ?",
+          "op": "+",
+          "top": 15,
+          "bot": 32,
+          "a": 47
+        },
+        {
+          "skill": "column",
+          "q": "41 + 26 = ?",
+          "op": "+",
+          "top": 41,
+          "bot": 26,
+          "a": 67
+        },
+        {
+          "skill": "column",
+          "q": "34 + 13 = ?",
+          "op": "+",
+          "top": 34,
+          "bot": 13,
+          "a": 47
+        },
+        {
+          "skill": "column",
+          "q": "22 + 33 = ?",
+          "op": "+",
+          "top": 22,
+          "bot": 33,
+          "a": 55
+        },
+        {
+          "skill": "column",
+          "q": "16 + 21 = ?",
+          "op": "+",
+          "top": 16,
+          "bot": 21,
+          "a": 37
+        },
+        {
+          "skill": "column",
+          "q": "30 + 25 = ?",
+          "op": "+",
+          "top": 30,
+          "bot": 25,
+          "a": 55
+        },
+        {
+          "skill": "column",
+          "q": "42 + 17 = ?",
+          "op": "+",
+          "top": 42,
+          "bot": 17,
+          "a": 59
+        },
+        {
+          "skill": "column",
+          "q": "28 + 11 = ?",
+          "op": "+",
+          "top": 28,
+          "bot": 11,
+          "a": 39
+        },
+        {
+          "skill": "column",
+          "q": "35 + 24 = ?",
+          "op": "+",
+          "top": 35,
+          "bot": 24,
+          "a": 59
+        },
+        {
+          "skill": "column",
+          "q": "19 + 27 = ?",
+          "op": "+",
+          "top": 19,
+          "bot": 27,
+          "a": 46
+        },
+        {
+          "skill": "column",
+          "q": "38 + 24 = ?",
+          "op": "+",
+          "top": 38,
+          "bot": 24,
+          "a": 62
+        },
+        {
+          "skill": "column",
+          "q": "45 + 18 = ?",
+          "op": "+",
+          "top": 45,
+          "bot": 18,
+          "a": 63
+        },
+        {
+          "skill": "column",
+          "q": "29 + 33 = ?",
+          "op": "+",
+          "top": 29,
+          "bot": 33,
+          "a": 62
+        },
+        {
+          "skill": "column",
+          "q": "56 + 17 = ?",
+          "op": "+",
+          "top": 56,
+          "bot": 17,
+          "a": 73
+        },
+        {
+          "skill": "column",
+          "q": "67 + 15 = ?",
+          "op": "+",
+          "top": 67,
+          "bot": 15,
+          "a": 82
+        },
+        {
+          "skill": "column",
+          "q": "48 + 26 = ?",
+          "op": "+",
+          "top": 48,
+          "bot": 26,
+          "a": 74
+        },
+        {
+          "skill": "column",
+          "q": "39 + 42 = ?",
+          "op": "+",
+          "top": 39,
+          "bot": 42,
+          "a": 81
+        },
+        {
+          "skill": "column",
+          "q": "58 + 34 = ?",
+          "op": "+",
+          "top": 58,
+          "bot": 34,
+          "a": 92
+        },
+        {
+          "skill": "column",
+          "q": "76 + 18 = ?",
+          "op": "+",
+          "top": 76,
+          "bot": 18,
+          "a": 94
+        }
+      ]
+    },
+    {
+      "id": "mb_bigsub",
+      "title": "Two-Digit Subtraction",
+      "icon": "➖",
+      "concept": "Take away BIGGER numbers in columns! Subtract the ONES first, then the TENS. If the top ones digit is too small, BORROW 1 ten — it becomes 10 bigger!",
+      "tip": "Can't take the ones away? Borrow 1 ten — the ones digit jumps up by 10!",
+      "problems": [
+        {
+          "skill": "column",
+          "q": "45 − 23 = ?",
+          "op": "-",
+          "top": 45,
+          "bot": 23,
+          "a": 22
+        },
+        {
+          "skill": "column",
+          "q": "67 − 34 = ?",
+          "op": "-",
+          "top": 67,
+          "bot": 34,
+          "a": 33
+        },
+        {
+          "skill": "column",
+          "q": "82 − 41 = ?",
+          "op": "-",
+          "top": 82,
+          "bot": 41,
+          "a": 41
+        },
+        {
+          "skill": "column",
+          "q": "59 − 25 = ?",
+          "op": "-",
+          "top": 59,
+          "bot": 25,
+          "a": 34
+        },
+        {
+          "skill": "column",
+          "q": "76 − 32 = ?",
+          "op": "-",
+          "top": 76,
+          "bot": 32,
+          "a": 44
+        },
+        {
+          "skill": "column",
+          "q": "48 − 16 = ?",
+          "op": "-",
+          "top": 48,
+          "bot": 16,
+          "a": 32
+        },
+        {
+          "skill": "column",
+          "q": "93 − 52 = ?",
+          "op": "-",
+          "top": 93,
+          "bot": 52,
+          "a": 41
+        },
+        {
+          "skill": "column",
+          "q": "64 − 23 = ?",
+          "op": "-",
+          "top": 64,
+          "bot": 23,
+          "a": 41
+        },
+        {
+          "skill": "column",
+          "q": "85 − 42 = ?",
+          "op": "-",
+          "top": 85,
+          "bot": 42,
+          "a": 43
+        },
+        {
+          "skill": "column",
+          "q": "71 − 30 = ?",
+          "op": "-",
+          "top": 71,
+          "bot": 30,
+          "a": 41
+        },
+        {
+          "skill": "column",
+          "q": "53 − 27 = ?",
+          "op": "-",
+          "top": 53,
+          "bot": 27,
+          "a": 26
+        },
+        {
+          "skill": "column",
+          "q": "62 − 38 = ?",
+          "op": "-",
+          "top": 62,
+          "bot": 38,
+          "a": 24
+        },
+        {
+          "skill": "column",
+          "q": "74 − 46 = ?",
+          "op": "-",
+          "top": 74,
+          "bot": 46,
+          "a": 28
+        },
+        {
+          "skill": "column",
+          "q": "81 − 57 = ?",
+          "op": "-",
+          "top": 81,
+          "bot": 57,
+          "a": 24
+        },
+        {
+          "skill": "column",
+          "q": "90 − 36 = ?",
+          "op": "-",
+          "top": 90,
+          "bot": 36,
+          "a": 54
+        },
+        {
+          "skill": "column",
+          "q": "65 − 28 = ?",
+          "op": "-",
+          "top": 65,
+          "bot": 28,
+          "a": 37
+        },
+        {
+          "skill": "column",
+          "q": "43 − 19 = ?",
+          "op": "-",
+          "top": 43,
+          "bot": 19,
+          "a": 24
+        },
+        {
+          "skill": "column",
+          "q": "72 − 45 = ?",
+          "op": "-",
+          "top": 72,
+          "bot": 45,
+          "a": 27
+        },
+        {
+          "skill": "column",
+          "q": "58 − 29 = ?",
+          "op": "-",
+          "top": 58,
+          "bot": 29,
+          "a": 29
+        },
+        {
+          "skill": "column",
+          "q": "84 − 67 = ?",
+          "op": "-",
+          "top": 84,
+          "bot": 67,
+          "a": 17
         }
       ]
     },
@@ -1347,6 +2156,66 @@
             "Cube"
           ],
           "why": "An egg is a stretched round shape — an oval."
+        },
+        {
+          "skill": "pick",
+          "q": "How many sides does a TRIANGLE have?",
+          "a": 3,
+          "options": [
+            3,
+            4,
+            1,
+            5
+          ],
+          "why": "A triangle has 3 sides."
+        },
+        {
+          "skill": "pick",
+          "q": "Which shape has 4 EQUAL sides?",
+          "a": "Square",
+          "options": [
+            "Square",
+            "Rectangle",
+            "Triangle",
+            "Circle"
+          ],
+          "why": "A square has 4 sides that are all equal."
+        },
+        {
+          "skill": "pick",
+          "q": "How many sides does a RECTANGLE have?",
+          "a": 4,
+          "options": [
+            4,
+            3,
+            5,
+            2
+          ],
+          "why": "A rectangle has 4 sides (opposite sides equal)."
+        },
+        {
+          "skill": "pick",
+          "q": "Which round shape has 0 sides and no corners?",
+          "a": "Circle",
+          "options": [
+            "Circle",
+            "Square",
+            "Triangle",
+            "Oval"
+          ],
+          "why": "A circle is perfectly round with no sides or corners."
+        },
+        {
+          "skill": "pick",
+          "q": "How many sides does a PENTAGON have?",
+          "a": 5,
+          "options": [
+            5,
+            4,
+            6,
+            3
+          ],
+          "why": "A pentagon has 5 sides."
         }
       ]
     },
@@ -1557,6 +2426,66 @@
             "🟦"
           ],
           "why": "Black, white, repeating. After black comes white."
+        },
+        {
+          "skill": "pick",
+          "q": "Complete the pattern: 1, 3, 5, _",
+          "a": 7,
+          "options": [
+            7,
+            6,
+            8,
+            9
+          ],
+          "why": "Add 2 each time: 5 + 2 = 7."
+        },
+        {
+          "skill": "pick",
+          "q": "Complete the pattern: 2, 4, 8, _",
+          "a": 16,
+          "options": [
+            16,
+            10,
+            12,
+            6
+          ],
+          "why": "It DOUBLES each time: 8 × 2 = 16."
+        },
+        {
+          "skill": "pick",
+          "q": "Complete the pattern: 5, 10, 15, _",
+          "a": 20,
+          "options": [
+            20,
+            16,
+            25,
+            18
+          ],
+          "why": "Add 5 each time: 15 + 5 = 20."
+        },
+        {
+          "skill": "pick",
+          "q": "Complete the pattern: 10, 20, 40, _",
+          "a": 80,
+          "options": [
+            80,
+            60,
+            50,
+            70
+          ],
+          "why": "It DOUBLES each time: 40 × 2 = 80."
+        },
+        {
+          "skill": "pick",
+          "q": "Complete the pattern: 6, 9, 12, _",
+          "a": 15,
+          "options": [
+            15,
+            14,
+            16,
+            18
+          ],
+          "why": "Add 3 each time: 12 + 3 = 15."
         }
       ]
     },
@@ -2198,6 +3127,126 @@
             52
           ],
           "why": "'Buys more' means add: 32 + 15 = 47."
+        },
+        {
+          "skill": "pick",
+          "q": "Rahul has 15 apples 🍎 and buys 12 more. How many now?",
+          "a": 27,
+          "options": [
+            27,
+            26,
+            28,
+            25
+          ],
+          "why": "Buys more → add: 15 + 12 = 27 apples."
+        },
+        {
+          "skill": "pick",
+          "q": "Priya has 28 pencils ✏️ and gives away 9. How many are LEFT?",
+          "a": 19,
+          "options": [
+            19,
+            18,
+            20,
+            17
+          ],
+          "why": "Gives away → subtract: 28 − 9 = 19 pencils."
+        },
+        {
+          "skill": "pick",
+          "q": "Aarav has 23 books 📚 and buys 17 more. How many now?",
+          "a": 40,
+          "options": [
+            40,
+            39,
+            41,
+            38
+          ],
+          "why": "Buys more → add: 23 + 17 = 40 books."
+        },
+        {
+          "skill": "pick",
+          "q": "Sneha has 42 candies 🍬 and gives away 15. How many are LEFT?",
+          "a": 27,
+          "options": [
+            27,
+            26,
+            28,
+            25
+          ],
+          "why": "Gives away → subtract: 42 − 15 = 27 candies."
+        },
+        {
+          "skill": "pick",
+          "q": "Vikram has 19 toys 🧸 and buys 24 more. How many now?",
+          "a": 43,
+          "options": [
+            43,
+            42,
+            44,
+            41
+          ],
+          "why": "Buys more → add: 19 + 24 = 43 toys."
+        },
+        {
+          "skill": "pick",
+          "q": "Ananya has 35 balloons 🎈 and gives away 18. How many are LEFT?",
+          "a": 17,
+          "options": [
+            17,
+            16,
+            18,
+            15
+          ],
+          "why": "Gives away → subtract: 35 − 18 = 17 balloons."
+        },
+        {
+          "skill": "pick",
+          "q": "Rahul has 27 apples 🍎 and buys 14 more. How many now?",
+          "a": 41,
+          "options": [
+            41,
+            40,
+            42,
+            39
+          ],
+          "why": "Buys more → add: 27 + 14 = 41 apples."
+        },
+        {
+          "skill": "pick",
+          "q": "Priya has 50 pencils ✏️ and gives away 23. How many are LEFT?",
+          "a": 27,
+          "options": [
+            27,
+            26,
+            28,
+            25
+          ],
+          "why": "Gives away → subtract: 50 − 23 = 27 pencils."
+        },
+        {
+          "skill": "pick",
+          "q": "Aarav has 16 books 📚 and buys 29 more. How many now?",
+          "a": 45,
+          "options": [
+            45,
+            44,
+            46,
+            43
+          ],
+          "why": "Buys more → add: 16 + 29 = 45 books."
+        },
+        {
+          "skill": "pick",
+          "q": "Sneha has 38 candies 🍬 and gives away 12. How many are LEFT?",
+          "a": 26,
+          "options": [
+            26,
+            25,
+            27,
+            24
+          ],
+          "why": "Gives away → subtract: 38 − 12 = 26 candies."
         }
       ]
     },

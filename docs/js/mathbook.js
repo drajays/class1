@@ -278,6 +278,20 @@ const MathBook = {
     return `<div style="display:grid;grid-template-columns:repeat(5,30px);gap:5px;justify-content:center">${c}</div>`;
   },
 
+  // Vertical column sum for 2-digit add/subtract (Tens | Ones), with carry/borrow notes.
+  columnHtml(top, bot, op, note) {
+    const cell = (v, sz, col) => `<span style="display:inline-grid;place-items:center;width:40px;height:${sz === 'sm' ? 20 : 46}px;font-size:${sz === 'sm' ? 11 : 30}px;font-weight:800;color:${col || '#27304f'}">${v}</span>`;
+    const row = (a, b, c) => `<div style="display:flex;justify-content:flex-end">${a}${b}${c}</div>`;
+    const tT = Math.floor(top / 10), oT = top % 10, tB = Math.floor(bot / 10), oB = bot % 10;
+    return `<div style="display:inline-block;text-align:right;background:#f7f7ff;border:2px solid #e8e6ff;border-radius:14px;padding:6px 16px">
+      ${row(cell('', 'sm'), cell('T', 'sm', '#aab'), cell('O', 'sm', '#aab'))}
+      ${row(cell('', 'lg'), cell(tT), cell(oT))}
+      ${row(cell(op, 'lg', '#ff5ea8'), cell(tB), cell(oB))}
+      <div style="border-top:3px solid #27304f;margin:2px 0 0"></div>
+      ${note ? `<div style="font-size:11px;color:#7a5a00;font-weight:700;margin-top:4px">${note}</div>` : ''}
+    </div>`;
+  },
+
   // Pictograph: each row is a label + emoji repeated n times.
   chartHtml(chart) {
     const rows = chart.map((r) =>
@@ -297,6 +311,7 @@ const MathBook = {
     if (p.skill === 'numberline') return this.numlineHtml(p);
     if (p.skill === 'clock') return this.imageHtml(p) + this.clockSvg(p.hour);
     if (p.skill === 'tenframe') return this.tenframeHtml(p.filled);
+    if (p.skill === 'column') return this.columnHtml(p.top, p.bot, p.op);
     // pick: optional book image, optional pictograph, + question text
     return this.imageHtml(p) + (p.chart ? this.chartHtml(p.chart) : '');
   },
@@ -344,6 +359,29 @@ const MathBook = {
         { text: `The ten-frame has 10 boxes. ${p.filled} are filled with dots.`, visual: this.tenframeHtml(p.filled) },
         { text: `Count the EMPTY boxes: ${p.a}.`, visual: this.tenframeHtml(p.filled) },
         { text: `So ${p.filled} and ${p.a} make 10!`, visual: this.tenframeHtml(p.filled) },
+      ];
+    }
+    if (p.skill === 'column') {
+      const oT = p.top % 10, tT = Math.floor(p.top / 10);
+      const oB = p.bot % 10, tB = Math.floor(p.bot / 10);
+      const v = (note) => this.columnHtml(p.top, p.bot, p.op, note);
+      if (p.op === '+') {
+        const onesSum = oT + oB, carry = onesSum >= 10 ? 1 : 0;
+        const onesNote = carry ? `Ones: ${oT}+${oB}=${onesSum} → write ${onesSum % 10}, carry 1` : `Ones: ${oT}+${oB}=${onesSum}`;
+        return [
+          { text: `Always start with the ONES column: ${oT} + ${oB} = ${onesSum}.${carry ? ` That's 10 or more — write ${onesSum % 10} and carry 1 ten!` : ''}`, visual: v(onesNote) },
+          { text: `Now the TENS: ${tT} + ${tB}${carry ? ' + 1 carried' : ''} = ${tT + tB + carry}.`, visual: v(`Tens: ${tT}+${tB}${carry ? '+1' : ''}=${tT + tB + carry}`) },
+          { text: `So ${p.top} + ${p.bot} = ${p.a}! 🎉`, visual: v(`= ${p.a}`) },
+        ];
+      }
+      const borrow = oT < oB ? 1 : 0;
+      const onesText = borrow
+        ? `Ones: ${oT} is too small to take ${oB}. BORROW 1 ten → ${oT + 10} − ${oB} = ${oT + 10 - oB}.`
+        : `Ones: ${oT} − ${oB} = ${oT - oB}.`;
+      return [
+        { text: `Start with the ONES column. ${onesText}`, visual: v(borrow ? `borrow 1: ${oT + 10}−${oB}=${oT + 10 - oB}` : `Ones: ${oT}−${oB}=${oT - oB}`) },
+        { text: `Now the TENS: ${tT - borrow} − ${tB} = ${tT - borrow - tB}.`, visual: v(`Tens: ${tT - borrow}−${tB}=${tT - borrow - tB}`) },
+        { text: `So ${p.top} − ${p.bot} = ${p.a}! 🎉`, visual: v(`= ${p.a}`) },
       ];
     }
     // pick
