@@ -121,6 +121,11 @@ These are touched by both. Make **small, localized** edits and log them below.
 - ✅ Added 4 chapters → now **54 chapters / 333 problems**: Doing It Now (-ing /
   present continuous), Places We Go, Clothes We Wear, In the Garden (plant parts).
 
+### English session — 2026-06-18 (UPDATE 13: batch 10)
+- ✅ Added 4 chapters → now **58 chapters / 357 problems**: My Five Senses, Full Stop
+  or Question Mark (punctuation 2), Up in the Sky, Yummy Food. (Skipped a Shapes
+  chapter on purpose — Math Book already owns shapes; avoiding duplicate content.)
+
 ### Math session — 2026-06-18
 - ✅ Built `docs/js/mathbook.js` — `MathBook` guided-solver engine: gated chapter
   picker, concept intro, 5 interactive widgets (count, crossout, add, numberline,

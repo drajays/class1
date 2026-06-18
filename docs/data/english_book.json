@@ -818,6 +818,66 @@
         { "skill": "pick", "q": "Plants need water and ___ to grow.", "emoji": "☀️", "options": ["sunlight", "candy", "toys"], "a": "sunlight", "why": "Plants need sunlight and water to grow." },
         { "skill": "pick", "q": "The long part that holds up the flower is the ___.", "options": ["stem", "root", "seed"], "a": "stem", "why": "The stem holds up the plant." }
       ]
+    },
+    {
+      "id": "eng_senses",
+      "title": "My Five Senses",
+      "icon": "👀",
+      "concept": "We have five senses to explore the world! We see, hear, smell, taste and touch. Each sense uses a part of our body!",
+      "examples": "👀 see · 👂 hear · 👃 smell · 👅 taste · ✋ touch",
+      "problems": [
+        { "skill": "pick", "q": "Which sense do we use to read a book?", "emoji": "👀", "options": ["see", "hear", "smell"], "a": "see", "why": "We use our eyes to see and read." },
+        { "skill": "pick", "q": "Which sense do we use to enjoy music?", "emoji": "🎵", "options": ["hear", "taste", "touch"], "a": "hear", "why": "We use our ears to hear music." },
+        { "skill": "pick", "q": "Which sense do we use to enjoy a flower's smell?", "emoji": "🌸", "options": ["smell", "see", "taste"], "a": "smell", "why": "We use our nose to smell." },
+        { "skill": "pick", "q": "Which sense tells us food is sweet?", "emoji": "🍭", "options": ["taste", "hear", "see"], "a": "taste", "why": "We use our tongue to taste." },
+        { "skill": "pick", "q": "Which sense tells us ice is cold?", "emoji": "🧊", "options": ["touch", "smell", "hear"], "a": "touch", "why": "We use our skin to touch and feel." },
+        { "skill": "pick", "q": "How many senses do we have?", "emoji": "✋", "options": ["five", "two", "ten"], "a": "five", "why": "We have five senses." }
+      ]
+    },
+    {
+      "id": "eng_punctuation2",
+      "title": "Full Stop or Question Mark",
+      "icon": "❓",
+      "concept": "Sentences end in different ways! A telling sentence ends with a full stop. A sentence that asks something ends with a question mark!",
+      "examples": "I like cake. · Do you like cake?",
+      "problems": [
+        { "skill": "pick", "q": "A telling sentence ends with a ___.", "options": ["full stop", "question mark"], "a": "full stop", "why": "A sentence that tells something ends with a full stop." },
+        { "skill": "pick", "q": "A sentence that asks something ends with a ___.", "options": ["question mark", "full stop"], "a": "question mark", "why": "A question ends with a question mark." },
+        { "skill": "pick", "q": "Do you like cake — should end with a ___.", "emoji": "🍰", "options": ["question mark", "full stop"], "a": "question mark", "why": "It asks a question, so it ends with a question mark." },
+        { "skill": "pick", "q": "I like cake — should end with a ___.", "emoji": "🍰", "options": ["full stop", "question mark"], "a": "full stop", "why": "It tells something, so it ends with a full stop." },
+        { "skill": "pick", "q": "Where is my bag — should end with a ___.", "emoji": "🎒", "options": ["question mark", "full stop"], "a": "question mark", "why": "It asks where, so it ends with a question mark." },
+        { "skill": "pick", "q": "The sun is hot — should end with a ___.", "emoji": "☀️", "options": ["full stop", "question mark"], "a": "full stop", "why": "It tells something, so it ends with a full stop." }
+      ]
+    },
+    {
+      "id": "eng_sky",
+      "title": "Up in the Sky",
+      "icon": "🌙",
+      "concept": "Look up at the sky! In the day we see the bright sun. At night we see the moon and twinkling stars. Let's look up!",
+      "examples": "☀️ sun · 🌙 moon · ⭐ stars",
+      "problems": [
+        { "skill": "pick", "q": "What shines brightly in the day?", "emoji": "☀️", "options": ["sun", "moon", "star"], "a": "sun", "why": "The sun shines in the day." },
+        { "skill": "pick", "q": "What do we see in the sky at night?", "emoji": "🌙", "options": ["moon", "sun", "grass"], "a": "moon", "why": "We see the moon at night." },
+        { "skill": "pick", "q": "Tiny lights that twinkle at night are ___.", "emoji": "⭐", "options": ["stars", "fish", "cars"], "a": "stars", "why": "Stars twinkle in the night sky." },
+        { "skill": "pick", "q": "White and fluffy in the sky, we see ___.", "emoji": "☁️", "options": ["clouds", "rocks", "leaves"], "a": "clouds", "why": "Clouds float in the sky." },
+        { "skill": "pick", "q": "A colourful arch after the rain is a ___.", "emoji": "🌈", "options": ["rainbow", "road", "river"], "a": "rainbow", "why": "A rainbow appears after the rain." },
+        { "skill": "pick", "q": "The sun gives us light and ___.", "emoji": "☀️", "options": ["heat", "ice", "rain"], "a": "heat", "why": "The sun gives us light and heat." }
+      ]
+    },
+    {
+      "id": "eng_food",
+      "title": "Yummy Food",
+      "icon": "🍽️",
+      "concept": "Yummy food keeps us happy and healthy! We eat bread, rice and fruit, and we drink milk and water. Let's talk about food!",
+      "examples": "🍞 bread · 🍚 rice · 🥛 milk",
+      "problems": [
+        { "skill": "pick", "q": "Which one do we drink?", "emoji": "🥛", "options": ["milk", "bread", "rice"], "a": "milk", "why": "We drink milk." },
+        { "skill": "pick", "q": "Which is a healthy fruit to eat?", "emoji": "🍎", "options": ["apple", "candy", "chips"], "a": "apple", "why": "An apple is a healthy fruit." },
+        { "skill": "pick", "q": "We eat ___ to fill our tummy at lunch.", "emoji": "🍚", "options": ["rice", "soap", "paper"], "a": "rice", "why": "Rice is a food we eat at meals." },
+        { "skill": "pick", "q": "Bees make sweet ___.", "emoji": "🍯", "options": ["honey", "milk", "water"], "a": "honey", "why": "Bees make honey." },
+        { "skill": "pick", "q": "We should drink lots of ___ every day.", "emoji": "💧", "options": ["water", "mud", "ink"], "a": "water", "why": "Water keeps us healthy." },
+        { "skill": "pick", "q": "Too much ___ is not good for our teeth.", "emoji": "🍬", "options": ["candy", "fruit", "water"], "a": "candy", "why": "Too much sugar and candy harms our teeth." }
+      ]
     }
   ]
 }
