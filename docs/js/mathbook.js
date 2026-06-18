@@ -248,6 +248,28 @@ const MathBook = {
     return p.image ? `<div class="mb-image"><img src="${AppConfig.url(p.image)}" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></div>` : '';
   },
 
+  // Simple analog clock showing a whole-hour time (long hand on 12).
+  clockSvg(hour) {
+    const cx = 50, cy = 50, R = 37;
+    let nums = '';
+    for (let n = 1; n <= 12; n++) {
+      const a = n * 30 * Math.PI / 180;
+      const x = cx + R * Math.sin(a);
+      const y = cy - R * Math.cos(a) + 3.4;
+      nums += `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" text-anchor="middle" font-size="9" font-weight="700" fill="#27304f">${n}</text>`;
+    }
+    const ha = (hour % 12) * 30 * Math.PI / 180;
+    const hx = cx + 22 * Math.sin(ha), hy = cy - 22 * Math.cos(ha);
+    return `<svg class="mb-clock" viewBox="0 0 100 100" style="width:168px;height:168px">
+      <circle cx="50" cy="50" r="47" fill="#fff" stroke="#6658ff" stroke-width="3"/>
+      <circle cx="50" cy="50" r="42.5" fill="#f7f7ff"/>
+      ${nums}
+      <line x1="50" y1="50" x2="50" y2="18" stroke="#ff5ea8" stroke-width="3" stroke-linecap="round"/>
+      <line x1="50" y1="50" x2="${hx.toFixed(1)}" y2="${hy.toFixed(1)}" stroke="#27304f" stroke-width="4.5" stroke-linecap="round"/>
+      <circle cx="50" cy="50" r="3" fill="#27304f"/>
+    </svg>`;
+  },
+
   visual(p) {
     if (p.skill === 'count') return this.imageHtml(p) + this.row(p.emoji, p.n);
     if (p.skill === 'crossout') return this.imageHtml(p) + this.row(p.emoji, p.n, 0);
@@ -255,6 +277,7 @@ const MathBook = {
       return this.imageHtml(p) + `<div class="mb-add">${this.row(p.emoji, p.x)}<span class="mb-plus">➕</span>${this.row(p.emoji, p.y)}</div>`;
     }
     if (p.skill === 'numberline') return this.numlineHtml(p);
+    if (p.skill === 'clock') return this.imageHtml(p) + this.clockSvg(p.hour);
     return this.imageHtml(p); // pick: optional book image + question text
   },
 
@@ -287,6 +310,13 @@ const MathBook = {
         { text: `Start at ${p.start} on the number line.`, visual: this.numlineHtml(p, p.start) },
         { text: `Hop ${dir} ${p.step} ${p.step === 1 ? 'step' : 'steps'} (${p.op}${p.step}).`, visual: this.numlineHtml(p, p.a) },
         { text: `You land on ${p.a}. So ${p.q.replace(' = ?', '')} = ${p.a}!`, visual: this.numlineHtml(p, p.a) },
+      ];
+    }
+    if (p.skill === 'clock') {
+      return [
+        { text: `Look at the SHORT hand — it points to the ${p.hour}.`, visual: this.clockSvg(p.hour) },
+        { text: `The LONG hand points straight up to 12, so it is exactly o'clock.`, visual: this.clockSvg(p.hour) },
+        { text: `So the time is ${p.hour} o'clock!`, visual: this.clockSvg(p.hour) },
       ];
     }
     // pick

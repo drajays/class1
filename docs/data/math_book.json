@@ -1884,6 +1884,54 @@
             "Monday"
           ],
           "why": "The order is Friday, then Saturday."
+        },
+        {
+          "skill": "clock",
+          "q": "What time is it?",
+          "hour": 3,
+          "a": "3 o'clock",
+          "options": [
+            "3 o'clock",
+            "6 o'clock",
+            "9 o'clock",
+            "12 o'clock"
+          ]
+        },
+        {
+          "skill": "clock",
+          "q": "What time does the clock show?",
+          "hour": 6,
+          "a": "6 o'clock",
+          "options": [
+            "6 o'clock",
+            "3 o'clock",
+            "12 o'clock",
+            "9 o'clock"
+          ]
+        },
+        {
+          "skill": "clock",
+          "q": "What time is it now?",
+          "hour": 9,
+          "a": "9 o'clock",
+          "options": [
+            "9 o'clock",
+            "8 o'clock",
+            "10 o'clock",
+            "12 o'clock"
+          ]
+        },
+        {
+          "skill": "clock",
+          "q": "What o'clock is the clock showing?",
+          "hour": 12,
+          "a": "12 o'clock",
+          "options": [
+            "12 o'clock",
+            "6 o'clock",
+            "1 o'clock",
+            "3 o'clock"
+          ]
         }
       ]
     },
