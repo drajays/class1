@@ -878,6 +878,66 @@
         { "skill": "pick", "q": "We should drink lots of ___ every day.", "emoji": "💧", "options": ["water", "mud", "ink"], "a": "water", "why": "Water keeps us healthy." },
         { "skill": "pick", "q": "Too much ___ is not good for our teeth.", "emoji": "🍬", "options": ["candy", "fruit", "water"], "a": "candy", "why": "Too much sugar and candy harms our teeth." }
       ]
+    },
+    {
+      "id": "eng_abc_order",
+      "title": "ABC Order",
+      "icon": "🔤",
+      "concept": "The alphabet has 26 letters from A to Z. They go in a special order! After A comes B, after B comes C. Let's put them in order!",
+      "examples": "A B C D … X Y Z",
+      "problems": [
+        { "skill": "pick", "q": "Which letter comes after A?", "options": ["B", "C", "D"], "a": "B", "why": "After A comes B." },
+        { "skill": "pick", "q": "Which letter comes after C?", "options": ["D", "E", "B"], "a": "D", "why": "After C comes D." },
+        { "skill": "pick", "q": "Which letter comes before D?", "options": ["C", "E", "F"], "a": "C", "why": "Before D comes C." },
+        { "skill": "pick", "q": "Which letter is missing? A, B, ___, D", "options": ["C", "E", "Z"], "a": "C", "why": "After B comes C." },
+        { "skill": "pick", "q": "Which is the first letter of the alphabet?", "options": ["A", "Z", "M"], "a": "A", "why": "The alphabet starts with A." },
+        { "skill": "pick", "q": "Which is the last letter of the alphabet?", "options": ["Z", "A", "Y"], "a": "Z", "why": "The alphabet ends with Z." }
+      ]
+    },
+    {
+      "id": "eng_past_ed",
+      "title": "Yesterday Words",
+      "icon": "⏪",
+      "concept": "When something already happened, many action words end in -ed! Today I play, yesterday I played. Let's talk about yesterday!",
+      "examples": "play → played · jump → jumped",
+      "problems": [
+        { "skill": "pick", "q": "Today I jump. Yesterday I ___.", "options": ["jumped", "jump", "jumping"], "a": "jumped", "why": "For yesterday we add -ed: jumped." },
+        { "skill": "pick", "q": "Today I cook. Yesterday I ___.", "emoji": "🍳", "options": ["cooked", "cook", "cooks"], "a": "cooked", "why": "cook plus ed makes cooked." },
+        { "skill": "pick", "q": "Today I walk. Yesterday I ___.", "emoji": "🚶", "options": ["walked", "walk", "walking"], "a": "walked", "why": "walk plus ed makes walked." },
+        { "skill": "pick", "q": "Add -ed to the word paint.", "emoji": "🎨", "options": ["painted", "paint", "painting"], "a": "painted", "why": "paint plus ed makes painted." },
+        { "skill": "pick", "q": "Today I clean. Yesterday I ___.", "emoji": "🧹", "options": ["cleaned", "clean", "cleans"], "a": "cleaned", "why": "clean plus ed makes cleaned." },
+        { "skill": "pick", "q": "Yesterday words often end with ___.", "options": ["-ed", "-ing", "-s"], "a": "-ed", "why": "Past words often end with -ed." }
+      ]
+    },
+    {
+      "id": "eng_sight_words2",
+      "title": "More Sight Words",
+      "icon": "✨",
+      "concept": "More magic sight words to read in a snap! Words like look, like, my, here and was. Read them fast, reading star!",
+      "examples": "look · like · my · here · was",
+      "problems": [
+        { "skill": "pick", "q": "Read it: ___ at the bird!", "emoji": "🐦", "options": ["Look", "Cat", "Run"], "a": "Look", "why": "Look at the bird. Look is a sight word." },
+        { "skill": "pick", "q": "Read it: I ___ ice cream.", "emoji": "🍦", "options": ["like", "cat", "run"], "a": "like", "why": "I like ice cream. Like is a sight word." },
+        { "skill": "pick", "q": "Read it: This is ___ dog.", "emoji": "🐶", "options": ["my", "run", "is"], "a": "my", "why": "This is my dog. My is a sight word." },
+        { "skill": "pick", "q": "Read it: Come ___, please.", "options": ["here", "cat", "dog"], "a": "here", "why": "Come here. Here is a sight word." },
+        { "skill": "pick", "q": "Read it: The cake ___ sweet.", "emoji": "🍰", "options": ["was", "cat", "run"], "a": "was", "why": "The cake was sweet. Was is a sight word." },
+        { "skill": "pick", "q": "Read it: ___ are my friend.", "options": ["You", "Cat", "Run"], "a": "You", "why": "You are my friend. You is a sight word." }
+      ]
+    },
+    {
+      "id": "eng_rhyming2",
+      "title": "Rhyme Time 2",
+      "icon": "🎶",
+      "concept": "More rhyming fun! Find the words that sound the same at the end. You are a rhyming champion!",
+      "examples": "ball–wall · hop–top · ring–king",
+      "problems": [
+        { "skill": "pick", "q": "Which word rhymes with ball?", "emoji": "⚽", "options": ["wall", "cat", "sun"], "a": "wall", "why": "ball and wall end with -all." },
+        { "skill": "pick", "q": "Which word rhymes with king?", "emoji": "👑", "options": ["ring", "dog", "car"], "a": "ring", "why": "king and ring end with -ing." },
+        { "skill": "pick", "q": "Which word rhymes with hop?", "options": ["top", "sun", "bag"], "a": "top", "why": "hop and top end with -op." },
+        { "skill": "pick", "q": "Which word rhymes with red?", "options": ["bed", "car", "pin"], "a": "bed", "why": "red and bed end with -ed." },
+        { "skill": "pick", "q": "Which word rhymes with mouse?", "emoji": "🐭", "options": ["house", "cat", "fish"], "a": "house", "why": "mouse and house end with -ouse." },
+        { "skill": "pick", "q": "Which word rhymes with cake?", "emoji": "🎂", "options": ["lake", "dog", "pen"], "a": "lake", "why": "cake and lake end with -ake." }
+      ]
     }
   ]
 }

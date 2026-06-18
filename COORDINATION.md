@@ -126,6 +126,10 @@ These are touched by both. Make **small, localized** edits and log them below.
   or Question Mark (punctuation 2), Up in the Sky, Yummy Food. (Skipped a Shapes
   chapter on purpose — Math Book already owns shapes; avoiding duplicate content.)
 
+### English session — 2026-06-18 (UPDATE 14: batch 11)
+- ✅ Added 4 chapters → now **62 chapters / 381 problems**: ABC Order, Yesterday Words
+  (-ed past tense), More Sight Words, Rhyme Time 2.
+
 ### Math session — 2026-06-18
 - ✅ Built `docs/js/mathbook.js` — `MathBook` guided-solver engine: gated chapter
   picker, concept intro, 5 interactive widgets (count, crossout, add, numberline,
