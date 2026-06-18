@@ -698,6 +698,66 @@
         { "skill": "pick", "q": "Read: Tom woke up late. He ran fast to catch the bus. Why did Tom run?", "emoji": "🏃", "options": ["to catch the bus", "to play", "to eat"], "a": "to catch the bus", "why": "He ran fast to catch the bus." },
         { "skill": "pick", "q": "Read: The little duck could not find its mother. It felt sad. How did the duck feel?", "emoji": "🦆", "options": ["sad", "happy", "angry"], "a": "sad", "why": "The story says the duck felt sad." }
       ]
+    },
+    {
+      "id": "eng_time_of_day",
+      "title": "Times of Day",
+      "icon": "🌅",
+      "concept": "The day has special times! We eat breakfast in the morning, lunch in the afternoon and we sleep at night. Let's learn the times of day!",
+      "examples": "🌅 morning · ☀️ noon · 🌆 evening · 🌙 night",
+      "problems": [
+        { "skill": "pick", "q": "We eat breakfast in the ___.", "emoji": "🌅", "options": ["morning", "night", "evening"], "a": "morning", "why": "Breakfast is the first meal, in the morning." },
+        { "skill": "pick", "q": "We sleep at ___.", "emoji": "🌙", "options": ["night", "morning", "noon"], "a": "night", "why": "We sleep at night when it is dark." },
+        { "skill": "pick", "q": "The sun is highest at ___.", "emoji": "☀️", "options": ["noon", "night", "evening"], "a": "noon", "why": "At noon the sun is right above us." },
+        { "skill": "pick", "q": "We say Good morning in the ___.", "emoji": "🌅", "options": ["morning", "night", "evening"], "a": "morning", "why": "We greet good morning in the morning." },
+        { "skill": "pick", "q": "Stars come out at ___.", "emoji": "⭐", "options": ["night", "noon", "morning"], "a": "night", "why": "We see stars in the night sky." },
+        { "skill": "pick", "q": "We say Good night before we ___.", "emoji": "😴", "options": ["sleep", "eat", "play"], "a": "sleep", "why": "We say good night before sleeping." }
+      ]
+    },
+    {
+      "id": "eng_compound",
+      "title": "Joining Two Words",
+      "icon": "🌻",
+      "concept": "Two small words can join to make one big word! Sun and flower make sunflower. Rain and bow make rainbow. Let's join words!",
+      "examples": "sun + flower = sunflower 🌻",
+      "problems": [
+        { "skill": "pick", "q": "sun + flower = ___?", "emoji": "🌻", "options": ["sunflower", "flowersun", "sunny"], "a": "sunflower", "why": "sun and flower join to make sunflower." },
+        { "skill": "pick", "q": "rain + bow = ___?", "emoji": "🌈", "options": ["rainbow", "bowrain", "rainy"], "a": "rainbow", "why": "rain and bow join to make rainbow." },
+        { "skill": "pick", "q": "foot + ball = ___?", "emoji": "⚽", "options": ["football", "ballfoot", "footy"], "a": "football", "why": "foot and ball join to make football." },
+        { "skill": "pick", "q": "tooth + brush = ___?", "emoji": "🪥", "options": ["toothbrush", "brushtooth", "toothy"], "a": "toothbrush", "why": "tooth and brush join to make toothbrush." },
+        { "skill": "pick", "q": "butter + fly = ___?", "emoji": "🦋", "options": ["butterfly", "flybutter", "buttery"], "a": "butterfly", "why": "butter and fly join to make butterfly." },
+        { "skill": "pick", "q": "star + fish = ___?", "emoji": "⭐", "options": ["starfish", "fishstar", "starry"], "a": "starfish", "why": "star and fish join to make starfish." }
+      ]
+    },
+    {
+      "id": "eng_plural_es",
+      "title": "More Than One with es",
+      "icon": "📦",
+      "concept": "For some words we add es to make them plural! One box, two boxes. One bus, two buses. Let's add es!",
+      "examples": "box → boxes · bus → buses",
+      "problems": [
+        { "skill": "pick", "q": "More than one box is ___?", "emoji": "📦", "options": ["boxes", "boxs", "box"], "a": "boxes", "why": "We add es: box becomes boxes." },
+        { "skill": "pick", "q": "More than one bus is ___?", "emoji": "🚌", "options": ["buses", "buss", "bus"], "a": "buses", "why": "We add es: bus becomes buses." },
+        { "skill": "pick", "q": "More than one brush is ___?", "emoji": "🖌️", "options": ["brushes", "brushs"], "a": "brushes", "why": "We add es: brush becomes brushes." },
+        { "skill": "pick", "q": "More than one dish is ___?", "emoji": "🍽️", "options": ["dishes", "dishs"], "a": "dishes", "why": "We add es: dish becomes dishes." },
+        { "skill": "pick", "q": "More than one fox is ___?", "emoji": "🦊", "options": ["foxes", "foxs"], "a": "foxes", "why": "We add es: fox becomes foxes." },
+        { "skill": "pick", "q": "More than one watch is ___?", "emoji": "⌚", "options": ["watches", "watchs"], "a": "watches", "why": "We add es: watch becomes watches." }
+      ]
+    },
+    {
+      "id": "eng_wild_farm",
+      "title": "Wild and Farm Animals",
+      "icon": "🦁",
+      "concept": "Some animals live in the wild, like the lion and tiger. Some live on a farm, like the cow and hen. Let's sort the animals!",
+      "examples": "🦁 wild · 🐄 farm",
+      "problems": [
+        { "skill": "pick", "q": "Is a lion a wild animal or a farm animal?", "emoji": "🦁", "options": ["wild", "farm"], "a": "wild", "why": "A lion lives in the jungle, so it is a wild animal." },
+        { "skill": "pick", "q": "Is a cow a wild animal or a farm animal?", "emoji": "🐄", "options": ["farm", "wild"], "a": "farm", "why": "A cow lives on a farm, so it is a farm animal." },
+        { "skill": "pick", "q": "Which one is a wild animal?", "options": ["tiger", "goat", "hen"], "a": "tiger", "why": "A tiger lives in the wild." },
+        { "skill": "pick", "q": "Which one is a farm animal?", "options": ["goat", "elephant", "zebra"], "a": "goat", "why": "A goat lives on a farm." },
+        { "skill": "pick", "q": "Is an elephant a wild animal or a farm animal?", "emoji": "🐘", "options": ["wild", "farm"], "a": "wild", "why": "An elephant lives in the wild." },
+        { "skill": "pick", "q": "Is a hen a wild animal or a farm animal?", "emoji": "🐔", "options": ["farm", "wild"], "a": "farm", "why": "A hen lives on a farm." }
+      ]
     }
   ]
 }

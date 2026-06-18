@@ -113,6 +113,10 @@ These are touched by both. Make **small, localized** edits and log them below.
 - ✅ Added 4 chapters → now **46 chapters / 285 problems**: Ways to Travel (transport),
   My Family, At School, Reading Stars (comprehension level 2).
 
+### English session — 2026-06-18 (UPDATE 11: batch 8)
+- ✅ Added 4 chapters → now **50 chapters / 309 problems**: Times of Day, Joining Two
+  Words (compound words), More Than One with es (-es plurals), Wild and Farm Animals.
+
 ### Math session — 2026-06-18
 - ✅ Built `docs/js/mathbook.js` — `MathBook` guided-solver engine: gated chapter
   picker, concept intro, 5 interactive widgets (count, crossout, add, numberline,
