@@ -39,20 +39,20 @@ const MathBook = {
     const picker = document.getElementById('math-level-picker');
     picker.classList.remove('hidden');
     const chs = this.data.chapters;
+    // All chapters are always open — Advaita can pick any lesson, in any order.
     picker.innerHTML = chs.map((c, i) => {
       const stars = Store.getLevelStars(this.playerId, 'math', c.id);
-      const locked = i > 0 && !Store.getLevelStars(this.playerId, 'math', chs[i - 1].id);
       return `
-        <button class="level-card ${locked ? 'locked' : ''} ${stars ? 'done' : ''}" data-id="${c.id}">
+        <button class="level-card ${stars ? 'done' : ''}" data-id="${c.id}">
           <span class="level-emoji">${c.icon}</span>
           <div class="level-info"><h3>${i + 1}. ${c.title}</h3><p>${c.problems.length} problems</p></div>
-          <span class="level-stars">${stars ? '⭐'.repeat(stars) : locked ? '🔒' : '▶️'}</span>
+          <span class="level-stars">${stars ? '⭐'.repeat(stars) : '▶️'}</span>
         </button>`;
     }).join('');
-    picker.querySelectorAll('.level-card:not(.locked)').forEach((card) => {
+    picker.querySelectorAll('.level-card').forEach((card) => {
       card.addEventListener('click', () => { Sounds.tap(); this.startChapter(card.dataset.id); });
     });
-    Speech.navSay('Pick a math lesson! We learn step by step.');
+    Speech.navSay('Pick any math lesson you like! They are all open.');
   },
 
   startChapter(id) {
