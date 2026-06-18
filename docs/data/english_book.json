@@ -338,6 +338,66 @@
         { "skill": "pick", "q": "First I put on socks. ___ I put on shoes.", "emoji": "🧦", "options": ["Then", "First"], "a": "Then", "why": "Then tells us what comes next." },
         { "skill": "pick", "q": "The order words are First, Next, Then and ___.", "options": ["Finally", "Maybe"], "a": "Finally", "why": "The four order words are First, Next, Then, Finally." }
       ]
+    },
+    {
+      "id": "eng_colours",
+      "title": "Colours All Around",
+      "icon": "🎨",
+      "concept": "Colours are everywhere! The sky is blue, grass is green and the sun is yellow. Let's learn our colour words!",
+      "examples": "🔴 red · 🟡 yellow · 🟢 green · 🔵 blue",
+      "problems": [
+        { "skill": "pick", "q": "What colour is the sky?", "emoji": "🌤️", "options": ["blue", "red", "brown"], "a": "blue", "why": "The sky is blue." },
+        { "skill": "pick", "q": "What colour is grass?", "emoji": "🌿", "options": ["green", "pink", "blue"], "a": "green", "why": "Grass is green." },
+        { "skill": "pick", "q": "What colour is the sun?", "emoji": "☀️", "options": ["yellow", "black", "blue"], "a": "yellow", "why": "The sun looks yellow." },
+        { "skill": "pick", "q": "What colour is a banana?", "emoji": "🍌", "options": ["yellow", "red", "green"], "a": "yellow", "why": "A ripe banana is yellow." },
+        { "skill": "pick", "q": "What colour is this apple?", "emoji": "🍎", "options": ["red", "blue", "purple"], "a": "red", "why": "This apple is red." },
+        { "skill": "pick", "q": "What colour is snow?", "emoji": "❄️", "options": ["white", "black", "green"], "a": "white", "why": "Snow is white." }
+      ]
+    },
+    {
+      "id": "eng_days",
+      "title": "Days of the Week",
+      "icon": "📅",
+      "concept": "There are seven days in a week: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday and Saturday. Let's learn them in order!",
+      "examples": "Mon · Tue · Wed · Thu · Fri · Sat · Sun",
+      "problems": [
+        { "skill": "pick", "q": "How many days are there in a week?", "emoji": "📅", "options": ["seven", "five", "ten"], "a": "seven", "why": "There are seven days in a week." },
+        { "skill": "pick", "q": "Which day comes after Monday?", "options": ["Tuesday", "Sunday", "Friday"], "a": "Tuesday", "why": "After Monday comes Tuesday." },
+        { "skill": "pick", "q": "Which day comes after Sunday?", "options": ["Monday", "Saturday", "Friday"], "a": "Monday", "why": "After Sunday comes Monday." },
+        { "skill": "pick", "q": "Which day comes before Friday?", "options": ["Thursday", "Sunday", "Monday"], "a": "Thursday", "why": "Before Friday comes Thursday." },
+        { "skill": "pick", "q": "Which one is a day of the week?", "options": ["Wednesday", "January", "Apple"], "a": "Wednesday", "why": "Wednesday is a day of the week." },
+        { "skill": "pick", "q": "Saturday and Sunday make the ___.", "options": ["weekend", "morning", "month"], "a": "weekend", "why": "Saturday and Sunday are the weekend." }
+      ]
+    },
+    {
+      "id": "eng_animal_babies",
+      "title": "Baby Animals",
+      "icon": "🐣",
+      "concept": "Baby animals have special names! A baby dog is a puppy, a baby cat is a kitten and a baby cow is a calf. Let's meet the babies!",
+      "examples": "🐶 puppy · 🐱 kitten · 🐔 chick",
+      "problems": [
+        { "skill": "pick", "q": "A baby dog is called a ___?", "emoji": "🐶", "options": ["puppy", "calf", "cub"], "a": "puppy", "why": "A baby dog is a puppy." },
+        { "skill": "pick", "q": "A baby cat is called a ___?", "emoji": "🐱", "options": ["kitten", "puppy", "foal"], "a": "kitten", "why": "A baby cat is a kitten." },
+        { "skill": "pick", "q": "A baby cow is called a ___?", "emoji": "🐄", "options": ["calf", "cub", "chick"], "a": "calf", "why": "A baby cow is a calf." },
+        { "skill": "pick", "q": "A baby hen is called a ___?", "emoji": "🐔", "options": ["chick", "puppy", "kitten"], "a": "chick", "why": "A baby hen is a chick." },
+        { "skill": "pick", "q": "A baby frog is called a ___?", "emoji": "🐸", "options": ["tadpole", "calf", "cub"], "a": "tadpole", "why": "A baby frog is a tadpole." },
+        { "skill": "pick", "q": "A baby lion is called a ___?", "emoji": "🦁", "options": ["cub", "chick", "foal"], "a": "cub", "why": "A baby lion is a cub." }
+      ]
+    },
+    {
+      "id": "eng_animal_sounds",
+      "title": "Animal Sounds",
+      "icon": "🔊",
+      "concept": "Animals make different sounds! A dog says woof, a cat says meow and a cow says moo. Let's listen to the animals!",
+      "examples": "🐶 woof · 🐱 meow · 🐄 moo",
+      "problems": [
+        { "skill": "pick", "q": "What sound does a dog make?", "emoji": "🐶", "options": ["woof", "meow", "moo"], "a": "woof", "why": "A dog says woof." },
+        { "skill": "pick", "q": "What sound does a cat make?", "emoji": "🐱", "options": ["meow", "woof", "quack"], "a": "meow", "why": "A cat says meow." },
+        { "skill": "pick", "q": "What sound does a cow make?", "emoji": "🐄", "options": ["moo", "baa", "oink"], "a": "moo", "why": "A cow says moo." },
+        { "skill": "pick", "q": "What sound does a duck make?", "emoji": "🦆", "options": ["quack", "moo", "woof"], "a": "quack", "why": "A duck says quack." },
+        { "skill": "pick", "q": "What sound does a sheep make?", "emoji": "🐑", "options": ["baa", "meow", "moo"], "a": "baa", "why": "A sheep says baa." },
+        { "skill": "pick", "q": "What sound does a lion make?", "emoji": "🦁", "options": ["roar", "woof", "quack"], "a": "roar", "why": "A lion roars." }
+      ]
     }
   ]
 }

@@ -89,6 +89,10 @@ These are touched by both. Make **small, localized** edits and log them below.
   finally). `english_book.json` only. Autonomous build session ("build till limit,
   commit+push each batch").
 
+### English session — 2026-06-18 (UPDATE 5: vocab batch 2)
+- ✅ Added 4 picture-rich vocab chapters → now **26 chapters / 165 problems**:
+  Colours All Around, Days of the Week, Baby Animals, Animal Sounds. `english_book.json` only.
+
 ### Math session — 2026-06-18
 - ✅ Built `docs/js/mathbook.js` — `MathBook` guided-solver engine: gated chapter
   picker, concept intro, 5 interactive widgets (count, crossout, add, numberline,
