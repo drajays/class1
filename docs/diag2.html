@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Diag2 (no manifest)</title>
+<style>
+  body { font-family: -apple-system, sans-serif; font-size: 20px; line-height: 1.5; padding: 12px; background: #fff; color: #000; }
+  div.row { word-break: break-all; border-bottom: 1px solid #ccc; padding: 4px 0; }
+  b { color: #06c; }
+  #log { font-size: 14px; color: #555; white-space: pre-wrap; margin-top: 12px; border-top: 2px solid #000; padding-top: 8px; }
+</style>
+</head>
+<body>
+  <div class="row"><b>innerWidth:</b> <span id="iw"></span></div>
+  <div class="row"><b>innerHeight:</b> <span id="ih"></span></div>
+  <div class="row"><b>devicePixelRatio:</b> <span id="dpr"></span></div>
+  <div class="row"><b>screen.width x height:</b> <span id="sw"></span></div>
+  <div class="row"><b>visualViewport.width:</b> <span id="vvw"></span></div>
+  <div class="row"><b>visualViewport.scale:</b> <span id="vvs"></span></div>
+  <div class="row"><b>navigator.standalone:</b> <span id="standalone"></span></div>
+  <div class="row"><b>display-mode standalone:</b> <span id="dm"></span></div>
+  <div class="row"><b>documentElement clientWidth:</b> <span id="dcw"></span></div>
+  <div id="log"></div>
+<script>
+function snapshot() {
+  return [
+    window.innerWidth, window.innerHeight, window.devicePixelRatio,
+    screen.width + 'x' + screen.height,
+    window.visualViewport ? window.visualViewport.width.toFixed(1) : 'n/a',
+    window.visualViewport ? window.visualViewport.scale.toFixed(3) : 'n/a',
+    navigator.standalone, window.matchMedia('(display-mode: standalone)').matches,
+    document.documentElement.clientWidth
+  ].join(' | ');
+}
+function update() {
+  document.getElementById('iw').textContent = window.innerWidth;
+  document.getElementById('ih').textContent = window.innerHeight;
+  document.getElementById('dpr').textContent = window.devicePixelRatio;
+  document.getElementById('sw').textContent = screen.width + ' x ' + screen.height;
+  document.getElementById('vvw').textContent = window.visualViewport ? window.visualViewport.width : 'n/a';
+  document.getElementById('vvs').textContent = window.visualViewport ? window.visualViewport.scale : 'n/a';
+  document.getElementById('standalone').textContent = navigator.standalone;
+  document.getElementById('dm').textContent = window.matchMedia('(display-mode: standalone)').matches;
+  document.getElementById('dcw').textContent = document.documentElement.clientWidth;
+}
+update();
+window.addEventListener('resize', update);
+const log = document.getElementById('log');
+let n = 0;
+const iv = setInterval(() => {
+  update();
+  log.textContent += 't=' + (n * 300) + 'ms: ' + snapshot() + '\n';
+  n++;
+  if (n > 15) clearInterval(iv);
+}, 300);
+</script>
+</body>
+</html>
