@@ -20,6 +20,7 @@ const App = {
       const on = Sounds.toggle();
       Rewards.showToast(on ? '🔊 Sounds on!' : '🔇 Sounds off');
     });
+    document.getElementById('btn-update')?.addEventListener('click', () => this.checkForUpdate());
     document.getElementById('minigame-back')?.addEventListener('click', () => MiniGames.back());
     document.getElementById('hub-back')?.addEventListener('click', () => this.go('play'));
     document.getElementById('quest-back')?.addEventListener('click', () => {
@@ -147,6 +148,24 @@ const App = {
     picker.querySelectorAll('.level-card').forEach((card) => {
       card.addEventListener('click', () => { Sounds.tap(); EnglishGame.start(card.dataset.id, this.playerId); });
     });
+  },
+
+  async checkForUpdate() {
+    Sounds.tap();
+    Rewards.showToast('🔄 Checking for updates…');
+    try {
+      if ('serviceWorker' in navigator) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map((r) => r.unregister()));
+      }
+      if (window.caches) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map((k) => caches.delete(k)));
+      }
+    } catch (err) {
+      console.error('Update check failed:', err);
+    }
+    location.reload();
   },
 };
 

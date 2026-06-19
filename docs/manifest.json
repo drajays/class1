@@ -1,0 +1,13 @@
+{
+  "name": "Advaita's Puppy Park",
+  "short_name": "Puppy Park",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#7ee8fa",
+  "theme_color": "#ffb3d1",
+  "icons": [
+    { "src": "assets/puppies/simba.jpg", "sizes": "352x420", "type": "image/jpeg" }
+  ]
+}
