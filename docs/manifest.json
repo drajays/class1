@@ -1,7 +1,7 @@
 {
   "name": "Advaita's Puppy Park",
   "short_name": "Puppy Park",
-  "start_url": "./index.html",
+  "start_url": "./index.html?debug=1",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",

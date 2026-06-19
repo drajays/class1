@@ -18,6 +18,34 @@
 <body>
   <div id="confetti-layer"></div>
   <div id="toast" class="toast hidden"></div>
+  <div id="dbgbar" style="display:none;position:fixed;top:0;left:0;right:0;z-index:99999;background:#ffeb3b;color:#000;font:11px monospace;padding:4px;white-space:pre-wrap;"></div>
+  <script>
+  (function () {
+    if (!location.search.includes('debug=1')) return;
+    var bar = document.getElementById('dbgbar');
+    bar.style.display = 'block';
+    function snap() {
+      var vv = window.visualViewport;
+      return 'iw=' + window.innerWidth + ' ih=' + window.innerHeight +
+        ' dpr=' + window.devicePixelRatio +
+        ' screen=' + screen.width + 'x' + screen.height +
+        ' vvw=' + (vv ? vv.width.toFixed(1) : 'n/a') +
+        ' vvs=' + (vv ? vv.scale.toFixed(3) : 'n/a') +
+        ' standalone=' + navigator.standalone +
+        ' dcw=' + document.documentElement.clientWidth;
+    }
+    var lines = [];
+    function tick() {
+      lines.push('t=' + Date.now() % 100000 + ' ' + snap());
+      if (lines.length > 8) lines.shift();
+      bar.textContent = lines.join('\n');
+    }
+    tick();
+    window.addEventListener('resize', tick);
+    var n = 0;
+    var iv = setInterval(function () { tick(); n++; if (n > 15) clearInterval(iv); }, 300);
+  })();
+  </script>
 
   <!-- Welcome -->
   <section id="screen-login" class="screen active">
