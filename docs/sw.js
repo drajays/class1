@@ -1,8 +1,7 @@
-const CACHE = 'puppypark-v5';
+const CACHE = 'puppypark-v6';
 const ASSETS = [
   './',
   './index.html',
-  './manifest.json',
   './css/style.css',
   './js/config.js',
   './js/data.js',
