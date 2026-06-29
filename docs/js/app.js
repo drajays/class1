@@ -79,6 +79,7 @@ const App = {
       chapter: 'screen-chapter',
       math: 'screen-math',
       english: 'screen-english',
+      hindi: 'screen-hindi',
     };
     document.getElementById(map[screen]).classList.add('active');
     window.scrollTo(0, 0);
@@ -98,6 +99,7 @@ const App = {
     if (screen === 'minigames') MiniGames.showHub();
     if (screen === 'math') { MathBook.open(); }
     if (screen === 'english') { EnglishBook.open(); }
+    if (screen === 'hindi') { HindiBook.open(); Speech.navSay('Tap any letter to hear it. Let us learn Hindi!'); }
   },
 
   claimDaily() {
@@ -130,6 +132,7 @@ const App = {
     setText('mall-coins', `🪙 ${p.coins}`);
     setText('math-progress', 'Lessons: ' + MathBook.progressText());
     setText('english-progress', 'Lessons: ' + EnglishBook.progressText());
+    setText('hindi-progress', HindiBook.progressText());
   },
 
   showEnglishLevels() {

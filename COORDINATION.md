@@ -28,6 +28,22 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### Hindi session — 2026-06-29
+- ✅ Added `docs/js/hindibook.js` — `HindiBook`: a tap-to-hear Hindi varnamala module
+  (स्वर / व्यंजन / मात्रा / शब्द tabs) for an early learner. Every letter, akshar and
+  word is touch-to-hear (TTS `hi-IN`, with a roman fallback over `en-IN` if no Hindi
+  voice is installed). Includes a "सुनो और ढूँढो" listen-&-find practice that awards
+  coins/stars via `Store` (subject `'hindi'`, level ids `practice-svar|vyanjan|shabd`).
+  All data embedded (standard varnamala, not from a book). **Self-contained `hb-*` CSS
+  injected from JS — no edits to `style.css`, no `mb-*`/`eb-*` collisions.**
+- ✏️ `docs/index.html` — added `#screen-hindi` section, a `data-go="hindi"` play-card
+  (`#hindi-progress`), and `<script src="js/hindibook.js">` (after englishbook.js).
+- ✏️ `docs/js/app.js` — `go()` map + `if (screen==='hindi') HindiBook.open()`;
+  `refreshStats()` sets `hindi-progress` from `HindiBook.progressText()`.
+- ✏️ `docs/sw.js` — bumped `CACHE` to `puppypark-v7`, added `./js/hindibook.js`.
+- ✅ VERIFIED in Edge headless: all 4 tabs render, barah-khadi matra families,
+  akshar splitter (मछली→म·छ·ली), and the listen-&-find practice all work.
+
 ### English session — 2026-06-18
 - ✅ Added `docs/data/english_book.json` (10 book-faithful grammar chapters from
   `organized/english_grammar/`): articles → nouns → singular/plural → gender →
