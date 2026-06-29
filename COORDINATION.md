@@ -28,6 +28,14 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### Hindi session — 2026-06-29 (update 2)
+- ✅ Added scored **reading** practice to `HindiBook`: new "📖 पढ़ो" tab +
+  `docs/data/hindi_words.json` (629 common Hindi words). Gated sets of 25 (26 sets),
+  each scored 1–3⭐ via `Store.completeLevel('hindi','read-N')` and feeding the coin
+  economy. Auto Devanagari→roman transliterator for TTS fallback.
+- ✏️ `docs/sw.js` — bumped `CACHE` to `puppypark-v9`, added `./data/hindi_words.json`.
+- Also earlier added a 5-akshar word group + visible "+5 🪙" toast in practice.
+
 ### Hindi session — 2026-06-29
 - ✅ Added `docs/js/hindibook.js` — `HindiBook`: a tap-to-hear Hindi varnamala module
   (स्वर / व्यंजन / मात्रा / शब्द tabs) for an early learner. Every letter, akshar and
