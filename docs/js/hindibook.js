@@ -56,7 +56,12 @@ const HindiBook = {
     ],
     big: [
       ['कबूतर', 'kabootar', '🕊️'], ['तरबूज', 'tarbooj', '🍉'], ['अनानास', 'anaanaas', '🍍'], ['बतख', 'batakh', '🦆'],
-      ['समोसा', 'samosa', '🥟'], ['मगरमच्छ', 'magarmachchh', '🐊'], ['हिमालय', 'himaalay', '🏔️'], ['अमरूद', 'amrood', '🍐'],
+      ['समोसा', 'samosa', '🥟'], ['हिमालय', 'himaalay', '🏔️'], ['अमरूद', 'amrood', '🍐'], ['खरगोश', 'khargosh', '🐰'],
+    ],
+    five: [
+      ['मगरमच्छ', 'magarmachchh', '🐊'], ['चमगादड़', 'chamgaadar', '🦇'], ['कलमदान', 'kalamdaan', '🖊️'],
+      ['सूरजमुखी', 'soorajmukhee', '🌻'], ['मोटरगाड़ी', 'motargaadee', '🚗'], ['टेलीविजन', 'teleevijan', '📺'],
+      ['बारहसिंगा', 'baarahsinga', '🦌'], ['अनारदाना', 'anaardaana', '🔴'],
     ],
   },
 
@@ -67,7 +72,7 @@ const HindiBook = {
   },
 
   allWords() {
-    return [...this.WORDS.two, ...this.WORDS.three, ...this.WORDS.big];
+    return [...this.WORDS.two, ...this.WORDS.three, ...this.WORDS.big, ...this.WORDS.five];
   },
 
   progressText() {
@@ -165,6 +170,7 @@ const HindiBook = {
   renderWords(panel) {
     const groups = [
       ['two', 'दो अक्षर के शब्द'], ['three', 'तीन अक्षर के शब्द'], ['big', 'बड़े शब्द'],
+      ['five', 'पाँच अक्षर के शब्द'],
     ];
     panel.innerHTML = groups.map(([key, title]) => `
       <h3 class="hb-grouptitle">${title}</h3>
@@ -243,15 +249,18 @@ const HindiBook = {
       Sounds.correct();
       Rewards.confetti(20);
       Store.addReward(this.playerId, { coins: 5, xp: 5 });
+      Store.bumpStreak?.(this.playerId, true);
       Store.trackAnswer(this.playerId, 'hindi', true);
       this.pcorrect++;
       this.say(item.dev, item.r);
+      Rewards.showToast('शाबाश! +5 🪙');
       App.refreshStats();
       setTimeout(() => { this.pi++; this.renderPracticeQ(); }, 1000);
     } else {
       btn.classList.add('hb-wrong');
       btn.style.pointerEvents = 'none';
       Sounds.wrong();
+      Store.bumpStreak?.(this.playerId, false);
       Store.trackAnswer(this.playerId, 'hindi', false);
       Rewards.showToast('फिर से सुनो 🙂');
       setTimeout(() => this.say(item.dev, item.r), 300);
