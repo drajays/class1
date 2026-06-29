@@ -14,6 +14,10 @@ const HindiBook = {
   matraBase: 'क',
   // practice state
   pq: [], pi: 0, pcorrect: 0, pkind: null, pPool: null,
+  // reading practice state
+  READ_WORDS: null,
+  SET_SIZE: 25,
+  rSet: 0, rIdx: 0, rScore: 0, rWords: [],
 
   // -------- data (Devanagari + simple roman fallback for TTS without a Hindi voice) --------
   SVAR: [
@@ -80,7 +84,24 @@ const HindiBook = {
     ['svar', 'vyanjan', 'shabd'].forEach((k) => {
       if (Store.getLevelStars(this.playerId, 'hindi', 'practice-' + k)) done++;
     });
-    return `${done}/3 practice ⭐`;
+    let reads = 0;
+    const sets = this.READ_WORDS ? Math.ceil(this.READ_WORDS.length / this.SET_SIZE) : 0;
+    for (let i = 0; i < sets; i++) {
+      if (Store.getLevelStars(this.playerId, 'hindi', 'read-' + (i + 1))) reads++;
+    }
+    return `${done}/3 practice • ${reads} reading sets ⭐`;
+  },
+
+  async loadReadWords() {
+    if (this.READ_WORDS) return this.READ_WORDS;
+    try {
+      const res = await fetch(AppConfig.url('data/hindi_words.json'));
+      const data = await res.json();
+      this.READ_WORDS = [...new Set(data.words || [])]; // dedup, keep order
+    } catch {
+      this.READ_WORDS = [];
+    }
+    return this.READ_WORDS;
   },
 
   // -------- TTS: prefer a real Hindi voice; fall back to roman over en-IN --------
@@ -111,7 +132,7 @@ const HindiBook = {
   render() {
     const body = document.getElementById('hindi-body');
     const tabs = [
-      ['svar', '🔴 स्वर'], ['vyanjan', '🔵 व्यंजन'], ['matra', '🟢 मात्रा'], ['shabd', '🟡 शब्द'],
+      ['svar', '🔴 स्वर'], ['vyanjan', '🔵 व्यंजन'], ['matra', '🟢 मात्रा'], ['shabd', '🟡 शब्द'], ['read', '📖 पढ़ो'],
     ];
     body.innerHTML = `
       <div class="hb-tabs">
@@ -129,6 +150,7 @@ const HindiBook = {
     if (this.tab === 'svar') this.renderLetters(panel, this.SVAR, 'svar', 'सुनो और ढूँढो — स्वर');
     else if (this.tab === 'vyanjan') this.renderLetters(panel, this.VYANJAN, 'vyanjan', 'सुनो और ढूँढो — व्यंजन');
     else if (this.tab === 'matra') this.renderMatra(panel);
+    else if (this.tab === 'read') this.renderRead(panel);
     else this.renderWords(panel);
   },
 
@@ -287,6 +309,132 @@ const HindiBook = {
     });
   },
 
+  // ============================ READING: 500 common words, gated sets, scored ============================
+  async renderRead(panel) {
+    panel.innerHTML = `<p class="hb-sub">⏳ शब्द आ रहे हैं…</p>`;
+    await this.loadReadWords();
+    if (this.tab !== 'read') return; // user switched tabs while loading
+    const words = this.READ_WORDS;
+    const sets = Math.ceil(words.length / this.SET_SIZE);
+    let cards = '';
+    for (let i = 0; i < sets; i++) {
+      const stars = Store.getLevelStars(this.playerId, 'hindi', 'read-' + (i + 1));
+      const from = i * this.SET_SIZE;
+      const count = Math.min(this.SET_SIZE, words.length - from);
+      cards += `
+        <button class="hb-setcard ${stars ? 'done' : ''}" data-set="${i}">
+          <span class="hb-setno">सेट ${i + 1}</span>
+          <span class="hb-setinfo">${count} शब्द</span>
+          <span class="hb-setstars">${stars ? '⭐'.repeat(stars) : '▶️'}</span>
+        </button>`;
+    }
+    panel.innerHTML = `
+      <p class="hb-sub">पढ़ने की मस्ती! 📖 हर शब्द पढ़ो, सितारे कमाओ 🪙</p>
+      <p class="hb-hint">शब्द पढ़ो → ✅ दबाओ। अटक जाओ तो 🔊 सुनो।</p>
+      <div class="hb-sets">${cards}</div>`;
+    panel.querySelectorAll('.hb-setcard').forEach((b) =>
+      b.addEventListener('click', () => { Sounds.tap(); this.startReading(+b.dataset.set); }));
+  },
+
+  startReading(setIdx) {
+    this.rSet = setIdx;
+    const from = setIdx * this.SET_SIZE;
+    this.rWords = this.READ_WORDS.slice(from, from + this.SET_SIZE);
+    this.rIdx = 0;
+    this.rScore = 0;
+    this.renderReadCard();
+  },
+
+  renderReadCard() {
+    if (this.rIdx >= this.rWords.length) return this.finishReading();
+    const word = this.rWords[this.rIdx];
+    const total = this.rWords.length;
+    const panel = document.getElementById('hb-panel');
+    panel.innerHTML = `
+      <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${(this.rIdx / total) * 100}%"></div></div>
+      <p class="hb-sub">सेट ${this.rSet + 1} — शब्द ${this.rIdx + 1}/${total} • स्कोर ${this.rScore} ⭐</p>
+      <div class="hb-readbox"><span class="hb-readword">${word}</span></div>
+      <div class="hb-listen"><button class="btn-fun blue" id="hb-rhear">🔊 सुनो / मदद</button></div>
+      <div class="hb-readbtns">
+        <button class="btn-fun green btn-big" id="hb-rgot">✅ पढ़ लिया! (+5 🪙)</button>
+        <button class="btn-fun orange" id="hb-rnext">➡️ अगला</button>
+      </div>
+      <button class="btn-fun ghost hb-quit">⬅️ वापस</button>`;
+    document.getElementById('hb-rhear').addEventListener('click', () => { Sounds.tap(); this.say(word, this.devToRoman(word)); });
+    document.getElementById('hb-rgot').addEventListener('click', () => {
+      Sounds.correct();
+      Rewards.confetti(16);
+      Store.addReward(this.playerId, { coins: 5, xp: 5 });
+      Store.bumpStreak?.(this.playerId, true);
+      Store.trackAnswer(this.playerId, 'hindi', true);
+      this.rScore++;
+      Rewards.showToast('शाबाश! +5 🪙');
+      this.say(word, this.devToRoman(word));
+      App.refreshStats();
+      this.rIdx++;
+      setTimeout(() => this.renderReadCard(), 800);
+    });
+    document.getElementById('hb-rnext').addEventListener('click', () => {
+      Sounds.tap();
+      this.say(word, this.devToRoman(word)); // hear it so she learns it
+      this.rIdx++;
+      setTimeout(() => this.renderReadCard(), 700);
+    });
+    panel.querySelector('.hb-quit').addEventListener('click', () => { Sounds.tap(); this.render(); });
+  },
+
+  finishReading() {
+    const total = this.rWords.length;
+    const ratio = total ? this.rScore / total : 1;
+    let stars = 1;
+    if (ratio >= 0.6) stars = 2;
+    if (ratio >= 0.9) stars = 3;
+    Store.completeLevel(this.playerId, 'hindi', 'read-' + (this.rSet + 1), stars);
+    Store.addReward(this.playerId, { coins: stars * 10, xp: 20 });
+    Store.logActivity(this.playerId, `Hindi reading set ${this.rSet + 1}: ${this.rScore}/${total} — ${stars}⭐`);
+    if (typeof Pet !== 'undefined' && Pet.onLessonComplete) Pet.onLessonComplete(this.playerId);
+    Store.checkBadges?.(this.playerId);
+    Sounds.cheer();
+    Rewards.confetti(60);
+    Rewards.showPopup({
+      emoji: stars === 3 ? '💎' : '🏆',
+      title: 'शाबाश! 🎉',
+      text: `You read ${this.rScore}/${total} words! ${'⭐'.repeat(stars)} +${stars * 10} 🪙 for the puppies!`,
+      onOk: () => { this.renderPanel(); App.refreshStats(); },
+    });
+  },
+
+  // approximate Devanagari→roman for TTS fallback when no Hindi voice is installed
+  devToRoman(w) {
+    const C = {
+      'क': 'k', 'ख': 'kh', 'ग': 'g', 'घ': 'gh', 'ङ': 'ng', 'च': 'ch', 'छ': 'chh', 'ज': 'j', 'झ': 'jh', 'ञ': 'ny',
+      'ट': 't', 'ठ': 'th', 'ड': 'd', 'ढ': 'dh', 'ण': 'n', 'त': 't', 'थ': 'th', 'द': 'd', 'ध': 'dh', 'न': 'n',
+      'प': 'p', 'फ': 'ph', 'ब': 'b', 'भ': 'bh', 'म': 'm', 'य': 'y', 'र': 'r', 'ल': 'l', 'व': 'v',
+      'श': 'sh', 'ष': 'sh', 'स': 's', 'ह': 'h', 'ड़': 'r', 'ढ़': 'rh',
+    };
+    const V = { 'अ': 'a', 'आ': 'aa', 'इ': 'i', 'ई': 'ee', 'उ': 'u', 'ऊ': 'oo', 'ऋ': 'ri', 'ए': 'e', 'ऐ': 'ai', 'ओ': 'o', 'औ': 'au' };
+    const M = { 'ा': 'aa', 'ि': 'i', 'ी': 'ee', 'ु': 'u', 'ू': 'oo', 'ृ': 'ri', 'े': 'e', 'ै': 'ai', 'ो': 'o', 'ौ': 'au' };
+    const NUK = { 'क': 'q', 'ख': 'kh', 'ग': 'gh', 'ज': 'z', 'ड': 'r', 'ढ': 'rh', 'फ': 'f' };
+    const a = [...w];
+    let out = '';
+    for (let i = 0; i < a.length; i++) {
+      const c = a[i];
+      if (C[c] !== undefined) {
+        let base = C[c];
+        if (a[i + 1] === '़') { base = NUK[c] || base; i++; }
+        out += base;
+        const n = a[i + 1];
+        if (n === '्') { i++; continue; }           // halant → conjunct, no vowel
+        if (n !== undefined && M[n] !== undefined) { out += M[n]; i++; }
+        else out += 'a';
+      } else if (V[c] !== undefined) { out += V[c]; }
+      else if (c === 'ं' || c === 'ँ') { out += 'n'; }
+      else if (c === 'ः') { out += 'h'; }
+      // ignore stray marks
+    }
+    return out;
+  },
+
   shuffle(a) { return a.slice().sort(() => Math.random() - 0.5); },
 
   // ---------- one-time self-contained styles (hb- prefix) ----------
@@ -335,6 +483,20 @@ const HindiBook = {
       .hb-opt.hb-correct{background:#c8f7d8;border-color:#15c39a}
       .hb-opt.hb-wrong{background:#ffd6d6;border-color:#ff6b6b;animation:hb-shake .3s}
       @keyframes hb-shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+      .hb-sets{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin:8px 0}
+      .hb-setcard{display:flex;flex-direction:column;align-items:center;gap:3px;border:3px solid #b8b1ff;
+        background:#f6f4ff;border-radius:16px;padding:14px 8px;cursor:pointer;font-family:inherit}
+      .hb-setcard.done{background:linear-gradient(135deg,#e8fff2,#d8f5ff);border-color:#15c39a}
+      .hb-setcard:active{transform:scale(.95)}
+      .hb-setno{font-size:1.2rem;font-weight:800;color:#3a2f8f}
+      .hb-setinfo{font-size:.85rem;color:#8a82c0;font-weight:600}
+      .hb-setstars{font-size:1.15rem}
+      .hb-readbox{display:flex;align-items:center;justify-content:center;min-height:150px;margin:10px 0;
+        background:linear-gradient(135deg,#fff7e6,#fff0f6);border:3px solid #ffce8a;border-radius:22px}
+      .hb-readword{font-size:3.8rem;font-weight:700;color:#2b2660;font-family:'Noto Sans Devanagari',sans-serif;text-align:center;padding:8px}
+      .hb-readbtns{display:flex;flex-direction:column;gap:10px;margin:6px 0}
+      .hb-readbtns .btn-fun{width:100%}
+      .hb-quit{margin-top:6px}
     `;
     document.head.appendChild(s);
   },
