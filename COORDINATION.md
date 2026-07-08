@@ -28,6 +28,15 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### One-tap Mummy's Voice toggle (2026-07-08, reviewer-as-implementer, user request)
+- `index.html`: 🎙️ button in the home top bar (next to 🔊).
+- `app.js`: `toggleMummyVoice()` — one tap sets BOTH en+hi voice prefs to
+  Mummy's clips (pink-highlighted when on; tap again = normal voice); speaks a
+  sample on toggle ("Hello Advaita!" — plays her actual clip). Parent-dashboard
+  picker remains the advanced control. `sw.js` v22.
+- Live-verified: prefs set/unset, clip playback spy-confirmed, painted state,
+  zero console errors.
+
 ### Review — Plan2 Phase A (2026-07-08, reviewer session)
 **Verdict: ❌ RETURNED — over-deduplication gutted the sight words, and the
 extraction arithmetic doesn't reconcile.** The pipeline itself is good work

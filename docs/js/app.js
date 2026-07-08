@@ -16,6 +16,7 @@ const App = {
     document.getElementById('btn-play')?.addEventListener('click', () => { Sounds.tap(); this.go('play'); });
     document.getElementById('btn-mall')?.addEventListener('click', () => { Sounds.tap(); this.go('mall'); });
     document.getElementById('btn-daily')?.addEventListener('click', () => this.claimDaily());
+    document.getElementById('btn-mummy-voice')?.addEventListener('click', () => this.toggleMummyVoice());
     document.getElementById('btn-sound')?.addEventListener('click', () => {
       const on = Sounds.toggle();
       Rewards.showToast(on ? '🔊 Sounds on!' : '🔇 Sounds off');
@@ -105,6 +106,30 @@ const App = {
     if (screen === 'evs' || screen === 'sanskrit' || screen === 'computer') { SubjectBook.open(screen); }
   },
 
+  toggleMummyVoice() {
+    const on = Store.getVoicePrefs().enVoice === '__mummy__';
+    Store.setVoicePref('enVoice', on ? '' : '__mummy__');
+    Store.setVoicePref('hiVoice', on ? '' : '__mummy__');
+    this.paintMummyBtn();
+    Sounds.tap();
+    if (!on) {
+      Rewards.showToast("🎙️ Mummy's voice is ON!");
+      Speech.speak("Hello Advaita! Let's learn something new!", 0.85, 'en-IN');
+    } else {
+      Rewards.showToast('✨ Normal voice');
+      Speech.speak('Okay, back to my normal voice!', 0.85, 'en-IN');
+    }
+  },
+
+  paintMummyBtn() {
+    const b = document.getElementById('btn-mummy-voice');
+    if (b) {
+      const on = Store.getVoicePrefs().enVoice === '__mummy__';
+      b.style.background = on ? 'linear-gradient(135deg,#f9a8d4,#ec4899)' : '';
+      b.title = on ? "Mummy's voice ON — tap for normal voice" : "Tap for Mummy's voice";
+    }
+  },
+
   claimDaily() {
     if (!this.playerId) return;
     Sounds.tap();
@@ -136,6 +161,7 @@ const App = {
     setText('math-progress', 'Lessons: ' + MathBook.progressText());
     setText('english-progress', 'Lessons: ' + EnglishBook.progressText());
     setText('hindi-progress', HindiBook.progressText());
+    this.paintMummyBtn();
     setText('evs-progress', 'Lessons: ' + SubjectBook.progressText('evs'));
     setText('sanskrit-progress', 'Lessons: ' + SubjectBook.progressText('sanskrit'));
     setText('computer-progress', 'Lessons: ' + SubjectBook.progressText('computer'));
