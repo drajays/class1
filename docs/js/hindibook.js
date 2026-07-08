@@ -425,7 +425,12 @@ const HindiBook = {
     let stars = 1;
     if (ratio >= 0.6) stars = 2;
     if (ratio >= 0.9) stars = 3;
-    const res = Store.awardLevel(this.playerId, 'hindi', 'read-' + (this.rSet + 1), stars, stars * 10);
+    const prettyRead = `पढ़ो और सीखो — Set ${this.rSet + 1}`;
+    const res = Store.awardLevel(this.playerId, 'hindi', 'read-' + (this.rSet + 1), stars, stars * 10, {
+      title: prettyRead,
+      level: 2,
+      wrong: total - this.rScore
+    });
     Store.logActivity(this.playerId, `Hindi reading set ${this.rSet + 1}: ${this.rScore}/${total} — ${stars}⭐`);
     if (typeof Pet !== 'undefined' && Pet.onLessonComplete) Pet.onLessonComplete(this.playerId);
     Store.checkBadges?.(this.playerId);
