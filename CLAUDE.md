@@ -39,8 +39,10 @@ Puppies: **Simba** (boy), **Mufasa** (boy), **Golu** (girl), **Whity** (girl).
 - `js/englishbook.js` — **English Book** guided learning engine (reuses `mb-*`, self-injected `eb-*` styles).
 - `js/hindibook.js` — **Hindi Book** tap-to-hear varnamala & reading practice (self-injected `hb-*` styles).
 - `js/subjectbook.js` — **Subject Book** guided learning engine for EVS, Sanskrit, Computer (reuses `mb-*`, self-injected `sb-*` styles).
-- `js/learn.js` — generic subject chapters (notes + quiz) for non-math subjects.
-- `js/english.js`, `js/minigames.js`, `js/extras.js` (SubjectHub, QuickQuest), `js/parent.js`.
+- `js/subjectbook.js` — **SubjectBook** shared engine (EVS/Sanskrit/Computer, `sb-*` styles).
+- `js/coach.js` — adaptive recommender + "Today's Mission" card (default/level-up/cushion).
+- `js/curse.js` — **Crystal Curse** princess meta-game (freeze meter, melt fuel, Royal Blessings, `cc-*`).
+- `js/minigames.js`, `js/parent.js` (gated dashboard: insights + Royal Blessings + Voice settings).
 - `js/sounds.js` (WebAudio), `js/speech.js` (TTS read-aloud), `js/rewards.js` (toast/confetti/popup).
 - `js/app.js` — controller: screen routing, single player, refreshStats.
 - `css/style.css` — all styles (Fredoka font; theme vars at top; Puppy Park section at bottom). CSS prefix convention: `mb-*` math/shared problem UI, `eb-*` english-reserved, `hb-*` hindi self-injected.
@@ -48,7 +50,7 @@ Puppies: **Simba** (boy), **Mufasa** (boy), **Golu** (girl), **Whity** (girl).
 - `data/english_book.json` — book-faithful English chapters + problems.
 - `data/{evs,sanskrit,computer}_book.json`, `data/hindi_lessons.json` — curated subject content files for SubjectBook.
 - `data/hindi_words.json` — 630 common Hindi words for reading practice.
-- `data/*.json` — generated subject content; `data/curated/*.json` — hand-fixed overrides merged by build script.
+- `data/voice_manifest.json` + `assets/voice/*.mp3` — pre-generated "Mummy's Voice" clips (Qwen3-TTS clone; regenerate via `generate_mummy_voice.py`). Legacy OCR data files were deleted in Phase 7.
 - `assets/puppies/*.jpg` — the 4 cropped puppy photos.
 - `sw.js` — service worker (bump `CACHE` name when asset list changes).
 
@@ -78,17 +80,22 @@ Sometimes a second Claude session works this repo in parallel (e.g. English).
 `englishbook.js`/`english_book.json`. English reuses `mb-*` CSS classes.
 
 ## Status / roadmap
-- ✅ Puppy Park + Mall + economy + wish loop shipped (commit 2ba29b0).
-- ✅ Math Book — `mathbook.js` engine + `math_book.json`, now **20 book-faithful
-  chapters / 191 problems** in sequence, concept-first (fun puppy-coach intro + memory
-  tip per chapter), guided step-by-step self-correcting solutions, responsive
-  (phone/iPad/MacBook in Edge). Widgets: count, crossout, add, numberline, pick, **clock**
-  (SVG analog clock), **tenframe** (make-10). Order: Counting → Compare → Ordinal →
-  Even/Odd → Number Bonds → Addition → Subtraction → Add&Subtract → Number Names →
-  Place Value → Tables → Shapes → Position → Patterns → Measurement → Data → Time →
-  Word Problems → Money → Revision. Replaced old Math Arcade. Committed & pushed.
-- ✅ English Book — `englishbook.js` + `english_book.json`, DONE with **62 chapters / 381 problems** across a structured 10-unit curriculum (phonics, reading, grammar, vocabulary). Reuses `mb-*` classes + `eb-*` styles.
-- ✅ Hindi Book — `hindibook.js` + `hindi_words.json`, DONE with tap-to-hear varnamala (स्वर / व्यंजन / मात्रा / शब्द) + scored reading practice (630 common words). Uses self-injected `hb-*` CSS.
-- 📋 Active Roadmap (`plan.md`) — Complete remaining subject content (EVS, Hindi lessons, Sanskrit, Computer) on the book-faithful engine pattern, retiring the legacy OCR notes+quiz path.
+- ✅ ALL subjects on curated book-faithful engines: Math (23 ch), English (62 ch),
+  Hindi (varnamala + 630-word reading + 26 पाठ lessons), EVS (15), Sanskrit (14),
+  Computer (7). Legacy OCR notes+quiz path fully retired (Phase 7).
+- ✅ Mastery-gated economy: coins only for NEW learning / star improvements;
+  replays praised but pay 0; sequential chapter locking; fun sources capped 3/day.
+- ✅ Coach (`coach.js`): Today's Mission card, level-up nudge, struggle cushion.
+- ✅ Journey journal (500-event cap) + `#journey/` browser-history trail + parent
+  dashboard (Good at / Struggling / Not touching / Daily log / Blessings / Voice).
+- ✅ Crystal Curse (`curse.js`): 7-day freeze meter, melts ONLY via new/weak/
+  neglected chapters, Royal Mentors prompt, parent-set Royal Blessings.
+- ✅ Voice settings: per-language voice picker + speed + Read All + Colors toggle;
+  "🎙️ Mummy" cloned-voice clips (partial corpus; expand via
+  `python3 generate_mummy_voice.py` — user APPROVED publishing these clips).
+- 🔒 Privacy: all progress/journal/attempt data stays in localStorage on-device.
+  Mummy's-voice clips are published in this public repo with the user's explicit
+  approval (2026-07-08).
+- 📋 Roadmap/history: `plan.md` (phases + FE-TEST protocol) + `COORDINATION.md`.
 
 See also memory: `~/.claude/projects/-Users-dr-ajayshukla-class1/memory/puppy-park-rebuild.md`.

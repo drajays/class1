@@ -272,6 +272,17 @@ const Store = {
     return event;
   },
 
+  getVoicePrefs() {
+    try { return JSON.parse(localStorage.getItem('pp_voice') || '{}'); } catch { return {}; }
+  },
+
+  setVoicePref(key, value) {
+    const p = this.getVoicePrefs();
+    p[key] = value;
+    localStorage.setItem('pp_voice', JSON.stringify(p));
+    return p;
+  },
+
   getJournal(id) {
     const p = this.getPlayer(id);
     return p.journal || [];

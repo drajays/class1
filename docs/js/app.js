@@ -141,24 +141,6 @@ const App = {
     setText('computer-progress', 'Lessons: ' + SubjectBook.progressText('computer'));
   },
 
-  showEnglishLevels() {
-    document.getElementById('english-game').classList.add('hidden');
-    document.getElementById('english-level-picker').classList.remove('hidden');
-    const picker = document.getElementById('english-level-picker');
-    picker.innerHTML = ENGLISH_LEVELS.map((lvl) => {
-      const stars = Store.getLevelStars(this.playerId, 'english', lvl.id);
-      return `
-        <button class="level-card ${stars ? 'done' : ''}" data-id="${lvl.id}">
-          <span class="level-emoji">${lvl.emoji}</span>
-          <div class="level-info"><h3>${lvl.title}</h3><p>${lvl.desc}</p></div>
-          <span class="level-stars">${stars ? '⭐'.repeat(stars) : '▶️'}</span>
-        </button>`;
-    }).join('');
-    picker.querySelectorAll('.level-card').forEach((card) => {
-      card.addEventListener('click', () => { Sounds.tap(); EnglishGame.start(card.dataset.id, this.playerId); });
-    });
-  },
-
   async checkForUpdate() {
     Sounds.tap();
     Rewards.showToast('🔄 Checking for updates…');

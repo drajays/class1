@@ -164,7 +164,7 @@ const EnglishBook = {
       <p class="mb-count">Activity ${this.idx + 1} of ${total}</p>
       <div class="mb-problem">
         <p class="eb-hint">👆 Tap any word to hear it!</p>
-        <p class="mb-q eb-bigq">${this.tappable(p.q)} <button class="eb-saybtn read" id="eb-read" style="padding:6px 12px;font-size:.95rem">🔊 Read</button></p>
+        <p class="mb-q eb-bigq">${this.tappable(p.q)} <button class="eb-saybtn read" id="eb-read" style="padding:6px 12px;font-size:.95rem">▶️ Read All</button></p>
         <div class="mb-visual" id="eb-visual">${this.visual(p)}</div>
         <div class="mb-options" id="eb-options">
           ${opts.map((o) => `<button class="mb-opt" data-v="${this.esc(o)}">${this.esc(o)}</button>`).join('')}
@@ -347,6 +347,7 @@ const EnglishBook = {
     if (ratio >= 0.6) stars = 2;
     if (ratio >= 0.9) stars = 3;
     const res = Store.awardLevel(this.playerId, 'english', this.chapter.id, stars, stars * 10, {
+      total,
       title: this.chapter.title,
       level: this.chapter.level || 1,
       wrong: total - this.correctCount

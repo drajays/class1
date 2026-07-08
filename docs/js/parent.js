@@ -47,6 +47,57 @@ const Parent = {
     this.openGate();
   },
 
+
+  wireVoiceSettings() {
+    const prefs = Store.getVoicePrefs();
+    const fill = () => {
+      const voices = (window.speechSynthesis ? speechSynthesis.getVoices() : []);
+      const mk = (sel, langPrefix, savedKey) => {
+        const el = document.getElementById(sel);
+        if (!el) return;
+        const saved = prefs[savedKey] || '';
+        const list = voices.filter((v) => v.lang.toLowerCase().startsWith(langPrefix));
+        el.innerHTML = '<option value="">✨ Auto (best available)</option>'
+          + '<option value="__mummy__">🎙️ Mummy</option>'
+          + list.map((v) => `<option value="${v.name}">${v.name} (${v.lang})</option>`).join('');
+        el.value = saved && [...el.options].some((o) => o.value === saved) ? saved : (saved === '__mummy__' ? '__mummy__' : '');
+        if (sel === 'vp-hi') {
+          const note = document.getElementById('vp-hi-note');
+          if (note) note.style.display = list.length ? 'none' : 'block';
+        }
+      };
+      mk('vp-en', 'en', 'enVoice');
+      mk('vp-hi', 'hi', 'hiVoice');
+    };
+    fill();
+    if (window.speechSynthesis) speechSynthesis.onvoiceschanged = fill;
+
+    const rateEl = document.getElementById('vp-rate');
+    if (rateEl) {
+      rateEl.value = String(prefs.rate || 0.85);
+      rateEl.addEventListener('change', () => Store.setVoicePref('rate', Number(rateEl.value)));
+    }
+    document.getElementById('vp-en')?.addEventListener('change', (e) => Store.setVoicePref('enVoice', e.target.value));
+    document.getElementById('vp-hi')?.addEventListener('change', (e) => Store.setVoicePref('hiVoice', e.target.value));
+    document.getElementById('vp-test-en')?.addEventListener('click', () => {
+      const sel = document.getElementById('vp-en').value;
+      Store.setVoicePref('enVoice', sel);
+      Speech.speak("Hello Advaita! Let's learn something new!", Number(document.getElementById('vp-rate').value), 'en-IN');
+    });
+    document.getElementById('vp-test-hi')?.addEventListener('click', () => {
+      const sel = document.getElementById('vp-hi').value;
+      Store.setVoicePref('hiVoice', sel);
+      Speech.speak('नमस्ते! चलो कुछ नया सीखें!', Number(document.getElementById('vp-rate').value), 'hi-IN');
+    });
+    const colBtn = document.getElementById('vp-colors');
+    const paint = () => { if (colBtn) colBtn.textContent = Store.getVoicePrefs().colors === false ? 'Off' : 'On'; };
+    paint();
+    colBtn?.addEventListener('click', () => {
+      Store.setVoicePref('colors', !(Store.getVoicePrefs().colors !== false));
+      paint();
+    });
+  },
+
   close() {
     document.getElementById('parent-overlay').classList.remove('show');
   },
@@ -182,6 +233,25 @@ const Parent = {
       </div>
 
       <div class="parent-section">
+        <h3>🔊 Voice &amp; Reading</h3>
+        <div class="vp-row"><label>🗣️ English voice</label>
+          <select id="vp-en"></select>
+          <button class="btn-fun blue btn-sm" id="vp-test-en">🎧 Test</button></div>
+        <div class="vp-row"><label>🗣️ हिंदी voice</label>
+          <select id="vp-hi"></select>
+          <button class="btn-fun blue btn-sm" id="vp-test-hi">🎧 Test</button></div>
+        <div class="vp-row"><label>⏱️ Speed</label>
+          <select id="vp-rate">
+            <option value="0.7">🐢 Slow</option>
+            <option value="0.85">🙂 Normal</option>
+            <option value="1">🐇 Fast</option>
+          </select>
+          <label style="margin-left:12px">🌈 Colors</label>
+          <button class="btn-fun orange btn-sm" id="vp-colors"></button></div>
+        <p class="parent-sub" id="vp-hi-note" style="display:none">No Hindi voice on this device — roman fallback will be used.</p>
+      </div>
+
+      <div class="parent-section">
         <h3>💪 Good at (Mastered with confidence)</h3>
         ${goodHtml}
       </div>
@@ -234,6 +304,7 @@ const Parent = {
       <button class="btn-fun green btn-big" id="btn-print-cert">🖨️ Print Certificate</button>
     `;
     document.getElementById('btn-print-cert')?.addEventListener('click', () => window.print());
+    this.wireVoiceSettings();
 
     document.getElementById('btn-add-blessing')?.addEventListener('click', () => {
       const inp = document.getElementById('input-new-blessing');

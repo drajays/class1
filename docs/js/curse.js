@@ -275,7 +275,17 @@ const Curse = {
       allChapters = [];
     }
 
-    const qualifying = allChapters.filter((c) => this.isQualifyingChapter(App.playerId, c.subject, c.id));
+    // Only UNLOCKED chapters (first of subject, or previous has >=1 star), max 1 per subject
+    const bySub = {};
+    allChapters.forEach((ch) => { (bySub[ch.subject] = bySub[ch.subject] || []).push(ch); });
+    const qualifying = [];
+    Object.values(bySub).forEach((list) => {
+      for (let i = 0; i < list.length; i++) {
+        const unlocked = i === 0 || Store.getLevelStars(App.playerId, list[i].subject, list[i - 1].id) > 0;
+        if (!unlocked) continue;
+        if (this.isQualifyingChapter(App.playerId, list[i].subject, list[i].id)) { qualifying.push(list[i]); break; }
+      }
+    });
     const targets = qualifying.slice(0, 3);
 
     const subNames = { math: 'Math', english: 'English', evs: 'EVS', hindi: 'Hindi', sanskrit: 'Sanskrit', computer: 'Computer' };

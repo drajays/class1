@@ -135,6 +135,8 @@ const HindiBook = {
 
   // ============================ RENDER ============================
   render() {
+    const scr = document.getElementById('screen-hindi');
+    if (scr) scr.classList.toggle('hb-plain', (Store.getVoicePrefs?.().colors === false));
     const body = document.getElementById('hindi-body');
     const tabs = [
       ['svar', '🔴 स्वर'], ['vyanjan', '🔵 व्यंजन'], ['matra', '🟢 मात्रा'], ['shabd', '🟡 शब्द'], ['read', '📖 पढ़ो'], ['paath', '📕 पाठ'],
@@ -307,6 +309,7 @@ const HindiBook = {
     if (ratio >= 0.9) stars = 3;
     const prettyKind = { varna: 'वर्णमाला अभ्यास (Varnamala)', matra: 'मात्रा अभ्यास (Matras)', shabd: 'शब्द निर्माण (Words)' }[this.pkind] || ('Hindi Practice: ' + this.pkind);
     const res = Store.awardLevel(this.playerId, 'hindi', 'practice-' + this.pkind, stars, stars * 10, {
+      total,
       title: prettyKind,
       level: 1,
       wrong: this.pq.length - this.pcorrect
@@ -606,7 +609,7 @@ const HindiBook = {
       <p class="hb-sub">पाठ ${this.lIdx + 1}: ${this.lesson.title} — प्रश्न ${this.lProbIdx + 1}/${total} • स्कोर ${this.lScore} ⭐</p>
       <div style="background:#fff;border:3px solid #ffce8a;border-radius:18px;padding:14px;margin:12px 0;text-align:center;">
         <h3 style="color:#2b2660;font-size:1.3rem;margin:6px 0;">${p.q}</h3>
-        <button class="btn-fun blue btn-small" id="hb-lqhear" style="margin-top:6px;">🔊 प्रश्न सुनो</button>
+        <button class="btn-fun blue btn-small" id="hb-lqhear" style="margin-top:6px;">▶️ सब सुनो (Read All)</button>
       </div>
       <div class="hb-grid hb-optgrid" style="gap:12px;margin:14px 0;">
         ${p.opts.map((opt, i) => `
@@ -623,7 +626,8 @@ const HindiBook = {
     
     document.getElementById('hb-lqhear').addEventListener('click', () => {
       Sounds.tap();
-      this.say(p.q, this.devToRoman(p.q));
+      const full = p.q + '। ' + p.opts.join('। ');
+      this.say(full, this.devToRoman(full));
     });
     this.say(p.q, this.devToRoman(p.q));
 
@@ -776,6 +780,12 @@ const HindiBook = {
       .hb-akshar{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;margin-top:4px}
       .hb-chip{font-size:1.25rem;font-weight:700;color:#b14a00;background:#fff3df;border:2px solid #ffce8a;
         border-radius:9px;padding:2px 8px;cursor:pointer}
+      .hb-plain .hb-card{background:#fff;border-color:#d4d2e3}
+      .hb-plain .hb-chip{background:#fff;color:#333;border-color:#cfcfcf}
+      .hb-plain .hb-dev,.hb-plain .hb-worddev{color:#222}
+      .hb-plain .hb-matracard .hb-matravow{color:#444}
+      .hb-plain .hb-tab{filter:grayscale(1)}
+      .hb-plain .hb-roman{color:#777}
       .hb-chip:active{transform:scale(.9)}
       .hb-practice{width:100%;margin-top:14px}
       .hb-listen{text-align:center;margin:10px 0}

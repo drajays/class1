@@ -176,7 +176,7 @@ const SubjectBook = {
       <p class="mb-count">Activity ${this.idx + 1} of ${total}</p>
       <div class="mb-problem">
         <p class="sb-hint">👆 Tap any word to hear it!</p>
-        <p class="mb-q" style="font-size:1.5rem;line-height:1.6;color:#2b2660;text-align:center;font-weight:800">${this.tappable(p.q)} <button class="sb-saybtn read" id="sb-read" style="padding:6px 12px;font-size:.9rem">🔊 Read</button></p>
+        <p class="mb-q" style="font-size:1.5rem;line-height:1.6;color:#2b2660;text-align:center;font-weight:800">${this.tappable(p.q)} <button class="sb-saybtn read" id="sb-read" style="padding:6px 12px;font-size:.9rem">▶️ Read All</button></p>
         ${p.emoji ? `<div class="sb-pic">${p.emoji}</div>` : ''}
         <div class="mb-options" id="sb-options">
           ${opts.map((o) => `<button class="mb-opt" data-v="${this.esc(o)}">${this.esc(o)}</button>`).join('')}
@@ -262,6 +262,7 @@ const SubjectBook = {
     if (ratio >= 0.6) stars = 2;
     if (ratio >= 0.9) stars = 3;
     const res = Store.awardLevel(this.playerId, this.subject, this.chapter.id, stars, stars * 10, {
+      total,
       title: this.chapter.title,
       level: this.chapter.level || 1,
       wrong: total - this.correctCount

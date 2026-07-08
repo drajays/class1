@@ -28,6 +28,58 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### FE-TEST results + Phases 12/12b/7 implementation (2026-07-08, reviewer-as-implementer on user instruction)
+
+**Implemented (user instructed the reviewer to finish all remaining tasks):**
+- **Phase 11 should-fixes:** engines now pass real `total` to awardLevel (melt =
+  1.25% × actual problems — verified 8.75% for a 7-problem chapter); curse melt
+  targets now unlocked-frontier only + max 1 per subject.
+- **Phase 12:** `Store.getVoicePrefs/setVoicePref` (localStorage `pp_voice`);
+  `speech.js` rewritten — honors per-language voice name + speed pref, keeps
+  empty-voice-list + Devanagari fallbacks; Parent dashboard "🔊 Voice & Reading"
+  section (EN/HI voice dropdowns incl. "🎙️ Mummy" + Auto, speed, test buttons,
+  Colors toggle, hi-voice-missing note, voiceschanged repopulation);
+  **▶️ Read All** unified on problem screens of all 4 engines (reads question +
+  options; hindi reads सब सुनो); **🌈 Colors Off** renders Hindi plain
+  (`hb-plain` class + override CSS).
+- **Phase 12b (partial by design):** `generate_mummy_voice.py` + Qwen3-TTS clone
+  pipeline verified working; clips generate at ~2–5 min each on MPS, so tonight
+  ships the ~13 core UI/praise lines; full intro corpus + Hindi batch are a
+  documented overnight follow-up (`python3 generate_mummy_voice.py`). speech.js
+  plays manifest clips with TTS fallback for missing ones (spy-verified).
+- **Phase 7:** deleted `learn.js`, `english.js`, `extras.js`, and all 7 legacy
+  OCR data JSONs; removed dead `App.showEnglishLevels` + `ENGLISH_LEVELS` +
+  `QUEST_BANK`; script tags cleaned; sw.js v21 with voice_manifest precached
+  (voice clips runtime-cached by the existing fetch handler); CLAUDE.md file
+  map + status rewritten.
+
+**FE-TEST results (final tree, headless Edge):**
+- T1 boot: fresh boot clean, 7 play cards, ZERO console errors after all
+  deletions ✔. Upgrade path: seeded old-shape save → coins 77 + math stars
+  preserved, coach + curse initialize on top ✔. iPad 1024×1366 screenshot ✔.
+- T2 subjects: 6/6 open with content on visible screens ✔; math ch2 locked on
+  fresh save ✔; EVS first-try answer pays 10 🪙 ✔; Read All present ✔.
+- T3 economy: replay pays 0 ✔; 1⭐→3⭐ delta pays exactly 20 ✔; fun cap
+  10,10,10,0,0 ✔.
+- T4 coach: default mode on fresh save ✔ (level-up/cushion verified in earlier
+  reviews on same code).
+- T5: journal event fields ✔; `#journey/` hash ✔; parent gate + Good at +
+  Blessings + Voice sections ✔.
+- T5b curse: 3 idle days → 45% ✔; qualifying 7-problem chapter melts 8.75% ✔;
+  3 consecutive wrongs → Royal Mentors journal event ✔.
+- Voice: Mummy/Auto options render, selection persists, rate pref honored
+  (spy: 0.7) ✔; clip path falls back to TTS while manifest empty ✔; Colors Off
+  applies `hb-plain` ✔.
+- T6: sw asset list has 0 missing files ✔; no absolute paths ✔. Offline smoke:
+  deferred (headless SW install is unreliable; cache-first pattern unchanged
+  since v1 and proven on device).
+- T7: validators 0 errors (124ch/739 + 23ch/300) ✔. Guessability: EVS 35.2%,
+  Sanskrit 16.1%, Computer 19.5%, Hindi 39.7% ✔ — **EXCEPTION: math_book 70.6%
+  and english_book 68.0%** exceed the <50% bar; both predate the bar and belong
+  to the Math/English sessions. Recorded as post-ship follow-up: distractor
+  length pass on math/english books.
+
+
 ### User decision — Mummy's Voice publishing APPROVED (2026-07-08)
 The user explicitly approved using the mother's cloned voice
 (`/Users/dr.ajayshukla/voice_clone/`, Qwen3-TTS zero-shot, gargi reference) and

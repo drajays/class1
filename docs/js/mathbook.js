@@ -110,7 +110,7 @@ const MathBook = {
       <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
       <p class="mb-count">Problem ${this.idx + 1} of ${total}</p>
       <div class="mb-problem">
-        <p class="mb-q">${this.esc(p.q)} <button class="mb-read" id="mb-read" title="Read aloud">🔊</button></p>
+        <p class="mb-q">${this.esc(p.q)} <button class="mb-read" id="mb-read" title="Read all">▶️ Read All</button></p>
         <div class="mb-visual" id="mb-visual">${this.visual(p)}</div>
         <div class="mb-options" id="mb-options">
           ${opts.map((o) => `<button class="mb-opt" data-v="${this.esc(o)}">${this.esc(o)}</button>`).join('')}
@@ -119,7 +119,7 @@ const MathBook = {
         <div class="mb-steps" id="mb-steps"></div>
       </div>`;
 
-    document.getElementById('mb-read').addEventListener('click', () => Speech.speak(this.say(p)));
+    document.getElementById('mb-read').addEventListener('click', () => Speech.speak(this.say(p) + (opts && opts.length ? '. Is it ' + opts.join(', or ') + '?' : '')));
     document.getElementById('mb-help').addEventListener('click', () => { this.usedHelp = true; this.showSolution(p); });
     area.querySelectorAll('.mb-opt').forEach((b) =>
       b.addEventListener('click', () => this.answer(b.dataset.v, p, b)));
@@ -202,6 +202,7 @@ const MathBook = {
     if (ratio >= 0.6) stars = 2;
     if (ratio >= 0.9) stars = 3;
     const res = Store.awardLevel(this.playerId, 'math', this.chapter.id, stars, stars * 10, {
+      total,
       title: this.chapter.title,
       level: this.chapter.level || 1,
       wrong: total - this.correctCount
