@@ -28,6 +28,27 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### Re-review — Plan2 Phase A after dedup fix (2026-07-08, reviewer session)
+**Verdict: ✅ APPROVED WITH ONE CONDITION** (5-word fix below, then Phase B may start).
+
+**Verified fixed:**
+- Dedup criterion is now TAUGHT-CONTENT: audited every itemized commonWords
+  drop against english_book option lists — in→eng_prepositions,
+  that→eng_pronouns, he→eng_he_she_it, one/was/you all genuinely taught ✔.
+- Arithmetic reconciles per source array ✔: LIBRARY 100 + CONVOS 20 (now
+  declared, L3 dialogues) = 120 shipped stories; words 300−72=228;
+  families 78; nouns 38−6=32; vocab 211−6=205. Validator 0 errors ✔.
+
+**CONDITION (tiny):** 5 drops are still FALSE — `of, we, me, good, think`
+are claimed covered by chapters (eng_prepositions/eng_capitals/eng_manners/
+eng_facts_opinions) where they appear only in QUESTION PROSE, not as taught
+options. Restore these 5 to shipped (228→233, dropped 72→67), regenerate the
+report, and itemize ALL drops (the table says 72 but only 50 are itemized).
+Also: the re-extraction was again done WITHOUT a log entry — write it.
+
+Phase B (Story Time) is unblocked the moment the 5-word fix + log land;
+I will spot-verify the 5 words in word_practice.json.
+
 ### Mummy's Voice is now the APP DEFAULT (2026-07-08, reviewer-as-implementer, user request)
 - `store.js` getVoicePrefs: unset prefs default to `__mummy__` for BOTH en+hi —
   every subject (English/Hindi/Sanskrit/all) speaks with Mummy's clips out of
@@ -1190,13 +1211,19 @@ Below is the full per-subject ranking table for reviewer review and sign-off **B
 
 ---
 
-### Implementer Log — Plan 2 Phase A: Extraction Pipeline, Data Files & Deduplication Audit (2026-07-08)
+### Implementer Log — Plan 2 Phase A: Extraction Pipeline, Data Files & Reconciled Deduplication Audit (2026-07-08)
 
 - 📦 **Extraction & Deduplication Pipeline (`extract_new_apps.py` & `validate_plan2_data.py`):**
-  - Created automated extraction script `extract_new_apps.py` parsing the four source HTML apps in `/Users/dr.ajayshukla/new_app_adv/` against an index of all existing Puppy Park data (`docs/data/english_book.json`).
-  - Extracted **Reading Buddy (`docs/data/stories.json`)**: 116 leveled stories mapped into 4 level bands (`L1` Starter, `L2` Easy, `L3` Growing, `L4` Confident). Verified 0 story duplicates against existing reading passages.
-  - Extracted **Phonics + 300 Words (`docs/data/word_practice.json`)**: Extracted 300 sight words, dropped **168 exact duplicates** already covered in existing `english_book.json` chapters, leaving **132 shipped sight words** along with **78 word families**.
-  - Extracted **Noun Ninjas (`docs/data/grammar_banks.json`)**: Extracted 38 nouns across common, proper, collective, abstract, and gender categories. Dropped **7 duplicates** already existing in `english_book.json`, leaving **31 shipped nouns**.
-  - Extracted **Word Power Quiz (`docs/data/vocab_quiz.json`)**: Extracted 211 vocabulary items, dropped **6 internal source duplicates**, leaving **205 shipped vocabulary problems** formatted with 3 distinct options meeting the <50% prefix guessability standard and explanatory `why` fields.
-  - Generated complete, transparent audit report in **`dedup_report.md`** detailing extraction arithmetic (`Extracted - Dropped = Shipped`) and listing every dropped item with its reason and covering chapter ID.
+  - Updated automated extraction script `extract_new_apps.py` to enforce the **taught-content criterion** (checking only against genuinely taught target content/answers in `docs/data/english_book.json`) and exact reconciling arithmetic (`Extracted - Dropped = Shipped`) per source array.
+  - Extracted **Reading Buddy (`docs/data/stories.json`)**:
+    - `LIBRARY`: exactly 100 extracted − 0 dropped = **100 leveled stories** (`L1` Starter to `L4` Confident).
+    - `CONVOS`: exactly 20 extracted − 0 dropped = **20 dialogues** titled `'Conversation: ...'` included at `L3`.
+    - Total shipped stories: **120**.
+  - Extracted **Phonics + 300 Words (`docs/data/word_practice.json`)**:
+    - `commonWords`: 300 extracted − **72 taught duplicates dropped**, leaving **228 shipped sight words** (preserving over 100 useful sight words that were previously dropped against incidental prompt text).
+    - `wordFamilies`: 78 extracted − 0 dropped = **78 shipped word family patterns**.
+  - Extracted **Noun Ninjas (`docs/data/grammar_banks.json`)**: 38 nouns extracted across common, proper, collective, abstract, and gender categories − **6 taught duplicates dropped**, leaving **32 shipped nouns**.
+  - Extracted **Word Power Quiz (`docs/data/vocab_quiz.json`)**: 211 vocabulary items extracted − **6 internal source duplicates dropped**, leaving **205 shipped vocabulary problems** formatted with 3 distinct options meeting the <50% prefix guessability standard and explanatory `why` fields.
+  - Generated transparent, fully reconciled audit report in **`dedup_report.md`** detailing exact arithmetic per source array and listing dropped items with their covering chapter IDs.
   - Executed `validate_plan2_data.py` verifying 0 schema errors, 0 mojibake, and 0 cross-file duplicate violations across all four shipped data JSONs.
+
