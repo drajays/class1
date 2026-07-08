@@ -10,11 +10,15 @@ quick how-to for common tasks.
 
 ## Golden rules
 1. **Learning first** — the puppy game is only the motivation wrapper. No bloat.
-2. **Math = strictly the book** — source: `organized/maths/<chapter>/content.md` and the
-   full OCR `noupload/mathxy.pdf_by_PaddleOCR-VL-1.6.md`. Ignore OCR garbage questions and
-   noisy `tables/*.html`; keep concept/type faithful with clearly-legible book numbers.
-3. **Sequence + step-by-step** — chapters in learning order, gated; every wrong answer
-   shows a full animated/narrated worked solution then a retry. Minimum help; app guides.
+2. **Subject content = strictly the book** — source: `organized/<subject>/<chapter>/content.md` and full OCR in `noupload/*.md`. Ignore OCR garbage questions and noisy tables; keep concept/type faithful with clearly legible book content.
+3. **Sequence + step-by-step** — chapters in learning order, gated; every wrong answer shows a gentle, animated/narrated worked explanation (`why`) then a retry. Minimum help; app guides.
+4. **CSS prefixes & caching** — `mb-*` for Math/shared problem UI, `eb-*` for English self-injected, `hb-*` for Hindi self-injected. **Every asset-list change in docs/ requires bumping `CACHE` name in `docs/sw.js`.**
+
+## Book Engines (Math, English, Hindi, SubjectBook)
+- **Math Book** (`docs/js/mathbook.js`, `docs/data/math_book.json`): interactive widgets (`count`, `crossout`, `add`, `numberline`, `pick`, `clock`, `tenframe`). Reuses `mb-*`.
+- **English Book** (`docs/js/englishbook.js`, `docs/data/english_book.json`): phonics, reading, grammar, vocab. Reuses `mb-*`, self-injected `eb-*`.
+- **Hindi Book** (`docs/js/hindibook.js`, `docs/data/hindi_words.json`): tap-to-hear varnamala + scored reading practice. Self-injected `hb-*`.
+- **SubjectBook** (`docs/js/subjectbook.js`): generic book-faithful engine for EVS, Sanskrit, Computer.
 
 ## Add or edit a Math Book chapter
 Edit `docs/data/math_book.json` (fetched directly by `docs/js/mathbook.js`; no build step).
@@ -43,7 +47,7 @@ A wrong answer key would mislead the child, so this must pass (exit 0) before co
   `"/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge" --headless --disable-gpu --no-sandbox --window-size=430,1000 --virtual-time-budget=6000 --screenshot=/tmp/x.png URL`
   For a deep screen, copy index.html and inject before `</body>`:
   `<script>addEventListener('load',()=>setTimeout(()=>{App.selectPlayer('advaita',true);App.go('math')},900))</script>`
-- After changing the cached asset list, bump `CACHE` in `docs/sw.js`.
+- After changing any file or adding assets to the cache list, **you MUST bump `CACHE` name in `docs/sw.js`** (e.g. `puppypark-v10`).
 
 ## Don't
 - Don't re-add removed bloat (Space Journey, 20 Features, Trophy Room, old Sticker Shop,

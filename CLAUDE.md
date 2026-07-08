@@ -14,19 +14,13 @@ vanilla-JS PWA in `docs/`, deployed to GitHub Pages.
 motivates learning.** Keep the app LEAN — no bloat, no gimmick screens. If something
 doesn't serve learning or the motivation loop, don't add it.
 
-## Math pedagogy rules (the user's explicit requirements)
-- **Strictly follow the book.** Problems & concepts come from the real Class-1 book.
-  Full OCR of the math book: `noupload/mathxy.pdf_by_PaddleOCR-VL-1.6.md`. Per-chapter
-  source: `organized/maths/<NN_topic>/content.md` (+ `pictures/`, `tables/`).
-- **Ignore OCR garbage.** The auto-generated quiz questions in `docs/data/*.json` are
-  often nonsense (e.g. "Yes/No/Maybe" options). Throw them out. The OCR `tables/*.html`
-  are noisy place-value grids — don't trust exact numbers from them; keep the
-  concept/problem TYPE faithful and use clearly legible numbers from the book
-  (e.g. subtraction exercise = 7−3, 8−4, 6−2, 9−4, 10−3, 10−8).
+## Subject content pedagogy (all subjects)
+- **Strictly follow the book.** Problems & concepts come from the real Class-1 books.
+  Per-chapter source: `organized/<subject>/<NN_topic>/content.md` (+ `pictures/`, `tables/`). Full OCR in `noupload/*.md`.
+- **Ignore OCR garbage.** The auto-generated quiz questions in legacy `docs/data/*.json` are often nonsense. Throw them out. When OCR is illegible or noisy, keep the concept TYPE faithful and use clearly legible book-plausible content.
 - **Go in sequence** — chapters in a real learning order; problems in order; gated.
-- **Show every step.** Wrong answers are never punished — they trigger a full,
-  animated, narrated step-by-step worked solution, then a retry. The app teaches
-  itself with **minimum help** (self-correcting / auto-guide).
+- **Show every step & never punish.** Wrong answers are never punished — they trigger a gentle, animated/narrated worked explanation (`why`), then a retry. The app teaches itself with **minimum help** (self-correcting / auto-guide).
+- **Voiced & minimal words.** Big text, big emojis, short kid-friendly wording, TTS read-aloud (`en-IN` for English/Math/EVS/Computer, `hi-IN` for Hindi/Sanskrit).
 
 ## The core game loop (already built)
 Solve problems → earn 🪙 coins (every 40 coins → a 🦴 bone) → Advaita's **4 real
@@ -40,15 +34,20 @@ Puppies: **Simba** (boy), **Mufasa** (boy), **Golu** (girl), **Whity** (girl).
 - `js/data.js` — HEROES (just Advaita), MATH_LEVELS/ENGLISH_LEVELS, QUEST_BANK, minigame data.
 - `js/puppies.js` — `PUPPIES` data, Park (home) + puppy-detail UI, `Pet` shim.
 - `js/mall.js` — generates 1000 mall items, shopping UI.
-- `js/store.js` — localStorage player state: coins, bones, puppies{happy,owned,equipped,wish,wishAt}, economy, wish system.
+- `js/store.js` — localStorage player state: coins, bones, puppies{happy,owned,equipped,wish,wishAt}, economy, wish system, journey journal (`p.journal`). **Privacy Note:** All player progress, attempt telemetry, journey log events (`p.journal`), and parent dashboard insights stay strictly on-device in `localStorage`. Nothing is ever transmitted or uploaded anywhere.
 - `js/mathbook.js` — **Math Book** guided-solver engine + widgets (the learning-first math path).
+- `js/englishbook.js` — **English Book** guided learning engine (reuses `mb-*`, self-injected `eb-*` styles).
+- `js/hindibook.js` — **Hindi Book** tap-to-hear varnamala & reading practice (self-injected `hb-*` styles).
+- `js/subjectbook.js` — **Subject Book** guided learning engine for EVS, Sanskrit, Computer (reuses `mb-*`, self-injected `sb-*` styles).
 - `js/learn.js` — generic subject chapters (notes + quiz) for non-math subjects.
-- `js/math.js` / MATH_LEVELS — legacy "Math Arcade" (being replaced by Math Book).
 - `js/english.js`, `js/minigames.js`, `js/extras.js` (SubjectHub, QuickQuest), `js/parent.js`.
 - `js/sounds.js` (WebAudio), `js/speech.js` (TTS read-aloud), `js/rewards.js` (toast/confetti/popup).
 - `js/app.js` — controller: screen routing, single player, refreshStats.
-- `css/style.css` — all styles (Fredoka font; theme vars at top; Puppy Park section at bottom).
+- `css/style.css` — all styles (Fredoka font; theme vars at top; Puppy Park section at bottom). CSS prefix convention: `mb-*` math/shared problem UI, `eb-*` english-reserved, `hb-*` hindi self-injected.
 - `data/math_book.json` — book-faithful math chapters + guided problems (self-contained, fetched by mathbook.js).
+- `data/english_book.json` — book-faithful English chapters + problems.
+- `data/{evs,sanskrit,computer}_book.json`, `data/hindi_lessons.json` — curated subject content files for SubjectBook.
+- `data/hindi_words.json` — 630 common Hindi words for reading practice.
 - `data/*.json` — generated subject content; `data/curated/*.json` — hand-fixed overrides merged by build script.
 - `assets/puppies/*.jpg` — the 4 cropped puppy photos.
 - `sw.js` — service worker (bump `CACHE` name when asset list changes).
@@ -88,9 +87,8 @@ Sometimes a second Claude session works this repo in parallel (e.g. English).
   Even/Odd → Number Bonds → Addition → Subtraction → Add&Subtract → Number Names →
   Place Value → Tables → Shapes → Position → Patterns → Measurement → Data → Time →
   Word Problems → Money → Revision. Replaced old Math Arcade. Committed & pushed.
-- 🚧 English Book — built in parallel by the English session (englishbook.js +
-  english_book.json, 10 grammar chapters).
-- ⏭️ Later: more puppy life / sounds; other subjects (EVS, Hindi, Sanskrit, Computer)
-  still use the legacy notes+quiz path.
+- ✅ English Book — `englishbook.js` + `english_book.json`, DONE with **62 chapters / 381 problems** across a structured 10-unit curriculum (phonics, reading, grammar, vocabulary). Reuses `mb-*` classes + `eb-*` styles.
+- ✅ Hindi Book — `hindibook.js` + `hindi_words.json`, DONE with tap-to-hear varnamala (स्वर / व्यंजन / मात्रा / शब्द) + scored reading practice (630 common words). Uses self-injected `hb-*` CSS.
+- 📋 Active Roadmap (`plan.md`) — Complete remaining subject content (EVS, Hindi lessons, Sanskrit, Computer) on the book-faithful engine pattern, retiring the legacy OCR notes+quiz path.
 
 See also memory: `~/.claude/projects/-Users-dr-ajayshukla-class1/memory/puppy-park-rebuild.md`.
