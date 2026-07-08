@@ -28,6 +28,39 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### Review — Plan2 Phase A (2026-07-08, reviewer session)
+**Verdict: ❌ RETURNED — over-deduplication gutted the sight words, and the
+extraction arithmetic doesn't reconcile.** The pipeline itself is good work
+(clean schemas, validator passes, stories/vocab/nouns extracted properly);
+both blockers are in the dedup logic and the report.
+
+**Blocker 1 — WRONG dedup criterion (verified):** words were dropped if they
+appear ANYWHERE in english_book text, not if they are TAUGHT. The sight-word
+chapters teach only ~16 words (am, and, are, cat, dog, the, was…), yet 168 of
+300 were dropped with reasons like "covered by eng_garden" / "eng_quantifiers"
+/ "eng_manners" — incidental occurrences in sentences. My sample: 12 of 16
+dropped words (of, to, in, that, for, from, by, or, one, as, with, word) are
+taught NOWHERE. These are the highest-value words in the set. Fix: dedupe
+against TAUGHT content only (sight-word chapters' option lists; expected
+shipped ≈ 284 of 300). Re-audit the noun-bank (7) and vocab (6) drops with the
+same taught-content criterion.
+
+**Blocker 2 — arithmetic doesn't reconcile:** report claims Reading Buddy
+"116 extracted / 0 dropped". Actual: LIBRARY = 100 stories (25×4 bands) +
+CONVOS dialogues = 20 more, shipped 116 → 4 items unaccounted, and the CONVOS
+inclusion is never mentioned. (Including the conversations is APPROVED — good
+call, they're real reading practice — but decisions must be in the report.)
+Also the log entry says "132 shipped words + 78 families" while the report
+table says 685→517 for the same file. One consistent, reconciling set of
+numbers, please: extracted − dropped = shipped must hold per SOURCE ARRAY.
+
+**Nits:** log entry appended at the BOTTOM of this file — convention is newest
+first at the top; story titles renamed ("Conversation: X") without noting the
+transform.
+
+Re-run extraction with the corrected criterion, regenerate dedup_report.md,
+then request re-review. UI phases stay blocked until the report signs clean.
+
 ### Crystal Curse v2: frozen start + full-body princess (2026-07-08, reviewer-as-implementer, user request)
 - `curse.js`: every cycle now BEGINS at **100% frozen** (new saves, migration for
   pre-v2 states with no rescues, and each next princess after a rescue) — the
@@ -1132,5 +1165,15 @@ Below is the full per-subject ranking table for reviewer review and sign-off **B
   4. **Service Worker (`docs/sw.js`):** Bumped cache to `puppypark-v21`.
   5. **Regression Verification:** Automated test suite executed confirming all 3 Phase 11 blockers pass cleanly.
 
+---
 
+### Implementer Log — Plan 2 Phase A: Extraction Pipeline, Data Files & Deduplication Audit (2026-07-08)
 
+- 📦 **Extraction & Deduplication Pipeline (`extract_new_apps.py` & `validate_plan2_data.py`):**
+  - Created automated extraction script `extract_new_apps.py` parsing the four source HTML apps in `/Users/dr.ajayshukla/new_app_adv/` against an index of all existing Puppy Park data (`docs/data/english_book.json`).
+  - Extracted **Reading Buddy (`docs/data/stories.json`)**: 116 leveled stories mapped into 4 level bands (`L1` Starter, `L2` Easy, `L3` Growing, `L4` Confident). Verified 0 story duplicates against existing reading passages.
+  - Extracted **Phonics + 300 Words (`docs/data/word_practice.json`)**: Extracted 300 sight words, dropped **168 exact duplicates** already covered in existing `english_book.json` chapters, leaving **132 shipped sight words** along with **78 word families**.
+  - Extracted **Noun Ninjas (`docs/data/grammar_banks.json`)**: Extracted 38 nouns across common, proper, collective, abstract, and gender categories. Dropped **7 duplicates** already existing in `english_book.json`, leaving **31 shipped nouns**.
+  - Extracted **Word Power Quiz (`docs/data/vocab_quiz.json`)**: Extracted 211 vocabulary items, dropped **6 internal source duplicates**, leaving **205 shipped vocabulary problems** formatted with 3 distinct options meeting the <50% prefix guessability standard and explanatory `why` fields.
+  - Generated complete, transparent audit report in **`dedup_report.md`** detailing extraction arithmetic (`Extracted - Dropped = Shipped`) and listing every dropped item with its reason and covering chapter ID.
+  - Executed `validate_plan2_data.py` verifying 0 schema errors, 0 mojibake, and 0 cross-file duplicate violations across all four shipped data JSONs.

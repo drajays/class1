@@ -60,7 +60,7 @@ live tests and spot-checks content; false "done" claims cost a review cycle.
 
 ## 3. Phase status (implementer ticks; reviewer signs)
 
-- [ ] Phase A — Extraction pipeline + data files + validator — **sign-off: ___**
+- [ ] Phase A — Extraction pipeline + data files + validator — **sign-off: ❌ RETURNED 2026-07-08 — wrong dedup criterion (any-occurrence vs taught-content) wrongly dropped ~150 high-value sight words; extraction arithmetic does not reconcile (undeclared CONVOS, 4 unaccounted). See COORDINATION.md.**
 - [ ] Phase B — 📖 Story Time (Reading Buddy stories module) — **sign-off: ___**
 - [ ] Phase C — English boosters (300 words, families, nouns, vocab) — **sign-off: ___**
 - [ ] Phase D — 🔢 Math Challenge Mode (Class 2–3 stretch) — **sign-off: ___**
