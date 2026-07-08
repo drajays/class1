@@ -59,6 +59,7 @@ economy. Do NOT invent new reward systems, screens, or frameworks.
 - [x] Phase 9 — Difficulty ladder + adaptive encouragement — **sign-off: ✅ FULLY APPROVED 2026-07-08 — coach A/B/C + Hindi integration verified live; final 2 items (hidden-screen launch bug fix + consolidated log entry) applied by the REVIEWER on user instruction and re-verified live (math/hindi/evs missions land on visible screens; sw v18). Phase 10 unblocked.**
 - [x] Phase 10 — Daily journey log + parent insights + web-history trail — **sign-off: ✅ APPROVED 2026-07-08 — journal fields/cap/size, history stamp+restore, stale-hash boot, parent gate + all 4 sections verified live with seeded data; 1 should-fix ("Not touching" lists locked chapters) due at Phase 7 QA; see COORDINATION.md "Review — Phase 10". Phase 11 unblocked.**
 - [ ] Phase 11 — The Crystal Curse (princess rescue meta-game, all subjects) — **sign-off: ___**
+- [ ] Phase 12 — Voice settings (voice picker + speed + test sound) — **sign-off: ___**
 
 **Execution-order note:** Phases 8–10 are app-mechanics phases, independent of the
 content phases. Recommended order: run **Phase 8 right after Phase 1** (it changes the
@@ -465,6 +466,65 @@ fires at 3 wrongs and is logged; full rescue → blessing certificate → parent
 grant → new cycle with new princess name; 100% state renders the calm
 "waiting" message and double-fuel shatter works; saves backward-compatible;
 screenshots of the 4 freeze stages + rescue at both viewports.
+
+---
+
+## Phase 12 — Voice & reading settings 🔊 (voice picker, speed, test, Read All, colors)
+
+Small, independent phase (any time after Phase 10; before Phase 7 ship gate).
+Reference UI (user's screenshot + control list): **🔊 Voice** dropdown
+("Google US English (en-US)"-style entries), **⏱️ Speed** dropdown ("🙂 Normal"),
+**🎧 Test sound** button, **▶️ Read All** button, **🌈 Colors: On/Off** toggle.
+
+1. **Prefs in `store.js`:** `Store.voicePrefs = { enVoice: <voice name>,
+   hiVoice: <voice name>, rate: 0.7 | 0.85 | 1.0 }` (persisted in localStorage;
+   single player, so global is fine). Defaults: null voice (current auto-pick),
+   rate 0.85.
+2. **`speech.js` honors prefs:** in `Speech.speak`, if a saved voice name for the
+   utterance's language (en-*/hi-*) exists in `speechSynthesis.getVoices()`, use
+   it and multiply the rate by the pref. Keep ALL existing fallback logic intact
+   (auto lang-prefix match, Devanagari→roman only when the voice list is
+   non-empty and has no hi voice). A stale saved name (voice uninstalled) must
+   silently fall back to auto — never break speech.
+3. **UI — one section in the Parent Dashboard** (keeps home lean; parents tune it
+   once with Advaita): TWO voice rows since the app speaks two languages —
+   "🗣️ English voice" (dropdown filtered to `en-*` voices) and "🗣️ हिंदी voice"
+   (filtered to `hi-*`; if none installed show "No Hindi voice on this device —
+   roman fallback will be used"). One shared **Speed** dropdown
+   (🐢 Slow 0.7 / 🙂 Normal 0.85 / 🐇 Fast 1.0). Each row has **🔊 Test sound**
+   which speaks a sample line with the currently SELECTED (not yet saved) combo:
+   EN "Hello Advaita! Let's learn something new!", HI "नमस्ते! चलो कुछ नया सीखें!".
+   Selecting immediately saves (no Save button — fewer taps).
+4. **Async voices:** populate dropdowns on open AND re-populate on the
+   `voiceschanged` event (voice lists load late on iPad Safari/Edge). Mark the
+   currently-saved voice as selected.
+5. **▶️ Read All (on learning screens, for the child):** one consistent button on
+   every problem screen across the four book engines that reads the FULL screen
+   aloud — question, then all options ("Is it …, …, or …?"), reusing each
+   engine's existing readAloud pieces (mathbook/englishbook/subjectbook already
+   have partial versions — unify the label to "▶️ Read All", keep per-word taps).
+   On concept screens it reads intro + tip (the existing "🔊 Read to me" can
+   simply be relabeled). No new speech logic — orchestration only.
+6. **🌈 Colors toggle (`Store.voicePrefs.colors`, default ON):** controls the
+   reading-help colorization — Hindi varnamala/matra color-coding (`hb-*` tab
+   colors) and any colored letter/word highlights in reading practice. OFF
+   renders the same content in plain ink for kids who find colors distracting.
+   Toggle lives next to the voice settings; engines read the pref at render
+   time (a simple `Store.voicePrefs.colors ? colored : plain` branch — no
+   re-architecture).
+7. **Lean:** reuse existing parent-dashboard styles + `sb-saybtn`-style button;
+   no new screens, no new files (extend `parent.js`/`speech.js`/`store.js` +
+   small engine touches); sw.js bump; log in COORDINATION.md.
+
+**Acceptance criteria (reviewer live-tests):** picking a voice + speed persists
+across reload and is used by `Speech.speak` (spy asserts voice name + rate on a
+math and a hindi utterance); Test buttons speak with the selected combo before
+saving; stale saved voice name falls back to auto without errors; headless run
+(where voice list may be empty) never crashes; dropdowns repopulate on
+`voiceschanged`; **Read All** on a problem screen speaks question + every option
+(spy assert) in all four engines; **Colors OFF** visibly de-colorizes the Hindi
+matra tab (screenshot pair On/Off) and persists across reload; screenshot of the
+settings section at both viewports.
 
 ---
 
