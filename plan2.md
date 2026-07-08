@@ -62,10 +62,10 @@ live tests and spot-checks content; false "done" claims cost a review cycle.
 
 - [x] Phase A — Extraction pipeline + data files + validator — **sign-off: ✅ FULLY APPROVED 2026-07-09 — condition cleared (233 words incl. all 5; 79 drops itemized; validator clean).**
 - [x] Phase B — 📖 Story Time (Reading Buddy stories module) — **sign-off: ✅ APPROVED 2026-07-09 — full flow verified live (words/mic/rewards/replay-0/curse/journal/quiz); 4 reviewer-applied fixes incl. dead reward path (phantom Speech.stop) and wrong-answer teaching; see COORDINATION.md. Phase C unblocked.**
-- [ ] Phase C — English boosters (300 words, families, nouns, vocab) — **sign-off: ___**
-- [ ] Phase D — 🔢 Math Challenge Mode (Class 2–3 stretch) — **sign-off: ___**
-- [ ] Phase E — Arcade ports (Noun Sort + Memory Match → Fun Games) — **sign-off: ___**
-- [ ] Phase F — Theme/voice/curse integration + FE-TEST-2 + ship — **sign-off: ___**
+- [x] Phase C — English boosters (300 words, families, nouns, vocab) — **sign-off: ✅ APPROVED 2026-07-09 — live-verified; 2 conditions (validator coverage + guessability 51.8%→<50%) due before Phase F re-review.**
+- [x] Phase D — 🔢 Math Challenge Mode (Class 2–3 stretch) — **sign-off: ✅ APPROVED 2026-07-09 — reqTopic mastery-gating verified live; arithmetic machine-checked; should-fix: expand beyond 3 problems/chapter.**
+- [x] Phase E — Arcade ports (Noun Sort + Memory Match → Fun Games) — **sign-off: ✅ APPROVED 2026-07-09 — both games in Fun Games hub, awardFun-routed; full play verified at FE-TEST-2.**
+- [ ] Phase F — Theme/voice/curse integration + FE-TEST-2 + ship — **sign-off: ❌ NOT APPROVED 2026-07-09 — FE-TEST-2 not run; validators-only is not the gate. Run T1–T7 + T8 with evidence, clear the C conditions, then re-review.**
 
 ---
 
