@@ -114,17 +114,26 @@ const Parent = {
     });
     if (!struggleHtml) struggleHtml = '<p class="parent-sub">🎉 No struggling topics detected right now!</p>';
 
-    // 3. Not touching (avoidance signal)
+    // 3. Not touching (avoidance signal - unlocked frontier only)
     let avoidHtml = '';
     const avoidItems = [];
     const nowTs = Date.now();
     const sevenDaysMs = 7 * 24 * 60 * 60 * 1000;
+    const chapsBySub = {};
     allChapters.forEach((c) => {
-      const stars = Store.getLevelStars(App.playerId, c.subject, c.id);
-      const stat = attemptStats[`${c.subject}_${c.id}`];
-      if (stars === 0 && (!stat || (nowTs - (stat.lastTs || 0) > sevenDaysMs))) {
-        avoidItems.push(c);
-      }
+      if (!chapsBySub[c.subject]) chapsBySub[c.subject] = [];
+      chapsBySub[c.subject].push(c);
+    });
+    Object.values(chapsBySub).forEach((subList) => {
+      subList.forEach((c, idx) => {
+        const isUnlocked = (idx === 0) || (Store.getLevelStars(App.playerId, c.subject, subList[idx - 1].id) > 0);
+        if (!isUnlocked) return; // Skip locked chapters
+        const stars = Store.getLevelStars(App.playerId, c.subject, c.id);
+        const stat = attemptStats[`${c.subject}_${c.id}`];
+        if (stars === 0 && (!stat || (nowTs - (stat.lastTs || 0) > sevenDaysMs))) {
+          avoidItems.push(c);
+        }
+      });
     });
     avoidItems.slice(0, 6).forEach((c) => {
       avoidHtml += `
