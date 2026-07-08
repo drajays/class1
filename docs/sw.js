@@ -1,4 +1,4 @@
-const CACHE = 'puppypark-v19';
+const CACHE = 'puppypark-v21';
 const ASSETS = [
   './',
   './index.html',
@@ -14,7 +14,7 @@ const ASSETS = [
   './js/minigames.js',
   './js/extras.js',
   './js/parent.js',
-  './js/learn.js',
+  './js/curse.js',
   './js/mathbook.js',
   './js/english.js',
   './js/englishbook.js',

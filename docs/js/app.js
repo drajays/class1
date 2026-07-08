@@ -4,7 +4,6 @@ const App = {
   async init() {
     Sounds.init();
     Mall.build();
-    await Learn.init();
     await MathBook.load();
     await SubjectBook.loadAll();
     if ('serviceWorker' in navigator) {
@@ -23,25 +22,16 @@ const App = {
     });
     document.getElementById('btn-update')?.addEventListener('click', () => this.checkForUpdate());
     document.getElementById('minigame-back')?.addEventListener('click', () => MiniGames.back());
-    document.getElementById('hub-back')?.addEventListener('click', () => this.go('play'));
-    document.getElementById('quest-back')?.addEventListener('click', () => {
-      if (QuickQuest.subjectId) SubjectHub.open(QuickQuest.subjectId);
-      else this.go('play');
-    });
 
     document.querySelectorAll('[data-back]').forEach((btn) => {
       btn.addEventListener('click', () => {
         Sounds.tap();
-        const dest = btn.dataset.back;
-        if (dest === 'chapters') Learn.openSubject(Learn.subjectId);
-        else this.go(dest);
+        this.go(btn.dataset.back);
       });
     });
     document.querySelectorAll('[data-go]').forEach((btn) => {
       btn.addEventListener('click', () => { Sounds.tap(); this.go(btn.dataset.go); });
     });
-    document.getElementById('tab-notes')?.addEventListener('click', () => Learn.setMode('notes'));
-    document.getElementById('tab-quiz')?.addEventListener('click', () => Learn.setMode('quiz'));
 
     // Auto-resume Advaita (single player)
     this.selectPlayer('advaita', true);
@@ -57,7 +47,6 @@ const App = {
 
   selectPlayer(id, silent) {
     this.playerId = id;
-    Learn.playerId = id;
     Store.getPlayer(id);
     Store.ensurePuppies(id);
     Store.recordLogin(id);
@@ -74,10 +63,7 @@ const App = {
       mall: 'screen-mall',
       puppy: 'screen-puppy',
       minigames: 'screen-minigames',
-      'subject-hub': 'screen-subject-hub',
-      'quick-quest': 'screen-quick-quest',
-      chapters: 'screen-chapters',
-      chapter: 'screen-chapter',
+      curse: 'screen-curse',
       math: 'screen-math',
       english: 'screen-english',
       hindi: 'screen-hindi',
@@ -91,6 +77,8 @@ const App = {
     if (screen === 'home') {
       const fresh = Puppies.tick();
       Puppies.renderPark();
+      Curse.injectStyles();
+      Curse.renderCard('curse-card-home');
       Coach.renderMissionCard('mission-card-home');
       this.refreshStats();
       if (fresh.length) {
@@ -98,9 +86,12 @@ const App = {
         setTimeout(() => Rewards.showToast(`🐶 ${names} ${fresh.length === 1 ? 'has' : 'have'} a new wish!`), 600);
       }
     }
+    if (screen === 'curse') {
+      Curse.injectStyles();
+      Curse.renderScreen();
+      this.refreshStats();
+    }
     if (screen === 'play') {
-      Learn.playerId = this.playerId;
-      Learn.showHome();
       Coach.renderMissionCard('mission-card-play');
       this.refreshStats();
       Speech.navSay('Pick something to play and earn coins!');

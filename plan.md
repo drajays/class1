@@ -54,12 +54,13 @@ economy. Do NOT invent new reward systems, screens, or frameworks.
 - [x] Phase 4 — Sanskrit (14 chapters) — **sign-off: ✅ APPROVED 2026-07-08 — 1 should-fix (speech.js empty-voice-list race) due before Phase 7 QA; see COORDINATION.md "Review — Phase 4". Phase 5 unblocked.**
 - [x] Phase 5 — Computer (7 chapters) — **sign-off: ✅ APPROVED WITH CONDITIONS 2026-07-08 — speech.js fix verified ✔; EVS & Computer distractor substance pass ✅ CLEARED (verifiable deliverable logged in COORDINATION.md). Phase 6 unblocked.**
 - [x] Phase 6 — English grammar audit vs organized/ (gap-fill only) — **sign-off: ✅ APPROVED 2026-07-08 — coverage table verified by sampling; 4 composition skips confirmed legitimate. Distractor-pass condition also CLEARED (verified). Next: Phase 8 → 9 → 10 → 7 (ship gate last).**
-- [ ] Phase 7 — Retire legacy path, integration QA, ship — **sign-off: ___**
+- [ ] Phase 7 — Retire legacy path, integration QA, ship — **sign-off: ❌ RETURNED 2026-07-08 — FE-TEST not run, dead-file cleanup incomplete, out of order (runs LAST, after Phases 11+12 approval); screen/script retirement itself looks good and boot is clean; see COORDINATION.md.**
 - [x] Phase 8 — Mastery-gated economy (puppies eat only NEW learning) — **sign-off: ✅ FULLY APPROVED 2026-07-08 — mastery gate + locking verified live; fun-faucet daily cap verified live (10,10,10,0,0). Phase 9 in progress: ranking table conditionally approved (re-level English vocab block first) + missing log entry required; see COORDINATION.md.**
 - [x] Phase 9 — Difficulty ladder + adaptive encouragement — **sign-off: ✅ FULLY APPROVED 2026-07-08 — coach A/B/C + Hindi integration verified live; final 2 items (hidden-screen launch bug fix + consolidated log entry) applied by the REVIEWER on user instruction and re-verified live (math/hindi/evs missions land on visible screens; sw v18). Phase 10 unblocked.**
 - [x] Phase 10 — Daily journey log + parent insights + web-history trail — **sign-off: ✅ APPROVED 2026-07-08 — journal fields/cap/size, history stamp+restore, stale-hash boot, parent gate + all 4 sections verified live with seeded data; 1 should-fix ("Not touching" lists locked chapters) due at Phase 7 QA; see COORDINATION.md "Review — Phase 10". Phase 11 unblocked.**
-- [ ] Phase 11 — The Crystal Curse (princess rescue meta-game, all subjects) — **sign-off: ___**
+- [x] Phase 11 — The Crystal Curse (princess rescue meta-game, all subjects) — **sign-off: ✅ APPROVED 2026-07-08 on re-review — melt/replay/mentor/rescue loop all verified live; 3 should-fixes at Phase 7 QA (real problem totals, unlocked+diverse melt targets, fix-batch logging) + 1 accepted deviation (easier 100% recovery); see COORDINATION.md "Re-review — Phase 11". Phase 12 next.**
 - [ ] Phase 12 — Voice settings (voice picker + speed + test sound) — **sign-off: ___**
+- [ ] Phase 12b — "Mummy's Voice" pre-generated clone option — **sign-off: ___**
 
 **Execution-order note:** Phases 8–10 are app-mechanics phases, independent of the
 content phases. Recommended order: run **Phase 8 right after Phase 1** (it changes the
@@ -525,6 +526,50 @@ saving; stale saved voice name falls back to auto without errors; headless run
 (spy assert) in all four engines; **Colors OFF** visibly de-colorizes the Hindi
 matra tab (screenshot pair On/Off) and persists across reload; screenshot of the
 settings section at both viewports.
+
+---
+
+## Phase 12b — "Mummy's Voice" 🎙️ (pre-generated cloned-voice option)
+
+**Extends Phase 12's voice picker.** Source: the working Qwen3-TTS 0.6B zero-shot
+clone at `/Users/dr.ajayshukla/voice_clone/` (gargi reference WAVs + `clone.py`,
+runs offline on the Mac / MPS). **Decision (do not relitigate): NO live TTS** —
+the PWA cannot run the model in-browser and must stay offline/static. Instead,
+pre-generate clips for a curated string corpus and play them from disk.
+
+1. **Build script `generate_mummy_voice.py` (repo root, gitignored env):**
+   - Collect the HIGH-VALUE corpus only (~400–500 strings, target ≤ 25MB):
+     every chapter `concept.intro` + `tip` across all 6 books, the praise /
+     retry / replay lines, Crystal Curse story + stage lines, nav prompts
+     (grep Speech.navSay/showToast literals), and the Phase-12 test lines.
+     NOT per-problem q/options/why (corpus too large — browser voice covers).
+   - Synthesize each with the existing qwen_env clone (ref: gargi1), English
+     AND Hindi strings (Qwen3-TTS is multilingual — validate 2–3 Hindi clips by
+     ear with the user before batch-generating; if Hindi quality is poor, ship
+     English-only and say so in the log).
+   - Output `docs/assets/voice/<sha1(text)-8>.mp3` (mono, 24k, ~48–64kbps) +
+     `docs/data/voice_manifest.json` mapping hash→file. Re-runnable: skips
+     existing hashes; deleting a book string orphans its clip (script prints
+     orphans for cleanup).
+2. **`speech.js`:** if `Store.voicePrefs.enVoice === '🎙️ Mummy'` (a synthetic
+   entry added to BOTH Phase-12 voice dropdowns), `Speech.speak` first hashes
+   the exact text; on manifest hit play the clip via `new Audio(AppConfig.url(...))`
+   (respect the speed pref via `audio.playbackRate`), on miss fall back to the
+   normal browser-voice path silently. Cancel any playing clip when a new
+   speak starts (mirror speechSynthesis.cancel behavior).
+3. **Service worker:** precache ONLY `voice_manifest.json`; add a runtime
+   cache-on-first-play route for `assets/voice/*` (so the 25MB downloads
+   lazily, then works offline). CACHE bump.
+4. **Privacy: ✅ USER APPROVED (2026-07-08)** publishing the mother's cloned
+   voice clips as static assets in the public repo / GH Pages site. Record the
+   approval in CLAUDE.md's privacy note; no gitignore alternative needed.
+
+**Acceptance criteria:** manifest + clips generated and playable; picker shows
+"🎙️ Mummy" and Test-sound plays a real clip; spy-verify manifest-hit plays
+Audio (not speechSynthesis) and manifest-miss falls back seamlessly; speed pref
+affects playbackRate; offline replay of an already-heard clip works; total
+assets size reported and ≤ 25MB; publishing approval already granted by the
+user (2026-07-08) — recorded here and in COORDINATION.md.
 
 ---
 

@@ -211,6 +211,7 @@ const Store = {
       awardedStars = stars - oldStars;
     }
 
+    const wasQualifying = typeof Curse !== 'undefined' ? Curse.isQualifyingChapter(id, subject, levelId, oldStars) : false;
     this.completeLevel(id, subject, levelId, stars);
     const xp = awardedCoins > 0 ? Math.max(10, awardedCoins * 2) : 5;
     this.addReward(id, { coins: awardedCoins, stars: awardedStars, xp });
@@ -227,6 +228,14 @@ const Store = {
       firstTime
     });
     this.stampHistoryTrail(journeyEvent);
+
+    if (typeof Curse !== 'undefined') {
+      if (extra.wrong >= 3) {
+        Curse.checkMentorPrompt(id, extra.wrong, subject, levelId);
+      }
+      const problemCount = extra.total || 12;
+      Curse.onChapterCompleted(id, subject, levelId, oldStars, problemCount, wasQualifying);
+    }
 
     return {
       coins: awardedCoins,
@@ -335,6 +344,11 @@ const Store = {
     p.lastAttemptSubject = subject;
     p.lastAttemptLevelId = levelId;
     this.updatePlayer(id, p);
+    if (typeof Curse !== 'undefined') {
+      if (wrong >= 3) {
+        Curse.checkMentorPrompt(id, wrong, subject, levelId);
+      }
+    }
     return p.attemptStats[key];
   },
 
@@ -390,10 +404,16 @@ const Store = {
     if (success) {
       p.streak = (p.streak || 0) + 1;
       p.bestStreak = Math.max(p.bestStreak || 0, p.streak);
+      p.consecutiveWrongs = 0;
+      this.updatePlayer(id, p);
     } else {
       p.streak = 0;
+      p.consecutiveWrongs = (p.consecutiveWrongs || 0) + 1;
+      this.updatePlayer(id, p);
+      if (typeof Curse !== 'undefined' && p.consecutiveWrongs >= 3 && p.consecutiveWrongs % 3 === 0) {
+        Curse.checkMentorPrompt(id, p.consecutiveWrongs);
+      }
     }
-    this.updatePlayer(id, p);
     return p;
   },
 

@@ -41,6 +41,7 @@
     </header>
 
     <p class="park-banner" id="park-banner"></p>
+    <div id="curse-card-home" class="mission-card-container"></div>
     <div id="mission-card-home" class="mission-card-container"></div>
     <div class="puppy-yard" id="puppy-yard"></div>
 
@@ -89,8 +90,6 @@
         <span class="play-sub">Lots of mini games!</span>
       </button>
     </div>
-    <h2 class="section-label">📚 School Subjects</h2>
-    <div class="subject-grid" id="subject-grid"></div>
   </section>
 
   <!-- Puppy Mall -->
@@ -129,48 +128,6 @@
       </header>
       <div id="minigame-body"></div>
     </div>
-  </section>
-
-  <!-- Subject Hub -->
-  <section id="screen-subject-hub" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" id="hub-back">← Back</button>
-      <h2 id="hub-title">Subject Hub</h2>
-    </header>
-    <p id="hub-desc" class="game-instruction"></p>
-    <div class="hub-options" id="hub-options"></div>
-  </section>
-
-  <!-- Quick Quest -->
-  <section id="screen-quick-quest" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" id="quest-back">← Back</button>
-      <h2 id="quick-quest-title">Quick Quest</h2>
-    </header>
-    <div id="quick-quest-body" class="game-area"></div>
-  </section>
-
-  <!-- Chapters -->
-  <section id="screen-chapters" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="play">← Back</button>
-      <h2 id="chapters-title">Chapters</h2>
-    </header>
-    <div id="chapter-list" class="level-picker"></div>
-  </section>
-
-  <!-- Chapter -->
-  <section id="screen-chapter" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="chapters">← Back</button>
-      <h2 id="chapter-title">Chapter</h2>
-    </header>
-    <div class="tab-bar">
-      <button class="tab-btn active btn-big" data-tab="notes" id="tab-notes">📖 Notes</button>
-      <button class="tab-btn btn-big" data-tab="quiz" id="tab-quiz">🎯 Quiz</button>
-    </div>
-    <div id="chapter-content" class="notes-panel"></div>
-    <div id="chapter-quiz" class="game-area hidden"></div>
   </section>
 
   <!-- Math -->
@@ -240,6 +197,15 @@
     </div>
   </div>
 
+  <!-- Princess Rescue / Crystal Curse -->
+  <section id="screen-curse" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" data-back="home">← Park</button>
+      <h2>👸 The Crystal Curse 🧊</h2>
+    </header>
+    <div id="curse-content" class="curse-content"></div>
+  </section>
+
   <script src="js/data.js"></script>
   <script src="js/puppies.js"></script>
   <script src="js/mall.js"></script>
@@ -250,13 +216,13 @@
   <script src="js/minigames.js"></script>
   <script src="js/extras.js"></script>
   <script src="js/parent.js"></script>
-  <script src="js/learn.js"></script>
   <script src="js/mathbook.js"></script>
   <script src="js/english.js"></script>
   <script src="js/englishbook.js"></script>
   <script src="js/hindibook.js"></script>
   <script src="js/subjectbook.js"></script>
   <script src="js/coach.js"></script>
+  <script src="js/curse.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

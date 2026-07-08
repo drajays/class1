@@ -201,6 +201,23 @@ const Parent = {
         ${timelineHtml}
       </div>
 
+      <div class="parent-section">
+        <h3>👑 Royal Blessings (Princess Rescue Rewards)</h3>
+        <p class="parent-sub">Set small rewards Advaita receives when she rescues a frozen Princess by mastering tricky/new topics!</p>
+        <div id="blessings-list">
+          ${(p.blessings || ['Special Weekend Treat 🍦', 'Choose Tonight’s Bedtime Story 📖', 'Movie Night Pick 🎬']).map((b, idx) => `
+            <div class="parent-item" style="justify-content: space-between;">
+              <span>📜 ${b}</span>
+              <button class="btn-sm btn-fun orange btn-del-blessing" data-idx="${idx}">Remove</button>
+            </div>
+          `).join('')}
+        </div>
+        <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+          <input type="text" id="input-new-blessing" placeholder="Add a new Royal Blessing..." style="flex:1; padding: 0.5rem; border-radius: 8px; border: 1px solid #ccc;">
+          <button class="btn-fun green btn-sm" id="btn-add-blessing">Add</button>
+        </div>
+      </div>
+
       <h3>💡 Try at home today</h3>
       <div class="nudge-list">${nudges.map((n) => `<div class="nudge-card">${n}</div>`).join('')}</div>
       <h3>📊 Recent activity</h3>
@@ -217,5 +234,27 @@ const Parent = {
       <button class="btn-fun green btn-big" id="btn-print-cert">🖨️ Print Certificate</button>
     `;
     document.getElementById('btn-print-cert')?.addEventListener('click', () => window.print());
+
+    document.getElementById('btn-add-blessing')?.addEventListener('click', () => {
+      const inp = document.getElementById('input-new-blessing');
+      if (inp && inp.value.trim()) {
+        const p = Store.getPlayer(App.playerId);
+        if (!p.blessings) p.blessings = ['Special Weekend Treat 🍦', 'Choose Tonight’s Bedtime Story 📖', 'Movie Night Pick 🎬'];
+        p.blessings.push(inp.value.trim());
+        Store.updatePlayer(App.playerId, p);
+        this.render();
+      }
+    });
+
+    el.querySelectorAll('.btn-del-blessing').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const idx = Number(btn.dataset.idx);
+        const p = Store.getPlayer(App.playerId);
+        if (!p.blessings) p.blessings = ['Special Weekend Treat 🍦', 'Choose Tonight’s Bedtime Story 📖', 'Movie Night Pick 🎬'];
+        p.blessings.splice(idx, 1);
+        Store.updatePlayer(App.playerId, p);
+        this.render();
+      });
+    });
   },
 };
