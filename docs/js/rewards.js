@@ -34,13 +34,14 @@ const Rewards = {
     }
   },
 
-  showPopup({ emoji, title, text, onOk }) {
+  showPopup({ emoji, title, text, onOk, btnText = 'OK' }) {
     const pop = document.getElementById('reward-popup');
     document.getElementById('reward-emoji').textContent = emoji;
     document.getElementById('reward-title').textContent = title;
     document.getElementById('reward-text').textContent = text;
     pop.classList.remove('hidden');
     const btn = document.getElementById('reward-ok');
+    btn.textContent = btnText;
     const handler = () => {
       pop.classList.add('hidden');
       btn.removeEventListener('click', handler);

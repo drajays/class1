@@ -245,7 +245,7 @@ h1 { font-size: clamp(1.5rem, 4vw, 2rem); color: var(--primary); font-weight: 80
   font-family: inherit; text-align: left; width: 100%;
 }
 .level-card:hover { border-color: var(--primary); transform: translateY(-2px); }
-.level-card.locked { opacity: .5; pointer-events: none; filter: grayscale(.4); }
+.level-card.locked { opacity: .6; filter: grayscale(.4); cursor: pointer; }
 .level-card.done { border-color: var(--green); background: linear-gradient(135deg, #fff, #e9fff6); }
 .level-emoji { font-size: 30px; }
 .level-info { flex: 1; }
@@ -659,6 +659,83 @@ h1 { font-size: clamp(1.5rem, 4vw, 2rem); color: var(--primary); font-weight: 80
 .activity-list { padding-left: 18px; font-size: .85rem; font-weight: 600; color: #4b5563; }
 .activity-list li { margin-bottom: 6px; }
 
+/* Parent Dashboard Phase 10 sections */
+.parent-section {
+  background: #fff;
+  border: 2px solid #e9e7ff;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+.parent-section h3 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.parent-group-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #4f46e5;
+  text-transform: uppercase;
+  margin: 8px 0 4px 0;
+}
+.parent-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: #f8f9ff;
+  margin-bottom: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.parent-item.struggle {
+  background: #fff1f2;
+  border-left: 4px solid #f43f5e;
+}
+.parent-item.avoid {
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+}
+.parent-item.good {
+  background: #f0fdf4;
+  border-left: 4px solid #10b981;
+}
+.parent-item-badge {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: #e0e7ff;
+  color: #3730a3;
+  font-weight: 700;
+}
+.parent-timeline-day {
+  margin-bottom: 12px;
+}
+.parent-timeline-date {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+.parent-timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.parent-timeline-list li {
+  font-size: 0.84rem;
+  padding: 5px 8px;
+  background: #f9fafb;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn-fun.blue { background: linear-gradient(135deg, #38bdf8, #0284c7); }
 .sub-gk { background: linear-gradient(135deg, #0891b2, #38bdf8); }
 .sub-art { background: linear-gradient(135deg, #f43f5e, #f59e0b); }
@@ -1020,4 +1097,91 @@ h1 { font-size: clamp(1.5rem, 4vw, 2rem); color: var(--primary); font-weight: 80
   .mb-options { grid-template-columns: 1fr; max-width: 440px; }
   .game-area { overflow-x: hidden; }
   .game-header { flex-wrap: wrap; }
+}
+
+/* Phase 9 Today's Mission Card */
+.mission-card-container {
+  max-width: 680px;
+  margin: 12px auto;
+  padding: 0 16px;
+}
+.mission-card {
+  background: linear-gradient(135deg, #FFF8E7 0%, #FFF3D4 100%);
+  border: 3px solid #FFBA08;
+  border-radius: 20px;
+  padding: 14px 18px;
+  box-shadow: 0 6px 18px rgba(255, 186, 8, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.mission-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(255, 186, 8, 0.35);
+}
+.mission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mission-badge {
+  background: #FF9F1C;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.mission-level {
+  background: #FFF;
+  color: #D97706;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 3px 10px;
+  border-radius: 12px;
+  border: 1.5px solid #FDE68A;
+}
+.mission-body {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.mission-icon {
+  font-size: 2.4rem;
+  background: #FFF;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.mission-info {
+  flex: 1;
+  min-width: 160px;
+  text-align: left;
+}
+.mission-subject {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #92400E;
+  letter-spacing: 0.8px;
+  margin-bottom: 2px;
+}
+.mission-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #1E293B;
+  line-height: 1.25;
+}
+.mission-btn {
+  white-space: nowrap;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 800;
 }

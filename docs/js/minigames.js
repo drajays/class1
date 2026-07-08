@@ -63,15 +63,22 @@ const MiniGames = {
 
   win(coins = 10, subject = 'general') {
     Store.trackAnswer(this.playerId, subject, true);
-    Store.addReward(this.playerId, { coins, xp: 12 });
+    const res = Store.awardFun(this.playerId, { coins, xp: 12, label: 'Minigame' });
     Store.recordMinigameWin(this.playerId);
     Pet.onLessonComplete(this.playerId);
     Sounds.cheer();
     Rewards.confetti(40);
+    let title = 'You did it!';
+    let text = `+${res.coins} coins! Your pet is happy too!`;
+    if (res.capped) {
+      title = 'Practice Superstar! 🌟';
+      text = `Fun game superstar! The puppies are full for today — feed them with something NEW! 🦴`;
+      Speech.speak("Fun game superstar! The puppies are full for today — feed them with something new!");
+    }
     Rewards.showPopup({
       emoji: '🏆',
-      title: 'You did it!',
-      text: `+${coins} coins! Your pet is happy too!`,
+      title,
+      text,
       onOk: () => this.back(),
     });
     App.refreshStats();
@@ -595,8 +602,13 @@ const MiniGames = {
       wheel.style.transform = `rotate(${1440 + Math.random() * 360}deg)`;
       Sounds.chest();
       setTimeout(() => {
-        Store.addReward(this.playerId, { coins, xp: 8 });
-        document.getElementById('spin-result').textContent = `You won ${coins} coins!`;
+        const res = Store.awardFun(this.playerId, { coins, xp: 8, label: 'Prize Wheel' });
+        if (res.capped) {
+          document.getElementById('spin-result').textContent = `Fun superstar! The puppies are full for today (XP only)!`;
+          Speech.speak("Fun superstar! The puppies are full for today — feed them with something new!");
+        } else {
+          document.getElementById('spin-result').textContent = `You won ${res.coins} coins!`;
+        }
         Rewards.confetti(30);
         App.refreshStats();
       }, 2800);

@@ -39,20 +39,29 @@ const MathBook = {
     const picker = document.getElementById('math-level-picker');
     picker.classList.remove('hidden');
     const chs = this.data.chapters;
-    // All chapters are always open — Advaita can pick any lesson, in any order.
     picker.innerHTML = chs.map((c, i) => {
       const stars = Store.getLevelStars(this.playerId, 'math', c.id);
+      const isLocked = (i > 0) && (Store.getLevelStars(this.playerId, 'math', chs[i - 1].id) === 0);
       return `
-        <button class="level-card ${stars ? 'done' : ''}" data-id="${c.id}">
+        <button class="level-card ${stars ? 'done' : ''} ${isLocked ? 'locked' : ''}" data-id="${c.id}" data-locked="${isLocked ? '1' : ''}">
           <span class="level-emoji">${c.icon}</span>
           <div class="level-info"><h3>${i + 1}. ${c.title}</h3><p>${c.problems.length} problems</p></div>
-          <span class="level-stars">${stars ? '⭐'.repeat(stars) : '▶️'}</span>
+          <span class="level-stars">${isLocked ? '🔒' : (stars ? '⭐'.repeat(stars) : '▶️')}</span>
         </button>`;
     }).join('');
     picker.querySelectorAll('.level-card').forEach((card) => {
-      card.addEventListener('click', () => { Sounds.tap(); this.startChapter(card.dataset.id); });
+      card.addEventListener('click', () => {
+        if (card.dataset.locked === '1') {
+          Sounds.tap();
+          Speech.speak("Finish the one before first! 🐾");
+          Rewards.showToast("Finish the one before first! 🐾");
+          return;
+        }
+        Sounds.tap();
+        this.startChapter(card.dataset.id);
+      });
     });
-    Speech.navSay('Pick any math lesson you like! They are all open.');
+    Speech.navSay('Welcome to Math! Pick a lesson.');
   },
 
   startChapter(id) {
@@ -126,12 +135,17 @@ const MathBook = {
       Rewards.confetti(this.usedHelp ? 14 : 26);
       const first = this.triesThisProblem === 0 && !this.usedHelp;
       const coins = first ? 10 : 4;
-      Store.addReward(this.playerId, { coins, stars: first ? 1 : 0, xp: 10 });
+      const solved = Store.getLevelStars(this.playerId, 'math', this.chapter.id) > 0;
+      if (!solved) {
+        Store.addReward(this.playerId, { coins, stars: first ? 1 : 0, xp: 10 });
+      } else {
+        Store.addReward(this.playerId, { coins: 0, stars: 0, xp: 5 });
+      }
       Store.bumpStreak(this.playerId, true);
       this.correctCount += first ? 1 : 0;
       const cheers = ['Pawsome! 🐾', "You're a math champion! 🏆", 'Brilliant! ⭐', 'Woohoo! 🎉', 'Top of the class! 🌟', 'The puppies are cheering! 🐶'];
       const cheer = first ? cheers[Math.floor(Math.random() * cheers.length)] : 'You fixed it! 💪';
-      Rewards.showToast(`${cheer} +${coins} 🪙`);
+      Rewards.showToast(!solved ? `${cheer} +${coins} 🪙` : `${cheer} (Practice mode)`);
       App.refreshStats();
       setTimeout(() => { this.idx++; this.renderProblem(); }, 1100);
     } else {
@@ -187,17 +201,41 @@ const MathBook = {
     let stars = 1;
     if (ratio >= 0.6) stars = 2;
     if (ratio >= 0.9) stars = 3;
-    Store.completeLevel(this.playerId, 'math', this.chapter.id, stars);
-    Store.addReward(this.playerId, { coins: stars * 10, xp: 20 });
+    const res = Store.awardLevel(this.playerId, 'math', this.chapter.id, stars, stars * 10, {
+      title: this.chapter.title,
+      level: this.chapter.level || 1,
+      wrong: total - this.correctCount
+    });
     Store.logActivity(this.playerId, `Math Book: ${this.chapter.title} — ${stars}⭐`);
     Store.checkBadges(this.playerId);
     Sounds.cheer();
     Rewards.confetti(60);
+
+    let text = `${'⭐'.repeat(stars)} You solved ${this.chapter.title}! +${res.coins} 🪙 for the puppies!`;
+    let title = 'Lesson Complete!';
+    let btnText = 'OK';
+    let onOk = () => { this.showChapters(); App.refreshStats(); };
+
+    if (!res.firstTime && !res.improved) {
+      title = 'Practice Superstar! 🌟';
+      text = `${'⭐'.repeat(stars)} Practice superstar! The puppies are full — feed them with something NEW! 🦴`;
+      Speech.speak("Practice superstar! The puppies are full — feed them with something new!");
+      const unsolved = (this.data?.chapters || []).find(c => Store.getLevelStars(this.playerId, 'math', c.id) === 0);
+      if (unsolved) {
+        btnText = 'Next mission ➜';
+        onOk = () => { this.startChapter(unsolved.id); App.refreshStats(); };
+      }
+    } else if (res.improved) {
+      title = 'New Star Record! 🌟';
+      text = `${'⭐'.repeat(stars)} Amazing improvement! +${res.coins} 🪙 difference earned for the puppies!`;
+    }
+
     Rewards.showPopup({
       emoji: stars === 3 ? '💎' : '🏆',
-      title: 'Lesson Complete!',
-      text: `${'⭐'.repeat(stars)} You solved ${this.chapter.title}! +${stars * 10} 🪙 for the puppies!`,
-      onOk: () => { this.showChapters(); App.refreshStats(); },
+      title,
+      text,
+      onOk,
+      btnText,
     });
   },
 

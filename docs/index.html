@@ -41,6 +41,7 @@
     </header>
 
     <p class="park-banner" id="park-banner"></p>
+    <div id="mission-card-home" class="mission-card-container"></div>
     <div class="puppy-yard" id="puppy-yard"></div>
 
     <div class="home-actions big-home-actions">
@@ -56,6 +57,7 @@
       <button class="btn-back btn-big" data-back="home">← Park</button>
       <h2>▶️ Play &amp; Earn 🪙</h2>
     </header>
+    <div id="mission-card-play" class="mission-card-container"></div>
     <h2 class="section-label">🎮 Quick Play</h2>
     <div class="play-grid">
       <button class="play-card feature math-world" data-go="math">
@@ -69,6 +71,18 @@
       <button class="play-card hindi-world" data-go="hindi">
         <span class="play-icon">🕉️</span><span class="play-title">हिंदी अक्षर</span>
         <span class="play-sub" id="hindi-progress"></span>
+      </button>
+      <button class="play-card" data-go="evs">
+        <span class="play-icon">🌿</span><span class="play-title">EVS Book</span>
+        <span class="play-sub" id="evs-progress"></span>
+      </button>
+      <button class="play-card" data-go="sanskrit">
+        <span class="play-icon">🪔</span><span class="play-title">Sanskrit Book</span>
+        <span class="play-sub" id="sanskrit-progress"></span>
+      </button>
+      <button class="play-card" data-go="computer">
+        <span class="play-icon">🖥️</span><span class="play-title">Computer Book</span>
+        <span class="play-sub" id="computer-progress"></span>
       </button>
       <button class="play-card" data-go="minigames">
         <span class="play-icon">🎮</span><span class="play-title">Fun Games</span>
@@ -188,6 +202,16 @@
     <div id="hindi-body"></div>
   </section>
 
+  <!-- Subject Book (EVS, Sanskrit, Computer) -->
+  <section id="screen-subjectbook" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" data-back="play">← Back</button>
+      <h2 id="sb-header-title">📘 Subject Book</h2>
+    </header>
+    <div id="sb-level-picker" class="level-picker"></div>
+    <div id="sb-game" class="game-area hidden"></div>
+  </section>
+
   <!-- Parent modal -->
   <div id="parent-overlay" class="modal-overlay">
     <div class="modal-box parent-modal">
@@ -231,6 +255,8 @@
   <script src="js/english.js"></script>
   <script src="js/englishbook.js"></script>
   <script src="js/hindibook.js"></script>
+  <script src="js/subjectbook.js"></script>
+  <script src="js/coach.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

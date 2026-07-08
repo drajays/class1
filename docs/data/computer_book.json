@@ -1,0 +1,576 @@
+{
+  "subject": "computer",
+  "title": "Computer Book",
+  "icon": "🖥️",
+  "lang": "en-IN",
+  "chapters": [
+    {
+      "id": "comp_00_intro",
+      "title": "Explore Computers",
+      "icon": "🖥️",
+      "concept": {
+        "intro": [
+          "Welcome to the wonderful world of computers!",
+          "A computer is a smart electronic machine that helps us every day.",
+          "It makes our work very easy, interesting, and fun to do."
+        ],
+        "tip": "Machines are man-made things that make our everyday work easier and faster!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What is a computer?",
+          "options": [
+            "🖥️ A smart electronic machine",
+            "🌳 A natural green forest tree with fruits",
+            "🐕 A wild farm animal"
+          ],
+          "a": "🖥️ A smart electronic machine",
+          "why": "A computer is a man-made electronic machine that helps us do many kinds of work easily."
+        },
+        {
+          "skill": "pick",
+          "q": "What power does a computer need to start and work?",
+          "options": [
+            "⚡ Electrical energy or electricity",
+            "💧 Clean river water or rainwater from heavy clouds",
+            "🔥 Wood campfires and dry leaves"
+          ],
+          "a": "⚡ Electrical energy or electricity",
+          "why": "Computers run on electricity, which gives them electrical power to start and work."
+        },
+        {
+          "skill": "pick",
+          "q": "Which of these is a natural thing, NOT a man-made machine?",
+          "options": [
+            "🌸 Beautiful blooming garden flowers",
+            "📱 Smartphone and touchscreen tablet computers",
+            "🚗 Motor cars and school buses"
+          ],
+          "a": "🌸 Beautiful blooming garden flowers",
+          "why": "Flowers, trees, and animals are natural things made by nature, while computers and cars are man-made machines."
+        },
+        {
+          "skill": "pick",
+          "q": "Why do people use machines like computers and calculators?",
+          "options": [
+            "⏱️ They make our work easier and much faster",
+            "😴 They make us sleep all morning and afternoon in class",
+            "🎮 They are only used for playing computer video games"
+          ],
+          "a": "⏱️ They make our work easier and much faster",
+          "why": "Machines are invented by humans to save time and make difficult tasks much easier to finish."
+        },
+        {
+          "skill": "pick",
+          "q": "Can a computer help us learn new school lessons and facts?",
+          "options": [
+            "✔️ Yes, it helps us learn many amazing subjects",
+            "❌ No, a computer can never teach us anything at all",
+            "🚫 No, computers are only used for sleeping"
+          ],
+          "a": "✔️ Yes, it helps us learn many amazing subjects",
+          "why": "We can use computers to watch educational videos, read stories, and practice school lessons!"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "id": "comp_01_my_friend",
+      "title": "Computer - My Friend",
+      "icon": "🤝",
+      "concept": {
+        "intro": [
+          "Computer! Computer! Be my friend,",
+          "Computer! Computer! Let me write my name,",
+          "Computer! Computer! Let me play a game,",
+          "Computer! Computer! Let me draw the Sun and have some fun!"
+        ],
+        "tip": "Just like our school friends, a computer plays games with us and helps us learn!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "How can a computer be like a friendly companion to us?",
+          "options": [
+            "🎨 We can play fun games and draw pictures together",
+            "📚 We can read story books and practice typing words",
+            "⚽ We can kick it around the school football playground"
+          ],
+          "a": "🎨 We can play fun games and draw pictures together",
+          "why": "We can have lots of fun on a computer by drawing pictures, listening to songs, and playing games!"
+        },
+        {
+          "skill": "pick",
+          "q": "What does the friendship rhyme say we can draw on a computer screen?",
+          "options": [
+            "☀️ The bright yellow Sun in the sky",
+            "🪨 Heavy gray river boulders and rocks",
+            "🗑️ Dirty street wrappers and garbage bins"
+          ],
+          "a": "☀️ The bright yellow Sun in the sky",
+          "why": "The poem says: 'Computer! Let me draw the Sun, Computer! Let me have some fun.'"
+        },
+        {
+          "skill": "pick",
+          "q": "What can you type on the computer using the keyboard letters?",
+          "options": [
+            "✍️ Your own name and friendly words",
+            "🍕 Hot cheese pizza and garlic bread",
+            "🧦 Woolen winter sweaters and gym socks"
+          ],
+          "a": "✍️ Your own name and friendly words",
+          "why": "The rhyme says: 'Computer! Let me write my name!' We use letter keys to type words and names."
+        },
+        {
+          "skill": "pick",
+          "q": "When we finish our homework, what fun activity can we do on the computer?",
+          "options": [
+            "🎮 Play colorful and enjoyable video games",
+            "🌧️ Stand outside in freezing cold winter rain showers",
+            "⛏️ Dig deep holes in the garden soil"
+          ],
+          "a": "🎮 Play colorful and enjoyable video games",
+          "why": "Computers have many entertaining games and puzzles that children can play after finishing their studies."
+        },
+        {
+          "skill": "pick",
+          "q": "Who else can be our good friend besides our classmates?",
+          "options": [
+            "🖥️ A helpful and friendly smart computer",
+            "🐕 A friendly pet dog or cat in our house",
+            "💥 Sharp scissors and broken glass bottles"
+          ],
+          "a": "🖥️ A helpful and friendly smart computer",
+          "why": "A smart computer is called our friend because it helps us learn, draw, and enjoy our time safely."
+        },
+        {
+          "skill": "pick",
+          "q": "According to the song, when will our friendship with the computer end?",
+          "options": [
+            "♾️ Our friendship will have no end at all",
+            "⏰ It will end tomorrow morning when we arrive at school",
+            "❄️ It will end as soon as winter arrives"
+          ],
+          "a": "♾️ Our friendship will have no end at all",
+          "why": "The joyful rhyme sings: 'Computer! Computer! Our friendship will have no end!'"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "id": "comp_02_smart_machine",
+      "title": "A Smart Machine",
+      "icon": "⚡",
+      "concept": {
+        "intro": [
+          "A computer is called a smart machine because it is very special.",
+          "I never get tired. I never make mistakes.",
+          "I work very fast and store lots of songs, movies, and pictures!"
+        ],
+        "tip": "Unlike humans who get tired and need rest, a smart machine can work continuously without getting weary!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Why is a computer known as a 'smart' machine?",
+          "options": [
+            "⚡ It works very fast and never makes simple mistakes",
+            "🧠 It can think on its own like a human brain without electricity",
+            "🍔 It eats tasty hamburgers and drinks fruit juice"
+          ],
+          "a": "⚡ It works very fast and never makes simple mistakes",
+          "why": "A computer is smart because it solves math sums quickly, works accurately without errors, and remembers information."
+        },
+        {
+          "skill": "pick",
+          "q": "What happens when a computer works for many hours without stopping?",
+          "options": [
+            "💪 It never gets tired or sleepy like humans do",
+            "🔌 It needs to rest and cool down after every single sum",
+            "😭 It starts crying and asking for a holiday"
+          ],
+          "a": "💪 It never gets tired or sleepy like humans do",
+          "why": "Machines do not feel tiredness, fatigue, or sleepiness, so a computer can work continuously."
+        },
+        {
+          "skill": "pick",
+          "q": "Does a smart computer make calculation mistakes when solving sums?",
+          "options": [
+            "❌ No, it calculates sums accurately without errors",
+            "✔️ Yes, it always forgets the correct calculation numbers",
+            "🎲 Yes, it guesses answers randomly every time"
+          ],
+          "a": "❌ No, it calculates sums accurately without errors",
+          "why": "A computer says: 'I never make mistakes.' It calculates addition and subtraction with complete accuracy."
+        },
+        {
+          "skill": "pick",
+          "q": "How fast does a computer complete the tasks you give it?",
+          "options": [
+            "🚀 It works extremely fast in just a few seconds",
+            "🐌 It works very slowly like a crawling garden snail",
+            "🐢 It takes many years to solve one simple sum"
+          ],
+          "a": "🚀 It works extremely fast in just a few seconds",
+          "why": "Computers process information at super speed, finishing tasks in the blink of an eye."
+        },
+        {
+          "skill": "pick",
+          "q": "What kind of wonderful things can a computer store in its memory?",
+          "options": [
+            "📁 Thousands of pictures, story books, songs, and movies",
+            "🍎 Fresh green apples, sweet bananas, and ripe mangoes",
+            "🧦 Clean school uniforms, shoes, and woolen socks"
+          ],
+          "a": "📁 Thousands of pictures, story books, songs, and movies",
+          "why": "A computer has a large memory where it stores digital files like photos, music, videos, and documents."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the meaning of the word 'machine' in our study lesson?",
+          "options": [
+            "🛠️ A man-made device that makes human work easy",
+            "🌳 A tall forest tree with green leaves and branches",
+            "🐕 A friendly domestic farm animal that guards houses"
+          ],
+          "a": "🛠️ A man-made device that makes human work easy",
+          "why": "In our Word Master vocabulary box, a machine is defined as a man-made thing that helps us do work easily."
+        }
+      ],
+      "level": 2
+    },
+    {
+      "id": "comp_03_handy_machine",
+      "title": "A Handy Machine",
+      "icon": "🛠️",
+      "concept": {
+        "intro": [
+          "A computer is a handy and useful machine for everyone.",
+          "We use it to type letters, listen to music, and watch cartoons.",
+          "Our family uses it to book tickets, check news, and send emails!"
+        ],
+        "tip": "If we make a typing mistake, our computer friend easily erases and corrects it for us!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What can you do on a computer when you want to listen to sounds?",
+          "options": [
+            "🎧 Play melodious music, rhymes, and audio stories",
+            "📺 Show animated cartoons and educational video lessons",
+            "🧺 Wash dirty school uniforms and cotton socks"
+          ],
+          "a": "🎧 Play melodious music, rhymes, and audio stories",
+          "why": "We can play audio files on a computer and listen to wonderful music and rhymes using speakers or headphones."
+        },
+        {
+          "skill": "pick",
+          "q": "How can a computer help you with your school homework and studies?",
+          "options": [
+            "📚 You can attend online classes and research new facts",
+            "✍️ You can practice writing English words and math numbers",
+            "🪓 You can cut forest wood and build garden benches"
+          ],
+          "a": "📚 You can attend online classes and research new facts",
+          "why": "Computers allow children to join online video classes, read educational books, and solve homework questions."
+        },
+        {
+          "skill": "pick",
+          "q": "What can your parents use a computer for at home or office?",
+          "options": [
+            "📧 To type letters, send emails, and check bank accounts",
+            "📰 To read daily online news and watch video reports",
+            "🏃 To run races across the school sports stadium"
+          ],
+          "a": "📧 To type letters, send emails, and check bank accounts",
+          "why": "Adults use computers to write office reports, communicate via emails, and manage family finances securely."
+        },
+        {
+          "skill": "pick",
+          "q": "If you make a spelling error while typing on the computer screen, what happens?",
+          "options": [
+            "🔙 You can easily erase and correct it using the backspace key",
+            "😭 The computer screen breaks into pieces permanently",
+            "🗑️ You have to throw away the computer and buy a new one"
+          ],
+          "a": "🔙 You can easily erase and correct it using the backspace key",
+          "why": "Unlike writing with ink on paper, typing mistakes on a computer can be instantly erased and corrected!"
+        },
+        {
+          "skill": "pick",
+          "q": "Can we watch animated cartoons and children's movies on a computer screen?",
+          "options": [
+            "🍿 Yes, we can watch colorful animated movies and videos",
+            "❌ No, computers only display static black and white numbers",
+            "🚫 No, video screens are never allowed on computers"
+          ],
+          "a": "🍿 Yes, we can watch colorful animated movies and videos",
+          "why": "A computer screen displays bright colors and moving pictures, making it great for watching cartoons and movies."
+        },
+        {
+          "skill": "pick",
+          "q": "Why do people say the computer is a 'handy' helper?",
+          "options": [
+            "✨ Because it assists us in solving many daily tasks conveniently",
+            "🧤 Because it wears woolen winter gloves on its hands",
+            "💼 Because it carries a very heavy school bag on its shoulders"
+          ],
+          "a": "✨ Because it assists us in solving many daily tasks conveniently",
+          "why": "'Handy' means convenient and useful. A computer is handy because it performs multiple tasks in one place."
+        }
+      ],
+      "level": 2
+    },
+    {
+      "id": "comp_04_know_my_friend",
+      "title": "Places and Types",
+      "icon": "🏢",
+      "concept": {
+        "intro": [
+          "Computers are used everywhere around us!",
+          "We see them in schools, banks, shops, airports, and hospitals.",
+          "There are different types: Desktop, Laptop, Tablet, and Smartphone."
+        ],
+        "tip": "A desktop stays on a desk, while a laptop is light and can be carried in your lap!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Where do teachers and students use computers for reading and learning?",
+          "options": [
+            "🏫 In school classrooms and computer laboratories",
+            "📚 In school playgrounds during football matches",
+            "🍽️ In school canteens while eating lunch with classmates"
+          ],
+          "a": "🏫 In school classrooms and computer laboratories",
+          "why": "Schools have computer labs where students learn typing, drawing, and programming with their teachers."
+        },
+        {
+          "skill": "pick",
+          "q": "Where do officers use computers to keep money savings and accounts safe?",
+          "options": [
+            "🏦 In banks to manage customer accounts and deposits",
+            "🏥 In hospital operating rooms during surgeries",
+            "✈️ On airport runways while guiding airplanes"
+          ],
+          "a": "🏦 In banks to manage customer accounts and deposits",
+          "why": "Bank officers use computers to record money deposits, withdrawals, and customer details securely."
+        },
+        {
+          "skill": "pick",
+          "q": "Which type of computer is big and heavy, and is kept fixed on a table or desk?",
+          "options": [
+            "🖥️ Desktop computer that stays on a study table",
+            "📱 Tiny touchscreen smartphone that fits inside a shirt pocket",
+            "⌚ Smart wrist watch strapped around your hand"
+          ],
+          "a": "🖥️ Desktop computer that stays on a study table",
+          "why": "A 'Desktop' is designed to sit on top of a desk or table and is not meant to be carried around constantly."
+        },
+        {
+          "skill": "pick",
+          "q": "Which portable computer is thin and light enough to carry around and place on your lap?",
+          "options": [
+            "💻 Laptop computer that folds shut like a notebook",
+            "🏢 Giant supercomputer filling an entire office room",
+            "📺 Heavy television set mounted on a living room wall"
+          ],
+          "a": "💻 Laptop computer that folds shut like a notebook",
+          "why": "A 'Laptop' is a portable, battery-powered computer that folds open and can rest comfortably on your lap."
+        },
+        {
+          "skill": "pick",
+          "q": "Why do shopping malls and supermarkets use computers at the billing counter?",
+          "options": [
+            "🧾 To scan item prices quickly and print receipts",
+            "🍳 To cook hot breakfast meals and boil tea for customers",
+            "🧹 To clean store floors and wash glass windows daily"
+          ],
+          "a": "🧾 To scan item prices quickly and print receipts",
+          "why": "Shopkeepers use computers to calculate total billing amounts, print paper receipts, and track store inventory."
+        },
+        {
+          "skill": "pick",
+          "q": "Is a modern touch-screen smartphone also considered a small type of computer?",
+          "options": [
+            "✔️ Yes, smartphones are pocket-sized portable computers",
+            "❌ No, mobile phones are only used for calling, not computing",
+            "🚫 No, touch screens can never be part of a computer"
+          ],
+          "a": "✔️ Yes, smartphones are pocket-sized portable computers",
+          "why": "As noted in our Wisdom Box, smartphones and tablets are small, powerful computers that run apps and games."
+        }
+      ],
+      "level": 3
+    },
+    {
+      "id": "comp_05_connect",
+      "title": "Parts of a Computer",
+      "icon": "⌨️",
+      "concept": {
+        "intro": [
+          "Let us meet the main body parts of our computer friend:",
+          "🖥️ Monitor: Looks like a television screen and shows pictures.",
+          "⌨️ Keyboard: Has keys with letters and numbers for typing.",
+          "🖱️ Mouse: Has buttons and helps us point, click, and draw.",
+          "🧠 CPU: The central brain that does all the thinking and calculation!"
+        ],
+        "tip": "CPU stands for Central Processing Unit — it is the most important brain of the computer!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Which part of the computer looks just like a television screen and displays videos?",
+          "options": [
+            "🖥️ Monitor screen that shows pictures and words",
+            "🖱️ Small computer pointing mouse resting on a mousepad desk",
+            "🖨️ Paper printer generating ink documents"
+          ],
+          "a": "🖥️ Monitor screen that shows pictures and words",
+          "why": "The Monitor is the visual display screen where we see whatever we type, draw, or play on the computer."
+        },
+        {
+          "skill": "pick",
+          "q": "Which important part is known as the central 'brain' of the computer?",
+          "options": [
+            "🧠 CPU (Central Processing Unit) cabinet box",
+            "⌨️ Typing keyboard with alphabet button keys",
+            "🔊 Powerful stereo speakers playing loud background music"
+          ],
+          "a": "🧠 CPU (Central Processing Unit) cabinet box",
+          "why": "The CPU (Central Processing Unit) controls all functions and performs calculations, making it the brain of the machine."
+        },
+        {
+          "skill": "pick",
+          "q": "What part do we use to press letter and number keys to write our name on screen?",
+          "options": [
+            "⌨️ Keyboard with alphabet, number, and spacebar keys",
+            "🖱️ Computer mouse with scroll wheel and buttons",
+            "🎧 Wireless audio headphones worn comfortably over both ears"
+          ],
+          "a": "⌨️ Keyboard with alphabet, number, and spacebar keys",
+          "why": "The Keyboard contains keys for letters (A-Z), numbers (0-9), and symbols used for typing text into the computer."
+        },
+        {
+          "skill": "pick",
+          "q": "Which small computer part fits in our palm and helps us point, click, and select items?",
+          "options": [
+            "🖱️ Computer mouse that moves cursor pointer on screen",
+            "🖨️ Heavy office laser printer loaded with white paper sheets",
+            "🖥️ Large desktop monitor screen displaying cartoons"
+          ],
+          "a": "🖱️ Computer mouse that moves cursor pointer on screen",
+          "why": "The Mouse is a pointing device that moves the arrow cursor on the monitor screen and lets us click on icons."
+        },
+        {
+          "skill": "pick",
+          "q": "If you want to print your beautiful computer drawing onto a real sheet of paper, what machine do you use?",
+          "options": [
+            "🖨️ Printer connected to the computer CPU cabinet",
+            "🖱️ Mouse clicked rapidly on the desk surface",
+            "⌨️ Keyboard spacebar pressed ten times loudly"
+          ],
+          "a": "🖨️ Printer connected to the computer CPU cabinet",
+          "why": "A Printer takes digital images and text from the computer and prints them out onto physical paper sheets."
+        },
+        {
+          "skill": "pick",
+          "q": "Which device is connected to the computer so we can listen to songs and audio stories out loud?",
+          "options": [
+            "🔊 Stereo speakers or audio headphones",
+            "🖥️ High-resolution glass monitor display screen panel",
+            "⌨️ Typing keyboard alphabet key buttons"
+          ],
+          "a": "🔊 Stereo speakers or audio headphones",
+          "why": "Speakers output sound from the computer so everyone in the room can hear music, dialogue, and audio effects."
+        }
+      ],
+      "level": 4
+    },
+    {
+      "id": "comp_06_dos_and_donts",
+      "title": "Do's and Don'ts",
+      "icon": "✅",
+      "concept": {
+        "intro": [
+          "Let us learn the golden rules for using computers safely:",
+          "1. Always keep the computer clean and wipe with a dry cloth.",
+          "2. Press the keyboard keys gently, never hit them hard.",
+          "3. Sit straight in your chair at a safe distance from the screen.",
+          "4. Never eat food or drink water near the computer table!"
+        ],
+        "tip": "Always ask your teacher or parents for permission and help before turning on the computer!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "How should you press the alphabet keys on the computer keyboard?",
+          "options": [
+            "⌨️ Press them gently and softly with your fingers",
+            "⚡ Tap them as hard and fast as possible to save time",
+            "👆 Press two keys together forcefully with one finger"
+          ],
+          "a": "⌨️ Press them gently and softly with your fingers",
+          "why": "Keyboard keys are delicate electronic switches. Pressing them gently keeps them working smoothly for a long time."
+        },
+        {
+          "skill": "pick",
+          "q": "What kind of cloth should Neha use to wipe dust off her computer monitor and CPU?",
+          "options": [
+            "🧹 A clean, soft, and completely dry cotton cloth",
+            "🧽 A wet cloth soaked in water and dish soap",
+            "🧻 A rough paper towel that can scratch the screen"
+          ],
+          "a": "🧹 A clean, soft, and completely dry cotton cloth",
+          "why": "Water and electronic machines do not mix! Always use a dry, soft cloth to clean computers without causing damage."
+        },
+        {
+          "skill": "pick",
+          "q": "Why should we avoid eating sticky sweets or drinking water right near the computer desk?",
+          "options": [
+            "🚫 Spilled water or food crumbs can damage electronic parts",
+            "⌨️ Because food crumbs make the screen shine too brightly",
+            "🐭 Because food smells attract laboratory mice to wires"
+          ],
+          "a": "🚫 Spilled water or food crumbs can damage electronic parts",
+          "why": "Food crumbs can get stuck between keyboard keys, and spilled liquids can cause dangerous electrical short circuits."
+        },
+        {
+          "skill": "pick",
+          "q": "What is the correct posture when you sit in front of a computer screen?",
+          "options": [
+            "🪑 Sit upright with your back straight at a comfortable distance",
+            "🪑 Lean forward closely to see tiny words better on screen",
+            "🪑 Sit backwards in the chair with your feet on the desk"
+          ],
+          "a": "🪑 Sit upright with your back straight at a comfortable distance",
+          "why": "Sitting upright protects your spine and back, and keeping a safe distance protects your eyes from strain."
+        },
+        {
+          "skill": "pick",
+          "q": "Whom should you ask for guidance or help when you want to use the school computer?",
+          "options": [
+            "👩‍🏫 Your school teacher, lab instructor, or parents",
+            "🧒 A younger kindergarten student from another classroom",
+            "🚶 A stranger waiting outside the school gate"
+          ],
+          "a": "👩‍🏫 Your school teacher, lab instructor, or parents",
+          "why": "Teachers and parents guide children on how to switch computers on and off safely and find educational programs."
+        },
+        {
+          "skill": "pick",
+          "q": "When listening to audio stories or songs on the computer, how should Rishi set the sound volume?",
+          "options": [
+            "🔊 Keep the volume at a gentle, comfortable, and safe level",
+            "📢 Turn volume to maximum blast to deafen everyone around you",
+            "🔇 Turn volume completely off so nobody hears anything ever"
+          ],
+          "a": "🔊 Keep the volume at a gentle, comfortable, and safe level",
+          "why": "Listening at a gentle volume is pleasant for your ears and ensures you do not disturb classmates or family members."
+        }
+      ],
+      "level": 5
+    }
+  ]
+}

@@ -2,12 +2,17 @@ const Speech = {
   speak(text, rate = 0.85, lang = 'en-IN') {
     if (!window.speechSynthesis) return;
     window.speechSynthesis.cancel();
+    const voices = speechSynthesis.getVoices();
+    let match = voices.find((v) => v.lang.startsWith(lang.slice(0, 2)));
+    if (!match && voices.length > 0 && lang.startsWith('hi') && typeof HindiBook !== 'undefined' && HindiBook.devToRoman) {
+      text = HindiBook.devToRoman(text);
+      lang = 'en-IN';
+    }
+    if (!match) match = voices.find((v) => v.lang.startsWith('en'));
     const u = new SpeechSynthesisUtterance(text);
     u.rate = rate;
     u.pitch = 1.1;
     u.lang = lang;
-    const voices = speechSynthesis.getVoices();
-    const match = voices.find((v) => v.lang.startsWith(lang.slice(0, 2))) || voices.find((v) => v.lang.startsWith('en'));
     if (match) u.voice = match;
     speechSynthesis.speak(u);
   },

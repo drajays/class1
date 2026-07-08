@@ -92,7 +92,8 @@
           "why": "Cake begins with the c sound, the letter c."
         }
       ],
-      "unit": "🔡 Phonics & Sounds"
+      "unit": "🔡 Phonics & Sounds",
+      "level": 1
     },
     {
       "id": "eng_vowels",
@@ -170,7 +171,8 @@
           "why": "d-o-g: the vowel in the middle is o."
         }
       ],
-      "unit": "🔡 Phonics & Sounds"
+      "unit": "🔡 Phonics & Sounds",
+      "level": 1
     },
     {
       "id": "eng_digraphs",
@@ -252,7 +254,8 @@
           "why": "Fish ends with the sh sound."
         }
       ],
-      "unit": "🔡 Phonics & Sounds"
+      "unit": "🔡 Phonics & Sounds",
+      "level": 1
     },
     {
       "id": "eng_word_families",
@@ -352,7 +355,8 @@
           "why": "b + at makes bat. It is in the -at family with cat and hat."
         }
       ],
-      "unit": "🔡 Phonics & Sounds"
+      "unit": "🔡 Phonics & Sounds",
+      "level": 1
     },
     {
       "id": "eng_rhyming",
@@ -434,7 +438,8 @@
           "why": "frog and dog sound the same at the end: -og."
         }
       ],
-      "unit": "🔡 Phonics & Sounds"
+      "unit": "🔡 Phonics & Sounds",
+      "level": 1
     },
     {
       "id": "eng_rhyming2",
@@ -514,7 +519,8 @@
           "why": "cake and lake end with -ake."
         }
       ],
-      "unit": "🔡 Phonics & Sounds"
+      "unit": "🔡 Phonics & Sounds",
+      "level": 1
     },
     {
       "id": "eng_abc_order",
@@ -590,7 +596,8 @@
           "why": "The alphabet ends with Z."
         }
       ],
-      "unit": "🔡 Phonics & Sounds"
+      "unit": "🔡 Phonics & Sounds",
+      "level": 1
     },
     {
       "id": "eng_build_word",
@@ -636,7 +643,8 @@
           "word": "bus"
         }
       ],
-      "unit": "📖 Spelling & Reading"
+      "unit": "📖 Spelling & Reading",
+      "level": 1
     },
     {
       "id": "eng_spell2",
@@ -682,7 +690,8 @@
           "word": "star"
         }
       ],
-      "unit": "📖 Spelling & Reading"
+      "unit": "📖 Spelling & Reading",
+      "level": 2
     },
     {
       "id": "eng_sight_words",
@@ -762,7 +771,8 @@
           "why": "We are friends. The word are is a sight word."
         }
       ],
-      "unit": "📖 Spelling & Reading"
+      "unit": "📖 Spelling & Reading",
+      "level": 2
     },
     {
       "id": "eng_sight_words2",
@@ -842,7 +852,8 @@
           "why": "You are my friend. You is a sight word."
         }
       ],
-      "unit": "📖 Spelling & Reading"
+      "unit": "📖 Spelling & Reading",
+      "level": 2
     },
     {
       "id": "eng_reading",
@@ -924,7 +935,8 @@
           "why": "The story says Tom has two dogs."
         }
       ],
-      "unit": "📖 Spelling & Reading"
+      "unit": "📖 Spelling & Reading",
+      "level": 2
     },
     {
       "id": "eng_reading2",
@@ -1006,7 +1018,8 @@
           "why": "The story says the duck felt sad."
         }
       ],
-      "unit": "📖 Spelling & Reading"
+      "unit": "📖 Spelling & Reading",
+      "level": 2
     },
     {
       "id": "eng_capitals",
@@ -1079,7 +1092,8 @@
           "why": "Capital letter at the start, full stop at the end."
         }
       ],
-      "unit": "✏️ Sentences & Punctuation"
+      "unit": "✏️ Sentences & Punctuation",
+      "level": 2
     },
     {
       "id": "eng_punctuation2",
@@ -1153,7 +1167,8 @@
           "why": "It tells something, so it ends with a full stop."
         }
       ],
-      "unit": "✏️ Sentences & Punctuation"
+      "unit": "✏️ Sentences & Punctuation",
+      "level": 2
     },
     {
       "id": "eng_question_words",
@@ -1234,7 +1249,8 @@
           "why": "Who asks about a person."
         }
       ],
-      "unit": "✏️ Sentences & Punctuation"
+      "unit": "✏️ Sentences & Punctuation",
+      "level": 3
     },
     {
       "id": "eng_sequencing",
@@ -1309,7 +1325,8 @@
           "why": "The four order words are First, Next, Then, Finally."
         }
       ],
-      "unit": "✏️ Sentences & Punctuation"
+      "unit": "✏️ Sentences & Punctuation",
+      "level": 3
     },
     {
       "id": "eng_articles",
@@ -1407,7 +1424,8 @@
           "why": "Dog starts with d, not a vowel sound, so we say a dog."
         }
       ],
-      "unit": "🏷️ Grammar: Naming Words"
+      "unit": "🏷️ Grammar: Naming Words",
+      "level": 3
     },
     {
       "id": "eng_nouns",
@@ -1483,7 +1501,8 @@
           "why": "Proper nouns always start with a capital letter."
         }
       ],
-      "unit": "🏷️ Grammar: Naming Words"
+      "unit": "🏷️ Grammar: Naming Words",
+      "level": 3
     },
     {
       "id": "eng_plural",
@@ -1571,7 +1590,8 @@
           "why": "A few words stay the same: one sheep, many sheep."
         }
       ],
-      "unit": "🏷️ Grammar: Naming Words"
+      "unit": "🏷️ Grammar: Naming Words",
+      "level": 3
     },
     {
       "id": "eng_plural_es",
@@ -1649,7 +1669,8 @@
           "why": "We add es: watch becomes watches."
         }
       ],
-      "unit": "🏷️ Grammar: Naming Words"
+      "unit": "🏷️ Grammar: Naming Words",
+      "level": 3
     },
     {
       "id": "eng_gender",
@@ -1722,7 +1743,8 @@
           "why": "King is male, so we use the boy word lion."
         }
       ],
-      "unit": "🏷️ Grammar: Naming Words"
+      "unit": "🏷️ Grammar: Naming Words",
+      "level": 3
     },
     {
       "id": "eng_he_she_it",
@@ -1800,7 +1822,8 @@
           "why": "For an animal we use It."
         }
       ],
-      "unit": "🏷️ Grammar: Naming Words"
+      "unit": "🏷️ Grammar: Naming Words",
+      "level": 3
     },
     {
       "id": "eng_pronouns",
@@ -1876,7 +1899,8 @@
           "why": "Many mountains, and far away, so we use Those."
         }
       ],
-      "unit": "🏷️ Grammar: Naming Words"
+      "unit": "🏷️ Grammar: Naming Words",
+      "level": 3
     },
     {
       "id": "eng_verbs",
@@ -1950,7 +1974,8 @@
           "why": "jump is a doing word, so it is the verb."
         }
       ],
-      "unit": "🏃 Grammar: Words in Action"
+      "unit": "🏃 Grammar: Words in Action",
+      "level": 3
     },
     {
       "id": "eng_ing",
@@ -2031,7 +2056,8 @@
           "why": "Happening now, so we use playing."
         }
       ],
-      "unit": "🏃 Grammar: Words in Action"
+      "unit": "🏃 Grammar: Words in Action",
+      "level": 3
     },
     {
       "id": "eng_past_ed",
@@ -2111,7 +2137,8 @@
           "why": "Past words often end with -ed."
         }
       ],
-      "unit": "🏃 Grammar: Words in Action"
+      "unit": "🏃 Grammar: Words in Action",
+      "level": 3
     },
     {
       "id": "eng_am_is_are",
@@ -2188,7 +2215,8 @@
           "why": "We use are with you."
         }
       ],
-      "unit": "🏃 Grammar: Words in Action"
+      "unit": "🏃 Grammar: Words in Action",
+      "level": 4
     },
     {
       "id": "eng_has_have",
@@ -2264,7 +2292,8 @@
           "why": "We use have with you."
         }
       ],
-      "unit": "🏃 Grammar: Words in Action"
+      "unit": "🏃 Grammar: Words in Action",
+      "level": 4
     },
     {
       "id": "eng_can",
@@ -2340,7 +2369,8 @@
           "why": "A small baby is too little to run fast."
         }
       ],
-      "unit": "🏃 Grammar: Words in Action"
+      "unit": "🏃 Grammar: Words in Action",
+      "level": 4
     },
     {
       "id": "eng_adjectives",
@@ -2422,7 +2452,8 @@
           "why": "sweet describes the taste of honey."
         }
       ],
-      "unit": "🎨 Grammar: Describing & Joining"
+      "unit": "🎨 Grammar: Describing & Joining",
+      "level": 4
     },
     {
       "id": "eng_antonyms",
@@ -2516,7 +2547,8 @@
           "why": "Smooth and rough are opposites."
         }
       ],
-      "unit": "🎨 Grammar: Describing & Joining"
+      "unit": "🎨 Grammar: Describing & Joining",
+      "level": 4
     },
     {
       "id": "eng_synonyms",
@@ -2594,7 +2626,8 @@
           "why": "Scared and afraid mean the same thing."
         }
       ],
-      "unit": "🎨 Grammar: Describing & Joining"
+      "unit": "🎨 Grammar: Describing & Joining",
+      "level": 4
     },
     {
       "id": "eng_prepositions",
@@ -2676,7 +2709,8 @@
           "why": "The ball is before the box, so it is in front of the box."
         }
       ],
-      "unit": "🎨 Grammar: Describing & Joining"
+      "unit": "🎨 Grammar: Describing & Joining",
+      "level": 4
     },
     {
       "id": "eng_conjunctions",
@@ -2751,7 +2785,8 @@
           "why": "because tells us the reason for something."
         }
       ],
-      "unit": "🎨 Grammar: Describing & Joining"
+      "unit": "🎨 Grammar: Describing & Joining",
+      "level": 4
     },
     {
       "id": "eng_compound",
@@ -2833,7 +2868,8 @@
           "why": "star and fish join to make starfish."
         }
       ],
-      "unit": "🎨 Grammar: Describing & Joining"
+      "unit": "🎨 Grammar: Describing & Joining",
+      "level": 4
     },
     {
       "id": "eng_similes",
@@ -2939,7 +2975,8 @@
           "why": "A kitten is very soft, so we say as soft as a kitten."
         }
       ],
-      "unit": "🎨 Grammar: Describing & Joining"
+      "unit": "🎨 Grammar: Describing & Joining",
+      "level": 4
     },
     {
       "id": "eng_quantifiers",
@@ -3013,7 +3050,8 @@
           "why": "a lot of means a big number of things."
         }
       ],
-      "unit": "🎨 Grammar: Describing & Joining"
+      "unit": "🎨 Grammar: Describing & Joining",
+      "level": 4
     },
     {
       "id": "eng_colours",
@@ -3095,7 +3133,8 @@
           "why": "Snow is white."
         }
       ],
-      "unit": "🌍 Word Power: My World"
+      "unit": "🌍 Word Power: My World",
+      "level": 2
     },
     {
       "id": "eng_number_words",
@@ -3176,7 +3215,8 @@
           "why": "The number 10 is written as ten."
         }
       ],
-      "unit": "🌍 Word Power: My World"
+      "unit": "🌍 Word Power: My World",
+      "level": 2
     },
     {
       "id": "eng_days",
@@ -3253,7 +3293,8 @@
           "why": "Saturday and Sunday are the weekend."
         }
       ],
-      "unit": "🌍 Word Power: My World"
+      "unit": "🌍 Word Power: My World",
+      "level": 2
     },
     {
       "id": "eng_months",
@@ -3330,7 +3371,8 @@
           "why": "Before December comes November."
         }
       ],
-      "unit": "🌍 Word Power: My World"
+      "unit": "🌍 Word Power: My World",
+      "level": 2
     },
     {
       "id": "eng_time_of_day",
@@ -3412,7 +3454,8 @@
           "why": "We say good night before sleeping."
         }
       ],
-      "unit": "🌍 Word Power: My World"
+      "unit": "🌍 Word Power: My World",
+      "level": 2
     },
     {
       "id": "eng_weather",
@@ -3494,7 +3537,8 @@
           "why": "Clouds float in the sky."
         }
       ],
-      "unit": "🌍 Word Power: My World"
+      "unit": "🌍 Word Power: My World",
+      "level": 2
     },
     {
       "id": "eng_sky",
@@ -3576,7 +3620,8 @@
           "why": "The sun gives us light and heat."
         }
       ],
-      "unit": "🌍 Word Power: My World"
+      "unit": "🌍 Word Power: My World",
+      "level": 2
     },
     {
       "id": "eng_animal_babies",
@@ -3658,7 +3703,8 @@
           "why": "A baby lion is a cub."
         }
       ],
-      "unit": "🐾 Word Power: All Around Me"
+      "unit": "🐾 Word Power: All Around Me",
+      "level": 2
     },
     {
       "id": "eng_animal_sounds",
@@ -3740,7 +3786,8 @@
           "why": "A lion roars."
         }
       ],
-      "unit": "🐾 Word Power: All Around Me"
+      "unit": "🐾 Word Power: All Around Me",
+      "level": 2
     },
     {
       "id": "eng_animal_homes",
@@ -3822,7 +3869,8 @@
           "why": "A dog lives in a kennel."
         }
       ],
-      "unit": "🐾 Word Power: All Around Me"
+      "unit": "🐾 Word Power: All Around Me",
+      "level": 2
     },
     {
       "id": "eng_wild_farm",
@@ -3898,7 +3946,8 @@
           "why": "A hen lives on a farm."
         }
       ],
-      "unit": "🐾 Word Power: All Around Me"
+      "unit": "🐾 Word Power: All Around Me",
+      "level": 2
     },
     {
       "id": "eng_fruits_veg",
@@ -3975,7 +4024,8 @@
           "why": "Fruits and vegetables keep us healthy and strong."
         }
       ],
-      "unit": "🐾 Word Power: All Around Me"
+      "unit": "🐾 Word Power: All Around Me",
+      "level": 2
     },
     {
       "id": "eng_food",
@@ -4057,7 +4107,8 @@
           "why": "Too much sugar and candy harms our teeth."
         }
       ],
-      "unit": "🐾 Word Power: All Around Me"
+      "unit": "🐾 Word Power: All Around Me",
+      "level": 2
     },
     {
       "id": "eng_garden",
@@ -4138,7 +4189,8 @@
           "why": "The stem holds up the plant."
         }
       ],
-      "unit": "🐾 Word Power: All Around Me"
+      "unit": "🐾 Word Power: All Around Me",
+      "level": 2
     },
     {
       "id": "eng_body",
@@ -4220,7 +4272,8 @@
           "why": "We clap with our hands."
         }
       ],
-      "unit": "👪 Word Power: Me & My Life"
+      "unit": "👪 Word Power: Me & My Life",
+      "level": 2
     },
     {
       "id": "eng_senses",
@@ -4302,7 +4355,8 @@
           "why": "We have five senses."
         }
       ],
-      "unit": "👪 Word Power: Me & My Life"
+      "unit": "👪 Word Power: Me & My Life",
+      "level": 2
     },
     {
       "id": "eng_feelings",
@@ -4382,7 +4436,8 @@
           "why": "A gift makes us feel excited."
         }
       ],
-      "unit": "👪 Word Power: Me & My Life"
+      "unit": "👪 Word Power: Me & My Life",
+      "level": 2
     },
     {
       "id": "eng_family",
@@ -4462,7 +4517,8 @@
           "why": "A family loves and cares for each other."
         }
       ],
-      "unit": "👪 Word Power: Me & My Life"
+      "unit": "👪 Word Power: Me & My Life",
+      "level": 2
     },
     {
       "id": "eng_school",
@@ -4544,7 +4600,8 @@
           "why": "We colour with crayons."
         }
       ],
-      "unit": "👪 Word Power: Me & My Life"
+      "unit": "👪 Word Power: Me & My Life",
+      "level": 2
     },
     {
       "id": "eng_clothes",
@@ -4626,7 +4683,8 @@
           "why": "We wear socks under our shoes."
         }
       ],
-      "unit": "👪 Word Power: Me & My Life"
+      "unit": "👪 Word Power: Me & My Life",
+      "level": 2
     },
     {
       "id": "eng_transport",
@@ -4708,7 +4766,8 @@
           "why": "Cars move on the road."
         }
       ],
-      "unit": "👪 Word Power: Me & My Life"
+      "unit": "👪 Word Power: Me & My Life",
+      "level": 2
     },
     {
       "id": "eng_places",
@@ -4790,7 +4849,8 @@
           "why": "We learn at school."
         }
       ],
-      "unit": "👪 Word Power: Me & My Life"
+      "unit": "👪 Word Power: Me & My Life",
+      "level": 3
     },
     {
       "id": "eng_manners",
@@ -4868,7 +4928,8 @@
           "why": "Polite words make everyone happy."
         }
       ],
-      "unit": "👪 Word Power: Me & My Life"
+      "unit": "👪 Word Power: Me & My Life",
+      "level": 3
     },
     {
       "id": "eng_facts_opinions",
@@ -4942,7 +5003,8 @@
           "why": "Prettiest is a feeling, so it is an opinion."
         }
       ],
-      "unit": "💭 Thinking Skills"
+      "unit": "💭 Thinking Skills",
+      "level": 4
     }
   ]
 }

@@ -6,6 +6,7 @@ const App = {
     Mall.build();
     await Learn.init();
     await MathBook.load();
+    await SubjectBook.loadAll();
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register(AppConfig.url('sw.js')).catch(() => {});
     }
@@ -80,6 +81,9 @@ const App = {
       math: 'screen-math',
       english: 'screen-english',
       hindi: 'screen-hindi',
+      evs: 'screen-subjectbook',
+      sanskrit: 'screen-subjectbook',
+      computer: 'screen-subjectbook',
     };
     document.getElementById(map[screen]).classList.add('active');
     window.scrollTo(0, 0);
@@ -87,19 +91,27 @@ const App = {
     if (screen === 'home') {
       const fresh = Puppies.tick();
       Puppies.renderPark();
+      Coach.renderMissionCard('mission-card-home');
       this.refreshStats();
       if (fresh.length) {
         const names = fresh.map((fid) => PUPPIES.find((d) => d.id === fid)?.name).join(' & ');
         setTimeout(() => Rewards.showToast(`🐶 ${names} ${fresh.length === 1 ? 'has' : 'have'} a new wish!`), 600);
       }
     }
-    if (screen === 'play') { Learn.playerId = this.playerId; Learn.showHome(); this.refreshStats(); Speech.navSay('Pick something to play and earn coins!'); }
+    if (screen === 'play') {
+      Learn.playerId = this.playerId;
+      Learn.showHome();
+      Coach.renderMissionCard('mission-card-play');
+      this.refreshStats();
+      Speech.navSay('Pick something to play and earn coins!');
+    }
     if (screen === 'mall') { Mall.render(); this.refreshStats(); Speech.navSay('Welcome to the Puppy Mall! Pick a puppy and buy treats!'); }
     if (screen === 'puppy') Puppies.renderDetail();
     if (screen === 'minigames') MiniGames.showHub();
     if (screen === 'math') { MathBook.open(); }
     if (screen === 'english') { EnglishBook.open(); }
     if (screen === 'hindi') { HindiBook.open(); Speech.navSay('Tap any letter to hear it. Let us learn Hindi!'); }
+    if (screen === 'evs' || screen === 'sanskrit' || screen === 'computer') { SubjectBook.open(screen); }
   },
 
   claimDaily() {
@@ -133,6 +145,9 @@ const App = {
     setText('math-progress', 'Lessons: ' + MathBook.progressText());
     setText('english-progress', 'Lessons: ' + EnglishBook.progressText());
     setText('hindi-progress', HindiBook.progressText());
+    setText('evs-progress', 'Lessons: ' + SubjectBook.progressText('evs'));
+    setText('sanskrit-progress', 'Lessons: ' + SubjectBook.progressText('sanskrit'));
+    setText('computer-progress', 'Lessons: ' + SubjectBook.progressText('computer'));
   },
 
   showEnglishLevels() {

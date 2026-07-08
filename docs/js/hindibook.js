@@ -89,7 +89,12 @@ const HindiBook = {
     for (let i = 0; i < sets; i++) {
       if (Store.getLevelStars(this.playerId, 'hindi', 'read-' + (i + 1))) reads++;
     }
-    return `${done}/3 practice • ${reads} reading sets ⭐`;
+    let paaths = 0;
+    const lCount = this.LESSONS ? this.LESSONS.length : 26;
+    for (let i = 0; i < lCount; i++) {
+      if (Store.getLevelStars(this.playerId, 'hindi', 'paath-' + (i + 1))) paaths++;
+    }
+    return `${paaths}/26 पाठ • ${reads} reading ⭐`;
   },
 
   async loadReadWords() {
@@ -132,7 +137,7 @@ const HindiBook = {
   render() {
     const body = document.getElementById('hindi-body');
     const tabs = [
-      ['svar', '🔴 स्वर'], ['vyanjan', '🔵 व्यंजन'], ['matra', '🟢 मात्रा'], ['shabd', '🟡 शब्द'], ['read', '📖 पढ़ो'],
+      ['svar', '🔴 स्वर'], ['vyanjan', '🔵 व्यंजन'], ['matra', '🟢 मात्रा'], ['shabd', '🟡 शब्द'], ['read', '📖 पढ़ो'], ['paath', '📕 पाठ'],
     ];
     body.innerHTML = `
       <div class="hb-tabs">
@@ -151,6 +156,7 @@ const HindiBook = {
     else if (this.tab === 'vyanjan') this.renderLetters(panel, this.VYANJAN, 'vyanjan', 'सुनो और ढूँढो — व्यंजन');
     else if (this.tab === 'matra') this.renderMatra(panel);
     else if (this.tab === 'read') this.renderRead(panel);
+    else if (this.tab === 'paath') this.renderPaath(panel);
     else this.renderWords(panel);
   },
 
@@ -270,12 +276,17 @@ const HindiBook = {
       document.querySelectorAll('.hb-opt').forEach((b) => (b.style.pointerEvents = 'none'));
       Sounds.correct();
       Rewards.confetti(20);
-      Store.addReward(this.playerId, { coins: 5, xp: 5 });
+      const solved = Store.getLevelStars(this.playerId, 'hindi', 'practice-' + this.pkind) > 0;
+      if (!solved) {
+        Store.addReward(this.playerId, { coins: 5, xp: 5 });
+      } else {
+        Store.addReward(this.playerId, { coins: 0, xp: 5 });
+      }
       Store.bumpStreak?.(this.playerId, true);
       Store.trackAnswer(this.playerId, 'hindi', true);
       this.pcorrect++;
       this.say(item.dev, item.r);
-      Rewards.showToast('शाबाश! +5 🪙');
+      Rewards.showToast(!solved ? 'शाबाश! +5 🪙' : 'शाबाश! (Practice mode)');
       App.refreshStats();
       setTimeout(() => { this.pi++; this.renderPracticeQ(); }, 1000);
     } else {
@@ -294,18 +305,38 @@ const HindiBook = {
     let stars = 1;
     if (ratio >= 0.6) stars = 2;
     if (ratio >= 0.9) stars = 3;
-    Store.completeLevel(this.playerId, 'hindi', 'practice-' + this.pkind, stars);
-    Store.addReward(this.playerId, { coins: stars * 10, xp: 20 });
+    const prettyKind = { varna: 'वर्णमाला अभ्यास (Varnamala)', matra: 'मात्रा अभ्यास (Matras)', shabd: 'शब्द निर्माण (Words)' }[this.pkind] || ('Hindi Practice: ' + this.pkind);
+    const res = Store.awardLevel(this.playerId, 'hindi', 'practice-' + this.pkind, stars, stars * 10, {
+      title: prettyKind,
+      level: 1,
+      wrong: this.pq.length - this.pcorrect
+    });
     Store.logActivity(this.playerId, `Hindi practice: ${this.pkind} — ${stars}⭐`);
     if (typeof Pet !== 'undefined' && Pet.onLessonComplete) Pet.onLessonComplete(this.playerId);
     Store.checkBadges?.(this.playerId);
     Sounds.cheer();
     Rewards.confetti(60);
+
+    let text = `${'⭐'.repeat(stars)} You got ${this.pcorrect}/${this.pq.length}! +${res.coins} 🪙 for the puppies!`;
+    let title = 'शाबाश! 🎉';
+    let btnText = 'OK';
+    let onOk = () => { this.render(); App.refreshStats(); };
+
+    if (!res.firstTime && !res.improved) {
+      title = 'Practice Superstar! 🌟';
+      text = `${'⭐'.repeat(stars)} Practice superstar! The puppies are full — feed them with something NEW! 🦴`;
+      Speech.speak("Practice superstar! The puppies are full — feed them with something new!");
+    } else if (res.improved) {
+      title = 'New Star Record! 🌟';
+      text = `${'⭐'.repeat(stars)} Amazing improvement! +${res.coins} 🪙 difference earned for the puppies!`;
+    }
+
     Rewards.showPopup({
       emoji: stars === 3 ? '💎' : '🏆',
-      title: 'शाबाश! 🎉',
-      text: `${'⭐'.repeat(stars)} You got ${this.pcorrect}/${this.pq.length}! +${stars * 10} 🪙 for the puppies!`,
-      onOk: () => { this.render(); App.refreshStats(); },
+      title,
+      text,
+      onOk,
+      btnText,
     });
   },
 
@@ -364,11 +395,16 @@ const HindiBook = {
     document.getElementById('hb-rgot').addEventListener('click', () => {
       Sounds.correct();
       Rewards.confetti(16);
-      Store.addReward(this.playerId, { coins: 5, xp: 5 });
+      const solved = Store.getLevelStars(this.playerId, 'hindi', 'read-' + (this.rSet + 1)) > 0;
+      if (!solved) {
+        Store.addReward(this.playerId, { coins: 5, xp: 5 });
+      } else {
+        Store.addReward(this.playerId, { coins: 0, xp: 5 });
+      }
       Store.bumpStreak?.(this.playerId, true);
       Store.trackAnswer(this.playerId, 'hindi', true);
       this.rScore++;
-      Rewards.showToast('शाबाश! +5 🪙');
+      Rewards.showToast(!solved ? 'शाबाश! +5 🪙' : 'शाबाश! (Practice mode)');
       this.say(word, this.devToRoman(word));
       App.refreshStats();
       this.rIdx++;
@@ -389,18 +425,33 @@ const HindiBook = {
     let stars = 1;
     if (ratio >= 0.6) stars = 2;
     if (ratio >= 0.9) stars = 3;
-    Store.completeLevel(this.playerId, 'hindi', 'read-' + (this.rSet + 1), stars);
-    Store.addReward(this.playerId, { coins: stars * 10, xp: 20 });
+    const res = Store.awardLevel(this.playerId, 'hindi', 'read-' + (this.rSet + 1), stars, stars * 10);
     Store.logActivity(this.playerId, `Hindi reading set ${this.rSet + 1}: ${this.rScore}/${total} — ${stars}⭐`);
     if (typeof Pet !== 'undefined' && Pet.onLessonComplete) Pet.onLessonComplete(this.playerId);
     Store.checkBadges?.(this.playerId);
     Sounds.cheer();
     Rewards.confetti(60);
+
+    let text = `You read ${this.rScore}/${total} words! ${'⭐'.repeat(stars)} +${res.coins} 🪙 for the puppies!`;
+    let title = 'शाबाश! 🎉';
+    let btnText = 'OK';
+    let onOk = () => { this.renderPanel(); App.refreshStats(); };
+
+    if (!res.firstTime && !res.improved) {
+      title = 'Practice Superstar! 🌟';
+      text = `${'⭐'.repeat(stars)} Practice superstar! The puppies are full — feed them with something NEW! 🦴`;
+      Speech.speak("Practice superstar! The puppies are full — feed them with something new!");
+    } else if (res.improved) {
+      title = 'New Star Record! 🌟';
+      text = `${'⭐'.repeat(stars)} Amazing improvement! +${res.coins} 🪙 difference earned for the puppies!`;
+    }
+
     Rewards.showPopup({
       emoji: stars === 3 ? '💎' : '🏆',
-      title: 'शाबाश! 🎉',
-      text: `You read ${this.rScore}/${total} words! ${'⭐'.repeat(stars)} +${stars * 10} 🪙 for the puppies!`,
-      onOk: () => { this.renderPanel(); App.refreshStats(); },
+      title,
+      text,
+      onOk,
+      btnText,
     });
   },
 
@@ -435,7 +486,254 @@ const HindiBook = {
     return out;
   },
 
-  shuffle(a) { return a.slice().sort(() => Math.random() - 0.5); },
+  shuffle(a) {
+    const arr = a.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  },
+
+  async loadLessons() {
+    if (this.LESSONS) return this.LESSONS;
+    try {
+      const res = await fetch(AppConfig.url('data/hindi_lessons.json'));
+      const data = await res.json();
+      this.LESSONS = data.chapters || [];
+    } catch {
+      this.LESSONS = [];
+    }
+    return this.LESSONS;
+  },
+
+  async load() {
+    const chapters = await this.loadLessons();
+    return { chapters };
+  },
+
+  async startLessonById(id) {
+    this.playerId = App.playerId;
+    await this.loadLessons();
+    this.tab = 'paath';
+    const idx = (this.LESSONS || []).findIndex((l) => l.id === id);
+    if (idx >= 0) this.startLesson(idx);
+  },
+
+  async renderPaath(panel) {
+    panel.innerHTML = `<p class="hb-sub">⏳ पाठ आ रहे हैं…</p>`;
+    await this.loadLessons();
+    if (this.tab !== 'paath') return;
+    const lessons = this.LESSONS || [];
+    let cards = '';
+    for (let i = 0; i < lessons.length; i++) {
+      const l = lessons[i];
+      const stars = Store.getLevelStars(this.playerId, 'hindi', l.id);
+      cards += `
+        <button class="hb-setcard ${stars ? 'done' : ''}" data-lesson="${i}">
+          <span class="hb-setno">${l.icon || '📕'} पाठ ${i + 1}</span>
+          <span class="hb-setinfo" style="font-size:0.95rem;">${l.title}</span>
+          <span class="hb-setstars">${stars ? '⭐'.repeat(stars) : '▶️'}</span>
+        </button>`;
+    }
+    panel.innerHTML = `
+      <p class="hb-sub">हिंदी पाठ (Lessons) — कहानियाँ और अभ्यास! 📕</p>
+      <p class="hb-hint">किसी भी पाठ को छूओ, कहानी सुनो और प्रश्नों के उत्तर दो!</p>
+      <div class="hb-sets">${cards}</div>`;
+    panel.querySelectorAll('.hb-setcard').forEach((b) =>
+      b.addEventListener('click', () => { Sounds.tap(); this.startLesson(+b.dataset.lesson); }));
+  },
+
+  startLesson(idx) {
+    this.lIdx = idx;
+    this.lesson = this.LESSONS[idx];
+    this.lProbIdx = 0;
+    this.lScore = 0;
+    this.lProblems = this.shuffle(this.lesson.problems || []).map(p => ({
+      ...p,
+      opts: this.shuffle(p.options || [])
+    }));
+    this.renderLessonConcept();
+  },
+
+  renderLessonConcept() {
+    const l = this.lesson;
+    const panel = document.getElementById('hb-panel');
+    const introLines = l.concept?.intro || [];
+    const tip = l.concept?.tip || '';
+    panel.innerHTML = `
+      <div style="text-align:center;margin:10px 0;">
+        <div style="font-size:3.5rem;">${l.icon || '📕'}</div>
+        <h2 style="color:#3a2f8f;margin:4px 0;font-size:1.6rem;">${l.title}</h2>
+      </div>
+      <div style="background:#f6f4ff;border:3px solid #b8b1ff;border-radius:18px;padding:14px;margin:12px 0;">
+        ${introLines.map(line => `<p style="font-size:1.15rem;color:#2b2660;margin:8px 0;line-height:1.4;cursor:pointer;" class="hb-intro-line">🔊 ${line}</p>`).join('')}
+        ${tip ? `<div style="margin-top:12px;padding-top:10px;border-top:2px dashed #d9d5ff;color:#4b3fb0;font-weight:700;font-size:1.05rem;">💡 ${tip}</div>` : ''}
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-top:16px;">
+        <button class="btn-fun green btn-big" id="hb-lstart">🚀 प्रश्न शुरू करें! (Start Practice)</button>
+        <button class="btn-fun ghost hb-quit">⬅️ वापस पाठ सूची (Back to Lessons)</button>
+      </div>`;
+    panel.querySelectorAll('.hb-intro-line').forEach((el, i) => {
+      el.addEventListener('click', () => {
+        Sounds.tap();
+        this.say(introLines[i], this.devToRoman(introLines[i]));
+      });
+    });
+    this.say(`${l.title}। ${introLines[0] || ''}`, this.devToRoman(`${l.title} ${introLines[0] || ''}`));
+    document.getElementById('hb-lstart').addEventListener('click', () => {
+      Sounds.tap();
+      this.renderLessonProblem();
+    });
+    panel.querySelector('.hb-quit').addEventListener('click', () => {
+      Sounds.tap();
+      this.render();
+    });
+  },
+
+  renderLessonProblem() {
+    if (this.lProbIdx >= this.lProblems.length) return this.finishLesson();
+    const p = this.lProblems[this.lProbIdx];
+    const total = this.lProblems.length;
+    const panel = document.getElementById('hb-panel');
+    panel.innerHTML = `
+      <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${(this.lProbIdx / total) * 100}%"></div></div>
+      <p class="hb-sub">पाठ ${this.lIdx + 1}: ${this.lesson.title} — प्रश्न ${this.lProbIdx + 1}/${total} • स्कोर ${this.lScore} ⭐</p>
+      <div style="background:#fff;border:3px solid #ffce8a;border-radius:18px;padding:14px;margin:12px 0;text-align:center;">
+        <h3 style="color:#2b2660;font-size:1.3rem;margin:6px 0;">${p.q}</h3>
+        <button class="btn-fun blue btn-small" id="hb-lqhear" style="margin-top:6px;">🔊 प्रश्न सुनो</button>
+      </div>
+      <div class="hb-grid hb-optgrid" style="gap:12px;margin:14px 0;">
+        ${p.opts.map((opt, i) => `
+          <button class="hb-opt hb-card" data-opt="${i}" style="min-height:80px;padding:12px 8px;font-size:1.15rem;font-weight:700;color:#3a2f8f;">
+            ${opt}
+          </button>
+        `).join('')}
+      </div>
+      <div id="hb-lexplain" style="display:none;background:#e8fff2;border:3px solid #15c39a;border-radius:16px;padding:12px;margin:12px 0;text-align:center;color:#0a7e4d;font-weight:700;font-size:1.1rem;"></div>
+      <div id="hb-lnextbox" style="display:none;text-align:center;margin:14px 0;">
+        <button class="btn-fun orange btn-big" id="hb-lnext">➡️ अगला प्रश्न</button>
+      </div>
+      <button class="btn-fun ghost hb-quit" style="margin-top:6px;">⬅️ वापस पाठ सूची</button>`;
+    
+    document.getElementById('hb-lqhear').addEventListener('click', () => {
+      Sounds.tap();
+      this.say(p.q, this.devToRoman(p.q));
+    });
+    this.say(p.q, this.devToRoman(p.q));
+
+    const optsBtns = panel.querySelectorAll('.hb-opt');
+    let answered = false;
+    let triesThisProblem = 0;
+    optsBtns.forEach((btn, i) => {
+      btn.addEventListener('click', () => {
+        if (answered || btn.style.pointerEvents === 'none') return;
+        const chosen = p.opts[i];
+        if (chosen === p.a) {
+          answered = true;
+          Sounds.correct();
+          Rewards.confetti(20);
+          btn.classList.add('hb-correct');
+          const first = triesThisProblem === 0;
+          const coins = first ? 10 : 4;
+          if (first) this.lScore++;
+          const solved = Store.getLevelStars(this.playerId, 'hindi', this.lesson.id) > 0;
+          if (!solved) {
+            Store.addReward(this.playerId, { coins, stars: first ? 1 : 0, xp: 10 });
+          } else {
+            Store.addReward(this.playerId, { coins: 0, stars: 0, xp: 5 });
+          }
+          Store.bumpStreak?.(this.playerId, true);
+          Store.trackAnswer(this.playerId, 'hindi', true);
+          
+          const explain = document.getElementById('hb-lexplain');
+          if (p.why) {
+            explain.style.display = 'block';
+            explain.style.background = '#e8fff2';
+            explain.style.borderColor = '#15c39a';
+            explain.style.color = '#0a7e4d';
+            explain.innerHTML = `✅ शाबाश! ${p.why}`;
+            this.say(`शाबाश! ${p.why}`, this.devToRoman(`शाबाश! ${p.why}`));
+          } else {
+            this.say('शाबाश! बहुत अच्छा!', 'shaabaash! bahut achchhaa!');
+          }
+          Rewards.showToast(!solved ? (first ? `Great job! +${coins} 🪙` : `You got it! +${coins} 🪙`) : (first ? `Great job! (Practice mode)` : `You got it! (Practice mode)`));
+          document.getElementById('hb-lnextbox').style.display = 'block';
+        } else {
+          triesThisProblem++;
+          Sounds.wrong();
+          btn.classList.add('hb-wrong');
+          btn.style.pointerEvents = 'none';
+          Store.bumpStreak?.(this.playerId, false);
+          Store.trackAnswer(this.playerId, 'hindi', false);
+          const explain = document.getElementById('hb-lexplain');
+          explain.style.display = 'block';
+          explain.style.background = '#ffd6d6';
+          explain.style.borderColor = '#ff6b6b';
+          explain.style.color = '#b30000';
+          explain.innerHTML = `❌ फिर से सोचो! ${p.why || ''}<p style="margin-top:8px;color:#3a2f8f;font-weight:800;">👇 Now tap the correct answer!</p>`;
+          this.say(`फिर से सोचो! ${p.why || ''}`, this.devToRoman(`phir se socho! ${p.why || ''}`));
+        }
+      });
+    });
+
+    document.getElementById('hb-lnext').addEventListener('click', () => {
+      Sounds.tap();
+      this.lProbIdx++;
+      this.renderLessonProblem();
+    });
+
+    panel.querySelector('.hb-quit').addEventListener('click', () => {
+      Sounds.tap();
+      this.render();
+    });
+  },
+
+  finishLesson() {
+    const total = this.lProblems.length;
+    const ratio = total ? this.lScore / total : 1;
+    let stars = 1;
+    if (ratio >= 0.6) stars = 2;
+    if (ratio >= 0.9) stars = 3;
+    const l = this.lesson;
+    const res = Store.awardLevel(this.playerId, 'hindi', l.id, stars, stars * 10, {
+      title: l.title,
+      level: l.level || 1,
+      wrong: total - this.lScore
+    });
+    Store.logActivity(this.playerId, `Hindi lesson ${l.title}: ${this.lScore}/${total} — ${stars}⭐`);
+    if (typeof Pet !== 'undefined' && Pet.onLessonComplete) Pet.onLessonComplete(this.playerId);
+    Store.checkBadges?.(this.playerId);
+    Sounds.cheer();
+    Rewards.confetti(60);
+
+    let text = `पाठ पूरा हुआ! You completed ${l.title}! ${'⭐'.repeat(stars)} +${res.coins} 🪙 for the puppies!`;
+    let title = 'शाबाश! 🎉';
+    let btnText = 'OK';
+    let onOk = () => { this.renderPanel(); App.refreshStats(); };
+
+    if (!res.firstTime && !res.improved) {
+      title = 'Practice Superstar! 🌟';
+      text = `${'⭐'.repeat(stars)} Practice superstar! The puppies are full — feed them with something NEW! 🦴`;
+      Speech.speak("Practice superstar! The puppies are full — feed them with something new!");
+      const unsolvedIdx = (this.LESSONS || []).findIndex(c => Store.getLevelStars(this.playerId, 'hindi', c.id) === 0);
+      if (unsolvedIdx >= 0) {
+        btnText = 'Next mission ➜';
+        onOk = () => { this.startLesson(unsolvedIdx); App.refreshStats(); };
+      }
+    } else if (res.improved) {
+      title = 'New Star Record! 🌟';
+      text = `${'⭐'.repeat(stars)} Amazing improvement! +${res.coins} 🪙 difference earned for the puppies!`;
+    }
+
+    Rewards.showPopup({
+      emoji: stars === 3 ? '💎' : '🏆',
+      title,
+      text,
+      onOk,
+      btnText,
+    });
+  },
 
   // ---------- one-time self-contained styles (hb- prefix) ----------
   injectStyles() {

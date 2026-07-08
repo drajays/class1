@@ -51,13 +51,115 @@ const Parent = {
     document.getElementById('parent-overlay').classList.remove('show');
   },
 
-  render() {
+  async render() {
     const p = Store.getPlayer(App.playerId);
-    const hero = HEROES.find((h) => h.id === App.playerId);
-    const a = p.assessment || {};
+    const hero = HEROES.find((h) => h.id === App.playerId) || { name: 'Advaita', avatar: '👧' };
     const nudges = Store.parentNudges(App.playerId);
     const el = document.getElementById('parent-content');
     const chDone = Object.keys(p.chapters || {}).filter((k) => p.chapters[k] > 0).length;
+
+    let allChapters = [];
+    try {
+      allChapters = await Coach.getAllChapters();
+    } catch (e) {
+      allChapters = [];
+    }
+
+    const attemptStats = p.attemptStats || {};
+    const journal = p.journal || [];
+
+    // 1. Good at (3⭐ and low errors)
+    const goodBySub = {};
+    allChapters.forEach((c) => {
+      const stars = Store.getLevelStars(App.playerId, c.subject, c.id);
+      const stat = attemptStats[`${c.subject}_${c.id}`] || { wrong: 0 };
+      if (stars === 3 && stat.wrong <= 2) {
+        if (!goodBySub[c.subject]) goodBySub[c.subject] = [];
+        goodBySub[c.subject].push(c);
+      }
+    });
+
+    let goodHtml = '';
+    const subNames = { math: 'Math', english: 'English', evs: 'EVS', hindi: 'Hindi', sanskrit: 'Sanskrit', computer: 'Computer' };
+    Object.keys(goodBySub).forEach((sub) => {
+      const list = goodBySub[sub];
+      goodHtml += `<div class="parent-group-title">${subNames[sub] || sub} (${list.length})</div>`;
+      list.forEach((c) => {
+        goodHtml += `
+          <div class="parent-item good">
+            <span>${c.icon || '📘'} ${c.title}</span>
+            <span class="parent-item-badge">⭐⭐⭐ Mastered</span>
+          </div>`;
+      });
+    });
+    if (!goodHtml) goodHtml = '<p class="parent-sub">Complete lessons with 3⭐ to unlock mastery highlights!</p>';
+
+    // 2. Struggling (high wrong rate or abandoned or <= 1⭐)
+    let struggleHtml = '';
+    const struggleItems = [];
+    allChapters.forEach((c) => {
+      const key = `${c.subject}_${c.id}`;
+      const stat = attemptStats[key];
+      const stars = Store.getLevelStars(App.playerId, c.subject, c.id);
+      if (stat && (stat.wrong >= 3 || stat.abandonedCount >= 2 || (stars > 0 && stars <= 1))) {
+        struggleItems.push({ chapter: c, reason: stat.wrong >= 3 ? `${stat.wrong} mistakes` : stat.abandonedCount >= 2 ? 'Repeatedly exited' : '1⭐ progress' });
+      }
+    });
+    struggleItems.forEach((item) => {
+      struggleHtml += `
+        <div class="parent-item struggle">
+          <span>${item.chapter.icon || '📘'} [${subNames[item.chapter.subject] || item.chapter.subject}] ${item.chapter.title}</span>
+          <span class="parent-item-badge" style="background:#fecdd3;color:#9f1239;">⚠️ ${item.reason}</span>
+        </div>`;
+    });
+    if (!struggleHtml) struggleHtml = '<p class="parent-sub">🎉 No struggling topics detected right now!</p>';
+
+    // 3. Not touching (avoidance signal)
+    let avoidHtml = '';
+    const avoidItems = [];
+    const nowTs = Date.now();
+    const sevenDaysMs = 7 * 24 * 60 * 60 * 1000;
+    allChapters.forEach((c) => {
+      const stars = Store.getLevelStars(App.playerId, c.subject, c.id);
+      const stat = attemptStats[`${c.subject}_${c.id}`];
+      if (stars === 0 && (!stat || (nowTs - (stat.lastTs || 0) > sevenDaysMs))) {
+        avoidItems.push(c);
+      }
+    });
+    avoidItems.slice(0, 6).forEach((c) => {
+      avoidHtml += `
+        <div class="parent-item avoid">
+          <span>${c.icon || '📘'} [${subNames[c.subject] || c.subject}] ${c.title}</span>
+          <span class="parent-item-badge" style="background:#fef3c7;color:#b45309;">🙈 Untouched</span>
+        </div>`;
+    });
+    if (!avoidHtml) avoidHtml = '<p class="parent-sub">Advaita is actively exploring all subject areas!</p>';
+
+    // 4. Daily journey timeline (last 14 days)
+    const timelineByDate = {};
+    journal.forEach((ev) => {
+      const d = ev.date || 'Recent';
+      if (!timelineByDate[d]) timelineByDate[d] = [];
+      timelineByDate[d].push(ev);
+    });
+    let timelineHtml = '';
+    Object.keys(timelineByDate).sort().reverse().slice(0, 14).forEach((dateStr) => {
+      const evs = timelineByDate[dateStr];
+      const itemsHtml = evs.map((ev) => {
+        const timeStr = ev.ts ? new Date(ev.ts).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '';
+        return `
+          <li>
+            <span><b>[${subNames[ev.subject] || ev.subject}]</b> ${ev.title}</span>
+            <span>${'⭐'.repeat(ev.stars || 1)} +${ev.coins || 0}🪙 <small>${timeStr}</small></span>
+          </li>`;
+      }).join('');
+      timelineHtml += `
+        <div class="parent-timeline-day">
+          <div class="parent-timeline-date">📅 ${dateStr} (${evs.length} completed)</div>
+          <ul class="parent-timeline-list">${itemsHtml}</ul>
+        </div>`;
+    });
+    if (!timelineHtml) timelineHtml = '<p class="parent-sub">No journal events recorded yet today.</p>';
 
     el.innerHTML = `
       <h2>👨‍👩‍👧 Parent Dashboard</h2>
@@ -69,6 +171,27 @@ const Parent = {
         <div class="parent-stat"><span>Chapters</span><b>${chDone}</b></div>
         <div class="parent-stat"><span>Mini-games</span><b>${p.minigamesWon || 0}</b></div>
       </div>
+
+      <div class="parent-section">
+        <h3>💪 Good at (Mastered with confidence)</h3>
+        ${goodHtml}
+      </div>
+
+      <div class="parent-section">
+        <h3>🤔 Struggling (High errors or abandoned)</h3>
+        ${struggleHtml}
+      </div>
+
+      <div class="parent-section">
+        <h3>🙈 Not touching (Avoided / Untouched topics)</h3>
+        ${avoidHtml}
+      </div>
+
+      <div class="parent-section">
+        <h3>📅 Daily Journey Log (Last 14 days)</h3>
+        ${timelineHtml}
+      </div>
+
       <h3>💡 Try at home today</h3>
       <div class="nudge-list">${nudges.map((n) => `<div class="nudge-card">${n}</div>`).join('')}</div>
       <h3>📊 Recent activity</h3>

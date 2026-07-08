@@ -1,0 +1,1403 @@
+{
+  "subject": "evs",
+  "title": "EVS Book",
+  "icon": "🌿",
+  "lang": "en-IN",
+  "chapters": [
+    {
+      "id": "evs_all_about_me",
+      "title": "All About Me",
+      "icon": "👧",
+      "concept": {
+        "intro": [
+          "Hello! We are all unique and special.",
+          "Some of us like to read, some like to play games.",
+          "Our likes, dislikes, and feelings make us who we are!"
+        ],
+        "tip": "An identity card tells others who we are and keeps us safe!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What card tells our name, address, and phone number?",
+          "options": [
+            "🪪 Identity card",
+            "🃏 Library membership card",
+            "🎂 Birthday party invitation card"
+          ],
+          "a": "🪪 Identity card",
+          "why": "An identity card has all our important information and keeps us safe!"
+        },
+        {
+          "skill": "pick",
+          "q": "Are our likes and dislikes the same as everyone else's?",
+          "options": [
+            "❌ No, we are all unique",
+            "✔️ Yes, everyone is identical",
+            "🤖 Everyone likes the exact same food"
+          ],
+          "a": "❌ No, we are all unique",
+          "why": "We all like different games and foods, which makes each of us special!"
+        },
+        {
+          "skill": "pick",
+          "q": "What should you do when you feel angry or sad?",
+          "options": [
+            "🧘 Take a deep breath and count to 10",
+            "😡 Throw toys and books around the room in anger",
+            "😭 Scream and yell loudly at your friends and family"
+          ],
+          "a": "🧘 Take a deep breath and count to 10",
+          "why": "Taking deep breaths helps calm our mind when we have big feelings."
+        },
+        {
+          "skill": "pick",
+          "q": "When do we celebrate your birthday?",
+          "options": [
+            "🎂 On the special day you were born",
+            "🏖️ Every year during the long summer holiday season",
+            "🎄 On Christmas Day during the winter vacation"
+          ],
+          "a": "🎂 On the special day you were born",
+          "why": "Your birthday is the exact day you were born!"
+        },
+        {
+          "skill": "pick",
+          "q": "Why is it important to know your parents' phone number?",
+          "options": [
+            "📞 To call for help if we get lost",
+            "🎮 To play online video games on their mobile phone",
+            "📺 To order cartoons and movies on television"
+          ],
+          "a": "📞 To call for help if we get lost",
+          "why": "Knowing a parent's number helps teachers or police call them if you ever need help."
+        },
+        {
+          "skill": "pick",
+          "q": "What makes a person unique?",
+          "options": [
+            "🌟 Their favorite hobbies, smiles, and feelings",
+            "👕 Wearing the exact same school uniform every day",
+            "📏 Being taller than the highest tree in the park"
+          ],
+          "a": "🌟 Their favorite hobbies, smiles, and feelings",
+          "why": "Everyone has wonderful thoughts, hobbies, and feelings that make them one of a kind!"
+        },
+        {
+          "skill": "pick",
+          "q": "If your friend likes painting but you like dancing, what should you do?",
+          "options": [
+            "🤝 Respect and cheer for what your friend likes",
+            "😤 Tell them painting is a boring and useless hobby",
+            "🙈 Stop talking to them and find another best friend"
+          ],
+          "a": "🤝 Respect and cheer for what your friend likes",
+          "why": "Good friends respect and enjoy learning about each other's hobbies!"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "id": "evs_my_body",
+      "title": "My Amazing Body",
+      "icon": "🖐️",
+      "concept": {
+        "intro": [
+          "Our body is amazing! It has many helpful parts.",
+          "Our legs help us walk and run, and our hands help us hold things.",
+          "We have five sense organs that help us explore the world around us!"
+        ],
+        "tip": "Our five sense organs are eyes, ears, nose, tongue, and skin!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Which sense organ helps us see a bright rainbow?",
+          "options": [
+            "👁️ Eyes",
+            "👂 Ears",
+            "👃 Nose"
+          ],
+          "a": "👁️ Eyes",
+          "why": "Our eyes help us see light, colors, and shapes all around us!"
+        },
+        {
+          "skill": "pick",
+          "q": "How many sense organs do we have in our body?",
+          "options": [
+            "🖐️ Five",
+            "✌️ Two",
+            "🫱 Ten"
+          ],
+          "a": "🖐️ Five",
+          "why": "We have five sense organs: eyes, ears, nose, tongue, and skin!"
+        },
+        {
+          "skill": "pick",
+          "q": "What part of our body helps us walk, jump, and run?",
+          "options": [
+            "🦵 Legs and feet",
+            "🦾 Elbows, shoulders, and strong arms",
+            "👂 Ears, nose, and facial muscles"
+          ],
+          "a": "🦵 Legs and feet",
+          "why": "Our legs and feet support our body and help us move around!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which sense organ helps us taste sweet ice cream and sour lemons?",
+          "options": [
+            "👅 Tongue",
+            "👃 Nose",
+            "👁️ Eyes"
+          ],
+          "a": "👅 Tongue",
+          "why": "Our tongue has taste buds that let us taste sweet, sour, salty, and bitter foods!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which organ helps us hear the school bell ringing?",
+          "options": [
+            "👂 Ears",
+            "👁️ Eyes",
+            "🖐️ Skin"
+          ],
+          "a": "👂 Ears",
+          "why": "Our ears catch sounds like music, voices, and bells!"
+        },
+        {
+          "skill": "pick",
+          "q": "What do our hands and fingers help us do?",
+          "options": [
+            "✍️ Write, draw, and hold things",
+            "🚶 Walk across the busy street safely",
+            "🍟 Taste delicious sweet and savory food"
+          ],
+          "a": "✍️ Write, draw, and hold things",
+          "why": "We use our hands and fingers to hold pencils, clap, and pick up toys!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which sense organ helps us feel if a puppy's fur is soft or rough?",
+          "options": [
+            "🖐️ Skin",
+            "👁️ Eyes",
+            "👅 Tongue"
+          ],
+          "a": "🖐️ Skin",
+          "why": "Our skin covers our body and lets us feel touch, heat, and cold!"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "id": "evs_family",
+      "title": "I Love My Family",
+      "icon": "👨‍👩‍👧‍👦",
+      "concept": {
+        "intro": [
+          "We live together with our loved ones in a family.",
+          "Some families are small, some are big, and some are joint families.",
+          "We love, care for, and help each other every day!"
+        ],
+        "tip": "Helping with small chores makes our family happy and strong!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Who is your father's father or your mother's father?",
+          "options": [
+            "👴 Grandfather",
+            "👨 Uncle",
+            "👦 Brother"
+          ],
+          "a": "👴 Grandfather",
+          "why": "Our parents' parents are our grandparents, and a father's or mother's father is our grandfather!"
+        },
+        {
+          "skill": "pick",
+          "q": "What do we call a family where parents and one or two children live together?",
+          "options": [
+            "🏡 Small or nuclear family",
+            "🏰 Big joint family with uncles and aunts",
+            "🎪 Extended family living across cities"
+          ],
+          "a": "🏡 Small or nuclear family",
+          "why": "A family with parents and their children living together is called a small or nuclear family."
+        },
+        {
+          "skill": "pick",
+          "q": "What do we call a family where grandparents, parents, uncles, aunts, and cousins live together?",
+          "options": [
+            "🌳 Joint family",
+            "🏕️ Small family",
+            "🚗 Single family"
+          ],
+          "a": "🌳 Joint family",
+          "why": "When many relatives like grandparents, uncles, aunts, and cousins live together, it is a joint family!"
+        },
+        {
+          "skill": "pick",
+          "q": "How can you be a helping hand in your family?",
+          "options": [
+            "🧸 Keeping your toys and books in their proper place",
+            "💥 Throwing food and toys across the floor",
+            "📺 Watching television all day without helping"
+          ],
+          "a": "🧸 Keeping your toys and books in their proper place",
+          "why": "Putting away our toys and keeping our room clean helps our parents and keeps the home tidy!"
+        },
+        {
+          "skill": "pick",
+          "q": "Who is your mother's brother or father's brother?",
+          "options": [
+            "👨 Uncle",
+            "👴 Grandfather",
+            "👶 Cousin"
+          ],
+          "a": "👨 Uncle",
+          "why": "The brother of your father or mother is called your uncle!"
+        },
+        {
+          "skill": "pick",
+          "q": "What are your uncle and aunt's children called?",
+          "options": [
+            "🧒 Cousins",
+            "👴 Grandparents",
+            "👮 Helpers"
+          ],
+          "a": "🧒 Cousins",
+          "why": "The children of your uncles and aunts are your loving cousins!"
+        },
+        {
+          "skill": "pick",
+          "q": "Why is living in a family special and important?",
+          "options": [
+            "💖 We share love, celebrate together, and care for each other",
+            "🏔️ Because we never have to share anything with others",
+            "⚡ Because we can argue and fight all day long"
+          ],
+          "a": "💖 We share love, celebrate together, and care for each other",
+          "why": "A family gives us safety, love, and happiness as we grow together!"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "id": "evs_home",
+      "title": "Home Sweet Home",
+      "icon": "🏠",
+      "concept": {
+        "intro": [
+          "A house is a place where we live with our family.",
+          "It protects us from heat, cold, rain, and wild animals.",
+          "Some houses are strong pucca houses, and some are simple kutcha houses!"
+        ],
+        "tip": "A clean and tidy home keeps us healthy and happy!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Why do we need a house to live in?",
+          "options": [
+            "☔ To protect us from heat, cold, rain, and animals",
+            "🎈 So we can float high up in the blue sky",
+            "🏕️ To sleep outside in tents during summer camping trips"
+          ],
+          "a": "☔ To protect us from heat, cold, rain, and animals",
+          "why": "A house keeps our family safe, warm, and sheltered from bad weather!"
+        },
+        {
+          "skill": "pick",
+          "q": "What materials are used to build a strong pucca house?",
+          "options": [
+            "🧱 Bricks, cement, steel, and stones",
+            "🌾 Dry straw, mud, bamboo, and green leaves",
+            "📦 Cardboard boxes, paper, and wooden planks"
+          ],
+          "a": "🧱 Bricks, cement, steel, and stones",
+          "why": "Pucca houses in towns and cities are built strong using bricks, cement, and steel!"
+        },
+        {
+          "skill": "pick",
+          "q": "What is a kutcha house usually made of?",
+          "options": [
+            "🌾 Mud, bamboo, straw, and dry leaves",
+            "🧱 Baked bricks, cement, iron rods, and stone slabs",
+            "🪙 Gold, silver, iron, and copper metals"
+          ],
+          "a": "🌾 Mud, bamboo, straw, and dry leaves",
+          "why": "Kutcha houses are simple huts often found in villages, built from mud, straw, and bamboo."
+        },
+        {
+          "skill": "pick",
+          "q": "In which room of the house do we cook delicious food?",
+          "options": [
+            "🍳 Kitchen",
+            "🛏️ Bedroom",
+            "🛁 Bathroom"
+          ],
+          "a": "🍳 Kitchen",
+          "why": "We prepare and cook our meals in the kitchen!"
+        },
+        {
+          "skill": "pick",
+          "q": "Where do we go to sleep and rest when we are tired?",
+          "options": [
+            "🛏️ Bedroom",
+            "🍳 Kitchen",
+            "🛋️ Drawing room"
+          ],
+          "a": "🛏️ Bedroom",
+          "why": "We sleep and rest comfortably in our bedroom."
+        },
+        {
+          "skill": "pick",
+          "q": "In which room do we sit with our guests and family to chat or watch TV?",
+          "options": [
+            "🛋️ Living room or drawing room",
+            "🛁 Bathroom",
+            "🍳 Kitchen"
+          ],
+          "a": "🛋️ Living room or drawing room",
+          "why": "The living room is where we welcome visitors and spend fun time together!"
+        },
+        {
+          "skill": "pick",
+          "q": "What should we do to keep our home sweet home pleasant?",
+          "options": [
+            "🧹 Keep it clean, let sunlight in, and throw garbage in bins",
+            "🗑️ Throw wrappers and dirty clothes on the floor",
+            "🕷️ Let dust, dirt, and spider webs cover the walls"
+          ],
+          "a": "🧹 Keep it clean, let sunlight in, and throw garbage in bins",
+          "why": "Sunlight, fresh air, and cleanliness keep germs away and make our home beautiful!"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "id": "evs_school",
+      "title": "My School",
+      "icon": "🏫",
+      "concept": {
+        "intro": [
+          "School is a wonderful place where we go to learn and play.",
+          "Our teachers teach us how to read, write, draw, and share.",
+          "We make new friends and learn good manners every day!"
+        ],
+        "tip": "Always reach school on time and respect your teachers and friends!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Why do we go to school daily?",
+          "options": [
+            "📚 To learn reading, writing, and good manners",
+            "🛝 To play sports all day without attending any classes",
+            "🛒 To buy fresh vegetables and weekly groceries"
+          ],
+          "a": "📚 To learn reading, writing, and good manners",
+          "why": "School is our temple of learning where we gain knowledge and learn good values!"
+        },
+        {
+          "skill": "pick",
+          "q": "Who helps us learn new lessons and guides us in class?",
+          "options": [
+            "👩‍🏫 Teacher",
+            "👮 Police officer",
+            "👨‍🍳 Chef"
+          ],
+          "a": "👩‍🏫 Teacher",
+          "why": "Our teachers work hard to teach us lessons, songs, and good habits!"
+        },
+        {
+          "skill": "pick",
+          "q": "Where in the school do we go to read many interesting books?",
+          "options": [
+            "📖 Library",
+            "⚽ Playground",
+            "🥗 Canteen"
+          ],
+          "a": "📖 Library",
+          "why": "The school library is a quiet place full of story books and learning books!"
+        },
+        {
+          "skill": "pick",
+          "q": "What items should you pack in your school bag every morning?",
+          "options": [
+            "✏️ Books, notebooks, pencils, and a lunch box",
+            "🐱 A pet kitten and puppy to play with",
+            "🎨 Only drawing coloring books and a football"
+          ],
+          "a": "✏️ Books, notebooks, pencils, and a lunch box",
+          "why": "We must carry our books and stationery so we are ready for our classes!"
+        },
+        {
+          "skill": "pick",
+          "q": "Where do children play games and run around during recess?",
+          "options": [
+            "⚽ Playground",
+            "📖 Library",
+            "👩‍🏫 Principal's office"
+          ],
+          "a": "⚽ Playground",
+          "why": "The school playground is where we play fun sports and games with our friends!"
+        },
+        {
+          "skill": "pick",
+          "q": "How should we behave in school?",
+          "options": [
+            "😊 Be polite, share with friends, and listen to teachers",
+            "😤 Push others and shout loudly in the corridors",
+            "🗑️ Tear pages from library books and litter the floor"
+          ],
+          "a": "😊 Be polite, share with friends, and listen to teachers",
+          "why": "Good manners and kindness make school a happy place for everyone!"
+        },
+        {
+          "skill": "pick",
+          "q": "What do we wear when we go to school so everyone looks neat and united?",
+          "options": [
+            "👕 School uniform",
+            "👖 Casual blue jeans and colorful party T-shirts",
+            "🩱 Colorful swimming costume and cap"
+          ],
+          "a": "👕 School uniform",
+          "why": "Wearing a clean school uniform gives us pride and a sense of belonging!"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "id": "evs_plants",
+      "title": "Plants Around Us",
+      "icon": "🌳",
+      "concept": {
+        "intro": [
+          "Plants are our green friends! They grow all around us.",
+          "Some plants are tall and strong trees, while some are small bushes.",
+          "They give us fresh air, tasty fruits, flowers, and shade!"
+        ],
+        "tip": "Plants need sunlight, soil, and water to grow strong and healthy!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What do we call big, tall, and strong plants like neem and mango?",
+          "options": [
+            "🌳 Trees",
+            "🌾 Grass",
+            "🍄 Mushrooms"
+          ],
+          "a": "🌳 Trees",
+          "why": "Big and tall plants with thick woody stems are called trees!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which part of the plant grows under the soil and absorbs water?",
+          "options": [
+            "🌱 Roots",
+            "🍃 Leaves",
+            "🌸 Flowers"
+          ],
+          "a": "🌱 Roots",
+          "why": "Roots fix the plant tightly in the soil and suck up water and minerals!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which green part of the plant makes food using sunlight?",
+          "options": [
+            "🍃 Leaf",
+            "🪵 Root",
+            "🪨 Bark"
+          ],
+          "a": "🍃 Leaf",
+          "why": "Leaves are called the kitchen of the plant because they prepare food in the sunlight!"
+        },
+        {
+          "skill": "pick",
+          "q": "What colorful and fragrant part of a plant turns into fruit?",
+          "options": [
+            "🌸 Flower",
+            "🌱 Root",
+            "🪵 Trunk"
+          ],
+          "a": "🌸 Flower",
+          "why": "Flowers bloom with lovely colors and scents, and many grow into delicious fruits!"
+        },
+        {
+          "skill": "pick",
+          "q": "What do plants need to grow big and healthy?",
+          "options": [
+            "☀️ Sunlight, water, air, and good soil",
+            "🌱 Only soil and dark shade, without any water or sunlight",
+            "📺 Television cartoons and video games"
+          ],
+          "a": "☀️ Sunlight, water, air, and good soil",
+          "why": "Just like we need food, plants need sunlight, fresh air, and water to grow!"
+        },
+        {
+          "skill": "pick",
+          "q": "Why are plants called our green friends?",
+          "options": [
+            "🍏 They give us oxygen to breathe, food to eat, and cool shade",
+            "🌧️ Because they only grow during heavy summer rain showers",
+            "🗣️ They speak Hindi and English with children"
+          ],
+          "a": "🍏 They give us oxygen to breathe, food to eat, and cool shade",
+          "why": "Plants clean the air and provide us with vegetables, fruits, medicines, and wood!"
+        },
+        {
+          "skill": "pick",
+          "q": "How should we care for plants and trees around us?",
+          "options": [
+            "💧 Water them regularly and never pluck leaves unnecessarily",
+            "🪓 Cut down green trees for fun and games",
+            "✂️ Trim off all their green leaves every single day"
+          ],
+          "a": "💧 Water them regularly and never pluck leaves unnecessarily",
+          "why": "Loving and protecting plants keeps our Earth green and beautiful!"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "id": "evs_animals",
+      "title": "Animals Around Us",
+      "icon": "🦁",
+      "concept": {
+        "intro": [
+          "We share our wonderful Earth with many kinds of animals.",
+          "Some animals live in forests (wild animals), and some live on farms or in our homes (domestic and pet animals).",
+          "Birds fly in the sky, and fish swim in water!"
+        ],
+        "tip": "Always be kind to animals and provide clean water and food for pets!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Which animal is known as the King of the Jungle?",
+          "options": [
+            "🦁 Lion",
+            "🐰 Rabbit",
+            "🐭 Mouse"
+          ],
+          "a": "🦁 Lion",
+          "why": "The strong and brave lion lives in the forest and is called the King of the Jungle!"
+        },
+        {
+          "skill": "pick",
+          "q": "What do we call animals like cows, sheep, and hens that live on farms and help us?",
+          "options": [
+            "🐄 Domestic or farm animals",
+            "🐅 Wild jungle animals",
+            "🦖 Extinct dinosaurs"
+          ],
+          "a": "🐄 Domestic or farm animals",
+          "why": "Domestic animals live near us and give us milk, wool, and eggs!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which friendly animal lives in our home as a pet and guards the house?",
+          "options": [
+            "🐶 Dog",
+            "🐘 Elephant",
+            "🐊 Crocodile"
+          ],
+          "a": "🐶 Dog",
+          "why": "Dogs are faithful pets who love us, play with us, and protect our home!"
+        },
+        {
+          "skill": "pick",
+          "q": "How do birds fly in the sky?",
+          "options": [
+            "🦅 With the help of their wings and light feathers",
+            "🦵 By jumping very high with long legs and webbed feet",
+            "🚀 With rocket engines attached to their backs"
+          ],
+          "a": "🦅 With the help of their wings and light feathers",
+          "why": "Birds have wings and feathers that help them glide and fly smoothly through the air!"
+        },
+        {
+          "skill": "pick",
+          "q": "Where do fish live and swim?",
+          "options": [
+            "🐟 In water like ponds, rivers, and oceans",
+            "🕳️ In deep underground caves and dark soil burrows",
+            "🏜️ In dry desert sand without any water"
+          ],
+          "a": "🐟 In water like ponds, rivers, and oceans",
+          "why": "Fish are water animals that swim using fins and breathe under water using gills!"
+        },
+        {
+          "skill": "pick",
+          "q": "What sound does a cow make?",
+          "options": [
+            "🐮 Moo moo",
+            "🐱 Meow meow",
+            "🦁 Roar roar"
+          ],
+          "a": "🐮 Moo moo",
+          "why": "Cows moo gently while they chew green grass in the field!"
+        },
+        {
+          "skill": "pick",
+          "q": "How should we treat our pets and neighborhood animals?",
+          "options": [
+            "💖 Give them food, clean water, and lots of love and kindness",
+            "🪨 Throw stones, shout, and tease them unkindly",
+            "⛓️ Tie them up tightly with heavy ropes all day"
+          ],
+          "a": "💖 Give them food, clean water, and lots of love and kindness",
+          "why": "Animals can feel pain and hunger just like us, so we must always treat them gently!"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "id": "evs_food",
+      "title": "The Food We Eat",
+      "icon": "🍎",
+      "concept": {
+        "intro": [
+          "We eat food every day to get energy to play, study, and grow.",
+          "We get delicious food from plants (fruits, vegetables, grains) and animals (milk, eggs).",
+          "Eating clean, healthy food keeps us strong and fights off sickness!"
+        ],
+        "tip": "Always wash your hands before and after eating every meal!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Why do we need to eat food every day?",
+          "options": [
+            "⚡ To get energy to grow, play, and stay healthy",
+            "🦷 To keep our teeth white without brushing them",
+            "🎨 Because food is just for decoration and painting"
+          ],
+          "a": "⚡ To get energy to grow, play, and stay healthy",
+          "why": "Food is like fuel for our body! It gives us strength and energy to do fun activities."
+        },
+        {
+          "skill": "pick",
+          "q": "Which of these foods do we get from plants and trees?",
+          "options": [
+            "🍎 Apples, carrots, rice, and wheat",
+            "🥛 Milk, curd, and cheese",
+            "🥚 Eggs and honey"
+          ],
+          "a": "🍎 Apples, carrots, rice, and wheat",
+          "why": "Fruits, vegetables, pulses, and grains grow on green plants and trees!"
+        },
+        {
+          "skill": "pick",
+          "q": "Where do we get fresh white milk from?",
+          "options": [
+            "🐄 Cows, buffaloes, and goats",
+            "🌾 Wheat, rice, and corn plants growing in farm fields",
+            "🪨 Cold river rocks and mountain stones"
+          ],
+          "a": "🐄 Cows, buffaloes, and goats",
+          "why": "Milk is an animal product given by gentle farm animals like cows and goats!"
+        },
+        {
+          "skill": "pick",
+          "q": "What should you always do before eating your breakfast, lunch, or dinner?",
+          "options": [
+            "🧼 Wash your hands nicely with soap and water",
+            "🤾 Play in the garden mud without washing hands",
+            "🐶 Wipe your dirty hands on the pet puppy's fur"
+          ],
+          "a": "🧼 Wash your hands nicely with soap and water",
+          "why": "Washing hands removes dirt and germs so they do not go inside our tummy!"
+        },
+        {
+          "skill": "pick",
+          "q": "Why is drinking milk good for growing children?",
+          "options": [
+            "🦴 It makes our bones and teeth strong and healthy",
+            "🏃 It helps us run without needing to sleep or rest",
+            "🎈 It makes our body float high up in the air"
+          ],
+          "a": "🦴 It makes our bones and teeth strong and healthy",
+          "why": "Milk is a complete food full of calcium that builds super strong bones and teeth!"
+        },
+        {
+          "skill": "pick",
+          "q": "How many main meals do we eat in a day?",
+          "options": [
+            "🍽️ Three meals: Breakfast, Lunch, and Dinner",
+            "✌️ Two meals: morning breakfast and evening dinner",
+            "🔢 Ten small meals every hour of the day"
+          ],
+          "a": "🍽️ Three meals: Breakfast, Lunch, and Dinner",
+          "why": "We eat breakfast in the morning, lunch in the afternoon, and dinner at night!"
+        },
+        {
+          "skill": "pick",
+          "q": "Why should we avoid eating too much uncovered street food or junk food?",
+          "options": [
+            "🦠 Uncovered street food can catch dust and harmful germs",
+            "🥗 Because homemade cooked food is too spicy to eat",
+            "🚫 Because drinking clean water is too sweet"
+          ],
+          "a": "🦠 Uncovered street food can catch dust and harmful germs",
+          "why": "Eating fresh, clean, homemade food protects our stomach from harmful germs!"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "id": "evs_clothes",
+      "title": "The Clothes We Wear",
+      "icon": "👕",
+      "concept": {
+        "intro": [
+          "We wear clothes to cover our body and look smart and neat.",
+          "Clothes protect us from hot sun, freezing cold, wind, and rain.",
+          "We wear different types of clothes in summer, winter, and rainy seasons!"
+        ],
+        "tip": "Wear light cotton clothes in summer and warm woolen sweaters in winter!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Why do we wear clothes?",
+          "options": [
+            "👕 To cover our body and protect us from weather and dust",
+            "🙈 So no one can ever see our face",
+            "🩱 Because clothes make our body heavier and stronger"
+          ],
+          "a": "👕 To cover our body and protect us from weather and dust",
+          "why": "Clothes protect our skin from heat, cold, rain, and insect bites!"
+        },
+        {
+          "skill": "pick",
+          "q": "What type of clothes should we wear during hot summer days?",
+          "options": [
+            "🩳 Light cotton clothes that keep us cool",
+            "🧣 Heavy woolen jackets and gloves",
+            "🧥 Plastic raincoats"
+          ],
+          "a": "🩳 Light cotton clothes that keep us cool",
+          "why": "Cotton clothes absorb sweat and let air pass through, keeping us cool in summer!"
+        },
+        {
+          "skill": "pick",
+          "q": "What do we wear when it is very cold in winter?",
+          "options": [
+            "🧥 Woolen sweaters, jackets, caps, and gloves",
+            "🩱 Swimming trunks",
+            "🩳 Shorts and sleeveless shirts"
+          ],
+          "a": "🧥 Woolen sweaters, jackets, caps, and gloves",
+          "why": "Woolen clothes trap body heat and keep us warm and cozy during cold winters!"
+        },
+        {
+          "skill": "pick",
+          "q": "What do we use or wear when we go out in heavy rain?",
+          "options": [
+            "☔ Raincoats, gumboots, and umbrellas",
+            "🧦 Paper shoes and silk dresses",
+            "🧣 Woolen scarves"
+          ],
+          "a": "☔ Raincoats, gumboots, and umbrellas",
+          "why": "Raincoats and umbrellas are waterproof and keep us dry when it rains!"
+        },
+        {
+          "skill": "pick",
+          "q": "Where do we get warm wool from?",
+          "options": [
+            "🐑 From the thick soft fleece of sheep",
+            "🐛 From tiny white silkworms on mulberry leaves",
+            "🪴 From white cotton balls growing on cotton plants"
+          ],
+          "a": "🐑 From the thick soft fleece of sheep",
+          "why": "Sheep grow thick woolen hair called fleece, which is spun into yarn for sweaters!"
+        },
+        {
+          "skill": "pick",
+          "q": "What do we call the special dress worn by students to school or doctors to a hospital?",
+          "options": [
+            "👔 Uniform",
+            "🧙 Costume",
+            "🥻 Nightdress"
+          ],
+          "a": "👔 Uniform",
+          "why": "A uniform identifies people in a school or job, like students, doctors, and police officers!"
+        },
+        {
+          "skill": "pick",
+          "q": "What do we call special traditional clothes worn during festivals and weddings around the world?",
+          "options": [
+            "👘 Costumes or festive dresses",
+            "🩱 Colorful swimming costume and caps",
+            "🧦 Woolen gym socks and running shoes"
+          ],
+          "a": "👘 Costumes or festive dresses",
+          "why": "People celebrate cultures and festivals by wearing colorful traditional costumes!"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "id": "evs_air_water",
+      "title": "Air and Water",
+      "icon": "💧",
+      "concept": {
+        "intro": [
+          "Air and water are essential for all living things on Earth!",
+          "We cannot see air, but we can feel it when the wind blows.",
+          "We need clean water to drink, bathe, cook, and grow green plants!"
+        ],
+        "tip": "Never waste water! Turn off the tap tightly while brushing your teeth!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Can we see the air around us?",
+          "options": [
+            "❌ No, we cannot see air, but we can feel it when it moves",
+            "✔️ Yes, we can see air as a thick white fog every day",
+            "✔️ Yes, we can see clean air shining in bright sunlight"
+          ],
+          "a": "❌ No, we cannot see air, but we can feel it when it moves",
+          "why": "Air is invisible, but we feel moving air (wind) on our face and see leaves rustling!"
+        },
+        {
+          "skill": "pick",
+          "q": "What do all living things like people, animals, and plants need to live?",
+          "options": [
+            "🌬️ Fresh air to breathe and clean water to drink",
+            "🥤 Only cold fruit juices and sweetened milk",
+            "💰 Shiny gold coins and diamond jewels"
+          ],
+          "a": "🌬️ Fresh air to breathe and clean water to drink",
+          "why": "Without fresh air and water, living things cannot survive!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which of these toys or objects can be filled with air?",
+          "options": [
+            "🎈 Balloons, footballs, and bicycle tires",
+            "🪨 Heavy boulders, river rocks, and mountain stones",
+            "🥄 Wooden spoons"
+          ],
+          "a": "🎈 Balloons, footballs, and bicycle tires",
+          "why": "Air takes up space inside balloons, balls, and tires, puffing them up!"
+        },
+        {
+          "skill": "pick",
+          "q": "Where does rainwater come from?",
+          "options": [
+            "🌧️ From dark rain clouds in the sky",
+            "🚰 From inside underground municipal water pipes",
+            "🕳️ From underground caves"
+          ],
+          "a": "🌧️ From dark rain clouds in the sky",
+          "why": "Rain falls from rain clouds and fills up lakes, rivers, and ponds on Earth!"
+        },
+        {
+          "skill": "pick",
+          "q": "What are the main uses of water at home?",
+          "options": [
+            "🥛 Drinking, cooking, bathing, washing, and watering plants",
+            "🔥 Lighting big outdoor campfires and burning forest wood",
+            "📜 Writing letters and painting on paper"
+          ],
+          "a": "🥛 Drinking, cooking, bathing, washing, and watering plants",
+          "why": "We use clean water every single day for keeping ourselves and our home clean and healthy!"
+        },
+        {
+          "skill": "pick",
+          "q": "What should you do while brushing your teeth to save precious water?",
+          "options": [
+            "🚰 Turn off the tap tightly while brushing",
+            "🌊 Leave the tap running full blast wasting water",
+            "🪣 Spill clean water all over the bathroom floor"
+          ],
+          "a": "🚰 Turn off the tap tightly while brushing",
+          "why": "Every drop of clean water is precious, so turning off the tap saves gallons of water!"
+        },
+        {
+          "skill": "pick",
+          "q": "Why should we always drink clean, filtered, or boiled water?",
+          "options": [
+            "💧 Clean water is free from germs and keeps us healthy",
+            "🚰 Because cold tap water from any pond is always safe",
+            "🥤 Because boiled water is sweeter than fruit juice"
+          ],
+          "a": "💧 Clean water is free from germs and keeps us healthy",
+          "why": "Dirty water contains germs that can make us fall sick, so we must always drink clean water!"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "id": "evs_neighbourhood",
+      "title": "My Neighbourhood",
+      "icon": "🏘️",
+      "concept": {
+        "intro": [
+          "The families living near our house are our friendly neighbours.",
+          "All the houses, parks, markets, and places around our home make up our neighbourhood.",
+          "We should always keep our neighbourhood clean, peaceful, and green!"
+        ],
+        "tip": "Say hello to your neighbours and help them whenever they need support!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Who are our neighbours?",
+          "options": [
+            "🏡 The friendly people and families who live near our house",
+            "🏫 The school teachers and classmates living across the city",
+            "👩‍⚕️ The doctors and nurses working at the city hospital"
+          ],
+          "a": "🏡 The friendly people and families who live near our house",
+          "why": "Neighbours live close to us, celebrate together, and help each other in times of need!"
+        },
+        {
+          "skill": "pick",
+          "q": "Where do we go in our neighbourhood to buy vegetables, fruits, and groceries?",
+          "options": [
+            "🛒 The local market or shops",
+            "🏥 The hospital operating room",
+            "🏫 The school principal's office"
+          ],
+          "a": "🛒 The local market or shops",
+          "why": "The market has shops where we can buy everyday food, clothes, and household items!"
+        },
+        {
+          "skill": "pick",
+          "q": "Where do we go when we fall sick or get injured?",
+          "options": [
+            "🏥 Hospital or clinic to see a doctor",
+            "🎪 A colorful entertainment circus tent",
+            "🍞 A neighborhood bakery shop for bread"
+          ],
+          "a": "🏥 Hospital or clinic to see a doctor",
+          "why": "Doctors and nurses in a hospital examine us and give medicines to make us well!"
+        },
+        {
+          "skill": "pick",
+          "q": "Where do we go to deposit money or keep our savings safe?",
+          "options": [
+            "🏦 Bank",
+            "🌳 Park playground",
+            "⚽ Football stadium"
+          ],
+          "a": "🏦 Bank",
+          "why": "A bank is a safe place where people deposit money and valuable jewels!"
+        },
+        {
+          "skill": "pick",
+          "q": "Who keeps our neighbourhood safe and catches thieves?",
+          "options": [
+            "👮 Police officers at the police station",
+            "👨‍🍳 Chefs cooking food in a restaurant",
+            "🧑‍🎨 Painters drawing pictures in an art gallery"
+          ],
+          "a": "👮 Police officers at the police station",
+          "why": "Police officers work hard day and night to maintain law and order and keep us safe!"
+        },
+        {
+          "skill": "pick",
+          "q": "Where can children play on swings and enjoy fresh green grass in the evening?",
+          "options": [
+            "🛝 Neighbourhood park or playground",
+            "🚗 Busy traffic junction",
+            "✈️ Airport runway"
+          ],
+          "a": "🛝 Neighbourhood park or playground",
+          "why": "Parks have trees, flowers, and swings where children can play safely away from traffic!"
+        },
+        {
+          "skill": "pick",
+          "q": "How can we make our neighbourhood a happy and beautiful place?",
+          "options": [
+            "🌱 Plant trees, use dustbins, and be polite to everyone",
+            "🗑️ Throw wrappers on the street and make loud noises daily",
+            "💥 Break garden benches and streetlights everywhere"
+          ],
+          "a": "🌱 Plant trees, use dustbins, and be polite to everyone",
+          "why": "A clean, green, and friendly neighbourhood makes life peaceful and joyful for all families!"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "id": "evs_helpers",
+      "title": "People Who Help Us",
+      "icon": "👮‍♂️",
+      "concept": {
+        "intro": [
+          "Many wonderful people work hard every day to make our lives comfortable.",
+          "Doctors, teachers, police officers, farmers, and cobblers are our community helpers.",
+          "We must respect every helper and appreciate their hard work!"
+        ],
+        "tip": "Always say 'Thank You' to the helpers who make our day easier!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Who grows food grains, fruits, and vegetables in the green fields for us to eat?",
+          "options": [
+            "👨‍🌾 Farmer",
+            "🧑‍✈️ Pilot",
+            "👨‍🎤 Singer"
+          ],
+          "a": "👨‍🌾 Farmer",
+          "why": "Farmers work hard in the fields under sun and rain to grow the food we eat every day!"
+        },
+        {
+          "skill": "pick",
+          "q": "Who treats us with medicines and injections when we fall sick?",
+          "options": [
+            "👨‍⚕️ Doctor",
+            "👨‍🚒 Firefighter",
+            "🧑‍🔧 Mechanic"
+          ],
+          "a": "👨‍⚕️ Doctor",
+          "why": "Doctors check our health and give proper treatment so we recover quickly!"
+        },
+        {
+          "skill": "pick",
+          "q": "Who brings letters, parcels, and postcards to our home?",
+          "options": [
+            "📮 Postman",
+            "👨‍🍳 Chef",
+            "🧑‍🚀 Astronaut"
+          ],
+          "a": "📮 Postman",
+          "why": "The postman collects mail from the post office and delivers letters to our doorstep!"
+        },
+        {
+          "skill": "pick",
+          "q": "Who stitches and repairs our clothes so they fit us perfectly?",
+          "options": [
+            "🧵 Tailor",
+            "🔨 Carpenter",
+            "👨‍🌾 Farmer"
+          ],
+          "a": "🧵 Tailor",
+          "why": "A tailor uses a sewing machine, thread, and needle to stitch beautiful shirts and dresses!"
+        },
+        {
+          "skill": "pick",
+          "q": "Who mends our broken shoes and sandals?",
+          "options": [
+            "🥿 Cobbler",
+            "👩‍🏫 Teacher",
+            "👮 Police officer"
+          ],
+          "a": "🥿 Cobbler",
+          "why": "A cobbler repairs shoes, boots, and sandals so we can walk comfortably!"
+        },
+        {
+          "skill": "pick",
+          "q": "Who rushes with a water hose to put out dangerous fires?",
+          "options": [
+            "👨‍🚒 Firefighter",
+            "🍞 Baker",
+            "📮 Postman"
+          ],
+          "a": "👨‍🚒 Firefighter",
+          "why": "Brave firefighters drive red fire engines and use big water hoses to put out fires and save lives!"
+        },
+        {
+          "skill": "pick",
+          "q": "What should you say when you make a mistake or hurt someone by accident?",
+          "options": [
+            "🙏 Say the magic word 'SORRY' and try not to repeat it",
+            "🏃 Run away quickly and laugh out loud",
+            "😡 Blame someone else for your own mistake"
+          ],
+          "a": "🙏 Say the magic word 'SORRY' and try not to repeat it",
+          "why": "Saying sorry shows good manners and helps us learn from our mistakes with kindness!"
+        }
+      ],
+      "level": 4
+    },
+    {
+      "id": "evs_bharat",
+      "title": "My Country Bharat",
+      "icon": "🇮🇳",
+      "concept": {
+        "intro": [
+          "Our beloved country is Bharat (India). It is a land of rich cultures and celebrations!",
+          "We have colorful festivals, majestic mountains, rivers, and diverse traditions.",
+          "We all love our country and stand proud of our National Symbols!"
+        ],
+        "tip": "Always stand up straight and quiet when our National Anthem is playing!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What is the name of our wonderful country?",
+          "options": [
+            "🇮🇳 Bharat (India)",
+            "🌏 Sri Lanka, our neighbor island country in the Indian Ocean",
+            "🏔️ Nepal, the mountainous country to our north"
+          ],
+          "a": "🇮🇳 Bharat (India)",
+          "why": "Bharat (India) is our great motherland, famous for unity in diversity!"
+        },
+        {
+          "skill": "pick",
+          "q": "What is the name of our beautiful National Bird, known for its colorful feathers?",
+          "options": [
+            "🦚 Peacock",
+            "🦜 Parrot",
+            "🐦 Pigeon"
+          ],
+          "a": "🦚 Peacock",
+          "why": "The peacock is our National Bird! When it rains, it dances proudly with its vibrant blue and green feathers."
+        },
+        {
+          "skill": "pick",
+          "q": "Which majestic royal animal is our National Animal?",
+          "options": [
+            "🐅 Royal Bengal Tiger",
+            "🐘 Elephant",
+            "🐕 Dog"
+          ],
+          "a": "🐅 Royal Bengal Tiger",
+          "why": "The Royal Bengal Tiger represents strength, grace, and bravery as our National Animal!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which pink or white water flower is the National Flower of Bharat?",
+          "options": [
+            "🪷 Lotus",
+            "🌹 Rose",
+            "🌻 Sunflower"
+          ],
+          "a": "🪷 Lotus",
+          "why": "The lotus grows peacefully in water and symbolizes purity and beauty as our National Flower!"
+        },
+        {
+          "skill": "pick",
+          "q": "How many colors are there in our National Flag, the Tiranga?",
+          "options": [
+            "🇮🇳 Three colors: Saffron, White, and Green with a blue Chakra",
+            "☝️ Only one single blue color all over the flag",
+            "⚫ Black and yellow diagonal stripes everywhere"
+          ],
+          "a": "🇮🇳 Three colors: Saffron, White, and Green with a blue Chakra",
+          "why": "Our Tiranga has Saffron for courage, White for peace, and Green for prosperity, with the Ashoka Chakra in the center!"
+        },
+        {
+          "skill": "pick",
+          "q": "What is the National Anthem of Bharat that we sing with pride in school?",
+          "options": [
+            "🎶 Jana Gana Mana",
+            "🎶 Vande Mataram, our beautiful National Song",
+            "🎶 Sare Jahan Se Achha, our famous patriotic song"
+          ],
+          "a": "🎶 Jana Gana Mana",
+          "why": "'Jana Gana Mana' is our National Anthem written by Rabindranath Tagore. We stand at attention when we sing it!"
+        },
+        {
+          "skill": "pick",
+          "q": "What makes Bharat special among all countries?",
+          "options": [
+            "🎉 People of diverse cultures and festivals live in harmony",
+            "🏔️ It is covered only in ice and snow all year round",
+            "🚫 Nobody celebrates any traditional festivals here"
+          ],
+          "a": "🎉 People of diverse cultures and festivals live in harmony",
+          "why": "In Bharat, we celebrate Diwali, Eid, Christmas, and Holi together as one big loving family!"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "id": "evs_world",
+      "title": "World Around Us",
+      "icon": "🌍",
+      "concept": {
+        "intro": [
+          "Beyond our country, there is a huge world full of many different countries!",
+          "People around the world may speak different languages or wear different clothes.",
+          "Yet, everywhere on Earth, children love to play, laugh, and learn just like us!"
+        ],
+        "tip": "We are all citizens of one beautiful Earth, so we must be kind to everyone!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What do we call the big round planet where all people, animals, and trees live?",
+          "options": [
+            "🌍 Earth",
+            "☀️ The Sun",
+            "🌙 The Moon"
+          ],
+          "a": "🌍 Earth",
+          "why": "Planet Earth is our wonderful shared home in the universe, covered with land and blue oceans!"
+        },
+        {
+          "skill": "pick",
+          "q": "Are there many other countries and lands on Earth besides Bharat?",
+          "options": [
+            "✔️ Yes, there are nearly 200 countries around the world!",
+            "❌ No, Bharat is the only country on planet Earth",
+            "🌌 No, all other countries are on planet Jupiter"
+          ],
+          "a": "✔️ Yes, there are nearly 200 countries around the world!",
+          "why": "The world is huge and has many countries like Japan, Egypt, Brazil, and Australia!"
+        },
+        {
+          "skill": "pick",
+          "q": "Even though children around the world speak different languages, what common things do all children enjoy?",
+          "options": [
+            "⚽ Playing games, laughing, and celebrating with family",
+            "📚 Reading only school text books without playing games",
+            "🛌 Sleeping all day inside bedrooms without meeting friends"
+          ],
+          "a": "⚽ Playing games, laughing, and celebrating with family",
+          "why": "No matter where we live, smiles, friendship, and play are a universal language for all children!"
+        },
+        {
+          "skill": "pick",
+          "q": "What covers most of our planet Earth, making it look blue from outer space?",
+          "options": [
+            "🌊 Vast blue oceans and seas of water",
+            "🏜️ Dry yellow desert sands and rocky mountain ranges",
+            "🌳 Dense green grass and forest trees everywhere"
+          ],
+          "a": "🌊 Vast blue oceans and seas of water",
+          "why": "More than half of our Earth is covered with water in oceans and seas, which is why it is called the Blue Planet!"
+        },
+        {
+          "skill": "pick",
+          "q": "How do people travel across wide oceans to visit friends in far away countries around the world?",
+          "options": [
+            "✈️ By airplanes and big ships",
+            "🚆 By riding express railway trains across the ocean surface",
+            "🚗 By driving motor cars and school buses over ocean waves"
+          ],
+          "a": "✈️ By airplanes and big ships",
+          "why": "Airplanes zoom through the sky and ships sail across oceans to connect people all over the world!"
+        },
+        {
+          "skill": "pick",
+          "q": "What is a globe?",
+          "options": [
+            "🌐 A small round model of our planet Earth",
+            "🗺️ A flat paper map showing city roads and streets",
+            "🔭 A powerful telescope used to look at distant stars"
+          ],
+          "a": "🌐 A small round model of our planet Earth",
+          "why": "A globe shows us a miniature round model of how countries and oceans look on Earth!"
+        },
+        {
+          "skill": "pick",
+          "q": "Why is it important to learn about different cultures and countries?",
+          "options": [
+            "🤝 It helps us make new friends and respect global traditions",
+            "😤 So we can argue about which country flag is best",
+            "🙈 Because we should never travel outside our home"
+          ],
+          "a": "🤝 It helps us make new friends and respect global traditions",
+          "why": "Learning about the world opens our hearts to new ideas, delicious foods, and global friendship!"
+        }
+      ],
+      "level": 5
+    },
+    {
+      "id": "evs_universe",
+      "title": "Our Universe",
+      "icon": "☀️",
+      "concept": {
+        "intro": [
+          "When we look up at the sky, we see the amazing universe!",
+          "In the daytime, the bright golden Sun shines and gives us heat and light.",
+          "At night, the cool Moon and twinkling stars light up the dark sky!"
+        ],
+        "tip": "Never look directly at the bright Sun with your bare eyes!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What shines brightly in the sky during the daytime and gives us heat and light?",
+          "options": [
+            "☀️ The Sun",
+            "🌙 The Moon",
+            "⭐ A tiny star"
+          ],
+          "a": "☀️ The Sun",
+          "why": "The Sun is a huge ball of hot fire that warms our Earth and gives us daylight to see!"
+        },
+        {
+          "skill": "pick",
+          "q": "What do we see twinkling beautifully in the night sky?",
+          "options": [
+            "⭐ Thousands of twinkling stars and the Moon",
+            "🌈 Bright colorful rainbow arches after rain",
+            "🦅 Flying mountain eagles and forest birds"
+          ],
+          "a": "⭐ Thousands of twinkling stars and the Moon",
+          "why": "When the sun sets, the sky turns dark and we can see the Moon and distant glowing stars!"
+        },
+        {
+          "skill": "pick",
+          "q": "Why do the stars look so tiny in the night sky?",
+          "options": [
+            "🔭 Because they are very, very far away from our Earth",
+            "🌙 Because they are smaller than rain clouds in the sky",
+            "☀️ Because they only shine with weak reflected sunlight"
+          ],
+          "a": "🔭 Because they are very, very far away from our Earth",
+          "why": "Stars are actually giant glowing suns, but they look like tiny dots because they are millions of miles away!"
+        },
+        {
+          "skill": "pick",
+          "q": "Does the shape of the Moon look the same every night?",
+          "options": [
+            "🌓 No, the Moon changes shape from crescent to a circle!",
+            "🌕 Yes, the Moon is always a full round circle every night",
+            "🌑 Yes, the Moon never changes its shape or brightness"
+          ],
+          "a": "🌓 No, the Moon changes shape from crescent to a circle!",
+          "why": "As the Moon travels around Earth, we see different bright parts of it, making its shape seem to change!"
+        },
+        {
+          "skill": "pick",
+          "q": "What are soft, white, puffy clouds in the sky made of?",
+          "options": [
+            "☁️ Tiny water drops floating in the air",
+            "💨 Thick gray smoke rising from kitchen fires and chimneys",
+            "❄️ Heavy solid blocks of ice floating in the atmosphere"
+          ],
+          "a": "☁️ Tiny water drops floating in the air",
+          "why": "Clouds are made of billions of tiny floating drops of water that gather together in the sky!"
+        },
+        {
+          "skill": "pick",
+          "q": "When dark gray clouds gather in the sky, what weather is usually coming?",
+          "options": [
+            "🌧️ Cool rain and showers",
+            "🏜️ Hot desert sandstorms and dry winds coming",
+            "❄️ Freezing winter snowstorms in summer heat"
+          ],
+          "a": "🌧️ Cool rain and showers",
+          "why": "Heavy dark clouds are full of water droplets ready to fall down as refreshing rain!"
+        },
+        {
+          "skill": "pick",
+          "q": "What colorful arch of seven colors appears in the sky when sunshine hits falling raindrops?",
+          "options": [
+            "🌈 Rainbow",
+            "⚡ Bright lightning bolts flashing during heavy storms",
+            "☁️ White puffy rain clouds floating across the sky"
+          ],
+          "a": "🌈 Rainbow",
+          "why": "A magical rainbow with seven beautiful colors shines when sunlight bends through raindrops!"
+        }
+      ],
+      "level": 5
+    }
+  ]
+}

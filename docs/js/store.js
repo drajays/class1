@@ -194,6 +194,150 @@ const Store = {
     return { ok: true, msg: '+8 coins, +1 star, +12 XP! Daily challenge complete! 🎁' };
   },
 
+  awardLevel(id, subject, levelId, stars, coins, extra = {}) {
+    const oldStars = this.getLevelStars(id, subject, levelId);
+    let awardedCoins = 0;
+    let awardedStars = 0;
+    let firstTime = false;
+    let improved = false;
+
+    if (oldStars === 0) {
+      firstTime = true;
+      awardedCoins = coins;
+      awardedStars = stars;
+    } else if (stars > oldStars) {
+      improved = true;
+      awardedCoins = Math.max(0, Math.round(coins * ((stars - oldStars) / stars)));
+      awardedStars = stars - oldStars;
+    }
+
+    this.completeLevel(id, subject, levelId, stars);
+    const xp = awardedCoins > 0 ? Math.max(10, awardedCoins * 2) : 5;
+    this.addReward(id, { coins: awardedCoins, stars: awardedStars, xp });
+
+    const journeyEvent = this.logJourneyEvent(id, {
+      subject,
+      chapterId: levelId,
+      title: extra.title || levelId,
+      level: extra.level || 1,
+      stars,
+      wrong: extra.wrong || 0,
+      timeSec: extra.timeSec || 0,
+      coins: awardedCoins,
+      firstTime
+    });
+    this.stampHistoryTrail(journeyEvent);
+
+    return {
+      coins: awardedCoins,
+      stars: awardedStars,
+      firstTime,
+      improved,
+      oldStars,
+      newStars: Math.max(oldStars, stars)
+    };
+  },
+
+  logJourneyEvent(id, entry) {
+    const p = this.getPlayer(id);
+    if (!p.journal) p.journal = [];
+    const now = Date.now();
+    const event = {
+      ts: now,
+      date: new Date(now).toISOString().slice(0, 10),
+      subject: entry.subject || 'general',
+      chapterId: entry.chapterId || '',
+      title: entry.title || entry.chapterId || 'Lesson',
+      level: entry.level || 1,
+      stars: entry.stars || 0,
+      wrong: entry.wrong || 0,
+      timeSec: entry.timeSec || 0,
+      coins: entry.coins || 0,
+      firstTime: !!entry.firstTime
+    };
+    p.journal.unshift(event);
+    if (p.journal.length > 500) {
+      p.journal = p.journal.slice(0, 500);
+    }
+    this.updatePlayer(id, p);
+    return event;
+  },
+
+  getJournal(id) {
+    const p = this.getPlayer(id);
+    return p.journal || [];
+  },
+
+  stampHistoryTrail(event) {
+    if (typeof window === 'undefined' || !window.history || typeof location === 'undefined') return;
+    try {
+      const date = event.date || new Date().toISOString().slice(0, 10);
+      const sub = (event.subject || 'general').replace(/[^a-zA-Z0-9_-]/g, '-');
+      const chap = (event.chapterId || event.title || 'lesson').replace(/[^a-zA-Z0-9_-]/g, '-');
+      const stars = (event.stars || 1) + 'star';
+      const hashPath = `#journey/${date}/${sub}/${chap}/${stars}`;
+      window.history.pushState({ journeyStamp: true }, '', hashPath);
+      if (typeof document !== 'undefined') {
+        const origTitle = document.title || 'Puppy Park';
+        document.title = `✅ ${sub.toUpperCase()} — ${event.title} ${'⭐'.repeat(event.stars || 1)} · Puppy Park`;
+        setTimeout(() => {
+          if (document.title && document.title.startsWith('✅ ')) {
+            document.title = origTitle;
+          }
+        }, 4000);
+      }
+    } catch (e) {}
+  },
+
+  awardFun(id, { coins = 0, xp = 0, label = 'Fun Game', stars = 0 }) {
+    const p = this.getPlayer(id);
+    const today = new Date().toISOString().slice(0, 10);
+    if (p.funDate !== today) {
+      p.funDate = today;
+      p.funWinsToday = 0;
+    }
+    const wins = p.funWinsToday || 0;
+    let awardedCoins = coins;
+    let awardedStars = stars;
+    let capped = false;
+    if (wins >= 3) {
+      awardedCoins = 0;
+      awardedStars = 0;
+      capped = true;
+    }
+    p.funWinsToday = wins + 1;
+    this.updatePlayer(id, p);
+
+    this.addReward(id, { coins: awardedCoins, stars: awardedStars, xp });
+    if (label) {
+      if (capped) {
+        this.logActivity(id, `${label}: won (daily fun cap reached, XP only)`);
+      } else {
+        this.logActivity(id, `${label}: won +${awardedCoins} coins! 🎮`);
+      }
+    }
+    return { coins: awardedCoins, stars: awardedStars, xp, capped, winsToday: p.funWinsToday };
+  },
+
+  logAttempt(id, subject, levelId, { wrong = 0, timeSec = 0, stars = 0, abandoned = false } = {}) {
+    const p = this.getPlayer(id);
+    if (!p.attemptStats) p.attemptStats = {};
+    const key = `${subject}_${levelId}`;
+    const prev = p.attemptStats[key] || { wrong: 0, attempts: 0, abandonedCount: 0, lastStars: 0, timeSec: 0 };
+    p.attemptStats[key] = {
+      wrong: prev.wrong + wrong,
+      attempts: prev.attempts + 1,
+      abandonedCount: prev.abandonedCount + (abandoned ? 1 : 0),
+      lastStars: stars || prev.lastStars || 0,
+      timeSec: (prev.timeSec || 0) + timeSec,
+      lastTs: Date.now()
+    };
+    p.lastAttemptSubject = subject;
+    p.lastAttemptLevelId = levelId;
+    this.updatePlayer(id, p);
+    return p.attemptStats[key];
+  },
+
   completeLevel(id, subject, levelId, starCount) {
     const p = this.getPlayer(id);
     const key = subject;
@@ -201,6 +345,9 @@ const Store = {
     const prev = p[key][levelId] || 0;
     p[key][levelId] = Math.max(prev, starCount);
     if (starCount === 3) p.perfectLevels = (p.perfectLevels || 0) + 1;
+    if (!p.recentCompletions) p.recentCompletions = [];
+    p.recentCompletions.push({ subject, levelId, stars: starCount, ts: Date.now() });
+    if (p.recentCompletions.length > 50) p.recentCompletions.shift();
     this.updatePlayer(id, p);
     return p;
   },

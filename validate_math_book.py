@@ -25,13 +25,26 @@ def main() -> int:
     d = json.loads(DATA.read_text(encoding="utf-8"))
     errs = []
     ids = set()
+    last_level = 0
     for ch in d["chapters"]:
         if ch["id"] in ids:
             errs.append(f"DUP chapter id {ch['id']}")
         ids.add(ch["id"])
-        for k in ("id", "title", "icon", "concept", "problems"):
+        for k in ("id", "title", "icon", "concept", "problems", "level"):
             if k not in ch:
                 errs.append(f"{ch['id']}: missing chapter field {k}")
+
+        level = ch.get("level")
+        if not isinstance(level, int) or not (1 <= level <= 5):
+            errs.append(f"{ch['id']}: 'level' must be integer 1-5, got {level!r}")
+        else:
+            if level < last_level:
+                is_revision = any(term in str(ch['id']).lower() or term in str(ch.get("title", "")).lower()
+                                  for term in ("revision", "review", "abhyaas", "अभ्यास"))
+                if not is_revision:
+                    print(f"  [WARN] math_book.json: {ch['id']} jumps down in level from {last_level} to {level}")
+            last_level = level
+
         for i, p in enumerate(ch["problems"]):
             loc = f"{ch['id']}#{i + 1}"
             sk = p.get("skill")

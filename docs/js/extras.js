@@ -142,13 +142,26 @@ const QuickQuest = {
   finish() {
     const total = this.questions().length;
     const coins = this.correct * 6 + 10;
-    Store.addReward(this.playerId, { coins, stars: this.correct >= 4 ? 1 : 0, xp: this.correct * 10 });
-    Store.logActivity(this.playerId, `Quick quest ${this.subjectId}: ${this.correct}/${total}`);
+    const res = Store.awardFun(this.playerId, {
+      coins,
+      stars: this.correct >= 4 ? 1 : 0,
+      xp: this.correct * 10,
+      label: `Quick quest ${this.subjectId}`,
+    });
     Pet.onLessonComplete(this.playerId);
+
+    let title = 'Quest Complete!';
+    let text = `${this.correct}/${total} correct · +${res.coins} coins`;
+    if (res.capped) {
+      title = 'Practice Superstar! 🌟';
+      text = `${this.correct}/${total} correct! The puppies are full for today — feed them with something NEW! 🦴`;
+      Speech.speak("Practice superstar! The puppies are full for today — feed them with something new!");
+    }
+
     Rewards.showPopup({
       emoji: '🏅',
-      title: 'Quest Complete!',
-      text: `${this.correct}/${total} correct · +${coins} coins`,
+      title,
+      text,
       onOk: () => SubjectHub.open(this.subjectId),
     });
     App.refreshStats();

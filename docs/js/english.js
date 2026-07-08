@@ -244,9 +244,8 @@ const EnglishGame = {
     let stars = 1;
     if (ratio >= 0.6) stars = 2;
     if (ratio >= 0.9 && this.wrong === 0) stars = 3;
-    const coins = stars * 15;
-    Store.addReward(this.playerId, { coins, xp: 30 });
-    Store.completeLevel(this.playerId, 'english', this.level.id, stars);
+    const res = Store.awardLevel(this.playerId, 'english', this.level.id, stars, stars * 15);
+    const coins = res.coins;
     Store.logActivity(this.playerId, `Reading level ${this.level.title} — ${stars} stars`);
     Pet.onLessonComplete(this.playerId);
     Store.checkBadges(this.playerId);
