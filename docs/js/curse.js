@@ -20,7 +20,8 @@ const Curse = {
       .cc-header { text-align: center; margin-bottom: 1rem; }
       .cc-story { font-size: 0.95rem; color: #4b5563; max-width: 500px; margin: 0.5rem auto; line-height: 1.4; }
       .cc-stage-card { display: flex; align-items: center; justify-content: center; gap: 1.5rem; background: #eff6ff; border: 3px solid #bfdbfe; border-radius: 18px; padding: 1.25rem; margin: 1rem 0; flex-wrap: wrap; }
-      .cc-princess-container { position: relative; width: 100px; height: 130px; display: flex; align-items: flex-end; justify-content: center; background: #fdf2f8; border-radius: 14px; overflow: hidden; border: 2px solid #fbcfe8; }
+      .cc-princess-container { position: relative; display: flex; align-items: flex-end; justify-content: center; background: linear-gradient(180deg,#fdf2f8,#eff6ff); border-radius: 16px; overflow: hidden; border: 2px solid #fbcfe8; padding: 8px 10px 0; }
+      .cc-card-mini { flex: 0 0 auto; background: #fdf2f8; border-radius: 10px; border: 1px solid #fbcfe8; padding: 2px 4px 0; margin-right: 8px; }
       .cc-princess-emoji { font-size: 4.5rem; line-height: 1; z-index: 1; margin-bottom: 0.25rem; }
       .cc-ice-overlay { position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(to top, rgba(147, 197, 253, 0.85), rgba(219, 234, 254, 0.5)); border-top: 2px solid #60a5fa; transition: height 0.5s ease; z-index: 2; }
       .cc-stage-text { flex: 1; min-width: 200px; }
@@ -50,13 +51,22 @@ const Curse = {
     const p = Store.getPlayer(playerId);
     if (!p.curse) {
       p.curse = {
-        freezePct: 0,
+        v: 2,
+        freezePct: 100,
         lastMeltTs: Date.now(),
         cycleStartTs: Date.now(),
         princessName: PRINCESS_NAMES[0],
         cycleIndex: 0,
         blessingsGranted: []
       };
+      Store.updatePlayer(playerId, p);
+    }
+    if (!p.curse.v) {
+      // v2 migration: the story now begins with a fully frozen princess.
+      if ((p.curse.blessingsGranted || []).length === 0 && p.curse.freezePct < 100) {
+        p.curse.freezePct = 100;
+      }
+      p.curse.v = 2;
       Store.updatePlayer(playerId, p);
     }
     return p.curse;
@@ -171,7 +181,7 @@ const Curse = {
       return {
         stage: 4,
         title: 'Full Crystal Statue 🧊',
-        desc: "Paused, not lost — she's waiting for a big burst of learning!",
+        desc: "She is completely frozen — but safe! Every new lesson you learn melts her crystal ice. Set her free!",
         heightPct: 100
       };
     } else if (freezePct >= 80) {
@@ -220,7 +230,7 @@ const Curse = {
     // Advance cycle
     st.cycleIndex = (st.cycleIndex + 1) % PRINCESS_NAMES.length;
     st.princessName = PRINCESS_NAMES[st.cycleIndex];
-    st.freezePct = 0;
+    st.freezePct = 100; // the next princess arrives fully frozen — a new rescue begins
     st.lastMeltTs = Date.now();
     st.blessingsGranted.push({ blessing: rewardBlessing, ts: Date.now() });
     this.saveState(playerId, st);
@@ -261,6 +271,59 @@ const Curse = {
   },
 
   // Render Princess Screen (#screen-curse)
+
+  princessSVG(freezePct, width = 150) {
+    const h = Math.max(0, Math.min(100, freezePct));
+    const iceY = 210 * (1 - h / 100); // ice fills from the bottom up
+    const frozenFace = h >= 95;
+    // unique defs ids per instance — duplicate ids in hidden screens break url() refs
+    const uid = 'cc' + Math.random().toString(36).slice(2, 8);
+    return `
+    <svg viewBox="0 0 130 210" width="${width}" style="display:block" aria-label="Princess ${Math.round(h)}% frozen">
+      <defs>
+        <linearGradient id="ccGown-${uid}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f9a8d4"/><stop offset="1" stop-color="#ec4899"/>
+        </linearGradient>
+        <linearGradient id="ccIce-${uid}" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="rgba(96,165,250,.92)"/>
+          <stop offset="1" stop-color="rgba(191,219,254,.55)"/>
+        </linearGradient>
+        <clipPath id="ccIceClip-${uid}"><rect x="0" y="${iceY}" width="130" height="${210 - iceY}"/></clipPath>
+      </defs>
+      <!-- hair -->
+      <path d="M43 30 Q65 8 87 30 L87 62 Q83 44 65 44 Q47 44 43 62 Z" fill="#7c4a1e"/>
+      <!-- arms -->
+      <path d="M48 78 Q30 95 34 118" stroke="#ffd9b3" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <path d="M82 78 Q100 95 96 118" stroke="#ffd9b3" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <!-- gown -->
+      <path d="M52 70 L78 70 L104 196 Q65 208 26 196 Z" fill="url(#ccGown-${uid})"/>
+      <path d="M52 70 L78 70 L84 100 L46 100 Z" fill="#f472b6"/>
+      <!-- feet -->
+      <ellipse cx="52" cy="199" rx="9" ry="5" fill="#a855f7"/>
+      <ellipse cx="78" cy="199" rx="9" ry="5" fill="#a855f7"/>
+      <!-- head -->
+      <circle cx="65" cy="42" r="19" fill="#ffd9b3"/>
+      <path d="M46 42 Q46 22 65 22 Q84 22 84 42 Q80 30 65 30 Q50 30 46 42 Z" fill="#7c4a1e"/>
+      <!-- crown -->
+      <path d="M50 20 L55 9 L60 17 L65 6 L70 17 L75 9 L80 20 Z" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+      <!-- face -->
+      ${frozenFace
+        ? '<path d="M57 42 q3 2 6 0" stroke="#7c4a1e" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M69 42 q3 2 6 0" stroke="#7c4a1e" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M59 52 h12" stroke="#c2410c" stroke-width="2.5" stroke-linecap="round"/>'
+        : '<circle cx="59" cy="41" r="2.4" fill="#3b2313"/><circle cx="71" cy="41" r="2.4" fill="#3b2313"/><path d="M58 50 q7 6 14 0" stroke="#c2410c" stroke-width="2.5" fill="none" stroke-linecap="round"/>'}
+      <circle cx="53" cy="47" r="3" fill="#fda4af" opacity=".7"/>
+      <circle cx="77" cy="47" r="3" fill="#fda4af" opacity=".7"/>
+      <!-- rising crystal ice -->
+      <g clip-path="url(#ccIceClip-${uid})">
+        <rect x="0" y="0" width="130" height="210" fill="url(#ccIce-${uid})"/>
+        <path d="M0 ${iceY} L14 ${iceY - 10} L26 ${iceY} L40 ${iceY - 14} L54 ${iceY} L68 ${iceY - 9} L82 ${iceY} L96 ${iceY - 13} L112 ${iceY} L124 ${iceY - 8} L130 ${iceY}" fill="rgba(219,234,254,.9)" stroke="#93c5fd" stroke-width="1.5" transform="translate(0,2)"/>
+        <text x="18" y="${Math.min(196, iceY + 26)}" font-size="12">❄️</text>
+        <text x="92" y="${Math.min(200, iceY + 44)}" font-size="10">❄️</text>
+        <text x="55" y="${Math.min(204, iceY + 66)}" font-size="11">✨</text>
+      </g>
+      ${h > 0 ? `<path d="M0 ${iceY + 1} H130" stroke="#60a5fa" stroke-width="2" opacity=".8"/>` : ''}
+    </svg>`;
+  },
+
   async renderScreen() {
     const st = this.tick(App.playerId);
     const info = this.getStageInfo(st.freezePct);
@@ -309,14 +372,13 @@ const Curse = {
       <div class="cc-header">
         <h2>👸 The Crystal Curse 🧊</h2>
         <p class="cc-story">
-          A powerful Saint struck ${st.princessName} with the Crystal Curse! Her toes turn to sparkling ice over 7 days unless Advaita studies new, tricky, or forgotten lessons!
+          A powerful Saint struck ${st.princessName} with the Crystal Curse — she stands fully frozen in sparkling crystal! Only the fire of Advaita's learning can melt the ice. New, tricky, or forgotten lessons melt the most — but if you stay away, the ice grows back!
         </p>
       </div>
 
       <div class="cc-stage-card">
-        <div class="cc-princess-container">
-          <div class="cc-princess-emoji">👸</div>
-          <div class="cc-ice-overlay" style="height: ${info.heightPct}%;"></div>
+        <div class="cc-princess-container cc-princess-full">
+          ${this.princessSVG(st.freezePct, 150)}
         </div>
         <div class="cc-stage-text">
           <h3>${info.title} (${Math.round(st.freezePct)}% Frozen)</h3>
@@ -349,6 +411,7 @@ const Curse = {
 
     el.innerHTML = `
       <div class="mission-card cc-home-card" style="border-color: #93c5fd; background: #eff6ff;">
+        <div class="cc-card-mini">${this.princessSVG(st.freezePct, 56)}</div>
         <div class="mission-left">
           <span class="mission-badge" style="background: #dbeafe; color: #1e3a8a;">👸 CRYSTAL CURSE (${Math.round(st.freezePct)}% FROZEN)</span>
           <div class="mission-title">${st.princessName} — ${info.title}</div>

@@ -28,6 +28,20 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### Crystal Curse v2: frozen start + full-body princess (2026-07-08, reviewer-as-implementer, user request)
+- `curse.js`: every cycle now BEGINS at **100% frozen** (new saves, migration for
+  pre-v2 states with no rescues, and each next princess after a rescue) — the
+  game opens as a rescue mission. 100% copy reframed: "completely frozen — but
+  safe! Every new lesson melts her ice."; story intro updated to match.
+- Full-body princess is now an inline SVG (crown/face/gown/arms, frozen-shut
+  eyes at ≥95%) with the crystal ice rising bottom-up, jagged edge + snowflakes;
+  mini version on the home card. Per-instance SVG def ids (duplicate ids in
+  hidden screens broke gradient url() refs — Chromium quirk).
+- Live-verified: fresh save 100% + statue text; 7-problem qualifying chapter
+  melts 100→82.5 (burst rate); rescue → next princess arrives at 100%; 45%
+  partial state renders ice mid-body with smiling face; melt targets span 3
+  subjects; zero console errors. Screenshots on file.
+
 ### FE-TEST results + Phases 12/12b/7 implementation (2026-07-08, reviewer-as-implementer on user instruction)
 
 **Implemented (user instructed the reviewer to finish all remaining tasks):**
