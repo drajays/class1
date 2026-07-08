@@ -1,0 +1,196 @@
+{
+  "nouns": [
+    {
+      "word": "Asoka",
+      "kind": "proper",
+      "emoji": "🌟",
+      "meaning": ""
+    },
+    {
+      "word": "Sita",
+      "kind": "proper",
+      "emoji": "🌟",
+      "meaning": ""
+    },
+    {
+      "word": "Kolkata",
+      "kind": "proper",
+      "emoji": "🌟",
+      "meaning": ""
+    },
+    {
+      "word": "India",
+      "kind": "proper",
+      "emoji": "🌟",
+      "meaning": ""
+    },
+    {
+      "word": "city",
+      "kind": "common",
+      "emoji": "🌟",
+      "meaning": ""
+    },
+    {
+      "word": "boy",
+      "kind": "common",
+      "emoji": "🌟",
+      "meaning": ""
+    },
+    {
+      "word": "Hari",
+      "kind": "proper",
+      "emoji": "🌟",
+      "meaning": ""
+    },
+    {
+      "word": "country",
+      "kind": "common",
+      "emoji": "🌟",
+      "meaning": ""
+    },
+    {
+      "word": "ships",
+      "kind": "collective",
+      "emoji": "👥",
+      "meaning": "fleet"
+    },
+    {
+      "word": "soldiers",
+      "kind": "collective",
+      "emoji": "👥",
+      "meaning": "army"
+    },
+    {
+      "word": "cattle",
+      "kind": "collective",
+      "emoji": "👥",
+      "meaning": "herd"
+    },
+    {
+      "word": "players",
+      "kind": "collective",
+      "emoji": "👥",
+      "meaning": "team"
+    },
+    {
+      "word": "people",
+      "kind": "collective",
+      "emoji": "👥",
+      "meaning": "crowd"
+    },
+    {
+      "word": "sheep",
+      "kind": "collective",
+      "emoji": "👥",
+      "meaning": "flock"
+    },
+    {
+      "word": "pupils",
+      "kind": "collective",
+      "emoji": "👥",
+      "meaning": "class"
+    },
+    {
+      "word": "judges",
+      "kind": "collective",
+      "emoji": "👥",
+      "meaning": "jury"
+    },
+    {
+      "word": "bravery",
+      "kind": "abstract",
+      "emoji": "💡",
+      "meaning": ""
+    },
+    {
+      "word": "honesty",
+      "kind": "abstract",
+      "emoji": "💡",
+      "meaning": ""
+    },
+    {
+      "word": "childhood",
+      "kind": "abstract",
+      "emoji": "💡",
+      "meaning": ""
+    },
+    {
+      "word": "laughter",
+      "kind": "abstract",
+      "emoji": "💡",
+      "meaning": ""
+    },
+    {
+      "word": "wisdom",
+      "kind": "abstract",
+      "emoji": "💡",
+      "meaning": ""
+    },
+    {
+      "word": "sickness",
+      "kind": "abstract",
+      "emoji": "💡",
+      "meaning": ""
+    },
+    {
+      "word": "strength",
+      "kind": "abstract",
+      "emoji": "💡",
+      "meaning": ""
+    },
+    {
+      "word": "beauty",
+      "kind": "abstract",
+      "emoji": "💡",
+      "meaning": ""
+    },
+    {
+      "word": "actor",
+      "kind": "gender",
+      "emoji": "👑",
+      "meaning": "actress"
+    },
+    {
+      "word": "waiter",
+      "kind": "gender",
+      "emoji": "👑",
+      "meaning": "waitress"
+    },
+    {
+      "word": "emperor",
+      "kind": "gender",
+      "emoji": "👑",
+      "meaning": "empress"
+    },
+    {
+      "word": "duke",
+      "kind": "gender",
+      "emoji": "👑",
+      "meaning": "duchess"
+    },
+    {
+      "word": "master",
+      "kind": "gender",
+      "emoji": "👑",
+      "meaning": "mistress"
+    },
+    {
+      "word": "hero",
+      "kind": "gender",
+      "emoji": "👑",
+      "meaning": "heroine"
+    },
+    {
+      "word": "sultan",
+      "kind": "gender",
+      "emoji": "👑",
+      "meaning": "sultana"
+    },
+    {
+      "word": "peacock",
+      "kind": "gender",
+      "emoji": "👑",
+      "meaning": "peahen"
+    }
+  ]
+}

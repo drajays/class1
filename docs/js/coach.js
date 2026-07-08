@@ -74,6 +74,26 @@ const Coach = {
       console.error('Coach hindi load fail', e);
     }
 
+    // Story Time (Reading)
+    try {
+      if (typeof StoryBook !== 'undefined') {
+        const readingData = await StoryBook.load();
+        (readingData?.levels || []).forEach((band) => {
+          (band.stories || []).forEach((st) => {
+            chapters.push({
+              id: st.id,
+              title: st.title,
+              icon: st.emoji || '📖',
+              level: st.level || band.level || 1,
+              subject: 'reading'
+            });
+          });
+        });
+      }
+    } catch (e) {
+      console.error('Coach reading load fail', e);
+    }
+
     return chapters;
   },
 
@@ -216,18 +236,24 @@ const Coach = {
     // App.go activates the target <section> (adds .active) and opens the engine's
     // picker; awaiting the engine's cached load() queues startChapter AFTER that
     // picker render, so the chapter view wins — no race, and the screen is visible.
-    App.go(rec.subject);
-    if (rec.subject === 'math') {
-      await MathBook.load();
-      MathBook.startChapter(rec.chapterId);
-    } else if (rec.subject === 'english') {
-      await EnglishBook.load();
-      EnglishBook.startChapter(rec.chapterId);
-    } else if (rec.subject === 'hindi') {
-      await HindiBook.startLessonById(rec.chapterId);
+    if (rec.subject === 'reading') {
+      await StoryBook.load();
+      App.go('storytime');
+      StoryBook.startStoryById(rec.chapterId);
     } else {
-      await SubjectBook.load(rec.subject);
-      SubjectBook.startChapter(rec.chapterId);
+      App.go(rec.subject);
+      if (rec.subject === 'math') {
+        await MathBook.load();
+        MathBook.startChapter(rec.chapterId);
+      } else if (rec.subject === 'english') {
+        await EnglishBook.load();
+        EnglishBook.startChapter(rec.chapterId);
+      } else if (rec.subject === 'hindi') {
+        await HindiBook.startLessonById(rec.chapterId);
+      } else {
+        await SubjectBook.load(rec.subject);
+        SubjectBook.startChapter(rec.chapterId);
+      }
     }
   }
 };

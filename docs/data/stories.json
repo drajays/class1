@@ -1,0 +1,3177 @@
+{
+  "levels": [
+    {
+      "id": "rb_l1",
+      "name": "Starter Stories",
+      "level": 1,
+      "stories": [
+        {
+          "id": "story_1",
+          "emoji": "🐱",
+          "title": "The Cat",
+          "text": "The cat is fat. The cat sat on a mat. The cat is happy. The cat naps all day.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_2",
+          "emoji": "🐶",
+          "title": "The Dog",
+          "text": "The dog can run. The dog is big. The dog has a ball. The dog likes to play.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_3",
+          "emoji": "☀️",
+          "title": "The Sun",
+          "text": "The sun is up. The sun is hot. The sky is blue. It is a fun day.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_4",
+          "emoji": "🐟",
+          "title": "The Fish",
+          "text": "A fish can swim. The fish is red. It lives in a pond. The fish is fast.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_5",
+          "emoji": "🐝",
+          "title": "The Bee",
+          "text": "A bee can buzz. The bee is small. It sits on a flower. The bee likes the sun.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_6",
+          "emoji": "🚌",
+          "title": "The Bus",
+          "text": "The bus is big. The bus is red. I ride the bus. The bus stops here.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_7",
+          "emoji": "🍎",
+          "title": "The Apple",
+          "text": "The apple is red. I bite the apple. It is sweet. I like to eat it.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_8",
+          "emoji": "🐸",
+          "title": "The Frog",
+          "text": "A frog can hop. The frog is green. It sits on a log. Hop, hop, hop!",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_9",
+          "emoji": "🌙",
+          "title": "The Moon",
+          "text": "The moon is up. The moon is white. The sky is dark. Time for bed now.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_10",
+          "emoji": "🐭",
+          "title": "The Mouse",
+          "text": "A mouse is small. The mouse can run. It likes cheese. Run, little mouse!",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_11",
+          "emoji": "🎈",
+          "title": "The Balloon",
+          "text": "I have a balloon. It is red and big. It goes up high. Up, up, up it goes!",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_12",
+          "emoji": "🐮",
+          "title": "The Cow",
+          "text": "The cow is big. The cow says moo. It eats green grass. The cow is on the farm.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_13",
+          "emoji": "🍦",
+          "title": "Ice Cream",
+          "text": "I like ice cream. It is cold and sweet. I lick it fast. Yum, yum, yum!",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_14",
+          "emoji": "🐤",
+          "title": "The Chick",
+          "text": "A chick is small. The chick says peep. It is soft and yellow. I love the chick.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_15",
+          "emoji": "🚗",
+          "title": "The Car",
+          "text": "The car is fast. The car is blue. We go for a ride. Beep, beep, beep!",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_16",
+          "emoji": "🌈",
+          "title": "The Rainbow",
+          "text": "I see a rainbow. It has many colors. Red, blue, and green. It is so pretty!",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_17",
+          "emoji": "🐷",
+          "title": "The Pig",
+          "text": "The pig is pink. The pig says oink. It rolls in the mud. The pig is happy.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_18",
+          "emoji": "🐰",
+          "title": "The Bunny",
+          "text": "A bunny can hop. The bunny is soft. It has long ears. The bunny eats a carrot.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_19",
+          "emoji": "⭐",
+          "title": "The Star",
+          "text": "I see a star. It is up in the sky. The star is bright. Twinkle, little star.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_20",
+          "emoji": "🍪",
+          "title": "The Cookie",
+          "text": "I have a cookie. It is round and brown. I take a bite. The cookie is good!",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_21",
+          "emoji": "🐢",
+          "title": "The Turtle",
+          "text": "A turtle is slow. The turtle has a shell. It walks on the path. Go, slow turtle, go.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_22",
+          "emoji": "🌳",
+          "title": "The Tree",
+          "text": "The tree is big. The tree is green. Birds sit in the tree. I love my tree.",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_23",
+          "emoji": "🦆",
+          "title": "The Duck",
+          "text": "A duck can swim. The duck says quack. It likes the water. Splash, splash, splash!",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_24",
+          "emoji": "🎁",
+          "title": "The Gift",
+          "text": "I have a gift. It is in a box. I open it up. Wow, what a nice gift!",
+          "level": 1,
+          "questions": []
+        },
+        {
+          "id": "story_25",
+          "emoji": "🐝",
+          "title": "The Ant",
+          "text": "An ant is tiny. The ant is busy. It picks up a crumb. The ant works all day.",
+          "level": 1,
+          "questions": []
+        }
+      ]
+    },
+    {
+      "id": "rb_l2",
+      "name": "Easy Stories",
+      "level": 2,
+      "stories": [
+        {
+          "id": "story_26",
+          "emoji": "🏡",
+          "title": "My Home",
+          "text": "I live in a house. My home is warm and cozy. We have a red door. I love my home very much.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_26_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "My Home",
+              "options": [
+                "My Home",
+                "The Busy Squirrel",
+                "Night Animals"
+              ],
+              "why": "This story is titled 'My Home'."
+            },
+            {
+              "id": "story_26_q2",
+              "q": "Complete the sentence from the story:\n\"I live in a ___\"",
+              "a": "house",
+              "options": [
+                "house",
+                "get",
+                "giant"
+              ],
+              "why": "The complete sentence is: \"I live in a house\""
+            }
+          ]
+        },
+        {
+          "id": "story_27",
+          "emoji": "👪",
+          "title": "My Family",
+          "text": "I have a big family. We have mom and dad. I have one sister too. We all play together.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_27_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "My Family",
+              "options": [
+                "The Penguin",
+                "My Family",
+                "The Young Astronaut"
+              ],
+              "why": "This story is titled 'My Family'."
+            },
+            {
+              "id": "story_27_q2",
+              "q": "Complete the sentence from the story:\n\"I have a big ___\"",
+              "a": "family",
+              "options": [
+                "written",
+                "family",
+                "Palace"
+              ],
+              "why": "The complete sentence is: \"I have a big family\""
+            }
+          ]
+        },
+        {
+          "id": "story_28",
+          "emoji": "🐕",
+          "title": "Walking the Dog",
+          "text": "Every day I walk my dog. We go to the green park. My dog runs and jumps. Then we walk back home.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_28_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Walking the Dog",
+              "options": [
+                "The Little Lamb",
+                "Walking the Dog",
+                "Wishing on a Star"
+              ],
+              "why": "This story is titled 'Walking the Dog'."
+            },
+            {
+              "id": "story_28_q2",
+              "q": "Complete the sentence from the story:\n\"Every day I ___ my dog\"",
+              "a": "walk",
+              "options": [
+                "walk",
+                "studied",
+                "called"
+              ],
+              "why": "The complete sentence is: \"Every day I walk my dog\""
+            }
+          ]
+        },
+        {
+          "id": "story_29",
+          "emoji": "🌧️",
+          "title": "A Rainy Day",
+          "text": "Today it is raining. I put on my boots. I jump in the puddles. Splash goes the water!",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_29_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "A Rainy Day",
+              "options": [
+                "How Plants Grow",
+                "The Long Journey",
+                "A Rainy Day"
+              ],
+              "why": "This story is titled 'A Rainy Day'."
+            },
+            {
+              "id": "story_29_q2",
+              "q": "Complete the sentence from the story:\n\"Today it is ___\"",
+              "a": "raining",
+              "options": [
+                "shopping",
+                "deposit",
+                "raining"
+              ],
+              "why": "The complete sentence is: \"Today it is raining\""
+            }
+          ]
+        },
+        {
+          "id": "story_30",
+          "emoji": "🍓",
+          "title": "Picking Berries",
+          "text": "We go to pick berries. The berries are red and sweet. I fill up my basket. Mom will make a pie.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_30_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Picking Berries",
+              "options": [
+                "The Bunny",
+                "Picking Berries",
+                "The Caterpillar's Change"
+              ],
+              "why": "This story is titled 'Picking Berries'."
+            },
+            {
+              "id": "story_30_q2",
+              "q": "Complete the sentence from the story:\n\"We go to pick ___\"",
+              "a": "berries",
+              "options": [
+                "groceries",
+                "hall",
+                "berries"
+              ],
+              "why": "The complete sentence is: \"We go to pick berries\""
+            }
+          ]
+        },
+        {
+          "id": "story_31",
+          "emoji": "🎨",
+          "title": "I Like to Paint",
+          "text": "I love to paint pictures. I use red and blue. I paint a big sun. My picture looks great!",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_31_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "I Like to Paint",
+              "options": [
+                "I Like to Paint",
+                "Ice Cream",
+                "The Owl Who Couldn't Sleep"
+              ],
+              "why": "This story is titled 'I Like to Paint'."
+            },
+            {
+              "id": "story_31_q2",
+              "q": "Complete the sentence from the story:\n\"I love to paint ___\"",
+              "a": "pictures",
+              "options": [
+                "form",
+                "snake",
+                "pictures"
+              ],
+              "why": "The complete sentence is: \"I love to paint pictures\""
+            }
+          ]
+        },
+        {
+          "id": "story_32",
+          "emoji": "🏖️",
+          "title": "At the Beach",
+          "text": "We go to the beach. I build a sand castle. The waves are big. I have so much fun.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_32_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "At the Beach",
+              "options": [
+                "At the Beach",
+                "The Fish",
+                "The Young Astronaut"
+              ],
+              "why": "This story is titled 'At the Beach'."
+            },
+            {
+              "id": "story_32_q2",
+              "q": "Complete the sentence from the story:\n\"We go to the ___\"",
+              "a": "beach",
+              "options": [
+                "Okay",
+                "beach",
+                "eyes"
+              ],
+              "why": "The complete sentence is: \"We go to the beach\""
+            }
+          ]
+        },
+        {
+          "id": "story_33",
+          "emoji": "🦋",
+          "title": "The Butterfly",
+          "text": "A butterfly flies by. It has pretty wings. The wings are orange and black. It lands on a flower.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_33_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Butterfly",
+              "options": [
+                "Our Planet Earth",
+                "The Butterfly",
+                "The Cookie"
+              ],
+              "why": "This story is titled 'The Butterfly'."
+            },
+            {
+              "id": "story_33_q2",
+              "q": "Complete the sentence from the story:\n\"A butterfly ___ by\"",
+              "a": "flies",
+              "options": [
+                "gift",
+                "puppy",
+                "flies"
+              ],
+              "why": "The complete sentence is: \"A butterfly flies by\""
+            }
+          ]
+        },
+        {
+          "id": "story_34",
+          "emoji": "🥪",
+          "title": "My Lunch",
+          "text": "I am hungry now. I eat my lunch. I have a sandwich and milk. Lunch is yummy!",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_34_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "My Lunch",
+              "options": [
+                "My Lunch",
+                "The Desert",
+                "The Sunflower"
+              ],
+              "why": "This story is titled 'My Lunch'."
+            },
+            {
+              "id": "story_34_q2",
+              "q": "Complete the sentence from the story:\n\"I am ___ now\"",
+              "a": "hungry",
+              "options": [
+                "attend",
+                "entry",
+                "hungry"
+              ],
+              "why": "The complete sentence is: \"I am hungry now\""
+            }
+          ]
+        },
+        {
+          "id": "story_35",
+          "emoji": "🚲",
+          "title": "Riding My Bike",
+          "text": "I have a new bike. It is shiny and red. I ride it fast. The wind is in my hair.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_35_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Riding My Bike",
+              "options": [
+                "Riding My Bike",
+                "The Sandcastle",
+                "The Pumpkin Patch"
+              ],
+              "why": "This story is titled 'Riding My Bike'."
+            },
+            {
+              "id": "story_35_q2",
+              "q": "Complete the sentence from the story:\n\"I have a new ___\"",
+              "a": "bike",
+              "options": [
+                "bike",
+                "cold",
+                "only"
+              ],
+              "why": "The complete sentence is: \"I have a new bike\""
+            }
+          ]
+        },
+        {
+          "id": "story_36",
+          "emoji": "🐦",
+          "title": "The Little Bird",
+          "text": "A little bird sings. It sits in a tree. The song is sweet. I like to hear it sing.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_36_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Little Bird",
+              "options": [
+                "The Wise Owl",
+                "The Quiet Forest",
+                "The Little Bird"
+              ],
+              "why": "This story is titled 'The Little Bird'."
+            },
+            {
+              "id": "story_36_q2",
+              "q": "Complete the sentence from the story:\n\"A little bird ___\"",
+              "a": "sings",
+              "options": [
+                "sings",
+                "colorful",
+                "boots"
+              ],
+              "why": "The complete sentence is: \"A little bird sings\""
+            }
+          ]
+        },
+        {
+          "id": "story_37",
+          "emoji": "🌻",
+          "title": "The Sunflower",
+          "text": "The sunflower is tall. It is bright yellow. It looks at the sun. Bees love the sunflower.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_37_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Sunflower",
+              "options": [
+                "The Pumpkin Patch",
+                "The Sunflower",
+                "A Rainy Day"
+              ],
+              "why": "This story is titled 'The Sunflower'."
+            },
+            {
+              "id": "story_37_q2",
+              "q": "Complete the sentence from the story:\n\"The sunflower is ___\"",
+              "a": "tall",
+              "options": [
+                "bored",
+                "whales",
+                "tall"
+              ],
+              "why": "The complete sentence is: \"The sunflower is tall\""
+            }
+          ]
+        },
+        {
+          "id": "story_38",
+          "emoji": "⛄",
+          "title": "The Snowman",
+          "text": "We make a snowman. He has a carrot nose. We give him a hat. Our snowman is the best!",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_38_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Snowman",
+              "options": [
+                "Riding My Bike",
+                "The Snowman",
+                "The Lion and the Mouse"
+              ],
+              "why": "This story is titled 'The Snowman'."
+            },
+            {
+              "id": "story_38_q2",
+              "q": "Complete the sentence from the story:\n\"We make a ___\"",
+              "a": "snowman",
+              "options": [
+                "float",
+                "snowman",
+                "became"
+              ],
+              "why": "The complete sentence is: \"We make a snowman\""
+            }
+          ]
+        },
+        {
+          "id": "story_39",
+          "emoji": "🐠",
+          "title": "Fish in the Sea",
+          "text": "Many fish swim in the sea. They are red and blue. They swim very fast. The sea is their home.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_39_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Fish in the Sea",
+              "options": [
+                "The Hungry Bear",
+                "Fish in the Sea",
+                "The Tall Giraffe"
+              ],
+              "why": "This story is titled 'Fish in the Sea'."
+            },
+            {
+              "id": "story_39_q2",
+              "q": "Complete the sentence from the story:\n\"Many fish ___ in the sea\"",
+              "a": "swim",
+              "options": [
+                "swim",
+                "any",
+                "new"
+              ],
+              "why": "The complete sentence is: \"Many fish swim in the sea\""
+            }
+          ]
+        },
+        {
+          "id": "story_40",
+          "emoji": "🎂",
+          "title": "The Birthday",
+          "text": "Today is my birthday. I am six years old. We have a big cake. My friends come to play.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_40_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Birthday",
+              "options": [
+                "Friends of the Sea",
+                "The Birthday",
+                "The Apple"
+              ],
+              "why": "This story is titled 'The Birthday'."
+            },
+            {
+              "id": "story_40_q2",
+              "q": "Complete the sentence from the story:\n\"Today is my ___\"",
+              "a": "birthday",
+              "options": [
+                "others",
+                "Can",
+                "birthday"
+              ],
+              "why": "The complete sentence is: \"Today is my birthday\""
+            }
+          ]
+        },
+        {
+          "id": "story_41",
+          "emoji": "🍂",
+          "title": "Fall Leaves",
+          "text": "The leaves are falling. They are red and gold. I jump in the pile. The leaves go up high.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_41_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Fall Leaves",
+              "options": [
+                "The Moon",
+                "Walking the Dog",
+                "Fall Leaves"
+              ],
+              "why": "This story is titled 'Fall Leaves'."
+            },
+            {
+              "id": "story_41_q2",
+              "q": "Complete the sentence from the story:\n\"The leaves are ___\"",
+              "a": "falling",
+              "options": [
+                "falling",
+                "naps",
+                "thrilled"
+              ],
+              "why": "The complete sentence is: \"The leaves are falling\""
+            }
+          ]
+        },
+        {
+          "id": "story_42",
+          "emoji": "🐘",
+          "title": "The Big Elephant",
+          "text": "The elephant is huge. It has a long trunk. It has big ears too. The elephant drinks water.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_42_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Big Elephant",
+              "options": [
+                "The Ladybug",
+                "A Rainy Day",
+                "The Big Elephant"
+              ],
+              "why": "This story is titled 'The Big Elephant'."
+            },
+            {
+              "id": "story_42_q2",
+              "q": "Complete the sentence from the story:\n\"The elephant is ___\"",
+              "a": "huge",
+              "options": [
+                "clapped",
+                "huge",
+                "strange"
+              ],
+              "why": "The complete sentence is: \"The elephant is huge\""
+            }
+          ]
+        },
+        {
+          "id": "story_43",
+          "emoji": "📚",
+          "title": "Reading Time",
+          "text": "I love to read books. I read every night. I learn new words. Books are so much fun.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_43_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Reading Time",
+              "options": [
+                "The Little Bird",
+                "Reading Time",
+                "The Music Class"
+              ],
+              "why": "This story is titled 'Reading Time'."
+            },
+            {
+              "id": "story_43_q2",
+              "q": "Complete the sentence from the story:\n\"I love to read ___\"",
+              "a": "books",
+              "options": [
+                "books",
+                "king",
+                "drink"
+              ],
+              "why": "The complete sentence is: \"I love to read books\""
+            }
+          ]
+        },
+        {
+          "id": "story_44",
+          "emoji": "🌊",
+          "title": "The Ocean",
+          "text": "The ocean is big and blue. Waves go up and down. I see a boat far away. The ocean is amazing.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_44_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Ocean",
+              "options": [
+                "The Patient Turtle",
+                "Ice Cream",
+                "The Ocean"
+              ],
+              "why": "This story is titled 'The Ocean'."
+            },
+            {
+              "id": "story_44_q2",
+              "q": "Complete the sentence from the story:\n\"The ocean is big and ___\"",
+              "a": "blue",
+              "options": [
+                "never",
+                "blue",
+                "juicy"
+              ],
+              "why": "The complete sentence is: \"The ocean is big and blue\""
+            }
+          ]
+        },
+        {
+          "id": "story_45",
+          "emoji": "🐧",
+          "title": "The Penguin",
+          "text": "A penguin lives in the cold. It cannot fly at all. But it can swim fast. The penguin slides on ice.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_45_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Penguin",
+              "options": [
+                "The Desert",
+                "The Penguin",
+                "Conversation: Two Travellers"
+              ],
+              "why": "This story is titled 'The Penguin'."
+            },
+            {
+              "id": "story_45_q2",
+              "q": "Complete the sentence from the story:\n\"A penguin lives in the ___\"",
+              "a": "cold",
+              "options": [
+                "paid",
+                "farmer",
+                "cold"
+              ],
+              "why": "The complete sentence is: \"A penguin lives in the cold\""
+            }
+          ]
+        },
+        {
+          "id": "story_46",
+          "emoji": "🍕",
+          "title": "Pizza Night",
+          "text": "Tonight we eat pizza. It has lots of cheese. I eat two big slices. Pizza night is the best.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_46_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Pizza Night",
+              "options": [
+                "Pizza Night",
+                "Conversation: At the Stationery Shop",
+                "The Quiet Forest"
+              ],
+              "why": "This story is titled 'Pizza Night'."
+            },
+            {
+              "id": "story_46_q2",
+              "q": "Complete the sentence from the story:\n\"Tonight we eat ___\"",
+              "a": "pizza",
+              "options": [
+                "teeth",
+                "house",
+                "pizza"
+              ],
+              "why": "The complete sentence is: \"Tonight we eat pizza\""
+            }
+          ]
+        },
+        {
+          "id": "story_47",
+          "emoji": "🦉",
+          "title": "The Wise Owl",
+          "text": "An owl sits in a tree. It stays awake at night. The owl says hoo, hoo. It has very big eyes.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_47_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Wise Owl",
+              "options": [
+                "The Wise Owl",
+                "The Young Astronaut",
+                "Conversation: Two Players Before a Match"
+              ],
+              "why": "This story is titled 'The Wise Owl'."
+            },
+            {
+              "id": "story_47_q2",
+              "q": "Complete the sentence from the story:\n\"An owl sits in a ___\"",
+              "a": "tree",
+              "options": [
+                "all",
+                "Books",
+                "tree"
+              ],
+              "why": "The complete sentence is: \"An owl sits in a tree\""
+            }
+          ]
+        },
+        {
+          "id": "story_48",
+          "emoji": "🌷",
+          "title": "Spring Flowers",
+          "text": "Spring is here at last. The flowers start to grow. They are pink and white. The bees come to play.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_48_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Spring Flowers",
+              "options": [
+                "The Tall Giraffe",
+                "The Car",
+                "Spring Flowers"
+              ],
+              "why": "This story is titled 'Spring Flowers'."
+            },
+            {
+              "id": "story_48_q2",
+              "q": "Complete the sentence from the story:\n\"Spring is here at ___\"",
+              "a": "last",
+              "options": [
+                "plate",
+                "ostrich",
+                "last"
+              ],
+              "why": "The complete sentence is: \"Spring is here at last\""
+            }
+          ]
+        },
+        {
+          "id": "story_49",
+          "emoji": "🐑",
+          "title": "The Little Lamb",
+          "text": "A little lamb is white. It runs in the field. It stays near its mom. The lamb is very soft.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_49_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Little Lamb",
+              "options": [
+                "The Little Lamb",
+                "Conversation: At the Post Office",
+                "The Penguin"
+              ],
+              "why": "This story is titled 'The Little Lamb'."
+            },
+            {
+              "id": "story_49_q2",
+              "q": "Complete the sentence from the story:\n\"A little lamb is ___\"",
+              "a": "white",
+              "options": [
+                "crash",
+                "white",
+                "yellow"
+              ],
+              "why": "The complete sentence is: \"A little lamb is white\""
+            }
+          ]
+        },
+        {
+          "id": "story_50",
+          "emoji": "🚂",
+          "title": "The Train",
+          "text": "The train is very long. It goes choo, choo, choo. It rides on the tracks. The train is fast and loud.",
+          "level": 2,
+          "questions": [
+            {
+              "id": "story_50_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Train",
+              "options": [
+                "Conversation: At the Library",
+                "The Train",
+                "Conversation: Rabbit and Tortoise"
+              ],
+              "why": "This story is titled 'The Train'."
+            },
+            {
+              "id": "story_50_q2",
+              "q": "Complete the sentence from the story:\n\"The train is very ___\"",
+              "a": "long",
+              "options": [
+                "Dictionary",
+                "hurry",
+                "long"
+              ],
+              "why": "The complete sentence is: \"The train is very long\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rb_l3",
+      "name": "Growing Stories",
+      "level": 3,
+      "stories": [
+        {
+          "id": "story_51",
+          "emoji": "🦁",
+          "title": "The Brave Lion",
+          "text": "The lion is the king of the jungle. He has a big golden mane. When he roars, all the animals listen. But this lion is kind to his friends.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_51_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Brave Lion",
+              "options": [
+                "The Brave Lion",
+                "The Four Seasons",
+                "A Letter to Grandma"
+              ],
+              "why": "This story is titled 'The Brave Lion'."
+            },
+            {
+              "id": "story_51_q2",
+              "q": "Complete the sentence from the story:\n\"The lion is the king of the ___\"",
+              "a": "jungle",
+              "options": [
+                "jungle",
+                "single",
+                "tourist"
+              ],
+              "why": "The complete sentence is: \"The lion is the king of the jungle\""
+            }
+          ]
+        },
+        {
+          "id": "story_52",
+          "emoji": "🌰",
+          "title": "The Busy Squirrel",
+          "text": "A little squirrel runs up the tree. She gathers nuts for the winter. She hides them in a safe spot. Now she will have food when it is cold.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_52_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Busy Squirrel",
+              "options": [
+                "The Dog",
+                "Conversation: At the Stationery Shop",
+                "The Busy Squirrel"
+              ],
+              "why": "This story is titled 'The Busy Squirrel'."
+            },
+            {
+              "id": "story_52_q2",
+              "q": "Complete the sentence from the story:\n\"A little squirrel runs up the ___\"",
+              "a": "tree",
+              "options": [
+                "lovely",
+                "moved",
+                "tree"
+              ],
+              "why": "The complete sentence is: \"A little squirrel runs up the tree\""
+            }
+          ]
+        },
+        {
+          "id": "story_53",
+          "emoji": "🎪",
+          "title": "At the Circus",
+          "text": "We went to the circus today. There were clowns and acrobats. An elephant did funny tricks. Everyone laughed and clapped their hands.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_53_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "At the Circus",
+              "options": [
+                "At the Circus",
+                "After the Rain",
+                "I Like to Paint"
+              ],
+              "why": "This story is titled 'At the Circus'."
+            },
+            {
+              "id": "story_53_q2",
+              "q": "Complete the sentence from the story:\n\"We went to the circus ___\"",
+              "a": "today",
+              "options": [
+                "astrologers",
+                "works",
+                "today"
+              ],
+              "why": "The complete sentence is: \"We went to the circus today\""
+            }
+          ]
+        },
+        {
+          "id": "story_54",
+          "emoji": "🧁",
+          "title": "Baking Cupcakes",
+          "text": "Mom and I baked cupcakes today. We mixed the flour and sugar. We put them in the oven. Soon the kitchen smelled sweet and warm.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_54_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Baking Cupcakes",
+              "options": [
+                "The Honey Makers",
+                "My Family",
+                "Baking Cupcakes"
+              ],
+              "why": "This story is titled 'Baking Cupcakes'."
+            },
+            {
+              "id": "story_54_q2",
+              "q": "Complete the sentence from the story:\n\"Mom and I baked cupcakes ___\"",
+              "a": "today",
+              "options": [
+                "turns",
+                "leaf",
+                "today"
+              ],
+              "why": "The complete sentence is: \"Mom and I baked cupcakes today\""
+            }
+          ]
+        },
+        {
+          "id": "story_55",
+          "emoji": "🐢",
+          "title": "The Turtle and the Race",
+          "text": "A slow turtle wanted to race. A fast rabbit laughed at him. But the rabbit took a nap. The slow turtle won the race!",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_55_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Turtle and the Race",
+              "options": [
+                "The Turtle and the Race",
+                "The Sleeping Volcano",
+                "The Sun"
+              ],
+              "why": "This story is titled 'The Turtle and the Race'."
+            },
+            {
+              "id": "story_55_q2",
+              "q": "Complete the sentence from the story:\n\"A slow turtle wanted to ___\"",
+              "a": "race",
+              "options": [
+                "jump",
+                "learned",
+                "race"
+              ],
+              "why": "The complete sentence is: \"A slow turtle wanted to race\""
+            }
+          ]
+        },
+        {
+          "id": "story_56",
+          "emoji": "🌟",
+          "title": "Wishing on a Star",
+          "text": "At night I look up at the sky. I find the brightest star. I close my eyes and make a wish. I wish for a happy day tomorrow.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_56_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Wishing on a Star",
+              "options": [
+                "Wishing on a Star",
+                "The Music Class",
+                "Conversation: At the Railway Station"
+              ],
+              "why": "This story is titled 'Wishing on a Star'."
+            },
+            {
+              "id": "story_56_q2",
+              "q": "Complete the sentence from the story:\n\"At night I ___ up at the sky\"",
+              "a": "look",
+              "options": [
+                "shore",
+                "What",
+                "look"
+              ],
+              "why": "The complete sentence is: \"At night I look up at the sky\""
+            }
+          ]
+        },
+        {
+          "id": "story_57",
+          "emoji": "🐦",
+          "title": "The Bird's Nest",
+          "text": "A mother bird built a cozy nest. She used twigs and soft grass. She laid three little eggs. Soon baby birds will hatch.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_57_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Bird's Nest",
+              "options": [
+                "The Pumpkin Patch",
+                "The Bird's Nest",
+                "Night Animals"
+              ],
+              "why": "This story is titled 'The Bird's Nest'."
+            },
+            {
+              "id": "story_57_q2",
+              "q": "Complete the sentence from the story:\n\"A mother bird built a cozy ___\"",
+              "a": "nest",
+              "options": [
+                "going",
+                "nest",
+                "spot"
+              ],
+              "why": "The complete sentence is: \"A mother bird built a cozy nest\""
+            }
+          ]
+        },
+        {
+          "id": "story_58",
+          "emoji": "🏰",
+          "title": "The Sandcastle",
+          "text": "We built a huge sandcastle at the beach. It had tall towers and a deep moat. We used shells to decorate it. The waves came and washed it away.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_58_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Sandcastle",
+              "options": [
+                "Fall Leaves",
+                "The Star",
+                "The Sandcastle"
+              ],
+              "why": "This story is titled 'The Sandcastle'."
+            },
+            {
+              "id": "story_58_q2",
+              "q": "Complete the sentence from the story:\n\"We built a huge sandcastle at the ___\"",
+              "a": "beach",
+              "options": [
+                "leap",
+                "shop",
+                "beach"
+              ],
+              "why": "The complete sentence is: \"We built a huge sandcastle at the beach\""
+            }
+          ]
+        },
+        {
+          "id": "story_59",
+          "emoji": "🌽",
+          "title": "On the Farm",
+          "text": "The farmer wakes up early each day. He feeds the cows and pigs. He gathers eggs from the hens. There is always work to do on the farm.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_59_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "On the Farm",
+              "options": [
+                "On the Farm",
+                "Conversation: At School",
+                "The Clever Fox"
+              ],
+              "why": "This story is titled 'On the Farm'."
+            },
+            {
+              "id": "story_59_q2",
+              "q": "Complete the sentence from the story:\n\"The farmer wakes up early ___ day\"",
+              "a": "each",
+              "options": [
+                "warm",
+                "each",
+                "wear"
+              ],
+              "why": "The complete sentence is: \"The farmer wakes up early each day\""
+            }
+          ]
+        },
+        {
+          "id": "story_60",
+          "emoji": "🍯",
+          "title": "The Hungry Bear",
+          "text": "A big brown bear was very hungry. He smelled sweet honey nearby. He found a beehive in a tree. The bear ate the honey and felt happy.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_60_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Hungry Bear",
+              "options": [
+                "The Hungry Bear",
+                "Friends of the Sea",
+                "The Boy Who Counted Stars"
+              ],
+              "why": "This story is titled 'The Hungry Bear'."
+            },
+            {
+              "id": "story_60_q2",
+              "q": "Complete the sentence from the story:\n\"A big brown bear was very ___\"",
+              "a": "hungry",
+              "options": [
+                "hungry",
+                "saw",
+                "can"
+              ],
+              "why": "The complete sentence is: \"A big brown bear was very hungry\""
+            }
+          ]
+        },
+        {
+          "id": "story_61",
+          "emoji": "🚀",
+          "title": "Trip to Space",
+          "text": "I dream of flying to space. I would wear a white space suit. I would float past the stars. Maybe I would visit the moon.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_61_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Trip to Space",
+              "options": [
+                "Trip to Space",
+                "The Ant",
+                "The Bunny"
+              ],
+              "why": "This story is titled 'Trip to Space'."
+            },
+            {
+              "id": "story_61_q2",
+              "q": "Complete the sentence from the story:\n\"I dream of flying to ___\"",
+              "a": "space",
+              "options": [
+                "space",
+                "years",
+                "Rabbit"
+              ],
+              "why": "The complete sentence is: \"I dream of flying to space\""
+            }
+          ]
+        },
+        {
+          "id": "story_62",
+          "emoji": "🐝",
+          "title": "The Garden Helpers",
+          "text": "Bees fly from flower to flower. They carry yellow pollen. This helps the flowers grow. Bees are little helpers in the garden.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_62_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Garden Helpers",
+              "options": [
+                "The Garden Helpers",
+                "The Tree",
+                "The Little Bird"
+              ],
+              "why": "This story is titled 'The Garden Helpers'."
+            },
+            {
+              "id": "story_62_q2",
+              "q": "Complete the sentence from the story:\n\"Bees fly from ___ to flower\"",
+              "a": "flower",
+              "options": [
+                "Once",
+                "flower",
+                "money"
+              ],
+              "why": "The complete sentence is: \"Bees fly from flower to flower\""
+            }
+          ]
+        },
+        {
+          "id": "story_63",
+          "emoji": "🦊",
+          "title": "The Clever Fox",
+          "text": "A clever fox lived in the woods. He had a bright orange tail. He was quick and very smart. He always found a way home.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_63_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Clever Fox",
+              "options": [
+                "Fish in the Sea",
+                "The Pig",
+                "The Clever Fox"
+              ],
+              "why": "This story is titled 'The Clever Fox'."
+            },
+            {
+              "id": "story_63_q2",
+              "q": "Complete the sentence from the story:\n\"A clever fox lived in the ___\"",
+              "a": "woods",
+              "options": [
+                "birds",
+                "woods",
+                "tricks"
+              ],
+              "why": "The complete sentence is: \"A clever fox lived in the woods\""
+            }
+          ]
+        },
+        {
+          "id": "story_64",
+          "emoji": "🌦️",
+          "title": "After the Rain",
+          "text": "The rain stopped this afternoon. The sun came out again. A bright rainbow filled the sky. The whole world looked fresh and clean.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_64_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "After the Rain",
+              "options": [
+                "Conversation: At the Vegetable Market",
+                "The Tall Giraffe",
+                "After the Rain"
+              ],
+              "why": "This story is titled 'After the Rain'."
+            },
+            {
+              "id": "story_64_q2",
+              "q": "Complete the sentence from the story:\n\"The rain stopped this ___\"",
+              "a": "afternoon",
+              "options": [
+                "reaches",
+                "afternoon",
+                "feet"
+              ],
+              "why": "The complete sentence is: \"The rain stopped this afternoon\""
+            }
+          ]
+        },
+        {
+          "id": "story_65",
+          "emoji": "🐬",
+          "title": "The Playful Dolphin",
+          "text": "Dolphins swim in the deep blue sea. They jump high above the waves. They make happy clicking sounds. Dolphins love to play together.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_65_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Playful Dolphin",
+              "options": [
+                "Conversation: At the Doctor",
+                "The Playful Dolphin",
+                "The Frog"
+              ],
+              "why": "This story is titled 'The Playful Dolphin'."
+            },
+            {
+              "id": "story_65_q2",
+              "q": "Complete the sentence from the story:\n\"Dolphins swim in the deep ___ sea\"",
+              "a": "blue",
+              "options": [
+                "crunchy",
+                "Each",
+                "blue"
+              ],
+              "why": "The complete sentence is: \"Dolphins swim in the deep blue sea\""
+            }
+          ]
+        },
+        {
+          "id": "story_66",
+          "emoji": "📮",
+          "title": "A Letter to Grandma",
+          "text": "I wrote a letter to my grandma. I told her about my new puppy. I drew a picture for her. I put it in the mailbox.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_66_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "A Letter to Grandma",
+              "options": [
+                "A Letter to Grandma",
+                "Fall Leaves",
+                "Camping Trip"
+              ],
+              "why": "This story is titled 'A Letter to Grandma'."
+            },
+            {
+              "id": "story_66_q2",
+              "q": "Complete the sentence from the story:\n\"I wrote a letter to my ___\"",
+              "a": "grandma",
+              "options": [
+                "eggs",
+                "grandma",
+                "swim"
+              ],
+              "why": "The complete sentence is: \"I wrote a letter to my grandma\""
+            }
+          ]
+        },
+        {
+          "id": "story_67",
+          "emoji": "🎃",
+          "title": "The Pumpkin Patch",
+          "text": "We went to the pumpkin patch. There were pumpkins everywhere. I picked a big round one. We will carve it for fun.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_67_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Pumpkin Patch",
+              "options": [
+                "The Pumpkin Patch",
+                "The Playful Dolphin",
+                "Conversation: At the Stationery Shop"
+              ],
+              "why": "This story is titled 'The Pumpkin Patch'."
+            },
+            {
+              "id": "story_67_q2",
+              "q": "Complete the sentence from the story:\n\"We went to the pumpkin ___\"",
+              "a": "patch",
+              "options": [
+                "memories",
+                "patch",
+                "wrote"
+              ],
+              "why": "The complete sentence is: \"We went to the pumpkin patch\""
+            }
+          ]
+        },
+        {
+          "id": "story_68",
+          "emoji": "🦒",
+          "title": "The Tall Giraffe",
+          "text": "The giraffe is very tall. It has a long, long neck. It eats leaves from high trees. No other animal is so tall.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_68_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Tall Giraffe",
+              "options": [
+                "The Penguin",
+                "The Tall Giraffe",
+                "Fish in the Sea"
+              ],
+              "why": "This story is titled 'The Tall Giraffe'."
+            },
+            {
+              "id": "story_68_q2",
+              "q": "Complete the sentence from the story:\n\"The giraffe is very ___\"",
+              "a": "tall",
+              "options": [
+                "aboard",
+                "tall",
+                "Everyone"
+              ],
+              "why": "The complete sentence is: \"The giraffe is very tall\""
+            }
+          ]
+        },
+        {
+          "id": "story_69",
+          "emoji": "🏕️",
+          "title": "Camping Trip",
+          "text": "We set up our tent in the woods. At night we made a campfire. We told stories and sang songs. I saw many stars in the sky.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_69_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Camping Trip",
+              "options": [
+                "How Plants Grow",
+                "Camping Trip",
+                "The Tall Giraffe"
+              ],
+              "why": "This story is titled 'Camping Trip'."
+            },
+            {
+              "id": "story_69_q2",
+              "q": "Complete the sentence from the story:\n\"We set up our tent in the ___\"",
+              "a": "woods",
+              "options": [
+                "fly",
+                "written",
+                "woods"
+              ],
+              "why": "The complete sentence is: \"We set up our tent in the woods\""
+            }
+          ]
+        },
+        {
+          "id": "story_70",
+          "emoji": "🐌",
+          "title": "The Slow Snail",
+          "text": "A little snail moves very slowly. He carries his house on his back. He leaves a shiny trail behind. Slow and steady, he gets there.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_70_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Slow Snail",
+              "options": [
+                "The Little Bird",
+                "The Slow Snail",
+                "On the Farm"
+              ],
+              "why": "This story is titled 'The Slow Snail'."
+            },
+            {
+              "id": "story_70_q2",
+              "q": "Complete the sentence from the story:\n\"A little snail moves very ___\"",
+              "a": "slowly",
+              "options": [
+                "slowly",
+                "tracks",
+                "start"
+              ],
+              "why": "The complete sentence is: \"A little snail moves very slowly\""
+            }
+          ]
+        },
+        {
+          "id": "story_71",
+          "emoji": "🎵",
+          "title": "The Music Class",
+          "text": "Today we had music class. We played drums and bells. We sang a happy song. Making music is so much fun.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_71_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Music Class",
+              "options": [
+                "The Boy Who Counted Stars",
+                "The Music Class",
+                "The Caterpillar's Change"
+              ],
+              "why": "This story is titled 'The Music Class'."
+            },
+            {
+              "id": "story_71_q2",
+              "q": "Complete the sentence from the story:\n\"Today we had music ___\"",
+              "a": "class",
+              "options": [
+                "Soft",
+                "fast",
+                "class"
+              ],
+              "why": "The complete sentence is: \"Today we had music class\""
+            }
+          ]
+        },
+        {
+          "id": "story_72",
+          "emoji": "🌵",
+          "title": "The Desert",
+          "text": "The desert is hot and dry. Cactus plants grow there. They store water inside. Some animals come out at night.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_72_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Desert",
+              "options": [
+                "The Young Astronaut",
+                "The Desert",
+                "The Long Journey"
+              ],
+              "why": "This story is titled 'The Desert'."
+            },
+            {
+              "id": "story_72_q2",
+              "q": "Complete the sentence from the story:\n\"The ___ is hot and dry\"",
+              "a": "desert",
+              "options": [
+                "them",
+                "carefully",
+                "desert"
+              ],
+              "why": "The complete sentence is: \"The desert is hot and dry\""
+            }
+          ]
+        },
+        {
+          "id": "story_73",
+          "emoji": "🐞",
+          "title": "The Ladybug",
+          "text": "A red ladybug has black spots. It climbs up a green leaf. It spreads its tiny wings. Then it flies away into the sky.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_73_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Ladybug",
+              "options": [
+                "The Tall Giraffe",
+                "The Train",
+                "The Ladybug"
+              ],
+              "why": "This story is titled 'The Ladybug'."
+            },
+            {
+              "id": "story_73_q2",
+              "q": "Complete the sentence from the story:\n\"A red ladybug has black ___\"",
+              "a": "spots",
+              "options": [
+                "spots",
+                "Welcome",
+                "Twinkle"
+              ],
+              "why": "The complete sentence is: \"A red ladybug has black spots\""
+            }
+          ]
+        },
+        {
+          "id": "story_74",
+          "emoji": "🍎",
+          "title": "Helping at the Market",
+          "text": "We went to the farmers market. I helped pick fresh fruit. We bought apples and pears. The fruit was crunchy and sweet.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_74_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Helping at the Market",
+              "options": [
+                "The Sandcastle",
+                "Camping Trip",
+                "Helping at the Market"
+              ],
+              "why": "This story is titled 'Helping at the Market'."
+            },
+            {
+              "id": "story_74_q2",
+              "q": "Complete the sentence from the story:\n\"We went to the farmers ___\"",
+              "a": "market",
+              "options": [
+                "things",
+                "water",
+                "market"
+              ],
+              "why": "The complete sentence is: \"We went to the farmers market\""
+            }
+          ]
+        },
+        {
+          "id": "story_75",
+          "emoji": "🌍",
+          "title": "Our Planet Earth",
+          "text": "Earth is our home in space. It has land and blue oceans. Many plants and animals live here. We must keep our planet clean.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_75_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Our Planet Earth",
+              "options": [
+                "The Music Class",
+                "Conversation: At the Vegetable Market",
+                "Our Planet Earth"
+              ],
+              "why": "This story is titled 'Our Planet Earth'."
+            },
+            {
+              "id": "story_75_q2",
+              "q": "Complete the sentence from the story:\n\"Earth is our home in ___\"",
+              "a": "space",
+              "options": [
+                "her",
+                "space",
+                "ship"
+              ],
+              "why": "The complete sentence is: \"Earth is our home in space\""
+            }
+          ]
+        },
+        {
+          "id": "story_101",
+          "emoji": "🏫",
+          "title": "Conversation: At School",
+          "text": "The bell is ringing; class is about to start. We should go inside. Let Good morning everyone. Good morning ma How are you today? We are fine. Thank you ma Thank you children, I am fine. Ma Certainly, it",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_101_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: At School",
+              "options": [
+                "Conversation: At School",
+                "Fall Leaves",
+                "The Boy Who Counted Stars"
+              ],
+              "why": "This story is titled 'Conversation: At School'."
+            },
+            {
+              "id": "story_101_q2",
+              "q": "Complete the sentence from the story:\n\"The bell is ringing; class is about to ___\"",
+              "a": "start",
+              "options": [
+                "yummy",
+                "dark",
+                "start"
+              ],
+              "why": "The complete sentence is: \"The bell is ringing; class is about to start\""
+            }
+          ]
+        },
+        {
+          "id": "story_102",
+          "emoji": "⏰",
+          "title": "Conversation: Coming to Class Late",
+          "text": "Good morning ma Yes, come in. Thank you ma Why are you late today? I had been to a fair. What did you see there? I saw a giant wheel, sweet shops and many other shops.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_102_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: Coming to Class Late",
+              "options": [
+                "Conversation: Coming to Class Late",
+                "The Kind Princess",
+                "My Home"
+              ],
+              "why": "This story is titled 'Conversation: Coming to Class Late'."
+            },
+            {
+              "id": "story_102_q2",
+              "q": "Complete the sentence from the story:\n\"Good morning ma Yes, ___ in\"",
+              "a": "come",
+              "options": [
+                "come",
+                "race",
+                "sunlight"
+              ],
+              "why": "The complete sentence is: \"Good morning ma Yes, come in\""
+            }
+          ]
+        },
+        {
+          "id": "story_103",
+          "emoji": "🍅",
+          "title": "Conversation: At the Vegetable Market",
+          "text": "Excuse me, do you have fresh vegetables? Yes ma Could you please tell the cost of one kilo of tomato? It May I know the cost of ladyfinger? It Give me two kilos of tomato and one kilo of ladyfinger. Do you want anything else, ma Yes, give me one kilo of onion and potato each. Here it is. Here is the money. Thank you ma",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_103_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: At the Vegetable Market",
+              "options": [
+                "Conversation: At the Vegetable Market",
+                "Conversation: At the Stationery Shop",
+                "My Lunch"
+              ],
+              "why": "This story is titled 'Conversation: At the Vegetable Market'."
+            },
+            {
+              "id": "story_103_q2",
+              "q": "Complete the sentence from the story:\n\"Excuse me, do you have fresh ___\"",
+              "a": "vegetables",
+              "options": [
+                "park",
+                "vegetables",
+                "junk"
+              ],
+              "why": "The complete sentence is: \"Excuse me, do you have fresh vegetables\""
+            }
+          ]
+        },
+        {
+          "id": "story_104",
+          "emoji": "🏦",
+          "title": "Conversation: At the Bank",
+          "text": "Good morning sir. Good morning. Please take your seat. Thank you sir. I would like to open an account in your bank. Certainly. Do you like to open an account for scholarship? Yes sir. First you need to fill this application form and submit some documents. What are the documents? You need to submit your Aadhar and school ID card. How much money do I need to deposit, sir? You need to deposit a minimum of five hundred rupees. No problem sir. Please fill this form and submit it at the cash counter. Sure sir. Thank you so much. You are most welcome.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_104_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: At the Bank",
+              "options": [
+                "The Cookie",
+                "The Rainbow",
+                "Conversation: At the Bank"
+              ],
+              "why": "This story is titled 'Conversation: At the Bank'."
+            },
+            {
+              "id": "story_104_q2",
+              "q": "Complete the sentence from the story:\n\"Good ___ sir\"",
+              "a": "morning",
+              "options": [
+                "ropes",
+                "morning",
+                "nose"
+              ],
+              "why": "The complete sentence is: \"Good morning sir\""
+            }
+          ]
+        },
+        {
+          "id": "story_105",
+          "emoji": "📮",
+          "title": "Conversation: At the Post Office",
+          "text": "Good morning, sir. Very good morning. What can I do for you? Will you please give me a card and a stamp? Yes, of course. May I know the use of a stamp? A stamp shows that the amount is already paid for the postage. Please tell me the cost of this stamp. This stamp costs five rupees only. Okay, take this. Please give me the change. Here is your change. Have a nice day. Same here, bye.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_105_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: At the Post Office",
+              "options": [
+                "Conversation: Rabbit and Tortoise",
+                "Our Planet Earth",
+                "Conversation: At the Post Office"
+              ],
+              "why": "This story is titled 'Conversation: At the Post Office'."
+            },
+            {
+              "id": "story_105_q2",
+              "q": "Complete the sentence from the story:\n\"Good ___, sir\"",
+              "a": "morning",
+              "options": [
+                "food",
+                "carries",
+                "morning"
+              ],
+              "why": "The complete sentence is: \"Good morning, sir\""
+            }
+          ]
+        },
+        {
+          "id": "story_106",
+          "emoji": "🏑",
+          "title": "Conversation: Games at the Playground",
+          "text": "Good morning sir. Good morning. How are you all? Fine, thank you sir. Today, let us know about indoor and outdoor games. May I know about the indoor games, sir? The games which are played inside are called indoor games. Please give some examples sir. Yes, they are chess, carrom, snake and ladder, and others. Could you tell me about outdoor games, sir? The games played outside are called outdoor games, like cricket, hockey and football. Sir, today we would like to play hockey. Okay. Take the hockey sticks and go to the playground. Thank you sir.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_106_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: Games at the Playground",
+              "options": [
+                "After the Rain",
+                "The Ant",
+                "Conversation: Games at the Playground"
+              ],
+              "why": "This story is titled 'Conversation: Games at the Playground'."
+            },
+            {
+              "id": "story_106_q2",
+              "q": "Complete the sentence from the story:\n\"Good ___ sir\"",
+              "a": "morning",
+              "options": [
+                "morning",
+                "fly",
+                "traveling"
+              ],
+              "why": "The complete sentence is: \"Good morning sir\""
+            }
+          ]
+        },
+        {
+          "id": "story_107",
+          "emoji": "🩺",
+          "title": "Conversation: At the Doctor",
+          "text": "Hello, good morning sir. Very good morning, please come in. Sir, I am not feeling well. Please tell me what happened. I have been suffering from a stomach ache for the past three days. What did you eat? I had special food at a marriage hall. Okay. It Is it, sir? Yes, I will give you some tablets. You will be alright soon. Okay sir. Do I need to follow a diet? No need for dieting, but avoid junk food. Okay sir, thank you. You are welcome.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_107_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: At the Doctor",
+              "options": [
+                "Riding My Bike",
+                "The Fish",
+                "Conversation: At the Doctor"
+              ],
+              "why": "This story is titled 'Conversation: At the Doctor'."
+            },
+            {
+              "id": "story_107_q2",
+              "q": "Complete the sentence from the story:\n\"Hello, good ___ sir\"",
+              "a": "morning",
+              "options": [
+                "morning",
+                "plain",
+                "father"
+              ],
+              "why": "The complete sentence is: \"Hello, good morning sir\""
+            }
+          ]
+        },
+        {
+          "id": "story_108",
+          "emoji": "🚉",
+          "title": "Conversation: At the Railway Station",
+          "text": "Excuse me, sir. Yes please. How can I help you? Could you please tell me the schedule of Siddaganga Express? Sure, it arrives at two p.m. and will depart in two minutes. May I know the fare from Tumkur to Hubli for second class? It Yes sir, on which platform does it arrive? It is arriving at platform number three today. Thank you very much sir. It",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_108_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: At the Railway Station",
+              "options": [
+                "The Owl Who Couldn't Sleep",
+                "Conversation: At the Railway Station",
+                "Conversation: Games at the Playground"
+              ],
+              "why": "This story is titled 'Conversation: At the Railway Station'."
+            },
+            {
+              "id": "story_108_q2",
+              "q": "Complete the sentence from the story:\n\"___ me, sir\"",
+              "a": "Excuse",
+              "options": [
+                "opponents",
+                "clean",
+                "Excuse"
+              ],
+              "why": "The complete sentence is: \"Excuse me, sir\""
+            }
+          ]
+        },
+        {
+          "id": "story_109",
+          "emoji": "🚌",
+          "title": "Conversation: On the Bus",
+          "text": "Excuse me, sir. Yes, please. I want to go to Mysore today. At what time will the bus be departing? The bus will depart sharply at nine thirty a.m. Fine sir. When will it reach Mysore? It will reach around one p.m. That would be fine. Thank you sir. You are welcome. Please come aboard. We will be leaving now. I want two tickets to Bengaluru, sir. Okay. That would be two hundred and twenty rupees. Here it is. Here is your ticket. Thank you.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_109_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: On the Bus",
+              "options": [
+                "The Mighty Ocean",
+                "Conversation: At the Bank",
+                "Conversation: On the Bus"
+              ],
+              "why": "This story is titled 'Conversation: On the Bus'."
+            },
+            {
+              "id": "story_109_q2",
+              "q": "Complete the sentence from the story:\n\"___ me, sir\"",
+              "a": "Excuse",
+              "options": [
+                "Excuse",
+                "people",
+                "Palace"
+              ],
+              "why": "The complete sentence is: \"Excuse me, sir\""
+            }
+          ]
+        },
+        {
+          "id": "story_110",
+          "emoji": "📚",
+          "title": "Conversation: At the Library",
+          "text": "Good morning ma Good morning. How can I help you? I We have many dictionaries. Which one do you want? I don I recommend the Standard Dictionary. It is easy to use. That would be perfect for my project, ma I will bring one for you. Please wait here. Sure ma Here it is. Take care of the book and all the best for your project. Thank you ma Pleasure is all mine, child.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_110_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: At the Library",
+              "options": [
+                "The Message in a Bottle",
+                "Conversation: At the Library",
+                "The Snowman"
+              ],
+              "why": "This story is titled 'Conversation: At the Library'."
+            },
+            {
+              "id": "story_110_q2",
+              "q": "Complete the sentence from the story:\n\"Good ___ ma Good morning\"",
+              "a": "morning",
+              "options": [
+                "visit",
+                "dream",
+                "morning"
+              ],
+              "why": "The complete sentence is: \"Good morning ma Good morning\""
+            }
+          ]
+        },
+        {
+          "id": "story_111",
+          "emoji": "📖",
+          "title": "Conversation: At the Bookshop",
+          "text": "Good evening sir. Very good evening, please come in. Could you please name some story books? Yes sure. What type of books do you need? I need moral story books like Panchatantra and Arabian Nights. Oh! You have good knowledge about books. What is the cost of this book, sir? It Here it is. Thank you so much. Pleasure is mine.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_111_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: At the Bookshop",
+              "options": [
+                "The Balloon",
+                "The Playful Dolphin",
+                "Conversation: At the Bookshop"
+              ],
+              "why": "This story is titled 'Conversation: At the Bookshop'."
+            },
+            {
+              "id": "story_111_q2",
+              "q": "Complete the sentence from the story:\n\"Good ___ sir\"",
+              "a": "evening",
+              "options": [
+                "think",
+                "Palace",
+                "evening"
+              ],
+              "why": "The complete sentence is: \"Good evening sir\""
+            }
+          ]
+        },
+        {
+          "id": "story_112",
+          "emoji": "🚆",
+          "title": "Conversation: Two Travellers",
+          "text": "Good morning, sir. Very good morning. Where are you from, sir? I am from Delhi. And you, sir? I am from Mumbai. May I ask where you are going? I am going to Bengaluru to attend my nephew I am also going to Bengaluru to attend a meeting. Oh, that How many days will you stay in Bengaluru? I will be there for two days. Oh, that Thank you, I wish you the same. Nice meeting you. Thank you. Bye.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_112_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: Two Travellers",
+              "options": [
+                "Picking Berries",
+                "The Caterpillar's Change",
+                "Conversation: Two Travellers"
+              ],
+              "why": "This story is titled 'Conversation: Two Travellers'."
+            },
+            {
+              "id": "story_112_q2",
+              "q": "Complete the sentence from the story:\n\"Good ___, sir\"",
+              "a": "morning",
+              "options": [
+                "mine",
+                "trail",
+                "morning"
+              ],
+              "why": "The complete sentence is: \"Good morning, sir\""
+            }
+          ]
+        },
+        {
+          "id": "story_113",
+          "emoji": "🛍️",
+          "title": "Conversation: At the Stationery Shop",
+          "text": "Hello sir. Hello ma I am looking for good pens. Are you looking for any specific type? Yeah, could I have some ball point pens please? Sure ma I need both blue and red pens. How many pens do you need? I need ten blue and ten red pens. Here are your pens, ma How much should I pay for these? It is two hundred rupees, ma Here is the money. Thank you for shopping, ma",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_113_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: At the Stationery Shop",
+              "options": [
+                "The Mighty Ocean",
+                "Conversation: On the Bus",
+                "Conversation: At the Stationery Shop"
+              ],
+              "why": "This story is titled 'Conversation: At the Stationery Shop'."
+            },
+            {
+              "id": "story_113_q2",
+              "q": "Complete the sentence from the story:\n\"___ sir\"",
+              "a": "Hello",
+              "options": [
+                "schedule",
+                "potato",
+                "Hello"
+              ],
+              "why": "The complete sentence is: \"Hello sir\""
+            }
+          ]
+        },
+        {
+          "id": "story_114",
+          "emoji": "🍽️",
+          "title": "Conversation: At the Restaurant",
+          "text": "Welcome to our restaurant, sir. How can I help you? Can I get a table, please? Of course, please follow me, sir. Thank you. Could I get the menu card, please? Sure sir, here it is. I would like a bowl of tomato soup and a plate of fried rice. Sure sir. Anything else? Nothing. Just give me the bill. Here is the bill, sir. Thank you.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_114_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: At the Restaurant",
+              "options": [
+                "Conversation: Two Players Before a Match",
+                "Conversation: At the Restaurant",
+                "Conversation: At the Vegetable Market"
+              ],
+              "why": "This story is titled 'Conversation: At the Restaurant'."
+            },
+            {
+              "id": "story_114_q2",
+              "q": "Complete the sentence from the story:\n\"Welcome to our ___, sir\"",
+              "a": "restaurant",
+              "options": [
+                "restaurant",
+                "genius",
+                "evening"
+              ],
+              "why": "The complete sentence is: \"Welcome to our restaurant, sir\""
+            }
+          ]
+        },
+        {
+          "id": "story_115",
+          "emoji": "🛒",
+          "title": "Conversation: At the Grocery Shop",
+          "text": "Welcome to our shop, sir. Thank you. How can I help you, sir? I want to buy some groceries. Here Of course, sir. I will pack it for you. Thank you. Would you prefer a bag to carry all these things? Yeah sir, I would like one. Here is your bill, sir. I don Of course, sir. You can. I paid. Please check it once. Thank you sir. Here is your receipt.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_115_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: At the Grocery Shop",
+              "options": [
+                "The Caterpillar's Change",
+                "Conversation: At the Grocery Shop",
+                "A Rainy Day"
+              ],
+              "why": "This story is titled 'Conversation: At the Grocery Shop'."
+            },
+            {
+              "id": "story_115_q2",
+              "q": "Complete the sentence from the story:\n\"Welcome to our ___, sir\"",
+              "a": "shop",
+              "options": [
+                "sharply",
+                "shop",
+                "wait"
+              ],
+              "why": "The complete sentence is: \"Welcome to our shop, sir\""
+            }
+          ]
+        },
+        {
+          "id": "story_116",
+          "emoji": "🏆",
+          "title": "Conversation: Two Players Before a Match",
+          "text": "Hi! Raju. Hello Pavan. Is our match today or tomorrow? It The opponents are very strong, Raju! Yes Pavan. We need to play very carefully. We must win the match. Of course, we have to win. I Be strong, Pavan. Let Okay Raju, I will call everyone. Let",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_116_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: Two Players Before a Match",
+              "options": [
+                "A Letter to Grandma",
+                "The Caterpillar's Change",
+                "Conversation: Two Players Before a Match"
+              ],
+              "why": "This story is titled 'Conversation: Two Players Before a Match'."
+            },
+            {
+              "id": "story_116_q2",
+              "q": "Complete the sentence from the story:\n\"___\"",
+              "a": "Raju",
+              "options": [
+                "Raju",
+                "carve",
+                "park"
+              ],
+              "why": "The complete sentence is: \"Raju\""
+            }
+          ]
+        },
+        {
+          "id": "story_117",
+          "emoji": "🧭",
+          "title": "Conversation: Tourist and Guide",
+          "text": "Hello, good morning. I Hello, good morning Gopal. I Is it your first visit to Mysore, sir? Yes. I need your help to go around here. Okay. It Can you please tell me the famous tourist places in Mysore? By all means. We have many best places in Mysore. Wow! It We have Mysore Palace, Brindavan Garden, Chamundeshwari Temple, Mysore Zoo, and many more. That It",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_117_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: Tourist and Guide",
+              "options": [
+                "Conversation: Friends at the Zoo",
+                "The Owl Who Couldn't Sleep",
+                "Conversation: Tourist and Guide"
+              ],
+              "why": "This story is titled 'Conversation: Tourist and Guide'."
+            },
+            {
+              "id": "story_117_q2",
+              "q": "Complete the sentence from the story:\n\"Hello, good ___\"",
+              "a": "morning",
+              "options": [
+                "quack",
+                "morning",
+                "autumn"
+              ],
+              "why": "The complete sentence is: \"Hello, good morning\""
+            }
+          ]
+        },
+        {
+          "id": "story_118",
+          "emoji": "🦓",
+          "title": "Conversation: Friends at the Zoo",
+          "text": "Hi, Sudesh. Hello, Nihal. What is our plan for tomorrow? Where are we going? Shall we visit a zoo? Okay, it No. I visited with my uncle last year. Is there any entry fee? Yes, we have to get an entry ticket to enter the zoo. Look, a very big bird, and so tall! That Incredible! Can an ostrich fly? No, they can What do they eat? They eat plants, seeds, insects and other small creatures. I think these are beautiful birds. I am thrilled to see them! That",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_118_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: Friends at the Zoo",
+              "options": [
+                "Conversation: At the Post Office",
+                "Conversation: Friends at the Zoo",
+                "Conversation: Akbar and Birbal"
+              ],
+              "why": "This story is titled 'Conversation: Friends at the Zoo'."
+            },
+            {
+              "id": "story_118_q2",
+              "q": "Complete the sentence from the story:\n\"Hi, ___\"",
+              "a": "Sudesh",
+              "options": [
+                "Sudesh",
+                "yellow",
+                "wheel"
+              ],
+              "why": "The complete sentence is: \"Hi, Sudesh\""
+            }
+          ]
+        },
+        {
+          "id": "story_119",
+          "emoji": "👑",
+          "title": "Conversation: Akbar and Birbal",
+          "text": "Dear Birbal, I had a nightmare. I dreamt that all my teeth had fallen out except one. Your Majesty! Please tell me, what did the astrologers say? They told me that all my relatives will die before me. I Please tell me the dream again, sir. I have told you the whole dream. Your Majesty, the meaning is that you will live longer than your relatives. You are a genius! Thank you for your explanation. It is my duty to serve you, Your Majesty.",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_119_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: Akbar and Birbal",
+              "options": [
+                "Conversation: Coming to Class Late",
+                "Conversation: Akbar and Birbal",
+                "The Sleeping Volcano"
+              ],
+              "why": "This story is titled 'Conversation: Akbar and Birbal'."
+            },
+            {
+              "id": "story_119_q2",
+              "q": "Complete the sentence from the story:\n\"Dear Birbal, I had a ___\"",
+              "a": "nightmare",
+              "options": [
+                "nightmare",
+                "thousands",
+                "beach"
+              ],
+              "why": "The complete sentence is: \"Dear Birbal, I had a nightmare\""
+            }
+          ]
+        },
+        {
+          "id": "story_120",
+          "emoji": "🐰",
+          "title": "Conversation: Rabbit and Tortoise",
+          "text": "Hello Torty, how are you? Hello Rabbit, I am fine. Thank you. Are you free today? Yes. I am free. Shall we play a game? Sure. I am also getting bored. Which game shall we play? We shall play a running race. It Ready, steady, go!",
+          "level": 3,
+          "questions": [
+            {
+              "id": "story_120_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Conversation: Rabbit and Tortoise",
+              "options": [
+                "Fall Leaves",
+                "Helping at the Market",
+                "Conversation: Rabbit and Tortoise"
+              ],
+              "why": "This story is titled 'Conversation: Rabbit and Tortoise'."
+            },
+            {
+              "id": "story_120_q2",
+              "q": "Complete the sentence from the story:\n\"Hello ___, how are you\"",
+              "a": "Torty",
+              "options": [
+                "Yeah",
+                "Torty",
+                "use"
+              ],
+              "why": "The complete sentence is: \"Hello Torty, how are you\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rb_l4",
+      "name": "Confident Stories",
+      "level": 4,
+      "stories": [
+        {
+          "id": "story_76",
+          "emoji": "🦋",
+          "title": "The Caterpillar's Change",
+          "text": "A tiny caterpillar munched on green leaves all day long. One morning, it built a cozy cocoon around itself. Inside, something amazing was happening. Weeks later, a beautiful butterfly came out and spread its colorful wings.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_76_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Caterpillar's Change",
+              "options": [
+                "The Snowman",
+                "The Giving Tree",
+                "The Caterpillar's Change"
+              ],
+              "why": "This story is titled 'The Caterpillar's Change'."
+            },
+            {
+              "id": "story_76_q2",
+              "q": "Complete the sentence from the story:\n\"A tiny caterpillar munched on green leaves all day ___\"",
+              "a": "long",
+              "options": [
+                "Earth",
+                "long",
+                "spring"
+              ],
+              "why": "The complete sentence is: \"A tiny caterpillar munched on green leaves all day long\""
+            }
+          ]
+        },
+        {
+          "id": "story_77",
+          "emoji": "🌧️",
+          "title": "Where Does Rain Come From",
+          "text": "Have you ever wondered where rain comes from? The sun warms the water in lakes and oceans. The water turns into vapor and rises into the sky. There it forms clouds, and soon the rain falls back down.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_77_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Where Does Rain Come From",
+              "options": [
+                "The Garden Helpers",
+                "Conversation: Rabbit and Tortoise",
+                "Where Does Rain Come From"
+              ],
+              "why": "This story is titled 'Where Does Rain Come From'."
+            },
+            {
+              "id": "story_77_q2",
+              "q": "Complete the sentence from the story:\n\"Have you ever wondered where rain comes ___\"",
+              "a": "from",
+              "options": [
+                "fluffy",
+                "from",
+                "touch"
+              ],
+              "why": "The complete sentence is: \"Have you ever wondered where rain comes from\""
+            }
+          ]
+        },
+        {
+          "id": "story_78",
+          "emoji": "🐝",
+          "title": "The Honey Makers",
+          "text": "Bees live together in a busy hive. Worker bees fly out to collect sweet nectar from flowers. Back at the hive, they turn the nectar into golden honey. Without bees, we would have far fewer fruits and vegetables.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_78_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Honey Makers",
+              "options": [
+                "The Giving Tree",
+                "The Honey Makers",
+                "The Mountain Climber"
+              ],
+              "why": "This story is titled 'The Honey Makers'."
+            },
+            {
+              "id": "story_78_q2",
+              "q": "Complete the sentence from the story:\n\"Bees live together in a busy ___\"",
+              "a": "hive",
+              "options": [
+                "Excuse",
+                "fruits",
+                "hive"
+              ],
+              "why": "The complete sentence is: \"Bees live together in a busy hive\""
+            }
+          ]
+        },
+        {
+          "id": "story_79",
+          "emoji": "🏰",
+          "title": "The Kind Princess",
+          "text": "Once upon a time, a kind princess lived in a tall castle. She always shared her food with the hungry villagers. The people loved her gentle heart. When she became queen, the whole kingdom was happy.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_79_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Kind Princess",
+              "options": [
+                "The Kind Princess",
+                "The Penguin",
+                "Where Does Rain Come From"
+              ],
+              "why": "This story is titled 'The Kind Princess'."
+            },
+            {
+              "id": "story_79_q2",
+              "q": "Complete the sentence from the story:\n\"Once upon a time, a kind princess lived in a tall ___\"",
+              "a": "castle",
+              "options": [
+                "castle",
+                "Hello",
+                "Let"
+              ],
+              "why": "The complete sentence is: \"Once upon a time, a kind princess lived in a tall castle\""
+            }
+          ]
+        },
+        {
+          "id": "story_80",
+          "emoji": "🌳",
+          "title": "The Giving Tree",
+          "text": "An old oak tree stood at the edge of the forest. Birds built nests in its strong branches. Children climbed it and rested in its cool shade. The tree gave so much and asked for nothing in return.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_80_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Giving Tree",
+              "options": [
+                "The Giving Tree",
+                "The Quiet Forest",
+                "Conversation: Two Travellers"
+              ],
+              "why": "This story is titled 'The Giving Tree'."
+            },
+            {
+              "id": "story_80_q2",
+              "q": "Complete the sentence from the story:\n\"An old oak tree stood at the edge of the ___\"",
+              "a": "forest",
+              "options": [
+                "forest",
+                "tickets",
+                "mother"
+              ],
+              "why": "The complete sentence is: \"An old oak tree stood at the edge of the forest\""
+            }
+          ]
+        },
+        {
+          "id": "story_81",
+          "emoji": "🐬",
+          "title": "Friends of the Sea",
+          "text": "Dolphins are some of the smartest animals in the ocean. They talk to each other with clicks and whistles. They work together to find food and stay safe. Sometimes they even help humans who are in trouble.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_81_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Friends of the Sea",
+              "options": [
+                "Ice Cream",
+                "The Desert",
+                "Friends of the Sea"
+              ],
+              "why": "This story is titled 'Friends of the Sea'."
+            },
+            {
+              "id": "story_81_q2",
+              "q": "Complete the sentence from the story:\n\"Dolphins are some of the smartest animals in the ___\"",
+              "a": "ocean",
+              "options": [
+                "ocean",
+                "sat",
+                "pig"
+              ],
+              "why": "The complete sentence is: \"Dolphins are some of the smartest animals in the ocean\""
+            }
+          ]
+        },
+        {
+          "id": "story_82",
+          "emoji": "🚀",
+          "title": "The Young Astronaut",
+          "text": "Maya dreamed of traveling among the stars. She studied hard and learned all about space. One day she climbed aboard a rocket ship. As it blasted off, she smiled, ready for her great adventure.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_82_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Young Astronaut",
+              "options": [
+                "The Busy Squirrel",
+                "Conversation: At School",
+                "The Young Astronaut"
+              ],
+              "why": "This story is titled 'The Young Astronaut'."
+            },
+            {
+              "id": "story_82_q2",
+              "q": "Complete the sentence from the story:\n\"Maya dreamed of traveling among the ___\"",
+              "a": "stars",
+              "options": [
+                "chewed",
+                "flying",
+                "stars"
+              ],
+              "why": "The complete sentence is: \"Maya dreamed of traveling among the stars\""
+            }
+          ]
+        },
+        {
+          "id": "story_83",
+          "emoji": "🌋",
+          "title": "The Sleeping Volcano",
+          "text": "High on a mountain sat a quiet volcano. For many years it slept without a sound. Deep inside, hot melted rock began to bubble. One day it woke up and lit the sky with glowing fire.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_83_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Sleeping Volcano",
+              "options": [
+                "The Little Lamb",
+                "The Sandcastle",
+                "The Sleeping Volcano"
+              ],
+              "why": "This story is titled 'The Sleeping Volcano'."
+            },
+            {
+              "id": "story_83_q2",
+              "q": "Complete the sentence from the story:\n\"High on a mountain sat a quiet ___\"",
+              "a": "volcano",
+              "options": [
+                "music",
+                "fruits",
+                "volcano"
+              ],
+              "why": "The complete sentence is: \"High on a mountain sat a quiet volcano\""
+            }
+          ]
+        },
+        {
+          "id": "story_84",
+          "emoji": "🦉",
+          "title": "The Owl Who Couldn't Sleep",
+          "text": "Oliver the owl was different from the others. While they slept all day, he wanted to see the sunshine. He watched the busy daytime world with wide eyes. Oliver learned that being different can be wonderful.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_84_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Owl Who Couldn't Sleep",
+              "options": [
+                "The Sleeping Volcano",
+                "The Owl Who Couldn't Sleep",
+                "Friends of the Sea"
+              ],
+              "why": "This story is titled 'The Owl Who Couldn't Sleep'."
+            },
+            {
+              "id": "story_84_q2",
+              "q": "Complete the sentence from the story:\n\"Oliver the owl was different from the ___\"",
+              "a": "others",
+              "options": [
+                "together",
+                "others",
+                "easy"
+              ],
+              "why": "The complete sentence is: \"Oliver the owl was different from the others\""
+            }
+          ]
+        },
+        {
+          "id": "story_85",
+          "emoji": "🌊",
+          "title": "The Mighty Ocean",
+          "text": "The ocean covers most of our planet. It is home to whales, fish, and tiny creatures. Its waves crash on the shore again and again. We must protect the ocean and keep it clean for all.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_85_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Mighty Ocean",
+              "options": [
+                "The Mighty Ocean",
+                "At the Circus",
+                "Conversation: Rabbit and Tortoise"
+              ],
+              "why": "This story is titled 'The Mighty Ocean'."
+            },
+            {
+              "id": "story_85_q2",
+              "q": "Complete the sentence from the story:\n\"The ocean covers most of our ___\"",
+              "a": "planet",
+              "options": [
+                "smiled",
+                "went",
+                "planet"
+              ],
+              "why": "The complete sentence is: \"The ocean covers most of our planet\""
+            }
+          ]
+        },
+        {
+          "id": "story_86",
+          "emoji": "🐧",
+          "title": "The Brave Penguin",
+          "text": "In the freezing cold of the south, penguins huddle close together. The father penguin keeps the egg warm on his feet. He waits patiently through the long, icy winter. At last, a fluffy chick is born.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_86_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Brave Penguin",
+              "options": [
+                "The Brave Penguin",
+                "I Like to Paint",
+                "The Little Bird"
+              ],
+              "why": "This story is titled 'The Brave Penguin'."
+            },
+            {
+              "id": "story_86_q2",
+              "q": "Complete the sentence from the story:\n\"In the freezing cold of the south, penguins huddle close ___\"",
+              "a": "together",
+              "options": [
+                "teeth",
+                "together",
+                "sit"
+              ],
+              "why": "The complete sentence is: \"In the freezing cold of the south, penguins huddle close together\""
+            }
+          ]
+        },
+        {
+          "id": "story_87",
+          "emoji": "🍂",
+          "title": "The Four Seasons",
+          "text": "Each year brings four special seasons. In spring, flowers bloom and birds return. Summer is warm and full of sunshine. Then autumn paints the leaves, and winter covers the world in snow.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_87_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Four Seasons",
+              "options": [
+                "The Four Seasons",
+                "The Hungry Bear",
+                "The Cow"
+              ],
+              "why": "This story is titled 'The Four Seasons'."
+            },
+            {
+              "id": "story_87_q2",
+              "q": "Complete the sentence from the story:\n\"Each year brings four special ___\"",
+              "a": "seasons",
+              "options": [
+                "seasons",
+                "pink",
+                "enter"
+              ],
+              "why": "The complete sentence is: \"Each year brings four special seasons\""
+            }
+          ]
+        },
+        {
+          "id": "story_88",
+          "emoji": "🐘",
+          "title": "The Elephant Never Forgets",
+          "text": "Elephants are gentle giants of the grasslands. They use their trunks to drink, eat, and hug. They have amazing memories and never forget a friend. A family of elephants always cares for one another.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_88_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Elephant Never Forgets",
+              "options": [
+                "The Little Bird",
+                "The Elephant Never Forgets",
+                "The Busy Squirrel"
+              ],
+              "why": "This story is titled 'The Elephant Never Forgets'."
+            },
+            {
+              "id": "story_88_q2",
+              "q": "Complete the sentence from the story:\n\"Elephants are gentle giants of the ___\"",
+              "a": "grasslands",
+              "options": [
+                "everywhere",
+                "grasslands",
+                "plain"
+              ],
+              "why": "The complete sentence is: \"Elephants are gentle giants of the grasslands\""
+            }
+          ]
+        },
+        {
+          "id": "story_89",
+          "emoji": "🌟",
+          "title": "The Boy Who Counted Stars",
+          "text": "Every clear night, Sam lay on the soft grass. He looked up at the endless twinkling sky. He tried to count each shining star. Though he never finished, he loved to dream and wonder.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_89_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Boy Who Counted Stars",
+              "options": [
+                "The Tree",
+                "The Boy Who Counted Stars",
+                "Fall Leaves"
+              ],
+              "why": "This story is titled 'The Boy Who Counted Stars'."
+            },
+            {
+              "id": "story_89_q2",
+              "q": "Complete the sentence from the story:\n\"Every clear night, Sam lay on the soft ___\"",
+              "a": "grass",
+              "options": [
+                "apple",
+                "grass",
+                "rides"
+              ],
+              "why": "The complete sentence is: \"Every clear night, Sam lay on the soft grass\""
+            }
+          ]
+        },
+        {
+          "id": "story_90",
+          "emoji": "🏔️",
+          "title": "The Mountain Climber",
+          "text": "Anna wanted to reach the top of the tall mountain. The path was steep and the air was cold. Step by step, she kept on climbing. When she reached the peak, the whole world lay below her.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_90_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Mountain Climber",
+              "options": [
+                "The Mountain Climber",
+                "Conversation: Akbar and Birbal",
+                "The Playful Dolphin"
+              ],
+              "why": "This story is titled 'The Mountain Climber'."
+            },
+            {
+              "id": "story_90_q2",
+              "q": "Complete the sentence from the story:\n\"Anna wanted to reach the top of the tall ___\"",
+              "a": "mountain",
+              "options": [
+                "stomach",
+                "mountain",
+                "Later"
+              ],
+              "why": "The complete sentence is: \"Anna wanted to reach the top of the tall mountain\""
+            }
+          ]
+        },
+        {
+          "id": "story_91",
+          "emoji": "🦊",
+          "title": "The Fox and the Grapes",
+          "text": "A hungry fox saw juicy grapes hanging high. He jumped and jumped, but could not reach them. After many tries, he gave up and walked away. He said the grapes were probably sour anyway.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_91_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Fox and the Grapes",
+              "options": [
+                "The Bunny",
+                "The Fox and the Grapes",
+                "The Birthday"
+              ],
+              "why": "This story is titled 'The Fox and the Grapes'."
+            },
+            {
+              "id": "story_91_q2",
+              "q": "Complete the sentence from the story:\n\"A hungry fox saw juicy grapes hanging ___\"",
+              "a": "high",
+              "options": [
+                "Slowly",
+                "high",
+                "check"
+              ],
+              "why": "The complete sentence is: \"A hungry fox saw juicy grapes hanging high\""
+            }
+          ]
+        },
+        {
+          "id": "story_92",
+          "emoji": "🌻",
+          "title": "How Plants Grow",
+          "text": "A tiny seed is planted in the dark soil. With water and warm sunlight, it begins to sprout. Slowly, a green stem reaches toward the sky. In time, it grows into a tall and lovely plant.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_92_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "How Plants Grow",
+              "options": [
+                "The Butterfly",
+                "How Plants Grow",
+                "The Boy Who Counted Stars"
+              ],
+              "why": "This story is titled 'How Plants Grow'."
+            },
+            {
+              "id": "story_92_q2",
+              "q": "Complete the sentence from the story:\n\"A tiny seed is planted in the dark ___\"",
+              "a": "soil",
+              "options": [
+                "soil",
+                "drinks",
+                "Summer"
+              ],
+              "why": "The complete sentence is: \"A tiny seed is planted in the dark soil\""
+            }
+          ]
+        },
+        {
+          "id": "story_93",
+          "emoji": "🐢",
+          "title": "The Patient Turtle",
+          "text": "Old Mr. Turtle never moved in a hurry. He took his time wherever he went. While others rushed and made mistakes, he stayed calm. Being patient helped him finish everything he started.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_93_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Patient Turtle",
+              "options": [
+                "Helping at the Market",
+                "The Brave Lion",
+                "The Patient Turtle"
+              ],
+              "why": "This story is titled 'The Patient Turtle'."
+            },
+            {
+              "id": "story_93_q2",
+              "q": "Complete the sentence from the story:\n\"Old Mr\"",
+              "a": "puppy",
+              "options": [
+                "car",
+                "one",
+                "puppy"
+              ],
+              "why": "The complete sentence is: \"Old Mr\""
+            }
+          ]
+        },
+        {
+          "id": "story_94",
+          "emoji": "🎻",
+          "title": "The Little Musician",
+          "text": "Leo found an old violin in the attic. At first the sounds were squeaky and strange. But he practiced a little every single day. Soon his music was beautiful enough to make people smile.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_94_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Little Musician",
+              "options": [
+                "The Fish",
+                "The Little Musician",
+                "The Big Elephant"
+              ],
+              "why": "This story is titled 'The Little Musician'."
+            },
+            {
+              "id": "story_94_q2",
+              "q": "Complete the sentence from the story:\n\"Leo found an old violin in the ___\"",
+              "a": "attic",
+              "options": [
+                "bright",
+                "attic",
+                "minimum"
+              ],
+              "why": "The complete sentence is: \"Leo found an old violin in the attic\""
+            }
+          ]
+        },
+        {
+          "id": "story_95",
+          "emoji": "🐦",
+          "title": "The Long Journey",
+          "text": "When winter comes, many birds fly far away. They travel thousands of miles to warmer lands. They follow the same path their parents flew. In spring, they return home once more.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_95_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Long Journey",
+              "options": [
+                "The Long Journey",
+                "The Slow Snail",
+                "The Fish"
+              ],
+              "why": "This story is titled 'The Long Journey'."
+            },
+            {
+              "id": "story_95_q2",
+              "q": "Complete the sentence from the story:\n\"When winter comes, many birds fly far ___\"",
+              "a": "away",
+              "options": [
+                "lovely",
+                "watched",
+                "away"
+              ],
+              "why": "The complete sentence is: \"When winter comes, many birds fly far away\""
+            }
+          ]
+        },
+        {
+          "id": "story_96",
+          "emoji": "🌈",
+          "title": "The Colors of Light",
+          "text": "Sunlight may look plain and white to us. But it is really made of many colors. When light passes through raindrops, it bends and splits. That is how a beautiful rainbow appears in the sky.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_96_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Colors of Light",
+              "options": [
+                "The Little Musician",
+                "The Pumpkin Patch",
+                "The Colors of Light"
+              ],
+              "why": "This story is titled 'The Colors of Light'."
+            },
+            {
+              "id": "story_96_q2",
+              "q": "Complete the sentence from the story:\n\"Sunlight may look plain and ___ to us\"",
+              "a": "white",
+              "options": [
+                "shall",
+                "hoo",
+                "white"
+              ],
+              "why": "The complete sentence is: \"Sunlight may look plain and white to us\""
+            }
+          ]
+        },
+        {
+          "id": "story_97",
+          "emoji": "🦁",
+          "title": "The Lion and the Mouse",
+          "text": "A mighty lion caught a tiny mouse one day. The mouse begged for mercy, and the lion let him go. Later, the lion was trapped in a hunter's net. The little mouse chewed the ropes and set him free.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_97_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Lion and the Mouse",
+              "options": [
+                "The Lion and the Mouse",
+                "The Mouse",
+                "The Big Elephant"
+              ],
+              "why": "This story is titled 'The Lion and the Mouse'."
+            },
+            {
+              "id": "story_97_q2",
+              "q": "Complete the sentence from the story:\n\"A mighty lion caught a tiny ___ one day\"",
+              "a": "mouse",
+              "options": [
+                "paint",
+                "mouse",
+                "Every"
+              ],
+              "why": "The complete sentence is: \"A mighty lion caught a tiny mouse one day\""
+            }
+          ]
+        },
+        {
+          "id": "story_98",
+          "emoji": "🌙",
+          "title": "Night Animals",
+          "text": "While we sleep, some animals wake up. Owls hunt silently through the dark trees. Bats fly out to catch flying insects. The night is full of busy, secret life.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_98_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "Night Animals",
+              "options": [
+                "Conversation: Akbar and Birbal",
+                "Night Animals",
+                "Pizza Night"
+              ],
+              "why": "This story is titled 'Night Animals'."
+            },
+            {
+              "id": "story_98_q2",
+              "q": "Complete the sentence from the story:\n\"While we sleep, some animals ___ up\"",
+              "a": "wake",
+              "options": [
+                "wake",
+                "sing",
+                "birds"
+              ],
+              "why": "The complete sentence is: \"While we sleep, some animals wake up\""
+            }
+          ]
+        },
+        {
+          "id": "story_99",
+          "emoji": "🏖️",
+          "title": "The Message in a Bottle",
+          "text": "Lucy found a glass bottle on the sandy beach. Inside was a note from a faraway land. A child had written about their home and dreams. Lucy wrote back and sent the bottle out to sea.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_99_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Message in a Bottle",
+              "options": [
+                "The Clever Fox",
+                "Trip to Space",
+                "The Message in a Bottle"
+              ],
+              "why": "This story is titled 'The Message in a Bottle'."
+            },
+            {
+              "id": "story_99_q2",
+              "q": "Complete the sentence from the story:\n\"Lucy found a glass bottle on the sandy ___\"",
+              "a": "beach",
+              "options": [
+                "care",
+                "beach",
+                "should"
+              ],
+              "why": "The complete sentence is: \"Lucy found a glass bottle on the sandy beach\""
+            }
+          ]
+        },
+        {
+          "id": "story_100",
+          "emoji": "🌲",
+          "title": "The Quiet Forest",
+          "text": "Deep in the forest, tall trees touch the sky. Soft moss covers the cool ground below. Squirrels leap from branch to branch above. If you listen closely, the forest tells its own story.",
+          "level": 4,
+          "questions": [
+            {
+              "id": "story_100_q1",
+              "q": "What is the title of the story you just read?",
+              "a": "The Quiet Forest",
+              "options": [
+                "At the Beach",
+                "The Quiet Forest",
+                "Ice Cream"
+              ],
+              "why": "This story is titled 'The Quiet Forest'."
+            },
+            {
+              "id": "story_100_q2",
+              "q": "Complete the sentence from the story:\n\"Deep in the forest, tall trees ___ the sky\"",
+              "a": "touch",
+              "options": [
+                "fire",
+                "touch",
+                "ship"
+              ],
+              "why": "The complete sentence is: \"Deep in the forest, tall trees touch the sky\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

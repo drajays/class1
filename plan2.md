@@ -60,8 +60,8 @@ live tests and spot-checks content; false "done" claims cost a review cycle.
 
 ## 3. Phase status (implementer ticks; reviewer signs)
 
-- [x] Phase A — Extraction pipeline + data files + validator — **sign-off: ✅ APPROVED WITH ONE CONDITION 2026-07-08 (re-review) — taught-content criterion verified, arithmetic reconciles; restore 5 falsely-dropped words (of/we/me/good/think) + itemize all drops + write the log entry, then Phase B starts. See COORDINATION.md.**
-- [ ] Phase B — 📖 Story Time (Reading Buddy stories module) — **sign-off: ___**
+- [x] Phase A — Extraction pipeline + data files + validator — **sign-off: ✅ FULLY APPROVED 2026-07-09 — condition cleared (233 words incl. all 5; 79 drops itemized; validator clean).**
+- [x] Phase B — 📖 Story Time (Reading Buddy stories module) — **sign-off: ✅ APPROVED 2026-07-09 — full flow verified live (words/mic/rewards/replay-0/curse/journal/quiz); 4 reviewer-applied fixes incl. dead reward path (phantom Speech.stop) and wrong-answer teaching; see COORDINATION.md. Phase C unblocked.**
 - [ ] Phase C — English boosters (300 words, families, nouns, vocab) — **sign-off: ___**
 - [ ] Phase D — 🔢 Math Challenge Mode (Class 2–3 stretch) — **sign-off: ___**
 - [ ] Phase E — Arcade ports (Noun Sort + Memory Match → Fun Games) — **sign-off: ___**

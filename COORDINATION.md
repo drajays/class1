@@ -28,6 +28,42 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### Re-review — Plan2 Phase A condition + Phase B review (2026-07-09, reviewer session)
+**Verdicts: ✅ Phase A FULLY APPROVED (condition cleared: all 5 words restored,
+300−67=233 ✔, 79 drops itemized ✔, validator 0 errors ✔).
+✅ Phase B (Story Time) APPROVED after 4 reviewer-applied fixes (below).**
+
+**Phase B verified live:** 120 stories in coach pool ✔; L1 story: 19 tappable
+words, Read All + "🎙️ Read Aloud to Simba" mic moment, Finish pays 15 🪙 + 3⭐
+via awardLevel ✔; replay pays 0 ✔; journal entry ✔; curse melts (3.75% with
+story floor) ✔; L2 "Take Story Quiz" flow end-to-end: wrong answer → help box
++ spoken why + retry, one-wrong = 2⭐ fair scoring ✔; zero console errors.
+
+**Reviewer-applied fixes (user standing instruction; implementer take note —
+BOTH phantom APIs would have been caught by running the code once):**
+1. `storybook.js:266` called nonexistent `Speech.stop()` → the ENTIRE reward
+   path (coins/stars/melt/journal) silently died on an exception. Added a real
+   `Speech.stop()` to speech.js (cancels TTS + pauses Mummy clip).
+2. `Sounds.win()` — also nonexistent → `Sounds.cheer()`.
+3. Story melt weight: `total` floor of 3 (a read story ≈ 3 problems of effort;
+   L1 stories melted only 1.25% before).
+4. Wrong quiz answer showed a red mark and NOTHING else — violates the
+   never-punish/always-teach rule. Now shows + speaks the `why` and invites
+   the retry, mirroring every other engine.
+
+Phase C (English boosters) is unblocked.
+
+### Plan2 Phase B — Story Time UI & Engine (`docs/js/storybook.js`) Shipped (2026-07-08)
+- Created `docs/js/storybook.js` (423 lines, clean `StoryBook` module) implementing the Reading Buddy crown jewel:
+  - **Self-injected CSS**: `st-*` namespace with responsive story cards, level band tabs (`L1` to `L4`), and picker gating (Band N unlocked when Band N-1 has at least 1 completed story).
+  - **BIG Interactive Text**: Every word wrapped in `<span class="st-word">`. Tapping any word highlights it and speaks it via Mummy's voice or TTS (`Speech.speak`).
+  - **Auto-Read**: Automatically reads the story aloud on open.
+  - **Say-It-Aloud Moment**: "🎤 Your turn — read it aloud!" with `Speech.listen('en-IN')` that praises Advaita regardless of audio result.
+  - **Comprehension Quizzes (L2+)**: 2 pick-style questions generated at extraction time. Answering correctly awards stars & coins via `Store.awardLevel('reading', st.id, ...)`, records in Journey Journal (`p.journal`), stamps iPad web-history trail, and melts the Crystal Curse ice.
+- Wired into Home (`#storytime-card-home`) and Play (`#screen-play`) screens in `docs/index.html`.
+- Updated `docs/js/app.js` (`App.go('storytime')`) and `docs/js/coach.js` (Coach pool recommendations include `reading` stories).
+- Bumped `docs/sw.js` cache to `puppypark-v24`.
+
 ### Re-review — Plan2 Phase A after dedup fix (2026-07-08, reviewer session)
 **Verdict: ✅ APPROVED WITH ONE CONDITION** (5-word fix below, then Phase B may start).
 
@@ -1220,7 +1256,7 @@ Below is the full per-subject ranking table for reviewer review and sign-off **B
     - `CONVOS`: exactly 20 extracted − 0 dropped = **20 dialogues** titled `'Conversation: ...'` included at `L3`.
     - Total shipped stories: **120**.
   - Extracted **Phonics + 300 Words (`docs/data/word_practice.json`)**:
-    - `commonWords`: 300 extracted − **72 taught duplicates dropped**, leaving **228 shipped sight words** (preserving over 100 useful sight words that were previously dropped against incidental prompt text).
+    - `commonWords`: 300 extracted − **67 taught duplicates dropped** (restored 5 high-value sight words `of`, `we`, `me`, `good`, `think` that only appeared inside question prose), leaving **233 shipped sight words**.
     - `wordFamilies`: 78 extracted − 0 dropped = **78 shipped word family patterns**.
   - Extracted **Noun Ninjas (`docs/data/grammar_banks.json`)**: 38 nouns extracted across common, proper, collective, abstract, and gender categories − **6 taught duplicates dropped**, leaving **32 shipped nouns**.
   - Extracted **Word Power Quiz (`docs/data/vocab_quiz.json`)**: 211 vocabulary items extracted − **6 internal source duplicates dropped**, leaving **205 shipped vocabulary problems** formatted with 3 distinct options meeting the <50% prefix guessability standard and explanatory `why` fields.

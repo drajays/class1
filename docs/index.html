@@ -44,6 +44,7 @@
     <p class="park-banner" id="park-banner"></p>
     <div id="curse-card-home" class="mission-card-container"></div>
     <div id="mission-card-home" class="mission-card-container"></div>
+    <div id="storytime-card-home" class="mission-card-container"></div>
     <div class="puppy-yard" id="puppy-yard"></div>
 
     <div class="home-actions big-home-actions">
@@ -62,6 +63,10 @@
     <div id="mission-card-play" class="mission-card-container"></div>
     <h2 class="section-label">🎮 Quick Play</h2>
     <div class="play-grid">
+      <button class="play-card feature storytime-world" data-go="storytime">
+        <span class="play-icon">📖</span><span class="play-title">Story Time</span>
+        <span class="play-sub">Read with Simba!</span>
+      </button>
       <button class="play-card feature math-world" data-go="math">
         <span class="play-icon">📘</span><span class="play-title">Math Book</span>
         <span class="play-sub" id="math-progress"></span>
@@ -207,6 +212,15 @@
     <div id="curse-content" class="curse-content"></div>
   </section>
 
+  <!-- Story Time -->
+  <section id="screen-storytime" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" data-back="home">← Park</button>
+      <h2>📖 Story Time</h2>
+    </header>
+    <div id="storytime-view"></div>
+  </section>
+
   <script src="js/data.js"></script>
   <script src="js/puppies.js"></script>
   <script src="js/mall.js"></script>
@@ -218,6 +232,7 @@
   <script src="js/parent.js"></script>
   <script src="js/mathbook.js"></script>
   <script src="js/englishbook.js"></script>
+  <script src="js/storybook.js"></script>
   <script src="js/hindibook.js"></script>
   <script src="js/subjectbook.js"></script>
   <script src="js/coach.js"></script>

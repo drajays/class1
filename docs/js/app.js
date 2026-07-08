@@ -68,6 +68,7 @@ const App = {
       math: 'screen-math',
       english: 'screen-english',
       hindi: 'screen-hindi',
+      storytime: 'screen-storytime',
       evs: 'screen-subjectbook',
       sanskrit: 'screen-subjectbook',
       computer: 'screen-subjectbook',
@@ -81,6 +82,7 @@ const App = {
       Curse.injectStyles();
       Curse.renderCard('curse-card-home');
       Coach.renderMissionCard('mission-card-home');
+      if (typeof StoryBook !== 'undefined') StoryBook.renderHomeCard('storytime-card-home');
       this.refreshStats();
       if (fresh.length) {
         const names = fresh.map((fid) => PUPPIES.find((d) => d.id === fid)?.name).join(' & ');
@@ -102,6 +104,7 @@ const App = {
     if (screen === 'minigames') MiniGames.showHub();
     if (screen === 'math') { MathBook.open(); }
     if (screen === 'english') { EnglishBook.open(); }
+    if (screen === 'storytime') { StoryBook.open(); Speech.navSay('Welcome to Story Time! Tap any word to hear it!'); }
     if (screen === 'hindi') { HindiBook.open(); Speech.navSay('Tap any letter to hear it. Let us learn Hindi!'); }
     if (screen === 'evs' || screen === 'sanskrit' || screen === 'computer') { SubjectBook.open(screen); }
   },

@@ -83,6 +83,11 @@ const Speech = {
     speechSynthesis.speak(u);
   },
 
+  stop() {
+    if (window.speechSynthesis) speechSynthesis.cancel();
+    if (this._audio) { try { this._audio.pause(); } catch { /* */ } }
+  },
+
   speakWord(word) {
     const entry = SPEAK_WORDS?.find((w) => w.word === word);
     this.speak(word, 0.7, entry?.lang || 'en-IN');

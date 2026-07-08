@@ -1,0 +1,1316 @@
+{
+  "sightWords": [
+    "of",
+    "a",
+    "for",
+    "as",
+    "with",
+    "his",
+    "I",
+    "at",
+    "be",
+    "from",
+    "or",
+    "had",
+    "by",
+    "word",
+    "not",
+    "all",
+    "were",
+    "we",
+    "your",
+    "said",
+    "there",
+    "use",
+    "each",
+    "which",
+    "do",
+    "how",
+    "their",
+    "if",
+    "will",
+    "up",
+    "other",
+    "about",
+    "out",
+    "them",
+    "so",
+    "her",
+    "would",
+    "make",
+    "him",
+    "into",
+    "time",
+    "more",
+    "write",
+    "go",
+    "number",
+    "no",
+    "way",
+    "could",
+    "people",
+    "than",
+    "been",
+    "call",
+    "oil",
+    "its",
+    "now",
+    "find",
+    "long",
+    "down",
+    "day",
+    "did",
+    "get",
+    "come",
+    "made",
+    "may",
+    "part",
+    "over",
+    "new",
+    "sound",
+    "take",
+    "only",
+    "work",
+    "know",
+    "place",
+    "year",
+    "live",
+    "me",
+    "back",
+    "give",
+    "most",
+    "very",
+    "after",
+    "our",
+    "just",
+    "name",
+    "good",
+    "sentence",
+    "man",
+    "think",
+    "say",
+    "great",
+    "help",
+    "through",
+    "before",
+    "line",
+    "right",
+    "too",
+    "mean",
+    "old",
+    "any",
+    "same",
+    "tell",
+    "boy",
+    "follow",
+    "came",
+    "want",
+    "show",
+    "also",
+    "around",
+    "form",
+    "set",
+    "put",
+    "end",
+    "does",
+    "another",
+    "well",
+    "must",
+    "even",
+    "such",
+    "turn",
+    "why",
+    "ask",
+    "went",
+    "read",
+    "need",
+    "land",
+    "different",
+    "home",
+    "us",
+    "move",
+    "try",
+    "kind",
+    "hand",
+    "picture",
+    "again",
+    "change",
+    "off",
+    "spell",
+    "air",
+    "away",
+    "animal",
+    "point",
+    "page",
+    "letter",
+    "mother",
+    "answer",
+    "found",
+    "study",
+    "still",
+    "learn",
+    "should",
+    "America",
+    "world",
+    "high",
+    "every",
+    "near",
+    "add",
+    "own",
+    "below",
+    "country",
+    "plant",
+    "last",
+    "father",
+    "keep",
+    "never",
+    "start",
+    "city",
+    "earth",
+    "eye",
+    "thought",
+    "head",
+    "story",
+    "saw",
+    "left",
+    "don’t",
+    "few",
+    "while",
+    "along",
+    "might",
+    "close",
+    "something",
+    "seem",
+    "hard",
+    "open",
+    "example",
+    "begin",
+    "life",
+    "always",
+    "both",
+    "paper",
+    "together",
+    "got",
+    "group",
+    "often",
+    "important",
+    "until",
+    "side",
+    "mile",
+    "walk",
+    "sea",
+    "began",
+    "grow",
+    "took",
+    "river",
+    "four",
+    "carry",
+    "state",
+    "once",
+    "without",
+    "second",
+    "later",
+    "miss",
+    "idea",
+    "enough",
+    "eat",
+    "face",
+    "watch",
+    "Indian",
+    "really",
+    "almost",
+    "let",
+    "above",
+    "sometimes",
+    "mountain",
+    "cut",
+    "young",
+    "talk",
+    "soon",
+    "list",
+    "song",
+    "being",
+    "leave",
+    "family",
+    "body"
+  ],
+  "wordFamilies": [
+    {
+      "family": "-at",
+      "words": [
+        "cat",
+        "bat",
+        "hat",
+        "mat",
+        "sat"
+      ]
+    },
+    {
+      "family": "-an",
+      "words": [
+        "pan",
+        "man",
+        "can",
+        "fan",
+        "ran"
+      ]
+    },
+    {
+      "family": "-ag",
+      "words": [
+        "bag",
+        "tag",
+        "wag",
+        "rag",
+        "flag"
+      ]
+    },
+    {
+      "family": "-en",
+      "words": [
+        "pen",
+        "ten",
+        "hen",
+        "men",
+        "den"
+      ]
+    },
+    {
+      "family": "-eg",
+      "words": [
+        "peg",
+        "leg",
+        "beg",
+        "keg",
+        "egg"
+      ]
+    },
+    {
+      "family": "-ig",
+      "words": [
+        "pig",
+        "big",
+        "dig",
+        "fig",
+        "wig"
+      ]
+    },
+    {
+      "family": "-ip",
+      "words": [
+        "lip",
+        "sip",
+        "dip",
+        "zip",
+        "hip"
+      ]
+    },
+    {
+      "family": "-id",
+      "words": [
+        "kid",
+        "lid",
+        "hid",
+        "did",
+        "grid"
+      ]
+    },
+    {
+      "family": "-in",
+      "words": [
+        "pin",
+        "win",
+        "bin",
+        "fin",
+        "tin"
+      ]
+    },
+    {
+      "family": "-im",
+      "words": [
+        "him",
+        "rim",
+        "dim",
+        "swim",
+        "skim"
+      ]
+    },
+    {
+      "family": "-ot",
+      "words": [
+        "pot",
+        "hot",
+        "cot",
+        "dot",
+        "spot"
+      ]
+    },
+    {
+      "family": "-og",
+      "words": [
+        "dog",
+        "log",
+        "frog",
+        "jog",
+        "fog"
+      ]
+    },
+    {
+      "family": "-op",
+      "words": [
+        "hop",
+        "pop",
+        "top",
+        "mop",
+        "stop"
+      ]
+    },
+    {
+      "family": "-ock",
+      "words": [
+        "sock",
+        "clock",
+        "rock",
+        "lock",
+        "block"
+      ]
+    },
+    {
+      "family": "-un",
+      "words": [
+        "sun",
+        "bun",
+        "run",
+        "fun",
+        "spun"
+      ]
+    },
+    {
+      "family": "-ug",
+      "words": [
+        "bug",
+        "hug",
+        "mug",
+        "rug",
+        "tug"
+      ]
+    },
+    {
+      "family": "-ake",
+      "words": [
+        "cake",
+        "bake",
+        "make",
+        "lake",
+        "snake"
+      ]
+    },
+    {
+      "family": "-ape",
+      "words": [
+        "cape",
+        "tape",
+        "grape",
+        "shape",
+        "ape"
+      ]
+    },
+    {
+      "family": "-ate",
+      "words": [
+        "gate",
+        "late",
+        "date",
+        "skate",
+        "plate"
+      ]
+    },
+    {
+      "family": "-ane",
+      "words": [
+        "cane",
+        "mane",
+        "lane",
+        "plane",
+        "crane"
+      ]
+    },
+    {
+      "family": "-ame",
+      "words": [
+        "name",
+        "game",
+        "came",
+        "same",
+        "tame"
+      ]
+    },
+    {
+      "family": "-aim",
+      "words": [
+        "aim",
+        "claim",
+        "maim",
+        "exclaim",
+        "proclaim"
+      ]
+    },
+    {
+      "family": "-ain",
+      "words": [
+        "rain",
+        "train",
+        "pain",
+        "brain",
+        "main"
+      ]
+    },
+    {
+      "family": "-ea / -ee",
+      "words": [
+        "tree",
+        "see",
+        "sleep",
+        "meat",
+        "seat"
+      ]
+    },
+    {
+      "family": "-ean",
+      "words": [
+        "bean",
+        "clean",
+        "mean",
+        "lean",
+        "dean"
+      ]
+    },
+    {
+      "family": "-eep",
+      "words": [
+        "sheep",
+        "sleep",
+        "deep",
+        "keep",
+        "jeep"
+      ]
+    },
+    {
+      "family": "-ine",
+      "words": [
+        "pine",
+        "shine",
+        "mine",
+        "line",
+        "nine"
+      ]
+    },
+    {
+      "family": "-ide",
+      "words": [
+        "ride",
+        "hide",
+        "side",
+        "wide",
+        "slide"
+      ]
+    },
+    {
+      "family": "-ile",
+      "words": [
+        "smile",
+        "mile",
+        "pile",
+        "file",
+        "tile"
+      ]
+    },
+    {
+      "family": "-ice",
+      "words": [
+        "mice",
+        "nice",
+        "rice",
+        "price",
+        "slice"
+      ]
+    },
+    {
+      "family": "-ike",
+      "words": [
+        "bike",
+        "like",
+        "hike",
+        "strike",
+        "spike"
+      ]
+    },
+    {
+      "family": "-ime",
+      "words": [
+        "time",
+        "dime",
+        "lime",
+        "chime",
+        "crime"
+      ]
+    },
+    {
+      "family": "-ite",
+      "words": [
+        "bite",
+        "kite",
+        "white",
+        "write",
+        "quite"
+      ]
+    },
+    {
+      "family": "-ife",
+      "words": [
+        "life",
+        "wife",
+        "knife",
+        "strife",
+        "wildlife"
+      ]
+    },
+    {
+      "family": "-ise",
+      "words": [
+        "rise",
+        "wise",
+        "surprise",
+        "advise",
+        "revise"
+      ]
+    },
+    {
+      "family": "-ive",
+      "words": [
+        "five",
+        "dive",
+        "hive",
+        "drive",
+        "alive"
+      ]
+    },
+    {
+      "family": "-ope",
+      "words": [
+        "hope",
+        "rope",
+        "mope",
+        "slope",
+        "pope"
+      ]
+    },
+    {
+      "family": "-ode",
+      "words": [
+        "code",
+        "rode",
+        "node",
+        "mode",
+        "explode"
+      ]
+    },
+    {
+      "family": "-one",
+      "words": [
+        "bone",
+        "cone",
+        "stone",
+        "phone",
+        "tone"
+      ]
+    },
+    {
+      "family": "-ose",
+      "words": [
+        "nose",
+        "rose",
+        "hose",
+        "close",
+        "chose"
+      ]
+    },
+    {
+      "family": "-ole",
+      "words": [
+        "hole",
+        "pole",
+        "mole",
+        "stole",
+        "whole"
+      ]
+    },
+    {
+      "family": "-oke",
+      "words": [
+        "joke",
+        "poke",
+        "woke",
+        "smoke",
+        "broke"
+      ]
+    },
+    {
+      "family": "-ome",
+      "words": [
+        "home",
+        "dome",
+        "Rome",
+        "gnome",
+        "chrome"
+      ]
+    },
+    {
+      "family": "-une",
+      "words": [
+        "June",
+        "tune",
+        "dune",
+        "prune",
+        "immune"
+      ]
+    },
+    {
+      "family": "-u-e",
+      "words": [
+        "cute",
+        "mute",
+        "flute",
+        "cube",
+        "tube"
+      ]
+    },
+    {
+      "family": "-use",
+      "words": [
+        "use",
+        "fuse",
+        "muse",
+        "amuse",
+        "excuse"
+      ]
+    },
+    {
+      "family": "-ing",
+      "words": [
+        "ring",
+        "sing",
+        "king",
+        "wing",
+        "swing"
+      ]
+    },
+    {
+      "family": "-ink",
+      "words": [
+        "pink",
+        "sink",
+        "think",
+        "drink",
+        "wink"
+      ]
+    },
+    {
+      "family": "-ank",
+      "words": [
+        "bank",
+        "tank",
+        "thank",
+        "blank",
+        "rank"
+      ]
+    },
+    {
+      "family": "-ack",
+      "words": [
+        "back",
+        "pack",
+        "sack",
+        "black",
+        "track"
+      ]
+    },
+    {
+      "family": "-alk",
+      "words": [
+        "walk",
+        "talk",
+        "chalk",
+        "stalk",
+        "balk"
+      ]
+    },
+    {
+      "family": "-all",
+      "words": [
+        "ball",
+        "tall",
+        "fall",
+        "wall",
+        "call"
+      ]
+    },
+    {
+      "family": "-ell",
+      "words": [
+        "bell",
+        "shell",
+        "fell",
+        "tell",
+        "well"
+      ]
+    },
+    {
+      "family": "-ill",
+      "words": [
+        "hill",
+        "pill",
+        "fill",
+        "mill",
+        "spill"
+      ]
+    },
+    {
+      "family": "-ull",
+      "words": [
+        "pull",
+        "full",
+        "bull"
+      ]
+    },
+    {
+      "family": "-old",
+      "words": [
+        "cold",
+        "gold",
+        "hold",
+        "old",
+        "fold"
+      ]
+    },
+    {
+      "family": "-ould",
+      "words": [
+        "would",
+        "could",
+        "should"
+      ]
+    },
+    {
+      "family": "-out",
+      "words": [
+        "out",
+        "shout",
+        "pout",
+        "scout",
+        "sprout"
+      ]
+    },
+    {
+      "family": "-ou-",
+      "words": [
+        "mouse",
+        "house",
+        "cloud",
+        "loud",
+        "round"
+      ]
+    },
+    {
+      "family": "-ow / own",
+      "words": [
+        "cow",
+        "brown",
+        "down",
+        "town",
+        "crown"
+      ]
+    },
+    {
+      "family": "-ew",
+      "words": [
+        "new",
+        "few",
+        "chew",
+        "flew",
+        "drew"
+      ]
+    },
+    {
+      "family": "-ook",
+      "words": [
+        "book",
+        "look",
+        "cook",
+        "hook",
+        "shook"
+      ]
+    },
+    {
+      "family": "-ood",
+      "words": [
+        "good",
+        "wood",
+        "hood",
+        "stood"
+      ]
+    },
+    {
+      "family": "-oon",
+      "words": [
+        "moon",
+        "spoon",
+        "soon",
+        "balloon",
+        "noon"
+      ]
+    },
+    {
+      "family": "-oom",
+      "words": [
+        "room",
+        "broom",
+        "zoom",
+        "bloom",
+        "gloom"
+      ]
+    },
+    {
+      "family": "-ool",
+      "words": [
+        "pool",
+        "cool",
+        "tool",
+        "school",
+        "fool"
+      ]
+    },
+    {
+      "family": "-oot",
+      "words": [
+        "boot",
+        "root",
+        "hoot",
+        "shoot",
+        "loot"
+      ]
+    },
+    {
+      "family": "-oof",
+      "words": [
+        "roof",
+        "hoof",
+        "proof",
+        "spoof",
+        "goof"
+      ]
+    },
+    {
+      "family": "th-",
+      "words": [
+        "this",
+        "that",
+        "then",
+        "thin",
+        "thumb"
+      ]
+    },
+    {
+      "family": "ch-",
+      "words": [
+        "chat",
+        "chin",
+        "chop",
+        "chair",
+        "check"
+      ]
+    },
+    {
+      "family": "-or",
+      "words": [
+        "for",
+        "born",
+        "horn",
+        "corn",
+        "torn"
+      ]
+    },
+    {
+      "family": "-ore",
+      "words": [
+        "more",
+        "store",
+        "score",
+        "chore",
+        "tore"
+      ]
+    },
+    {
+      "family": "-oar",
+      "words": [
+        "roar",
+        "soar",
+        "board",
+        "oar",
+        "hoard"
+      ]
+    },
+    {
+      "family": "-oor",
+      "words": [
+        "door",
+        "floor",
+        "poor",
+        "moor",
+        "boor"
+      ]
+    },
+    {
+      "family": "-ork",
+      "words": [
+        "fork",
+        "pork",
+        "stork",
+        "cork",
+        "dork"
+      ]
+    },
+    {
+      "family": "-orr",
+      "words": [
+        "sorry",
+        "borrow",
+        "sorrow",
+        "tomorrow",
+        "horror"
+      ]
+    },
+    {
+      "family": "-ple",
+      "words": [
+        "apple",
+        "purple",
+        "simple",
+        "sample",
+        "people"
+      ]
+    },
+    {
+      "family": "-ble",
+      "words": [
+        "table",
+        "bubble",
+        "double",
+        "trouble",
+        "cable"
+      ]
+    }
+  ],
+  "sentences": [
+    "I am Sam.",
+    "I am happy.",
+    "I am five.",
+    "I am here.",
+    "I am ready.",
+    "I am kind.",
+    "I am good.",
+    "I am little.",
+    "I am a kid.",
+    "I am at home.",
+    "You are my friend.",
+    "You are kind.",
+    "You are funny.",
+    "You are good.",
+    "We are friends.",
+    "We are happy.",
+    "We are ready.",
+    "We are at school.",
+    "He is my dad.",
+    "She is my mom.",
+    "It is big.",
+    "It is small.",
+    "It is red.",
+    "It is blue.",
+    "It is hot.",
+    "It is cold.",
+    "It is fun.",
+    "It is easy.",
+    "This is me.",
+    "That is you.",
+    "I can run.",
+    "I can jump.",
+    "I can hop.",
+    "I can sit.",
+    "I can stand.",
+    "I can read.",
+    "I can write.",
+    "I can sing.",
+    "I can dance.",
+    "I can play.",
+    "I can draw.",
+    "I can clap.",
+    "I can smile.",
+    "I can look.",
+    "I can listen.",
+    "I can walk.",
+    "I can talk.",
+    "I can help.",
+    "I can count.",
+    "I can spell.",
+    "I can eat.",
+    "I can drink.",
+    "I can sleep.",
+    "I can swim.",
+    "I can ride.",
+    "I can kick.",
+    "I can catch.",
+    "I can throw.",
+    "I can wash.",
+    "I can share.",
+    "I like apples.",
+    "I like bananas.",
+    "I like milk.",
+    "I like rice.",
+    "I like bread.",
+    "I like eggs.",
+    "I like water.",
+    "I like juice.",
+    "I like cake.",
+    "I like fish.",
+    "I like dogs.",
+    "I like cats.",
+    "I like birds.",
+    "I like toys.",
+    "I like books.",
+    "I like songs.",
+    "I like games.",
+    "I like school.",
+    "I like my bag.",
+    "I like my ball.",
+    "I like my bike.",
+    "I like my doll.",
+    "I like my car.",
+    "I like my blocks.",
+    "I like red.",
+    "I like blue.",
+    "I like green.",
+    "I like yellow.",
+    "I like sunny days.",
+    "I like rainy days.",
+    "I see a cat.",
+    "I see a dog.",
+    "I see a sun.",
+    "I see a bus.",
+    "I see a car.",
+    "I see a hat.",
+    "I see a bag.",
+    "I see a pen.",
+    "I see a cup.",
+    "I see a ball.",
+    "I see a box.",
+    "I see a book.",
+    "I see a fish.",
+    "I see a bird.",
+    "I see a duck.",
+    "I see a frog.",
+    "I see a cow.",
+    "I see a pig.",
+    "I see a goat.",
+    "I see a horse.",
+    "I see a tree.",
+    "I see a star.",
+    "I see a moon.",
+    "I see a door.",
+    "I see a bed.",
+    "I see a chair.",
+    "I see a table.",
+    "I see a shoe.",
+    "I see a kite.",
+    "I see a cake.",
+    "This is a cat.",
+    "This is a dog.",
+    "This is a sun.",
+    "This is a bus.",
+    "This is a car.",
+    "This is a hat.",
+    "This is a bag.",
+    "This is a pen.",
+    "This is a cup.",
+    "This is a ball.",
+    "This is a box.",
+    "This is a book.",
+    "This is a fish.",
+    "This is a bird.",
+    "This is a duck.",
+    "This is a frog.",
+    "This is a cow.",
+    "This is a pig.",
+    "This is a goat.",
+    "This is a horse.",
+    "This is a tree.",
+    "This is a star.",
+    "This is a moon.",
+    "This is a door.",
+    "This is a bed.",
+    "This is a chair.",
+    "This is a table.",
+    "This is a shoe.",
+    "This is a kite.",
+    "This is a cake.",
+    "The cat is cute.",
+    "The dog is big.",
+    "The fish is small.",
+    "The bird is blue.",
+    "The duck is yellow.",
+    "The frog is green.",
+    "The cow is black.",
+    "The pig is pink.",
+    "The goat is white.",
+    "The horse is fast.",
+    "The sun is hot.",
+    "The moon is bright.",
+    "The star is little.",
+    "The car is red.",
+    "The bus is big.",
+    "The ball is round.",
+    "The book is new.",
+    "The bag is heavy.",
+    "The cup is full.",
+    "The box is open.",
+    "The hat is funny.",
+    "The bed is soft.",
+    "The chair is brown.",
+    "The tree is tall.",
+    "The cake is sweet.",
+    "The apple is red.",
+    "The banana is yellow.",
+    "The milk is cold.",
+    "The water is clean.",
+    "The kite is high.",
+    "My name is Sam.",
+    "My bag is red.",
+    "My ball is big.",
+    "My book is new.",
+    "My pen is blue.",
+    "My cup is small.",
+    "My hat is yellow.",
+    "My dog is cute.",
+    "My cat is soft.",
+    "My room is clean.",
+    "My bed is soft.",
+    "My toy is fun.",
+    "My car is fast.",
+    "My bike is green.",
+    "My shoe is black.",
+    "My shirt is white.",
+    "My hand is small.",
+    "My eye is brown.",
+    "My hair is short.",
+    "My mom is kind.",
+    "My dad is strong.",
+    "My sister is happy.",
+    "My brother is funny.",
+    "My friend is nice.",
+    "My teacher is good.",
+    "My school is big.",
+    "My home is warm.",
+    "My lunch is hot.",
+    "My milk is cold.",
+    "My cake is sweet.",
+    "We play together.",
+    "We read together.",
+    "We sing together.",
+    "We dance together.",
+    "We run together.",
+    "We jump together.",
+    "We walk together.",
+    "We talk together.",
+    "We listen together.",
+    "We learn together.",
+    "We draw together.",
+    "We write together.",
+    "We count together.",
+    "We share together.",
+    "We help together.",
+    "We smile together.",
+    "We clap together.",
+    "We eat together.",
+    "We drink together.",
+    "We sit together.",
+    "We stand together.",
+    "We look together.",
+    "We spell together.",
+    "We paint together.",
+    "We clean together.",
+    "We cook together.",
+    "We shop together.",
+    "We ride together.",
+    "We swim together.",
+    "We rest together.",
+    "Please sit down.",
+    "Please stand up.",
+    "Please come here.",
+    "Please look at me.",
+    "Please listen now.",
+    "Please read this.",
+    "Please say it.",
+    "Please try again.",
+    "Please help me.",
+    "Please share it.",
+    "Can you see me?",
+    "Can you hear me?",
+    "Can you help me?",
+    "Can you read it?",
+    "Can you say it?",
+    "Can you spell it?",
+    "Can you find it?",
+    "Can you open it?",
+    "Can you close it?",
+    "Can you count it?",
+    "What is this?",
+    "What is that?",
+    "Where is my bag?",
+    "Where is my book?",
+    "Where is the cat?",
+    "Who is here?",
+    "Are you ready?",
+    "Do you like it?",
+    "May I play?",
+    "May I go?",
+    "I wake up.",
+    "I brush my teeth.",
+    "I wash my face.",
+    "I comb my hair.",
+    "I eat breakfast.",
+    "I drink milk.",
+    "I wear my shoes.",
+    "I go to school.",
+    "I meet my friend.",
+    "I read a book.",
+    "I write my name.",
+    "I draw a sun.",
+    "I play a game.",
+    "I eat lunch.",
+    "I drink water.",
+    "I come home.",
+    "I wash my hands.",
+    "I do my work.",
+    "I play outside.",
+    "I ride my bike.",
+    "I help my mom.",
+    "I help my dad.",
+    "I eat dinner.",
+    "I say thank you.",
+    "I clean my room.",
+    "I take a bath.",
+    "I wear pajamas.",
+    "I hear a story.",
+    "I say good night.",
+    "I go to sleep."
+  ]
+}

@@ -1,0 +1,2464 @@
+{
+  "problems": [
+    {
+      "id": "wp_egoist",
+      "q": "What does 'Egoist' mean? (Someone who is supremely selfish)",
+      "a": "Egoist",
+      "options": [
+        "Egotist",
+        "Egoist",
+        "Egocentric"
+      ],
+      "why": "Someone who is supremely selfish",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_egotist",
+      "q": "What does 'Egotist' mean? (Someone who is boastful and conceited)",
+      "a": "Egotist",
+      "options": [
+        "Egocentric",
+        "Egoist",
+        "Egotist"
+      ],
+      "why": "Someone who is boastful and conceited",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_egocentric",
+      "q": "What does 'Egocentric' mean? (Someone who considers themselves the center of the universe)",
+      "a": "Egocentric",
+      "options": [
+        "Egoist",
+        "Egotist",
+        "Egocentric"
+      ],
+      "why": "Someone who considers themselves the center of the universe",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_egomaniac",
+      "q": "What does 'Egomaniac' mean? (Someone obsessed with their own desires/needs to a dangerous degree)",
+      "a": "Egomaniac",
+      "options": [
+        "Egoist",
+        "Egotist",
+        "Egomaniac"
+      ],
+      "why": "Someone obsessed with their own desires/needs to a dangerous degree",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_altruist",
+      "q": "What does 'Altruist' mean? (Someone who is more interested in the welfare of others than their own)",
+      "a": "Altruist",
+      "options": [
+        "Egoist",
+        "Altruist",
+        "Egotist"
+      ],
+      "why": "Someone who is more interested in the welfare of others than their own",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_alterego",
+      "q": "What does 'Alter ego' mean? (A secondary personality or a very close friend who is a mirror image)",
+      "a": "Alter ego",
+      "options": [
+        "Alter ego",
+        "Egoist",
+        "Egotist"
+      ],
+      "why": "A secondary personality or a very close friend who is a mirror image",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_altercation",
+      "q": "What does 'Altercation' mean? (A strong verbal dispute)",
+      "a": "Altercation",
+      "options": [
+        "Egoist",
+        "Egotist",
+        "Altercation"
+      ],
+      "why": "A strong verbal dispute",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_introvert",
+      "q": "What does 'Introvert' mean? (Someone whose interests are turned inwards)",
+      "a": "Introvert",
+      "options": [
+        "Egoist",
+        "Egotist",
+        "Introvert"
+      ],
+      "why": "Someone whose interests are turned inwards",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_extrovert",
+      "q": "What does 'Extrovert' mean? (Someone whose interests are turned outwards)",
+      "a": "Extrovert",
+      "options": [
+        "Egoist",
+        "Egotist",
+        "Extrovert"
+      ],
+      "why": "Someone whose interests are turned outwards",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_ambivert",
+      "q": "What does 'Ambivert' mean? (Someone who has both introverted and extroverted tendencies)",
+      "a": "Ambivert",
+      "options": [
+        "Egoist",
+        "Ambivert",
+        "Egotist"
+      ],
+      "why": "Someone who has both introverted and extroverted tendencies",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_dexterous",
+      "q": "What does 'Dexterous' mean? (Skillful with the hands)",
+      "a": "Dexterous",
+      "options": [
+        "Dexterous",
+        "Egoist",
+        "Egotist"
+      ],
+      "why": "Skillful with the hands",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_ambidextrous",
+      "q": "What does 'Ambidextrous' mean? (Able to use both hands with equal skill)",
+      "a": "Ambidextrous",
+      "options": [
+        "Egotist",
+        "Egoist",
+        "Ambidextrous"
+      ],
+      "why": "Able to use both hands with equal skill",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_adroit",
+      "q": "What does 'Adroit' mean? (Skillful or clever)",
+      "a": "Adroit",
+      "options": [
+        "Adroit",
+        "Egoist",
+        "Egotist"
+      ],
+      "why": "Skillful or clever",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_gauche",
+      "q": "What does 'Gauche' mean? (Awkward or clumsy)",
+      "a": "Gauche",
+      "options": [
+        "Egoist",
+        "Egotist",
+        "Gauche"
+      ],
+      "why": "Awkward or clumsy",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_misanthrope",
+      "q": "What does 'Misanthrope' mean? (Someone who hates or distrusts humankind)",
+      "a": "Misanthrope",
+      "options": [
+        "Misanthrope",
+        "Egoist",
+        "Egotist"
+      ],
+      "why": "Someone who hates or distrusts humankind",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_misogynist",
+      "q": "What does 'Misogynist' mean? (Someone who hates women)",
+      "a": "Misogynist",
+      "options": [
+        "Misogynist",
+        "Egotist",
+        "Egoist"
+      ],
+      "why": "Someone who hates women",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_misogamist",
+      "q": "What does 'Misogamist' mean? (Someone who hates marriage)",
+      "a": "Misogamist",
+      "options": [
+        "Egoist",
+        "Egotist",
+        "Misogamist"
+      ],
+      "why": "Someone who hates marriage",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_philanthropist",
+      "q": "What does 'Philanthropist' mean? (Someone who loves and helps humankind)",
+      "a": "Philanthropist",
+      "options": [
+        "Egotist",
+        "Philanthropist",
+        "Egoist"
+      ],
+      "why": "Someone who loves and helps humankind",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_monogamist",
+      "q": "What does 'Monogamist' mean? (One married to one person)",
+      "a": "Monogamist",
+      "options": [
+        "Egotist",
+        "Egoist",
+        "Monogamist"
+      ],
+      "why": "One married to one person",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_bigamist",
+      "q": "What does 'Bigamist' mean? (One married to two people)",
+      "a": "Bigamist",
+      "options": [
+        "Egotist",
+        "Egoist",
+        "Bigamist"
+      ],
+      "why": "One married to two people",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_polygamist",
+      "q": "What does 'Polygamist' mean? (One married to many people)",
+      "a": "Polygamist",
+      "options": [
+        "Polygamist",
+        "Egotist",
+        "Egoist"
+      ],
+      "why": "One married to many people",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_ascetic",
+      "q": "What does 'Ascetic' mean? (Someone who lives a life of self-denial and austerity)",
+      "a": "Ascetic",
+      "options": [
+        "Egotist",
+        "Egoist",
+        "Ascetic"
+      ],
+      "why": "Someone who lives a life of self-denial and austerity",
+      "category": "Personality"
+    },
+    {
+      "id": "wp_internist",
+      "q": "What does 'Internist' mean? (Specialist in internal medicine)",
+      "a": "Internist",
+      "options": [
+        "Gynecologist",
+        "Internist",
+        "Obstetrician"
+      ],
+      "why": "Specialist in internal medicine",
+      "category": "Medical"
+    },
+    {
+      "id": "wp_gynecologist",
+      "q": "What does 'Gynecologist' mean? (Expert in female reproductive organs)",
+      "a": "Gynecologist",
+      "options": [
+        "Obstetrician",
+        "Gynecologist",
+        "Internist"
+      ],
+      "why": "Expert in female reproductive organs",
+      "category": "Medical"
+    },
+    {
+      "id": "wp_obstetrician",
+      "q": "What does 'Obstetrician' mean? (Expert in pregnancy and childbirth)",
+      "a": "Obstetrician",
+      "options": [
+        "Obstetrician",
+        "Internist",
+        "Gynecologist"
+      ],
+      "why": "Expert in pregnancy and childbirth",
+      "category": "Medical"
+    },
+    {
+      "id": "wp_pediatrician",
+      "q": "What does 'Pediatrician' mean? (Expert in childhood diseases)",
+      "a": "Pediatrician",
+      "options": [
+        "Pediatrician",
+        "Internist",
+        "Gynecologist"
+      ],
+      "why": "Expert in childhood diseases",
+      "category": "Medical"
+    },
+    {
+      "id": "wp_dermatologist",
+      "q": "What does 'Dermatologist' mean? (Expert in skin ailments)",
+      "a": "Dermatologist",
+      "options": [
+        "Internist",
+        "Dermatologist",
+        "Gynecologist"
+      ],
+      "why": "Expert in skin ailments",
+      "category": "Medical"
+    },
+    {
+      "id": "wp_ophthalmologist",
+      "q": "What does 'Ophthalmologist' mean? (Expert in eye diseases)",
+      "a": "Ophthalmologist",
+      "options": [
+        "Internist",
+        "Ophthalmologist",
+        "Gynecologist"
+      ],
+      "why": "Expert in eye diseases",
+      "category": "Medical"
+    },
+    {
+      "id": "wp_orthopedist",
+      "q": "What does 'Orthopedist' mean? (Expert in skeletal deformities)",
+      "a": "Orthopedist",
+      "options": [
+        "Internist",
+        "Gynecologist",
+        "Orthopedist"
+      ],
+      "why": "Expert in skeletal deformities",
+      "category": "Medical"
+    },
+    {
+      "id": "wp_cardiologist",
+      "q": "What does 'Cardiologist' mean? (Expert in heart ailments)",
+      "a": "Cardiologist",
+      "options": [
+        "Gynecologist",
+        "Cardiologist",
+        "Internist"
+      ],
+      "why": "Expert in heart ailments",
+      "category": "Medical"
+    },
+    {
+      "id": "wp_neurologist",
+      "q": "What does 'Neurologist' mean? (Expert in disorders of the nerves)",
+      "a": "Neurologist",
+      "options": [
+        "Internist",
+        "Gynecologist",
+        "Neurologist"
+      ],
+      "why": "Expert in disorders of the nerves",
+      "category": "Medical"
+    },
+    {
+      "id": "wp_psychiatrist",
+      "q": "What does 'Psychiatrist' mean? (Expert in disorders of the mind)",
+      "a": "Psychiatrist",
+      "options": [
+        "Psychiatrist",
+        "Gynecologist",
+        "Internist"
+      ],
+      "why": "Expert in disorders of the mind",
+      "category": "Medical"
+    },
+    {
+      "id": "wp_psychologist",
+      "q": "What does 'Psychologist' mean? (Student of the mind and behavior)",
+      "a": "Psychologist",
+      "options": [
+        "Psychologist",
+        "Endodontist",
+        "Periodontist"
+      ],
+      "why": "Student of the mind and behavior",
+      "category": "Practitioners"
+    },
+    {
+      "id": "wp_periodontist",
+      "q": "What does 'Periodontist' mean? (Gum specialist)",
+      "a": "Periodontist",
+      "options": [
+        "Endodontist",
+        "Psychologist",
+        "Periodontist"
+      ],
+      "why": "Gum specialist",
+      "category": "Practitioners"
+    },
+    {
+      "id": "wp_endodontist",
+      "q": "What does 'Endodontist' mean? (Root canal specialist)",
+      "a": "Endodontist",
+      "options": [
+        "Periodontist",
+        "Endodontist",
+        "Psychologist"
+      ],
+      "why": "Root canal specialist",
+      "category": "Practitioners"
+    },
+    {
+      "id": "wp_podiatrist",
+      "q": "What does 'Podiatrist' mean? (Expert in foot care)",
+      "a": "Podiatrist",
+      "options": [
+        "Podiatrist",
+        "Psychologist",
+        "Periodontist"
+      ],
+      "why": "Expert in foot care",
+      "category": "Practitioners"
+    },
+    {
+      "id": "wp_graphologist",
+      "q": "What does 'Graphologist' mean? (Expert in handwriting analysis)",
+      "a": "Graphologist",
+      "options": [
+        "Psychologist",
+        "Graphologist",
+        "Periodontist"
+      ],
+      "why": "Expert in handwriting analysis",
+      "category": "Practitioners"
+    },
+    {
+      "id": "wp_gerontologist",
+      "q": "What does 'Gerontologist' mean? (Expert in aging)",
+      "a": "Gerontologist",
+      "options": [
+        "Psychologist",
+        "Gerontologist",
+        "Periodontist"
+      ],
+      "why": "Expert in aging",
+      "category": "Practitioners"
+    },
+    {
+      "id": "wp_anthropologist",
+      "q": "What does 'Anthropologist' mean? (Student of human development)",
+      "a": "Anthropologist",
+      "options": [
+        "Astronomer",
+        "Anthropologist",
+        "Geologist"
+      ],
+      "why": "Student of human development",
+      "category": "Science"
+    },
+    {
+      "id": "wp_astronomer",
+      "q": "What does 'Astronomer' mean? (Student of the heavens)",
+      "a": "Astronomer",
+      "options": [
+        "Geologist",
+        "Anthropologist",
+        "Astronomer"
+      ],
+      "why": "Student of the heavens",
+      "category": "Science"
+    },
+    {
+      "id": "wp_geologist",
+      "q": "What does 'Geologist' mean? (Student of the earth)",
+      "a": "Geologist",
+      "options": [
+        "Geologist",
+        "Astronomer",
+        "Anthropologist"
+      ],
+      "why": "Student of the earth",
+      "category": "Science"
+    },
+    {
+      "id": "wp_biologist",
+      "q": "What does 'Biologist' mean? (Student of plant and animal life)",
+      "a": "Biologist",
+      "options": [
+        "Anthropologist",
+        "Biologist",
+        "Astronomer"
+      ],
+      "why": "Student of plant and animal life",
+      "category": "Science"
+    },
+    {
+      "id": "wp_entomologist",
+      "q": "What does 'Entomologist' mean? (Student of insect forms)",
+      "a": "Entomologist",
+      "options": [
+        "Entomologist",
+        "Anthropologist",
+        "Astronomer"
+      ],
+      "why": "Student of insect forms",
+      "category": "Science"
+    },
+    {
+      "id": "wp_etymologist",
+      "q": "What does 'Etymologist' mean? (Student of word origins)",
+      "a": "Etymologist",
+      "options": [
+        "Anthropologist",
+        "Astronomer",
+        "Etymologist"
+      ],
+      "why": "Student of word origins",
+      "category": "Science"
+    },
+    {
+      "id": "wp_sociologist",
+      "q": "What does 'Sociologist' mean? (Student of social organization)",
+      "a": "Sociologist",
+      "options": [
+        "Astronomer",
+        "Anthropologist",
+        "Sociologist"
+      ],
+      "why": "Student of social organization",
+      "category": "Science"
+    },
+    {
+      "id": "wp_equivocate",
+      "q": "What does 'Equivocate' mean? (To use ambiguous language to conceal the truth)",
+      "a": "Equivocate",
+      "options": [
+        "Equivocate",
+        "Laconic",
+        "Prevaricate"
+      ],
+      "why": "To use ambiguous language to conceal the truth",
+      "category": "Speech"
+    },
+    {
+      "id": "wp_prevaricate",
+      "q": "What does 'Prevaricate' mean? (To speak or act in an evasive way)",
+      "a": "Prevaricate",
+      "options": [
+        "Equivocate",
+        "Laconic",
+        "Prevaricate"
+      ],
+      "why": "To speak or act in an evasive way",
+      "category": "Speech"
+    },
+    {
+      "id": "wp_laconic",
+      "q": "What does 'Laconic' mean? (Using very few words)",
+      "a": "Laconic",
+      "options": [
+        "Laconic",
+        "Equivocate",
+        "Prevaricate"
+      ],
+      "why": "Using very few words",
+      "category": "Speech"
+    },
+    {
+      "id": "wp_loquacious",
+      "q": "What does 'Loquacious' mean? (Extremely talkative)",
+      "a": "Loquacious",
+      "options": [
+        "Prevaricate",
+        "Equivocate",
+        "Loquacious"
+      ],
+      "why": "Extremely talkative",
+      "category": "Speech"
+    },
+    {
+      "id": "wp_taciturn",
+      "q": "What does 'Taciturn' mean? (Reserved or uncommunicative in speech)",
+      "a": "Taciturn",
+      "options": [
+        "Taciturn",
+        "Prevaricate",
+        "Equivocate"
+      ],
+      "why": "Reserved or uncommunicative in speech",
+      "category": "Speech"
+    },
+    {
+      "id": "wp_circumlocution",
+      "q": "What does 'Circumlocution' mean? (An indirect way of expressing something)",
+      "a": "Circumlocution",
+      "options": [
+        "Prevaricate",
+        "Equivocate",
+        "Circumlocution"
+      ],
+      "why": "An indirect way of expressing something",
+      "category": "Speech"
+    },
+    {
+      "id": "wp_martinet",
+      "q": "What does 'Martinet' mean? (A strict disciplinarian)",
+      "a": "Martinet",
+      "options": [
+        "Sycophant",
+        "Dilettante",
+        "Martinet"
+      ],
+      "why": "A strict disciplinarian",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_sycophant",
+      "q": "What does 'Sycophant' mean? (A yes-man who flatters power for gain)",
+      "a": "Sycophant",
+      "options": [
+        "Sycophant",
+        "Martinet",
+        "Dilettante"
+      ],
+      "why": "A yes-man who flatters power for gain",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_dilettante",
+      "q": "What does 'Dilettante' mean? (An amateur with a superficial interest in the arts)",
+      "a": "Dilettante",
+      "options": [
+        "Dilettante",
+        "Martinet",
+        "Sycophant"
+      ],
+      "why": "An amateur with a superficial interest in the arts",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_virago",
+      "q": "What does 'Virago' mean? (A bad-tempered, domineering woman)",
+      "a": "Virago",
+      "options": [
+        "Virago",
+        "Martinet",
+        "Sycophant"
+      ],
+      "why": "A bad-tempered, domineering woman",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_chauvinist",
+      "q": "What does 'Chauvinist' mean? (Someone with exaggerated belief in superiority)",
+      "a": "Chauvinist",
+      "options": [
+        "Sycophant",
+        "Chauvinist",
+        "Martinet"
+      ],
+      "why": "Someone with exaggerated belief in superiority",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_iconoclast",
+      "q": "What does 'Iconoclast' mean? (Someone who attacks cherished beliefs or institutions)",
+      "a": "Iconoclast",
+      "options": [
+        "Sycophant",
+        "Martinet",
+        "Iconoclast"
+      ],
+      "why": "Someone who attacks cherished beliefs or institutions",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_egregious",
+      "q": "What does 'Egregious' mean? (Outstandingly bad; shocking)",
+      "a": "Egregious",
+      "options": [
+        "Martinet",
+        "Sycophant",
+        "Egregious"
+      ],
+      "why": "Outstandingly bad; shocking",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_magnanimous",
+      "q": "What does 'Magnanimous' mean? (Generous or forgiving, especially toward a rival)",
+      "a": "Magnanimous",
+      "options": [
+        "Martinet",
+        "Sycophant",
+        "Magnanimous"
+      ],
+      "why": "Generous or forgiving, especially toward a rival",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_pusillanimous",
+      "q": "What does 'Pusillanimous' mean? (Lacking courage; timid)",
+      "a": "Pusillanimous",
+      "options": [
+        "Martinet",
+        "Pusillanimous",
+        "Sycophant"
+      ],
+      "why": "Lacking courage; timid",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_gregarious",
+      "q": "What does 'Gregarious' mean? (Fond of company; sociable)",
+      "a": "Gregarious",
+      "options": [
+        "Gregarious",
+        "Martinet",
+        "Sycophant"
+      ],
+      "why": "Fond of company; sociable",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_supercilious",
+      "q": "What does 'Supercilious' mean? (Behaving as if one is superior to others)",
+      "a": "Supercilious",
+      "options": [
+        "Martinet",
+        "Supercilious",
+        "Sycophant"
+      ],
+      "why": "Behaving as if one is superior to others",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_tenacious",
+      "q": "What does 'Tenacious' mean? (Holding firm; clinging)",
+      "a": "Tenacious",
+      "options": [
+        "Tenacious",
+        "Sycophant",
+        "Martinet"
+      ],
+      "why": "Holding firm; clinging",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_voracious",
+      "q": "What does 'Voracious' mean? (Having a very eager approach)",
+      "a": "Voracious",
+      "options": [
+        "Voracious",
+        "Martinet",
+        "Sycophant"
+      ],
+      "why": "Having a very eager approach",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_ubiquitous",
+      "q": "What does 'Ubiquitous' mean? (Found everywhere)",
+      "a": "Ubiquitous",
+      "options": [
+        "Ubiquitous",
+        "Martinet",
+        "Sycophant"
+      ],
+      "why": "Found everywhere",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_mellifluous",
+      "q": "What does 'Mellifluous' mean? (Sweet or musical; pleasant to hear)",
+      "a": "Mellifluous",
+      "options": [
+        "Martinet",
+        "Mellifluous",
+        "Sycophant"
+      ],
+      "why": "Sweet or musical; pleasant to hear",
+      "category": "Insults"
+    },
+    {
+      "id": "wp_impecunious",
+      "q": "What does 'Impecunious' mean? (Having little or no money)",
+      "a": "Impecunious",
+      "options": [
+        "Opulent",
+        "Impecunious",
+        "Enervated"
+      ],
+      "why": "Having little or no money",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_opulent",
+      "q": "What does 'Opulent' mean? (Wealthy; luxurious)",
+      "a": "Opulent",
+      "options": [
+        "Opulent",
+        "Impecunious",
+        "Enervated"
+      ],
+      "why": "Wealthy; luxurious",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_enervated",
+      "q": "What does 'Enervated' mean? (Completely exhausted and frustrated)",
+      "a": "Enervated",
+      "options": [
+        "Enervated",
+        "Impecunious",
+        "Opulent"
+      ],
+      "why": "Completely exhausted and frustrated",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_vacillating",
+      "q": "What does 'Vacillating' mean? (Unable to decide; wavering)",
+      "a": "Vacillating",
+      "options": [
+        "Opulent",
+        "Impecunious",
+        "Vacillating"
+      ],
+      "why": "Unable to decide; wavering",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_obstreperous",
+      "q": "What does 'Obstreperous' mean? (Noisy and difficult to control)",
+      "a": "Obstreperous",
+      "options": [
+        "Opulent",
+        "Obstreperous",
+        "Impecunious"
+      ],
+      "why": "Noisy and difficult to control",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_innocuous",
+      "q": "What does 'Innocuous' mean? (Not harmful or offensive)",
+      "a": "Innocuous",
+      "options": [
+        "Opulent",
+        "Innocuous",
+        "Impecunious"
+      ],
+      "why": "Not harmful or offensive",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_ephemeral",
+      "q": "What does 'Ephemeral' mean? (Lasting for a very short time)",
+      "a": "Ephemeral",
+      "options": [
+        "Ephemeral",
+        "Impecunious",
+        "Opulent"
+      ],
+      "why": "Lasting for a very short time",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_esoteric",
+      "q": "What does 'Esoteric' mean? (Understood by only a small group with specialized knowledge)",
+      "a": "Esoteric",
+      "options": [
+        "Impecunious",
+        "Esoteric",
+        "Opulent"
+      ],
+      "why": "Understood by only a small group with specialized knowledge",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_incipient",
+      "q": "What does 'Incipient' mean? (Just beginning to happen or develop)",
+      "a": "Incipient",
+      "options": [
+        "Impecunious",
+        "Incipient",
+        "Opulent"
+      ],
+      "why": "Just beginning to happen or develop",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_incorrigible",
+      "q": "What does 'Incorrigible' mean? (Cannot be changed or improved)",
+      "a": "Incorrigible",
+      "options": [
+        "Incorrigible",
+        "Impecunious",
+        "Opulent"
+      ],
+      "why": "Cannot be changed or improved",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_incredulous",
+      "q": "What does 'Incredulous' mean? (Unwilling or unable to believe something)",
+      "a": "Incredulous",
+      "options": [
+        "Impecunious",
+        "Incredulous",
+        "Opulent"
+      ],
+      "why": "Unwilling or unable to believe something",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_inculcate",
+      "q": "What does 'Inculcate' mean? (To teach an idea through repetition)",
+      "a": "Inculcate",
+      "options": [
+        "Opulent",
+        "Impecunious",
+        "Inculcate"
+      ],
+      "why": "To teach an idea through repetition",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_indigenous",
+      "q": "What does 'Indigenous' mean? (Native to a particular place)",
+      "a": "Indigenous",
+      "options": [
+        "Impecunious",
+        "Opulent",
+        "Indigenous"
+      ],
+      "why": "Native to a particular place",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_inimical",
+      "q": "What does 'Inimical' mean? (Tending to obstruct or harm)",
+      "a": "Inimical",
+      "options": [
+        "Inimical",
+        "Impecunious",
+        "Opulent"
+      ],
+      "why": "Tending to obstruct or harm",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_insidious",
+      "q": "What does 'Insidious' mean? (Proceeding gradually but with harmful effects)",
+      "a": "Insidious",
+      "options": [
+        "Opulent",
+        "Insidious",
+        "Impecunious"
+      ],
+      "why": "Proceeding gradually but with harmful effects",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_intransigent",
+      "q": "What does 'Intransigent' mean? (Unwilling to change views)",
+      "a": "Intransigent",
+      "options": [
+        "Opulent",
+        "Impecunious",
+        "Intransigent"
+      ],
+      "why": "Unwilling to change views",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_intrepid",
+      "q": "What does 'Intrepid' mean? (Fearless)",
+      "a": "Intrepid",
+      "options": [
+        "Opulent",
+        "Intrepid",
+        "Impecunious"
+      ],
+      "why": "Fearless",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_inveterate",
+      "q": "What does 'Inveterate' mean? (Long-established and unlikely to change)",
+      "a": "Inveterate",
+      "options": [
+        "Impecunious",
+        "Opulent",
+        "Inveterate"
+      ],
+      "why": "Long-established and unlikely to change",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_jejune",
+      "q": "What does 'Jejune' mean? (Naive, simplistic, or superficial)",
+      "a": "Jejune",
+      "options": [
+        "Impecunious",
+        "Jejune",
+        "Opulent"
+      ],
+      "why": "Naive, simplistic, or superficial",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_judicious",
+      "q": "What does 'Judicious' mean? (Showing good judgment; wise)",
+      "a": "Judicious",
+      "options": [
+        "Opulent",
+        "Impecunious",
+        "Judicious"
+      ],
+      "why": "Showing good judgment; wise",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_lethargic",
+      "q": "What does 'Lethargic' mean? (Sluggish and apathetic)",
+      "a": "Lethargic",
+      "options": [
+        "Impecunious",
+        "Opulent",
+        "Lethargic"
+      ],
+      "why": "Sluggish and apathetic",
+      "category": "Phenomena"
+    },
+    {
+      "id": "wp_articulate",
+      "q": "What does 'Articulate' mean? (Express clearly)",
+      "a": "Articulate",
+      "options": [
+        "Versatile",
+        "Subtle",
+        "Articulate"
+      ],
+      "why": "Express clearly",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_subtle",
+      "q": "What does 'Subtle' mean? (Not obvious; delicate)",
+      "a": "Subtle",
+      "options": [
+        "Articulate",
+        "Subtle",
+        "Versatile"
+      ],
+      "why": "Not obvious; delicate",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_versatile",
+      "q": "What does 'Versatile' mean? (Adaptable to many functions)",
+      "a": "Versatile",
+      "options": [
+        "Versatile",
+        "Subtle",
+        "Articulate"
+      ],
+      "why": "Adaptable to many functions",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_compelling",
+      "q": "What does 'Compelling' mean? (Very convincing)",
+      "a": "Compelling",
+      "options": [
+        "Articulate",
+        "Subtle",
+        "Compelling"
+      ],
+      "why": "Very convincing",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_pragmatic",
+      "q": "What does 'Pragmatic' mean? (Dealing with things sensibly and realistically)",
+      "a": "Pragmatic",
+      "options": [
+        "Pragmatic",
+        "Articulate",
+        "Subtle"
+      ],
+      "why": "Dealing with things sensibly and realistically",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_insightful",
+      "q": "What does 'Insightful' mean? (Showing deep understanding)",
+      "a": "Insightful",
+      "options": [
+        "Insightful",
+        "Subtle",
+        "Articulate"
+      ],
+      "why": "Showing deep understanding",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_resilient",
+      "q": "What does 'Resilient' mean? (Able to withstand or recover quickly from difficulties)",
+      "a": "Resilient",
+      "options": [
+        "Resilient",
+        "Subtle",
+        "Articulate"
+      ],
+      "why": "Able to withstand or recover quickly from difficulties",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_coherent",
+      "q": "What does 'Coherent' mean? (Logical and consistent)",
+      "a": "Coherent",
+      "options": [
+        "Articulate",
+        "Subtle",
+        "Coherent"
+      ],
+      "why": "Logical and consistent",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_profound",
+      "q": "What does 'Profound' mean? (Very great or intense)",
+      "a": "Profound",
+      "options": [
+        "Articulate",
+        "Subtle",
+        "Profound"
+      ],
+      "why": "Very great or intense",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_assertive",
+      "q": "What does 'Assertive' mean? (Confident and forceful)",
+      "a": "Assertive",
+      "options": [
+        "Subtle",
+        "Assertive",
+        "Articulate"
+      ],
+      "why": "Confident and forceful",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_nuanced",
+      "q": "What does 'Nuanced' mean? (Characterized by subtle differences in meaning)",
+      "a": "Nuanced",
+      "options": [
+        "Articulate",
+        "Nuanced",
+        "Subtle"
+      ],
+      "why": "Characterized by subtle differences in meaning",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_diplomatic",
+      "q": "What does 'Diplomatic' mean? (Tactful in dealing with people)",
+      "a": "Diplomatic",
+      "options": [
+        "Articulate",
+        "Diplomatic",
+        "Subtle"
+      ],
+      "why": "Tactful in dealing with people",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_ineffable",
+      "q": "What does 'Ineffable' mean? (Too great to be expressed in words)",
+      "a": "Ineffable",
+      "options": [
+        "Articulate",
+        "Subtle",
+        "Ineffable"
+      ],
+      "why": "Too great to be expressed in words",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_authentic",
+      "q": "What does 'Authentic' mean? (Genuine and original)",
+      "a": "Authentic",
+      "options": [
+        "Articulate",
+        "Authentic",
+        "Subtle"
+      ],
+      "why": "Genuine and original",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_strategic",
+      "q": "What does 'Strategic' mean? (Planned and carefully designed)",
+      "a": "Strategic",
+      "options": [
+        "Articulate",
+        "Subtle",
+        "Strategic"
+      ],
+      "why": "Planned and carefully designed",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_substantive",
+      "q": "What does 'Substantive' mean? (Having a firm basis in reality; meaningful)",
+      "a": "Substantive",
+      "options": [
+        "Subtle",
+        "Articulate",
+        "Substantive"
+      ],
+      "why": "Having a firm basis in reality; meaningful",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_perspicacious",
+      "q": "What does 'Perspicacious' mean? (Having a ready insight into and understanding of things)",
+      "a": "Perspicacious",
+      "options": [
+        "Articulate",
+        "Subtle",
+        "Perspicacious"
+      ],
+      "why": "Having a ready insight into and understanding of things",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_discerning",
+      "q": "What does 'Discerning' mean? (Showing good judgment)",
+      "a": "Discerning",
+      "options": [
+        "Discerning",
+        "Subtle",
+        "Articulate"
+      ],
+      "why": "Showing good judgment",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_astute",
+      "q": "What does 'Astute' mean? (Accurately assessing situations to your advantage)",
+      "a": "Astute",
+      "options": [
+        "Articulate",
+        "Subtle",
+        "Astute"
+      ],
+      "why": "Accurately assessing situations to your advantage",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_eloquent",
+      "q": "What does 'Eloquent' mean? (Fluent or persuasive in speaking or writing)",
+      "a": "Eloquent",
+      "options": [
+        "Eloquent",
+        "Articulate",
+        "Subtle"
+      ],
+      "why": "Fluent or persuasive in speaking or writing",
+      "category": "Power Speech"
+    },
+    {
+      "id": "wp_raucous",
+      "q": "What does 'Raucous' mean? (Advanced for: Noisy)",
+      "a": "Raucous",
+      "options": [
+        "Obscure",
+        "Serene",
+        "Raucous"
+      ],
+      "why": "Advanced for: Noisy",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_serene",
+      "q": "What does 'Serene' mean? (Advanced for: Quiet)",
+      "a": "Serene",
+      "options": [
+        "Obscure",
+        "Serene",
+        "Raucous"
+      ],
+      "why": "Advanced for: Quiet",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_obscure",
+      "q": "What does 'Obscure' mean? (Advanced for: Dark)",
+      "a": "Obscure",
+      "options": [
+        "Raucous",
+        "Serene",
+        "Obscure"
+      ],
+      "why": "Advanced for: Dark",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_luminous",
+      "q": "What does 'Luminous' mean? (Advanced for: Light)",
+      "a": "Luminous",
+      "options": [
+        "Luminous",
+        "Raucous",
+        "Serene"
+      ],
+      "why": "Advanced for: Light",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_colossal",
+      "q": "What does 'Colossal' mean? (Advanced for: Big)",
+      "a": "Colossal",
+      "options": [
+        "Colossal",
+        "Serene",
+        "Raucous"
+      ],
+      "why": "Advanced for: Big",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_diminutive",
+      "q": "What does 'Diminutive' mean? (Advanced for: Small)",
+      "a": "Diminutive",
+      "options": [
+        "Diminutive",
+        "Serene",
+        "Raucous"
+      ],
+      "why": "Advanced for: Small",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_adoration",
+      "q": "What does 'Adoration' mean? (Advanced for: Love)",
+      "a": "Adoration",
+      "options": [
+        "Raucous",
+        "Adoration",
+        "Serene"
+      ],
+      "why": "Advanced for: Love",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_abhorrence",
+      "q": "What does 'Abhorrence' mean? (Advanced for: Hate)",
+      "a": "Abhorrence",
+      "options": [
+        "Raucous",
+        "Abhorrence",
+        "Serene"
+      ],
+      "why": "Advanced for: Hate",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_triumph",
+      "q": "What does 'Triumph' mean? (Advanced for: Win)",
+      "a": "Triumph",
+      "options": [
+        "Serene",
+        "Raucous",
+        "Triumph"
+      ],
+      "why": "Advanced for: Win",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_imbibe",
+      "q": "What does 'Imbibe' mean? (Advanced for: Drink)",
+      "a": "Imbibe",
+      "options": [
+        "Imbibe",
+        "Raucous",
+        "Serene"
+      ],
+      "why": "Advanced for: Drink",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_converse",
+      "q": "What does 'Converse' mean? (Advanced for: Talk)",
+      "a": "Converse",
+      "options": [
+        "Raucous",
+        "Serene",
+        "Converse"
+      ],
+      "why": "Advanced for: Talk",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_perceive",
+      "q": "What does 'Perceive' mean? (Advanced for: See)",
+      "a": "Perceive",
+      "options": [
+        "Raucous",
+        "Serene",
+        "Perceive"
+      ],
+      "why": "Advanced for: See",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_ponder",
+      "q": "What does 'Ponder' mean? (Advanced for: Think)",
+      "a": "Ponder",
+      "options": [
+        "Ponder",
+        "Raucous",
+        "Serene"
+      ],
+      "why": "Advanced for: Think",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_acquire",
+      "q": "What does 'Acquire' mean? (Advanced for: Get)",
+      "a": "Acquire",
+      "options": [
+        "Serene",
+        "Raucous",
+        "Acquire"
+      ],
+      "why": "Advanced for: Get",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_bestow",
+      "q": "What does 'Bestow' mean? (Advanced for: Give)",
+      "a": "Bestow",
+      "options": [
+        "Serene",
+        "Raucous",
+        "Bestow"
+      ],
+      "why": "Advanced for: Give",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_fabricate",
+      "q": "What does 'Fabricate' mean? (Advanced for: Make)",
+      "a": "Fabricate",
+      "options": [
+        "Serene",
+        "Fabricate",
+        "Raucous"
+      ],
+      "why": "Advanced for: Make",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_persevere",
+      "q": "What does 'Persevere' mean? (Advanced for: Continue)",
+      "a": "Persevere",
+      "options": [
+        "Serene",
+        "Raucous",
+        "Persevere"
+      ],
+      "why": "Advanced for: Continue",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_demonstrate",
+      "q": "What does 'Demonstrate' mean? (Advanced for: Show)",
+      "a": "Demonstrate",
+      "options": [
+        "Raucous",
+        "Demonstrate",
+        "Serene"
+      ],
+      "why": "Advanced for: Show",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_conceal",
+      "q": "What does 'Conceal' mean? (Advanced for: Hide)",
+      "a": "Conceal",
+      "options": [
+        "Raucous",
+        "Serene",
+        "Conceal"
+      ],
+      "why": "Advanced for: Hide",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_perish",
+      "q": "What does 'Perish' mean? (Advanced for: Die)",
+      "a": "Perish",
+      "options": [
+        "Raucous",
+        "Serene",
+        "Perish"
+      ],
+      "why": "Advanced for: Die",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_utilize",
+      "q": "What does 'Utilize' mean? (Advanced for: Use)",
+      "a": "Utilize",
+      "options": [
+        "Serene",
+        "Raucous",
+        "Utilize"
+      ],
+      "why": "Advanced for: Use",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_inquire",
+      "q": "What does 'Inquire' mean? (Advanced for: Ask)",
+      "a": "Inquire",
+      "options": [
+        "Inquire",
+        "Serene",
+        "Raucous"
+      ],
+      "why": "Advanced for: Ask",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_impoverished",
+      "q": "What does 'Impoverished' mean? (Advanced for: Poor)",
+      "a": "Impoverished",
+      "options": [
+        "Serene",
+        "Raucous",
+        "Impoverished"
+      ],
+      "why": "Advanced for: Poor",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_vigorous",
+      "q": "What does 'Vigorous' mean? (Advanced for: Strong)",
+      "a": "Vigorous",
+      "options": [
+        "Raucous",
+        "Serene",
+        "Vigorous"
+      ],
+      "why": "Advanced for: Strong",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_feeble",
+      "q": "What does 'Feeble' mean? (Advanced for: Weak)",
+      "a": "Feeble",
+      "options": [
+        "Serene",
+        "Feeble",
+        "Raucous"
+      ],
+      "why": "Advanced for: Weak",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_indomitable",
+      "q": "What does 'Indomitable' mean? (Advanced for: Strong/Unconquerable)",
+      "a": "Indomitable",
+      "options": [
+        "Indomitable",
+        "Serene",
+        "Raucous"
+      ],
+      "why": "Advanced for: Strong/Unconquerable",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_superb",
+      "q": "What does 'Superb' mean? (Advanced for: Excellent)",
+      "a": "Superb",
+      "options": [
+        "Superb",
+        "Serene",
+        "Raucous"
+      ],
+      "why": "Advanced for: Excellent",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_despondent",
+      "q": "What does 'Despondent' mean? (Advanced for: Sad)",
+      "a": "Despondent",
+      "options": [
+        "Despondent",
+        "Serene",
+        "Raucous"
+      ],
+      "why": "Advanced for: Sad",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_pristine",
+      "q": "What does 'Pristine' mean? (Advanced for: Clean)",
+      "a": "Pristine",
+      "options": [
+        "Raucous",
+        "Serene",
+        "Pristine"
+      ],
+      "why": "Advanced for: Clean",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_indolent",
+      "q": "What does 'Indolent' mean? (Advanced for: Lazy)",
+      "a": "Indolent",
+      "options": [
+        "Serene",
+        "Indolent",
+        "Raucous"
+      ],
+      "why": "Advanced for: Lazy",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_commence",
+      "q": "What does 'Commence' mean? (Advanced for: Begin)",
+      "a": "Commence",
+      "options": [
+        "Raucous",
+        "Serene",
+        "Commence"
+      ],
+      "why": "Advanced for: Begin",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_terminate",
+      "q": "What does 'Terminate' mean? (Advanced for: End)",
+      "a": "Terminate",
+      "options": [
+        "Terminate",
+        "Raucous",
+        "Serene"
+      ],
+      "why": "Advanced for: End",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_facile",
+      "q": "What does 'Facile' mean? (Advanced for: Easy)",
+      "a": "Facile",
+      "options": [
+        "Raucous",
+        "Serene",
+        "Facile"
+      ],
+      "why": "Advanced for: Easy",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_jubilant",
+      "q": "What does 'Jubilant' mean? (Advanced for: Happy)",
+      "a": "Jubilant",
+      "options": [
+        "Jubilant",
+        "Raucous",
+        "Serene"
+      ],
+      "why": "Advanced for: Happy",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_affluent",
+      "q": "What does 'Affluent' mean? (Advanced for: Rich)",
+      "a": "Affluent",
+      "options": [
+        "Raucous",
+        "Affluent",
+        "Serene"
+      ],
+      "why": "Advanced for: Rich",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_indigent",
+      "q": "What does 'Indigent' mean? (Advanced for: Poor)",
+      "a": "Indigent",
+      "options": [
+        "Raucous",
+        "Serene",
+        "Indigent"
+      ],
+      "why": "Advanced for: Poor",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_courageous",
+      "q": "What does 'Courageous' mean? (Advanced for: Brave)",
+      "a": "Courageous",
+      "options": [
+        "Raucous",
+        "Serene",
+        "Courageous"
+      ],
+      "why": "Advanced for: Brave",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_expeditious",
+      "q": "What does 'Expeditious' mean? (Advanced for: Fast)",
+      "a": "Expeditious",
+      "options": [
+        "Raucous",
+        "Expeditious",
+        "Serene"
+      ],
+      "why": "Advanced for: Fast",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_analyze",
+      "q": "What does 'Analyze' mean? (Advanced for: Read/Study)",
+      "a": "Analyze",
+      "options": [
+        "Raucous",
+        "Analyze",
+        "Serene"
+      ],
+      "why": "Advanced for: Read/Study",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_compose",
+      "q": "What does 'Compose' mean? (Advanced for: Write)",
+      "a": "Compose",
+      "options": [
+        "Serene",
+        "Compose",
+        "Raucous"
+      ],
+      "why": "Advanced for: Write",
+      "category": "Upgrades"
+    },
+    {
+      "id": "wp_acquiesce",
+      "q": "What does 'Acquiesce' mean? (To agree passively)",
+      "a": "Acquiesce",
+      "options": [
+        "Antithesis",
+        "Acquiesce",
+        "Banal"
+      ],
+      "why": "To agree passively",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_antithesis",
+      "q": "What does 'Antithesis' mean? (Direct contrast or opposition)",
+      "a": "Antithesis",
+      "options": [
+        "Acquiesce",
+        "Antithesis",
+        "Banal"
+      ],
+      "why": "Direct contrast or opposition",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_banal",
+      "q": "What does 'Banal' mean? (Lacking originality; clichéd)",
+      "a": "Banal",
+      "options": [
+        "Acquiesce",
+        "Banal",
+        "Antithesis"
+      ],
+      "why": "Lacking originality; clichéd",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_brevity",
+      "q": "What does 'Brevity' mean? (Concise and exact use of words)",
+      "a": "Brevity",
+      "options": [
+        "Brevity",
+        "Antithesis",
+        "Acquiesce"
+      ],
+      "why": "Concise and exact use of words",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_candor",
+      "q": "What does 'Candor' mean? (Openness and honesty)",
+      "a": "Candor",
+      "options": [
+        "Antithesis",
+        "Candor",
+        "Acquiesce"
+      ],
+      "why": "Openness and honesty",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_caveat",
+      "q": "What does 'Caveat' mean? (A warning or cautionary statement)",
+      "a": "Caveat",
+      "options": [
+        "Caveat",
+        "Acquiesce",
+        "Antithesis"
+      ],
+      "why": "A warning or cautionary statement",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_cultivate",
+      "q": "What does 'Cultivate' mean? (To nurture or improve something)",
+      "a": "Cultivate",
+      "options": [
+        "Antithesis",
+        "Acquiesce",
+        "Cultivate"
+      ],
+      "why": "To nurture or improve something",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_cumulative",
+      "q": "What does 'Cumulative' mean? (Increasing by successive additions)",
+      "a": "Cumulative",
+      "options": [
+        "Antithesis",
+        "Cumulative",
+        "Acquiesce"
+      ],
+      "why": "Increasing by successive additions",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_didactic",
+      "q": "What does 'Didactic' mean? (Intending to teach a moral lesson)",
+      "a": "Didactic",
+      "options": [
+        "Didactic",
+        "Acquiesce",
+        "Antithesis"
+      ],
+      "why": "Intending to teach a moral lesson",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_digress",
+      "q": "What does 'Digress' mean? (To deviate from the main topic)",
+      "a": "Digress",
+      "options": [
+        "Digress",
+        "Antithesis",
+        "Acquiesce"
+      ],
+      "why": "To deviate from the main topic",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_diligent",
+      "q": "What does 'Diligent' mean? (Showing persistent and careful effort)",
+      "a": "Diligent",
+      "options": [
+        "Acquiesce",
+        "Antithesis",
+        "Diligent"
+      ],
+      "why": "Showing persistent and careful effort",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_equitable",
+      "q": "What does 'Equitable' mean? (Fair and impartial)",
+      "a": "Equitable",
+      "options": [
+        "Antithesis",
+        "Equitable",
+        "Acquiesce"
+      ],
+      "why": "Fair and impartial",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_implicit",
+      "q": "What does 'Implicit' mean? (Implied though not plainly expressed)",
+      "a": "Implicit",
+      "options": [
+        "Acquiesce",
+        "Antithesis",
+        "Implicit"
+      ],
+      "why": "Implied though not plainly expressed",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_innate",
+      "q": "What does 'Innate' mean? (Existing from birth; inherent)",
+      "a": "Innate",
+      "options": [
+        "Innate",
+        "Acquiesce",
+        "Antithesis"
+      ],
+      "why": "Existing from birth; inherent",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_meticulous",
+      "q": "What does 'Meticulous' mean? (Showing great attention to detail)",
+      "a": "Meticulous",
+      "options": [
+        "Antithesis",
+        "Acquiesce",
+        "Meticulous"
+      ],
+      "why": "Showing great attention to detail",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_myriad",
+      "q": "What does 'Myriad' mean? (A countless or extremely great number)",
+      "a": "Myriad",
+      "options": [
+        "Acquiesce",
+        "Antithesis",
+        "Myriad"
+      ],
+      "why": "A countless or extremely great number",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_opportune",
+      "q": "What does 'Opportune' mean? (Well-timed; suitable)",
+      "a": "Opportune",
+      "options": [
+        "Opportune",
+        "Antithesis",
+        "Acquiesce"
+      ],
+      "why": "Well-timed; suitable",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_quintessential",
+      "q": "What does 'Quintessential' mean? (The most perfect example of something)",
+      "a": "Quintessential",
+      "options": [
+        "Antithesis",
+        "Acquiesce",
+        "Quintessential"
+      ],
+      "why": "The most perfect example of something",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_substantiate",
+      "q": "What does 'Substantiate' mean? (To provide evidence for a claim)",
+      "a": "Substantiate",
+      "options": [
+        "Substantiate",
+        "Acquiesce",
+        "Antithesis"
+      ],
+      "why": "To provide evidence for a claim",
+      "category": "Sophisticated"
+    },
+    {
+      "id": "wp_adequate",
+      "q": "What does 'Adequate' mean? (Enough for a need)",
+      "a": "Adequate",
+      "options": [
+        "Ambitious",
+        "Adequate",
+        "Amiable"
+      ],
+      "why": "Enough for a need",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_ambitious",
+      "q": "What does 'Ambitious' mean? (Wanting success)",
+      "a": "Ambitious",
+      "options": [
+        "Ambitious",
+        "Adequate",
+        "Amiable"
+      ],
+      "why": "Wanting success",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_amiable",
+      "q": "What does 'Amiable' mean? (Friendly and pleasant)",
+      "a": "Amiable",
+      "options": [
+        "Adequate",
+        "Amiable",
+        "Ambitious"
+      ],
+      "why": "Friendly and pleasant",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_benevolent",
+      "q": "What does 'Benevolent' mean? (Kind and helpful)",
+      "a": "Benevolent",
+      "options": [
+        "Ambitious",
+        "Adequate",
+        "Benevolent"
+      ],
+      "why": "Kind and helpful",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_convey",
+      "q": "What does 'Convey' mean? (To communicate)",
+      "a": "Convey",
+      "options": [
+        "Adequate",
+        "Ambitious",
+        "Convey"
+      ],
+      "why": "To communicate",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_crucial",
+      "q": "What does 'Crucial' mean? (Very important)",
+      "a": "Crucial",
+      "options": [
+        "Adequate",
+        "Crucial",
+        "Ambitious"
+      ],
+      "why": "Very important",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_enhance",
+      "q": "What does 'Enhance' mean? (Improve or increase)",
+      "a": "Enhance",
+      "options": [
+        "Enhance",
+        "Ambitious",
+        "Adequate"
+      ],
+      "why": "Improve or increase",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_evaluate",
+      "q": "What does 'Evaluate' mean? (Judge or check)",
+      "a": "Evaluate",
+      "options": [
+        "Adequate",
+        "Evaluate",
+        "Ambitious"
+      ],
+      "why": "Judge or check",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_feasible",
+      "q": "What does 'Feasible' mean? (Possible to do)",
+      "a": "Feasible",
+      "options": [
+        "Feasible",
+        "Adequate",
+        "Ambitious"
+      ],
+      "why": "Possible to do",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_gracious",
+      "q": "What does 'Gracious' mean? (Polite and kind)",
+      "a": "Gracious",
+      "options": [
+        "Ambitious",
+        "Adequate",
+        "Gracious"
+      ],
+      "why": "Polite and kind",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_hinder",
+      "q": "What does 'Hinder' mean? (Slow down or block)",
+      "a": "Hinder",
+      "options": [
+        "Hinder",
+        "Adequate",
+        "Ambitious"
+      ],
+      "why": "Slow down or block",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_imply",
+      "q": "What does 'Imply' mean? (Suggest without saying)",
+      "a": "Imply",
+      "options": [
+        "Ambitious",
+        "Imply",
+        "Adequate"
+      ],
+      "why": "Suggest without saying",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_initiate",
+      "q": "What does 'Initiate' mean? (Start something)",
+      "a": "Initiate",
+      "options": [
+        "Ambitious",
+        "Adequate",
+        "Initiate"
+      ],
+      "why": "Start something",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_innovative",
+      "q": "What does 'Innovative' mean? (New and creative)",
+      "a": "Innovative",
+      "options": [
+        "Ambitious",
+        "Innovative",
+        "Adequate"
+      ],
+      "why": "New and creative",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_modify",
+      "q": "What does 'Modify' mean? (Change slightly)",
+      "a": "Modify",
+      "options": [
+        "Ambitious",
+        "Adequate",
+        "Modify"
+      ],
+      "why": "Change slightly",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_pursue",
+      "q": "What does 'Pursue' mean? (Try to achieve)",
+      "a": "Pursue",
+      "options": [
+        "Ambitious",
+        "Adequate",
+        "Pursue"
+      ],
+      "why": "Try to achieve",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_rational",
+      "q": "What does 'Rational' mean? (Logical and sensible)",
+      "a": "Rational",
+      "options": [
+        "Ambitious",
+        "Adequate",
+        "Rational"
+      ],
+      "why": "Logical and sensible",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_reluctant",
+      "q": "What does 'Reluctant' mean? (Not wanting to)",
+      "a": "Reluctant",
+      "options": [
+        "Reluctant",
+        "Adequate",
+        "Ambitious"
+      ],
+      "why": "Not wanting to",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_substantial",
+      "q": "What does 'Substantial' mean? (Large or important)",
+      "a": "Substantial",
+      "options": [
+        "Adequate",
+        "Substantial",
+        "Ambitious"
+      ],
+      "why": "Large or important",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_transform",
+      "q": "What does 'Transform' mean? (Change completely)",
+      "a": "Transform",
+      "options": [
+        "Adequate",
+        "Ambitious",
+        "Transform"
+      ],
+      "why": "Change completely",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_viable",
+      "q": "What does 'Viable' mean? (Can work successfully)",
+      "a": "Viable",
+      "options": [
+        "Adequate",
+        "Viable",
+        "Ambitious"
+      ],
+      "why": "Can work successfully",
+      "category": "Daily Advanced"
+    },
+    {
+      "id": "wp_depict",
+      "q": "What does 'Depict' mean? (Represent or show)",
+      "a": "Depict",
+      "options": [
+        "Disperse",
+        "Depict",
+        "Endorse"
+      ],
+      "why": "Represent or show",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_disperse",
+      "q": "What does 'Disperse' mean? (Spread or scatter)",
+      "a": "Disperse",
+      "options": [
+        "Endorse",
+        "Disperse",
+        "Depict"
+      ],
+      "why": "Spread or scatter",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_endorse",
+      "q": "What does 'Endorse' mean? (Support publicly)",
+      "a": "Endorse",
+      "options": [
+        "Disperse",
+        "Endorse",
+        "Depict"
+      ],
+      "why": "Support publicly",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_exude",
+      "q": "What does 'Exude' mean? (Show strongly (e.g. confidence))",
+      "a": "Exude",
+      "options": [
+        "Disperse",
+        "Depict",
+        "Exude"
+      ],
+      "why": "Show strongly (e.g. confidence)",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_foster",
+      "q": "What does 'Foster' mean? (Encourage or develop)",
+      "a": "Foster",
+      "options": [
+        "Disperse",
+        "Foster",
+        "Depict"
+      ],
+      "why": "Encourage or develop",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_mitigate",
+      "q": "What does 'Mitigate' mean? (Reduce or lessen (e.g. risk))",
+      "a": "Mitigate",
+      "options": [
+        "Disperse",
+        "Mitigate",
+        "Depict"
+      ],
+      "why": "Reduce or lessen (e.g. risk)",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_nurture",
+      "q": "What does 'Nurture' mean? (Care for growth)",
+      "a": "Nurture",
+      "options": [
+        "Depict",
+        "Nurture",
+        "Disperse"
+      ],
+      "why": "Care for growth",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_reiterate",
+      "q": "What does 'Reiterate' mean? (Repeat for emphasis)",
+      "a": "Reiterate",
+      "options": [
+        "Depict",
+        "Reiterate",
+        "Disperse"
+      ],
+      "why": "Repeat for emphasis",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_revive",
+      "q": "What does 'Revive' mean? (Bring back to life or use)",
+      "a": "Revive",
+      "options": [
+        "Revive",
+        "Disperse",
+        "Depict"
+      ],
+      "why": "Bring back to life or use",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_stimulate",
+      "q": "What does 'Stimulate' mean? (Encourage activity)",
+      "a": "Stimulate",
+      "options": [
+        "Depict",
+        "Stimulate",
+        "Disperse"
+      ],
+      "why": "Encourage activity",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_thrive",
+      "q": "What does 'Thrive' mean? (Grow successfully)",
+      "a": "Thrive",
+      "options": [
+        "Depict",
+        "Disperse",
+        "Thrive"
+      ],
+      "why": "Grow successfully",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_validate",
+      "q": "What does 'Validate' mean? (Prove something true)",
+      "a": "Validate",
+      "options": [
+        "Disperse",
+        "Depict",
+        "Validate"
+      ],
+      "why": "Prove something true",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_implement",
+      "q": "What does 'Implement' mean? (Put into effect)",
+      "a": "Implement",
+      "options": [
+        "Depict",
+        "Disperse",
+        "Implement"
+      ],
+      "why": "Put into effect",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_collaborate",
+      "q": "What does 'Collaborate' mean? (Work together)",
+      "a": "Collaborate",
+      "options": [
+        "Collaborate",
+        "Depict",
+        "Disperse"
+      ],
+      "why": "Work together",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_resolve",
+      "q": "What does 'Resolve' mean? (Find a solution)",
+      "a": "Resolve",
+      "options": [
+        "Disperse",
+        "Resolve",
+        "Depict"
+      ],
+      "why": "Find a solution",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_clarify",
+      "q": "What does 'Clarify' mean? (Make easier to understand)",
+      "a": "Clarify",
+      "options": [
+        "Disperse",
+        "Clarify",
+        "Depict"
+      ],
+      "why": "Make easier to understand",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_prioritize",
+      "q": "What does 'Prioritize' mean? (Arrange by importance)",
+      "a": "Prioritize",
+      "options": [
+        "Depict",
+        "Prioritize",
+        "Disperse"
+      ],
+      "why": "Arrange by importance",
+      "category": "Power Verbs"
+    },
+    {
+      "id": "wp_summarize",
+      "q": "What does 'Summarize' mean? (Give a brief statement of main points)",
+      "a": "Summarize",
+      "options": [
+        "Disperse",
+        "Summarize",
+        "Depict"
+      ],
+      "why": "Give a brief statement of main points",
+      "category": "Power Verbs"
+    }
+  ]
+}
