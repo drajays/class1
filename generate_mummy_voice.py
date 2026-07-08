@@ -96,9 +96,17 @@ model = Qwen3TTSModel.from_pretrained("Qwen/Qwen3-TTS-12Hz-0.6B-Base", device_ma
 out_dir = Path("{VOICE_DIR}")
 ok = []
 for i, j in enumerate(jobs):
-    lang = "English"
+    langs = ["Hindi", "English"] if j.get("lang") == "hi" else ["English"]
+    wavs = sr = None
+    for lang in langs:
+        try:
+            wavs, sr = model.generate_voice_clone(text=j["t"], language=lang, ref_audio="{REF}", x_vector_only_mode=True)
+            break
+        except Exception:
+            continue
     try:
-        wavs, sr = model.generate_voice_clone(text=j["t"], language=lang, ref_audio="{REF}", x_vector_only_mode=True)
+        if wavs is None:
+            raise RuntimeError("all language modes failed")
         wav_path = out_dir / (j["h"] + ".wav")
         sf.write(str(wav_path), wavs[0], sr)
         mp3_path = out_dir / (j["h"] + ".mp3")

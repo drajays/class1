@@ -28,6 +28,20 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### Mummy's Voice is now the APP DEFAULT (2026-07-08, reviewer-as-implementer, user request)
+- `store.js` getVoicePrefs: unset prefs default to `__mummy__` for BOTH en+hi —
+  every subject (English/Hindi/Sanskrit/all) speaks with Mummy's clips out of
+  the box, overriding device/browser voice defaults. `''` = user explicitly
+  chose the normal voice in-app (🎙️ toggle / parent picker) and is respected.
+- Verified live on a FRESH save: first utterance plays a clip (not TTS) with
+  zero user action; 🎙️ button shows ON by default; explicit off sticks; 0 errors.
+- `generate_mummy_voice.py`: Devanagari jobs now try language="Hindi" first
+  (fallback English); **batch 2 queued** (~80 Hindi/Sanskrit intros) to run
+  after the English batch, with auto commit+push.
+- Known fallback surface: question/option/word-tap text has no clips (corpus =
+  intros/praise) — those use the normal voice until/unless the corpus grows.
+- sw.js v23.
+
 ### One-tap Mummy's Voice toggle (2026-07-08, reviewer-as-implementer, user request)
 - `index.html`: 🎙️ button in the home top bar (next to 🔊).
 - `app.js`: `toggleMummyVoice()` — one tap sets BOTH en+hi voice prefs to

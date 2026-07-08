@@ -273,7 +273,13 @@ const Store = {
   },
 
   getVoicePrefs() {
-    try { return JSON.parse(localStorage.getItem('pp_voice') || '{}'); } catch { return {}; }
+    let p = {};
+    try { p = JSON.parse(localStorage.getItem('pp_voice') || '{}'); } catch { p = {}; }
+    // Mummy's voice is the app default for BOTH languages (all subjects).
+    // '' means the user explicitly chose the normal/auto voice in-app.
+    if (p.enVoice === undefined) p.enVoice = '__mummy__';
+    if (p.hiVoice === undefined) p.hiVoice = '__mummy__';
+    return p;
   },
 
   setVoicePref(key, value) {
