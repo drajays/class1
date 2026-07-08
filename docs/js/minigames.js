@@ -42,6 +42,7 @@ const MiniGames = {
       'evs-sort': () => this.evsSort(),
       habitat: () => this.habitat(),
       'plant-magic': () => this.plantMagic(),
+      'noun-sort': () => this.nounSort(),
       'memory-match': () => this.memoryMatch(),
       'creative-draw': () => this.creativeDraw(),
       'spin-wheel': () => this.spinWheel(),
@@ -512,15 +513,66 @@ const MiniGames = {
     });
   },
 
+  nounSort() {
+    const items = [
+      { word: 'Simba', type: 'Person/Animal' },
+      { word: 'Park', type: 'Place/Thing' },
+      { word: 'Puppy', type: 'Person/Animal' },
+      { word: 'Bone', type: 'Place/Thing' },
+      { word: 'Mufasa', type: 'Person/Animal' },
+      { word: 'Ball', type: 'Place/Thing' },
+    ];
+    let idx = 0;
+    const area = this._area();
+    const renderNext = () => {
+      if (idx >= items.length) {
+        return this.win(15, 'english');
+      }
+      const cur = items[idx];
+      area.innerHTML = `
+        <p class="game-instruction">Sort the noun into the right puppy bucket!</p>
+        <div style="text-align:center;margin:18px 0;">
+          <span style="font-size:2rem;font-weight:900;background:#fff8db;border:3px solid #ffd166;padding:12px 28px;border-radius:24px;color:#2b2660;display:inline-block;">
+            ${cur.word}
+          </span>
+        </div>
+        <div style="display:flex;justify-content:center;gap:24px;margin-top:20px;">
+          <button class="btn-primary btn-big sort-bucket" data-type="Person/Animal" style="background:linear-gradient(135deg,#ff8a3d,#ffc24d);color:#5a2d00;">
+            🐶 Person / Animal
+          </button>
+          <button class="btn-primary btn-big sort-bucket" data-type="Place/Thing" style="background:linear-gradient(135deg,#38bdf8,#0284c7);">
+            🏠 Place / Thing
+          </button>
+        </div>
+      `;
+      area.querySelectorAll('.sort-bucket').forEach((btn) => {
+        btn.onclick = () => {
+          if (btn.dataset.type === cur.type) {
+            Sounds.correct();
+            Store.trackAnswer(this.playerId, 'english', true);
+            idx++;
+            renderNext();
+          } else {
+            Sounds.wrong();
+            Store.trackAnswer(this.playerId, 'english', false);
+            Rewards.showToast('Oops! Try the other puppy bucket! 🐾');
+          }
+        };
+      });
+    };
+    renderNext();
+  },
+
   memoryMatch() {
-    const vals = ['🍎', '🍎', '🐶', '🐶', '🌞', '🌞', '🚀', '🚀', '⭐', '⭐', '🌸', '🌸'].sort(() => Math.random() - 0.5);
+    const words = ['Simba 🐶', 'Bone 🦴', 'Park 🌳', 'Ball ⚽', 'Puppy 🐾', 'Happy 🌟'];
+    const vals = [...words, ...words].sort(() => Math.random() - 0.5);
     let open = [];
     let done = 0;
     const area = this._area();
     const render = () => {
-      area.innerHTML = `<p class="game-instruction">Find matching pairs!</p>
+      area.innerHTML = `<p class="game-instruction">Find matching English noun & word pairs!</p>
         <div class="memory-grid">${vals.map((v, i) =>
-          `<button class="mem-card" data-v="${v}" data-i="${i}">❓</button>`
+          `<button class="mem-card" data-v="${v}" data-i="${i}" style="font-size:1.15rem;font-weight:800;">🐾</button>`
         ).join('')}</div>`;
       area.querySelectorAll('.mem-card').forEach((btn) => {
         btn.addEventListener('click', () => {
@@ -533,12 +585,14 @@ const MiniGames = {
             setTimeout(() => {
               if (open[0].dataset.v === open[1].dataset.v) {
                 Sounds.correct();
+                Store.trackAnswer(this.playerId, 'english', true);
                 open.forEach((b) => { b.classList.add('done'); });
                 done += 2;
-                if (done === vals.length) this.win(20, 'gk');
+                if (done === vals.length) this.win(20, 'english');
               } else {
                 Sounds.wrong();
-                open.forEach((b) => { b.classList.remove('open'); b.textContent = '❓'; });
+                Store.trackAnswer(this.playerId, 'english', false);
+                open.forEach((b) => { b.classList.remove('open'); b.textContent = '🐾'; });
               }
               open = [];
             }, 700);

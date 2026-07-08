@@ -62,7 +62,8 @@ const MINI_GAMES = [
   { id: 'evs-sort', emoji: '♻️', title: 'Eco Sorter', sub: '30-second challenge!', subject: 'evs' },
   { id: 'habitat', emoji: '🌍', title: 'Build Habitat', sub: 'Forest, desert, ocean', subject: 'evs' },
   { id: 'plant-magic', emoji: '🌱', title: 'Plant Magic', sub: 'AR life cycle', subject: 'evs' },
-  { id: 'memory-match', emoji: '🧠', title: 'Memory Match', sub: 'Find the pairs', subject: 'gk' },
+  { id: 'noun-sort', emoji: '🐾', title: 'Puppy Noun Sort', sub: 'Sort words into puppy buckets', subject: 'language' },
+  { id: 'memory-match', emoji: '🧠', title: 'Memory Match', sub: 'Find matching word pairs', subject: 'language' },
   { id: 'creative-draw', emoji: '🎨', title: 'Draw Board', sub: 'Paint your art!', subject: 'art' },
   { id: 'spin-wheel', emoji: '🎡', title: 'Prize Wheel', sub: 'Spin for coins!', subject: 'fun' },
 ];

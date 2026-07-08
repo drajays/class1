@@ -69,6 +69,9 @@ const App = {
       english: 'screen-english',
       hindi: 'screen-hindi',
       storytime: 'screen-storytime',
+      englishboosters: 'screen-englishboosters',
+      english_plus: 'screen-subjectbook',
+      math_challenge: 'screen-subjectbook',
       evs: 'screen-subjectbook',
       sanskrit: 'screen-subjectbook',
       computer: 'screen-subjectbook',
@@ -105,8 +108,9 @@ const App = {
     if (screen === 'math') { MathBook.open(); }
     if (screen === 'english') { EnglishBook.open(); }
     if (screen === 'storytime') { StoryBook.open(); Speech.navSay('Welcome to Story Time! Tap any word to hear it!'); }
+    if (screen === 'englishboosters') { EnglishBoosters.open(); Speech.navSay('Welcome to Word Power Boosters!'); }
     if (screen === 'hindi') { HindiBook.open(); Speech.navSay('Tap any letter to hear it. Let us learn Hindi!'); }
-    if (screen === 'evs' || screen === 'sanskrit' || screen === 'computer') { SubjectBook.open(screen); }
+    if (screen === 'evs' || screen === 'sanskrit' || screen === 'computer' || screen === 'english_plus' || screen === 'math_challenge') { SubjectBook.open(screen); }
   },
 
   toggleMummyVoice() {

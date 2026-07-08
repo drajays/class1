@@ -71,9 +71,17 @@
         <span class="play-icon">📘</span><span class="play-title">Math Book</span>
         <span class="play-sub" id="math-progress"></span>
       </button>
+      <button class="play-card feature math-world" data-go="math_challenge">
+        <span class="play-icon">🏆</span><span class="play-title">Math Challenge</span>
+        <span class="play-sub">Class 2–3 Stretch</span>
+      </button>
       <button class="play-card english-world" data-go="english">
         <span class="play-icon">📖</span><span class="play-title">Reading Arcade</span>
         <span class="play-sub" id="english-progress"></span>
+      </button>
+      <button class="play-card feature english-world" data-go="englishboosters">
+        <span class="play-icon">⚡</span><span class="play-title">Word Power</span>
+        <span class="play-sub">Sight Words, Phonics & Vocab</span>
       </button>
       <button class="play-card hindi-world" data-go="hindi">
         <span class="play-icon">🕉️</span><span class="play-title">हिंदी अक्षर</span>
@@ -221,6 +229,15 @@
     <div id="storytime-view"></div>
   </section>
 
+  <!-- English Boosters -->
+  <section id="screen-englishboosters" class="screen">
+    <header class="game-header">
+      <button class="btn-back btn-big" data-back="play">← Back</button>
+      <h2>⚡ Word Power Boosters</h2>
+    </header>
+    <div id="boosters-view"></div>
+  </section>
+
   <script src="js/data.js"></script>
   <script src="js/puppies.js"></script>
   <script src="js/mall.js"></script>
@@ -233,6 +250,7 @@
   <script src="js/mathbook.js"></script>
   <script src="js/englishbook.js"></script>
   <script src="js/storybook.js"></script>
+  <script src="js/englishboosters.js"></script>
   <script src="js/hindibook.js"></script>
   <script src="js/subjectbook.js"></script>
   <script src="js/coach.js"></script>

@@ -39,7 +39,9 @@ const Coach = {
     const subBooks = [
       { key: 'evs', icon: '🌿' },
       { key: 'sanskrit', icon: '🪔' },
-      { key: 'computer', icon: '💻' }
+      { key: 'computer', icon: '💻' },
+      { key: 'english_plus', icon: '⚡' },
+      { key: 'math_challenge', icon: '🏆' }
     ];
     for (const b of subBooks) {
       try {

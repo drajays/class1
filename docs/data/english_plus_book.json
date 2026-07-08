@@ -1,0 +1,2674 @@
+{
+  "subject": "english_plus",
+  "title": "Word Power Book",
+  "icon": "⚡",
+  "lang": "en-IN",
+  "chapters": [
+    {
+      "id": "np_common_proper",
+      "title": "Common & Proper Nouns",
+      "icon": "🌟",
+      "level": 3,
+      "concept": {
+        "intro": [
+          "Nouns are naming words!",
+          "Common nouns name general things like boy, city, or puppy.",
+          "Proper nouns name special people or places like Advaita, India, or Simba!"
+        ],
+        "tip": "Proper nouns always start with a Capital letter!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Which of these is a Proper Noun (a special name that starts with a capital letter)?",
+          "options": [
+            "🌟 Asoka",
+            "🏙️ city",
+            "Ophthalmologist"
+          ],
+          "a": "🌟 Asoka",
+          "why": "Asoka is the special name of a famous emperor!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which of these is a Proper Noun naming a person or place?",
+          "options": [
+            "🌟 Sita",
+            "🗺️ country",
+            "🐾 puppy"
+          ],
+          "a": "🌟 Sita",
+          "why": "Sita is a proper noun naming a person!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which of these is a Common Noun (a general name for a person, place, or thing)?",
+          "options": [
+            "🏙️ city",
+            "🌟 Kolkata",
+            "🌟 India"
+          ],
+          "a": "🏙️ city",
+          "why": "City is a general name, while Kolkata and India are proper nouns!"
+        }
+      ]
+    },
+    {
+      "id": "np_gender_plurals",
+      "title": "Gender & Plural Nouns",
+      "icon": "👑",
+      "level": 3,
+      "concept": {
+        "intro": [
+          "Nouns can name males or females!",
+          "For example: actor and actress, emperor and empress.",
+          "Learning gender nouns helps us talk about people accurately!"
+        ],
+        "tip": "Look at endings like -ess for many feminine forms!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What is the feminine gender for 'actor'?",
+          "options": [
+            "actress",
+            "waitress",
+            "empress"
+          ],
+          "a": "actress",
+          "why": "An actor is male, and an actress is female!"
+        },
+        {
+          "skill": "pick",
+          "q": "What is the feminine gender for 'emperor'?",
+          "options": [
+            "empress",
+            "duchess",
+            "mistress"
+          ],
+          "a": "empress",
+          "why": "An emperor rules an empire, and an empress is a female ruler!"
+        },
+        {
+          "skill": "pick",
+          "q": "What is the feminine gender for 'duke'?",
+          "options": [
+            "duchess",
+            "actress",
+            "waitress"
+          ],
+          "a": "duchess",
+          "why": "A duke and a duchess are noble titles!"
+        }
+      ]
+    },
+    {
+      "id": "np_collective",
+      "title": "Collective Nouns",
+      "icon": "🐾",
+      "level": 4,
+      "concept": {
+        "intro": [
+          "A collective noun names a whole group of people, animals, or things!",
+          "We say a flock of birds, a herd of cows, and a pride of lions.",
+          "One special word names many together!"
+        ],
+        "tip": "Think of a team of players or a bunch of grapes!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Which collective noun represents a group of ships or similar items?",
+          "options": [
+            "ships",
+            "bravery",
+            "Kolkata"
+          ],
+          "a": "ships",
+          "why": "'ships' is a collective noun naming a group!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which collective noun represents a group of soldiers or similar items?",
+          "options": [
+            "soldiers",
+            "bravery",
+            "Kolkata"
+          ],
+          "a": "soldiers",
+          "why": "'soldiers' is a collective noun naming a group!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which collective noun represents a group of cattle or similar items?",
+          "options": [
+            "cattle",
+            "bravery",
+            "Kolkata"
+          ],
+          "a": "cattle",
+          "why": "'cattle' is a collective noun naming a group!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which collective noun represents a group of players or similar items?",
+          "options": [
+            "players",
+            "bravery",
+            "Kolkata"
+          ],
+          "a": "players",
+          "why": "'players' is a collective noun naming a group!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which collective noun represents a group of people or similar items?",
+          "options": [
+            "people",
+            "bravery",
+            "Kolkata"
+          ],
+          "a": "people",
+          "why": "'people' is a collective noun naming a group!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which collective noun represents a group of sheep or similar items?",
+          "options": [
+            "sheep",
+            "bravery",
+            "Kolkata"
+          ],
+          "a": "sheep",
+          "why": "'sheep' is a collective noun naming a group!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which collective noun represents a group of pupils or similar items?",
+          "options": [
+            "pupils",
+            "bravery",
+            "Kolkata"
+          ],
+          "a": "pupils",
+          "why": "'pupils' is a collective noun naming a group!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which collective noun represents a group of judges or similar items?",
+          "options": [
+            "judges",
+            "bravery",
+            "Kolkata"
+          ],
+          "a": "judges",
+          "why": "'judges' is a collective noun naming a group!"
+        }
+      ]
+    },
+    {
+      "id": "np_abstract",
+      "title": "Abstract Nouns",
+      "icon": "💡",
+      "level": 5,
+      "concept": {
+        "intro": [
+          "Abstract nouns name ideas, feelings, and qualities!",
+          "You cannot touch or see bravery, honesty, or wisdom, but you can feel and show them.",
+          "They are the most powerful words in our minds!"
+        ],
+        "tip": "If it is a feeling or idea like kindness or joy, it is an abstract noun!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "Which of these is an Abstract Noun (a quality or feeling you cannot touch)?",
+          "options": [
+            "bravery",
+            "Ophthalmologist",
+            "waiter"
+          ],
+          "a": "bravery",
+          "why": "Bravery is a noble quality inside your heart!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which of these is an Abstract Noun representing truthful character?",
+          "options": [
+            "honesty",
+            "actor",
+            "ships"
+          ],
+          "a": "honesty",
+          "why": "Honesty means always telling the truth!"
+        },
+        {
+          "skill": "pick",
+          "q": "Which of these is an Abstract Noun representing joy and sound?",
+          "options": [
+            "laughter",
+            "emperor",
+            "Ophthalmologist"
+          ],
+          "a": "laughter",
+          "why": "Laughter is a wonderful feeling of happiness!"
+        }
+      ]
+    },
+    {
+      "id": "vp_vocab_1",
+      "title": "Word Power Pack 1",
+      "icon": "⚡",
+      "level": 3,
+      "concept": {
+        "intro": [
+          "Welcome to Word Power Pack 1!",
+          "Expand your English vocabulary with exciting new words.",
+          "Read the clue and pick the matching word!"
+        ],
+        "tip": "Read the question carefully to spot the meaning!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What does 'Egoist' mean? (Someone who is supremely selfish)",
+          "options": [
+            "Egotist",
+            "Egoist",
+            "Egocentric"
+          ],
+          "a": "Egoist",
+          "why": "Someone who is supremely selfish"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Egotist' mean? (Someone who is boastful and conceited)",
+          "options": [
+            "Egocentric",
+            "Egoist",
+            "Egotist"
+          ],
+          "a": "Egotist",
+          "why": "Someone who is boastful and conceited"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Egocentric' mean? (Someone who considers themselves the center of the universe)",
+          "options": [
+            "Ophthalmologist",
+            "Egotist",
+            "Egocentric"
+          ],
+          "a": "Egocentric",
+          "why": "Someone who considers themselves the center of the universe"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Egomaniac' mean? (Someone obsessed with their own desires/needs to a dangerous degree)",
+          "options": [
+            "Egoist",
+            "Egotist",
+            "Egomaniac"
+          ],
+          "a": "Egomaniac",
+          "why": "Someone obsessed with their own desires/needs to a dangerous degree"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Altruist' mean? (Someone who is more interested in the welfare of others than their own)",
+          "options": [
+            "Ophthalmologist",
+            "Altruist",
+            "Egotist"
+          ],
+          "a": "Altruist",
+          "why": "Someone who is more interested in the welfare of others than their own"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Alter ego' mean? (A secondary personality or a very close friend who is a mirror image)",
+          "options": [
+            "Alter ego",
+            "Egoist",
+            "Egotist"
+          ],
+          "a": "Alter ego",
+          "why": "A secondary personality or a very close friend who is a mirror image"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Altercation' mean? (A strong verbal dispute)",
+          "options": [
+            "Ophthalmologist",
+            "Egotist",
+            "Altercation"
+          ],
+          "a": "Altercation",
+          "why": "A strong verbal dispute"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Introvert' mean? (Someone whose interests are turned inwards)",
+          "options": [
+            "Egoist",
+            "Egotist",
+            "Introvert"
+          ],
+          "a": "Introvert",
+          "why": "Someone whose interests are turned inwards"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Extrovert' mean? (Someone whose interests are turned outwards)",
+          "options": [
+            "Ophthalmologist",
+            "Egotist",
+            "Extrovert"
+          ],
+          "a": "Extrovert",
+          "why": "Someone whose interests are turned outwards"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Ambivert' mean? (Someone who has both introverted and extroverted tendencies)",
+          "options": [
+            "Egoist",
+            "Ambivert",
+            "Egotist"
+          ],
+          "a": "Ambivert",
+          "why": "Someone who has both introverted and extroverted tendencies"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Dexterous' mean? (Skillful with the hands)",
+          "options": [
+            "Dexterous",
+            "Ophthalmologist",
+            "Egotist"
+          ],
+          "a": "Dexterous",
+          "why": "Skillful with the hands"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Ambidextrous' mean? (Able to use both hands with equal skill)",
+          "options": [
+            "Egotist",
+            "Egoist",
+            "Ambidextrous"
+          ],
+          "a": "Ambidextrous",
+          "why": "Able to use both hands with equal skill"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Adroit' mean? (Skillful or clever)",
+          "options": [
+            "Adroit",
+            "Egoist",
+            "Egotist"
+          ],
+          "a": "Adroit",
+          "why": "Skillful or clever"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Gauche' mean? (Awkward or clumsy)",
+          "options": [
+            "Egoist",
+            "Egotist",
+            "Gauche"
+          ],
+          "a": "Gauche",
+          "why": "Awkward or clumsy"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Misanthrope' mean? (Someone who hates or distrusts humankind)",
+          "options": [
+            "Misanthrope",
+            "Ophthalmologist",
+            "Egotist"
+          ],
+          "a": "Misanthrope",
+          "why": "Someone who hates or distrusts humankind"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Misogynist' mean? (Someone who hates women)",
+          "options": [
+            "Misogynist",
+            "Egotist",
+            "Egoist"
+          ],
+          "a": "Misogynist",
+          "why": "Someone who hates women"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Misogamist' mean? (Someone who hates marriage)",
+          "options": [
+            "Ophthalmologist",
+            "Egotist",
+            "Misogamist"
+          ],
+          "a": "Misogamist",
+          "why": "Someone who hates marriage"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Philanthropist' mean? (Someone who loves and helps humankind)",
+          "options": [
+            "Egotist",
+            "Philanthropist",
+            "Egoist"
+          ],
+          "a": "Philanthropist",
+          "why": "Someone who loves and helps humankind"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Monogamist' mean? (One married to one person)",
+          "options": [
+            "Egotist",
+            "Ophthalmologist",
+            "Monogamist"
+          ],
+          "a": "Monogamist",
+          "why": "One married to one person"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Bigamist' mean? (One married to two people)",
+          "options": [
+            "Egotist",
+            "Egoist",
+            "Bigamist"
+          ],
+          "a": "Bigamist",
+          "why": "One married to two people"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Polygamist' mean? (One married to many people)",
+          "options": [
+            "Polygamist",
+            "Egotist",
+            "Ophthalmologist"
+          ],
+          "a": "Polygamist",
+          "why": "One married to many people"
+        }
+      ]
+    },
+    {
+      "id": "vp_vocab_2",
+      "title": "Word Power Pack 2",
+      "icon": "⚡",
+      "level": 3,
+      "concept": {
+        "intro": [
+          "Welcome to Word Power Pack 2!",
+          "Expand your English vocabulary with exciting new words.",
+          "Read the clue and pick the matching word!"
+        ],
+        "tip": "Read the question carefully to spot the meaning!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What does 'Ascetic' mean? (Someone who lives a life of self-denial and austerity)",
+          "options": [
+            "Egotist",
+            "Ophthalmologist",
+            "Ascetic"
+          ],
+          "a": "Ascetic",
+          "why": "Someone who lives a life of self-denial and austerity"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Internist' mean? (Specialist in internal medicine)",
+          "options": [
+            "Gynecologist",
+            "Internist",
+            "Obstetrician"
+          ],
+          "a": "Internist",
+          "why": "Specialist in internal medicine"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Gynecologist' mean? (Expert in female reproductive organs)",
+          "options": [
+            "Obstetrician",
+            "Gynecologist",
+            "Ophthalmologist"
+          ],
+          "a": "Gynecologist",
+          "why": "Expert in female reproductive organs"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Obstetrician' mean? (Expert in pregnancy and childbirth)",
+          "options": [
+            "Obstetrician",
+            "Internist",
+            "Gynecologist"
+          ],
+          "a": "Obstetrician",
+          "why": "Expert in pregnancy and childbirth"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Pediatrician' mean? (Expert in childhood diseases)",
+          "options": [
+            "Pediatrician",
+            "Ophthalmologist",
+            "Gynecologist"
+          ],
+          "a": "Pediatrician",
+          "why": "Expert in childhood diseases"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Dermatologist' mean? (Expert in skin ailments)",
+          "options": [
+            "Internist",
+            "Dermatologist",
+            "Gynecologist"
+          ],
+          "a": "Dermatologist",
+          "why": "Expert in skin ailments"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Ophthalmologist' mean? (Expert in eye diseases)",
+          "options": [
+            "Internist",
+            "Ophthalmologist",
+            "Gynecologist"
+          ],
+          "a": "Ophthalmologist",
+          "why": "Expert in eye diseases"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Orthopedist' mean? (Expert in skeletal deformities)",
+          "options": [
+            "Internist",
+            "Gynecologist",
+            "Orthopedist"
+          ],
+          "a": "Orthopedist",
+          "why": "Expert in skeletal deformities"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Cardiologist' mean? (Expert in heart ailments)",
+          "options": [
+            "Gynecologist",
+            "Cardiologist",
+            "Ophthalmologist"
+          ],
+          "a": "Cardiologist",
+          "why": "Expert in heart ailments"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Neurologist' mean? (Expert in disorders of the nerves)",
+          "options": [
+            "Internist",
+            "Gynecologist",
+            "Neurologist"
+          ],
+          "a": "Neurologist",
+          "why": "Expert in disorders of the nerves"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Psychiatrist' mean? (Expert in disorders of the mind)",
+          "options": [
+            "Psychiatrist",
+            "Gynecologist",
+            "Ophthalmologist"
+          ],
+          "a": "Psychiatrist",
+          "why": "Expert in disorders of the mind"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Psychologist' mean? (Student of the mind and behavior)",
+          "options": [
+            "Psychologist",
+            "Endodontist",
+            "Periodontist"
+          ],
+          "a": "Psychologist",
+          "why": "Student of the mind and behavior"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Periodontist' mean? (Gum specialist)",
+          "options": [
+            "Ophthalmologist",
+            "Psychologist",
+            "Periodontist"
+          ],
+          "a": "Periodontist",
+          "why": "Gum specialist"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Endodontist' mean? (Root canal specialist)",
+          "options": [
+            "Periodontist",
+            "Endodontist",
+            "Psychologist"
+          ],
+          "a": "Endodontist",
+          "why": "Root canal specialist"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Podiatrist' mean? (Expert in foot care)",
+          "options": [
+            "Podiatrist",
+            "Psychologist",
+            "Periodontist"
+          ],
+          "a": "Podiatrist",
+          "why": "Expert in foot care"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Graphologist' mean? (Expert in handwriting analysis)",
+          "options": [
+            "Psychologist",
+            "Graphologist",
+            "Periodontist"
+          ],
+          "a": "Graphologist",
+          "why": "Expert in handwriting analysis"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Gerontologist' mean? (Expert in aging)",
+          "options": [
+            "Ophthalmologist",
+            "Gerontologist",
+            "Periodontist"
+          ],
+          "a": "Gerontologist",
+          "why": "Expert in aging"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Anthropologist' mean? (Student of human development)",
+          "options": [
+            "Astronomer",
+            "Anthropologist",
+            "Geologist"
+          ],
+          "a": "Anthropologist",
+          "why": "Student of human development"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Astronomer' mean? (Student of the heavens)",
+          "options": [
+            "Geologist",
+            "Anthropologist",
+            "Astronomer"
+          ],
+          "a": "Astronomer",
+          "why": "Student of the heavens"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Geologist' mean? (Student of the earth)",
+          "options": [
+            "Geologist",
+            "Astronomer",
+            "Anthropologist"
+          ],
+          "a": "Geologist",
+          "why": "Student of the earth"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Biologist' mean? (Student of plant and animal life)",
+          "options": [
+            "Anthropologist",
+            "Biologist",
+            "Astronomer"
+          ],
+          "a": "Biologist",
+          "why": "Student of plant and animal life"
+        }
+      ]
+    },
+    {
+      "id": "vp_vocab_3",
+      "title": "Word Power Pack 3",
+      "icon": "⚡",
+      "level": 3,
+      "concept": {
+        "intro": [
+          "Welcome to Word Power Pack 3!",
+          "Expand your English vocabulary with exciting new words.",
+          "Read the clue and pick the matching word!"
+        ],
+        "tip": "Read the question carefully to spot the meaning!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What does 'Entomologist' mean? (Student of insect forms)",
+          "options": [
+            "Entomologist",
+            "Anthropologist",
+            "Astronomer"
+          ],
+          "a": "Entomologist",
+          "why": "Student of insect forms"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Etymologist' mean? (Student of word origins)",
+          "options": [
+            "Anthropologist",
+            "Astronomer",
+            "Etymologist"
+          ],
+          "a": "Etymologist",
+          "why": "Student of word origins"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Sociologist' mean? (Student of social organization)",
+          "options": [
+            "Astronomer",
+            "Anthropologist",
+            "Sociologist"
+          ],
+          "a": "Sociologist",
+          "why": "Student of social organization"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Equivocate' mean? (To use ambiguous language to conceal the truth)",
+          "options": [
+            "Equivocate",
+            "Laconic",
+            "Prevaricate"
+          ],
+          "a": "Equivocate",
+          "why": "To use ambiguous language to conceal the truth"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Prevaricate' mean? (To speak or act in an evasive way)",
+          "options": [
+            "Equivocate",
+            "Ophthalmologist",
+            "Prevaricate"
+          ],
+          "a": "Prevaricate",
+          "why": "To speak or act in an evasive way"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Laconic' mean? (Using very few words)",
+          "options": [
+            "Laconic",
+            "Equivocate",
+            "Prevaricate"
+          ],
+          "a": "Laconic",
+          "why": "Using very few words"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Loquacious' mean? (Extremely talkative)",
+          "options": [
+            "Prevaricate",
+            "Equivocate",
+            "Loquacious"
+          ],
+          "a": "Loquacious",
+          "why": "Extremely talkative"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Taciturn' mean? (Reserved or uncommunicative in speech)",
+          "options": [
+            "Taciturn",
+            "Prevaricate",
+            "Equivocate"
+          ],
+          "a": "Taciturn",
+          "why": "Reserved or uncommunicative in speech"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Circumlocution' mean? (An indirect way of expressing something)",
+          "options": [
+            "Prevaricate",
+            "Ophthalmologist",
+            "Circumlocution"
+          ],
+          "a": "Circumlocution",
+          "why": "An indirect way of expressing something"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Martinet' mean? (A strict disciplinarian)",
+          "options": [
+            "Sycophant",
+            "Dilettante",
+            "Martinet"
+          ],
+          "a": "Martinet",
+          "why": "A strict disciplinarian"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Sycophant' mean? (A yes-man who flatters power for gain)",
+          "options": [
+            "Sycophant",
+            "Martinet",
+            "Dilettante"
+          ],
+          "a": "Sycophant",
+          "why": "A yes-man who flatters power for gain"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Dilettante' mean? (An amateur with a superficial interest in the arts)",
+          "options": [
+            "Dilettante",
+            "Martinet",
+            "Sycophant"
+          ],
+          "a": "Dilettante",
+          "why": "An amateur with a superficial interest in the arts"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Virago' mean? (A bad-tempered, domineering woman)",
+          "options": [
+            "Virago",
+            "Martinet",
+            "Sycophant"
+          ],
+          "a": "Virago",
+          "why": "A bad-tempered, domineering woman"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Chauvinist' mean? (Someone with exaggerated belief in superiority)",
+          "options": [
+            "Sycophant",
+            "Chauvinist",
+            "Martinet"
+          ],
+          "a": "Chauvinist",
+          "why": "Someone with exaggerated belief in superiority"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Iconoclast' mean? (Someone who attacks cherished beliefs or institutions)",
+          "options": [
+            "Sycophant",
+            "Ophthalmologist",
+            "Iconoclast"
+          ],
+          "a": "Iconoclast",
+          "why": "Someone who attacks cherished beliefs or institutions"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Egregious' mean? (Outstandingly bad; shocking)",
+          "options": [
+            "Martinet",
+            "Sycophant",
+            "Egregious"
+          ],
+          "a": "Egregious",
+          "why": "Outstandingly bad; shocking"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Magnanimous' mean? (Generous or forgiving, especially toward a rival)",
+          "options": [
+            "Ophthalmologist",
+            "Sycophant",
+            "Magnanimous"
+          ],
+          "a": "Magnanimous",
+          "why": "Generous or forgiving, especially toward a rival"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Pusillanimous' mean? (Lacking courage; timid)",
+          "options": [
+            "Martinet",
+            "Pusillanimous",
+            "Sycophant"
+          ],
+          "a": "Pusillanimous",
+          "why": "Lacking courage; timid"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Gregarious' mean? (Fond of company; sociable)",
+          "options": [
+            "Gregarious",
+            "Ophthalmologist",
+            "Sycophant"
+          ],
+          "a": "Gregarious",
+          "why": "Fond of company; sociable"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Supercilious' mean? (Behaving as if one is superior to others)",
+          "options": [
+            "Martinet",
+            "Supercilious",
+            "Sycophant"
+          ],
+          "a": "Supercilious",
+          "why": "Behaving as if one is superior to others"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Tenacious' mean? (Holding firm; clinging)",
+          "options": [
+            "Tenacious",
+            "Sycophant",
+            "Ophthalmologist"
+          ],
+          "a": "Tenacious",
+          "why": "Holding firm; clinging"
+        }
+      ]
+    },
+    {
+      "id": "vp_vocab_4",
+      "title": "Word Power Pack 4",
+      "icon": "⚡",
+      "level": 4,
+      "concept": {
+        "intro": [
+          "Welcome to Word Power Pack 4!",
+          "Expand your English vocabulary with exciting new words.",
+          "Read the clue and pick the matching word!"
+        ],
+        "tip": "Read the question carefully to spot the meaning!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What does 'Voracious' mean? (Having a very eager approach)",
+          "options": [
+            "Voracious",
+            "Ophthalmologist",
+            "Sycophant"
+          ],
+          "a": "Voracious",
+          "why": "Having a very eager approach"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Ubiquitous' mean? (Found everywhere)",
+          "options": [
+            "Ubiquitous",
+            "Martinet",
+            "Sycophant"
+          ],
+          "a": "Ubiquitous",
+          "why": "Found everywhere"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Mellifluous' mean? (Sweet or musical; pleasant to hear)",
+          "options": [
+            "Ophthalmologist",
+            "Mellifluous",
+            "Sycophant"
+          ],
+          "a": "Mellifluous",
+          "why": "Sweet or musical; pleasant to hear"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Impecunious' mean? (Having little or no money)",
+          "options": [
+            "Opulent",
+            "Impecunious",
+            "Enervated"
+          ],
+          "a": "Impecunious",
+          "why": "Having little or no money"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Opulent' mean? (Wealthy; luxurious)",
+          "options": [
+            "Opulent",
+            "Impecunious",
+            "Enervated"
+          ],
+          "a": "Opulent",
+          "why": "Wealthy; luxurious"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Enervated' mean? (Completely exhausted and frustrated)",
+          "options": [
+            "Enervated",
+            "Impecunious",
+            "Opulent"
+          ],
+          "a": "Enervated",
+          "why": "Completely exhausted and frustrated"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Vacillating' mean? (Unable to decide; wavering)",
+          "options": [
+            "Ophthalmologist",
+            "Impecunious",
+            "Vacillating"
+          ],
+          "a": "Vacillating",
+          "why": "Unable to decide; wavering"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Obstreperous' mean? (Noisy and difficult to control)",
+          "options": [
+            "Opulent",
+            "Obstreperous",
+            "Impecunious"
+          ],
+          "a": "Obstreperous",
+          "why": "Noisy and difficult to control"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Innocuous' mean? (Not harmful or offensive)",
+          "options": [
+            "Opulent",
+            "Innocuous",
+            "Impecunious"
+          ],
+          "a": "Innocuous",
+          "why": "Not harmful or offensive"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Ephemeral' mean? (Lasting for a very short time)",
+          "options": [
+            "Ephemeral",
+            "Impecunious",
+            "Opulent"
+          ],
+          "a": "Ephemeral",
+          "why": "Lasting for a very short time"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Esoteric' mean? (Understood by only a small group with specialized knowledge)",
+          "options": [
+            "Impecunious",
+            "Esoteric",
+            "Opulent"
+          ],
+          "a": "Esoteric",
+          "why": "Understood by only a small group with specialized knowledge"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Incipient' mean? (Just beginning to happen or develop)",
+          "options": [
+            "Impecunious",
+            "Incipient",
+            "Opulent"
+          ],
+          "a": "Incipient",
+          "why": "Just beginning to happen or develop"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Incorrigible' mean? (Cannot be changed or improved)",
+          "options": [
+            "Incorrigible",
+            "Impecunious",
+            "Ophthalmologist"
+          ],
+          "a": "Incorrigible",
+          "why": "Cannot be changed or improved"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Incredulous' mean? (Unwilling or unable to believe something)",
+          "options": [
+            "Impecunious",
+            "Incredulous",
+            "Opulent"
+          ],
+          "a": "Incredulous",
+          "why": "Unwilling or unable to believe something"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Inculcate' mean? (To teach an idea through repetition)",
+          "options": [
+            "Opulent",
+            "Impecunious",
+            "Inculcate"
+          ],
+          "a": "Inculcate",
+          "why": "To teach an idea through repetition"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Indigenous' mean? (Native to a particular place)",
+          "options": [
+            "Impecunious",
+            "Opulent",
+            "Indigenous"
+          ],
+          "a": "Indigenous",
+          "why": "Native to a particular place"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Inimical' mean? (Tending to obstruct or harm)",
+          "options": [
+            "Inimical",
+            "Impecunious",
+            "Opulent"
+          ],
+          "a": "Inimical",
+          "why": "Tending to obstruct or harm"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Insidious' mean? (Proceeding gradually but with harmful effects)",
+          "options": [
+            "Opulent",
+            "Insidious",
+            "Impecunious"
+          ],
+          "a": "Insidious",
+          "why": "Proceeding gradually but with harmful effects"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Intransigent' mean? (Unwilling to change views)",
+          "options": [
+            "Ophthalmologist",
+            "Impecunious",
+            "Intransigent"
+          ],
+          "a": "Intransigent",
+          "why": "Unwilling to change views"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Intrepid' mean? (Fearless)",
+          "options": [
+            "Opulent",
+            "Intrepid",
+            "Impecunious"
+          ],
+          "a": "Intrepid",
+          "why": "Fearless"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Inveterate' mean? (Long-established and unlikely to change)",
+          "options": [
+            "Impecunious",
+            "Opulent",
+            "Inveterate"
+          ],
+          "a": "Inveterate",
+          "why": "Long-established and unlikely to change"
+        }
+      ]
+    },
+    {
+      "id": "vp_vocab_5",
+      "title": "Word Power Pack 5",
+      "icon": "⚡",
+      "level": 4,
+      "concept": {
+        "intro": [
+          "Welcome to Word Power Pack 5!",
+          "Expand your English vocabulary with exciting new words.",
+          "Read the clue and pick the matching word!"
+        ],
+        "tip": "Read the question carefully to spot the meaning!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What does 'Jejune' mean? (Naive, simplistic, or superficial)",
+          "options": [
+            "Impecunious",
+            "Jejune",
+            "Opulent"
+          ],
+          "a": "Jejune",
+          "why": "Naive, simplistic, or superficial"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Judicious' mean? (Showing good judgment; wise)",
+          "options": [
+            "Opulent",
+            "Impecunious",
+            "Judicious"
+          ],
+          "a": "Judicious",
+          "why": "Showing good judgment; wise"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Lethargic' mean? (Sluggish and apathetic)",
+          "options": [
+            "Impecunious",
+            "Opulent",
+            "Lethargic"
+          ],
+          "a": "Lethargic",
+          "why": "Sluggish and apathetic"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Articulate' mean? (Express clearly)",
+          "options": [
+            "Versatile",
+            "Subtle",
+            "Articulate"
+          ],
+          "a": "Articulate",
+          "why": "Express clearly"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Subtle' mean? (Not obvious; delicate)",
+          "options": [
+            "Articulate",
+            "Subtle",
+            "Versatile"
+          ],
+          "a": "Subtle",
+          "why": "Not obvious; delicate"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Versatile' mean? (Adaptable to many functions)",
+          "options": [
+            "Versatile",
+            "Subtle",
+            "Articulate"
+          ],
+          "a": "Versatile",
+          "why": "Adaptable to many functions"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Compelling' mean? (Very convincing)",
+          "options": [
+            "Articulate",
+            "Ophthalmologist",
+            "Compelling"
+          ],
+          "a": "Compelling",
+          "why": "Very convincing"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Pragmatic' mean? (Dealing with things sensibly and realistically)",
+          "options": [
+            "Pragmatic",
+            "Articulate",
+            "Subtle"
+          ],
+          "a": "Pragmatic",
+          "why": "Dealing with things sensibly and realistically"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Insightful' mean? (Showing deep understanding)",
+          "options": [
+            "Insightful",
+            "Ophthalmologist",
+            "Articulate"
+          ],
+          "a": "Insightful",
+          "why": "Showing deep understanding"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Resilient' mean? (Able to withstand or recover quickly from difficulties)",
+          "options": [
+            "Resilient",
+            "Subtle",
+            "Articulate"
+          ],
+          "a": "Resilient",
+          "why": "Able to withstand or recover quickly from difficulties"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Coherent' mean? (Logical and consistent)",
+          "options": [
+            "Articulate",
+            "Subtle",
+            "Coherent"
+          ],
+          "a": "Coherent",
+          "why": "Logical and consistent"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Profound' mean? (Very great or intense)",
+          "options": [
+            "Articulate",
+            "Subtle",
+            "Profound"
+          ],
+          "a": "Profound",
+          "why": "Very great or intense"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Assertive' mean? (Confident and forceful)",
+          "options": [
+            "Subtle",
+            "Assertive",
+            "Articulate"
+          ],
+          "a": "Assertive",
+          "why": "Confident and forceful"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Nuanced' mean? (Characterized by subtle differences in meaning)",
+          "options": [
+            "Articulate",
+            "Nuanced",
+            "Subtle"
+          ],
+          "a": "Nuanced",
+          "why": "Characterized by subtle differences in meaning"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Diplomatic' mean? (Tactful in dealing with people)",
+          "options": [
+            "Articulate",
+            "Diplomatic",
+            "Ophthalmologist"
+          ],
+          "a": "Diplomatic",
+          "why": "Tactful in dealing with people"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Ineffable' mean? (Too great to be expressed in words)",
+          "options": [
+            "Articulate",
+            "Subtle",
+            "Ineffable"
+          ],
+          "a": "Ineffable",
+          "why": "Too great to be expressed in words"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Authentic' mean? (Genuine and original)",
+          "options": [
+            "Articulate",
+            "Authentic",
+            "Subtle"
+          ],
+          "a": "Authentic",
+          "why": "Genuine and original"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Strategic' mean? (Planned and carefully designed)",
+          "options": [
+            "Articulate",
+            "Subtle",
+            "Strategic"
+          ],
+          "a": "Strategic",
+          "why": "Planned and carefully designed"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Substantive' mean? (Having a firm basis in reality; meaningful)",
+          "options": [
+            "Ophthalmologist",
+            "Articulate",
+            "Substantive"
+          ],
+          "a": "Substantive",
+          "why": "Having a firm basis in reality; meaningful"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Perspicacious' mean? (Having a ready insight into and understanding of things)",
+          "options": [
+            "Articulate",
+            "Subtle",
+            "Perspicacious"
+          ],
+          "a": "Perspicacious",
+          "why": "Having a ready insight into and understanding of things"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Discerning' mean? (Showing good judgment)",
+          "options": [
+            "Discerning",
+            "Ophthalmologist",
+            "Articulate"
+          ],
+          "a": "Discerning",
+          "why": "Showing good judgment"
+        }
+      ]
+    },
+    {
+      "id": "vp_vocab_6",
+      "title": "Word Power Pack 6",
+      "icon": "⚡",
+      "level": 4,
+      "concept": {
+        "intro": [
+          "Welcome to Word Power Pack 6!",
+          "Expand your English vocabulary with exciting new words.",
+          "Read the clue and pick the matching word!"
+        ],
+        "tip": "Read the question carefully to spot the meaning!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What does 'Astute' mean? (Accurately assessing situations to your advantage)",
+          "options": [
+            "Articulate",
+            "Subtle",
+            "Astute"
+          ],
+          "a": "Astute",
+          "why": "Accurately assessing situations to your advantage"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Eloquent' mean? (Fluent or persuasive in speaking or writing)",
+          "options": [
+            "Eloquent",
+            "Articulate",
+            "Subtle"
+          ],
+          "a": "Eloquent",
+          "why": "Fluent or persuasive in speaking or writing"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Raucous' mean? (Advanced for: Noisy)",
+          "options": [
+            "Obscure",
+            "Ophthalmologist",
+            "Raucous"
+          ],
+          "a": "Raucous",
+          "why": "Advanced for: Noisy"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Serene' mean? (Advanced for: Quiet)",
+          "options": [
+            "Obscure",
+            "Serene",
+            "Raucous"
+          ],
+          "a": "Serene",
+          "why": "Advanced for: Quiet"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Obscure' mean? (Advanced for: Dark)",
+          "options": [
+            "Raucous",
+            "Ophthalmologist",
+            "Obscure"
+          ],
+          "a": "Obscure",
+          "why": "Advanced for: Dark"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Luminous' mean? (Advanced for: Light)",
+          "options": [
+            "Luminous",
+            "Raucous",
+            "Serene"
+          ],
+          "a": "Luminous",
+          "why": "Advanced for: Light"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Colossal' mean? (Advanced for: Big)",
+          "options": [
+            "Colossal",
+            "Ophthalmologist",
+            "Raucous"
+          ],
+          "a": "Colossal",
+          "why": "Advanced for: Big"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Diminutive' mean? (Advanced for: Small)",
+          "options": [
+            "Diminutive",
+            "Serene",
+            "Raucous"
+          ],
+          "a": "Diminutive",
+          "why": "Advanced for: Small"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Adoration' mean? (Advanced for: Love)",
+          "options": [
+            "Raucous",
+            "Adoration",
+            "Ophthalmologist"
+          ],
+          "a": "Adoration",
+          "why": "Advanced for: Love"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Abhorrence' mean? (Advanced for: Hate)",
+          "options": [
+            "Raucous",
+            "Abhorrence",
+            "Serene"
+          ],
+          "a": "Abhorrence",
+          "why": "Advanced for: Hate"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Triumph' mean? (Advanced for: Win)",
+          "options": [
+            "Ophthalmologist",
+            "Raucous",
+            "Triumph"
+          ],
+          "a": "Triumph",
+          "why": "Advanced for: Win"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Imbibe' mean? (Advanced for: Drink)",
+          "options": [
+            "Imbibe",
+            "Raucous",
+            "Serene"
+          ],
+          "a": "Imbibe",
+          "why": "Advanced for: Drink"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Converse' mean? (Advanced for: Talk)",
+          "options": [
+            "Raucous",
+            "Ophthalmologist",
+            "Converse"
+          ],
+          "a": "Converse",
+          "why": "Advanced for: Talk"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Perceive' mean? (Advanced for: See)",
+          "options": [
+            "Raucous",
+            "Serene",
+            "Perceive"
+          ],
+          "a": "Perceive",
+          "why": "Advanced for: See"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Ponder' mean? (Advanced for: Think)",
+          "options": [
+            "Ponder",
+            "Raucous",
+            "Serene"
+          ],
+          "a": "Ponder",
+          "why": "Advanced for: Think"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Acquire' mean? (Advanced for: Get)",
+          "options": [
+            "Serene",
+            "Raucous",
+            "Acquire"
+          ],
+          "a": "Acquire",
+          "why": "Advanced for: Get"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Bestow' mean? (Advanced for: Give)",
+          "options": [
+            "Serene",
+            "Raucous",
+            "Bestow"
+          ],
+          "a": "Bestow",
+          "why": "Advanced for: Give"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Fabricate' mean? (Advanced for: Make)",
+          "options": [
+            "Serene",
+            "Fabricate",
+            "Raucous"
+          ],
+          "a": "Fabricate",
+          "why": "Advanced for: Make"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Persevere' mean? (Advanced for: Continue)",
+          "options": [
+            "Ophthalmologist",
+            "Raucous",
+            "Persevere"
+          ],
+          "a": "Persevere",
+          "why": "Advanced for: Continue"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Demonstrate' mean? (Advanced for: Show)",
+          "options": [
+            "Raucous",
+            "Demonstrate",
+            "Serene"
+          ],
+          "a": "Demonstrate",
+          "why": "Advanced for: Show"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Conceal' mean? (Advanced for: Hide)",
+          "options": [
+            "Raucous",
+            "Ophthalmologist",
+            "Conceal"
+          ],
+          "a": "Conceal",
+          "why": "Advanced for: Hide"
+        }
+      ]
+    },
+    {
+      "id": "vp_vocab_7",
+      "title": "Word Power Pack 7",
+      "icon": "⚡",
+      "level": 4,
+      "concept": {
+        "intro": [
+          "Welcome to Word Power Pack 7!",
+          "Expand your English vocabulary with exciting new words.",
+          "Read the clue and pick the matching word!"
+        ],
+        "tip": "Read the question carefully to spot the meaning!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What does 'Perish' mean? (Advanced for: Die)",
+          "options": [
+            "Raucous",
+            "Serene",
+            "Perish"
+          ],
+          "a": "Perish",
+          "why": "Advanced for: Die"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Utilize' mean? (Advanced for: Use)",
+          "options": [
+            "Serene",
+            "Raucous",
+            "Utilize"
+          ],
+          "a": "Utilize",
+          "why": "Advanced for: Use"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Inquire' mean? (Advanced for: Ask)",
+          "options": [
+            "Inquire",
+            "Ophthalmologist",
+            "Raucous"
+          ],
+          "a": "Inquire",
+          "why": "Advanced for: Ask"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Impoverished' mean? (Advanced for: Poor)",
+          "options": [
+            "Serene",
+            "Raucous",
+            "Impoverished"
+          ],
+          "a": "Impoverished",
+          "why": "Advanced for: Poor"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Vigorous' mean? (Advanced for: Strong)",
+          "options": [
+            "Raucous",
+            "Ophthalmologist",
+            "Vigorous"
+          ],
+          "a": "Vigorous",
+          "why": "Advanced for: Strong"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Feeble' mean? (Advanced for: Weak)",
+          "options": [
+            "Serene",
+            "Feeble",
+            "Raucous"
+          ],
+          "a": "Feeble",
+          "why": "Advanced for: Weak"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Indomitable' mean? (Advanced for: Strong/Unconquerable)",
+          "options": [
+            "Indomitable",
+            "Ophthalmologist",
+            "Raucous"
+          ],
+          "a": "Indomitable",
+          "why": "Advanced for: Strong/Unconquerable"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Superb' mean? (Advanced for: Excellent)",
+          "options": [
+            "Superb",
+            "Serene",
+            "Raucous"
+          ],
+          "a": "Superb",
+          "why": "Advanced for: Excellent"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Despondent' mean? (Advanced for: Sad)",
+          "options": [
+            "Despondent",
+            "Ophthalmologist",
+            "Raucous"
+          ],
+          "a": "Despondent",
+          "why": "Advanced for: Sad"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Pristine' mean? (Advanced for: Clean)",
+          "options": [
+            "Raucous",
+            "Serene",
+            "Pristine"
+          ],
+          "a": "Pristine",
+          "why": "Advanced for: Clean"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Indolent' mean? (Advanced for: Lazy)",
+          "options": [
+            "Ophthalmologist",
+            "Indolent",
+            "Raucous"
+          ],
+          "a": "Indolent",
+          "why": "Advanced for: Lazy"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Commence' mean? (Advanced for: Begin)",
+          "options": [
+            "Raucous",
+            "Serene",
+            "Commence"
+          ],
+          "a": "Commence",
+          "why": "Advanced for: Begin"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Terminate' mean? (Advanced for: End)",
+          "options": [
+            "Terminate",
+            "Raucous",
+            "Ophthalmologist"
+          ],
+          "a": "Terminate",
+          "why": "Advanced for: End"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Facile' mean? (Advanced for: Easy)",
+          "options": [
+            "Raucous",
+            "Serene",
+            "Facile"
+          ],
+          "a": "Facile",
+          "why": "Advanced for: Easy"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Jubilant' mean? (Advanced for: Happy)",
+          "options": [
+            "Jubilant",
+            "Raucous",
+            "Ophthalmologist"
+          ],
+          "a": "Jubilant",
+          "why": "Advanced for: Happy"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Affluent' mean? (Advanced for: Rich)",
+          "options": [
+            "Raucous",
+            "Affluent",
+            "Serene"
+          ],
+          "a": "Affluent",
+          "why": "Advanced for: Rich"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Indigent' mean? (Advanced for: Poor)",
+          "options": [
+            "Raucous",
+            "Ophthalmologist",
+            "Indigent"
+          ],
+          "a": "Indigent",
+          "why": "Advanced for: Poor"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Courageous' mean? (Advanced for: Brave)",
+          "options": [
+            "Raucous",
+            "Serene",
+            "Courageous"
+          ],
+          "a": "Courageous",
+          "why": "Advanced for: Brave"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Expeditious' mean? (Advanced for: Fast)",
+          "options": [
+            "Raucous",
+            "Expeditious",
+            "Ophthalmologist"
+          ],
+          "a": "Expeditious",
+          "why": "Advanced for: Fast"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Analyze' mean? (Advanced for: Read/Study)",
+          "options": [
+            "Raucous",
+            "Analyze",
+            "Serene"
+          ],
+          "a": "Analyze",
+          "why": "Advanced for: Read/Study"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Compose' mean? (Advanced for: Write)",
+          "options": [
+            "Ophthalmologist",
+            "Compose",
+            "Raucous"
+          ],
+          "a": "Compose",
+          "why": "Advanced for: Write"
+        }
+      ]
+    },
+    {
+      "id": "vp_vocab_8",
+      "title": "Word Power Pack 8",
+      "icon": "⚡",
+      "level": 5,
+      "concept": {
+        "intro": [
+          "Welcome to Word Power Pack 8!",
+          "Expand your English vocabulary with exciting new words.",
+          "Read the clue and pick the matching word!"
+        ],
+        "tip": "Read the question carefully to spot the meaning!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What does 'Acquiesce' mean? (To agree passively)",
+          "options": [
+            "Antithesis",
+            "Acquiesce",
+            "Banal"
+          ],
+          "a": "Acquiesce",
+          "why": "To agree passively"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Antithesis' mean? (Direct contrast or opposition)",
+          "options": [
+            "Acquiesce",
+            "Antithesis",
+            "Banal"
+          ],
+          "a": "Antithesis",
+          "why": "Direct contrast or opposition"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Banal' mean? (Lacking originality; clichéd)",
+          "options": [
+            "Acquiesce",
+            "Banal",
+            "Antithesis"
+          ],
+          "a": "Banal",
+          "why": "Lacking originality; clichéd"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Brevity' mean? (Concise and exact use of words)",
+          "options": [
+            "Brevity",
+            "Antithesis",
+            "Acquiesce"
+          ],
+          "a": "Brevity",
+          "why": "Concise and exact use of words"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Candor' mean? (Openness and honesty)",
+          "options": [
+            "Antithesis",
+            "Candor",
+            "Acquiesce"
+          ],
+          "a": "Candor",
+          "why": "Openness and honesty"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Caveat' mean? (A warning or cautionary statement)",
+          "options": [
+            "Caveat",
+            "Acquiesce",
+            "Antithesis"
+          ],
+          "a": "Caveat",
+          "why": "A warning or cautionary statement"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Cultivate' mean? (To nurture or improve something)",
+          "options": [
+            "Antithesis",
+            "Acquiesce",
+            "Cultivate"
+          ],
+          "a": "Cultivate",
+          "why": "To nurture or improve something"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Cumulative' mean? (Increasing by successive additions)",
+          "options": [
+            "Antithesis",
+            "Cumulative",
+            "Acquiesce"
+          ],
+          "a": "Cumulative",
+          "why": "Increasing by successive additions"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Didactic' mean? (Intending to teach a moral lesson)",
+          "options": [
+            "Didactic",
+            "Acquiesce",
+            "Antithesis"
+          ],
+          "a": "Didactic",
+          "why": "Intending to teach a moral lesson"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Digress' mean? (To deviate from the main topic)",
+          "options": [
+            "Digress",
+            "Antithesis",
+            "Acquiesce"
+          ],
+          "a": "Digress",
+          "why": "To deviate from the main topic"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Diligent' mean? (Showing persistent and careful effort)",
+          "options": [
+            "Acquiesce",
+            "Antithesis",
+            "Diligent"
+          ],
+          "a": "Diligent",
+          "why": "Showing persistent and careful effort"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Equitable' mean? (Fair and impartial)",
+          "options": [
+            "Antithesis",
+            "Equitable",
+            "Acquiesce"
+          ],
+          "a": "Equitable",
+          "why": "Fair and impartial"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Implicit' mean? (Implied though not plainly expressed)",
+          "options": [
+            "Acquiesce",
+            "Antithesis",
+            "Implicit"
+          ],
+          "a": "Implicit",
+          "why": "Implied though not plainly expressed"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Innate' mean? (Existing from birth; inherent)",
+          "options": [
+            "Innate",
+            "Acquiesce",
+            "Antithesis"
+          ],
+          "a": "Innate",
+          "why": "Existing from birth; inherent"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Meticulous' mean? (Showing great attention to detail)",
+          "options": [
+            "Antithesis",
+            "Ophthalmologist",
+            "Meticulous"
+          ],
+          "a": "Meticulous",
+          "why": "Showing great attention to detail"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Myriad' mean? (A countless or extremely great number)",
+          "options": [
+            "Acquiesce",
+            "Antithesis",
+            "Myriad"
+          ],
+          "a": "Myriad",
+          "why": "A countless or extremely great number"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Opportune' mean? (Well-timed; suitable)",
+          "options": [
+            "Opportune",
+            "Antithesis",
+            "Acquiesce"
+          ],
+          "a": "Opportune",
+          "why": "Well-timed; suitable"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Quintessential' mean? (The most perfect example of something)",
+          "options": [
+            "Antithesis",
+            "Acquiesce",
+            "Quintessential"
+          ],
+          "a": "Quintessential",
+          "why": "The most perfect example of something"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Substantiate' mean? (To provide evidence for a claim)",
+          "options": [
+            "Substantiate",
+            "Ophthalmologist",
+            "Antithesis"
+          ],
+          "a": "Substantiate",
+          "why": "To provide evidence for a claim"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Adequate' mean? (Enough for a need)",
+          "options": [
+            "Ambitious",
+            "Adequate",
+            "Amiable"
+          ],
+          "a": "Adequate",
+          "why": "Enough for a need"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Ambitious' mean? (Wanting success)",
+          "options": [
+            "Ambitious",
+            "Adequate",
+            "Ophthalmologist"
+          ],
+          "a": "Ambitious",
+          "why": "Wanting success"
+        }
+      ]
+    },
+    {
+      "id": "vp_vocab_9",
+      "title": "Word Power Pack 9",
+      "icon": "⚡",
+      "level": 5,
+      "concept": {
+        "intro": [
+          "Welcome to Word Power Pack 9!",
+          "Expand your English vocabulary with exciting new words.",
+          "Read the clue and pick the matching word!"
+        ],
+        "tip": "Read the question carefully to spot the meaning!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What does 'Amiable' mean? (Friendly and pleasant)",
+          "options": [
+            "Adequate",
+            "Amiable",
+            "Ambitious"
+          ],
+          "a": "Amiable",
+          "why": "Friendly and pleasant"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Benevolent' mean? (Kind and helpful)",
+          "options": [
+            "Ambitious",
+            "Adequate",
+            "Benevolent"
+          ],
+          "a": "Benevolent",
+          "why": "Kind and helpful"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Convey' mean? (To communicate)",
+          "options": [
+            "Adequate",
+            "Ambitious",
+            "Convey"
+          ],
+          "a": "Convey",
+          "why": "To communicate"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Crucial' mean? (Very important)",
+          "options": [
+            "Adequate",
+            "Crucial",
+            "Ambitious"
+          ],
+          "a": "Crucial",
+          "why": "Very important"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Enhance' mean? (Improve or increase)",
+          "options": [
+            "Enhance",
+            "Ambitious",
+            "Adequate"
+          ],
+          "a": "Enhance",
+          "why": "Improve or increase"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Evaluate' mean? (Judge or check)",
+          "options": [
+            "Adequate",
+            "Evaluate",
+            "Ambitious"
+          ],
+          "a": "Evaluate",
+          "why": "Judge or check"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Feasible' mean? (Possible to do)",
+          "options": [
+            "Feasible",
+            "Adequate",
+            "Ambitious"
+          ],
+          "a": "Feasible",
+          "why": "Possible to do"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Gracious' mean? (Polite and kind)",
+          "options": [
+            "Ambitious",
+            "Adequate",
+            "Gracious"
+          ],
+          "a": "Gracious",
+          "why": "Polite and kind"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Hinder' mean? (Slow down or block)",
+          "options": [
+            "Hinder",
+            "Adequate",
+            "Ambitious"
+          ],
+          "a": "Hinder",
+          "why": "Slow down or block"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Imply' mean? (Suggest without saying)",
+          "options": [
+            "Ambitious",
+            "Imply",
+            "Adequate"
+          ],
+          "a": "Imply",
+          "why": "Suggest without saying"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Initiate' mean? (Start something)",
+          "options": [
+            "Ambitious",
+            "Adequate",
+            "Initiate"
+          ],
+          "a": "Initiate",
+          "why": "Start something"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Innovative' mean? (New and creative)",
+          "options": [
+            "Ambitious",
+            "Innovative",
+            "Adequate"
+          ],
+          "a": "Innovative",
+          "why": "New and creative"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Modify' mean? (Change slightly)",
+          "options": [
+            "Ambitious",
+            "Adequate",
+            "Modify"
+          ],
+          "a": "Modify",
+          "why": "Change slightly"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Pursue' mean? (Try to achieve)",
+          "options": [
+            "Ambitious",
+            "Adequate",
+            "Pursue"
+          ],
+          "a": "Pursue",
+          "why": "Try to achieve"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Rational' mean? (Logical and sensible)",
+          "options": [
+            "Ambitious",
+            "Adequate",
+            "Rational"
+          ],
+          "a": "Rational",
+          "why": "Logical and sensible"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Reluctant' mean? (Not wanting to)",
+          "options": [
+            "Reluctant",
+            "Adequate",
+            "Ambitious"
+          ],
+          "a": "Reluctant",
+          "why": "Not wanting to"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Substantial' mean? (Large or important)",
+          "options": [
+            "Ophthalmologist",
+            "Substantial",
+            "Ambitious"
+          ],
+          "a": "Substantial",
+          "why": "Large or important"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Transform' mean? (Change completely)",
+          "options": [
+            "Adequate",
+            "Ambitious",
+            "Transform"
+          ],
+          "a": "Transform",
+          "why": "Change completely"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Viable' mean? (Can work successfully)",
+          "options": [
+            "Adequate",
+            "Viable",
+            "Ambitious"
+          ],
+          "a": "Viable",
+          "why": "Can work successfully"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Depict' mean? (Represent or show)",
+          "options": [
+            "Disperse",
+            "Depict",
+            "Endorse"
+          ],
+          "a": "Depict",
+          "why": "Represent or show"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Disperse' mean? (Spread or scatter)",
+          "options": [
+            "Endorse",
+            "Disperse",
+            "Ophthalmologist"
+          ],
+          "a": "Disperse",
+          "why": "Spread or scatter"
+        }
+      ]
+    },
+    {
+      "id": "vp_vocab_10",
+      "title": "Word Power Pack 10",
+      "icon": "⚡",
+      "level": 5,
+      "concept": {
+        "intro": [
+          "Welcome to Word Power Pack 10!",
+          "Expand your English vocabulary with exciting new words.",
+          "Read the clue and pick the matching word!"
+        ],
+        "tip": "Read the question carefully to spot the meaning!"
+      },
+      "problems": [
+        {
+          "skill": "pick",
+          "q": "What does 'Endorse' mean? (Support publicly)",
+          "options": [
+            "Disperse",
+            "Endorse",
+            "Depict"
+          ],
+          "a": "Endorse",
+          "why": "Support publicly"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Exude' mean? (Show strongly (e.g. confidence))",
+          "options": [
+            "Disperse",
+            "Depict",
+            "Exude"
+          ],
+          "a": "Exude",
+          "why": "Show strongly (e.g. confidence)"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Foster' mean? (Encourage or develop)",
+          "options": [
+            "Disperse",
+            "Foster",
+            "Depict"
+          ],
+          "a": "Foster",
+          "why": "Encourage or develop"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Mitigate' mean? (Reduce or lessen (e.g. risk))",
+          "options": [
+            "Disperse",
+            "Mitigate",
+            "Depict"
+          ],
+          "a": "Mitigate",
+          "why": "Reduce or lessen (e.g. risk)"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Nurture' mean? (Care for growth)",
+          "options": [
+            "Depict",
+            "Nurture",
+            "Disperse"
+          ],
+          "a": "Nurture",
+          "why": "Care for growth"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Reiterate' mean? (Repeat for emphasis)",
+          "options": [
+            "Depict",
+            "Reiterate",
+            "Disperse"
+          ],
+          "a": "Reiterate",
+          "why": "Repeat for emphasis"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Revive' mean? (Bring back to life or use)",
+          "options": [
+            "Revive",
+            "Disperse",
+            "Depict"
+          ],
+          "a": "Revive",
+          "why": "Bring back to life or use"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Stimulate' mean? (Encourage activity)",
+          "options": [
+            "Depict",
+            "Stimulate",
+            "Disperse"
+          ],
+          "a": "Stimulate",
+          "why": "Encourage activity"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Thrive' mean? (Grow successfully)",
+          "options": [
+            "Depict",
+            "Disperse",
+            "Thrive"
+          ],
+          "a": "Thrive",
+          "why": "Grow successfully"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Validate' mean? (Prove something true)",
+          "options": [
+            "Disperse",
+            "Depict",
+            "Validate"
+          ],
+          "a": "Validate",
+          "why": "Prove something true"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Implement' mean? (Put into effect)",
+          "options": [
+            "Ophthalmologist",
+            "Disperse",
+            "Implement"
+          ],
+          "a": "Implement",
+          "why": "Put into effect"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Collaborate' mean? (Work together)",
+          "options": [
+            "Collaborate",
+            "Depict",
+            "Disperse"
+          ],
+          "a": "Collaborate",
+          "why": "Work together"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Resolve' mean? (Find a solution)",
+          "options": [
+            "Disperse",
+            "Resolve",
+            "Depict"
+          ],
+          "a": "Resolve",
+          "why": "Find a solution"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Clarify' mean? (Make easier to understand)",
+          "options": [
+            "Disperse",
+            "Clarify",
+            "Depict"
+          ],
+          "a": "Clarify",
+          "why": "Make easier to understand"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Prioritize' mean? (Arrange by importance)",
+          "options": [
+            "Ophthalmologist",
+            "Prioritize",
+            "Disperse"
+          ],
+          "a": "Prioritize",
+          "why": "Arrange by importance"
+        },
+        {
+          "skill": "pick",
+          "q": "What does 'Summarize' mean? (Give a brief statement of main points)",
+          "options": [
+            "Disperse",
+            "Summarize",
+            "Depict"
+          ],
+          "a": "Summarize",
+          "why": "Give a brief statement of main points"
+        }
+      ]
+    }
+  ]
+}

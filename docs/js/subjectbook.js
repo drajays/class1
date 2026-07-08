@@ -29,7 +29,7 @@ const SubjectBook = {
   },
 
   async loadAll() {
-    await Promise.all(['evs', 'sanskrit', 'computer'].map((s) => this.load(s)));
+    await Promise.all(['evs', 'sanskrit', 'computer', 'english_plus', 'math_challenge'].map((s) => this.load(s)));
   },
 
   async open(subject) {
@@ -92,9 +92,17 @@ const SubjectBook = {
       }
       picker.innerHTML = chs.map((c, i) => {
         const stars = Store.getLevelStars(this.playerId, this.subject, c.id);
-        const isLocked = (i > 0) && (Store.getLevelStars(this.playerId, this.subject, chs[i - 1].id) === 0);
+        let isLocked = false;
+        let lockReason = 'Complete previous chapter to unlock!';
+        if (c.reqTopic) {
+          const reqStars = Store.getLevelStars(this.playerId, 'math', c.reqTopic);
+          isLocked = reqStars < 2;
+          if (isLocked) lockReason = `Unlock with ⭐⭐ in Math Book: ${c.reqTitle || c.reqTopic}`;
+        } else {
+          isLocked = (i > 0) && (Store.getLevelStars(this.playerId, this.subject, chs[i - 1].id) === 0);
+        }
         return `
-          <button class="level-card ${stars ? 'done' : ''} ${isLocked ? 'locked' : ''}" data-id="${c.id}" data-locked="${isLocked ? '1' : ''}">
+          <button class="level-card ${stars ? 'done' : ''} ${isLocked ? 'locked' : ''}" data-id="${c.id}" data-locked="${isLocked ? '1' : ''}" data-reason="${lockReason}">
             <span class="level-emoji">${c.icon || '📘'}</span>
             <div class="level-info"><h3>${i + 1}. ${c.title}</h3><p>${(c.problems || []).length} activities</p></div>
             <span class="level-stars">${isLocked ? '🔒' : (stars ? '⭐'.repeat(stars) : '▶️')}</span>
@@ -103,9 +111,8 @@ const SubjectBook = {
       picker.querySelectorAll('.level-card').forEach((card) => {
         card.addEventListener('click', () => {
           if (card.dataset.locked === '1') {
-            Sounds.tap();
-            Speech.speak("Finish the one before first! 🐾");
-            Rewards.showToast("Finish the one before first! 🐾");
+            Sounds.wrong();
+            Rewards.showToast('🔒 ' + (card.dataset.reason || 'Complete previous chapter to unlock!'));
             return;
           }
           Sounds.tap();

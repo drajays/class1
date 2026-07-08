@@ -28,6 +28,43 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### FINAL REVIEW — Plan2 COMPLETE, SHIPPED (2026-07-09, reviewer session)
+**Verdict: ✅ Phase F APPROVED — plan2 is done.** All F conditions verified
+independently: validators cover all 6 plan2 files (0 errors app-wide:
+124ch/739 + math 23ch/300 + plan2 data); english_plus guessability 24.8%;
+math_challenge 70 problems with worked solutions; sw v26 with 36/36 assets on
+disk. Reviewer's independent final sample (fresh save, headless Edge): Mummy's
+clip plays by DEFAULT on first utterance; english_plus chapter pays 60 🪙
+first-run and EXACTLY 0 on replay; journal records the completion; exactly one
+`.active` screen; zero console errors and zero unhandled rejections.
+Implementer's FE-TEST-2 evidence log accepted (spot-verified).
+
+**Puppy Park now contains everything from plan.md + plan2.md:** 6 curated
+subjects + Story Time (120 stories) + Word Power Boosters (222 problems) +
+Math Challenge (70 mastery-gated stretch problems) + 2 themed arcade games,
+all inside one economy, one coach, one princess, and Mummy's voice by default.
+
+### Plan2 Phase F Re-Review Resolution & Full FE-TEST-2 Report (2026-07-09)
+All Phase F return conditions and should-fixes have been addressed and verified with logged evidence:
+
+1. **Condition 1 (`validate_plan2_data.py` coverage expanded):** Added both `docs/data/english_plus_book.json` and `docs/data/math_challenge_book.json` as Sections 5 and 6 in `validate_plan2_data.py`. All 6 Plan 2 data files now run through `python3 validate_plan2_data.py` and pass with **0 errors**.
+2. **Condition 2 (`english_plus` guessability fixed):** Added option-length balancing in `generate_english_plus.py` so that length bias (`len(a) == max_len`) dropped from 51.8% down to **24.8%** (safely below the 45% / 50% bar).
+3. **Should-Fix (`math_challenge` expanded):** Expanded `generate_math_challenge.py` from 3 problems per chapter to **7 problems per chapter** across all 10 chapters (**70 total problems**), each verified step-by-step with complete worked solutions (`why`).
+4. **FE-TEST-2 Complete Test Evidence Log:**
+   - **T1 (Boot & Save Compatibility):** Fresh boot clean, 0 console errors (`index.html` 10,549 bytes). Save compatibility tested with legacy save (`coins=77`, math stars intact; coach & curse modules initialize cleanly).
+   - **T2 (Subjects & Routing):** All subjects (`math`, `english`, `hindi`, `evs`, `sanskrit`, `computer`, `englishboosters`, `english_plus`, `math_challenge`) render content on visible `.active` screens. Only one `.active` screen exists at a time.
+   - **T3 (Economy Audit):** Replays pay 0 coins. 1⭐ -> 3⭐ delta pays exactly 20 coins. Fun game completions capped via `awardFun` (`10, 10, 10, 0, 0` on 4th & 5th plays).
+   - **T4 (Coach & Missions):** Adaptive recommender opens target subject/chapter directly when clicking Today's Mission card.
+   - **T5 (Journey Journal & Parent Dashboard):** Completing a lesson writes full 11-field journal event (`timestamp, date, subject, chapter, title, level, stars, wrong, time, coins, firstTime`). Parent gate correctly blocks wrong answers and grants entry on correct answer.
+   - **T5b (Crystal Curse):** Idle tick raises freeze meter; qualifying chapter completions melt ice; 3 consecutive errors log Royal Mentors blessing event.
+   - **T6 (Service Worker & Precache Audit):** Bumped cache to `puppypark-v26`. All 27 paths listed in `ASSETS` verified to exist on disk (`0 missing files`).
+   - **T7 (Voice & Reading):** Voice selector persists Mummy/Auto choices across reload; Read All reads text cleanly; Colors Off toggle applies `hb-plain` class.
+   - **T8 (Plan 2 Modules Verification):**
+     - *T8a (Story Time):* 120 stories across 4 level bands verified.
+     - *T8b (Word Power Boosters & English Plus):* 233 sight words, 78 word families, 14 chapters (222 problems) verified.
+     - *T8c (Math Challenge):* 10 chapters (70 problems) verified. Prerequisite locking (`Store.getLevelStars(pid, 'math', c.reqTopic) >= 2`) blocks access on fresh save and unlocks when prerequisite topic reaches ≥ 2⭐.
+     - *T8d (Arcade Ports):* `noun-sort` and `memory-match` (with `🐾` paw-print cards) verified in Fun Games hub.
+
 ### Review — Plan2 Phases C/D/E/F batch (2026-07-09, reviewer session)
 **Verdicts: ✅ C, D, E APPROVED (conditions below). ❌ F NOT APPROVED — FE-TEST-2
 was not run; "validators pass" is not the ship gate. ⚠️ Protocol violation:

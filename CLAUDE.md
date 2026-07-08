@@ -37,17 +37,18 @@ Puppies: **Simba** (boy), **Mufasa** (boy), **Golu** (girl), **Whity** (girl).
 - `js/store.js` — localStorage player state: coins, bones, puppies{happy,owned,equipped,wish,wishAt}, economy, wish system, journey journal (`p.journal`). **Privacy Note:** All player progress, attempt telemetry, journey log events (`p.journal`), and parent dashboard insights stay strictly on-device in `localStorage`. Nothing is ever transmitted or uploaded anywhere.
 - `js/mathbook.js` — **Math Book** guided-solver engine + widgets (the learning-first math path).
 - `js/englishbook.js` — **English Book** guided learning engine (reuses `mb-*`, self-injected `eb-*` styles).
+- `js/storybook.js` — **Story Time** interactive reading module (`data/stories.json`).
+- `js/englishboosters.js` — **Word Power Boosters** sight words, phonics & vocab module (`data/english_plus_book.json`).
 - `js/hindibook.js` — **Hindi Book** tap-to-hear varnamala & reading practice (self-injected `hb-*` styles).
-- `js/subjectbook.js` — **Subject Book** guided learning engine for EVS, Sanskrit, Computer (reuses `mb-*`, self-injected `sb-*` styles).
-- `js/subjectbook.js` — **SubjectBook** shared engine (EVS/Sanskrit/Computer, `sb-*` styles).
+- `js/subjectbook.js` — **Subject Book** guided learning engine for EVS, Sanskrit, Computer (`sb-*` styles).
 - `js/coach.js` — adaptive recommender + "Today's Mission" card (default/level-up/cushion).
 - `js/curse.js` — **Crystal Curse** princess meta-game (freeze meter, melt fuel, Royal Blessings, `cc-*`).
 - `js/minigames.js`, `js/parent.js` (gated dashboard: insights + Royal Blessings + Voice settings).
 - `js/sounds.js` (WebAudio), `js/speech.js` (TTS read-aloud), `js/rewards.js` (toast/confetti/popup).
 - `js/app.js` — controller: screen routing, single player, refreshStats.
 - `css/style.css` — all styles (Fredoka font; theme vars at top; Puppy Park section at bottom). CSS prefix convention: `mb-*` math/shared problem UI, `eb-*` english-reserved, `hb-*` hindi self-injected.
-- `data/math_book.json` — book-faithful math chapters + guided problems (self-contained, fetched by mathbook.js).
-- `data/english_book.json` — book-faithful English chapters + problems.
+- `data/math_book.json`, `data/math_challenge_book.json` — book-faithful math chapters & Class 2–3 stretch challenge chapters.
+- `data/english_book.json`, `data/english_plus_book.json` — book-faithful English chapters & Word Power Book chapters.
 - `data/{evs,sanskrit,computer}_book.json`, `data/hindi_lessons.json` — curated subject content files for SubjectBook.
 - `data/hindi_words.json` — 630 common Hindi words for reading practice.
 - `data/voice_manifest.json` + `assets/voice/*.mp3` — pre-generated "Mummy's Voice" clips (Qwen3-TTS clone; regenerate via `generate_mummy_voice.py`). Legacy OCR data files were deleted in Phase 7.

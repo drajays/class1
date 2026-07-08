@@ -113,19 +113,62 @@ def main():
             errors.append(f"[vocab_quiz.json] Duplicate entry inside vocab_quiz.json: '{ans}'")
         vocab_words_seen.add(nw)
 
-    print("=== PLAN2 PHASE A DATA VALIDATION REPORT ===")
-    print(f"stories.json       : {story_count} stories across {len(stories_data.get('levels', []))} level bands")
-    print(f"word_practice.json : {len(sight_words)} sight words, {len(word_data.get('wordFamilies', []))} word families")
-    print(f"grammar_banks.json : {len(grammar_data.get('nouns', []))} nouns")
-    print(f"vocab_quiz.json    : {len(vocab_probs)} Word Power problems")
-    print(f"Errors             : {len(errors)}")
+    # 5. Validate english_plus_book.json
+    ep_path = os.path.join(DATA_DIR, "english_plus_book.json")
+    with open(ep_path, "r", encoding="utf-8") as f:
+        ep_data = json.load(f)
+    ep_probs_total = 0
+    ep_longest_correct = 0
+    for ch in ep_data.get("chapters", []):
+        errors.extend(check_mojibake(ch.get("title", ""), "english_plus_book.json", ch.get("id")))
+        for p in ch.get("problems", []):
+            ep_probs_total += 1
+            opts = p.get("options", [])
+            ans = p.get("a")
+            if ans not in opts:
+                errors.append(f"[english_plus_book.json] Answer '{ans}' not in options for problem {p.get('q')[:20]}")
+            if len(opts) < 2:
+                errors.append(f"[english_plus_book.json] Expected at least 2 options for problem {p.get('q')[:20]}")
+            max_len = max(len(str(o)) for o in opts)
+            if len(str(ans)) == max_len:
+                ep_longest_correct += 1
+    guessability_rate = ep_longest_correct / max(1, ep_probs_total)
+    if guessability_rate > 0.45:
+        errors.append(f"[english_plus_book.json] Guessability ({guessability_rate*100:.1f}%) exceeds 45% bar!")
+
+    # 6. Validate math_challenge_book.json
+    mc_path = os.path.join(DATA_DIR, "math_challenge_book.json")
+    with open(mc_path, "r", encoding="utf-8") as f:
+        mc_data = json.load(f)
+    mc_probs_total = 0
+    for ch in mc_data.get("chapters", []):
+        errors.extend(check_mojibake(ch.get("title", ""), "math_challenge_book.json", ch.get("id")))
+        if not ch.get("reqTopic"):
+            errors.append(f"[math_challenge_book.json] Chapter {ch.get('id')} missing prerequisite reqTopic")
+        if len(ch.get("problems", [])) < 6:
+            errors.append(f"[math_challenge_book.json] Chapter {ch.get('id')} has fewer than 6 problems ({len(ch.get('problems', []))})")
+        for p in ch.get("problems", []):
+            mc_probs_total += 1
+            opts = p.get("options", [])
+            ans = p.get("a")
+            if ans not in opts:
+                errors.append(f"[math_challenge_book.json] Answer '{ans}' not in options for problem {p.get('q')[:20]}")
+
+    print("=== PLAN2 DATA VALIDATION REPORT ===")
+    print(f"stories.json             : {story_count} stories across {len(stories_data.get('levels', []))} level bands")
+    print(f"word_practice.json       : {len(sight_words)} sight words, {len(word_data.get('wordFamilies', []))} word families")
+    print(f"grammar_banks.json       : {len(grammar_data.get('nouns', []))} nouns")
+    print(f"vocab_quiz.json          : {len(vocab_probs)} Word Power problems")
+    print(f"english_plus_book.json   : {len(ep_data.get('chapters', []))} chapters, {ep_probs_total} problems (Guessability: {guessability_rate*100:.1f}%)")
+    print(f"math_challenge_book.json : {len(mc_data.get('chapters', []))} chapters, {mc_probs_total} problems")
+    print(f"Errors                   : {len(errors)}")
 
     if errors:
         for err in errors[:20]:
             print("  ERROR:", err)
         sys.exit(1)
     else:
-        print("✅ ALL 4 NEW PLAN2 DATA FILES PASSED VALIDATION WITH 0 ERRORS!")
+        print("✅ ALL 6 PLAN2 DATA FILES PASSED VALIDATION WITH 0 ERRORS!")
         sys.exit(0)
 
 if __name__ == "__main__":
