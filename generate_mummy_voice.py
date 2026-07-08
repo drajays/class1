@@ -60,15 +60,22 @@ def collect():
                 t = (t or '').strip()
                 if len(t) > 3:
                     corpus.append((h8(t), t, 'hi' if is_devanagari(t) else 'en'))
-    try:
-        sd = json.loads((ROOT / 'docs/data/stories.json').read_text())
-        for band in sd.get('levels', []):
-            for st in band.get('stories', []):
-                t = (st.get('text') or '').strip()
-                if len(t) > 3:
-                    corpus.append((h8(t), t, 'hi' if is_devanagari(t) else 'en'))
-    except Exception as e:
-        print('stories harvest skipped:', e)
+    # TIER POLICY (user directive: impact-per-KB):
+    #  T1 UI/praise/coach/princess lines — always (heard constantly, tiny).
+    #  T2 chapter intros + tips — always (first impression, short).
+    #  T3 full story texts — ONLY with --stories (long clips, TTS is fine there).
+    if '--stories' in sys.argv:
+        try:
+            sd = json.loads((ROOT / 'docs/data/stories.json').read_text())
+            for band in sd.get('levels', []):
+                for st in band.get('stories', []):
+                    t = (st.get('text') or '').strip()
+                    if len(t) > 3:
+                        corpus.append((h8(t), t, 'hi' if is_devanagari(t) else 'en'))
+        except Exception as e:
+            print('stories harvest skipped:', e)
+    # storage guard: skip very long strings (big clips, low impact-per-KB)
+    corpus = [c for c in corpus if len(c[1]) <= 320]
     for t in UI_LINES:
         corpus.append((h8(t), t, 'en'))
     seen, out = set(), []
