@@ -19,7 +19,7 @@ REF = '/Users/dr.ajayshukla/voice_clone/gargi1_converted_ref.wav'
 PY = '/Users/dr.ajayshukla/voice_clone/qwen_env/bin/python'
 
 BOOKS = ['math_book', 'english_book', 'evs_book', 'sanskrit_book',
-         'computer_book', 'hindi_lessons']
+         'computer_book', 'hindi_lessons', 'english_plus_book', 'math_challenge_book']
 
 UI_LINES = [
     "Hello Advaita! Let's learn something new!",
@@ -60,6 +60,15 @@ def collect():
                 t = (t or '').strip()
                 if len(t) > 3:
                     corpus.append((h8(t), t, 'hi' if is_devanagari(t) else 'en'))
+    try:
+        sd = json.loads((ROOT / 'docs/data/stories.json').read_text())
+        for band in sd.get('levels', []):
+            for st in band.get('stories', []):
+                t = (st.get('text') or '').strip()
+                if len(t) > 3:
+                    corpus.append((h8(t), t, 'hi' if is_devanagari(t) else 'en'))
+    except Exception as e:
+        print('stories harvest skipped:', e)
     for t in UI_LINES:
         corpus.append((h8(t), t, 'en'))
     seen, out = set(), []
