@@ -149,6 +149,7 @@ const SubjectBook = {
         ${tipText ? `<div class="sb-tip-box">💡 <b>Memory Tip:</b><br>${this.tappable(tipText)}</div>` : ''}
         <div>
           <button class="sb-saybtn read" id="sb-readme">🔊 Read to me</button>
+          <button class="sb-saybtn say speech-pause-btn" id="sb-pauseme" style="background:#ECC94B; color:#744210;">⏸️ Pause Voice</button>
           <button class="sb-saybtn say" id="sb-sayit">🎤 Say it with me!</button>
         </div>
         <button class="btn-fun green btn-big" id="sb-start" style="margin-top:16px">Let's Play! ▶️</button>
@@ -156,6 +157,7 @@ const SubjectBook = {
 
     this.wireWordTaps(area, lang);
     document.getElementById('sb-readme')?.addEventListener('click', () => Speech.speak(introText + '. ' + tipText, 0.85, lang));
+    document.getElementById('sb-pauseme')?.addEventListener('click', () => { Sounds.tap(); Speech.togglePause(); });
     document.getElementById('sb-sayit')?.addEventListener('click', () => {
       Rewards.showToast('Your turn! Say it out loud 🗣️');
       Speech.speak(introText, 0.85, lang);

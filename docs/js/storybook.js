@@ -200,6 +200,7 @@ const StoryBook = {
             </div>
             <div class="st-reader-actions">
               <button class="st-btn st-btn-accent" id="st-read-all">▶️ Read All to Me</button>
+              <button class="st-btn speech-pause-btn" id="st-pause-btn" style="background:#ECC94B; color:#744210;">⏸️ Pause Voice</button>
               <button class="st-btn st-btn-mic" id="st-read-aloud">🎙️ Read Aloud to Simba</button>
             </div>
           </div>
@@ -239,6 +240,10 @@ const StoryBook = {
     document.getElementById('st-read-all')?.addEventListener('click', () => {
       Sounds.tap();
       Speech.speak(st.text);
+    });
+    document.getElementById('st-pause-btn')?.addEventListener('click', () => {
+      Sounds.tap();
+      Speech.togglePause();
     });
 
     document.getElementById('st-read-aloud')?.addEventListener('click', async () => {

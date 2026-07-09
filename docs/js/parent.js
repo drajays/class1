@@ -96,6 +96,13 @@ const Parent = {
       Store.setVoicePref('colors', !(Store.getVoicePrefs().colors !== false));
       paint();
     });
+    const symBtn = document.getElementById('vp-skip-sym');
+    const paintSym = () => { if (symBtn) symBtn.textContent = Store.getVoicePrefs().skipSymbols === false ? 'Off' : 'On'; };
+    paintSym();
+    symBtn?.addEventListener('click', () => {
+      Store.setVoicePref('skipSymbols', Store.getVoicePrefs().skipSymbols === false);
+      paintSym();
+    });
   },
 
   close() {
@@ -248,6 +255,8 @@ const Parent = {
           </select>
           <label style="margin-left:12px">🌈 Colors</label>
           <button class="btn-fun orange btn-sm" id="vp-colors"></button></div>
+        <div class="vp-row" style="margin-top:8px;"><label style="flex:1">🚫 Read text only (skip emojis/symbols)</label>
+          <button class="btn-fun green btn-sm" id="vp-skip-sym"></button></div>
         <p class="parent-sub" id="vp-hi-note" style="display:none">No Hindi voice on this device — roman fallback will be used.</p>
       </div>
 

@@ -66,7 +66,64 @@ const Speech = {
     }
   },
 
+  cleanText(text) {
+    if (text == null) return '';
+    let str = String(text);
+    const prefs = this.prefs();
+    if (prefs.skipSymbols === false) return str;
+    str = str.replace(/[\u{1F300}-\u{1FAD6}\u{1F600}-\u{1F64F}\u{1F680}-\u{1F6FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F900}-\u{1F9FF}\u{1F1E6}-\u{1F1FF}\u{1F201}-\u{1F251}\u{1F004}\u{1F0CF}\u{1F170}-\u{1F171}\u{1F17E}-\u{1F17F}\u{1F18E}\u{3030}\u{2B50}\u{2B55}\u{2934}-\u{2935}\u{2B05}-\u{2B07}\u{2B1B}-\u{2B1C}\u{3297}\u{3299}\u{303D}\u{00A9}\u{00AE}\u{2122}\u{23F3}\u{24C2}\u{23E9}-\u{23EF}\u{25B6}\u{23F8}-\u{23FA}\u{FE0F}]/gu, '');
+    str = str.replace(/([|*#@~^=_-]){2,}/g, '');
+    str = str.replace(/\s+/g, ' ').trim();
+    return str;
+  },
+
+  _paused: false,
+
+  pause() {
+    this._paused = true;
+    if (this._audio && !this._audio.paused) {
+      try { this._audio.pause(); } catch { /* */ }
+    }
+    if (window.speechSynthesis && (speechSynthesis.speaking || speechSynthesis.pending)) {
+      try { speechSynthesis.pause(); } catch { /* */ }
+    }
+    this.updateUI();
+  },
+
+  resume() {
+    this._paused = false;
+    if (this._audio && this._audio.paused && this._audio.src) {
+      try { this._audio.play(); } catch { /* */ }
+    }
+    if (window.speechSynthesis && speechSynthesis.paused) {
+      try { speechSynthesis.resume(); } catch { /* */ }
+    }
+    this.updateUI();
+  },
+
+  togglePause() {
+    if (this.isPaused()) {
+      this.resume();
+    } else {
+      this.pause();
+    }
+  },
+
+  isPaused() {
+    return this._paused || (window.speechSynthesis && speechSynthesis.paused);
+  },
+
+  updateUI() {
+    const paused = this.isPaused();
+    document.querySelectorAll('.speech-pause-btn').forEach((btn) => {
+      btn.innerHTML = paused ? '▶️ Play Voice' : '⏸️ Pause Voice';
+      btn.title = paused ? 'Resume voice' : 'Pause voice';
+    });
+  },
+
   speak(text, rate = 0.85, lang = 'en-IN') {
+    this._paused = false;
+    this.updateUI();
     this._speakToken = (this._speakToken || 0) + 1;
     const token = this._speakToken;
     const prefs = this.prefs();
@@ -103,6 +160,9 @@ const Speech = {
   },
 
   _tts(text, rate, lang, prefs = {}, token = null) {
+    const cleaned = this.cleanText(text);
+    if (!cleaned.trim()) return;
+    text = cleaned;
     if (!window.speechSynthesis) {
       this._debugLog('⛔ blocked', 'no speechSynthesis');
       return;
@@ -153,8 +213,10 @@ const Speech = {
   },
 
   stop() {
+    this._paused = false;
     if (window.speechSynthesis) speechSynthesis.cancel();
     if (this._audio) { try { this._audio.pause(); } catch { /* */ } }
+    this.updateUI();
   },
 
   speakWord(word) {

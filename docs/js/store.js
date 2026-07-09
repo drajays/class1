@@ -279,6 +279,7 @@ const Store = {
     // '' means the user explicitly chose the normal/auto voice in-app.
     if (p.enVoice === undefined) p.enVoice = '__mummy__';
     if (p.hiVoice === undefined) p.hiVoice = '__mummy__';
+    if (p.skipSymbols === undefined) p.skipSymbols = true;
     return p;
   },
 

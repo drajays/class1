@@ -28,6 +28,16 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### FEATURE — Universal Voice Pause/Play & Parent Symbol-Skip Setting (2026-07-09, implementer)
+1. **Universal Voice Pause/Play (`speech.js` + UI across screens):**
+   - Added `Speech.pause()`, `Speech.resume()`, `Speech.togglePause()`, and state tracking (`_paused`) supporting both Mummy audio clips (`Audio`) and browser TTS (`SpeechSynthesis`).
+   - Added a global **`⏸️` / `▶️` Pause Voice button** in the top navigation bar (`#btn-voice-pause`) so speech can be paused/resumed on any screen.
+   - Added dedicated **`⏸️ Pause Voice`** buttons beside `▶️ Read All to Me` / `🔊 Read to me` controls in **Story Time** (`storybook.js`), **Subject Book** (`subjectbook.js` — English Plus, Hindi lessons, EVS, Sanskrit, Computer), **Math Challenge** (`mathbook.js`), **English Book** (`englishbook.js`), and **Hindi Practice** (`hindibook.js`).
+2. **Parent Setting — Skip Emojis & Symbols in Speech (`speech.js` + `parent.js`):**
+   - Added `Speech.cleanText(text)` which filters out emojis, pictorial Unicode clues (`🌟`, `🏙️`, `👦`, etc.), variation selectors (`\uFE0F`), and decorative ASCII lines before speaking via TTS.
+   - Added toggle setting **"🚫 Read text only (skip emojis/symbols)"** in the Parent Dashboard (`parent.js`, stored in `Store.getVoicePrefs().skipSymbols`, default ON).
+3. **Verification:** Automated unit tests verify `cleanText` symbol filtering and `togglePause` state changes. Bumped Service Worker cache to `puppypark-v31`.
+
 ### Hindi Mummy voice RESTORED (user reversal) (2026-07-09, reviewer-as-implementer)
 User re-listened and ruled the clone's Devanagari voice IS okay (better than
 the default). Reverted 920e449: all 80 Devanagari clips + manifest entries

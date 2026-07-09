@@ -110,7 +110,7 @@ const MathBook = {
       <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
       <p class="mb-count">Problem ${this.idx + 1} of ${total}</p>
       <div class="mb-problem">
-        <p class="mb-q">${this.esc(p.q)} <button class="mb-read" id="mb-read" title="Read all">▶️ Read All</button></p>
+        <p class="mb-q">${this.esc(p.q)} <button class="mb-read" id="mb-read" title="Read all">▶️ Read All</button> <button class="mb-read speech-pause-btn" id="mb-pause" title="Pause voice" style="background:#ECC94B; color:#744210;">⏸️ Pause</button></p>
         <div class="mb-visual" id="mb-visual">${this.visual(p)}</div>
         <div class="mb-options" id="mb-options">
           ${opts.map((o) => `<button class="mb-opt" data-v="${this.esc(o)}">${this.esc(o)}</button>`).join('')}
@@ -120,6 +120,7 @@ const MathBook = {
       </div>`;
 
     document.getElementById('mb-read').addEventListener('click', () => Speech.speak(this.say(p) + (opts && opts.length ? '. Is it ' + opts.join(', or ') + '?' : '')));
+    document.getElementById('mb-pause')?.addEventListener('click', () => { Sounds.tap(); Speech.togglePause(); });
     document.getElementById('mb-help').addEventListener('click', () => { this.usedHelp = true; this.showSolution(p); });
     area.querySelectorAll('.mb-opt').forEach((b) =>
       b.addEventListener('click', () => this.answer(b.dataset.v, p, b)));

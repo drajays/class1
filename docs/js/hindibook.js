@@ -258,7 +258,10 @@ const HindiBook = {
     panel.innerHTML = `
       <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${(this.pi / this.pq.length) * 100}%"></div></div>
       <p class="hb-sub">सुनो — सही ${isWord ? 'चित्र' : 'अक्षर'} पर छूओ! (${this.pi + 1}/${this.pq.length})</p>
-      <div class="hb-listen"><button class="btn-fun blue btn-big" id="hb-replay">🔊 फिर से सुनो</button></div>
+      <div class="hb-listen">
+        <button class="btn-fun blue btn-big" id="hb-replay">🔊 फिर से सुनो</button>
+        <button class="btn-fun ghost speech-pause-btn" id="hb-pause" style="margin-left:8px;">⏸️ Pause</button>
+      </div>
       <div class="hb-grid hb-optgrid">
         ${opts.map((o) => `<button class="hb-card hb-opt" data-dev="${o.dev}">
           ${isWord ? `<span class="hb-emoji">${o.emoji}</span>` : `<span class="hb-dev">${o.dev}</span>`}
@@ -266,6 +269,7 @@ const HindiBook = {
       </div>
       <button class="btn-fun ghost hb-quit">⬅️ वापस</button>`;
     document.getElementById('hb-replay').addEventListener('click', () => { Sounds.tap(); this.say(item.dev, item.r); });
+    document.getElementById('hb-pause')?.addEventListener('click', () => { Sounds.tap(); Speech.togglePause(); });
     panel.querySelector('.hb-quit').addEventListener('click', () => { Sounds.tap(); this.render(); });
     panel.querySelectorAll('.hb-opt').forEach((b) =>
       b.addEventListener('click', () => this.answerPractice(b, item)));

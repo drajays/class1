@@ -17,6 +17,7 @@ const App = {
     document.getElementById('btn-mall')?.addEventListener('click', () => { Sounds.tap(); this.go('mall'); });
     document.getElementById('btn-daily')?.addEventListener('click', () => this.claimDaily());
     document.getElementById('btn-mummy-voice')?.addEventListener('click', () => this.toggleMummyVoice());
+    document.getElementById('btn-voice-pause')?.addEventListener('click', () => { Sounds.tap(); Speech.togglePause(); });
     document.getElementById('btn-sound')?.addEventListener('click', () => {
       const on = Sounds.toggle();
       Rewards.showToast(on ? '🔊 Sounds on!' : '🔇 Sounds off');

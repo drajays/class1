@@ -133,12 +133,14 @@ const EnglishBook = {
         ${c.examples ? `<p class="eb-pic">${c.examples}</p>` : ''}
         <div>
           <button class="eb-saybtn read" id="eb-readme">🔊 Read to me</button>
+          <button class="eb-saybtn say speech-pause-btn" id="eb-pauseme" style="background:#ECC94B; color:#744210;">⏸️ Pause Voice</button>
           <button class="eb-saybtn say" id="eb-sayit">🎤 Say it with me!</button>
         </div>
         <button class="btn-fun green btn-big" id="eb-start" style="margin-top:14px">Let's Play! ▶️</button>
       </div>`;
     this.wireWordTaps(area);
     document.getElementById('eb-readme').addEventListener('click', () => Speech.speak(c.concept));
+    document.getElementById('eb-pauseme')?.addEventListener('click', () => { Sounds.tap(); Speech.togglePause(); });
     document.getElementById('eb-sayit').addEventListener('click', () => {
       Rewards.showToast('Your turn! Say it out loud 🗣️');
       Speech.speak(c.concept);
