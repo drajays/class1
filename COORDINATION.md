@@ -28,6 +28,14 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### BUGFIX — Synchronous Voice Playback for iOS/Mobile & Inner Panels (v32) (2026-07-09, implementer)
+- **Problem:** Mummy voice clips and fallback TTS were silent on inner panels / interactive buttons (only playing the metallic click sound). This occurred because `_clipOrTTS` was `async` (`await loadManifest()` and `await crypto.subtle.digest('SHA-1', ...)`), causing execution to leave the synchronous user gesture before triggering `audio.play()` or `speechSynthesis.speak()`. Furthermore, fallback TTS waited an extra 90ms timer (`setTimeout`). Mobile browsers like iOS Safari block programmatic audio/TTS playback outside a synchronous user click gesture.
+- **Fix (`speech.js`):**
+  - Added pure-JS `Speech.sha8Sync(str)` for instantaneous, synchronous SHA-1 hash lookups matching OpenSSL/WebCrypto exact output.
+  - Updated `Speech.speak(text)` to look up `voice_manifest.json` entries synchronously. When a clip exists, `a.muted = false; a.play()` is invoked directly inside the synchronous click gesture.
+  - When no clip exists (or for dynamic text/options), `_tts()` is invoked immediately and calls `speechSynthesis.speak(u)` synchronously inside the click gesture without artificial delays.
+- **Service Worker:** Bumped cache version to `puppypark-v32` in `sw.js`.
+
 ### FEATURE — Universal Voice Pause/Play & Parent Symbol-Skip Setting (2026-07-09, implementer)
 1. **Universal Voice Pause/Play (`speech.js` + UI across screens):**
    - Added `Speech.pause()`, `Speech.resume()`, `Speech.togglePause()`, and state tracking (`_paused`) supporting both Mummy audio clips (`Audio`) and browser TTS (`SpeechSynthesis`).

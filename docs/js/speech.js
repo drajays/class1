@@ -35,11 +35,16 @@ const Speech = {
         if (pr && pr.catch) pr.catch(() => {});
         setTimeout(() => { try { this._audio.pause(); this._audio.muted = false; } catch { /* */ } }, 60);
       } catch { /* */ }
-      try { if (window.speechSynthesis) { speechSynthesis.resume(); speechSynthesis.getVoices(); } } catch { /* */ }
+      try {
+        if (window.speechSynthesis) {
+          speechSynthesis.resume();
+          speechSynthesis.getVoices();
+        }
+      } catch { /* */ }
     };
     document.addEventListener('pointerdown', unlock, { once: true, capture: true });
     document.addEventListener('touchstart', unlock, { once: true, capture: true });
-    this.loadManifest(); // warm the manifest so speak() awaits less
+    this.loadManifest();
   },
 
   async loadManifest() {
@@ -53,9 +58,58 @@ const Speech = {
     return this._manifest;
   },
 
+  sha8Sync(str) {
+    function encodeUTF8(s) {
+      const utf8 = [];
+      for (let i = 0; i < s.length; i++) {
+        let charcode = s.charCodeAt(i);
+        if (charcode < 0x80) utf8.push(charcode);
+        else if (charcode < 0x800) {
+          utf8.push(0xc0 | (charcode >> 6), 0x80 | (charcode & 0x3f));
+        } else if (charcode < 0xd800 || charcode >= 0xe000) {
+          utf8.push(0xe0 | (charcode >> 12), 0x80 | ((charcode >> 6) & 0x3f), 0x80 | (charcode & 0x3f));
+        } else {
+          i++;
+          charcode = 0x10000 + (((charcode & 0x3ff) << 10) | (s.charCodeAt(i) & 0x3ff));
+          utf8.push(0xf0 | (charcode >> 18), 0x80 | ((charcode >> 12) & 0x3f), 0x80 | ((charcode >> 6) & 0x3f), 0x80 | (charcode & 0x3f));
+        }
+      }
+      return utf8;
+    }
+    const msg = encodeUTF8(str);
+    const len = msg.length * 8;
+    msg.push(0x80);
+    while ((msg.length % 64) !== 56) msg.push(0);
+    msg.push(0, 0, 0, 0, (len >>> 24) & 0xff, (len >>> 16) & 0xff, (len >>> 8) & 0xff, len & 0xff);
+    const words = [];
+    for (let i = 0; i < msg.length; i += 4) {
+      words.push((msg[i] << 24) | (msg[i+1] << 16) | (msg[i+2] << 8) | msg[i+3]);
+    }
+    let h0 = 0x67452301, h1 = 0xEFCDAB89, h2 = 0x98BADCFE, h3 = 0x10325476, h4 = 0xC3D2E1F0;
+    function rotl(n, s) { return (n << s) | (n >>> (32 - s)); }
+    for (let i = 0; i < words.length; i += 16) {
+      const w = words.slice(i, i + 16);
+      for (let j = 16; j < 80; j++) {
+        w[j] = rotl(w[j-3] ^ w[j-8] ^ w[j-14] ^ w[j-16], 1);
+      }
+      let a = h0, b = h1, c = h2, d = h3, e = h4;
+      for (let j = 0; j < 80; j++) {
+        let f, k;
+        if (j < 20) { f = (b & c) | ((~b) & d); k = 0x5A827999; }
+        else if (j < 40) { f = b ^ c ^ d; k = 0x6ED9EBA1; }
+        else if (j < 60) { f = (b & c) | (b & d) | (c & d); k = 0x8F1BBCDC; }
+        else { f = b ^ c ^ d; k = 0xCA62C1D6; }
+        const temp = (rotl(a, 5) + f + e + k + w[j]) >>> 0;
+        e = d; d = c; c = rotl(b, 30) >>> 0; b = a; a = temp;
+      }
+      h0 = (h0 + a) >>> 0; h1 = (h1 + b) >>> 0; h2 = (h2 + c) >>> 0; h3 = (h3 + d) >>> 0; h4 = (h4 + e) >>> 0;
+    }
+    const hex = [h0, h1].map(x => ('00000000' + (x >>> 0).toString(16)).slice(-8)).join('');
+    return hex.slice(0, 8);
+  },
+
   async _sha8(text) {
-    const buf = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(text));
-    return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 8);
+    return this.sha8Sync(String(text));
   },
 
   prefs() {
@@ -129,34 +183,53 @@ const Speech = {
     const prefs = this.prefs();
     if (prefs.rate) rate = prefs.rate;
     const wantName = lang.startsWith('hi') ? prefs.hiVoice : prefs.enVoice;
+
     if (wantName === '__mummy__') {
-      this._clipOrTTS(text, rate, lang, prefs, token);
-      return;
+      if (this._manifest !== null) {
+        const h = this.sha8Sync(String(text));
+        if (this._manifest[h]) {
+          if (window.speechSynthesis && (speechSynthesis.speaking || speechSynthesis.pending)) {
+            speechSynthesis.cancel();
+          }
+          this.init();
+          const a = this._audio;
+          try { a.pause(); } catch { /* */ }
+          a.src = AppConfig.url(this._manifest[h]);
+          a.muted = false;
+          a.playbackRate = Math.max(0.6, Math.min(1.4, rate / 0.85));
+          const pr = a.play();
+          this._debugLog('🎙️ clip', h);
+          if (pr && pr.catch) pr.catch(() => this._tts(text, rate, lang, prefs, token));
+          return;
+        }
+      } else {
+        this.loadManifest().then((man) => {
+          const h = this.sha8Sync(String(text));
+          if (man[h]) {
+            if (token !== this._speakToken) return;
+            if (window.speechSynthesis && (speechSynthesis.speaking || speechSynthesis.pending)) {
+              speechSynthesis.cancel();
+            }
+            this.init();
+            const a = this._audio;
+            try { a.pause(); } catch { /* */ }
+            a.src = AppConfig.url(man[h]);
+            a.muted = false;
+            a.playbackRate = Math.max(0.6, Math.min(1.4, rate / 0.85));
+            const pr = a.play();
+            if (pr && pr.catch) pr.catch(() => this._tts(text, rate, lang, prefs, token));
+            return;
+          }
+          if (token === this._speakToken) this._tts(text, rate, lang, prefs, token);
+        });
+        return;
+      }
     }
     this._tts(text, rate, lang, prefs, token);
   },
 
   async _clipOrTTS(text, rate, lang, prefs, token) {
-    try {
-      const man = await this.loadManifest();
-      const h = await this._sha8(String(text));
-      if (man[h]) {
-        if (token && token !== this._speakToken) return;
-        if (window.speechSynthesis && (speechSynthesis.speaking || speechSynthesis.pending)) {
-          speechSynthesis.cancel();
-        }
-        this.init();
-        const a = this._audio;
-        try { a.pause(); } catch { /* */ }
-        a.src = AppConfig.url(man[h]);
-        a.playbackRate = Math.max(0.6, Math.min(1.4, rate / 0.85));
-        const pr = a.play();
-        this._debugLog('🎙️ clip', h);
-        if (pr && pr.catch) pr.catch(() => this._tts(text, rate, lang, prefs, token));
-        return;
-      }
-    } catch { /* fall through to TTS */ }
-    this._tts(text, rate, lang, prefs, token);
+    this.speak(text, rate, lang);
   },
 
   _tts(text, rate, lang, prefs = {}, token = null) {
@@ -168,9 +241,6 @@ const Speech = {
       return;
     }
     if (token && token !== this._speakToken) return;
-    if (speechSynthesis.speaking || speechSynthesis.pending) {
-      speechSynthesis.cancel();
-    }
     if (this._audio) { try { this._audio.pause(); } catch { /* */ } }
     const voices = speechSynthesis.getVoices();
     let match = null;
@@ -202,14 +272,20 @@ const Speech = {
       this._debugLog('⛔ blocked', e.error || 'tts error');
       if (this._lastUtterance === u) this._lastUtterance = null;
     };
-    setTimeout(() => {
+    const doSpeak = () => {
       if (token && token !== this._speakToken) return;
       try {
         window.speechSynthesis.speak(u);
       } catch (e) {
         this._debugLog('⛔ blocked', 'speak exception');
       }
-    }, 90);
+    };
+    if (speechSynthesis.speaking || speechSynthesis.pending) {
+      speechSynthesis.cancel();
+      setTimeout(doSpeak, 60);
+    } else {
+      doSpeak();
+    }
   },
 
   stop() {
