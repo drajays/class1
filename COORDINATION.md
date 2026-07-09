@@ -28,6 +28,18 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### BUGFIX — no voice on device (iOS audio unlock) (2026-07-09, reviewer-as-implementer)
+User reported total silence in the app. Local diagnosis: all speech paths work
+(clip plays, TTS falls back, 0 errors) — the failure is DEVICE-side: the Mummy
+clip path awaits manifest+hash before `.play()`, and iOS drops the user-gesture
+token across awaits → audio never unlocks → every play silently blocked.
+Fix in `speech.js`: ONE reusable `<audio>` element unlocked by the first
+pointerdown/touchstart (muted play inside the real gesture) + speechSynthesis
+resume; all clips reuse that element (`src` swap); manifest pre-warmed at init.
+Verified: unlock fires, element reused with clip src, TTS fallback intact,
+0 errors. sw v27. Device note: open the app twice (or tap 🔄) so the new
+service worker takes over.
+
 ### FINAL REVIEW — Plan2 COMPLETE, SHIPPED (2026-07-09, reviewer session)
 **Verdict: ✅ Phase F APPROVED — plan2 is done.** All F conditions verified
 independently: validators cover all 6 plan2 files (0 errors app-wide:

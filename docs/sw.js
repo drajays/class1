@@ -1,4 +1,4 @@
-const CACHE = 'puppypark-v26';
+const CACHE = 'puppypark-v27';
 const ASSETS = [
   './',
   './index.html',

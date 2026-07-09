@@ -2,6 +2,30 @@ const Speech = {
   // Phase 12: voice prefs (Store.getVoicePrefs) + Phase 12b Mummy's Voice clips.
   _manifest: null,
   _audio: null,
+  _unlocked: false,
+
+  // iOS/iPadOS: audio must be unlocked inside a real user gesture, and our clip
+  // path awaits (manifest+hash) which loses the gesture token. So we keep ONE
+  // reusable <audio> element, unlock it (and speechSynthesis) on the first tap,
+  // then reuse it for every clip — reused elements may play programmatically.
+  init() {
+    if (this._audio) return;
+    this._audio = new Audio();
+    const unlock = () => {
+      if (this._unlocked) return;
+      this._unlocked = true;
+      try {
+        this._audio.muted = true;
+        const pr = this._audio.play();
+        if (pr && pr.catch) pr.catch(() => {});
+        setTimeout(() => { try { this._audio.pause(); this._audio.muted = false; } catch { /* */ } }, 60);
+      } catch { /* */ }
+      try { if (window.speechSynthesis) { speechSynthesis.resume(); speechSynthesis.getVoices(); } } catch { /* */ }
+    };
+    document.addEventListener('pointerdown', unlock, { once: true, capture: true });
+    document.addEventListener('touchstart', unlock, { once: true, capture: true });
+    this.loadManifest(); // warm the manifest so speak() awaits less
+  },
 
   async loadManifest() {
     if (this._manifest !== null) return this._manifest;
@@ -44,11 +68,13 @@ const Speech = {
       const h = await this._sha8(String(text));
       if (man[h]) {
         if (window.speechSynthesis) speechSynthesis.cancel();
-        if (this._audio) { try { this._audio.pause(); } catch { /* */ } }
-        const a = new Audio(AppConfig.url(man[h]));
+        this.init();
+        const a = this._audio;
+        try { a.pause(); } catch { /* */ }
+        a.src = AppConfig.url(man[h]);
         a.playbackRate = Math.max(0.6, Math.min(1.4, rate / 0.85));
-        this._audio = a;
-        a.play().catch(() => this._tts(text, rate, lang, prefs));
+        const pr = a.play();
+        if (pr && pr.catch) pr.catch(() => this._tts(text, rate, lang, prefs));
         return;
       }
     } catch { /* fall through to TTS */ }
@@ -126,4 +152,8 @@ const Speech = {
 if (window.speechSynthesis) {
   speechSynthesis.getVoices();
   window.speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
+}
+if (typeof document !== 'undefined') {
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => Speech.init());
+  else Speech.init();
 }
