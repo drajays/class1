@@ -28,19 +28,6 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
-### Hindi clone voice REMOVED (user verdict) (2026-07-09, reviewer-as-implementer)
-User listened and ruled: the clone's Hindi does NOT sound like her. Actions:
-- Stripped all 80 Devanagari entries from `voice_manifest.json` and deleted
-  the mp3s (20MB freed; recoverable from git history). Manifest: 181 English
-  clips. Hindi/Sanskrit lines now hash-miss → normal TTS voice instantly.
-- `generate_mummy_voice.py`: Devanagari generation OFF by default (needs
-  explicit `--hindi-full`), with the user verdict noted in a comment.
-- Verified live: Hindi line falls back to TTS ✔, English clips still play via
-  the unlocked element ✔, 0 errors. sw v29 (also purges stale hindi clips
-  from device caches).
-Net: Mummy speaks all English intros/tips/praise; Hindi & Sanskrit use the
-best available normal voice.
-
 ### Review — iOS TTS hotfix (2026-07-09, reviewer session)
 **Verdict: ✅ APPROVED.** Implementation matches the hotfix plan exactly; all
 four suspects addressed correctly (verified in code + headless):

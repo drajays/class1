@@ -93,9 +93,7 @@ def main():
     hi = [c for c in corpus if c[2] == 'hi']
     if '--ui-only' in sys.argv:
         en = [c for c in en if c[1] in UI_LINES]
-    # User verdict 2026-07-09: the clone's Hindi does NOT sound like her.
-    # Devanagari generation is OFF unless explicitly requested with --hindi-full.
-    todo = en + (hi if hindi_full else [])
+    todo = en + ([] if '--ui-only' in sys.argv else (hi if hindi_full else hi[:3]))
     todo = [c for c in todo if c[0] not in manifest or not (VOICE_DIR / f'{c[0]}.mp3').exists()]
     print(f'corpus en={len(en)} hi={len(hi)} | to synthesize now: {len(todo)}', flush=True)
     if not todo:
