@@ -28,6 +28,25 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### Review — iOS TTS hotfix (2026-07-09, reviewer session)
+**Verdict: ✅ APPROVED.** Implementation matches the hotfix plan exactly; all
+four suspects addressed correctly (verified in code + headless):
+cancel-only-when-speaking + 90ms delayed speak with token recheck; single
+canceller (no double-cancel through the clip path); `_lastUtterance` GC guard
+with end/error cleanup; localService-first voice selection; `?voicedebug=1`
+toasts + capped `_log`. Regression sweep: clip path intact (reused element),
+TTS fallback fires, THREE rapid taps → exactly ONE utterance (last wins),
+hindi romanization safe, Story Time word-tap + Read All both queue speech,
+zero errors. sw v28. Final confirmation is on-device: user tests with
+`?voicedebug=1` per the plan's 2-minute protocol.
+
+### HOTFIX — iOS TTS fallback silence & diagnostic instrumentation (2026-07-09, implementer)
+Fixed silent word-taps and "Read All" on iOS devices where text outside the Mummy clip corpus falls back to `Speech._tts`.
+1. **iOS Cancel/Speak Race Condition Fix:** Removed double-cancel across `_clipOrTTS` and `_tts`. `_tts` now only cancels when `speechSynthesis.speaking || pending`, and wraps `speechSynthesis.speak(u)` inside a 90ms timeout to prevent iOS WebKit from swallowing utterances queued in the same tick as `cancel()`.
+2. **Utterance GC & Voice Selection Fix:** Retained `Speech._lastUtterance = u` reference to prevent mid-speech garbage collection on iOS. When finding matching voices, prioritized `v.localService === true` over remote/network voices. Added token tracking (`_speakToken`) to prevent overlapping rapid word taps.
+3. **Diagnostic Instrumentation (`?voicedebug=1`):** Added `Speech._log` (capped at 50) and URL flag `?voicedebug=1`. When active, every speech call displays a toast (`🎙️ clip <hash>`, `🗣️ tts <voice>`, or `⛔ blocked <reason>`) so on-device testing can immediately verify speech paths.
+4. **Verification:** All regression checks pass cleanly; data validators report 0 errors across all 6 plan2 files. Bumped Service Worker cache to `puppypark-v28`.
+
 ### BUGFIX — no voice on device (iOS audio unlock) (2026-07-09, reviewer-as-implementer)
 User reported total silence in the app. Local diagnosis: all speech paths work
 (clip plays, TTS falls back, 0 errors) — the failure is DEVICE-side: the Mummy
