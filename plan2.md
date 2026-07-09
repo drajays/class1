@@ -215,3 +215,65 @@ paid for in plan.md apply from day one: capture state BEFORE recording it,
 no silent try/catch integrations without pool-count assertions, no
 duplicated content (the validator's cross-file check runs at every gate), report
 MEASURED numbers only, and never self-certify the sign-off column.
+
+---
+
+## HOTFIX PLAN — In-app silence on TTS-fallback paths (iPad) 🔊🐛
+
+**Symptom (user-reported, 2026-07-09):** Mummy's voice plays on the FRONT page,
+but inside Story Time (e.g. "The Dog") word-taps and "▶️ Read All to Me"
+produce NO speech — only a metallic click (that click is `Sounds.tap()`
+WebAudio, so audio output itself works).
+
+**Why this pattern matters (read before touching code):** front-page greetings
+have Mummy CLIPS (play via the unlocked `<audio>` element → works). Story texts
+and single words are NOT in the clip corpus (tier policy) → they go down the
+`Speech._tts` speechSynthesis fallback → THAT path is what is silent on the
+device. So the bug lives in `_tts` on iOS, not in the clip player and not in
+the story engine.
+
+### Prime suspects (in order — test each, fix the one that proves out)
+1. **iOS cancel→speak race (most likely):** `_tts` calls
+   `speechSynthesis.cancel()` and then `speak()` synchronously. iOS Safari/Edge
+   notoriously swallows an utterance queued in the same tick as a cancel().
+   Fix pattern: only cancel when `speechSynthesis.speaking || pending`, then
+   queue the new utterance after a ~80–120ms `setTimeout` (or on the previous
+   utterance's `end` event). Keep a token so rapid-fire word taps don't stack.
+2. **Double-cancel through the async clip path:** every fallback goes
+   `_clipOrTTS` (await manifest+sha, cancel, pause audio) → `_tts` (cancel
+   AGAIN, speak). Two cancels + an await gap multiplies suspect 1. Fix: make
+   `_tts` the ONLY canceller; `_clipOrTTS` should not cancel when it is about
+   to fall back.
+3. **Utterance GC bug (iOS classic):** utterances created as locals can be
+   garbage-collected mid-speech → silence. Fix: keep `Speech._lastUtterance = u`.
+4. **Voice matching on iOS:** `voices.find(v => v.lang.startsWith('en'))` may
+   select a broken remote voice. Log the chosen voice; prefer
+   `localService === true` voices first.
+
+### Diagnostic instrumentation (build FIRST, keep behind a flag)
+Add `?voicedebug=1` support in `speech.js`: every `speak()` shows a small
+`Rewards.showToast` with the decision — `🎙️ clip <hash>` / `🗣️ tts <voice name>`
+/ `⛔ blocked <reason>` — and logs to `Speech._log[]` (capped 50). This lets
+the user test ON THE IPAD and read the path without a console. REMOVE the
+toasts (keep `_log`) once fixed.
+
+### Reproduction & verification protocol
+1. Local headless first: spy `speechSynthesis.speak` — confirm utterances ARE
+   queued on word-tap/Read-All (they were in the last review), so local passes
+   ≠ fixed; the proof lives on the device.
+2. Device test (the user runs it, 2 minutes): open app with `?voicedebug=1`,
+   tap a word in a story → toast must say `🗣️ tts <voice>` AND speech must be
+   heard; Read All → same; home greeting → `🎙️ clip`. Repeat rapid word taps
+   (5 fast taps) → last word speaks, no stuck silence afterwards.
+3. Regression sweep after fix (headless): clip path still plays via the
+   reused element; TTS fallback still fires; hindi devToRoman fallback intact;
+   rapid alternation clip→tts→clip doesn't deadlock; 0 console errors.
+
+### Acceptance criteria (reviewer will re-run)
+- On-device: word taps + Read All audibly speak inside Story Time and inside
+  any quiz/problem screen; home unchanged; no double-speech overlaps.
+- Headless: all Phase-12 voice assertions still green; `?voicedebug=1` shows
+  correct path labels; zero errors.
+- `sw.js` CACHE bumped; COORDINATION.md log entry written (non-negotiable).
+- NO scope creep: do not regenerate clips, do not change the tier policy, do
+  not touch engines — this is a `speech.js`-only fix unless proven otherwise.
