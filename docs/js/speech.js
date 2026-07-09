@@ -30,16 +30,21 @@ const Speech = {
       if (this._unlocked) return;
       this._unlocked = true;
       try {
-        this._audio.muted = true;
-        const pr = this._audio.play();
-        if (pr && pr.catch) pr.catch(() => {});
-        setTimeout(() => { try { this._audio.pause(); this._audio.muted = false; } catch { /* */ } }, 60);
-      } catch { /* */ }
-      try {
         if (window.speechSynthesis) {
           speechSynthesis.resume();
           speechSynthesis.getVoices();
         }
+      } catch { /* */ }
+      if (this._speakingClip) return;
+      try {
+        this._audio.muted = true;
+        const pr = this._audio.play();
+        if (pr && pr.catch) pr.catch(() => {});
+        setTimeout(() => {
+          if (!this._speakingClip) {
+            try { this._audio.pause(); this._audio.muted = false; } catch { /* */ }
+          }
+        }, 60);
       } catch { /* */ }
     };
     document.addEventListener('pointerdown', unlock, { once: true, capture: true });
@@ -184,6 +189,26 @@ const Speech = {
     if (prefs.rate) rate = prefs.rate;
     const wantName = lang.startsWith('hi') ? prefs.hiVoice : prefs.enVoice;
 
+    const playClip = (url, h) => {
+      this.init();
+      const a = this._audio;
+      try { a.pause(); } catch { /* */ }
+      this._speakingClip = true;
+      a.onended = () => { this._speakingClip = false; };
+      a.onerror = () => { this._speakingClip = false; };
+      a.src = AppConfig.url(url);
+      a.muted = false;
+      a.playbackRate = Math.max(0.6, Math.min(1.4, rate / 0.85));
+      const pr = a.play();
+      this._debugLog('🎙️ clip', h);
+      if (pr && pr.catch) {
+        pr.catch(() => {
+          this._speakingClip = false;
+          this._tts(text, rate, lang, prefs, token);
+        });
+      }
+    };
+
     if (wantName === '__mummy__') {
       if (this._manifest !== null) {
         const h = this.sha8Sync(String(text));
@@ -191,15 +216,7 @@ const Speech = {
           if (window.speechSynthesis && (speechSynthesis.speaking || speechSynthesis.pending)) {
             speechSynthesis.cancel();
           }
-          this.init();
-          const a = this._audio;
-          try { a.pause(); } catch { /* */ }
-          a.src = AppConfig.url(this._manifest[h]);
-          a.muted = false;
-          a.playbackRate = Math.max(0.6, Math.min(1.4, rate / 0.85));
-          const pr = a.play();
-          this._debugLog('🎙️ clip', h);
-          if (pr && pr.catch) pr.catch(() => this._tts(text, rate, lang, prefs, token));
+          playClip(this._manifest[h], h);
           return;
         }
       } else {
@@ -210,14 +227,7 @@ const Speech = {
             if (window.speechSynthesis && (speechSynthesis.speaking || speechSynthesis.pending)) {
               speechSynthesis.cancel();
             }
-            this.init();
-            const a = this._audio;
-            try { a.pause(); } catch { /* */ }
-            a.src = AppConfig.url(man[h]);
-            a.muted = false;
-            a.playbackRate = Math.max(0.6, Math.min(1.4, rate / 0.85));
-            const pr = a.play();
-            if (pr && pr.catch) pr.catch(() => this._tts(text, rate, lang, prefs, token));
+            playClip(man[h], h);
             return;
           }
           if (token === this._speakToken) this._tts(text, rate, lang, prefs, token);
@@ -241,7 +251,10 @@ const Speech = {
       return;
     }
     if (token && token !== this._speakToken) return;
-    if (this._audio) { try { this._audio.pause(); } catch { /* */ } }
+    if (this._audio) {
+      try { this._audio.pause(); } catch { /* */ }
+      this._speakingClip = false;
+    }
     const voices = speechSynthesis.getVoices();
     let match = null;
     const wantName = lang.startsWith('hi') ? prefs.hiVoice : prefs.enVoice;
@@ -275,6 +288,9 @@ const Speech = {
     const doSpeak = () => {
       if (token && token !== this._speakToken) return;
       try {
+        if (window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+        }
         window.speechSynthesis.speak(u);
       } catch (e) {
         this._debugLog('⛔ blocked', 'speak exception');
@@ -282,7 +298,7 @@ const Speech = {
     };
     if (speechSynthesis.speaking || speechSynthesis.pending) {
       speechSynthesis.cancel();
-      setTimeout(doSpeak, 60);
+      setTimeout(doSpeak, 40);
     } else {
       doSpeak();
     }

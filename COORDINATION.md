@@ -28,6 +28,15 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### BUGFIX — Prevent Unlock Clip Cutoffs & Fix Desktop Chrome TTS Queueing (v33) (2026-07-09, implementer)
+- **Problem:** On Desktop Chrome, tapping a button played the click sound (`Sounds.tap()`) but no voice. This happened for two reasons:
+  1. **Clip Cutoff:** Clicking triggered `pointerdown` (`unlock()`) which scheduled `this._audio.pause()` 60ms later. Immediately after, `click` triggered `Speech.speak(text)` and started playing the clip on `this._audio`. Exactly 60ms later, the unlock timer fired and paused `this._audio`, cutting off the clip after 0.06 seconds.
+  2. **Chrome Desktop TTS Silent Queueing:** When falling back to `speechSynthesis`, Chrome Desktop silently queues utterances if `speechSynthesis.paused` is true or if `speechSynthesis.resume()` is not called right before `speak(u)`.
+- **Fix (`speech.js`):**
+  - Added `this._speakingClip` tracking flag around all clip playback (`Speech.speak`). Updated `unlock()` so it never pauses `this._audio` when a clip is actively speaking.
+  - Updated `_tts()` to call `speechSynthesis.resume()` before invoking `speechSynthesis.speak(u)`.
+- **Service Worker:** Bumped cache version to `puppypark-v33` in `sw.js`.
+
 ### BUGFIX — Synchronous Voice Playback for iOS/Mobile & Inner Panels (v32) (2026-07-09, implementer)
 - **Problem:** Mummy voice clips and fallback TTS were silent on inner panels / interactive buttons (only playing the metallic click sound). This occurred because `_clipOrTTS` was `async` (`await loadManifest()` and `await crypto.subtle.digest('SHA-1', ...)`), causing execution to leave the synchronous user gesture before triggering `audio.play()` or `speechSynthesis.speak()`. Furthermore, fallback TTS waited an extra 90ms timer (`setTimeout`). Mobile browsers like iOS Safari block programmatic audio/TTS playback outside a synchronous user click gesture.
 - **Fix (`speech.js`):**
