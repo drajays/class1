@@ -28,6 +28,14 @@ These are touched by both. Make **small, localized** edits and log them below.
 
 ## Change log (newest first)
 
+### Hindi Mummy voice RESTORED (user reversal) (2026-07-09, reviewer-as-implementer)
+User re-listened and ruled the clone's Devanagari voice IS okay (better than
+the default). Reverted 920e449: all 80 Devanagari clips + manifest entries
+restored (261 clips live again); Hindi/Sanskrit intros speak in Mummy's voice
+by default once more. sw bumped to v30 so devices fetch the restored manifest.
+Generator keeps Devanagari opt-in (--hindi-full) — clips already exist, no
+regeneration needed.
+
 ### Review — iOS TTS hotfix (2026-07-09, reviewer session)
 **Verdict: ✅ APPROVED.** Implementation matches the hotfix plan exactly; all
 four suspects addressed correctly (verified in code + headless):
