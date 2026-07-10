@@ -123,6 +123,10 @@ const App = {
     if (screen === 'hindi') { HindiBook.open(); Speech.navSay('Tap any letter to hear it. Let us learn Hindi!'); }
     if (screen === 'evs' || screen === 'sanskrit' || screen === 'computer' || screen === 'english_plus' || screen === 'math_challenge') { SubjectBook.open(screen); }
     if (screen === 'brainobrain') {
+      const f = document.getElementById('brainobrain-frame');
+      if (f && (!f.getAttribute('src') || f.getAttribute('src') === '')) {
+        f.src = 'brainobrain.html';
+      }
       Speech.navSay('Welcome to Brainobrain 500 Questions Challenger! Solve questions and earn coins!');
     }
   },
