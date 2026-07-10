@@ -7,7 +7,16 @@ const App = {
     await MathBook.load();
     await SubjectBook.loadAll();
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register(AppConfig.url('sw.js')).catch(() => {});
+      navigator.serviceWorker.register(AppConfig.url('sw.js')).then((reg) => {
+        reg.addEventListener('updatefound', () => {
+          const newWorker = reg.installing;
+          newWorker?.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              location.reload();
+            }
+          });
+        });
+      }).catch(() => {});
     }
     this.renderWelcomePups();
     Parent.init();
@@ -76,6 +85,7 @@ const App = {
       evs: 'screen-subjectbook',
       sanskrit: 'screen-subjectbook',
       computer: 'screen-subjectbook',
+      brainobrain: 'screen-brainobrain',
     };
     document.getElementById(map[screen]).classList.add('active');
     window.scrollTo(0, 0);
@@ -112,6 +122,9 @@ const App = {
     if (screen === 'englishboosters') { EnglishBoosters.open(); Speech.navSay('Welcome to Word Power Boosters!'); }
     if (screen === 'hindi') { HindiBook.open(); Speech.navSay('Tap any letter to hear it. Let us learn Hindi!'); }
     if (screen === 'evs' || screen === 'sanskrit' || screen === 'computer' || screen === 'english_plus' || screen === 'math_challenge') { SubjectBook.open(screen); }
+    if (screen === 'brainobrain') {
+      Speech.navSay('Welcome to Brainobrain 500 Questions Challenger! Solve questions and earn coins!');
+    }
   },
 
   toggleMummyVoice() {

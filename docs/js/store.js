@@ -247,6 +247,118 @@ const Store = {
     };
   },
 
+  grantBrainobrainReward(id = 'advaita', qId = 1, qText = 'Question') {
+    const p = this.getPlayer(id);
+    this.addReward(id, { coins: 10, stars: 1, xp: 15 });
+
+    let melted = 0;
+    let freezePct = 0;
+    if (typeof Curse !== 'undefined') {
+      const meltRes = Curse.onProblemSolved(id, 'brainobrain', `q_${qId}`, true, 0);
+      if (meltRes) {
+        melted = meltRes.melted || 0;
+        freezePct = meltRes.freezePct || 0;
+      }
+    }
+
+    this.ensurePuppies(id);
+    const pupIds = ['simba', 'mufasa', 'golu', 'whity'];
+    let giftName = null;
+    let giftEmoji = null;
+    let pupName = null;
+
+    pupIds.forEach((pid) => {
+      const pup = p.puppies[pid];
+      if (pup) pup.happy = Math.min(100, (pup.happy ?? 70) + 10);
+    });
+
+    p.bbSolvedCount = (p.bbSolvedCount || 0) + 1;
+    if (p.bbSolvedCount % 3 === 0 || Math.random() < 0.35) {
+      for (const pid of pupIds) {
+        const pup = p.puppies[pid];
+        if (pup && pup.wish) {
+          const item = pup.wish;
+          if (!pup.owned.includes(item.id)) pup.owned.push(item.id);
+          giftName = item.name;
+          giftEmoji = item.emoji;
+          pupName = pid;
+          pup.wish = null;
+          pup.wishAt = Date.now();
+          pup.happy = 100;
+          break;
+        }
+      }
+      if (!giftName && typeof Mall !== 'undefined' && Mall.items.length) {
+        const pid = pupIds[Math.floor(Math.random() * pupIds.length)];
+        const pup = p.puppies[pid];
+        const unowned = Mall.items.filter((it) => !(pup.owned || []).includes(it.id));
+        if (unowned.length) {
+          const item = unowned[Math.floor(Math.random() * Math.min(30, unowned.length))];
+          if (!pup.owned.includes(item.id)) pup.owned.push(item.id);
+          giftName = item.name;
+          giftEmoji = item.emoji;
+          pupName = pid;
+          pup.happy = 100;
+        }
+      }
+    }
+
+    this.updatePlayer(id, p);
+
+    if (typeof Rewards !== 'undefined') {
+      const msgParts = ['🎉 +10 🪙 Earned!'];
+      if (melted > 0) msgParts.push(`👸 Princess Ice -${melted}%`);
+      if (giftName) msgParts.push(`🎁 Gifted ${giftEmoji} ${giftName} to ${pupName.toUpperCase()}!`);
+      Rewards.showToast(msgParts.join(' | '));
+    }
+
+    return { coins: 10, melted, freezePct, giftName, giftEmoji, pupName };
+  },
+
+  grantBrainobrainMockReward(id = 'advaita', totalCorrect = 35) {
+    const coins = Math.max(20, totalCorrect * 5);
+    const stars = Math.floor(totalCorrect / 8);
+    this.addReward(id, { coins, stars, xp: totalCorrect * 5 });
+
+    let melted = 0;
+    let freezePct = 0;
+    if (typeof Curse !== 'undefined') {
+      const meltRes = Curse.onChapterCompleted(id, 'brainobrain', 'mock_test', 0, totalCorrect, true);
+      if (meltRes) {
+        melted = meltRes.melted || 0;
+        freezePct = meltRes.freezePct || 0;
+      }
+    }
+
+    this.ensurePuppies(id);
+    const p = this.getPlayer(id);
+    const pupIds = ['simba', 'mufasa', 'golu', 'whity'];
+    const giftsGranted = [];
+
+    if (typeof Mall !== 'undefined' && Mall.items.length) {
+      pupIds.forEach((pid) => {
+        const pup = p.puppies[pid];
+        if (pup) {
+          pup.happy = 100;
+          const unowned = Mall.items.filter((it) => !(pup.owned || []).includes(it.id));
+          if (unowned.length && Math.random() < 0.6) {
+            const item = unowned[Math.floor(Math.random() * Math.min(20, unowned.length))];
+            pup.owned.push(item.id);
+            giftsGranted.push(`${item.emoji} ${item.name} (${pid})`);
+          }
+        }
+      });
+    }
+
+    this.updatePlayer(id, p);
+    if (typeof Rewards !== 'undefined') {
+      Rewards.confetti(80);
+      Rewards.showToast(`🏆 Mock Test Complete! +${coins} 🪙 | 👸 Princess Ice -${melted}% | 🎁 ${giftsGranted.length} Puppy Gifts!`);
+    }
+
+    return { coins, stars, melted, freezePct, giftsGranted };
+  },
+
   logJourneyEvent(id, entry) {
     const p = this.getPlayer(id);
     if (!p.journal) p.journal = [];
