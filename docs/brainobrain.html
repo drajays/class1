@@ -8851,7 +8851,6 @@
                         } catch(e) { console.error(e); }
                     }
                 }
-                triggerConfetti();
                 updateTrophyCabinet();
                 buildPracticeGrid();
             } else {
@@ -9343,7 +9342,7 @@
                 });
             }
             drawConfetti();
-            setTimeout(() => { confettiActive = false; }, 3000);
+            setTimeout(() => { confettiActive = false; }, 2000);
         }
 
         function drawConfetti() {
@@ -9352,11 +9351,12 @@
                 return;
             }
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            confetti.forEach((p, idx) => {
+            for (let i = confetti.length - 1; i >= 0; i--) {
+                const p = confetti[i];
                 p.tiltAngle += p.tiltAngleIncremental;
                 p.y += (Math.cos(p.d) + 3 + p.r / 2) / 2;
                 p.x += Math.sin(p.tiltAngle);
-                p.tilt = Math.sin(p.tiltAngle - idx/3) * 15;
+                p.tilt = Math.sin(p.tiltAngle - i / 3) * 15;
 
                 ctx.beginPath();
                 ctx.lineWidth = p.r / 2;
@@ -9365,23 +9365,28 @@
                 ctx.lineTo(p.x + p.tilt, p.y + p.tilt + p.r / 2);
                 ctx.stroke();
 
-                // Remove off-screen confetti
                 if (p.y > canvas.height) {
-                    confetti[idx] = {
-                        x: Math.random() * canvas.width,
-                        y: -20,
-                        r: p.r,
-                        d: p.d,
-                        color: p.color,
-                        tilt: p.tilt,
-                        tiltAngleIncremental: p.tiltAngleIncremental,
-                        tiltAngle: p.tiltAngle
-                    };
+                    if (confettiActive) {
+                        confetti[i] = {
+                            x: Math.random() * canvas.width,
+                            y: -20,
+                            r: p.r,
+                            d: p.d,
+                            color: p.color,
+                            tilt: p.tilt,
+                            tiltAngleIncremental: p.tiltAngleIncremental,
+                            tiltAngle: p.tiltAngle
+                        };
+                    } else {
+                        confetti.splice(i, 1);
+                    }
                 }
-            });
+            }
 
-            if (confettiActive || confetti.some(p => p.y < canvas.height)) {
+            if (confettiActive || confetti.length > 0) {
                 requestAnimationFrame(drawConfetti);
+            } else {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
             }
         }
     </script>
