@@ -1090,6 +1090,9 @@
                 <div id="bb-level-badge" title="Your Brainobrain Level">
                     ⭐ <span id="bb-level-num">1</span> / 10
                 </div>
+                <div id="bb-unfrozen-badge" title="Princess Rescue Status" onclick="if(window.parent && window.parent.App) window.parent.App.go('curse')" style="display: inline-flex; align-items: center; gap: 5px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: #fff; font-weight: 800; font-size: 0.85rem; padding: 5px 13px; border-radius: 50px; border: 2px solid rgba(255,255,255,0.4); box-shadow: 0 2px 8px rgba(0,0,0,0.18); cursor: pointer;">
+                    👸 Unfrozen: <span id="bb-unfrozen-num">0%</span> <span style="opacity:0.88;font-size:0.75rem;">(❄️ <span id="bb-frozen-num">100%</span>)</span>
+                </div>
                 <button onclick="goToPuppyPark()" style="background: rgba(255,255,255,0.25); border: 2px solid white; color: white; padding: 6px 14px; border-radius: 50px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; font-size: 14px; transition: all 0.2s;">🐶 ← Puppy Park</button>
                 <div class="user-badge" id="header-user">
                     <span id="header-avatar">🦁</span> <span id="header-name">Superstar</span>
@@ -8661,6 +8664,19 @@
                 badge.style.background = `linear-gradient(135deg, ${gradients[info.level - 1]})`;
                 badge.title = `Level ${info.level}/10 — ${user.completedList.length}/500 questions done (${Math.round(info.pct)}% to next level)`;
             }
+
+            let freezePct = 100;
+            try {
+                if (window.parent && window.parent.Curse && window.parent.Curse.getState) {
+                    freezePct = window.parent.Curse.getState('advaita').freezePct;
+                }
+            } catch(e) {}
+            freezePct = Math.max(0, Math.min(100, Number(freezePct || 0)));
+            const unfrozenPct = Math.round(100 - freezePct);
+            const uEl = document.getElementById('bb-unfrozen-num');
+            const fEl = document.getElementById('bb-frozen-num');
+            if (uEl) uEl.textContent = `${unfrozenPct}%`;
+            if (fEl) fEl.textContent = `${Math.round(freezePct)}%`;
         }
 
         // ===== RANDOMISE QUESTION ORDER =====

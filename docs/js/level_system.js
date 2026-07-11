@@ -1,21 +1,18 @@
 // ============================================================
-// LEVEL SYSTEM — App-wide Level 1–10 Badge, Smart Scoring,
-//               Hint Tracking, Randomised Princess & Gifts
-// Loaded BEFORE app.js — depends on Store, Rewards, PUPPIES, Mall
+// LEVEL SYSTEM — App-wide Level 1–10 Badge, Princess Unfrozen % Badge,
+//               Smart Scoring, Hint Tracking, Randomised Princess & Gifts
 // ============================================================
 
 const LevelSystem = {
   // ---- LEVEL COMPUTATION ----
-  // Total XP 0–999 maps to levels 1–10 (100 XP each)
   computeLevel(xp) {
     const lvl = Math.min(10, Math.floor((xp || 0) / 100) + 1);
     const base = (lvl - 1) * 100;
     const pct  = Math.min(100, ((xp || 0) - base));
-    const next  = lvl < 10 ? lvl * 100 : 1000;
+    const next = lvl < 10 ? lvl * 100 : 1000;
     return { level: lvl, pct, next, xp: xp || 0 };
   },
 
-  // Gradient palette per level (1-indexed)
   _levelGradients: [
     '#f39c12, #e74c3c',
     '#e74c3c, #c0392b',
@@ -29,11 +26,28 @@ const LevelSystem = {
     '#2ecc71, #f1c40f',
   ],
 
+  // ---- PRINCESS UNFROZEN COMPUTATION ----
+  computeCurseStatus(playerId) {
+    let freezePct = 100;
+    try {
+      if (typeof Curse !== 'undefined' && Curse.getState) {
+        freezePct = Curse.getState(playerId || 'advaita').freezePct;
+      } else if (window.parent && window.parent.Curse && window.parent.Curse.getState) {
+        freezePct = window.parent.Curse.getState(playerId || 'advaita').freezePct;
+      }
+    } catch (e) {}
+    freezePct = Math.max(0, Math.min(100, Number(freezePct || 0)));
+    const unfrozenPct = Math.round(100 - freezePct);
+    return { freezePct: Math.round(freezePct), unfrozenPct };
+  },
+
   // ---- BADGE RENDERING ----
   updateAllBadges() {
-    if (!window.App || !App.playerId) return;
-    const p = window.Store ? Store.getPlayer(App.playerId) : null;
+    const playerId = (window.App && App.playerId) ? App.playerId : 'advaita';
+    const p = window.Store ? Store.getPlayer(playerId) : null;
     if (!p) return;
+
+    // 1. Update Level Badges
     const info = this.computeLevel(p.xp || 0);
     document.querySelectorAll('.pp-level-badge').forEach(el => {
       const numEl = el.querySelector('.pp-lvl-num');
@@ -44,12 +58,28 @@ const LevelSystem = {
       const bar = el.querySelector('.pp-lvl-bar');
       if (bar) bar.style.width = `${info.pct}%`;
     });
+
+    // 2. Update Princess Unfrozen % Badges in all panels
+    const curseInfo = this.computeCurseStatus(playerId);
+    document.querySelectorAll('.pp-unfrozen-badge').forEach(el => {
+      const unfrozenEl = el.querySelector('.pp-unfrozen-num');
+      const frozenEl   = el.querySelector('.pp-frozen-num');
+      if (unfrozenEl) unfrozenEl.textContent = `${curseInfo.unfrozenPct}%`;
+      if (frozenEl)   frozenEl.textContent   = `${curseInfo.freezePct}%`;
+      el.title = `Princess Unfrozen: ${curseInfo.unfrozenPct}% (Frozen Ice: ${curseInfo.freezePct}%) — Click to open Rescue Screen`;
+    });
   },
 
   badgeHTML() {
-    return `<div class="pp-level-badge" title="Your Level">
-      ⭐ <span class="pp-lvl-num">1</span>/10
-      <div class="pp-lvl-bar-track"><div class="pp-lvl-bar" style="width:0%"></div></div>
+    return `<div class="pp-corner-badges" style="display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;">
+      <div class="pp-level-badge" title="Your Level">
+        ⭐ <span class="pp-lvl-num">1</span>/10
+        <div class="pp-lvl-bar-track"><div class="pp-lvl-bar" style="width:0%"></div></div>
+      </div>
+      <div class="pp-unfrozen-badge" title="Princess Rescue Status" onclick="if(window.App) App.go('curse')">
+        👸 Unfrozen: <span class="pp-unfrozen-num">0%</span>
+        <span class="pp-frozen-sub" style="opacity:0.88;font-size:0.75rem;">(❄️ <span class="pp-frozen-num">100%</span>)</span>
+      </div>
     </div>`;
   },
 
@@ -62,20 +92,35 @@ const LevelSystem = {
         display: inline-flex; align-items: center; gap: 5px;
         background: linear-gradient(135deg, #f39c12, #e74c3c);
         color: #fff; font-weight: 800; font-size: 0.85rem;
-        padding: 4px 12px; border-radius: 50px;
+        padding: 5px 13px; border-radius: 50px;
         border: 2px solid rgba(255,255,255,0.4);
         box-shadow: 0 2px 8px rgba(0,0,0,0.18);
         animation: ppLvlPulse 2.5s ease-in-out infinite;
         position: relative; cursor: default;
         white-space: nowrap; flex-shrink: 0;
       }
-      @keyframes ppLvlPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.06)} }
+      @keyframes ppLvlPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.05)} }
       .pp-lvl-bar-track {
         position: absolute; bottom:0; left:0; right:0;
         height:3px; background:rgba(255,255,255,0.25);
         border-radius:0 0 50px 50px; overflow:hidden;
       }
       .pp-lvl-bar { height:100%; background:#fff; transition:width 0.7s ease; }
+
+      .pp-unfrozen-badge {
+        display: inline-flex; align-items: center; gap: 5px;
+        background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+        color: #fff; font-weight: 800; font-size: 0.85rem;
+        padding: 5px 13px; border-radius: 50px;
+        border: 2px solid rgba(255,255,255,0.4);
+        box-shadow: 0 2px 8px rgba(59,130,246,0.3);
+        cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+        white-space: nowrap; flex-shrink: 0;
+      }
+      .pp-unfrozen-badge:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 14px rgba(139,92,246,0.45);
+      }
 
       #pp-hint-toast {
         display:none; position:fixed; top:70px; left:50%;
@@ -143,37 +188,33 @@ const LevelSystem = {
   // ---- SMART SCORING ----
   smartScore(playerId, subject, levelId, { baseCoins = 10, baseXp = 10, isFirstTry = true, problemIdx = 0 } = {}) {
     const p = Store.getPlayer(playerId);
+    if (!p) return { coinsAwarded: baseCoins, xpAwarded: baseXp, notes: [], multiplier: 1.0, bonusCoins: 0 };
     const hintsUsed = this.getHintCount(subject, levelId, problemIdx);
     const existingStars = Store.getLevelStars(playerId, subject, levelId);
     let multiplier = 1.0;
     let bonusCoins = 0;
     const notes = [];
 
-    // Hint penalty (highest priority)
     if (hintsUsed > 2) {
       multiplier = 0.1;
       notes.push({ type: 'penalty', msg: `⚠️ Hint penalty: 1/10 point (${hintsUsed} hints used)` });
     }
 
-    // First-try bonus
     if (isFirstTry && hintsUsed === 0) {
       bonusCoins += 3;
       notes.push({ type: 'bonus', msg: '🚀 First-try bonus! +3 🪙' });
     }
 
-    // New subject bonus
     if (Object.keys(p[subject] || {}).length === 0) {
       bonusCoins += 5;
       notes.push({ type: 'bonus', msg: '🌟 New subject! +5 🪙 bonus!' });
     }
 
-    // New chapter bonus
     if (existingStars === 0 && multiplier === 1.0) {
       bonusCoins += 2;
       notes.push({ type: 'bonus', msg: '✨ New chapter! +2 🪙 bonus!' });
     }
 
-    // Repeat / mastered penalty
     if (existingStars === 3 && multiplier === 1.0) {
       multiplier = 0.9;
       notes.push({ type: 'repeat', msg: '🔄 Already mastered: 9/10 points' });
@@ -185,11 +226,12 @@ const LevelSystem = {
   },
 
   renderScoreNotes(notes) {
-    return notes.map(n => `<span class="pp-score-chip ${n.type}">${n.msg}</span>`).join(' ');
+    return (notes || []).map(n => `<span class="pp-score-chip ${n.type}">${n.msg}</span>`).join(' ');
   },
 
   // ---- RANDOMISED FROZEN PRINCESS TARGETS ----
   shuffleTargets(list) {
+    if (!Array.isArray(list)) return [];
     const arr = list.slice();
     for (let i = arr.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -236,19 +278,19 @@ const LevelSystem = {
   },
 
   _injectBadgesIntoHeaders() {
-    // Home screen top-bar (insert at front)
+    // Home screen top-bar
     const topActions = document.querySelector('#screen-home .top-actions');
-    if (topActions && !topActions.querySelector('.pp-level-badge')) {
-      const badge = document.createElement('div');
-      badge.innerHTML = this.badgeHTML();
-      topActions.insertAdjacentElement('afterbegin', badge.firstElementChild);
+    if (topActions && !topActions.querySelector('.pp-corner-badges')) {
+      const badgeContainer = document.createElement('div');
+      badgeContainer.innerHTML = this.badgeHTML();
+      topActions.insertAdjacentElement('afterbegin', badgeContainer.firstElementChild);
     }
-    // All game-headers
+    // All game-headers across every screen/panel
     document.querySelectorAll('.game-header').forEach(header => {
-      if (header.querySelector('.pp-level-badge')) return;
-      const badge = document.createElement('div');
-      badge.innerHTML = this.badgeHTML();
-      header.appendChild(badge.firstElementChild);
+      if (header.querySelector('.pp-corner-badges')) return;
+      const badgeContainer = document.createElement('div');
+      badgeContainer.innerHTML = this.badgeHTML();
+      header.appendChild(badgeContainer.firstElementChild);
     });
   },
 };

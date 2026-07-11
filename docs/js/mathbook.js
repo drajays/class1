@@ -77,9 +77,9 @@ const MathBook = {
 
   renderConcept() {
     const area = document.getElementById('math-game');
-    const ci = this.data.chapters.indexOf(this.chapter);
-    const coach = (typeof PUPPIES !== 'undefined' && PUPPIES.length)
-      ? PUPPIES[(ci < 0 ? 0 : ci) % PUPPIES.length] : null;
+    const ci = (this.data && Array.isArray(this.data.chapters)) ? this.data.chapters.indexOf(this.chapter) : 0;
+    const coach = (typeof PUPPIES !== 'undefined' && Array.isArray(PUPPIES) && PUPPIES.length)
+      ? PUPPIES[Math.max(0, ci) % PUPPIES.length] : null;
     const mascot = coach
       ? `<img class="mb-mascot" src="${AppConfig.url(coach.photo)}" alt="${coach.name}" style="width:96px;height:96px;border-radius:50%;border:4px solid #fff;box-shadow:0 8px 18px rgba(0,0,0,.18);object-fit:cover">`
       : `<div class="mb-concept-icon">${this.chapter.icon}</div>`;
@@ -101,8 +101,10 @@ const MathBook = {
   renderProblem() {
     this.triesThisProblem = 0;
     this.usedHelp = false;
+    if (!this.chapter || !this.chapter.problems || !this.chapter.problems[this.idx]) {
+      return this.finish();
+    }
     const p = this.chapter.problems[this.idx];
-    if (!p) return this.finish();
     const area = document.getElementById('math-game');
     const total = this.chapter.problems.length;
     const pct = (this.idx / total) * 100;
@@ -300,12 +302,14 @@ const MathBook = {
   },
 
   esc(s) {
+    if (s === undefined || s === null) return '';
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   },
 
   // ---------- narration ----------
   say(p) {
-    return p.q.replace('?', '').replace('_', 'what').replace('−', 'minus').replace('+', 'plus');
+    if (!p || p.q === undefined || p.q === null) return '';
+    return String(p.q).replace(/\?/g, '').replace(/_/g, 'what').replace(/−/g, 'minus').replace(/\+/g, 'plus');
   },
 
   // ---------- static visuals per skill ----------
