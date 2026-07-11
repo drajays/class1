@@ -944,6 +944,68 @@
             color: var(--text-light);
         }
 
+        /* === LEVEL BADGE === */
+        #bb-level-badge {
+            background: linear-gradient(135deg, #f39c12, #e74c3c);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: 2px solid rgba(255,255,255,0.4);
+            box-shadow: 0 2px 8px rgba(231,76,60,0.35);
+            animation: bb-pulse 2.5s ease-in-out infinite;
+            letter-spacing: 0.3px;
+            cursor: default;
+        }
+        @keyframes bb-pulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 2px 8px rgba(231,76,60,0.35); }
+            50% { transform: scale(1.04); box-shadow: 0 4px 16px rgba(231,76,60,0.55); }
+        }
+        #bb-level-bar-wrap {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: rgba(255,255,255,0.2);
+        }
+        #bb-level-bar-fill {
+            height: 100%;
+            background: #f1c40f;
+            transition: width 0.6s ease;
+        }
+
+        /* === HINT WARNING TOAST === */
+        #bb-hint-toast {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #e67e22, #c0392b);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 700;
+            z-index: 9999;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            animation: bb-shake 0.5s ease;
+            text-align: center;
+            max-width: 90vw;
+        }
+        @keyframes bb-shake {
+            0%, 100% { transform: translateX(-50%) rotate(0deg); }
+            20% { transform: translateX(-50%) rotate(-2deg); }
+            40% { transform: translateX(-50%) rotate(2deg); }
+            60% { transform: translateX(-50%) rotate(-1.5deg); }
+            80% { transform: translateX(-50%) rotate(1.5deg); }
+        }
+
         /* Confetti Canvas */
         #confetti-canvas {
             position: fixed;
@@ -994,6 +1056,9 @@
 </head>
 <body>
 
+    <!-- Hint Warning Toast -->
+    <div id="bb-hint-toast">⚠️ You've used 3+ hints! Correct answer earns only 1/10 point!</div>
+
     <canvas id="confetti-canvas"></canvas>
 
     <header>
@@ -1020,7 +1085,11 @@
                 </svg>
                 <h1>BRAINOBRAIN INDIA</h1>
             </div>
-            <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: flex-end;">
+                <!-- Level Badge -->
+                <div id="bb-level-badge" title="Your Brainobrain Level">
+                    ⭐ <span id="bb-level-num">1</span> / 10
+                </div>
                 <button onclick="goToPuppyPark()" style="background: rgba(255,255,255,0.25); border: 2px solid white; color: white; padding: 6px 14px; border-radius: 50px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; font-size: 14px; transition: all 0.2s;">🐶 ← Puppy Park</button>
                 <div class="user-badge" id="header-user">
                     <span id="header-avatar">🦁</span> <span id="header-name">Superstar</span>
@@ -1151,6 +1220,7 @@
                         <button class="btn btn-warning" id="practice-prev-btn" onclick="prevQuestion()" style="padding: 10px 20px; font-size: 15px;">⬅️ Back</button>
                         
                         <div class="action-btns-right">
+                            <button class="btn" id="practice-hint-btn" onclick="showHint()" style="padding: 10px 18px; font-size: 15px; background: linear-gradient(135deg,#f39c12,#e67e22); box-shadow: 0 4px 10px rgba(230,126,34,0.3);">💡 Hint</button>
                             <button class="btn" id="practice-check-btn" onclick="checkAnswer()" style="padding: 10px 24px; font-size: 16px;">Check 🔍</button>
                             <button class="btn btn-success" id="practice-next-btn" onclick="nextQuestion()" style="padding: 10px 20px; font-size: 15px; display: none;">Next ➡️</button>
                         </div>
@@ -8553,8 +8623,104 @@
             completedList: [] // list of completed question IDs
         };
 
+        // ===== LEVEL & SMART SCORING STATE =====
+        let hintCounts = {};         // { qId: numberOfHintsUsed }
+        let questionOrder = [];      // shuffled indices into QUESTIONS_DATA
+        let questionAttempts = {};   // { qId: timesAnsweredCorrectly }
+        let categoryFirstSolve = { math: false, logic: false, gk: false, english: false };
+
+        // ===== LEVEL COMPUTATION =====
+        // 500 questions mapped to 10 levels of 50 each
+        function computeLevel(completedCount) {
+            const lvl = Math.min(10, Math.floor(completedCount / 50) + 1);
+            const base = (lvl - 1) * 50;
+            const pct = Math.min(100, ((completedCount - base) / 50) * 100);
+            const next = lvl < 10 ? lvl * 50 : 500;
+            return { level: lvl, pct, next, completed: completedCount };
+        }
+
+        function updateLevelBadge() {
+            const info = computeLevel(user.completedList.length);
+            const el = document.getElementById('bb-level-num');
+            if (el) el.textContent = info.level;
+            const badge = document.getElementById('bb-level-badge');
+            if (badge) {
+                // colour gradient shifts per level
+                const gradients = [
+                    '#f39c12,#e74c3c', // L1
+                    '#e74c3c,#c0392b', // L2
+                    '#9b59b6,#8e44ad', // L3
+                    '#2980b9,#1f618d', // L4
+                    '#27ae60,#1a7a45', // L5
+                    '#16a085,#0e6655', // L6
+                    '#d35400,#a04000', // L7
+                    '#7f8c8d,#566573', // L8
+                    '#f39c12,#d68910', // L9
+                    '#2ecc71,#f1c40f', // L10 – rainbow feel
+                ];
+                badge.style.background = `linear-gradient(135deg, ${gradients[info.level - 1]})`;
+                badge.title = `Level ${info.level}/10 — ${user.completedList.length}/500 questions done (${Math.round(info.pct)}% to next level)`;
+            }
+        }
+
+        // ===== RANDOMISE QUESTION ORDER =====
+        function shuffleArray(arr) {
+            const a = arr.slice();
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        function initQuestionOrder() {
+            // Try to restore same-session order
+            const saved = sessionStorage.getItem('bb_q_order');
+            if (saved) {
+                questionOrder = JSON.parse(saved);
+            } else {
+                questionOrder = shuffleArray([...Array(QUESTIONS_DATA.length).keys()]);
+                sessionStorage.setItem('bb_q_order', JSON.stringify(questionOrder));
+            }
+        }
+
+        // ===== SHOW HINT FUNCTION =====
+        function showHint() {
+            if (isPracticeChecked) return;
+            const q = QUESTIONS_DATA[questionOrder[activeQIdx]];
+            if (!q) return;
+            const qId = q.id;
+            hintCounts[qId] = (hintCounts[qId] || 0) + 1;
+            const count = hintCounts[qId];
+
+            // Show warning from 3rd hint onwards
+            if (count > 2) {
+                const toast = document.getElementById('bb-hint-toast');
+                if (toast) {
+                    toast.style.display = 'block';
+                    toast.style.animation = 'none';
+                    setTimeout(() => { toast.style.animation = 'bb-shake 0.5s ease'; }, 10);
+                    setTimeout(() => { toast.style.display = 'none'; }, 3500);
+                }
+            }
+
+            // Show first sentence of explanation as hint
+            const hintText = q.explanation ? q.explanation.split('.')[0] + '.' : 'Think carefully about each option!';
+            const feedbackEl = document.getElementById('practice-feedback');
+            const feedbackTitle = document.getElementById('feedback-title');
+            const feedbackDesc = document.getElementById('feedback-desc');
+            feedbackEl.className = 'feedback-box';
+            feedbackEl.style.display = 'block';
+            feedbackEl.style.background = '#fef9e7';
+            feedbackEl.style.border = '2px solid #f39c12';
+            feedbackEl.style.color = '#7d6608';
+            feedbackTitle.innerHTML = `💡 Hint #${count}${count > 2 ? ' ⚠️ (Point reduced to 1/10!)' : ''}`;
+            feedbackDesc.innerHTML = hintText;
+            playSound('click');
+        }
+
         // Active Practice state
-        let activeQIdx = 0; // index in QUESTIONS_DATA (0 to 499)
+        let activeQIdx = 0; // index in questionOrder (0 to 499)
         let activeFilter = 'all'; // filters
         let selectedOptionIdx = null;
         let isPracticeChecked = false;
@@ -8645,11 +8811,16 @@
                 user.name = parsed.name;
                 user.avatar = parsed.avatar;
                 user.completedList = parsed.completedList || [];
+                questionAttempts = parsed.questionAttempts || {};
+                categoryFirstSolve = parsed.categoryFirstSolve || { math: false, logic: false, gk: false, english: false };
                 document.getElementById('username').value = user.name;
                 document.getElementById('header-name').innerText = user.name;
                 document.getElementById('header-avatar').innerText = user.avatar;
             }
+            // Restore randomised question order for this session
+            initQuestionOrder();
             updateTrophyCabinet();
+            updateLevelBadge();
             renderCompanionAbacus();
         };
 
@@ -8667,7 +8838,9 @@
             localStorage.setItem('bob_user_profile', JSON.stringify({
                 name: user.name,
                 avatar: user.avatar,
-                completedList: user.completedList
+                completedList: user.completedList,
+                questionAttempts: questionAttempts,
+                categoryFirstSolve: categoryFirstSolve
             }));
         }
 
@@ -8686,6 +8859,11 @@
         function startPractice() {
             playSound('click');
             saveProfile();
+            // Re-shuffle if starting fresh (clear session order)
+            if (!sessionStorage.getItem('bb_q_order')) {
+                initQuestionOrder();
+            }
+            hintCounts = {}; // Reset hints for this session
             showScreen('screen-practice');
             buildPracticeGrid();
             loadPracticeQuestion(activeQIdx);
@@ -8714,18 +8892,21 @@
             const filters = getActiveFilters();
             
             let completedCount = 0;
-            QUESTIONS_DATA.forEach((q, idx) => {
+            // Iterate over the randomised order
+            questionOrder.forEach((dataIdx, pos) => {
+                const q = QUESTIONS_DATA[dataIdx];
                 const isSolved = user.completedList.includes(q.id);
                 if (isSolved) completedCount++;
 
                 // Only render if it matches active filters
                 if (filters.includes(q.category)) {
                     const dot = document.createElement('div');
-                    dot.className = `q-dot ${idx === activeQIdx ? 'active' : ''} ${isSolved ? 'solved' : ''}`;
-                    dot.innerText = q.id;
+                    dot.className = `q-dot ${pos === activeQIdx ? 'active' : ''} ${isSolved ? 'solved' : ''}`;
+                    dot.innerText = q.id; // Show original question number
+                    dot.title = `Q${q.id} (${q.category})`;
                     dot.onclick = () => {
                         playSound('click');
-                        activeQIdx = idx;
+                        activeQIdx = pos;
                         loadPracticeQuestion(activeQIdx);
                         buildPracticeGrid();
                     };
@@ -8738,10 +8919,13 @@
 
         function loadPracticeQuestion(idx) {
             activeQIdx = idx;
-            const q = QUESTIONS_DATA[idx];
+            // Use shuffled order to get the actual question
+            const dataIdx = questionOrder[idx] !== undefined ? questionOrder[idx] : idx;
+            const q = QUESTIONS_DATA[dataIdx];
             
             // Set metadata
-            document.getElementById('practice-q-num').innerText = `Question ${q.id}/500`;
+            const levelInfo = computeLevel(user.completedList.length);
+            document.getElementById('practice-q-num').innerText = `Q${q.id}/500 • Level ${levelInfo.level}/10`;
             const badge = document.getElementById('practice-category-badge');
             badge.className = `q-badge ${q.category}`;
             badge.innerText = getCategoryTitle(q.category);
@@ -8776,6 +8960,8 @@
             document.getElementById('practice-feedback').style.display = 'none';
             document.getElementById('practice-check-btn').style.display = 'inline-flex';
             document.getElementById('practice-next-btn').style.display = 'none';
+            const hintBtnReset = document.getElementById('practice-hint-btn');
+            if (hintBtnReset) hintBtnReset.style.display = 'inline-flex';
 
             // Disable previous if first question
             document.getElementById('practice-prev-btn').disabled = (idx === 0);
@@ -8814,7 +9000,8 @@
                 return;
             }
 
-            const q = QUESTIONS_DATA[activeQIdx];
+            const dataIdx = questionOrder[activeQIdx] !== undefined ? questionOrder[activeQIdx] : activeQIdx;
+            const q = QUESTIONS_DATA[dataIdx];
             const selectedText = q.options[selectedOptionIdx];
             const isCorrect = (selectedText === q.answer);
             isPracticeChecked = true;
@@ -8824,33 +9011,88 @@
             const feedbackTitle = document.getElementById('feedback-title');
             const feedbackDesc = document.getElementById('feedback-desc');
 
+            // Reset hint-related feedback styles
+            feedback.style.background = '';
+            feedback.style.border = '';
+            feedback.style.color = '';
+
+            // Hide hint button after checking
+            const hintBtn = document.getElementById('practice-hint-btn');
+            if (hintBtn) hintBtn.style.display = 'none';
+
             // Set states
             cards[selectedOptionIdx].classList.remove('selected');
             if (isCorrect) {
                 playSound('correct');
                 cards[selectedOptionIdx].classList.add('correct');
                 feedback.className = 'feedback-box correct';
-                feedbackTitle.innerHTML = '🌟 Super Job! You Are Right!';
-                feedbackDesc.innerHTML = q.explanation;
-                
-                // Add to completed list
-                if (!user.completedList.includes(q.id)) {
-                    user.completedList.push(q.id);
-                    saveProfile();
-                    if (window.parent && window.parent !== window && window.parent.Store) {
-                        try {
-                            const r = window.parent.Store.grantBrainobrainReward ? window.parent.Store.grantBrainobrainReward('advaita', q.id, q.text) : null;
-                            if (r) {
-                                const extraHtml = `<div style="margin-top: 10px; padding: 10px 14px; background: #e8f8f5; border: 2px solid #2ecc71; border-radius: 12px; color: #1e8449; font-weight: 700;">
-                                    🎉 +${r.coins} 🪙 Earned! ${r.melted > 0 ? `| 👸 Frozen Princess Ice -${r.melted}% (${Math.round(r.freezePct)}% remaining)` : ''}
-                                    ${r.giftName ? `<br>🎁 Puppy Gift: Free ${r.giftEmoji} ${r.giftName} unlocked for ${r.pupName ? r.pupName.toUpperCase() : 'Simba'}! 🐶` : ''}
-                                </div>`;
-                                feedbackDesc.innerHTML += extraHtml;
-                            }
-                            if (window.parent.App && window.parent.App.refreshStats) window.parent.App.refreshStats();
-                        } catch(e) { console.error(e); }
+
+                // ===== SMART SCORING =====
+                const isNewQuestion = !user.completedList.includes(q.id);
+                const isFirstInCategory = !categoryFirstSolve[q.category];
+                const hintsUsed = hintCounts[q.id] || 0;
+
+                // Determine multiplier based on hints
+                let scoreMultiplier = 1.0;
+                let scoreNote = '';
+                if (hintsUsed > 2) {
+                    scoreMultiplier = 0.1;
+                    scoreNote = `⚠️ Hint penalty: only 1/10 point earned!`;
+                }
+
+                // Bonus for new questions and new categories
+                let bonusCoins = 0;
+                let bonusNote = '';
+                if (!isNewQuestion) {
+                    // Repeated question: 0.9× (shown as deduction)
+                    scoreMultiplier = Math.min(scoreMultiplier, 0.9);
+                    scoreNote = scoreNote || '🔄 Repeated question: 9/10 points';
+                } else {
+                    if (isFirstInCategory) {
+                        bonusCoins = 5;
+                        bonusNote = `🌟 Bonus! First time in ${getCategoryTitle(q.category)} +5 🪙`;
                     }
                 }
+
+                feedbackTitle.innerHTML = '🌟 Super Job! You Are Right!';
+                feedbackDesc.innerHTML = q.explanation;
+
+                // Add to completed list & update category tracking
+                if (isNewQuestion) {
+                    user.completedList.push(q.id);
+                    if (isFirstInCategory) categoryFirstSolve[q.category] = true;
+                }
+                questionAttempts[q.id] = (questionAttempts[q.id] || 0) + 1;
+                saveProfile();
+                updateLevelBadge();
+
+                // Show scoring info
+                let scoringHtml = '';
+                if (scoreNote) {
+                    scoringHtml += `<div style="margin-top:8px; padding:6px 12px; background:#fef3c7; border:1.5px solid #f59e0b; border-radius:10px; color:#92400e; font-size:13px; font-weight:700;">${scoreNote}</div>`;
+                }
+                if (bonusNote) {
+                    scoringHtml += `<div style="margin-top:8px; padding:6px 12px; background:#d1fae5; border:1.5px solid #10b981; border-radius:10px; color:#065f46; font-size:13px; font-weight:700;">${bonusNote}</div>`;
+                }
+
+                // Grant parent reward with multiplier
+                if (window.parent && window.parent !== window && window.parent.Store) {
+                    try {
+                        const r = window.parent.Store.grantBrainobrainReward
+                            ? window.parent.Store.grantBrainobrainReward('advaita', q.id, q.text, scoreMultiplier, bonusCoins)
+                            : null;
+                        if (r) {
+                            scoringHtml += `<div style="margin-top: 10px; padding: 10px 14px; background: #e8f8f5; border: 2px solid #2ecc71; border-radius: 12px; color: #1e8449; font-weight: 700;">
+                                🎉 +${r.coins} 🪙 Earned! ${r.melted > 0 ? `| 👸 Princess Ice -${r.melted}% (${Math.round(r.freezePct)}% left)` : ''}
+                                ${r.giftName ? `<br>🎁 Puppy Gift: ${r.giftEmoji} ${r.giftName} → ${r.pupName ? r.pupName.toUpperCase() : 'Simba'}! 🐶` : ''}
+                            </div>`;
+                        }
+                        if (window.parent.App && window.parent.App.refreshStats) window.parent.App.refreshStats();
+                    } catch(e) { console.error(e); }
+                }
+
+                if (scoringHtml) feedbackDesc.innerHTML += scoringHtml;
+
                 updateTrophyCabinet();
                 buildPracticeGrid();
             } else {
@@ -8918,6 +9160,8 @@
                 const el = document.getElementById('badge-gk');
                 if (el) el.classList.add('unlocked');
             }
+            // Also refresh level badge whenever trophy cabinet updates
+            updateLevelBadge();
         }
 
         // --- MOCK TEST LOGIC (40 QUESTIONS - 20 MINUTES) ---

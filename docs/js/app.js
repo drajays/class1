@@ -182,6 +182,18 @@ const App = {
     const setText = (idEl, txt) => { const e = document.getElementById(idEl); if (e) e.textContent = txt; };
     setText('stat-coins', `🪙 ${p.coins}`);
     setText('stat-bones', `🦴 ${p.bones || 0}`);
+    // Update level badge pill
+    if (typeof LevelSystem !== 'undefined') {
+      const lvlInfo = LevelSystem.computeLevel(p.xp || 0);
+      setText('stat-level', `⭐ L${lvlInfo.level}`);
+      const lvlPill = document.getElementById('stat-level');
+      if (lvlPill) {
+        const grad = LevelSystem._levelGradients[lvlInfo.level - 1];
+        lvlPill.style.background = `linear-gradient(135deg, ${grad})`;
+        lvlPill.title = `Level ${lvlInfo.level}/10 — ${p.xp || 0} XP`;
+      }
+      LevelSystem.updateAllBadges();
+    }
     setText('mall-coins', `🪙 ${p.coins}`);
     setText('math-progress', 'Lessons: ' + MathBook.progressText());
     setText('english-progress', 'Lessons: ' + EnglishBook.progressText());

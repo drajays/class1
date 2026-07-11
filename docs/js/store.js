@@ -247,9 +247,10 @@ const Store = {
     };
   },
 
-  grantBrainobrainReward(id = 'advaita', qId = 1, qText = 'Question') {
-    const p = this.getPlayer(id);
-    this.addReward(id, { coins: 10, stars: 1, xp: 15 });
+  grantBrainobrainReward(id = 'advaita', qId = 1, qText = 'Question', scoreMultiplier = 1.0, bonusCoins = 0) {
+    const baseCoins = Math.max(1, Math.round(10 * scoreMultiplier)) + bonusCoins;
+    const baseXp    = Math.max(1, Math.round(15 * scoreMultiplier));
+    this.addReward(id, { coins: baseCoins, stars: 1, xp: baseXp });
 
     let melted = 0;
     let freezePct = 0;
@@ -261,44 +262,46 @@ const Store = {
       }
     }
 
+    // 🎲 RANDOMISED puppy gift (shuffled puppy order + random item)
     this.ensurePuppies(id);
-    const pupIds = ['simba', 'mufasa', 'golu', 'whity'];
-    let giftName = null;
-    let giftEmoji = null;
-    let pupName = null;
-
-    pupIds.forEach((pid) => {
+    const p = this.getPlayer(id);
+    p.bbSolvedCount = (p.bbSolvedCount || 0) + 1;
+    // Boost happiness for all puppies
+    ['simba', 'mufasa', 'golu', 'whity'].forEach(pid => {
       const pup = p.puppies[pid];
-      if (pup) pup.happy = Math.min(100, (pup.happy ?? 70) + 10);
+      if (pup) pup.happy = Math.min(100, (pup.happy ?? 70) + 8);
     });
 
-    p.bbSolvedCount = (p.bbSolvedCount || 0) + 1;
+    let giftName = null; let giftEmoji = null; let pupName = null;
     if (p.bbSolvedCount % 3 === 0 || Math.random() < 0.35) {
-      for (const pid of pupIds) {
-        const pup = p.puppies[pid];
-        if (pup && pup.wish) {
-          const item = pup.wish;
-          if (!pup.owned.includes(item.id)) pup.owned.push(item.id);
-          giftName = item.name;
-          giftEmoji = item.emoji;
-          pupName = pid;
-          pup.wish = null;
-          pup.wishAt = Date.now();
-          pup.happy = 100;
-          break;
+      if (typeof LevelSystem !== 'undefined') {
+        this.updatePlayer(id, p);
+        const gift = LevelSystem.grantRandomPuppyGift(id);
+        if (gift) { giftName = gift.item.name; giftEmoji = gift.item.emoji; pupName = gift.pupId; }
+      } else {
+        // Fallback: shuffled puppy order
+        const pupIds = ['simba', 'mufasa', 'golu', 'whity'].sort(() => Math.random() - 0.5);
+        for (const pid of pupIds) {
+          const pup = p.puppies[pid];
+          if (pup && pup.wish) {
+            const item = pup.wish;
+            if (!pup.owned.includes(item.id)) pup.owned.push(item.id);
+            giftName = item.name; giftEmoji = item.emoji; pupName = pid;
+            pup.wish = null; pup.wishAt = Date.now(); pup.happy = 100;
+            break;
+          }
         }
-      }
-      if (!giftName && typeof Mall !== 'undefined' && Mall.items.length) {
-        const pid = pupIds[Math.floor(Math.random() * pupIds.length)];
-        const pup = p.puppies[pid];
-        const unowned = Mall.items.filter((it) => !(pup.owned || []).includes(it.id));
-        if (unowned.length) {
-          const item = unowned[Math.floor(Math.random() * Math.min(30, unowned.length))];
-          if (!pup.owned.includes(item.id)) pup.owned.push(item.id);
-          giftName = item.name;
-          giftEmoji = item.emoji;
-          pupName = pid;
-          pup.happy = 100;
+        if (!giftName && typeof Mall !== 'undefined' && Mall.items.length) {
+          const pupIds2 = ['simba', 'mufasa', 'golu', 'whity'].sort(() => Math.random() - 0.5);
+          for (const pid of pupIds2) {
+            const pup = p.puppies[pid];
+            const unowned = Mall.items.filter(it => !(pup.owned || []).includes(it.id));
+            if (unowned.length) {
+              const item = unowned[Math.floor(Math.random() * Math.min(20, unowned.length))];
+              pup.owned.push(item.id); giftName = item.name; giftEmoji = item.emoji; pupName = pid;
+              pup.happy = 100; break;
+            }
+          }
         }
       }
     }
@@ -306,14 +309,15 @@ const Store = {
     this.updatePlayer(id, p);
 
     if (typeof Rewards !== 'undefined') {
-      const msgParts = ['🎉 +10 🪙 Earned!'];
+      const msgParts = [`🎉 +${baseCoins} 🪙 Earned!`];
       if (melted > 0) msgParts.push(`👸 Princess Ice -${melted}%`);
-      if (giftName) msgParts.push(`🎁 Gifted ${giftEmoji} ${giftName} to ${pupName.toUpperCase()}!`);
+      if (giftName) msgParts.push(`🎁 ${giftEmoji} ${giftName} → ${(pupName || '').toUpperCase()}!`);
       Rewards.showToast(msgParts.join(' | '));
     }
 
-    return { coins: 10, melted, freezePct, giftName, giftEmoji, pupName };
+    return { coins: baseCoins, melted, freezePct, giftName, giftEmoji, pupName };
   },
+
 
   grantBrainobrainMockReward(id = 'advaita', totalCorrect = 35) {
     const coins = Math.max(20, totalCorrect * 5);

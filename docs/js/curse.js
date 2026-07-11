@@ -215,7 +215,7 @@ const Curse = {
     }
   },
 
-  // Celebrate rescue at 0% frozen
+  // Cycle through princess names in a NEW random order each rescue
   celebrateRescue(playerId) {
     const st = this.getState(playerId);
     Sounds.cheer();
@@ -227,9 +227,13 @@ const Curse = {
     const blessings = p.blessings || ['Special Weekend Treat 🍦', 'Choose Tonight’s Bedtime Story 📖', 'Movie Night Pick 🎬'];
     const rewardBlessing = blessings[Math.floor(Math.random() * blessings.length)];
 
+    // 🎲 Pick next princess name RANDOMLY (not sequentially)
+    const remaining = PRINCESS_NAMES.filter(n => n !== st.princessName);
+    const nextName = remaining[Math.floor(Math.random() * remaining.length)] || PRINCESS_NAMES[0];
+    
     // Advance cycle
     st.cycleIndex = (st.cycleIndex + 1) % PRINCESS_NAMES.length;
-    st.princessName = PRINCESS_NAMES[st.cycleIndex];
+    st.princessName = nextName;
     st.freezePct = 100; // the next princess arrives fully frozen — a new rescue begins
     st.lastMeltTs = Date.now();
     st.blessingsGranted.push({ blessing: rewardBlessing, ts: Date.now() });
@@ -349,7 +353,11 @@ const Curse = {
         if (this.isQualifyingChapter(App.playerId, list[i].subject, list[i].id)) { qualifying.push(list[i]); break; }
       }
     });
-    const targets = qualifying.slice(0, 3);
+    // 🎲 RANDOMISE frozen princess targets each visit
+    const shuffled = typeof LevelSystem !== 'undefined'
+      ? LevelSystem.shuffleTargets(qualifying)
+      : qualifying.slice().sort(() => Math.random() - 0.5);
+    const targets = shuffled.slice(0, 3);
 
     const subNames = { math: 'Math', english: 'English', evs: 'EVS', hindi: 'Hindi', sanskrit: 'Sanskrit', computer: 'Computer' };
 

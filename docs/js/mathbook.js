@@ -68,6 +68,8 @@ const MathBook = {
     this.chapter = this.data.chapters.find((c) => c.id === id);
     this.idx = 0;
     this.correctCount = 0;
+    // Reset hint tracking for this chapter
+    if (typeof LevelSystem !== 'undefined') LevelSystem.resetHints('math', id);
     document.getElementById('math-level-picker').classList.add('hidden');
     document.getElementById('math-game').classList.remove('hidden');
     this.renderConcept();
@@ -121,7 +123,14 @@ const MathBook = {
 
     document.getElementById('mb-read').addEventListener('click', () => Speech.speak(this.say(p) + (opts && opts.length ? '. Is it ' + opts.join(', or ') + '?' : '')));
     document.getElementById('mb-pause')?.addEventListener('click', () => { Sounds.tap(); Speech.togglePause(); });
-    document.getElementById('mb-help').addEventListener('click', () => { this.usedHelp = true; this.showSolution(p); });
+    document.getElementById('mb-help').addEventListener('click', () => {
+      this.usedHelp = true;
+      // Record hint via LevelSystem
+      if (typeof LevelSystem !== 'undefined') {
+        LevelSystem.recordHint('math', this.chapter.id, this.idx);
+      }
+      this.showSolution(p);
+    });
     area.querySelectorAll('.mb-opt').forEach((b) =>
       b.addEventListener('click', () => this.answer(b.dataset.v, p, b)));
     Speech.navSay(this.say(p));
@@ -133,20 +142,55 @@ const MathBook = {
       btn.classList.add('correct');
       document.querySelectorAll('.mb-opt').forEach((b) => (b.style.pointerEvents = 'none'));
       Sounds.correct();
-      Rewards.confetti(this.usedHelp ? 14 : 26);
       const first = this.triesThisProblem === 0 && !this.usedHelp;
-      const coins = first ? 10 : 4;
+      // ---- SMART SCORING via LevelSystem ----
+      let coinsToShow = first ? 10 : 4;
+      let scoreChipsHtml = '';
       const solved = Store.getLevelStars(this.playerId, 'math', this.chapter.id) > 0;
-      if (!solved) {
-        Store.addReward(this.playerId, { coins, stars: first ? 1 : 0, xp: 10 });
+      if (typeof LevelSystem !== 'undefined') {
+        const sc = LevelSystem.smartScore(this.playerId, 'math', this.chapter.id, {
+          baseCoins: first ? 10 : 4,
+          baseXp: 10,
+          isFirstTry: first,
+          problemIdx: this.idx
+        });
+        coinsToShow = sc.coinsAwarded;
+        scoreChipsHtml = LevelSystem.renderScoreNotes(sc.notes);
+        if (!solved) {
+          Store.addReward(this.playerId, { coins: sc.coinsAwarded, stars: first ? 1 : 0, xp: sc.xpAwarded });
+        } else {
+          Store.addReward(this.playerId, { coins: 0, stars: 0, xp: Math.max(1, Math.round(5 * sc.multiplier)) });
+        }
       } else {
-        Store.addReward(this.playerId, { coins: 0, stars: 0, xp: 5 });
+        if (!solved) {
+          Store.addReward(this.playerId, { coins: coinsToShow, stars: first ? 1 : 0, xp: 10 });
+        } else {
+          Store.addReward(this.playerId, { coins: 0, stars: 0, xp: 5 });
+        }
       }
+      Rewards.confetti(this.usedHelp ? 14 : 26);
       Store.bumpStreak(this.playerId, true);
       this.correctCount += first ? 1 : 0;
       const cheers = ['Pawsome! 🐾', "You're a math champion! 🏆", 'Brilliant! ⭐', 'Woohoo! 🎉', 'Top of the class! 🌟', 'The puppies are cheering! 🐶'];
       const cheer = first ? cheers[Math.floor(Math.random() * cheers.length)] : 'You fixed it! 💪';
-      Rewards.showToast(!solved ? `${cheer} +${coins} 🪙` : `${cheer} (Practice mode)`);
+      const toastMsg = !solved ? `${cheer} +${coinsToShow} 🪙${scoreChipsHtml ? '' : ''}` : `${cheer} (Practice mode)`;
+      // Show score chips as a quick HTML toast if any
+      if (scoreChipsHtml && typeof Rewards !== 'undefined') {
+        const toastEl = document.getElementById('toast');
+        if (toastEl) {
+          toastEl.innerHTML = `${cheer} +${coinsToShow} 🪙 <br>${scoreChipsHtml}`;
+          toastEl.classList.remove('hidden'); toastEl.classList.add('show');
+          clearTimeout(Rewards._toastTimer);
+          Rewards._toastTimer = setTimeout(() => {
+            toastEl.classList.remove('show');
+            setTimeout(() => { toastEl.classList.add('hidden'); toastEl.innerHTML = ''; }, 300);
+          }, 3000);
+        }
+      } else {
+        Rewards.showToast(toastMsg);
+      }
+      // Refresh level badge
+      if (typeof LevelSystem !== 'undefined') LevelSystem.updateAllBadges();
       App.refreshStats();
       setTimeout(() => { this.idx++; this.renderProblem(); }, 1100);
     } else {
