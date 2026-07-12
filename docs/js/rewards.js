@@ -2,6 +2,7 @@ const CONFETTI_EMOJIS = ['⭐', '🎉', '✨', '🌟', '💫', '🎈', '🏆', '
 
 const Rewards = {
   showToast(msg) {
+    if (typeof StudyTimer !== 'undefined') StudyTimer.lastActiveTimestamp = Date.now();
     const el = document.getElementById('toast');
     el.textContent = msg;
     el.classList.remove('hidden');

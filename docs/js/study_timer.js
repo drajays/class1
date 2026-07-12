@@ -19,12 +19,48 @@ const StudyTimer = {
   },
 
   timerId: null,
+  lastActiveTimestamp: Date.now(),
+  isPaused: false,
 
   init() {
     this.loadState();
     this.injectStyles();
     this.injectUI();
+    this.bindActivityListeners();
     this.startLoop();
+  },
+
+  bindActivityListeners() {
+    const markActive = () => {
+      this.lastActiveTimestamp = Date.now();
+      if (window.parent && window.parent.StudyTimer && window.parent !== window) {
+        window.parent.StudyTimer.lastActiveTimestamp = Date.now();
+      }
+    };
+    ['pointerdown', 'touchstart', 'click', 'keydown', 'input', 'scroll'].forEach((evt) => {
+      window.addEventListener(evt, markActive, { passive: true });
+      document.addEventListener(evt, markActive, { passive: true });
+    });
+  },
+
+  isStudyScreenActive() {
+    // If inside standalone or iframe brainobrain.html, child is in learning challenge
+    if (window.location.pathname.includes('brainobrain.html')) return true;
+
+    // Check index.html study screens
+    const studyIds = [
+      'screen-math',
+      'screen-english',
+      'screen-hindi',
+      'screen-subjectbook',
+      'screen-storytime',
+      'screen-englishboosters',
+      'screen-brainobrain'
+    ];
+    return studyIds.some((id) => {
+      const el = document.getElementById(id);
+      return el && el.classList.contains('active');
+    });
   },
 
   loadState() {
@@ -45,209 +81,35 @@ const StudyTimer = {
     } catch (e) {}
   },
 
-  injectStyles() {
-    if (document.getElementById('study-timer-styles')) return;
-    const style = document.createElement('style');
-    style.id = 'study-timer-styles';
-    style.textContent = `
-      #stat-study-reward {
-        cursor: pointer;
-        transition: all 0.25s ease;
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        user-select: none;
-      }
-      #stat-study-reward:hover {
-        transform: translateY(-2px) scale(1.04);
-        box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
-      }
-      #stat-study-reward.mode-study {
-        background: linear-gradient(135deg, #4f46e5, #7c3aed);
-        color: #ffffff;
-        border: 2px solid rgba(255,255,255,0.85);
-      }
-      #stat-study-reward.mode-play {
-        background: linear-gradient(135deg, #059669, #10b981);
-        color: #ffffff;
-        border: 2px solid #ffffff;
-        animation: playRewardPulse 2s infinite;
-      }
-      @keyframes playRewardPulse {
-        0%, 100% { box-shadow: 0 0 10px rgba(16, 185, 129, 0.5); }
-        50% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.9); }
-      }
-
-      /* Modal styling */
-      #study-reward-modal-overlay {
-        position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(15, 23, 42, 0.75);
-        backdrop-filter: blur(6px);
-        z-index: 10000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 16px;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.25s ease;
-      }
-      #study-reward-modal-overlay.open {
-        opacity: 1;
-        pointer-events: auto;
-      }
-      .study-reward-modal-card {
-        background: #ffffff;
-        border-radius: 28px;
-        padding: 24px 28px;
-        max-width: 480px;
-        width: 100%;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-        border: 4px solid #ede9fe;
-        text-align: center;
-        position: relative;
-        font-family: 'Fredoka', sans-serif;
-      }
-      .st-progress-bar-wrap {
-        width: 100%;
-        height: 22px;
-        background: #f1f5f9;
-        border-radius: 999px;
-        overflow: hidden;
-        margin: 16px 0;
-        border: 2px solid #e2e8f0;
-        position: relative;
-      }
-      .st-progress-bar-fill {
-        height: 100%;
-        border-radius: 999px;
-        transition: width 0.3s ease;
-      }
-      .st-progress-bar-fill.mode-study {
-        background: linear-gradient(90deg, #6366f1, #a855f7);
-      }
-      .st-progress-bar-fill.mode-play {
-        background: linear-gradient(90deg, #10b981, #34d399);
-      }
-      .st-action-btn {
-        padding: 10px 18px;
-        border-radius: 16px;
-        border: none;
-        font-family: 'Fredoka', sans-serif;
-        font-weight: 700;
-        font-size: 0.95rem;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-      }
-      .st-action-btn:hover {
-        transform: translateY(-2px);
-      }
-    `;
-    document.head.appendChild(style);
-  },
-
-  injectUI() {
-    // 1. Inject pill into App top actions OR Brainobrain header
-    let container = document.querySelector('.top-actions');
-    if (!container) {
-      container = document.querySelector('header .header-content > div:last-child');
-    }
-    if (container && !document.getElementById('stat-study-reward')) {
-      const pill = document.createElement('span');
-      pill.id = 'stat-study-reward';
-      pill.className = 'pill-stat mode-study';
-      pill.title = 'Active Study & Play Gap Reward Timer';
-      pill.addEventListener('click', () => this.openModal());
-      // Insert before first element or append
-      container.insertBefore(pill, container.firstChild);
-    }
-
-    // 2. Inject Modal Overlay
-    if (!document.getElementById('study-reward-modal-overlay')) {
-      const overlay = document.createElement('div');
-      overlay.id = 'study-reward-modal-overlay';
-      overlay.innerHTML = `
-        <div class="study-reward-modal-card">
-          <button id="st-modal-close" style="position:absolute; top:16px; right:16px; background:#f1f5f9; border:none; border-radius:50%; width:36px; height:36px; font-size:1.2rem; cursor:pointer; font-weight:bold;">✕</button>
-          <div id="st-modal-icon" style="font-size:3rem; margin-bottom:8px;">📚</div>
-          <h2 id="st-modal-title" style="font-size:1.5rem; color:#1e1b4b; margin:0 0 6px;">25-Minute Study Goal</h2>
-          <p id="st-modal-sub" style="color:#64748b; font-size:0.95rem; margin:0;">Study actively for 25 mins to earn a 10-min Play Gap Reward + 50 Coins!</p>
-
-          <div class="st-progress-bar-wrap">
-            <div id="st-modal-progress-bar" class="st-progress-bar-fill mode-study" style="width: 0%"></div>
-          </div>
-          <div id="st-modal-timer-text" style="font-size:1.35rem; font-weight:800; color:#334155; margin-bottom:16px;">00:00 / 25:00</div>
-
-          <div style="background:#f8fafc; border:2px dashed #cbd5e1; border-radius:18px; padding:14px; margin-bottom:18px; text-align:left;">
-            <div style="font-weight:800; font-size:0.9rem; color:#475569; margin-bottom:8px;">🎁 Reward Rules:</div>
-            <div style="font-size:0.85rem; color:#64748b; line-height:1.4;">
-              ✅ <b>25 Minutes Active Study:</b> Earn a 10-Minute Play Gap Reward break & +50 Coins!<br>
-              🎉 <b>10 Minutes Play Gap:</b> Free reward time to enjoy Puppy Park, Mall & Mini Games!
-            </div>
-          </div>
-
-          <!-- Quick Test / Parent actions -->
-          <div style="border-top:1px solid #e2e8f0; padding-top:14px; display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">
-            <button class="st-action-btn" id="st-btn-test-reward" style="background:#e0e7ff; color:#4338ca;">⚡ Test: Complete 25m Study</button>
-            <button class="st-action-btn" id="st-btn-test-playend" style="background:#d1fae5; color:#065f46;">⚡ Test: Complete 10m Play Gap</button>
-            <button class="st-action-btn" id="st-btn-reset" style="background:#fee2e2; color:#b91c1c;">🔄 Reset Cycle</button>
-          </div>
-        </div>
-      `;
-      document.body.appendChild(overlay);
-
-      document.getElementById('st-modal-close')?.addEventListener('click', () => this.closeModal());
-      overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) this.closeModal();
-      });
-
-      document.getElementById('st-btn-test-reward')?.addEventListener('click', () => {
-        this.state.mode = 'STUDY';
-        this.state.studySeconds = this.STUDY_GOAL_SEC - 2;
-        this.saveState();
-        this.updateUI();
-        this.closeModal();
-      });
-
-      document.getElementById('st-btn-test-playend')?.addEventListener('click', () => {
-        this.state.mode = 'PLAY_GAP';
-        this.state.playGapSeconds = 2;
-        this.saveState();
-        this.updateUI();
-        this.closeModal();
-      });
-
-      document.getElementById('st-btn-reset')?.addEventListener('click', () => {
-        this.resetToStudyMode();
-        this.closeModal();
-      });
-    }
-
-    this.updateUI();
-  },
-
   startLoop() {
     if (this.timerId) clearInterval(this.timerId);
     this.timerId = setInterval(() => this.tick(), 1000);
   },
 
   tick() {
-    // Only count when document is visible
+    // Do not tick if document is hidden/backgrounded
     if (document.hidden) return;
 
+    // Must have interacted within the last 45 seconds to count as active
+    const isRecentlyActive = (Date.now() - (this.lastActiveTimestamp || 0)) <= 45000;
+
     if (this.state.mode === 'STUDY') {
-      this.state.studySeconds += 1;
-      if (this.state.studySeconds >= this.STUDY_GOAL_SEC) {
-        this.triggerPlayGapReward();
+      const onStudyScreen = this.isStudyScreenActive();
+      this.isPaused = !(isRecentlyActive && onStudyScreen);
+
+      if (!this.isPaused) {
+        this.state.studySeconds += 1;
+        if (this.state.studySeconds >= this.STUDY_GOAL_SEC) {
+          this.triggerPlayGapReward();
+        }
       }
     } else if (this.state.mode === 'PLAY_GAP') {
-      this.state.playGapSeconds -= 1;
-      if (this.state.playGapSeconds <= 0) {
-        this.endPlayGapReward();
+      this.isPaused = !isRecentlyActive;
+      if (!this.isPaused) {
+        this.state.playGapSeconds -= 1;
+        if (this.state.playGapSeconds <= 0) {
+          this.endPlayGapReward();
+        }
       }
     }
 
@@ -269,7 +131,6 @@ const StudyTimer = {
   updateUI() {
     const pill = document.getElementById('stat-study-reward');
     if (!pill) {
-      // Try injecting again if header was re-rendered
       this.injectUI();
       return;
     }
@@ -277,10 +138,12 @@ const StudyTimer = {
     if (this.state.mode === 'STUDY') {
       pill.className = 'pill-stat mode-study';
       const mLeft = Math.ceil((this.STUDY_GOAL_SEC - this.state.studySeconds) / 60);
-      pill.innerHTML = `📚 Study: ${this.formatTime(this.state.studySeconds)} <span style="opacity:0.85;font-size:0.75rem">(${mLeft}m to Play Reward)</span>`;
+      const statusIcon = this.isPaused ? '⏸️' : '🟢';
+      pill.innerHTML = `📚 Study: ${this.formatTime(this.state.studySeconds)} ${statusIcon} <span style="opacity:0.85;font-size:0.75rem">(${mLeft}m to Play Reward)</span>`;
     } else {
       pill.className = 'pill-stat mode-play';
-      pill.innerHTML = `🎮 🎁 PLAY REWARD: ${this.formatTime(this.state.playGapSeconds)}`;
+      const statusIcon = this.isPaused ? '⏸️' : '🟢';
+      pill.innerHTML = `🎮 🎁 PLAY REWARD: ${this.formatTime(this.state.playGapSeconds)} ${statusIcon}`;
     }
 
     // Update modal if open
