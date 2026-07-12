@@ -12,18 +12,53 @@ const BADGES = [
   { id: 'perfect', name: 'Perfect Level', emoji: '💎', need: 1, type: 'perfect' },
 ];
 
+const PRAISE_EFFORT = [
+  'You worked so hard on this! 💪',
+  'I love how you didn’t give up! ⭐',
+  'Your brain is growing! 🧠✨',
+  'You figured it out! 🌟',
+  'I can tell how much you’ve practiced! 📚',
+];
+
+const PRAISE_FOCUS = [
+  'You spelled that perfectly! 🔤',
+  'Great job counting those out! 🔢',
+  'You remembered the new words! 💡',
+  'I love your curiosity! 🌟',
+  'That is some super thinking! 🎯',
+];
+
+const PRAISE_CHARACTER = [
+  'That was a very kind choice! 💖',
+  'You are such a great helper! 🐶',
+  'I love your creativity! 🎨',
+  'You took great responsibility there! ⭐',
+  'You make learning fun! 🎉',
+];
+
+const PRAISE_QUICK = [
+  'Spot on! 🎯',
+  'Fantastic effort! 🚀',
+  'Way to go! ⭐',
+  'You nailed it! 🎉',
+  'Right on target! 🎯',
+];
+
 const CHEERS = [
+  ...PRAISE_EFFORT,
+  ...PRAISE_FOCUS,
+  ...PRAISE_CHARACTER,
+  ...PRAISE_QUICK,
   'You are a superstar! 🌟',
   'Wow! Amazing job! 🎉',
   'You did it! High five! ✋',
-  'So clever! Keep going! 🚀',
-  'Fantastic! I am proud of you! 💪',
 ];
 
 const ENCOURAGE = [
-  'Good try! Let us learn together.',
-  'Almost! Look at the picture help.',
-  'No worries — every hero learns!',
+  'I love how you didn’t give up! Let us try together. ⭐',
+  'Your brain is growing every time you practice! 🌱',
+  'Good try! Look at the picture help. 💡',
+  'No worries — every hero learns step by step! 💪',
 ];
 
 const PET_TYPES = [

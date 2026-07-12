@@ -52,18 +52,52 @@ const Rewards = {
 
   celebrateCorrect(streak) {
     Sounds.correct();
-    this.confetti(30 + streak * 5);
+    this.confetti(30 + (streak || 1) * 5);
     const msg = CHEERS[Math.floor(Math.random() * CHEERS.length)];
     this.showToast(msg);
+  },
+
+  praiseEffort() {
+    const list = typeof PRAISE_EFFORT !== 'undefined' ? PRAISE_EFFORT : CHEERS;
+    const msg = list[Math.floor(Math.random() * list.length)];
+    this.showToast(msg);
+    if (typeof Speech !== 'undefined' && Speech.speak) Speech.speak(msg.replace(/[^\w\s!']/g, ''), 0.9, 'en-IN');
+    return msg;
+  },
+
+  praiseFocus() {
+    const list = typeof PRAISE_FOCUS !== 'undefined' ? PRAISE_FOCUS : CHEERS;
+    const msg = list[Math.floor(Math.random() * list.length)];
+    this.showToast(msg);
+    if (typeof Speech !== 'undefined' && Speech.speak) Speech.speak(msg.replace(/[^\w\s!']/g, ''), 0.9, 'en-IN');
+    return msg;
+  },
+
+  praiseCharacter() {
+    const list = typeof PRAISE_CHARACTER !== 'undefined' ? PRAISE_CHARACTER : CHEERS;
+    const msg = list[Math.floor(Math.random() * list.length)];
+    this.showToast(msg);
+    if (typeof Speech !== 'undefined' && Speech.speak) Speech.speak(msg.replace(/[^\w\s!']/g, ''), 0.9, 'en-IN');
+    return msg;
+  },
+
+  praiseQuick() {
+    const list = typeof PRAISE_QUICK !== 'undefined' ? PRAISE_QUICK : CHEERS;
+    const msg = list[Math.floor(Math.random() * list.length)];
+    this.showToast(msg);
+    return msg;
   },
 
   celebrateLevelComplete(stars, coins) {
     Sounds.cheer();
     this.confetti(60);
+    const effortMsg = typeof PRAISE_EFFORT !== 'undefined'
+      ? PRAISE_EFFORT[Math.floor(Math.random() * PRAISE_EFFORT.length)]
+      : 'Amazing effort!';
     this.showPopup({
       emoji: stars === 3 ? '💎' : '🏆',
       title: stars === 3 ? 'Perfect Level!' : 'Level Complete!',
-      text: `You earned ${stars} ⭐ and ${coins} 🪙`,
+      text: `${effortMsg} You earned ${stars} ⭐ and ${coins} 🪙`,
       onOk: null,
     });
   },
