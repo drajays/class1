@@ -202,6 +202,7 @@ const App = {
     setText('evs-progress', 'Lessons: ' + SubjectBook.progressText('evs'));
     setText('sanskrit-progress', 'Lessons: ' + SubjectBook.progressText('sanskrit'));
     setText('computer-progress', 'Lessons: ' + SubjectBook.progressText('computer'));
+    if (typeof StudyTimer !== 'undefined') StudyTimer.updateUI();
   },
 
   async checkForUpdate() {
