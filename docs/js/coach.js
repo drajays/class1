@@ -205,11 +205,19 @@ const Coach = {
       return;
     }
 
+    let princessChip = '';
+    if (containerId === 'mission-card-home' && typeof Curse !== 'undefined') {
+      const st = Curse.tick(App.playerId || 'advaita');
+      if (st && st.freezePct < 50) {
+        princessChip = `<span class="ui-stat-chip" style="font-size:0.85rem; padding:2px 8px; margin-left:8px; background:linear-gradient(135deg, #a855f7, #ec4899); color:#fff; border:none;">👸 ${Math.round(st.freezePct)}% frozen</span>`;
+      }
+    }
+
     el.innerHTML = `
-      <div class="mission-card">
+      <button class="mission-card ui-promo-card" id="card-play-mission-${containerId}">
         <div class="mission-header">
           <span class="mission-badge">${rec.badge}</span>
-          <span class="mission-level">Level ${rec.level} ⭐</span>
+          <span class="mission-level">Level ${rec.level} ⭐ ${princessChip}</span>
         </div>
         <div class="mission-body">
           <div class="mission-icon">${rec.icon || '📘'}</div>
@@ -217,12 +225,12 @@ const Coach = {
             <div class="mission-subject">${rec.subject.toUpperCase()}</div>
             <div class="mission-title">${rec.title}</div>
           </div>
-          <button class="btn-fun green mission-btn" id="btn-play-mission-${containerId}">Play Mission ➜</button>
+          <span class="btn-fun green mission-btn btn-play-now" id="btn-play-mission-${containerId}">Play Mission ➜</span>
         </div>
-      </div>
+      </button>
     `;
 
-    const btn = el.querySelector(`#btn-play-mission-${containerId}`);
+    const btn = el.querySelector(`#card-play-mission-${containerId}`) || el.querySelector(`#btn-play-mission-${containerId}`);
     if (btn) {
       btn.addEventListener('click', async () => {
         Sounds.tap();

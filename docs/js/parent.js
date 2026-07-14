@@ -8,6 +8,7 @@ const Parent = {
     if (!btn) return;
     btn.addEventListener('click', () => {
       Sounds.tap();
+      if (typeof App !== 'undefined' && App.toggleMoreSheet) App.toggleMoreSheet(false);
       this.openGate();
     });
     document.getElementById('parent-close')?.addEventListener('click', () => this.close());

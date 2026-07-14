@@ -418,18 +418,26 @@ const Curse = {
     const info = this.getStageInfo(st.freezePct);
 
     el.innerHTML = `
-      <div class="mission-card cc-home-card" style="border-color: #93c5fd; background: #eff6ff;">
-        <div class="cc-card-mini">${this.princessSVG(st.freezePct, 56)}</div>
-        <div class="mission-left">
-          <span class="mission-badge" style="background: #dbeafe; color: #1e3a8a;">👸 CRYSTAL CURSE (${Math.round(st.freezePct)}% FROZEN)</span>
-          <div class="mission-title">${st.princessName} — ${info.title}</div>
-          <div class="mission-why">${info.desc}</div>
+      <button class="mission-card ui-promo-card cc-home-card" id="card-open-curse" style="height:100%; display:flex; flex-direction:column; justify-content:space-between; text-align:left;">
+        <div class="mission-header" style="width:100%; display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+          <span class="mission-badge cc-home-badge" style="background:#f3e8ff; color:#6b21a8;">👸 CRYSTAL CURSE (${Math.round(st.freezePct)}% FROZEN)</span>
         </div>
-        <button class="mission-btn" style="background: #3b82f6; color: #fff;" id="btn-open-curse">Rescue ➜</button>
-      </div>
+        <div class="mission-body" style="display:flex; gap:10px; align-items:center; width:100%; margin:4px 0;">
+          <div class="cc-card-mini" style="flex-shrink:0;">${this.princessSVG(st.freezePct, 48)}</div>
+          <div class="mission-left" style="flex:1; min-width:0;">
+            <div class="mission-title" style="font-size:0.95rem; margin:0 0 4px; color:var(--text-primary);">${st.princessName} — ${info.title}</div>
+            <div class="ui-progress" style="height:6px; margin:4px 0;"><div class="ui-progress-bar" style="width:${st.freezePct}%; background:linear-gradient(90deg,#38bdf8,#a855f7);"></div></div>
+            <div class="mission-why" style="font-size:0.88rem; color:var(--text-secondary); line-height:1.3; margin:0;">${info.desc}</div>
+          </div>
+        </div>
+        <div style="width:100%; text-align:right; margin-top:4px;">
+          <span class="btn-fun pink mission-btn cc-home-btn btn-play-now" id="btn-open-curse" style="padding:6px 12px; font-size:0.85rem;">Rescue ➜</span>
+        </div>
+      </button>
     `;
 
-    el.querySelector('#btn-open-curse')?.addEventListener('click', () => {
+    const cBtn = el.querySelector('#card-open-curse') || el.querySelector('#btn-open-curse');
+    cBtn?.addEventListener('click', () => {
       App.go('curse');
     });
   }

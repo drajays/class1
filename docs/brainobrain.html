@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brainobrain India - 500 Questions Challenger (Class 1)</title>
+    <script>
+        if (window.self !== window.top) {
+            document.documentElement.classList.add('embedded');
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body?.classList.add('embedded');
+            });
+        }
+    </script>
     
     <!-- Child-friendly font fallbacks and beautiful styles -->
     <style>
@@ -19,7 +27,7 @@
             --purple: #9b59b6;
             --purple-light: #f5eef8;
             --text-dark: #2c3e50;
-            --text-light: #7f8c8d;
+            --text-light: #525f60;
             --bg-color: #f5f7fa;
             --border-radius-lg: 16px;
             --border-radius-md: 12px;
@@ -33,14 +41,37 @@
             font-family: var(--font-family);
         }
 
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        html.embedded header, body.embedded header {
+            display: none !important;
+        }
+
         body {
             background-color: var(--bg-color);
             color: var(--text-dark);
             line-height: 1.5;
-            overflow-x: hidden;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+        }
+
+        @media (max-width: 600px) {
+            .header-content {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
+            .logo-area h1 {
+                font-size: 18px;
+            }
+            .user-badge {
+                font-size: 13px;
+                padding: 4px 12px;
+            }
         }
 
         header {
@@ -342,7 +373,7 @@
 
         .filter-btn {
             padding: 8px;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 700;
             border: 1px solid #e2e8f0;
             border-radius: 20px;
@@ -431,7 +462,7 @@
             padding: 5px 15px;
             border-radius: 20px;
             text-transform: uppercase;
-            font-size: 12px;
+            font-size: 14px;
             letter-spacing: 0.5px;
         }
 
@@ -674,6 +705,22 @@
             font-size: 24px;
             cursor: pointer;
             color: var(--text-light);
+            min-width: 44px;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button:focus-visible, [role="button"]:focus-visible, a:focus-visible, input:focus-visible, .filter-btn:focus-visible, .option-btn:focus-visible, .nav-item:focus-visible {
+            outline: 3px solid #38bdf8 !important;
+            outline-offset: 2px !important;
+            box-shadow: 0 0 0 5px rgba(56, 189, 248, 0.25) !important;
+        }
+
+        button, [role="button"], .filter-btn, .option-btn, .nav-item, .close-drawer {
+            min-height: 44px;
+            min-width: 44px;
         }
 
         .abacus-canvas {
@@ -940,7 +987,7 @@
         }
 
         .badge-desc {
-            font-size: 11px;
+            font-size: 14px;
             color: var(--text-light);
         }
 
@@ -1022,7 +1069,7 @@
             color: #bdc3c7;
             text-align: center;
             padding: 15px;
-            font-size: 12px;
+            font-size: 14px;
             margin-top: 40px;
             border-top: 3px solid #1a252f;
         }
@@ -1050,6 +1097,16 @@
             }
             #print-btn {
                 display: none !important;
+            }
+        }
+
+        /* Step 19: Reduced-Motion Audit & Graceful Degradation */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01s !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01s !important;
+                scroll-behavior: auto !important;
             }
         }
     </style>
@@ -1091,7 +1148,7 @@
                     ⭐ <span id="bb-level-num">1</span> / 10
                 </div>
                 <div id="bb-unfrozen-badge" title="Princess Rescue Status" onclick="if(window.parent && window.parent.App) window.parent.App.go('curse')" style="display: inline-flex; align-items: center; gap: 5px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: #fff; font-weight: 800; font-size: 0.85rem; padding: 5px 13px; border-radius: 50px; border: 2px solid rgba(255,255,255,0.4); box-shadow: 0 2px 8px rgba(0,0,0,0.18); cursor: pointer;">
-                    👸 Unfrozen: <span id="bb-unfrozen-num">0%</span> <span style="opacity:0.88;font-size:0.75rem;">(❄️ <span id="bb-frozen-num">100%</span>)</span>
+                    👸 Unfrozen: <span id="bb-unfrozen-num">0%</span> <span style="opacity:0.88;font-size:0.85rem;">(❄️ <span id="bb-frozen-num">100%</span>)</span>
                 </div>
                 <button onclick="goToPuppyPark()" style="background: rgba(255,255,255,0.25); border: 2px solid white; color: white; padding: 6px 14px; border-radius: 50px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; font-size: 14px; transition: all 0.2s;">🐶 ← Puppy Park</button>
                 <div class="user-badge" id="header-user">
@@ -1370,7 +1427,7 @@
             <h3>🧮 Abacus Sandbox</h3>
             <button class="close-drawer" onclick="toggleAbacusDrawer()">✕</button>
         </div>
-        <p style="font-size: 12px; color: var(--text-light); margin-bottom: 12px; line-height: 1.3;">
+        <p style="font-size: 14px; color: var(--text-light); margin-bottom: 12px; line-height: 1.3;">
             Click on beads to slide them up or down! Practice equations and count values here.
         </p>
         

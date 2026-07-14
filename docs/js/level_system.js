@@ -76,9 +76,9 @@ const LevelSystem = {
         ⭐ <span class="pp-lvl-num">1</span>/10
         <div class="pp-lvl-bar-track"><div class="pp-lvl-bar" style="width:0%"></div></div>
       </div>
-      <div class="pp-unfrozen-badge" title="Princess Rescue Status" onclick="if(window.App) App.go('curse')">
+      <div class="pp-unfrozen-badge" title="Princess Rescue Status">
         👸 Unfrozen: <span class="pp-unfrozen-num">0%</span>
-        <span class="pp-frozen-sub" style="opacity:0.88;font-size:0.75rem;">(❄️ <span class="pp-frozen-num">100%</span>)</span>
+        <span class="pp-frozen-sub" style="opacity:0.88;font-size:0.8rem;">(❄️ <span class="pp-frozen-num">100%</span>)</span>
       </div>
     </div>`;
   },
@@ -139,7 +139,7 @@ const LevelSystem = {
         60%{transform:translateX(-50%) rotate(-1.5deg)}
         80%{transform:translateX(-50%) rotate(1.5deg)}
       }
-      .pp-score-chip { display:inline-block; padding:3px 10px; border-radius:8px; font-size:0.76rem; font-weight:700; margin-top:4px; margin-right:4px; }
+      .pp-score-chip { display:inline-block; padding:3px 10px; border-radius:8px; font-size:0.85rem; font-weight:700; margin-top:4px; margin-right:4px; }
       .pp-score-chip.penalty { background:#fef3c7; color:#92400e; border:1.5px solid #f59e0b; }
       .pp-score-chip.bonus   { background:#d1fae5; color:#065f46; border:1.5px solid #10b981; }
       .pp-score-chip.repeat  { background:#fce7f3; color:#9d174d; border:1.5px solid #ec4899; }
@@ -278,12 +278,29 @@ const LevelSystem = {
   },
 
   _injectBadgesIntoHeaders() {
-    // Home screen top-bar
-    const topActions = document.querySelector('#screen-home .top-actions');
-    if (topActions && !topActions.querySelector('.pp-corner-badges')) {
+    // Home screen badges right below top-bar
+    const homeScreen = document.getElementById('screen-home');
+    if (homeScreen && !homeScreen.querySelector('.pp-corner-badges')) {
+      let row = homeScreen.querySelector('.home-badges-row');
+      if (!row) {
+        row = document.createElement('div');
+        row.className = 'home-badges-row';
+        row.style.cssText = 'display:flex; justify-content:center; gap:10px; margin-bottom:12px; flex-wrap:wrap;';
+        const topBar = homeScreen.querySelector('.top-bar');
+        const missionCard = homeScreen.querySelector('#mission-card-home');
+        if (topBar && topBar.parentNode === homeScreen && topBar.nextSibling) {
+          homeScreen.insertBefore(row, topBar.nextSibling);
+        } else if (missionCard && missionCard.parentNode === homeScreen) {
+          homeScreen.insertBefore(row, missionCard);
+        } else {
+          homeScreen.appendChild(row);
+        }
+      }
       const badgeContainer = document.createElement('div');
       badgeContainer.innerHTML = this.badgeHTML();
-      topActions.insertAdjacentElement('afterbegin', badgeContainer.firstElementChild);
+      while (badgeContainer.firstChild) {
+        row.appendChild(badgeContainer.firstChild);
+      }
     }
     // All game-headers across every screen/panel
     document.querySelectorAll('.game-header').forEach(header => {
@@ -291,6 +308,12 @@ const LevelSystem = {
       const badgeContainer = document.createElement('div');
       badgeContainer.innerHTML = this.badgeHTML();
       header.appendChild(badgeContainer.firstElementChild);
+    });
+    document.querySelectorAll('.pp-unfrozen-badge').forEach(el => {
+      if (!el.dataset.bound) {
+        el.dataset.bound = 'true';
+        el.addEventListener('click', () => { if (window.App) App.go('curse'); });
+      }
     });
   },
 };

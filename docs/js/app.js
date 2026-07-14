@@ -34,6 +34,33 @@ const App = {
     document.getElementById('btn-update')?.addEventListener('click', () => this.checkForUpdate());
     document.getElementById('minigame-back')?.addEventListener('click', () => MiniGames.back());
 
+    const navObserver = new MutationObserver(() => {
+      const activeScreen = document.querySelector('.screen.active');
+      const nav = document.getElementById('bottom-nav');
+      if (!nav || !activeScreen) return;
+      if (activeScreen.id === 'screen-parent' || activeScreen.id === 'screen-brainobrain') {
+        nav.style.display = 'none';
+        return;
+      }
+      const activeGameArea = activeScreen.querySelector('.game-area:not(.hidden)');
+      if (activeGameArea) {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = '';
+      }
+    });
+    document.querySelectorAll('.screen').forEach(s => navObserver.observe(s, { attributes: true, subtree: true, attributeFilter: ['class'] }));
+
+    document.querySelectorAll('#bottom-nav .nav-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const t = tab.getAttribute('data-tab');
+        if (t === 'more') this.toggleMoreSheet();
+        else if (t && t !== 'parent') { Sounds.tap(); this.go(t); }
+      });
+    });
+    document.getElementById('more-sheet-overlay')?.addEventListener('click', () => this.toggleMoreSheet(false));
+    document.querySelector('.more-sheet-close')?.addEventListener('click', () => this.toggleMoreSheet(false));
+
     document.querySelectorAll('[data-back]').forEach((btn) => {
       btn.addEventListener('click', () => {
         Sounds.tap();
@@ -65,7 +92,23 @@ const App = {
     if (!silent) Speech.navSay('Welcome to Puppy Park! Your puppies missed you!');
   },
 
+  toggleMoreSheet(show) {
+    const sheet = document.getElementById('more-sheet');
+    const overlay = document.getElementById('more-sheet-overlay');
+    if (!sheet || !overlay) return;
+    const isHidden = sheet.classList.contains('hidden');
+    const targetShow = show !== undefined ? show : isHidden;
+    if (targetShow) {
+      sheet.classList.remove('hidden');
+      overlay.classList.remove('hidden');
+    } else {
+      sheet.classList.add('hidden');
+      overlay.classList.add('hidden');
+    }
+  },
+
   go(screen) {
+    this.toggleMoreSheet(false);
     document.querySelectorAll('.screen').forEach((s) => s.classList.remove('active'));
     const map = {
       login: 'screen-login',
@@ -89,6 +132,25 @@ const App = {
     };
     document.getElementById(map[screen]).classList.add('active');
     window.scrollTo(0, 0);
+
+    const nav = document.getElementById('bottom-nav');
+    if (nav) {
+      if (screen === 'parent' || screen === 'brainobrain') {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = '';
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+          const t = tab.getAttribute('data-tab');
+          let isActive = false;
+          if (t === 'home' && screen === 'home') isActive = true;
+          else if (t === 'play' && ['play', 'math', 'english', 'storytime', 'englishboosters', 'hindi', 'evs', 'sanskrit', 'computer', 'english_plus', 'math_challenge', 'minigames', 'curse'].includes(screen)) isActive = true;
+          else if (t === 'mall' && ['mall', 'puppy'].includes(screen)) isActive = true;
+          tab.classList.toggle('active', isActive);
+          if (isActive) tab.setAttribute('aria-current', 'page');
+          else tab.removeAttribute('aria-current');
+        });
+      }
+    }
 
     if (screen === 'home') {
       const fresh = Puppies.tick();
@@ -125,7 +187,7 @@ const App = {
     if (screen === 'brainobrain') {
       const f = document.getElementById('brainobrain-frame');
       if (f && (!f.getAttribute('src') || f.getAttribute('src') === '')) {
-        f.src = 'brainobrain.html';
+        f.src = f.getAttribute('data-src') || 'brainobrain.html';
       }
       Speech.navSay('Welcome to Brainobrain 500 Questions Challenger! Solve questions and earn coins!');
     }
@@ -173,6 +235,17 @@ const App = {
     }
   },
 
+  renderSubjectCardProgress(elementId, done, total, nextTitle) {
+    const el = document.getElementById(elementId);
+    if (!el) return;
+    const pct = total > 0 ? Math.min(100, Math.floor((done / total) * 100)) : 0;
+    el.innerHTML = `
+      <div style="font-weight:800; font-size:0.88rem; color:var(--text-primary); margin:2px 0;">Chapter ${done} of ${total} (${pct}% ⭐)</div>
+      <div class="ui-progress" style="width:100%; height:6px; margin:4px 0;"><div class="ui-progress-bar" style="width:${pct}%; background:linear-gradient(90deg,#4ade80,#16a34a);"></div></div>
+      ${nextTitle ? `<div class="next-chapter-name" title="${nextTitle}">Next: ${nextTitle}</div>` : ''}
+    `;
+  },
+
   refreshStats() {
     if (!this.playerId) return;
     const p = Store.getPlayer(this.playerId);
@@ -195,13 +268,52 @@ const App = {
       LevelSystem.updateAllBadges();
     }
     setText('mall-coins', `🪙 ${p.coins}`);
-    setText('math-progress', 'Lessons: ' + MathBook.progressText());
-    setText('english-progress', 'Lessons: ' + EnglishBook.progressText());
-    setText('hindi-progress', HindiBook.progressText());
+    if (typeof MathBook !== 'undefined' && MathBook.data?.chapters) {
+      const chs = MathBook.data.chapters;
+      let done = 0, nextTitle = '';
+      for (let i = 0; i < chs.length; i++) {
+        if (Store.getLevelStars(p.id || App.playerId, 'math', chs[i].id) > 0) done++;
+        else if (!nextTitle) nextTitle = chs[i].title || chs[i].name || `Chapter ${i+1}`;
+      }
+      this.renderSubjectCardProgress('math-progress', done, chs.length, nextTitle);
+    }
+    if (typeof EnglishBook !== 'undefined' && EnglishBook.data?.chapters) {
+      const chs = EnglishBook.data.chapters;
+      let done = 0, nextTitle = '';
+      for (let i = 0; i < chs.length; i++) {
+        if (Store.getLevelStars(p.id || App.playerId, 'english', chs[i].id) > 0) done++;
+        else if (!nextTitle) nextTitle = chs[i].title || chs[i].name || `Chapter ${i+1}`;
+      }
+      this.renderSubjectCardProgress('english-progress', done, chs.length, nextTitle);
+    }
+    if (typeof HindiBook !== 'undefined') {
+      let done = 0, nextTitle = '';
+      const lCount = HindiBook.LESSONS ? HindiBook.LESSONS.length : 26;
+      for (let i = 0; i < lCount; i++) {
+        const id = 'paath-' + (i + 1);
+        if (Store.getLevelStars(p.id || App.playerId, 'hindi', id) > 0) done++;
+        else if (!nextTitle && HindiBook.LESSONS && HindiBook.LESSONS[i]) nextTitle = HindiBook.LESSONS[i].title || `पाठ ${i+1}`;
+      }
+      this.renderSubjectCardProgress('hindi-progress', done, lCount, nextTitle || 'पाठ अभ्यास');
+    }
     this.paintMummyBtn();
-    setText('evs-progress', 'Lessons: ' + SubjectBook.progressText('evs'));
-    setText('sanskrit-progress', 'Lessons: ' + SubjectBook.progressText('sanskrit'));
-    setText('computer-progress', 'Lessons: ' + SubjectBook.progressText('computer'));
+    if (typeof SubjectBook !== 'undefined') {
+      ['evs', 'sanskrit', 'computer'].forEach(subj => {
+        const data = SubjectBook.dataCache[subj];
+        if (data && data.chapters && data.chapters.length) {
+          const chs = data.chapters;
+          let done = 0, nextTitle = '';
+          for (let i = 0; i < chs.length; i++) {
+            if (Store.getLevelStars(p.id || App.playerId, subj, chs[i].id) > 0) done++;
+            else if (!nextTitle) nextTitle = chs[i].title || chs[i].name || `Chapter ${i+1}`;
+          }
+          this.renderSubjectCardProgress(`${subj}-progress`, done, chs.length, nextTitle);
+        } else {
+          const el = document.getElementById(`${subj}-progress`);
+          if (el) el.textContent = 'Lessons: ' + SubjectBook.progressText(subj);
+        }
+      });
+    }
     if (typeof StudyTimer !== 'undefined') StudyTimer.updateUI();
   },
 

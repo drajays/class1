@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffb3d1">
   <link rel="apple-touch-icon" href="assets/puppies/simba.jpg">
   <title>Advaita's Puppy Park 🐶</title>
@@ -29,139 +29,185 @@
   <section id="screen-home" class="screen">
     <header class="top-bar">
       <div class="top-row">
-        <div class="player-chip" id="player-chip"></div>
+        <div class="home-brand">
+          <span class="app-logo-title">🐶 Puppy Park</span>
+          <div class="player-chip player-chip-inline" id="player-chip"></div>
+        </div>
         <div class="top-actions">
-          <span class="pill-stat" id="stat-coins">🪙 0</span>
-          <span class="pill-stat" id="stat-bones">🦴 0</span>
-          <span class="pill-stat" id="stat-level" title="Your Level" style="background:linear-gradient(135deg,#f39c12,#e74c3c);color:#fff;font-weight:800;cursor:default;">⭐ L1</span>
-          <button class="icon-btn" id="btn-mummy-voice" title="Mummy's voice">🎙️</button>
-          <button class="icon-btn speech-pause-btn" id="btn-voice-pause" title="Pause voice" style="font-size:1.1rem;">⏸️</button>
-          <button class="icon-btn" id="btn-sound" title="Sound">🔊</button>
-          <button class="icon-btn" id="btn-update" title="Check for updates">🔄</button>
-          <button class="icon-btn parent-btn" id="btn-parent" title="Parent">👨‍👩‍👧</button>
+          <span class="pill-stat ui-stat-chip" id="stat-coins" title="Your Coins">🪙 0</span>
+          <span class="pill-stat ui-stat-chip" id="stat-bones" title="Your Bones">🦴 0</span>
         </div>
       </div>
     </header>
 
-    <p class="park-banner" id="park-banner"></p>
-    <div id="curse-card-home" class="mission-card-container"></div>
     <div id="mission-card-home" class="mission-card-container"></div>
-    <div id="storytime-card-home" class="mission-card-container"></div>
 
-    <!-- Brainobrain Challenge Home Banner -->
-    <div class="mission-card-container">
-      <div class="mission-card" style="background: linear-gradient(135deg, #ebf5fb, #d4e6f1); border: 3px solid #3498db; cursor: pointer;" onclick="App.go('brainobrain')">
-        <div class="mission-header" style="display:flex; justify-content:space-between; align-items:center;">
-          <span class="mission-badge" style="background: #2980b9; color: white; font-weight: 700; padding: 4px 10px; border-radius: 8px;">🏆 BRAINOBRAIN 500 CHALLENGE</span>
-          <span style="background: #2ecc71; color: white; font-size: 0.8rem; font-weight: 700; padding: 3px 8px; border-radius: 6px;">🪙 COINS + 👸 PRINCESS + 🎁 GIFTS</span>
-        </div>
-        <div class="mission-body" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0;">
-          <div>
-            <h3 style="font-size: 1.15rem; color: #1f618d; margin-bottom: 4px;">Class 1 Abacus, Memory &amp; GK Challenger</h3>
-            <p style="color: #5499c7; font-size: 0.95rem; margin: 0;">Solve questions to earn 🪙 coins, melt Princess ice &amp; win Puppy gifts!</p>
-          </div>
-          <button class="btn-fun blue btn-big" style="white-space: nowrap; font-size: 0.95rem; padding: 8px 16px;">▶️ Play Now</button>
-        </div>
-      </div>
+    <div class="puppy-yard-section">
+      <p class="park-banner" id="park-banner"></p>
+      <div class="puppy-yard" id="puppy-yard"></div>
     </div>
-
-    <div class="puppy-yard" id="puppy-yard"></div>
 
     <div class="home-actions big-home-actions">
       <button class="btn-fun orange btn-big" id="btn-play">▶️ Play &amp; Earn</button>
       <button class="btn-fun pink btn-big" id="btn-mall">🛍️ Puppy Mall</button>
       <button class="btn-fun green btn-big" id="btn-daily">🎁 Daily Gift</button>
     </div>
+
+    <section class="more-adventures-section">
+      <h3 class="more-adventures-title">✨ More Adventures</h3>
+      <div class="more-adventures-strip">
+        <div id="curse-card-home" class="more-adventure-item"></div>
+        <div id="storytime-card-home" class="more-adventure-item"></div>
+        <div id="brainobrain-card-home" class="more-adventure-item">
+          <button class="mission-card ui-promo-card brainobrain-compact-card" data-go="brainobrain">
+            <div class="mission-header">
+              <span class="mission-badge">🏆 BRAINOBRAIN 500</span>
+              <span class="mission-reward-badge">🪙 COINS</span>
+            </div>
+            <div class="mission-body">
+              <div class="mission-icon">🧮</div>
+              <div class="mission-info">
+                <div class="mission-subject">ABACUS &amp; GK</div>
+                <div class="mission-title">Class 1 Challenger</div>
+              </div>
+              <span class="btn-fun blue mission-btn btn-play-now">▶️ Play Now</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
   </section>
 
   <!-- Play (subjects) -->
   <section id="screen-play" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Park</button>
-      <h2>▶️ Play &amp; Earn 🪙</h2>
+    <header class="game-header ui-top-bar">
+      <div class="top-bar-left">
+        <button class="btn-back back-btn" data-back="home">← Park</button>
+      </div>
+      <h2 class="top-bar-title">▶️ Play &amp; Earn 🪙</h2>
+      <div class="top-bar-right"></div>
     </header>
     <div id="mission-card-play" class="mission-card-container"></div>
-    <h2 class="section-label">🎮 Quick Play</h2>
-    <div class="play-grid">
-      <button class="play-card feature" data-go="brainobrain" style="background: linear-gradient(135deg, #ebf5fb, #d4e6f1); border: 3px solid #3498db;">
-        <span class="play-icon">🏆</span><span class="play-title">Brainobrain 500 Challenger</span>
-        <span class="play-sub">Class 1 Abacus, Memory, Logic &amp; GK!</span>
-      </button>
-      <button class="play-card feature storytime-world" data-go="storytime">
-        <span class="play-icon">📖</span><span class="play-title">Story Time</span>
-        <span class="play-sub">Read with Simba!</span>
-      </button>
-      <button class="play-card feature math-world" data-go="math">
-        <span class="play-icon">📘</span><span class="play-title">Math Book</span>
-        <span class="play-sub" id="math-progress"></span>
-      </button>
-      <button class="play-card feature math-world" data-go="math_challenge">
-        <span class="play-icon">🏆</span><span class="play-title">Math Challenge</span>
-        <span class="play-sub">Class 2–3 Stretch</span>
-      </button>
-      <button class="play-card english-world" data-go="english">
-        <span class="play-icon">📖</span><span class="play-title">Reading Arcade</span>
-        <span class="play-sub" id="english-progress"></span>
-      </button>
-      <button class="play-card feature english-world" data-go="englishboosters">
-        <span class="play-icon">⚡</span><span class="play-title">Word Power</span>
-        <span class="play-sub">Sight Words, Phonics & Vocab</span>
-      </button>
-      <button class="play-card hindi-world" data-go="hindi">
-        <span class="play-icon">🕉️</span><span class="play-title">हिंदी अक्षर</span>
-        <span class="play-sub" id="hindi-progress"></span>
-      </button>
-      <button class="play-card" data-go="evs">
-        <span class="play-icon">🌿</span><span class="play-title">EVS Book</span>
-        <span class="play-sub" id="evs-progress"></span>
-      </button>
-      <button class="play-card" data-go="sanskrit">
-        <span class="play-icon">🪔</span><span class="play-title">Sanskrit Book</span>
-        <span class="play-sub" id="sanskrit-progress"></span>
-      </button>
-      <button class="play-card" data-go="computer">
-        <span class="play-icon">🖥️</span><span class="play-title">Computer Book</span>
-        <span class="play-sub" id="computer-progress"></span>
-      </button>
-      <button class="play-card" data-go="minigames">
-        <span class="play-icon">🎮</span><span class="play-title">Fun Games</span>
-        <span class="play-sub">Lots of mini games!</span>
-      </button>
+
+    <div class="learn-section">
+      <h2 class="section-label">📚 My Books</h2>
+      <div class="play-grid books-grid">
+        <button class="play-card ui-subject-card math-world" data-go="math">
+          <span class="play-icon">📘</span>
+          <div class="subject-info">
+            <span class="play-title">Math Book</span>
+            <div class="play-sub" id="math-progress"></div>
+          </div>
+        </button>
+        <button class="play-card ui-subject-card english-world" data-go="english">
+          <span class="play-icon">📖</span>
+          <div class="subject-info">
+            <span class="play-title">Reading Arcade</span>
+            <div class="play-sub" id="english-progress"></div>
+          </div>
+        </button>
+        <button class="play-card ui-subject-card hindi-world" data-go="hindi">
+          <span class="play-icon">🕉️</span>
+          <div class="subject-info">
+            <span class="play-title">हिंदी अक्षर</span>
+            <div class="play-sub" id="hindi-progress"></div>
+          </div>
+        </button>
+        <button class="play-card ui-subject-card" data-go="evs">
+          <span class="play-icon">🌿</span>
+          <div class="subject-info">
+            <span class="play-title">EVS Book</span>
+            <div class="play-sub" id="evs-progress"></div>
+          </div>
+        </button>
+        <button class="play-card ui-subject-card" data-go="sanskrit">
+          <span class="play-icon">🪔</span>
+          <div class="subject-info">
+            <span class="play-title">Sanskrit Book</span>
+            <div class="play-sub" id="sanskrit-progress"></div>
+          </div>
+        </button>
+        <button class="play-card ui-subject-card" data-go="computer">
+          <span class="play-icon">🖥️</span>
+          <div class="subject-info">
+            <span class="play-title">Computer Book</span>
+            <div class="play-sub" id="computer-progress"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="learn-section">
+      <h2 class="section-label">🎮 Games &amp; Challenges</h2>
+      <div class="play-grid games-grid">
+        <button class="play-card feature feature-brainobrain" data-go="brainobrain">
+          <span class="play-icon">🏆</span><span class="play-title">Brainobrain 500</span>
+          <span class="play-sub">Abacus &amp; GK Challenge</span>
+        </button>
+        <button class="play-card feature math-world" data-go="math_challenge">
+          <span class="play-icon">🏆</span><span class="play-title">Math Challenge</span>
+          <span class="play-sub">Class 2–3 Stretch</span>
+        </button>
+        <button class="play-card feature storytime-world" data-go="storytime">
+          <span class="play-icon">📖</span><span class="play-title">Story Time</span>
+          <span class="play-sub">Read with Simba!</span>
+        </button>
+        <button class="play-card feature english-world" data-go="englishboosters">
+          <span class="play-icon">⚡</span><span class="play-title">Word Power</span>
+          <span class="play-sub">Sight Words &amp; Vocab</span>
+        </button>
+        <button class="play-card" data-go="minigames">
+          <span class="play-icon">🎮</span><span class="play-title">Fun Games</span>
+          <span class="play-sub">Lots of mini games!</span>
+        </button>
+      </div>
     </div>
   </section>
 
   <!-- Puppy Mall -->
   <section id="screen-mall" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Park</button>
-      <h2>🛍️ Puppy Mall</h2>
-      <span class="pill-stat header-coins" id="mall-coins">🪙 0</span>
+    <header class="game-header ui-top-bar">
+      <div class="top-bar-left">
+        <button class="btn-back back-btn" data-back="home">← Park</button>
+      </div>
+      <h2 class="top-bar-title">🛍️ Puppy Mall</h2>
+      <div class="top-bar-right">
+        <span class="pill-stat header-coins ui-stat-chip" id="mall-coins">🪙 0</span>
+      </div>
     </header>
     <div id="mall-shopper"></div>
     <div class="mall-tabs" id="mall-tabs"></div>
+    <div class="mall-filters" id="mall-filters"></div>
     <div class="mall-grid" id="mall-grid"></div>
+    <div class="mall-pagination" id="mall-pagination"></div>
   </section>
 
   <!-- Puppy detail -->
   <section id="screen-puppy" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Park</button>
-      <h2>🐶 My Puppy</h2>
+    <header class="game-header ui-top-bar">
+      <div class="top-bar-left">
+        <button class="btn-back back-btn" data-back="home">← Park</button>
+      </div>
+      <h2 class="top-bar-title">🐶 My Puppy</h2>
+      <div class="top-bar-right"></div>
     </header>
     <div id="puppy-detail"></div>
   </section>
 
   <!-- Mini Games -->
   <section id="screen-minigames" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="play">← Back</button>
-      <h2>🎮 Mini Games</h2>
+    <header class="game-header ui-top-bar">
+      <div class="top-bar-left">
+        <button class="btn-back back-btn" data-back="play">← Learn</button>
+      </div>
+      <h2 class="top-bar-title">🎮 Mini Games</h2>
+      <div class="top-bar-right"></div>
     </header>
     <p class="game-instruction">Tap a big picture to play!</p>
     <div class="minigame-hub" id="minigame-hub"></div>
     <div id="minigame-play" class="game-area hidden">
       <header class="minigame-header">
-        <button class="btn-back btn-big" id="minigame-back">← Back</button>
+        <button class="btn-back btn-big" id="minigame-back">← Games</button>
         <h3 id="minigame-title">Game</h3>
       </header>
       <div id="minigame-body"></div>
@@ -170,9 +216,12 @@
 
   <!-- Math -->
   <section id="screen-math" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="play">← Back</button>
-      <h2>📘 Math Book</h2>
+    <header class="game-header ui-top-bar">
+      <div class="top-bar-left">
+        <button class="btn-back back-btn" data-back="play">← Learn</button>
+      </div>
+      <h2 class="top-bar-title">📘 Math Book</h2>
+      <div class="top-bar-right"></div>
     </header>
     <div id="math-level-picker" class="level-picker"></div>
     <div id="math-game" class="game-area hidden"></div>
@@ -180,9 +229,12 @@
 
   <!-- Reading -->
   <section id="screen-english" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="play">← Back</button>
-      <h2>📖 Reading Arcade</h2>
+    <header class="game-header ui-top-bar">
+      <div class="top-bar-left">
+        <button class="btn-back back-btn" data-back="play">← Learn</button>
+      </div>
+      <h2 class="top-bar-title">📖 Reading Arcade</h2>
+      <div class="top-bar-right"></div>
     </header>
     <div id="english-level-picker" class="level-picker"></div>
     <div id="english-game" class="game-area hidden"></div>
@@ -190,18 +242,24 @@
 
   <!-- Hindi Varnamala -->
   <section id="screen-hindi" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="play">← Back</button>
-      <h2>🕉️ हिंदी अक्षर</h2>
+    <header class="game-header ui-top-bar">
+      <div class="top-bar-left">
+        <button class="btn-back back-btn" data-back="play">← Learn</button>
+      </div>
+      <h2 class="top-bar-title">🕉️ हिंदी अक्षर</h2>
+      <div class="top-bar-right"></div>
     </header>
     <div id="hindi-body"></div>
   </section>
 
   <!-- Subject Book (EVS, Sanskrit, Computer) -->
   <section id="screen-subjectbook" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="play">← Back</button>
-      <h2 id="sb-header-title">📘 Subject Book</h2>
+    <header class="game-header ui-top-bar">
+      <div class="top-bar-left">
+        <button class="btn-back back-btn" data-back="play">← Learn</button>
+      </div>
+      <h2 class="top-bar-title" id="sb-header-title">📘 Subject Book</h2>
+      <div class="top-bar-right"></div>
     </header>
     <div id="sb-level-picker" class="level-picker"></div>
     <div id="sb-game" class="game-area hidden"></div>
@@ -237,46 +295,108 @@
 
   <!-- Princess Rescue / Crystal Curse -->
   <section id="screen-curse" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Park</button>
-      <h2>👸 The Crystal Curse 🧊</h2>
+    <header class="game-header ui-top-bar">
+      <div class="top-bar-left">
+        <button class="btn-back back-btn" data-back="home">← Park</button>
+      </div>
+      <h2 class="top-bar-title">👸 The Crystal Curse 🧊</h2>
+      <div class="top-bar-right"></div>
     </header>
     <div id="curse-content" class="curse-content"></div>
   </section>
 
   <!-- Story Time -->
   <section id="screen-storytime" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="home">← Park</button>
-      <h2>📖 Story Time</h2>
+    <header class="game-header ui-top-bar">
+      <div class="top-bar-left">
+        <button class="btn-back back-btn" data-back="home">← Park</button>
+      </div>
+      <h2 class="top-bar-title">📖 Story Time</h2>
+      <div class="top-bar-right"></div>
     </header>
     <div id="storytime-view"></div>
   </section>
 
   <!-- English Boosters -->
   <section id="screen-englishboosters" class="screen">
-    <header class="game-header">
-      <button class="btn-back btn-big" data-back="play">← Back</button>
-      <h2>⚡ Word Power Boosters</h2>
+    <header class="game-header ui-top-bar">
+      <div class="top-bar-left">
+        <button class="btn-back back-btn" data-back="play">← Learn</button>
+      </div>
+      <h2 class="top-bar-title">⚡ Word Power Boosters</h2>
+      <div class="top-bar-right"></div>
     </header>
     <div id="boosters-view"></div>
   </section>
 
   <!-- Brainobrain 500 Challenger -->
   <section id="screen-brainobrain" class="screen">
-    <header class="game-header" style="justify-content: space-between; flex-wrap: wrap; gap: 12px;">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <button class="btn-back btn-big" data-back="play">← Park</button>
-        <h2>🏆 Brainobrain 500 Challenger</h2>
+    <header class="game-header ui-top-bar brainobrain-header">
+      <div class="top-bar-left brainobrain-header-left">
+        <button class="btn-back back-btn" data-back="play">← Learn</button>
       </div>
-      <div style="display: flex; gap: 10px; align-items: center;">
-        <a href="brainobrain.html" target="_blank" class="btn-fun blue btn-big" style="text-decoration: none; font-size: 0.95rem; padding: 8px 16px; display: inline-flex; align-items: center; gap: 6px;">↗ Open Fullscreen App</a>
+      <h2 class="top-bar-title">🏆 Brainobrain 500 Challenger</h2>
+      <div class="top-bar-right brainobrain-header-right">
+        <a href="brainobrain.html" target="_blank" class="btn-fun blue btn-big brainobrain-fullscreen-btn">↗ Open Fullscreen App</a>
       </div>
     </header>
-    <div style="width: 100%; height: 84vh; min-height: 780px; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 35px rgba(0,0,0,0.12); background: #ffffff; border: 3px solid #e2e8f0; position: relative;">
-      <iframe id="brainobrain-frame" src="brainobrain.html" style="width: 100%; height: 100%; border: none; display: block;"></iframe>
+    <div class="brainobrain-frame-wrapper">
+      <iframe id="brainobrain-frame" src="" data-src="brainobrain.html"></iframe>
     </div>
   </section>
+
+  <!-- Persistent Bottom Navigation (Step 7 / Blocker 3 fix) -->
+  <nav class="ui-bottom-nav" id="bottom-nav" aria-label="Main Navigation">
+    <button class="nav-tab active" data-tab="home" aria-current="page">
+      <span class="nav-tab-icon">🐶</span>
+      <span class="nav-tab-label">Park</span>
+    </button>
+    <button class="nav-tab" data-tab="play">
+      <span class="nav-tab-icon">📚</span>
+      <span class="nav-tab-label">Learn</span>
+    </button>
+    <button class="nav-tab" data-tab="mall">
+      <span class="nav-tab-icon">🛍️</span>
+      <span class="nav-tab-label">Mall</span>
+    </button>
+    <button class="nav-tab" id="btn-more-tab" data-tab="more">
+      <span class="nav-tab-icon">⚙️</span>
+      <span class="nav-tab-label">More</span>
+    </button>
+  </nav>
+
+  <!-- More / Settings Bottom Sheet (Blocker 3 fix) -->
+  <div id="more-sheet-overlay" class="more-sheet-overlay hidden"></div>
+  <div id="more-sheet" class="more-sheet hidden" role="dialog" aria-label="More Options">
+    <div class="more-sheet-header">
+      <h3>⚙️ More Options &amp; Controls</h3>
+      <button class="more-sheet-close" aria-label="Close settings">✕</button>
+    </div>
+    <div class="more-sheet-body">
+      <button class="ui-btn-primary parent-sheet-btn" id="btn-parent" data-tab="parent" title="Parent Dashboard">
+        <span class="nav-tab-icon">👨‍👩‍👧</span>
+        <span>Parent Dashboard (Grown-ups Only)</span>
+      </button>
+      <div class="more-sheet-controls-grid">
+        <button class="control-card-btn" id="btn-mummy-voice" title="Mummy's voice">
+          <span class="control-icon">🎙️</span>
+          <span class="control-label">Mummy's Voice</span>
+        </button>
+        <button class="control-card-btn" id="btn-voice-pause" title="Pause voice">
+          <span class="control-icon">⏸️</span>
+          <span class="control-label">Pause Voice</span>
+        </button>
+        <button class="control-card-btn" id="btn-sound" title="Sound">
+          <span class="control-icon">🔊</span>
+          <span class="control-label">Sound FX</span>
+        </button>
+        <button class="control-card-btn" id="btn-update" title="Check for updates">
+          <span class="control-icon">🔄</span>
+          <span class="control-label">Check Update</span>
+        </button>
+      </div>
+    </div>
+  </div>
 
   <script src="js/data.js"></script>
   <script src="js/puppies.js"></script>

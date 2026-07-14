@@ -411,21 +411,28 @@ const StoryBook = {
       });
     }
 
+    const pct = totalCount > 0 ? Math.min(100, Math.floor((completedCount / totalCount) * 100)) : 0;
     container.innerHTML = `
-      <div class="st-home-hero">
-        <div class="st-home-hero-content">
-          <h3>📖 Story Time — Read with Simba!</h3>
-          <p>Tap any word to hear it • Auto-read • Read Aloud to Simba (${completedCount}/${totalCount} read)</p>
+      <button class="mission-card ui-promo-card st-compact-card" id="st-home-open-btn" style="height:100%; display:flex; flex-direction:column; justify-content:space-between; text-align:left;">
+        <div class="mission-header" style="width:100%; display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+          <span class="mission-badge" style="background:#fce7f3; color:#db2777;">📖 STORY TIME</span>
+          <span class="mission-reward-badge">${completedCount}/${totalCount} read</span>
         </div>
-        <div>
-          <button class="btn-fun pink" id="st-home-open-btn" style="padding: 12px 22px; font-size: 1rem; font-weight: 800;">
-            ▶️ Read a Story
-          </button>
+        <div class="mission-body" style="display:flex; gap:10px; align-items:center; width:100%; margin:4px 0;">
+          <div style="font-size:2rem; flex-shrink:0;">🦁</div>
+          <div class="mission-left" style="flex:1; min-width:0;">
+            <div class="mission-title" style="font-size:0.95rem; margin:0 0 4px; color:var(--text-primary);">Read with Simba!</div>
+            <div class="ui-progress" style="height:6px; margin:4px 0;"><div class="ui-progress-bar" style="width:${pct}%; background:linear-gradient(90deg,#f472b6,#ec4899);"></div></div>
+            <div class="mission-why" style="font-size:0.88rem; color:var(--text-secondary); line-height:1.3; margin:0;">Tap words to hear • Read Aloud</div>
+          </div>
         </div>
-      </div>
+        <div style="width:100%; text-align:right; margin-top:4px;">
+          <span class="btn-fun pink mission-btn" style="padding:6px 12px; font-size:0.85rem;">Read ➜</span>
+        </div>
+      </button>
     `;
 
-    document.getElementById('st-home-open-btn')?.addEventListener('click', () => {
+    container.querySelector('#st-home-open-btn')?.addEventListener('click', () => {
       Sounds.tap();
       App.go('storytime');
     });

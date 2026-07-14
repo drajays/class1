@@ -376,7 +376,7 @@ const MathBook = {
       ${row(cell('', 'lg'), cell(tT), cell(oT))}
       ${row(cell(op, 'lg', '#ff5ea8'), cell(tB), cell(oB))}
       <div style="border-top:3px solid #27304f;margin:2px 0 0"></div>
-      ${note ? `<div style="font-size:11px;color:#7a5a00;font-weight:700;margin-top:4px">${note}</div>` : ''}
+      ${note ? `<div style="font-size:14px;color:#7a5a00;font-weight:700;margin-top:4px">${note}</div>` : ''}
     </div>`;
   },
 
