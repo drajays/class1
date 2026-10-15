@@ -25,7 +25,7 @@ class HChapter(lib.Chapter):
         self.no, self.title, self.emoji, self.color = no, title, emoji, color
         self.parts, self.keys, self.nex = [], [], 0
         self.parts.append(f'<div class="chap-head" style="background:{color}"><div class="em">{emoji}</div>'
-                          f'<div><div class="no">पाठ {no}</div><h1>{esc(title)}</h1></div></div>')
+                          f'<div><div class="no">{'वर्णमाला' if no == 0 else 'पाठ ' + str(no)}</div><h1>{esc(title)}</h1></div></div>')
         if goals:
             self.parts.append('<div class="box goals"><b>🎯 इस पाठ में हम सीखेंगे:</b><ul style="margin:1mm 0 0 5mm">'
                               + ''.join(f'<li>{g}</li>' for g in goals) + '</ul></div>')
