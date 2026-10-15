@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reading Room — Class 1</title>
+<style>
+:root{--ink:#1f2937;--bg:#fbfaf6;--card:#fff;--line:#e5e1d8;--accent:#1c7ed6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.5 'Avenir Next',Georgia,system-ui,sans-serif}
+header{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px 16px;display:flex;gap:10px;align-items:center;z-index:5}
+header h1{font-size:1.15rem;margin:0;flex:1}
+a.btn,button.btn{font:inherit;font-weight:700;text-decoration:none;color:#fff;background:var(--accent);border:0;border-radius:10px;padding:8px 14px;cursor:pointer}
+.btn.alt{background:#fff;color:var(--accent);border:2px solid var(--accent)}
+main{max-width:860px;margin:0 auto;padding:18px 16px 60px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tab{padding:8px 16px;border-radius:20px;border:2px solid var(--line);background:#fff;font:inherit;font-weight:700;cursor:pointer}
+.tab.on{border-color:var(--accent);color:var(--accent)}
+.whole{display:flex;gap:10px;align-items:center;padding:16px;background:var(--card);border:2px solid var(--accent);border-radius:14px;margin-bottom:18px}
+.whole b{flex:1}
+ol{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+li{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+li .t{flex:1;font-weight:600}
+li .n{color:#868e96;width:2ch;text-align:right}
+#viewer{position:fixed;inset:0;background:var(--bg);display:none;flex-direction:column;z-index:10}
+#viewer.on{display:flex}
+#viewer iframe{flex:1;border:0;width:100%}
+.empty{padding:30px;text-align:center;color:#868e96}
+@media print{header,.tabs,.whole,ol{display:none}}
+</style></head><body>
+<header><a class="btn alt" href="index.html">🐶 Park</a><h1>📖 Reading Room</h1></header>
+<main><div class="tabs" id="tabs"></div><div id="body"></div></main>
+<div id="viewer"><header>
+  <button class="btn alt" id="close">← Back</button><h1 id="vt"></h1>
+  <button class="btn" id="print">🖨️ Print</button><a class="btn alt" id="open" target="_blank" rel="noopener">Open ↗</a>
+</header><iframe id="frame" title="Book"></iframe></div>
+<script>
+// Standalone: no game scripts, no scores, no coins — only reading and printing.
+const $ = (id) => document.getElementById(id);
+let lib = {}, cur = null;
+function show(k) {
+  cur = k; const b = lib[k];
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('on', t.dataset.k === k));
+  $('body').innerHTML =
+    `<div class="whole"><span style="font-size:1.8rem">📕</span><b>${b.title} — complete book</b>
+       <button class="btn" data-f="${b.full}" data-t="${b.title} — complete book">Read</button></div>
+     <ol>${b.chapters.map((c, i) => `<li><span class="n">${i + 1}</span><span>${c.icon}</span><span class="t">${c.title}</span>
+       <button class="btn alt" data-f="${c.file}" data-t="${c.title}">Read</button></li>`).join('')}</ol>`;
+}
+function view(f, t) {
+  $('vt').textContent = t; $('open').href = f; $('frame').src = f + '#view=FitH'; $('viewer').classList.add('on');
+}
+document.addEventListener('click', (e) => {
+  const f = e.target.dataset && e.target.dataset.f;
+  if (f) view(f, e.target.dataset.t);
+});
+$('close').onclick = () => { $('viewer').classList.remove('on'); $('frame').src = 'about:blank'; };
+$('print').onclick = () => {
+  try { $('frame').contentWindow.focus(); $('frame').contentWindow.print(); }
+  catch (_) { window.open($('open').href, '_blank'); }
+};
+fetch('data/library.json').then(r => r.json()).then(d => {
+  lib = d; const ks = Object.keys(d);
+  $('tabs').innerHTML = ks.map(k => `<button class="tab" data-k="${k}">${d[k].icon} ${d[k].title}</button>`).join('');
+  $('tabs').onclick = (e) => e.target.dataset.k && show(e.target.dataset.k);
+  show(ks[0]);
+}).catch(() => { $('body').innerHTML = '<p class="empty">Could not load the library. Please check the connection.</p>'; });
+</script></body></html>

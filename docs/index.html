@@ -91,12 +91,12 @@
 
     <div class="learn-section">
       <h2 class="section-label">📚 My Books</h2>
-      <button class="play-card library-card" data-go="library">
+      <a class="play-card library-card" href="read.html">
         <span class="play-icon">📕</span>
         <span class="library-info"><span class="play-title">Reading Library</span>
-        <span class="play-sub">Full books &amp; chapters to read or print</span></span>
+        <span class="play-sub">Quiet mode — no games, just read &amp; print</span></span>
         <span class="library-go">Open ▶</span>
-      </button>
+      </a>
       <div class="play-grid books-grid">
         <button class="play-card ui-subject-card math-world" data-go="math">
           <span class="play-icon">📘</span>
@@ -231,18 +231,6 @@
     </header>
     <div id="math-level-picker" class="level-picker"></div>
     <div id="math-game" class="game-area hidden"></div>
-  </section>
-
-  <!-- Reading Library (PDF books) -->
-  <section id="screen-library" class="screen">
-    <header class="game-header ui-top-bar">
-      <div class="top-bar-left">
-        <button class="btn-back back-btn" data-back="play">← Learn</button>
-      </div>
-      <h2 class="top-bar-title">📕 Reading Library</h2>
-      <div class="top-bar-right"></div>
-    </header>
-    <div id="library-body" class="library-body"></div>
   </section>
 
   <!-- Reading -->
@@ -432,7 +420,6 @@
   <script src="js/englishboosters.js"></script>
   <script src="js/hindibook.js"></script>
   <script src="js/subjectbook.js"></script>
-  <script src="js/library.js"></script>
   <script src="js/coach.js"></script>
   <script src="js/curse.js"></script>
   <script src="js/study_timer.js"></script>

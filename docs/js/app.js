@@ -119,7 +119,6 @@ const App = {
       minigames: 'screen-minigames',
       curse: 'screen-curse',
       math: 'screen-math',
-      library: 'screen-library',
       english: 'screen-english',
       hindi: 'screen-hindi',
       storytime: 'screen-storytime',
@@ -144,7 +143,7 @@ const App = {
           const t = tab.getAttribute('data-tab');
           let isActive = false;
           if (t === 'home' && screen === 'home') isActive = true;
-          else if (t === 'play' && ['play', 'library', 'math', 'english', 'storytime', 'englishboosters', 'hindi', 'evs', 'sanskrit', 'computer', 'english_plus', 'math_challenge', 'minigames', 'curse'].includes(screen)) isActive = true;
+          else if (t === 'play' && ['play', 'math', 'english', 'storytime', 'englishboosters', 'hindi', 'evs', 'sanskrit', 'computer', 'english_plus', 'math_challenge', 'minigames', 'curse'].includes(screen)) isActive = true;
           else if (t === 'mall' && ['mall', 'puppy'].includes(screen)) isActive = true;
           tab.classList.toggle('active', isActive);
           if (isActive) tab.setAttribute('aria-current', 'page');
@@ -180,7 +179,6 @@ const App = {
     if (screen === 'puppy') Puppies.renderDetail();
     if (screen === 'minigames') MiniGames.showHub();
     if (screen === 'math') { MathBook.open(); }
-    if (screen === 'library') { Library.open(); }
     if (screen === 'english') { EnglishBook.open(); }
     if (screen === 'storytime') { StoryBook.open(); Speech.navSay('Welcome to Story Time! Tap any word to hear it!'); }
     if (screen === 'englishboosters') { EnglishBoosters.open(); Speech.navSay('Welcome to Word Power Boosters!'); }
