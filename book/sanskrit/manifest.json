@@ -1,0 +1,107 @@
+{
+ "title": "संस्कृतम्",
+ "icon": "🪔",
+ "full": "pdf/sanskrit/Sanskrit_Class1_full.pdf",
+ "chapters": [
+  {
+   "title": "प्रार्थना",
+   "icon": "🙏",
+   "file": "pdf/sanskrit/01_prarthana.pdf"
+  },
+  {
+   "title": "वर्णमाला",
+   "icon": "🔤",
+   "file": "pdf/sanskrit/02_varnamala.pdf"
+  },
+  {
+   "title": "बालगीतानि",
+   "icon": "🎵",
+   "file": "pdf/sanskrit/03_balgeetani.pdf"
+  },
+  {
+   "title": "मात्रापरिचयः",
+   "icon": "✍️",
+   "file": "pdf/sanskrit/04_matra_parichay.pdf"
+  },
+  {
+   "title": "संयुक्ताक्षरम्",
+   "icon": "🔗",
+   "file": "pdf/sanskrit/05_sanyuktakshar.pdf"
+  },
+  {
+   "title": "एहि एहि वीर रे",
+   "icon": "🛡️",
+   "file": "pdf/sanskrit/06_ehi_ehi_veer_re.pdf"
+  },
+  {
+   "title": "मातृभूमे नमः",
+   "icon": "🇮🇳",
+   "file": "pdf/sanskrit/07_matribhumi_namah.pdf"
+  },
+  {
+   "title": "क्रियाबोधः",
+   "icon": "🏃",
+   "file": "pdf/sanskrit/08_kriyabodh.pdf"
+  },
+  {
+   "title": "सङ्ख्याबोधः",
+   "icon": "🔢",
+   "file": "pdf/sanskrit/09_sankhyabodh.pdf"
+  },
+  {
+   "title": "अस्ति – नास्ति",
+   "icon": "✅",
+   "file": "pdf/sanskrit/10_asti_nasti.pdf"
+  },
+  {
+   "title": "पिपासितः काकः",
+   "icon": "🐦‍⬛",
+   "file": "pdf/sanskrit/11_pipasitah_kakah.pdf"
+  },
+  {
+   "title": "मम शरीरम्",
+   "icon": "🧍",
+   "file": "pdf/sanskrit/12_mam_shariram.pdf"
+  },
+  {
+   "title": "शृगालः द्राक्षाफलं च",
+   "icon": "🦊",
+   "file": "pdf/sanskrit/13_shrugal_drakshaphalam.pdf"
+  },
+  {
+   "title": "सुभाषितानि",
+   "icon": "🌟",
+   "file": "pdf/sanskrit/14_subhashitani.pdf"
+  },
+  {
+   "title": "देवताओं के अनेक नाम (अमरकोशः)",
+   "icon": "🌠",
+   "file": "pdf/sanskrit/15_amarkosh_devnam.pdf"
+  },
+  {
+   "title": "दिव्यवाणी",
+   "icon": "🕉️",
+   "file": "pdf/sanskrit/16_divyavani.pdf"
+  },
+  {
+   "title": "व्यावहारिक शब्दकोशः",
+   "icon": "📒",
+   "file": "pdf/sanskrit/17_vyavaharik_shabdkosh.pdf"
+  },
+  {
+   "title": "अद्भुतं संस्कृतम्",
+   "icon": "✨",
+   "file": "pdf/sanskrit/18_adbhutam_sanskritam.pdf"
+  },
+  {
+   "title": "अभ्यास-परीक्षा",
+   "icon": "🏆",
+   "file": "pdf/sanskrit/19_abhyas_pariksha.pdf"
+  },
+  {
+   "title": "परिशिष्ट: शब्द-भण्डार और संसाधन",
+   "icon": "📎",
+   "file": "pdf/sanskrit/20_appendix_glossary_resources.pdf"
+  }
+ ]
+}

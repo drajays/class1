@@ -1,0 +1,97 @@
+{
+ "title": "English",
+ "icon": "📖",
+ "full": "pdf/english/English_Class1_full.pdf",
+ "chapters": [
+  {
+   "title": "Letters, Vowels and Sounds",
+   "icon": "🔤",
+   "file": "pdf/english/01_letters_vowels_and_sounds.pdf"
+  },
+  {
+   "title": "Phonics: Word Families and Magic e",
+   "icon": "🔊",
+   "file": "pdf/english/02_phonics_word_families_and_magic_e.pdf"
+  },
+  {
+   "title": "Sentences and Punctuation",
+   "icon": "✍️",
+   "file": "pdf/english/03_sentences_and_punctuation.pdf"
+  },
+  {
+   "title": "Articles: a, an, the",
+   "icon": "🅰️",
+   "file": "pdf/english/04_articles_a_an_the.pdf"
+  },
+  {
+   "title": "Nouns: Naming Words",
+   "icon": "🏷️",
+   "file": "pdf/english/05_nouns_naming_words.pdf"
+  },
+  {
+   "title": "Singular, Plural and Gender",
+   "icon": "👫",
+   "file": "pdf/english/06_singular_plural_and_gender.pdf"
+  },
+  {
+   "title": "Pronouns",
+   "icon": "🙋",
+   "file": "pdf/english/07_pronouns.pdf"
+  },
+  {
+   "title": "Verbs: Action Words",
+   "icon": "🏃",
+   "file": "pdf/english/08_verbs_action_words.pdf"
+  },
+  {
+   "title": "Adjectives: Describing Words",
+   "icon": "🎨",
+   "file": "pdf/english/09_adjectives_describing_words.pdf"
+  },
+  {
+   "title": "Prepositions: Position Words",
+   "icon": "📍",
+   "file": "pdf/english/10_prepositions_position_words.pdf"
+  },
+  {
+   "title": "Joining Words: and, but, because",
+   "icon": "🔗",
+   "file": "pdf/english/11_joining_words_and_but_because.pdf"
+  },
+  {
+   "title": "Opposites, Similes and Word Groups",
+   "icon": "🔄",
+   "file": "pdf/english/12_opposites_similes_and_word_groups.pdf"
+  },
+  {
+   "title": "Reading Comprehension",
+   "icon": "🧐",
+   "file": "pdf/english/13_reading_comprehension.pdf"
+  },
+  {
+   "title": "Story Time and Poems",
+   "icon": "🧸",
+   "file": "pdf/english/14_story_time_and_poems.pdf"
+  },
+  {
+   "title": "Asking Questions, Facts and Opinions",
+   "icon": "❓",
+   "file": "pdf/english/15_asking_questions_facts_and_opinions.pdf"
+  },
+  {
+   "title": "Writing and Composition",
+   "icon": "📝",
+   "file": "pdf/english/16_writing_and_composition.pdf"
+  },
+  {
+   "title": "Revision Tests",
+   "icon": "🏆",
+   "file": "pdf/english/17_revision_tests.pdf"
+  },
+  {
+   "title": "Appendix: Word Lists & Resources",
+   "icon": "📎",
+   "file": "pdf/english/18_appendix_word_lists_and_resources.pdf"
+  }
+ ]
+}

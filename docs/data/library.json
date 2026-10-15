@@ -85,5 +85,495 @@
     "file": "pdf/maths/16_appendix_tables_and_resources.pdf"
    }
   ]
+ },
+ "english": {
+  "title": "English",
+  "icon": "📖",
+  "full": "pdf/english/English_Class1_full.pdf",
+  "chapters": [
+   {
+    "title": "Letters, Vowels and Sounds",
+    "icon": "🔤",
+    "file": "pdf/english/01_letters_vowels_and_sounds.pdf"
+   },
+   {
+    "title": "Phonics: Word Families and Magic e",
+    "icon": "🔊",
+    "file": "pdf/english/02_phonics_word_families_and_magic_e.pdf"
+   },
+   {
+    "title": "Sentences and Punctuation",
+    "icon": "✍️",
+    "file": "pdf/english/03_sentences_and_punctuation.pdf"
+   },
+   {
+    "title": "Articles: a, an, the",
+    "icon": "🅰️",
+    "file": "pdf/english/04_articles_a_an_the.pdf"
+   },
+   {
+    "title": "Nouns: Naming Words",
+    "icon": "🏷️",
+    "file": "pdf/english/05_nouns_naming_words.pdf"
+   },
+   {
+    "title": "Singular, Plural and Gender",
+    "icon": "👫",
+    "file": "pdf/english/06_singular_plural_and_gender.pdf"
+   },
+   {
+    "title": "Pronouns",
+    "icon": "🙋",
+    "file": "pdf/english/07_pronouns.pdf"
+   },
+   {
+    "title": "Verbs: Action Words",
+    "icon": "🏃",
+    "file": "pdf/english/08_verbs_action_words.pdf"
+   },
+   {
+    "title": "Adjectives: Describing Words",
+    "icon": "🎨",
+    "file": "pdf/english/09_adjectives_describing_words.pdf"
+   },
+   {
+    "title": "Prepositions: Position Words",
+    "icon": "📍",
+    "file": "pdf/english/10_prepositions_position_words.pdf"
+   },
+   {
+    "title": "Joining Words: and, but, because",
+    "icon": "🔗",
+    "file": "pdf/english/11_joining_words_and_but_because.pdf"
+   },
+   {
+    "title": "Opposites, Similes and Word Groups",
+    "icon": "🔄",
+    "file": "pdf/english/12_opposites_similes_and_word_groups.pdf"
+   },
+   {
+    "title": "Reading Comprehension",
+    "icon": "🧐",
+    "file": "pdf/english/13_reading_comprehension.pdf"
+   },
+   {
+    "title": "Story Time and Poems",
+    "icon": "🧸",
+    "file": "pdf/english/14_story_time_and_poems.pdf"
+   },
+   {
+    "title": "Asking Questions, Facts and Opinions",
+    "icon": "❓",
+    "file": "pdf/english/15_asking_questions_facts_and_opinions.pdf"
+   },
+   {
+    "title": "Writing and Composition",
+    "icon": "📝",
+    "file": "pdf/english/16_writing_and_composition.pdf"
+   },
+   {
+    "title": "Revision Tests",
+    "icon": "🏆",
+    "file": "pdf/english/17_revision_tests.pdf"
+   },
+   {
+    "title": "Appendix: Word Lists & Resources",
+    "icon": "📎",
+    "file": "pdf/english/18_appendix_word_lists_and_resources.pdf"
+   }
+  ]
+ },
+ "hindi": {
+  "title": "हिंदी",
+  "icon": "🕉️",
+  "full": "pdf/hindi/Hindi_Class1_full.pdf",
+  "chapters": [
+   {
+    "title": "वर्णमाला",
+    "icon": "🔤",
+    "file": "pdf/hindi/01_varnamala.pdf"
+   },
+   {
+    "title": "मेरा वादा",
+    "icon": "✋",
+    "file": "pdf/hindi/02_mera_vada.pdf"
+   },
+   {
+    "title": "शेर और चूहा",
+    "icon": "🦁",
+    "file": "pdf/hindi/03_sher_aur_chuha.pdf"
+   },
+   {
+    "title": "आ की मात्रा अभ्यास",
+    "icon": "🅰️",
+    "file": "pdf/hindi/04_aa_ki_matra.pdf"
+   },
+   {
+    "title": "बादल आया - जल बरसाया",
+    "icon": "🌧️",
+    "file": "pdf/hindi/05_badal_aaya.pdf"
+   },
+   {
+    "title": "इ की मात्रा अभ्यास",
+    "icon": "📖",
+    "file": "pdf/hindi/06_i_ki_matra.pdf"
+   },
+   {
+    "title": "कलाकार का दिन",
+    "icon": "🎨",
+    "file": "pdf/hindi/07_kalakar_ka_din.pdf"
+   },
+   {
+    "title": "ई की मात्रा अभ्यास",
+    "icon": "🐟",
+    "file": "pdf/hindi/08_ee_ki_matra.pdf"
+   },
+   {
+    "title": "मछली रानी",
+    "icon": "🐬",
+    "file": "pdf/hindi/09_machhli_rani.pdf"
+   },
+   {
+    "title": "उ की मात्रा अभ्यास",
+    "icon": "🌹",
+    "file": "pdf/hindi/10_u_ki_matra.pdf"
+   },
+   {
+    "title": "चुटकी चुहिया",
+    "icon": "🐭",
+    "file": "pdf/hindi/11_chutki_chuhiya.pdf"
+   },
+   {
+    "title": "अभ्यास पत्र",
+    "icon": "📝",
+    "file": "pdf/hindi/12_abhyas_patra.pdf"
+   },
+   {
+    "title": "ऊ की मात्रा अभ्यास",
+    "icon": "☀️",
+    "file": "pdf/hindi/13_oo_ki_matra.pdf"
+   },
+   {
+    "title": "सीधी-सादी रूपा",
+    "icon": "👧",
+    "file": "pdf/hindi/14_seedhi_saadi_rupa.pdf"
+   },
+   {
+    "title": "बंदर और चिड़िया",
+    "icon": "🐒",
+    "file": "pdf/hindi/15_bandar_aur_chidiya.pdf"
+   },
+   {
+    "title": "ए की मात्रा अभ्यास",
+    "icon": "🍎",
+    "file": "pdf/hindi/16_e_ki_matra.pdf"
+   },
+   {
+    "title": "ऐ की मात्रा अभ्यास",
+    "icon": "🎒",
+    "file": "pdf/hindi/17_ai_ki_matra.pdf"
+   },
+   {
+    "title": "तैराक और गवैया",
+    "icon": "🏊",
+    "file": "pdf/hindi/18_tairak_aur_gavaiya.pdf"
+   },
+   {
+    "title": "ओ की मात्रा अभ्यास",
+    "icon": "🦚",
+    "file": "pdf/hindi/19_o_ki_matra.pdf"
+   },
+   {
+    "title": "चोरी छोड़ दी",
+    "icon": "🚪",
+    "file": "pdf/hindi/20_chori_chhod_di.pdf"
+   },
+   {
+    "title": "औ की मात्रा अभ्यास",
+    "icon": "🌱",
+    "file": "pdf/hindi/21_au_ki_matra.pdf"
+   },
+   {
+    "title": "गौरव की मौसी",
+    "icon": "👩",
+    "file": "pdf/hindi/22_gaurav_ki_mausi.pdf"
+   },
+   {
+    "title": "हँसो-हँसाओ",
+    "icon": "😄",
+    "file": "pdf/hindi/23_hanso_hansao.pdf"
+   },
+   {
+    "title": "खरगोश ने रंग लगाया",
+    "icon": "🐰",
+    "file": "pdf/hindi/24_khargosh_ne_rang_lagaya.pdf"
+   },
+   {
+    "title": "चिड़ियाघर की सैर",
+    "icon": "🦁",
+    "file": "pdf/hindi/25_chidiyaghar_ki_sair.pdf"
+   },
+   {
+    "title": "बिल्ली और दिल्ली",
+    "icon": "🐱",
+    "file": "pdf/hindi/26_billi_aur_dilli.pdf"
+   },
+   {
+    "title": "कल वाली बात",
+    "icon": "🍎",
+    "file": "pdf/hindi/27_kal_wali_baat.pdf"
+   },
+   {
+    "title": "परिशिष्ट: मात्राएँ, बारहखड़ी और संसाधन",
+    "icon": "📎",
+    "file": "pdf/hindi/28_appendix_matras_barakhadi_resources.pdf"
+   }
+  ]
+ },
+ "evs": {
+  "title": "EVS",
+  "icon": "🌿",
+  "full": "pdf/evs/Evs_Class1_full.pdf",
+  "chapters": [
+   {
+    "title": "All About Me",
+    "icon": "🧒",
+    "file": "pdf/evs/01_all_about_me.pdf"
+   },
+   {
+    "title": "My Amazing Body",
+    "icon": "🧍",
+    "file": "pdf/evs/02_my_amazing_body.pdf"
+   },
+   {
+    "title": "I Love My Family",
+    "icon": "👨‍👩‍👧‍👦",
+    "file": "pdf/evs/03_i_love_my_family.pdf"
+   },
+   {
+    "title": "Home Sweet Home",
+    "icon": "🏠",
+    "file": "pdf/evs/04_home_sweet_home.pdf"
+   },
+   {
+    "title": "My School",
+    "icon": "🏫",
+    "file": "pdf/evs/05_my_school.pdf"
+   },
+   {
+    "title": "Plants Around Us",
+    "icon": "🌳",
+    "file": "pdf/evs/06_plants_around_us.pdf"
+   },
+   {
+    "title": "Animals Around Us",
+    "icon": "🐾",
+    "file": "pdf/evs/07_animals_around_us.pdf"
+   },
+   {
+    "title": "The Food We Eat",
+    "icon": "🍎",
+    "file": "pdf/evs/08_the_food_we_eat.pdf"
+   },
+   {
+    "title": "The Clothes We Wear",
+    "icon": "👕",
+    "file": "pdf/evs/09_the_clothes_we_wear.pdf"
+   },
+   {
+    "title": "Air and Water",
+    "icon": "💨",
+    "file": "pdf/evs/10_air_and_water.pdf"
+   },
+   {
+    "title": "Places in My Neighbourhood",
+    "icon": "🏘️",
+    "file": "pdf/evs/11_places_in_my_neighbourhood.pdf"
+   },
+   {
+    "title": "People Who Help Us",
+    "icon": "🧑‍🔧",
+    "file": "pdf/evs/12_people_who_help_us.pdf"
+   },
+   {
+    "title": "My Country Bharat",
+    "icon": "🇮🇳",
+    "file": "pdf/evs/13_my_country_bharat.pdf"
+   },
+   {
+    "title": "The World Around Us",
+    "icon": "🌍",
+    "file": "pdf/evs/14_the_world_around_us.pdf"
+   },
+   {
+    "title": "Our Universe",
+    "icon": "🌌",
+    "file": "pdf/evs/15_our_universe.pdf"
+   },
+   {
+    "title": "Revision Tests",
+    "icon": "🏆",
+    "file": "pdf/evs/16_revision_tests.pdf"
+   },
+   {
+    "title": "Appendix: Word Bank & Resources",
+    "icon": "📎",
+    "file": "pdf/evs/17_appendix_glossary_and_resources.pdf"
+   }
+  ]
+ },
+ "sanskrit": {
+  "title": "संस्कृतम्",
+  "icon": "🪔",
+  "full": "pdf/sanskrit/Sanskrit_Class1_full.pdf",
+  "chapters": [
+   {
+    "title": "प्रार्थना",
+    "icon": "🙏",
+    "file": "pdf/sanskrit/01_prarthana.pdf"
+   },
+   {
+    "title": "वर्णमाला",
+    "icon": "🔤",
+    "file": "pdf/sanskrit/02_varnamala.pdf"
+   },
+   {
+    "title": "बालगीतानि",
+    "icon": "🎵",
+    "file": "pdf/sanskrit/03_balgeetani.pdf"
+   },
+   {
+    "title": "मात्रापरिचयः",
+    "icon": "✍️",
+    "file": "pdf/sanskrit/04_matra_parichay.pdf"
+   },
+   {
+    "title": "संयुक्ताक्षरम्",
+    "icon": "🔗",
+    "file": "pdf/sanskrit/05_sanyuktakshar.pdf"
+   },
+   {
+    "title": "एहि एहि वीर रे",
+    "icon": "🛡️",
+    "file": "pdf/sanskrit/06_ehi_ehi_veer_re.pdf"
+   },
+   {
+    "title": "मातृभूमे नमः",
+    "icon": "🇮🇳",
+    "file": "pdf/sanskrit/07_matribhumi_namah.pdf"
+   },
+   {
+    "title": "क्रियाबोधः",
+    "icon": "🏃",
+    "file": "pdf/sanskrit/08_kriyabodh.pdf"
+   },
+   {
+    "title": "सङ्ख्याबोधः",
+    "icon": "🔢",
+    "file": "pdf/sanskrit/09_sankhyabodh.pdf"
+   },
+   {
+    "title": "अस्ति – नास्ति",
+    "icon": "✅",
+    "file": "pdf/sanskrit/10_asti_nasti.pdf"
+   },
+   {
+    "title": "पिपासितः काकः",
+    "icon": "🐦‍⬛",
+    "file": "pdf/sanskrit/11_pipasitah_kakah.pdf"
+   },
+   {
+    "title": "मम शरीरम्",
+    "icon": "🧍",
+    "file": "pdf/sanskrit/12_mam_shariram.pdf"
+   },
+   {
+    "title": "शृगालः द्राक्षाफलं च",
+    "icon": "🦊",
+    "file": "pdf/sanskrit/13_shrugal_drakshaphalam.pdf"
+   },
+   {
+    "title": "सुभाषितानि",
+    "icon": "🌟",
+    "file": "pdf/sanskrit/14_subhashitani.pdf"
+   },
+   {
+    "title": "देवताओं के अनेक नाम (अमरकोशः)",
+    "icon": "🌠",
+    "file": "pdf/sanskrit/15_amarkosh_devnam.pdf"
+   },
+   {
+    "title": "दिव्यवाणी",
+    "icon": "🕉️",
+    "file": "pdf/sanskrit/16_divyavani.pdf"
+   },
+   {
+    "title": "व्यावहारिक शब्दकोशः",
+    "icon": "📒",
+    "file": "pdf/sanskrit/17_vyavaharik_shabdkosh.pdf"
+   },
+   {
+    "title": "अद्भुतं संस्कृतम्",
+    "icon": "✨",
+    "file": "pdf/sanskrit/18_adbhutam_sanskritam.pdf"
+   },
+   {
+    "title": "अभ्यास-परीक्षा",
+    "icon": "🏆",
+    "file": "pdf/sanskrit/19_abhyas_pariksha.pdf"
+   },
+   {
+    "title": "परिशिष्ट: शब्द-भण्डार और संसाधन",
+    "icon": "📎",
+    "file": "pdf/sanskrit/20_appendix_glossary_resources.pdf"
+   }
+  ]
+ },
+ "computer": {
+  "title": "Computer",
+  "icon": "🖥️",
+  "full": "pdf/computer/Computer_Class1_full.pdf",
+  "chapters": [
+   {
+    "title": "Computer — My Friend",
+    "icon": "🖥️",
+    "file": "pdf/computer/01_computer_my_friend.pdf"
+   },
+   {
+    "title": "A Smart Machine",
+    "icon": "🤖",
+    "file": "pdf/computer/02_a_smart_machine.pdf"
+   },
+   {
+    "title": "A Handy Machine",
+    "icon": "🧰",
+    "file": "pdf/computer/03_a_handy_machine.pdf"
+   },
+   {
+    "title": "Know My Friend — Parts of a Computer",
+    "icon": "⌨️",
+    "file": "pdf/computer/04_know_my_friend_parts.pdf"
+   },
+   {
+    "title": "Connect with Computer",
+    "icon": "🔗",
+    "file": "pdf/computer/05_connect_with_computer.pdf"
+   },
+   {
+    "title": "Do's and Don'ts of a Computer",
+    "icon": "✅",
+    "file": "pdf/computer/06_dos_and_donts.pdf"
+   },
+   {
+    "title": "Revision Tests",
+    "icon": "🏆",
+    "file": "pdf/computer/07_revision_tests.pdf"
+   },
+   {
+    "title": "Appendix: Word Bank & Resources",
+    "icon": "📎",
+    "file": "pdf/computer/08_appendix_glossary_resources.pdf"
+   }
+  ]
  }
 }

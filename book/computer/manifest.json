@@ -1,0 +1,47 @@
+{
+ "title": "Computer",
+ "icon": "🖥️",
+ "full": "pdf/computer/Computer_Class1_full.pdf",
+ "chapters": [
+  {
+   "title": "Computer — My Friend",
+   "icon": "🖥️",
+   "file": "pdf/computer/01_computer_my_friend.pdf"
+  },
+  {
+   "title": "A Smart Machine",
+   "icon": "🤖",
+   "file": "pdf/computer/02_a_smart_machine.pdf"
+  },
+  {
+   "title": "A Handy Machine",
+   "icon": "🧰",
+   "file": "pdf/computer/03_a_handy_machine.pdf"
+  },
+  {
+   "title": "Know My Friend — Parts of a Computer",
+   "icon": "⌨️",
+   "file": "pdf/computer/04_know_my_friend_parts.pdf"
+  },
+  {
+   "title": "Connect with Computer",
+   "icon": "🔗",
+   "file": "pdf/computer/05_connect_with_computer.pdf"
+  },
+  {
+   "title": "Do's and Don'ts of a Computer",
+   "icon": "✅",
+   "file": "pdf/computer/06_dos_and_donts.pdf"
+  },
+  {
+   "title": "Revision Tests",
+   "icon": "🏆",
+   "file": "pdf/computer/07_revision_tests.pdf"
+  },
+  {
+   "title": "Appendix: Word Bank & Resources",
+   "icon": "📎",
+   "file": "pdf/computer/08_appendix_glossary_resources.pdf"
+  }
+ ]
+}

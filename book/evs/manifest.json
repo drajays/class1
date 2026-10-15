@@ -1,0 +1,92 @@
+{
+ "title": "EVS",
+ "icon": "🌿",
+ "full": "pdf/evs/Evs_Class1_full.pdf",
+ "chapters": [
+  {
+   "title": "All About Me",
+   "icon": "🧒",
+   "file": "pdf/evs/01_all_about_me.pdf"
+  },
+  {
+   "title": "My Amazing Body",
+   "icon": "🧍",
+   "file": "pdf/evs/02_my_amazing_body.pdf"
+  },
+  {
+   "title": "I Love My Family",
+   "icon": "👨‍👩‍👧‍👦",
+   "file": "pdf/evs/03_i_love_my_family.pdf"
+  },
+  {
+   "title": "Home Sweet Home",
+   "icon": "🏠",
+   "file": "pdf/evs/04_home_sweet_home.pdf"
+  },
+  {
+   "title": "My School",
+   "icon": "🏫",
+   "file": "pdf/evs/05_my_school.pdf"
+  },
+  {
+   "title": "Plants Around Us",
+   "icon": "🌳",
+   "file": "pdf/evs/06_plants_around_us.pdf"
+  },
+  {
+   "title": "Animals Around Us",
+   "icon": "🐾",
+   "file": "pdf/evs/07_animals_around_us.pdf"
+  },
+  {
+   "title": "The Food We Eat",
+   "icon": "🍎",
+   "file": "pdf/evs/08_the_food_we_eat.pdf"
+  },
+  {
+   "title": "The Clothes We Wear",
+   "icon": "👕",
+   "file": "pdf/evs/09_the_clothes_we_wear.pdf"
+  },
+  {
+   "title": "Air and Water",
+   "icon": "💨",
+   "file": "pdf/evs/10_air_and_water.pdf"
+  },
+  {
+   "title": "Places in My Neighbourhood",
+   "icon": "🏘️",
+   "file": "pdf/evs/11_places_in_my_neighbourhood.pdf"
+  },
+  {
+   "title": "People Who Help Us",
+   "icon": "🧑‍🔧",
+   "file": "pdf/evs/12_people_who_help_us.pdf"
+  },
+  {
+   "title": "My Country Bharat",
+   "icon": "🇮🇳",
+   "file": "pdf/evs/13_my_country_bharat.pdf"
+  },
+  {
+   "title": "The World Around Us",
+   "icon": "🌍",
+   "file": "pdf/evs/14_the_world_around_us.pdf"
+  },
+  {
+   "title": "Our Universe",
+   "icon": "🌌",
+   "file": "pdf/evs/15_our_universe.pdf"
+  },
+  {
+   "title": "Revision Tests",
+   "icon": "🏆",
+   "file": "pdf/evs/16_revision_tests.pdf"
+  },
+  {
+   "title": "Appendix: Word Bank & Resources",
+   "icon": "📎",
+   "file": "pdf/evs/17_appendix_glossary_and_resources.pdf"
+  }
+ ]
+}

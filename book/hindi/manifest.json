@@ -1,0 +1,147 @@
+{
+ "title": "हिंदी",
+ "icon": "🕉️",
+ "full": "pdf/hindi/Hindi_Class1_full.pdf",
+ "chapters": [
+  {
+   "title": "वर्णमाला",
+   "icon": "🔤",
+   "file": "pdf/hindi/01_varnamala.pdf"
+  },
+  {
+   "title": "मेरा वादा",
+   "icon": "✋",
+   "file": "pdf/hindi/02_mera_vada.pdf"
+  },
+  {
+   "title": "शेर और चूहा",
+   "icon": "🦁",
+   "file": "pdf/hindi/03_sher_aur_chuha.pdf"
+  },
+  {
+   "title": "आ की मात्रा अभ्यास",
+   "icon": "🅰️",
+   "file": "pdf/hindi/04_aa_ki_matra.pdf"
+  },
+  {
+   "title": "बादल आया - जल बरसाया",
+   "icon": "🌧️",
+   "file": "pdf/hindi/05_badal_aaya.pdf"
+  },
+  {
+   "title": "इ की मात्रा अभ्यास",
+   "icon": "📖",
+   "file": "pdf/hindi/06_i_ki_matra.pdf"
+  },
+  {
+   "title": "कलाकार का दिन",
+   "icon": "🎨",
+   "file": "pdf/hindi/07_kalakar_ka_din.pdf"
+  },
+  {
+   "title": "ई की मात्रा अभ्यास",
+   "icon": "🐟",
+   "file": "pdf/hindi/08_ee_ki_matra.pdf"
+  },
+  {
+   "title": "मछली रानी",
+   "icon": "🐬",
+   "file": "pdf/hindi/09_machhli_rani.pdf"
+  },
+  {
+   "title": "उ की मात्रा अभ्यास",
+   "icon": "🌹",
+   "file": "pdf/hindi/10_u_ki_matra.pdf"
+  },
+  {
+   "title": "चुटकी चुहिया",
+   "icon": "🐭",
+   "file": "pdf/hindi/11_chutki_chuhiya.pdf"
+  },
+  {
+   "title": "अभ्यास पत्र",
+   "icon": "📝",
+   "file": "pdf/hindi/12_abhyas_patra.pdf"
+  },
+  {
+   "title": "ऊ की मात्रा अभ्यास",
+   "icon": "☀️",
+   "file": "pdf/hindi/13_oo_ki_matra.pdf"
+  },
+  {
+   "title": "सीधी-सादी रूपा",
+   "icon": "👧",
+   "file": "pdf/hindi/14_seedhi_saadi_rupa.pdf"
+  },
+  {
+   "title": "बंदर और चिड़िया",
+   "icon": "🐒",
+   "file": "pdf/hindi/15_bandar_aur_chidiya.pdf"
+  },
+  {
+   "title": "ए की मात्रा अभ्यास",
+   "icon": "🍎",
+   "file": "pdf/hindi/16_e_ki_matra.pdf"
+  },
+  {
+   "title": "ऐ की मात्रा अभ्यास",
+   "icon": "🎒",
+   "file": "pdf/hindi/17_ai_ki_matra.pdf"
+  },
+  {
+   "title": "तैराक और गवैया",
+   "icon": "🏊",
+   "file": "pdf/hindi/18_tairak_aur_gavaiya.pdf"
+  },
+  {
+   "title": "ओ की मात्रा अभ्यास",
+   "icon": "🦚",
+   "file": "pdf/hindi/19_o_ki_matra.pdf"
+  },
+  {
+   "title": "चोरी छोड़ दी",
+   "icon": "🚪",
+   "file": "pdf/hindi/20_chori_chhod_di.pdf"
+  },
+  {
+   "title": "औ की मात्रा अभ्यास",
+   "icon": "🌱",
+   "file": "pdf/hindi/21_au_ki_matra.pdf"
+  },
+  {
+   "title": "गौरव की मौसी",
+   "icon": "👩",
+   "file": "pdf/hindi/22_gaurav_ki_mausi.pdf"
+  },
+  {
+   "title": "हँसो-हँसाओ",
+   "icon": "😄",
+   "file": "pdf/hindi/23_hanso_hansao.pdf"
+  },
+  {
+   "title": "खरगोश ने रंग लगाया",
+   "icon": "🐰",
+   "file": "pdf/hindi/24_khargosh_ne_rang_lagaya.pdf"
+  },
+  {
+   "title": "चिड़ियाघर की सैर",
+   "icon": "🦁",
+   "file": "pdf/hindi/25_chidiyaghar_ki_sair.pdf"
+  },
+  {
+   "title": "बिल्ली और दिल्ली",
+   "icon": "🐱",
+   "file": "pdf/hindi/26_billi_aur_dilli.pdf"
+  },
+  {
+   "title": "कल वाली बात",
+   "icon": "🍎",
+   "file": "pdf/hindi/27_kal_wali_baat.pdf"
+  },
+  {
+   "title": "परिशिष्ट: मात्राएँ, बारहखड़ी और संसाधन",
+   "icon": "📎",
+   "file": "pdf/hindi/28_appendix_matras_barakhadi_resources.pdf"
+  }
+ ]
+}
