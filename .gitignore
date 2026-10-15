@@ -19,3 +19,8 @@ organize_content.py
 # (docs/data and docs/assets/content ARE committed for GitHub Pages)
 .voice_jobs.json
 .voice_done.json
+
+# Book pipeline: raw dossiers/inventories & intermediates stay local; PDFs ship via docs/pdf/
+book/dossier/
+book/INVENTORY.md
+book/pdf/

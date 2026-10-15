@@ -1,4 +1,4 @@
-const CACHE = 'puppypark-v44';
+const CACHE = 'puppypark-v45';
 const ASSETS = [
   './',
   './index.html',
@@ -21,6 +21,8 @@ const ASSETS = [
   './js/englishboosters.js',
   './js/hindibook.js',
   './js/subjectbook.js',
+  './js/library.js',
+  './data/library.json',
   './js/coach.js',
   './js/app.js',
   './data/math_book.json',

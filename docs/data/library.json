@@ -1,0 +1,89 @@
+{
+ "maths": {
+  "title": "Maths",
+  "icon": "📘",
+  "full": "pdf/maths/Maths_Class1_full.pdf",
+  "chapters": [
+   {
+    "title": "Numbers 1 to 100",
+    "icon": "🔢",
+    "file": "pdf/maths/01_numbers_1_to_100.pdf"
+   },
+   {
+    "title": "Place Value: Tens and Ones",
+    "icon": "🧱",
+    "file": "pdf/maths/02_place_value_tens_and_ones.pdf"
+   },
+   {
+    "title": "Comparing and Ordering",
+    "icon": "⚖️",
+    "file": "pdf/maths/03_comparing_and_ordering.pdf"
+   },
+   {
+    "title": "Ordinal Numbers",
+    "icon": "🏅",
+    "file": "pdf/maths/04_ordinal_numbers.pdf"
+   },
+   {
+    "title": "Addition",
+    "icon": "➕",
+    "file": "pdf/maths/05_addition.pdf"
+   },
+   {
+    "title": "Subtraction",
+    "icon": "➖",
+    "file": "pdf/maths/06_subtraction.pdf"
+   },
+   {
+    "title": "Add and Subtract Together",
+    "icon": "🔁",
+    "file": "pdf/maths/07_add_and_subtract_together.pdf"
+   },
+   {
+    "title": "Story Problems",
+    "icon": "📖",
+    "file": "pdf/maths/08_story_problems.pdf"
+   },
+   {
+    "title": "Times Tables",
+    "icon": "✖️",
+    "file": "pdf/maths/09_times_tables.pdf"
+   },
+   {
+    "title": "Shapes Around Us",
+    "icon": "🔷",
+    "file": "pdf/maths/10_shapes_around_us.pdf"
+   },
+   {
+    "title": "Measurement",
+    "icon": "📏",
+    "file": "pdf/maths/11_measurement.pdf"
+   },
+   {
+    "title": "Patterns",
+    "icon": "🎨",
+    "file": "pdf/maths/12_patterns.pdf"
+   },
+   {
+    "title": "Data Handling",
+    "icon": "📊",
+    "file": "pdf/maths/13_data_handling.pdf"
+   },
+   {
+    "title": "Thinking Puzzles",
+    "icon": "🧠",
+    "file": "pdf/maths/14_thinking_puzzles.pdf"
+   },
+   {
+    "title": "Revision Tests",
+    "icon": "🏆",
+    "file": "pdf/maths/15_revision_tests.pdf"
+   },
+   {
+    "title": "Appendix: Tables 1–20 & Resources",
+    "icon": "📎",
+    "file": "pdf/maths/16_appendix_tables_and_resources.pdf"
+   }
+  ]
+ }
+}
