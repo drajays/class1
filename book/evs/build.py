@@ -8,6 +8,7 @@ OUT = os.path.join(HERE, '..', 'pdf', 'evs'); os.makedirs(OUT, exist_ok=True)
 DST = os.path.join(HERE, '..', '..', 'docs', 'pdf', 'evs'); os.makedirs(DST, exist_ok=True)
 EDGE = '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'
 chs = [ch1(), ch2(), ch3(), ch4(), ch5(), ch6(), ch7(), ch8(), ch9(), ch10(), ch11(), ch12(), ch13(), ch14(), ch15(), revision()]
+import evs_extra; evs_extra.add(chs)
 page = lambda body, t: f'<!doctype html><html><head><meta charset="utf-8"><title>{t}</title><style>{CSS}table.t{{break-inside:auto}}tr{{break-inside:avoid}}</style></head><body>{body}</body></html>'
 cover = lambda sub: (f'<div class="cover" style="background:linear-gradient(160deg,#d3f9d8,#d0ebff 55%,#fff3bf)"><div class="big">🌿🦋🌍</div>'
                      f'<h1>EVS</h1><h2>Environmental Studies · Class 1</h2><p>{sub}</p>'

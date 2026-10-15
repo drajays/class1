@@ -84,14 +84,19 @@
    "file": "pdf/english/16_writing_and_composition.pdf"
   },
   {
+   "title": "More Story Time and Poems",
+   "icon": "🌟",
+   "file": "pdf/english/17_more_story_time_and_poems.pdf"
+  },
+  {
    "title": "Revision Tests",
    "icon": "🏆",
-   "file": "pdf/english/17_revision_tests.pdf"
+   "file": "pdf/english/18_revision_tests.pdf"
   },
   {
    "title": "Appendix: Word Lists & Resources",
    "icon": "📎",
-   "file": "pdf/english/18_appendix_word_lists_and_resources.pdf"
+   "file": "pdf/english/19_appendix_word_lists_and_resources.pdf"
   }
  ]
 }

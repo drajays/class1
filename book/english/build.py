@@ -6,7 +6,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(HERE, '..', 'maths'))
 from lib import CSS
-import e1, e2, e3
+import e1, e2, e3, e4
 
 OUT = os.path.join(HERE, '..', 'pdf', 'english'); os.makedirs(OUT, exist_ok=True)
 DST = os.path.join(HERE, '..', '..', 'docs', 'pdf', 'english'); os.makedirs(DST, exist_ok=True)
@@ -14,7 +14,7 @@ EDGE = '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'
 
 chs = [e1.ch1(), e1.ch2(), e1.ch3(), e1.ch4(), e1.ch5(), e1.ch6(),
        e2.ch7(), e2.ch8(), e2.ch9(), e2.ch10(), e2.ch11(), e2.ch12(),
-       e3.ch13(), e3.ch14(), e3.ch15(), e3.ch16(), e3.revision()]
+       e3.ch13(), e3.ch14(), e3.ch15(), e3.ch16(), e4.ch18(), e3.revision()]
 
 
 def page(body, title):
@@ -52,7 +52,7 @@ app = e3.glossary() + PB + e3.appendix_lists() + PB + e3.appendix_resources()
 full = cover('Complete Book — all chapters') + toc() + PB + PB.join(c.html() for c in chs) + PB + app
 fp = os.path.join(OUT, 'English_Class1_full.html')
 open(fp, 'w', encoding='utf8').write(page(full, 'English Class 1 — Complete Book'))
-ap = os.path.join(OUT, '18_appendix_word_lists_and_resources.html')
+ap = os.path.join(OUT, '19_appendix_word_lists_and_resources.html')
 open(ap, 'w', encoding='utf8').write(page(app, 'English Class 1 — Appendix'))
 if do_pdf:
     pdf(fp, fp[:-5] + '.pdf'); pdf(ap, ap[:-5] + '.pdf')
@@ -60,6 +60,6 @@ if do_pdf:
 
 man = {'title': 'English', 'icon': '📖', 'full': 'pdf/english/English_Class1_full.pdf',
        'chapters': [{'title': c.title, 'icon': c.emoji, 'file': f'pdf/english/{slug(c)}.pdf'} for c in chs]
-       + [{'title': 'Appendix: Word Lists & Resources', 'icon': '📎', 'file': 'pdf/english/18_appendix_word_lists_and_resources.pdf'}]}
+       + [{'title': 'Appendix: Word Lists & Resources', 'icon': '📎', 'file': 'pdf/english/19_appendix_word_lists_and_resources.pdf'}]}
 json.dump(man, open(os.path.join(HERE, 'manifest.json'), 'w'), ensure_ascii=False, indent=1)
 print('built', len(chs), 'chapters')

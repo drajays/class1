@@ -86,3 +86,13 @@ moves to a separate `extras/` layer, excluded from "book" PDFs.
   layer must regroup by TOPIC (e.g. Addition, Subtraction, Place value, Ordinal, Patterns, Data, Shapes,
   Measurement, Time, Tables, Word problems), each = kid-friendly concept page + every worksheet item.
 - Next: author `book/<subject>/<topic>.json` from dossiers (agent per subject recommended).
+
+## 6. Status (2026-10-15) — executed
+- ✅ All 6 subjects authored as teaching/learning PDFs (Maths 16, English 18+, Hindi 28, EVS 17, Sanskrit 20, Computer 8 files)
+  by generators in `book/<subject>/build.py` (shared `book/maths/lib.py`). Output → `docs/pdf/<subject>/`,
+  listed in `docs/data/library.json`, read/print at `docs/read.html` (Reading Room; no game scripts).
+- Rebuild: `python3 book/<subject>/build.py`; Maths build also writes `library.json['maths']`; other subjects
+  write `book/<subject>/manifest.json` which must be merged into `docs/data/library.json`.
+- Gitignored: `book/dossier/`, `book/INVENTORY.md`, `book/pdf/` (HTML intermediates), `noupload/`, `organized/`.
+- ⏳ Pending user review/correction: Sanskrit meanings & keys, Hindi passages (rewrites), EVS facts,
+  English reader retellings, all resource links (from memory, unverified). Page-level proofreading not done.

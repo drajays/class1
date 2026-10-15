@@ -167,7 +167,7 @@ def ch16():
 
 
 def revision():
-    c = Chapter(17, 'Revision Tests', '🏆', COLORS[2], ['check what I have learnt', 'find topics I need to practise'])
+    c = Chapter(18, 'Revision Tests', '🏆', COLORS[2], ['check what I have learnt', 'find topics I need to practise'])
     c.h('Test 1 — Words')
     c.ex('Test 1', '10 marks.', [
         ('Write the vowels: {_}','a, e, i, o, u'),('{_} elephant (a / an)','an'),('Plural of child: {_}','children'),

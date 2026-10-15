@@ -3,7 +3,7 @@
 import os, sys, json, subprocess
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 from sk import CSS, table
-import content_a as A, content_b as B
+import content_a as A, content_b as B, content_c as C
 
 ROOT = os.path.join(HERE, '..', '..')
 TMP = os.path.join(ROOT, 'book', 'pdf', 'sanskrit'); os.makedirs(TMP, exist_ok=True)
@@ -11,8 +11,8 @@ OUT = os.path.join(ROOT, 'docs', 'pdf', 'sanskrit'); os.makedirs(OUT, exist_ok=T
 EDGE = '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'
 SLUGS = ['prarthana', 'varnamala', 'balgeetani', 'matra_parichay', 'sanyuktakshar', 'ehi_ehi_veer_re', 'matribhumi_namah',
          'kriyabodh', 'sankhyabodh', 'asti_nasti', 'pipasitah_kakah', 'mam_shariram', 'shrugal_drakshaphalam', 'subhashitani',
-         'amarkosh_devnam', 'divyavani', 'vyavaharik_shabdkosh', 'adbhutam_sanskritam', 'abhyas_pariksha']
-fns = [A.ch1, A.ch2, A.ch3, A.ch4, A.ch5, A.ch6, A.ch7, A.ch8, A.ch9, B.ch10, B.ch11, B.ch12, B.ch13, B.ch14, B.ch15, B.ch16, B.ch17, B.ch18, B.ch19]
+         'amarkosh_devnam', 'divyavani', 'vyavaharik_shabdkosh', 'adbhutam_sanskritam', 'dandalopi_aksharam', 'shabdkosh_parishishtam', 'abhyas_pariksha']
+fns = [A.ch1, A.ch2, A.ch3, A.ch4, A.ch5, A.ch6, A.ch7, A.ch8, A.ch9, B.ch10, B.ch11, B.ch12, B.ch13, B.ch14, B.ch15, B.ch16, B.ch17, B.ch18, C.ch_dandalopi, C.ch_shabdkosh2, B.ch19]
 chs = [f() for f in fns]
 
 
@@ -39,14 +39,14 @@ for c, s in zip(chs, SLUGS):
     if do_pdf: pdf(h, os.path.join(OUT, name + '.pdf'))
     files.append(name)
 app = B.glossary() + '<div class="page-break"></div>' + B.appendix_resources()
-h = os.path.join(TMP, '20_appendix.html'); open(h, 'w', encoding='utf8').write(page(app, 'संस्कृतम् — परिशिष्ट'))
-if do_pdf: pdf(h, os.path.join(OUT, '20_appendix_glossary_resources.pdf'))
+h = os.path.join(TMP, '22_appendix.html'); open(h, 'w', encoding='utf8').write(page(app, 'संस्कृतम् — परिशिष्ट'))
+if do_pdf: pdf(h, os.path.join(OUT, '22_appendix_glossary_resources.pdf'))
 full = (cover('सम्पूर्ण पुस्तक') + toc() + '<div class="page-break"></div>' + '<div class="page-break"></div>'.join(c.html() for c in chs)
         + '<div class="page-break"></div>' + app)
 h = os.path.join(TMP, 'Sanskrit_Class1_full.html'); open(h, 'w', encoding='utf8').write(page(full, 'संस्कृतम् — सम्पूर्ण पुस्तक'))
 if do_pdf: pdf(h, os.path.join(OUT, 'Sanskrit_Class1_full.pdf'))
 man = {'title': 'संस्कृतम्', 'icon': '🪔', 'full': 'pdf/sanskrit/Sanskrit_Class1_full.pdf',
        'chapters': [{'title': c.title, 'icon': c.emoji, 'file': f'pdf/sanskrit/{n}.pdf'} for c, n in zip(chs, files)]
-       + [{'title': 'परिशिष्ट: शब्द-भण्डार और संसाधन', 'icon': '📎', 'file': 'pdf/sanskrit/20_appendix_glossary_resources.pdf'}]}
+       + [{'title': 'परिशिष्ट: शब्द-भण्डार और संसाधन', 'icon': '📎', 'file': 'pdf/sanskrit/22_appendix_glossary_resources.pdf'}]}
 json.dump(man, open(os.path.join(HERE, 'manifest.json'), 'w'), ensure_ascii=False, indent=1)
 print('sanskrit built', len(chs))

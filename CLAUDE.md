@@ -55,6 +55,13 @@ Puppies: **Simba** (boy), **Mufasa** (boy), **Golu** (girl), **Whity** (girl).
 - `assets/puppies/*.jpg` — the 4 cropped puppy photos.
 - `sw.js` — service worker (bump `CACHE` name when asset list changes).
 
+## Reading Room & book PDFs (Class-1 reference books)
+- `docs/read.html` — standalone quiet reading/print page (no game, no coins). Lists `docs/data/library.json`.
+- `docs/pdf/<subject>/` — generated chapter + full-book PDFs. Generators: `book/<subject>/build.py`
+  (shared helpers `book/maths/lib.py`); sources: `book/dossier/` (gitignored, built by `build_dossier.py`).
+- Plan/status: `plan3.md`. Rebuild a subject with `python3 book/<subject>/build.py`, then merge its
+  `manifest.json` into `library.json`.
+
 ## Local-only (gitignored) — `noupload/`
 Heavy/private source kept out of git: OCR exports (`*.pdf_by_PaddleOCR-VL-1.6.*`,
 incl. the full math book), original full-res `dogs.jpg`. Also gitignored: `organized/`,

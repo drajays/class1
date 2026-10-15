@@ -172,14 +172,19 @@
     "file": "pdf/english/16_writing_and_composition.pdf"
    },
    {
+    "title": "More Story Time and Poems",
+    "icon": "🌟",
+    "file": "pdf/english/17_more_story_time_and_poems.pdf"
+   },
+   {
     "title": "Revision Tests",
     "icon": "🏆",
-    "file": "pdf/english/17_revision_tests.pdf"
+    "file": "pdf/english/18_revision_tests.pdf"
    },
    {
     "title": "Appendix: Word Lists & Resources",
     "icon": "📎",
-    "file": "pdf/english/18_appendix_word_lists_and_resources.pdf"
+    "file": "pdf/english/19_appendix_word_lists_and_resources.pdf"
    }
   ]
  },
@@ -518,14 +523,24 @@
     "file": "pdf/sanskrit/18_adbhutam_sanskritam.pdf"
    },
    {
+    "title": "दण्डलोपी अक्षरम्",
+    "icon": "✂️",
+    "file": "pdf/sanskrit/19_dandalopi_aksharam.pdf"
+   },
+   {
+    "title": "शब्दकोश-परिशिष्टम्",
+    "icon": "📚",
+    "file": "pdf/sanskrit/20_shabdkosh_parishishtam.pdf"
+   },
+   {
     "title": "अभ्यास-परीक्षा",
     "icon": "🏆",
-    "file": "pdf/sanskrit/19_abhyas_pariksha.pdf"
+    "file": "pdf/sanskrit/21_abhyas_pariksha.pdf"
    },
    {
     "title": "परिशिष्ट: शब्द-भण्डार और संसाधन",
     "icon": "📎",
-    "file": "pdf/sanskrit/20_appendix_glossary_resources.pdf"
+    "file": "pdf/sanskrit/22_appendix_glossary_resources.pdf"
    }
   ]
  },

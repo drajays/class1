@@ -94,14 +94,24 @@
    "file": "pdf/sanskrit/18_adbhutam_sanskritam.pdf"
   },
   {
+   "title": "दण्डलोपी अक्षरम्",
+   "icon": "✂️",
+   "file": "pdf/sanskrit/19_dandalopi_aksharam.pdf"
+  },
+  {
+   "title": "शब्दकोश-परिशिष्टम्",
+   "icon": "📚",
+   "file": "pdf/sanskrit/20_shabdkosh_parishishtam.pdf"
+  },
+  {
    "title": "अभ्यास-परीक्षा",
    "icon": "🏆",
-   "file": "pdf/sanskrit/19_abhyas_pariksha.pdf"
+   "file": "pdf/sanskrit/21_abhyas_pariksha.pdf"
   },
   {
    "title": "परिशिष्ट: शब्द-भण्डार और संसाधन",
    "icon": "📎",
-   "file": "pdf/sanskrit/20_appendix_glossary_resources.pdf"
+   "file": "pdf/sanskrit/22_appendix_glossary_resources.pdf"
   }
  ]
 }
